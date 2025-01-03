@@ -14,7 +14,7 @@
 #SBATCH --output=slurm_logs/%x-%a.stdout
 #SBATCH --error=slurm_logs/%x-%a.stderr
 
-#SBATCH --array=0-6
+#SBATCH --array=0-0
 #set -e
 
 echo "Starting job $SLURM_JOB_ID"
@@ -41,15 +41,15 @@ input_dir="data/csqa_quoted"
 
 # NOTE: can modify the models array to contain a list of paths to model weights (e.g. weights for a finetuned gpt model)
 models=(
-    "gpt2"
-    "meta-llama/Llama-2-7b-chat-hf"
+    #"gpt2"
+    #"meta-llama/Llama-2-7b-chat-hf"
     "meta-llama/Llama-2-7b-hf"
-    "meta-llama/Llama-2-13b-hf"
+    #"meta-llama/Llama-2-13b-hf"
     "meta-llama/Llama-2-13b-chat-hf"
     #"WizardLM/WizardLM-7B-V1.0"
     #"lmsys/vicuna-7b-v1.5"
-    "meta-llama/Meta-Llama-3-8B"
-    "mistralai/Mistral-7B-Instruct-v0.2"
+    #"meta-llama/Meta-Llama-3-8B"
+    #"mistralai/Mistral-7B-Instruct-v0.2"
 )
 
 model=${models[$SLURM_ARRAY_TASK_ID]}
