@@ -20,7 +20,7 @@ def jload(f, mode="r"):
     f.close()
     return jdict
 
-def jsonl_load(file_path, text_key="entry"):
+def jsonl_load(file_path, text_key="prompt"):
     """
     Reads a .jsonl file line by line, parses each line as JSON,
     and extracts the value of `text_key` from each JSON object.
