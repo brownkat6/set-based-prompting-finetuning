@@ -3,7 +3,7 @@
 #SBATCH --partition=seas_gpu
 ##SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:4
 ##SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:1 # See of run can get allocated with only 1 GPU
-#SBATCH --gres=gpu:nvidia_h100_80gb_hbm3:1
+#SBATCH --gres=gpu:nvidia_h100_80gb_hbm3:2
 #SBATCH --time=0-12:00
 #SBATCH --mem=128G
 #SBATCH --cpus-per-task=8
@@ -32,8 +32,8 @@ echo "Script started at: $(date)"
 
 # Parse command line arguments
 MODEL_NAME=${1:-"meta-llama/Llama-2-7b-hf"}  # Default to Llama-2-7b-hf if not provided
-RUN_DATETIME=${2:-$(date +%Y%m%d-%H%M%S)}  # Use provided datetime or generate new one
-IS_LORA=${3:-"True"}  # New parameter, defaults to True
+IS_LORA=${2:-"True"}  # New parameter, defaults to True
+RUN_DATETIME=${3:-$(date +%Y%m%d-%H%M%S)}  # Use provided datetime or generate new one
 
 # Validate IS_LORA
 if [ "${IS_LORA}" != "True" ] && [ "${IS_LORA}" != "False" ]; then
@@ -128,9 +128,10 @@ export MASTER_PORT=29500
 # Select training script based on IS_LORA
 TRAIN_SCRIPT="trusted_finetuning/scripts/train.py"
 if [ "${IS_LORA}" = "True" ]; then
-    TRAIN_SCRIPT="trusted_finetuning/scripts/train_full.py"
+    TRAIN_SCRIPT="trusted_finetuning/scripts/train.py"
     echo "Using LoRA training script: ${TRAIN_SCRIPT}"
 else
+    TRAIN_SCRIPT="trusted_finetuning/scripts/train_full.py"
     echo "Using full model training script: ${TRAIN_SCRIPT}"
 fi
 
