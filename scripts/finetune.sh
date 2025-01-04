@@ -1,7 +1,8 @@
 #!/bin/bash
-#SBATCH --job-name=sbp_finetune_experiment
+#SBATCH --job-name=sbp_finetune
 #SBATCH --partition=seas_gpu
-#SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:4
+##SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:4
+#SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:1 # See of run can get allocated with only 1 GPU
 #SBATCH --time=0-12:00
 #SBATCH --mem=128G
 #SBATCH --cpus-per-task=8
@@ -168,11 +169,15 @@ then
     exit 1
 fi
 
-# After training completes successfully, run benchmarking
-echo "Training completed, submitting benchmark jobs..."
+# After training completes successfully
+echo "Training completed, creating latest symlink..."
 
-# Create slurm_logs directory if it doesn't exist
-mkdir -p slurm_logs
+# Create symlink to latest run
+model_dir="${BASE_DIR}/${model_path_safe}"
+rm -f "${model_dir}/latest"
+ln -s "${RUN_DATETIME}" "${model_dir}/latest"
+
+echo "Submitting benchmark jobs..."
 
 # Submit benchmarking jobs through benchmark_models.sh
 benchmark_job_id=$(sbatch --dependency=afterok:$SLURM_JOB_ID \
@@ -181,11 +186,11 @@ benchmark_job_id=$(sbatch --dependency=afterok:$SLURM_JOB_ID \
     --error=slurm_logs/benchmark_chain_%j.err \
     --export=ALL \
     --wrap="source /n/home11/katrinabrown/.bashrc && \
-           mamba activate benchmark_env && \
+           conda activate benchmark_env && \
            module load cuda/11.8.0-fasrc01 cudnn/8.9.2.26_cuda11-fasrc01 && \
            export PATH=\"/n/holylabs/LABS/dwork_lab/Lab/katrinabrown/home/conda/envs/benchmark_env/bin:$PATH\" && \
            bash trusted_finetuning/scripts/benchmark_models.sh \"${OUTPUT_DIR}\" \"${IS_ORDER_INDEPENDENT}\" && \
-           mamba activate thesis")
+           conda activate thesis")
 
 if [ $? -ne 0 ] || ! [[ "$benchmark_job_id" =~ ^[0-9]+$ ]]; then
     echo "Error: Failed to submit benchmark jobs"

@@ -10,7 +10,7 @@
 #SBATCH --output=slurm_logs/%x-%a.stdout
 #SBATCH --error=slurm_logs/%x-%a.stderr
 
-#SBATCH --array=0-4
+#SBATCH --array=0-5
 #set -e
 
 echo "Starting job $SLURM_JOB_ID"
@@ -33,7 +33,7 @@ results_dir="results/csqa_quoted_permutations"
 input_dir="data/csqa_quoted"
 
 models=(
-    #"gpt2"
+    "gpt2"
     "meta-llama/Llama-2-7b-chat-hf"
     "meta-llama/Llama-2-7b-hf"
     "meta-llama/Llama-2-13b-hf"

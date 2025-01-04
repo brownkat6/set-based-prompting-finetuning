@@ -10,6 +10,7 @@ import torch
 from datasets import load_dataset
 from transformers import LlamaForCausalLM, LlamaTokenizer
 from tqdm import tqdm
+from peft import PeftModel
 
 # Records wikitext-103 perplexity for a model at the given model path
 # Assumes that the model has a tokenizer in the same directory as the model
