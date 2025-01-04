@@ -77,11 +77,11 @@ for fname in $input_dir/*.json; do
     #strip .json from filename
     fname_safe=${basename%.json}
 
-    $PYTHON_EXECUTABLE set-based-prompting/main.py \
+    $PYTHON_EXECUTABLE set-based-prompting-finetuning/main.py \
         --model-name $model \
         --torch-device cuda \
         --max-new-tokens $MAX_NEW_TOKENS \
-        #--include-probs \
+        --include-probs \
         --temp_file \
         --append-temp-file \
         --infile $fname \

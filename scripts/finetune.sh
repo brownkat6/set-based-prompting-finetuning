@@ -93,8 +93,8 @@ fi
 # Get current datetime in YYYYMMDD-HHmmSS format
 MODEL_NAME="meta-llama/Llama-2-7b-hf"
 model_path_safe=$(echo $MODEL_NAME | sed 's/\//_/g')
-# Include IS_ORDER_INDEPENDENT in output directory name
-OUTPUT_DIR="${BASE_DIR}/${MODEL_NAME}/${RUN_DATETIME}_tags-${IS_ORDER_INDEPENDENT}"
+# Include IS_LORA in output directory name
+OUTPUT_DIR="${BASE_DIR}/${MODEL_NAME}/${RUN_DATETIME}_tags-${IS_LORA}"
 
 # Create run-specific benchmarks file
 BENCHMARKS_FILE="${OUTPUT_DIR}/benchmarks.jsonl"
@@ -206,7 +206,7 @@ benchmark_job_id=$(sbatch --dependency=afterok:$SLURM_JOB_ID \
            conda activate benchmark_env && \
            module load cuda/11.8.0-fasrc01 cudnn/8.9.2.26_cuda11-fasrc01 && \
            export PATH=\"/n/holylabs/LABS/dwork_lab/Lab/katrinabrown/home/conda/envs/benchmark_env/bin:$PATH\" && \
-           bash trusted_finetuning/scripts/benchmark_models.sh \"${OUTPUT_DIR}\" \"${IS_ORDER_INDEPENDENT}\" && \
+           bash scripts/benchmark_models.sh \"${OUTPUT_DIR}\" && \
            conda activate thesis")
 
 if [ $? -ne 0 ] || ! [[ "$benchmark_job_id" =~ ^[0-9]+$ ]]; then
