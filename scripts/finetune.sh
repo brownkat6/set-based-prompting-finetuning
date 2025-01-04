@@ -148,7 +148,7 @@ fi
 
 # Run the training script with proper GPU count
 if ! torchrun \
-    --nproc_per_node=${GPU_COUNT} \
+    --nproc_per_node=4 \
     --master_port=${MASTER_PORT} \
     ${TRAIN_SCRIPT} \
     --model_name_or_path "${MODEL_NAME}" \
