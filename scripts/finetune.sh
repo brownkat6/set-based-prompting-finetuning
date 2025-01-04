@@ -49,10 +49,10 @@ check_gpus() {
     for i in {1..5}; do  # Increased from 3 to 5 attempts
         if gpu_count=$(timeout ${NVIDIA_SMI_TIMEOUT} nvidia-smi --query-gpu=gpu_name --format=csv,noheader 2>/dev/null | wc -l); then
             echo "Found ${gpu_count} GPUs"
-            if [ $gpu_count -lt 4 ]; then
-                echo "Error: Script requires 4 GPUs, but only ${gpu_count} found"
-                exit 1
-            fi
+            #if [ $gpu_count -lt 4 ]; then
+            #    echo "Error: Script requires 4 GPUs, but only ${gpu_count} found"
+            #    exit 1
+            # fi
             return 0
         fi
         echo "Attempt $i: Waiting for nvidia-smi... (${NVIDIA_SMI_TIMEOUT}s timeout)"
@@ -113,6 +113,10 @@ echo "OUTPUT_DIR: ${OUTPUT_DIR}"
 echo "IS_LORA: ${IS_LORA}"
 echo "Current directory: $(pwd)"
 
+# Get GPU count using nvidia-smi
+GPU_COUNT=$(nvidia-smi --query-gpu=gpu_name --format=csv,noheader | wc -l)
+echo "Found ${GPU_COUNT} GPUs"
+
 # Set environment variables for FSDP
 export ACCELERATE_USE_FSDP="true"
 export FSDP_TRANSFORMER_CLS_TO_WRAP="LlamaDecoderLayer"
@@ -135,9 +139,9 @@ else
     echo "Using full model training script: ${TRAIN_SCRIPT}"
 fi
 
-# Run the training script with proper FSDP configuration
+# Run the training script with proper GPU count
 if ! torchrun \
-    --nproc_per_node=4 \
+    --nproc_per_node=${GPU_COUNT} \
     --master_port=${MASTER_PORT} \
     ${TRAIN_SCRIPT} \
     --model_name_or_path "${MODEL_NAME}" \
