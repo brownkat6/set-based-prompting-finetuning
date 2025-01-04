@@ -147,7 +147,7 @@ def preprocess(
         # Store tensors
         input_ids.append(inputs["input_ids"][0])  # Remove batch dimension
         labels.append(inputs["input_ids"][0])  # Labels are same as input_ids for causal LM
-        attention_masks.append(inputs["attention_mask_2d"][0])  # Remove batch dimension
+        attention_masks.append(inputs["attention_mask"][0])  # Remove batch dimension
         position_ids.append(inputs["position_ids"][0])  # Remove batch dimension
         
     return dict(
