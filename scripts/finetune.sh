@@ -4,7 +4,7 @@
 #SBATCH --partition=gpu_test
 ###SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:4
 ###SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:1 # See of run can get allocated with only 1 GPU
-##SBATCH --gres=gpu:nvidia_h100_80gb_hbm3:2
+##SBATCH --gres=gpu:nvidia_h100_80gb_hbm3:4
 #SBATCH --gres=gpu:4
 #SBATCH --time=0-12:00
 #SBATCH --mem=128G
@@ -45,6 +45,8 @@ fi
 
 # Add timeout value as a variable at the top
 NVIDIA_SMI_TIMEOUT=10
+
+sleep 20
 
 # Improve the GPU check function
 check_gpus() {
