@@ -1,9 +1,11 @@
 #!/bin/bash
 #SBATCH --job-name=sbp_finetune
-#SBATCH --partition=seas_gpu
-##SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:4
-##SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:1 # See of run can get allocated with only 1 GPU
-#SBATCH --gres=gpu:nvidia_h100_80gb_hbm3:2
+##SBATCH --partition=seas_gpu
+#SBATCH --partition=gpu_test
+###SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:4
+###SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:1 # See of run can get allocated with only 1 GPU
+##SBATCH --gres=gpu:nvidia_h100_80gb_hbm3:2
+#SBATCH --gres=gpu:4
 #SBATCH --time=0-12:00
 #SBATCH --mem=128G
 #SBATCH --cpus-per-task=8
@@ -130,12 +132,12 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3
 export MASTER_PORT=29500
 
 # Select training script based on IS_LORA
-TRAIN_SCRIPT="trusted_finetuning/scripts/train.py"
+TRAIN_SCRIPT="scripts/train.py"
 if [ "${IS_LORA}" = "True" ]; then
-    TRAIN_SCRIPT="trusted_finetuning/scripts/train.py"
+    TRAIN_SCRIPT="scripts/train.py"
     echo "Using LoRA training script: ${TRAIN_SCRIPT}"
 else
-    TRAIN_SCRIPT="trusted_finetuning/scripts/train_full.py"
+    TRAIN_SCRIPT="scripts/train_full.py"
     echo "Using full model training script: ${TRAIN_SCRIPT}"
 fi
 
@@ -164,9 +166,7 @@ if ! torchrun \
     --logging_steps 100 \
     --fsdp "full_shard auto_wrap" \
     --fsdp_transformer_layer_cls_to_wrap "LlamaDecoderLayer" \
-    --IS_ORDER_INDEPENDENT ${IS_ORDER_INDEPENDENT} \
     --gradient_checkpointing True \
-    #--report_to "wandb" \
     --run_name "${model_path_safe}-finetuning-${RUN_DATETIME}" \
     --logging_dir "${OUTPUT_DIR}/logs" \
     --cache_dir "${BASE_DIR}/cache/transformers"
@@ -178,8 +178,11 @@ fi
 # After training completes successfully
 echo "Training completed, creating latest symlink..."
 
-# Create symlink to latest run
+# Create model directory and parent directories if they don't exist
 model_dir="${BASE_DIR}/${model_path_safe}"
+mkdir -p "${model_dir}"
+
+# Create symlink to latest run
 rm -f "${model_dir}/latest"
 ln -s "${RUN_DATETIME}" "${model_dir}/latest"
 
