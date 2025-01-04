@@ -49,6 +49,7 @@ NVIDIA_SMI_TIMEOUT=10
 sleep 20
 
 # echo output of nvidia-smi
+echo "CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
 nvidia-smi
 
 # Improve the GPU check function
@@ -148,7 +149,7 @@ fi
 
 # Run the training script with proper GPU count
 if ! torchrun \
-    --nproc_per_node=4 \
+    --nproc_per_node=2 \
     --master_port=${MASTER_PORT} \
     ${TRAIN_SCRIPT} \
     --model_name_or_path "${MODEL_NAME}" \
