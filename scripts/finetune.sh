@@ -33,8 +33,8 @@ trap cleanup EXIT
 echo "Script started at: $(date)"
 
 # Parse command line arguments
-MODEL_NAME=${1:-"meta-llama/Llama-2-7b-hf"}  # Default to Llama-2-7b-hf if not provided
-IS_LORA=${2:-"True"}  # New parameter, defaults to True
+MODEL_NAME=${2:-"meta-llama/Llama-2-7b-hf"}  # Default to Llama-2-7b-hf if not provided
+IS_LORA=${1:-"True"}  # New parameter, defaults to True
 RUN_DATETIME=${3:-$(date +%Y%m%d-%H%M%S)}  # Use provided datetime or generate new one
 
 # Validate IS_LORA
@@ -47,6 +47,9 @@ fi
 NVIDIA_SMI_TIMEOUT=10
 
 sleep 20
+
+# echo output of nvidia-smi
+nvidia-smi
 
 # Improve the GPU check function
 check_gpus() {
