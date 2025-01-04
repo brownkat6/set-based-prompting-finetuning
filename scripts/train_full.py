@@ -717,9 +717,9 @@ def get_parallel_inputs(
     tokAll = order_independent_llm.input_processing.get_tokenized_input_prompt(tokA, tokParallel, tokD)
     
     # Generate position IDs for parallel processing
-    position_ids = order_independent_llm.input_processing.get_position_ids_nopad_n_options(
-        tokA, tokParallel, tokD, tokenizer
-    )[0]
+    position_ids, _, _ = order_independent_llm.input_processing.get_position_ids_nopad_n_options(
+        tokA, tokParallel, tokD, tokenizer=tokenizer
+    )
     
     # Generate 2D attention mask
     attention_mask_2d = order_independent_llm.input_processing.get_attention_mask_2d_n_options(
@@ -729,7 +729,7 @@ def get_parallel_inputs(
     return {
         "input_ids": tokAll["input_ids"],
         "position_ids": position_ids,
-        "attention_mask_2d": attention_mask_2d
+        "attention_mask": attention_mask_2d
     }
 
 
