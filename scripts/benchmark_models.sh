@@ -45,7 +45,7 @@ if [ -d "${OUTPUT_DIR}/initial_weights" ]; then
         --mem=32G \
         --output=slurm_logs/benchmark_initial_%j.out \
         --error=slurm_logs/benchmark_initial_%j.err \
-        --wrap=\"${PYTHON_PATH} trusted_finetuning/scripts/benchmark_model.py \
+        --wrap=\"${PYTHON_PATH} scripts/benchmark_model.py \
             --model_path \\\"${OUTPUT_DIR}/initial_weights\\\" \
             --device \\\"cuda\\\"\""
     echo "Command: $sbatch_cmd"
@@ -66,7 +66,7 @@ for checkpoint_dir in "${OUTPUT_DIR}"/checkpoint-*; do
             --mem=32G \
             --output=slurm_logs/benchmark_checkpoint_${checkpoint_num}_%j.out \
             --error=slurm_logs/benchmark_checkpoint_${checkpoint_num}_%j.err \
-            --wrap=\"${PYTHON_PATH} trusted_finetuning/scripts/benchmark_model.py \
+            --wrap=\"${PYTHON_PATH} scripts/benchmark_model.py \
                 --model_path \\\"${checkpoint_dir}\\\" \
                 --device \\\"cuda\\\"\""
         echo "Command: $sbatch_cmd"
@@ -86,7 +86,7 @@ if [ -d "${OUTPUT_DIR}/final_weights" ]; then
         --mem=32G \
         --output=slurm_logs/benchmark_final_%j.out \
         --error=slurm_logs/benchmark_final_%j.err \
-        --wrap=\"${PYTHON_PATH} trusted_finetuning/scripts/benchmark_model.py \
+        --wrap=\"${PYTHON_PATH} scripts/benchmark_model.py \
             --model_path \\\"${OUTPUT_DIR}/final_weights\\\" \
             --device \\\"cuda\\\"\""
     echo "Command: $sbatch_cmd"
