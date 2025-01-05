@@ -426,11 +426,17 @@ def train() -> None:
         
         # Verify SDPA is disabled
         if hasattr(model.config, 'use_sdpa'):
-            print(f"Model config has use_sdpa: {model.config.use_sdpa}")
-            model.config.use_sdpa = False
+            try:
+                print(f"Model config has use_sdpa: {model.config.use_sdpa}")
+                model.config.use_sdpa = False
+            except Exception as e:
+                print(f"Model config has no use_sdpa attribute: {e}")
         if hasattr(model.config, 'use_flash_attention'):
-            print(f"Model config has use_flash_attention: {model.config.use_flash_attention}")
-            model.config.use_flash_attention = False
+            try:
+                print(f"Model config has use_flash_attention: {model.config.use_flash_attention}")
+                model.config.use_flash_attention = False
+            except Exception as e:
+                print(f"Model config has no use_flash_attention attribute: {e}")
         
         print(f"Model config has use_sdpa: {model.config.use_sdpa}")
         print(f"model.model._use_sdpa: {model.model._use_sdpa}")
