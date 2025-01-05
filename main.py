@@ -282,12 +282,27 @@ def run_experiment(
                 if include_probs:
                     responses[key]['probs'] = resp.get_per_token_probs(tokenizer, top_k).to_json_dict()
 
-            prompt_output = {
+            # Convert any numpy types to Python native types before JSON serialization
+            def convert_to_native_types(obj):
+                if isinstance(obj, dict):
+                    return {key: convert_to_native_types(value) for key, value in obj.items()}
+                elif isinstance(obj, list):
+                    return [convert_to_native_types(item) for item in list(obj)]
+                elif isinstance(obj, np.integer):
+                    return int(obj)
+                elif isinstance(obj, np.floating):
+                    return float(obj)
+                elif isinstance(obj, np.ndarray):
+                    return obj.tolist()
+                else:
+                    return obj
+
+            prompt_output = convert_to_native_types({
                 "prompt": prompt.text,
                 "model": model_name,
                 "prompt_metadata": prompt.metadata,
                 "responses": responses,
-            }
+            })
 
             json.dump(
                 prompt_output,
