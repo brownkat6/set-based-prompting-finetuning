@@ -378,6 +378,11 @@ def train() -> None:
     parser = transformers.HfArgumentParser((ModelArguments, DataArguments, TrainingArguments))
     model_args, data_args, training_args = parser.parse_args_into_dataclasses()
 
+    # Disable SDPA by setting environment variable
+    os.environ["USE_TORCH_SDPA"] = "0"
+    torch.backends.cuda.enable_flash_sdp(False)
+    torch.backends.cuda.enable_mem_efficient_sdp(False)
+    
     # GPU and dtype setup
     try:
         torch.cuda.init()
@@ -411,14 +416,25 @@ def train() -> None:
         training_args.fsdp_config = None
 
     try:
-        # Load base model
+        # Load base model with SDPA disabled
         model = LlamaForCausalLM.from_pretrained(
             model_args.model_name_or_path,
             cache_dir=training_args.cache_dir,
             torch_dtype=dtype,
+            # Explicitly disable SDPA in attention config
+            use_flash_attention=False,
+            use_sdpa=False,
         )
         model = model.to(device)
-
+        
+        # Verify SDPA is disabled
+        if hasattr(model.config, 'use_sdpa'):
+            model.config.use_sdpa = False
+        if hasattr(model.config, 'use_flash_attention'):
+            model.config.use_flash_attention = False
+            
+        print("SDPA and Flash Attention have been disabled")
+        
         print("\n=== Initializing LoRA ===")
         config = LoraConfig(
             r=model_args.lora_r,
