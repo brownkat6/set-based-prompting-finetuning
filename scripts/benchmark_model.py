@@ -45,6 +45,9 @@ def compute_perplexity(model, tokenizer, dataset, max_length=1024, device="cuda"
                 print(f"Raw loss: {batch_loss}")
                 print(f"Token count: {token_count}")
                 print(f"Scaled loss: {batch_loss * token_count}")
+                print(input_ids)
+                print(model)
+                
             
             # Check for NaN before accumulating
             if torch.isnan(outputs.loss):
@@ -105,10 +108,11 @@ def main():
         tokenizer_path = os.path.join(os.path.dirname(args.model_path), "initial_weights")
         if not os.path.exists(tokenizer_path):
             tokenizer_path = args.model_path  # Fallback to model path if initial_weights doesn't exist
-        
+        print(f"Loading tokenizer from {tokenizer_path}")
         tokenizer = LlamaTokenizer.from_pretrained(tokenizer_path)
         
         # Load base model and merge LoRA weights if they exist
+        print(f"Loading base model from {args.model_path}")
         base_model = LlamaForCausalLM.from_pretrained(
             args.model_path,
             device_map="auto"  # This will handle device placement automatically

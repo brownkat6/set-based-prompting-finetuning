@@ -305,13 +305,49 @@ class TrustedTrainer(Trainer):
         self.dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
 
     def evaluate(self, eval_dataset=None, ignore_keys=None, metric_key_prefix="eval"):
+        """Run evaluation and returns metrics."""
         print("Evaluating...")
+        
         # Get current epoch number (1-based indexing)
         current_epoch = int(self.state.epoch)
-        print(f"\nFinished training for epoch {current_epoch}")
+        print(f"\nEvaluating epoch {current_epoch}")
         
-        # Call parent's evaluate method
-        return super().evaluate(eval_dataset, ignore_keys, metric_key_prefix)
+        # Print eval dataset length
+        if eval_dataset is None:
+            eval_dataset = self.eval_dataset
+        print(f"Evaluation dataset length: {len(eval_dataset)}")
+        
+        # Get dataloader
+        eval_dataloader = self.get_eval_dataloader(eval_dataset)
+        print(f"Number of evaluation batches: {len(eval_dataloader)}")
+        
+        # Initialize metrics
+        total_loss = 0.0
+        num_batches = 0
+        
+        # Evaluation loop
+        model = self.model
+        model.eval()
+        
+        for batch in eval_dataloader:
+            with torch.no_grad():
+                loss = self.evaluation_step(model, batch)
+                total_loss += loss.item()
+                print(f"Batch loss: {loss}")
+                num_batches += 1
+                
+        # Compute average loss
+        if num_batches == 0:
+            print("No batches found")
+        avg_loss = total_loss / num_batches if num_batches > 0 else float('nan')
+        
+        metrics = {
+            "eval_loss": avg_loss,
+            "epoch": current_epoch
+        }
+        
+        print(f"Evaluation metrics: {metrics}")
+        return metrics
 
     def _prepare_inputs(self, inputs: Dict[str, Union[torch.Tensor, Any]]) -> Dict[str, Union[torch.Tensor, Any]]:
         """Prepare inputs by placing them on the correct device and dtype."""
@@ -325,15 +361,28 @@ class TrustedTrainer(Trainer):
         return inputs
 
     def evaluation_step(self, model, inputs):
-        """Evaluation step without parameter verification."""
-        print("Evaluation step...")
+        """Single evaluation step."""
         model.eval()
-        inputs = self._prepare_inputs(inputs)
-        
         with torch.no_grad():
-            outputs = model(**inputs)
+            # Move inputs to correct device/dtype
+            inputs = self._prepare_inputs(inputs)
             
-        return outputs.loss.detach()
+            # Verify tensor shapes
+            batch_size = inputs["input_ids"].size(0)
+            seq_len = inputs["input_ids"].size(1)
+            
+            assert inputs["attention_mask"].size() == (batch_size, 1, seq_len, seq_len), \
+                f"Attention mask should be 4D with shape {(batch_size, 1, seq_len, seq_len)}, got {inputs['attention_mask'].size()}"
+            
+            assert inputs["position_ids"].size() == (batch_size, seq_len), \
+                f"Position ids should be 2D with shape {(batch_size, seq_len)}, got {inputs['position_ids'].size()}"
+            
+            # Forward pass
+            outputs = model(**inputs)
+            loss = outputs.loss
+            print(f"Batch loss: {loss}")
+
+        return loss
 
     def get_eval_dataloader(self, eval_dataset=None):
         """Override to ensure we use our custom data collator for evaluation."""
@@ -353,6 +402,7 @@ class TrustedTrainer(Trainer):
 
     def training_step(self, model, inputs):
         """Training step with shape validation."""
+        print(f"training step")
         model.train()
         inputs = self._prepare_inputs(inputs)
         
@@ -649,15 +699,17 @@ def train() -> None:
     trainer.create_optimizer()
     print("Optimizer defaults: ", trainer.optimizer.defaults)
     trainer.train()
-    print("Saving model state...")
-    trainer.save_state()
-    
-    # Save final model weights
-    print("Saving final model weights...")
-    final_weights_dir = os.path.join(training_args.output_dir, "final_weights")
-    os.makedirs(final_weights_dir, exist_ok=True)
-    trainer.save_model(output_dir=final_weights_dir)
-    logging.info(f"Saved final model weights to {final_weights_dir}")
+
+    # Wrap saving in no_grad context
+    with torch.no_grad():
+        print("Saving model state...")
+        trainer.save_state()
+        
+        print("Saving final model weights...")
+        final_weights_dir = os.path.join(training_args.output_dir, "final_weights")
+        os.makedirs(final_weights_dir, exist_ok=True)
+        trainer.save_model(output_dir=final_weights_dir)
+        logging.info(f"Saved final model weights to {final_weights_dir}")
 
 
 def get_pca_components(model_name: str) -> int:

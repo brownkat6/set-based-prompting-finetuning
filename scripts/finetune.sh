@@ -14,6 +14,12 @@
 #SBATCH --output=slurm_logs/%j.out
 #SBATCH --error=slurm_logs/%j.err
 
+# TODO: fix train.py to work with LoRA and fix bigs-and-byptes issue (installed without CUDA support?)
+# TODO: debug why loss is NaN in train_full.py 
+# TODO: debug why loss in benchmark_model.py is NaN (might be related to why eval_loss is NaN in train_full.py)
+#        (in every model weights dir EXCEPT for initial_weights)
+# The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+
 # Exit on any error
 set -e
 
@@ -151,7 +157,7 @@ fi
 
 # Run the training script with proper GPU count
 if ! torchrun \
-    --nproc_per_node=2 \
+    --nproc_per_node=4 \
     --master_port=${MASTER_PORT} \
     ${TRAIN_SCRIPT} \
     --model_name_or_path "${MODEL_NAME}" \
