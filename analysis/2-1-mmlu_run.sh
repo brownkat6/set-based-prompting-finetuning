@@ -36,8 +36,8 @@ echo "ARRAY TASK ID: $SLURM_ARRAY_TASK_ID"
 PYTHON_EXECUTABLE=/n/holylabs/LABS/dwork_lab/Lab/reidmcy/home/conda/envs/cuda_11/bin/python
 
 MAX_NEW_TOKENS=50
-results_dir="results/mmlu_quoted"
-input_dir="data/mmlu_quoted"
+results_dir="set-based-prompting-finetuning/results/mmlu_quoted"
+input_dir="set-based-prompting-finetuning/data/mmlu_quoted"
 
 # NOTE: can modify the models array to contain a list of paths to model weights (e.g. weights for a finetuned gpt model)
 models=(

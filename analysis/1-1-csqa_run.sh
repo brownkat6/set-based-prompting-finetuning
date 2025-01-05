@@ -36,8 +36,8 @@ echo "ARRAY TASK ID: $SLURM_ARRAY_TASK_ID"
 PYTHON_EXECUTABLE=/n/holylabs/LABS/dwork_lab/Lab/reidmcy/home/conda/envs/cuda_11/bin/python
 
 MAX_NEW_TOKENS=50
-results_dir="results/csqa_quoted"
-input_dir="data/csqa_quoted"
+results_dir="set-based-prompting-finetuning/results/csqa_quoted"
+input_dir="set-based-prompting-finetuning/data/csqa_quoted"
 
 
 
