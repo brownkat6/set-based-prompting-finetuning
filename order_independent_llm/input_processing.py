@@ -313,7 +313,7 @@ def load_model(model_name, torch_device:typing.Literal["auto", "cpu", "cuda"]="a
         tokenizer.pad_token_id = tokenizer.eos_token_id
     else:  # e.g model_name == "meta-llama/Llama-2-7b-chat-hf"
         tokenizer = transformers.AutoTokenizer.from_pretrained(
-            model_name, use_auth_token=HF_TOKEN, use_fast=True, cache_dir="/n/holylabs/LABS/dwork_lab/Everyone/cache/transformers",
+            model_name.replace("final_weights","initial_weights").replace("checkpoint-98","initial_weights"), use_auth_token=HF_TOKEN, use_fast=True, cache_dir="/n/holylabs/LABS/dwork_lab/Everyone/cache/transformers",
         )
         tokenizer.pad_token_id = tokenizer.eos_token_id
         model = transformers.AutoModelForCausalLM.from_pretrained(
