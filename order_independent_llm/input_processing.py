@@ -607,7 +607,7 @@ def order_independent_query(
         is_correct_answer = bool((max_probability_index==0).item())
         correct_answer_prob = probabilities[0,0].item()
         raw_output_contains_correct_answer_only = metadata["label"] in generated and all([o not in generated for o in metadata["incorrect_answers"]])
-        label_perplexities = calc_options_perplexity_dict(tokAll["input_ids"],attention_mask_2d if is_order_independent else None,position_ids,metadata,model,tokenizer)
+        label_perplexities = calc_options_perplexity_dict(tokAll["input_ids"],attention_mask_2d if is_order_independent else None,position_ids if is_order_independent else None,metadata,model,tokenizer)
 
     # Return output of model generation, and generated text
     return OrderIndependentResult(

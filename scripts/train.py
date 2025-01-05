@@ -442,10 +442,11 @@ def train() -> None:
         try:
             print(f"model.model._use_sdpa: {model.model._use_sdpa}")
             model.model._use_sdpa = False # set sdpa to false
+            print(f"model.model._use_sdpa: {model.model._use_sdpa}")
         except Exception as e:
             print(f"model.model has no _use_sdpa attribute: {e}")
             
-        print("SDPA and Flash Attention have been disabled")
+        print("SDPA has been disabled")
         
         print("\n=== Initializing LoRA ===")
         config = LoraConfig(
