@@ -88,7 +88,7 @@ def main():
     args = parser.parse_args()
 
     # Define benchmarks file path relative to model directory
-    model_dir = os.path.dirname(os.path.dirname(args.model_path))  # Go up two levels to get main model dir
+    model_dir = os.path.dirname(args.model_path)  # Go up two levels to get main model dir
     RECORDS_FP = os.path.join(model_dir, "benchmarks.jsonl")
 
     # Input validation

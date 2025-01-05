@@ -439,6 +439,9 @@ def train() -> None:
         print("\nPreparing model for k-bit training...")
         model = prepare_model_for_kbit_training(model)
         
+        print(f"Overriding model for order independent training")
+        model = order_independent_llm.input_processing.get_2D_attention_accepting_model(model)
+        
         print("\nApplying LoRA...")
         model = get_peft_model(model, config)
         
