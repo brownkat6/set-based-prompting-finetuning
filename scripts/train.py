@@ -438,9 +438,12 @@ def train() -> None:
             except Exception as e:
                 print(f"Model config has no use_flash_attention attribute: {e}")
         
-        print(f"Model config has use_sdpa: {model.config.use_sdpa}")
-        print(f"model.model._use_sdpa: {model.model._use_sdpa}")
-        model.model._use_sdpa = False # set sdpa to false
+        #print(f"Model config has use_sdpa: {model.config.use_sdpa}")
+        try:
+            print(f"model.model._use_sdpa: {model.model._use_sdpa}")
+            model.model._use_sdpa = False # set sdpa to false
+        except Exception as e:
+            print(f"model.model has no _use_sdpa attribute: {e}")
             
         print("SDPA and Flash Attention have been disabled")
         
