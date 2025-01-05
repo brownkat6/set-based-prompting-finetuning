@@ -364,10 +364,9 @@ class TrustedTrainer(Trainer):
         """Single evaluation step."""
         model.eval()
         with torch.no_grad():
-            # Move inputs to correct device/dtype
             inputs = self._prepare_inputs(inputs)
             
-            # Verify tensor shapes
+            # Validate tensor shapes
             batch_size = inputs["input_ids"].size(0)
             seq_len = inputs["input_ids"].size(1)
             
@@ -377,10 +376,7 @@ class TrustedTrainer(Trainer):
             assert inputs["position_ids"].size() == (batch_size, seq_len), \
                 f"Position ids should be 2D with shape {(batch_size, seq_len)}, got {inputs['position_ids'].size()}"
             
-            # Forward pass
-            outputs = model(**inputs)
-            loss = outputs.loss
-            print(f"Batch loss: {loss}")
+            loss = self.compute_loss(model, inputs)
 
         return loss
 
@@ -402,7 +398,7 @@ class TrustedTrainer(Trainer):
 
     def training_step(self, model, inputs):
         """Training step with shape validation."""
-        print(f"training step")
+        #print(f"training step")
         model.train()
         inputs = self._prepare_inputs(inputs)
         
@@ -424,7 +420,12 @@ class TrustedTrainer(Trainer):
             
         loss.backward()
         
-        return loss.detach()
+        l = loss.detach()
+        # check if loss is nan
+        if torch.isnan(l):
+            print("Loss is nan")
+            raise ValueError("Training step loss is nan")
+        return l
 
     def create_optimizer(self):
         """Setup optimizer with a dimension-based grouping so RMSNorm is included in no_decay."""
