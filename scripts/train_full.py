@@ -172,6 +172,7 @@ class SupervisedDataset(Dataset):
         sources = utils.jsonl_load(data_path)
 
         logging.warning("Tokenizing inputs... This may take some time...")
+        print(f"Creating dataset with custom position ids and attention mask")
         data_dict = preprocess(sources, tokenizer)
 
         self.input_ids = data_dict["input_ids"]
