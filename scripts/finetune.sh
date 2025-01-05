@@ -144,6 +144,7 @@ export FSDP_STATE_DICT_TYPE="FULL_STATE_DICT"
 export FSDP_OFFLOAD_PARAMS="false"
 export CUDA_VISIBLE_DEVICES=0,1,2,3
 export MASTER_PORT=29500
+export TOKENIZERS_PARALLELISM="false"
 
 # Select training script based on IS_LORA
 TRAIN_SCRIPT="scripts/train.py"

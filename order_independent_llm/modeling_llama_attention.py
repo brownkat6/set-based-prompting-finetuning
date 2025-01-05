@@ -530,7 +530,14 @@ def _update_model_kwargs_for_generation(
 
 # Used for transformers version git+https://github.com/huggingface/transformers@1c31b7aa3bb4e7ef24c77596d2a76f45a770159f
 def get_2D_attention_accepting_model_llama(model):
-    model._update_model_kwargs_for_generation = types.MethodType(
-        _update_model_kwargs_for_generation, model
-    )
+    from peft import PeftModel  # Safe import. If not installed, you'd need try-except.
+    
+    if isinstance(model, PeftModel):
+        model.base_model.model._update_model_kwargs_for_generation = types.MethodType(
+            _update_model_kwargs_for_generation, model
+        )
+    else:
+        model._update_model_kwargs_for_generation = types.MethodType(
+            _update_model_kwargs_for_generation, model
+        )
     return model

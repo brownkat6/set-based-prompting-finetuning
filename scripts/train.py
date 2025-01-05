@@ -247,34 +247,42 @@ class DataCollatorForSupervisedDataset(object):
     def __init__(self, tokenizer: transformers.PreTrainedTokenizer):
         self.tokenizer = tokenizer
 
-    def __call__(self, instances: Sequence[Dict]) -> Dict[str, torch.Tensor]:
+    def __call__(self, instances: Sequence[Dict[str, Any]]) -> Dict[str, torch.Tensor]:
         input_ids = [instance["input_ids"] for instance in instances]
         labels = [instance["labels"] for instance in instances]
-        
+        attention_masks = [instance["attention_mask"] for instance in instances]
+        position_ids = [instance["position_ids"] for instance in instances]
+
+        # Ensure consistent dtype during padding
         input_ids = torch.nn.utils.rnn.pad_sequence(
-            input_ids,
-            batch_first=True,
-            padding_value=self.tokenizer.pad_token_id,
-        )
-        labels = torch.nn.utils.rnn.pad_sequence(
-            labels,
-            batch_first=True,
-            padding_value=IGNORE_INDEX,
-        )
+            input_ids, batch_first=True, padding_value=self.tokenizer.pad_token_id
+        ).long()
         
-        result = {
+        labels = torch.nn.utils.rnn.pad_sequence(
+            labels, batch_first=True, padding_value=IGNORE_INDEX
+        ).long()
+
+        # Pad attention masks (need to handle 2D case)
+        max_len = input_ids.size(1)
+        batched_attention_mask = torch.zeros(
+            (len(instances), 1, max_len, max_len), 
+            dtype=torch.long
+        )
+        for i, mask in enumerate(attention_masks):
+            seq_len = mask.size(-1)
+            batched_attention_mask[i, :, :seq_len, :seq_len] = mask
+
+        # Pad position ids
+        position_ids = torch.nn.utils.rnn.pad_sequence(
+            position_ids, batch_first=True, padding_value=0
+        ).long()
+
+        return {
             "input_ids": input_ids,
             "labels": labels,
-            "attention_mask": input_ids.ne(self.tokenizer.pad_token_id),
+            "attention_mask": batched_attention_mask,
+            "position_ids": position_ids,
         }
-        
-        # Add position_ids and attention_mask_2d if present
-        if "position_ids" in instances[0]:
-            result["position_ids"] = torch.stack([instance["position_ids"] for instance in instances])
-        if "attention_mask" in instances[0]:
-            result["attention_mask"] = torch.stack([instance["attention_mask"] for instance in instances])
-            
-        return result
 
 class SubsetDatasetWithAttrs(torch.utils.data.Subset):
     """Subset that preserves dataset attributes."""
@@ -394,10 +402,10 @@ def train() -> None:
         model = get_peft_model(model, config)
         
         # Verify LoRA modules
-        print("\nVerifying LoRA modules:")
-        for name, module in model.named_modules():
-            if 'lora_' in name:
-                print(f"Found LoRA module: {name}")
+        #print("\nVerifying LoRA modules:")
+        #for name, module in model.named_modules():
+        #    if 'lora_' in name:
+        #        print(f"Found LoRA module: {name}")
                 
         # Print trainable parameters
         model.print_trainable_parameters()
