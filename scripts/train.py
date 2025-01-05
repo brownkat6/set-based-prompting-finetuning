@@ -447,6 +447,7 @@ def train() -> None:
         model = get_peft_model(model, config)
         
         print(f"Overriding peft model for order independent training")
+        print(model.base_model.model.forward)
         model = order_independent_llm.input_processing.get_2D_attention_accepting_model(model)
         print(model.base_model.model.forward)
         
