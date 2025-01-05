@@ -83,8 +83,6 @@ for fname in "$input_dir"/*.json; do
         --model-name $model \
         --torch-device cuda \
         --max-new-tokens $MAX_NEW_TOKENS \
-        --temp_file \
-        --append-temp-file \
         --infile $fname \
         --outfile $model_results_dir/$model_path_safe-$MAX_NEW_TOKENS-$fname_safe.jsonl
 

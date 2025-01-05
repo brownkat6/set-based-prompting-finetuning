@@ -201,6 +201,45 @@ mkdir -p "${model_dir}"
 rm -f "${model_dir}/latest"
 ln -s "${RUN_DATETIME}" "${model_dir}/latest"
 
+# Define the final weights directory path
+FINAL_WEIGHTS_DIR="${OUTPUT_DIR}/final_weights"
+
+echo "Submitting CSQA evaluation job..."
+
+# Submit CSQA evaluation job with final weights directory
+csqa_job_id=$(sbatch --dependency=afterok:$SLURM_JOB_ID \
+    --parsable \
+    --output=slurm_logs/csqa_eval_%j.out \
+    --error=slurm_logs/csqa_eval_%j.err \
+    --export=ALL \
+    --wrap="source /n/home11/katrinabrown/.bashrc && \
+           conda activate thesis && \
+           module load cuda/11.8.0-fasrc01 cudnn/8.9.2.26_cuda11-fasrc01 && \
+           bash analysis/1-2-csqa_run.sh \"${FINAL_WEIGHTS_DIR}\"")
+
+if [ $? -ne 0 ] || ! [[ "$csqa_job_id" =~ ^[0-9]+$ ]]; then
+    echo "Error: Failed to submit CSQA evaluation job"
+    exit 1
+fi
+
+echo "Submitting MMLU evaluation job..."
+
+# Submit MMLU evaluation job with final weights directory
+mmlu_job_id=$(sbatch --dependency=afterok:$SLURM_JOB_ID \
+    --parsable \
+    --output=slurm_logs/mmlu_eval_%j.out \
+    --error=slurm_logs/mmlu_eval_%j.err \
+    --export=ALL \
+    --wrap="source /n/home11/katrinabrown/.bashrc && \
+           conda activate thesis && \
+           module load cuda/11.8.0-fasrc01 cudnn/8.9.2.26_cuda11-fasrc01 && \
+           bash analysis/2-2-mmlu_run.sh \"${FINAL_WEIGHTS_DIR}\"")
+
+if [ $? -ne 0 ] || ! [[ "$mmlu_job_id" =~ ^[0-9]+$ ]]; then
+    echo "Error: Failed to submit MMLU evaluation job"
+    exit 1
+fi
+
 echo "Submitting benchmark jobs..."
 
 # Submit benchmarking jobs through benchmark_models.sh
@@ -221,8 +260,10 @@ if [ $? -ne 0 ] || ! [[ "$benchmark_job_id" =~ ^[0-9]+$ ]]; then
     exit 1
 fi
 
+echo "Submitted CSQA evaluation job with ID: ${csqa_job_id}"
+echo "Submitted MMLU evaluation job with ID: ${mmlu_job_id}"
 echo "Submitted benchmark job chain with ID: ${benchmark_job_id}"
 echo "Output directory: ${OUTPUT_DIR}"
 echo "All jobs submitted. Job chain:"
-echo "Training job (${SLURM_JOB_ID}) -> Benchmark jobs (${benchmark_job_id})"
+echo "Training job (${SLURM_JOB_ID}) -> CSQA eval (${csqa_job_id}), MMLU eval (${mmlu_job_id}), Benchmark jobs (${benchmark_job_id})"
 

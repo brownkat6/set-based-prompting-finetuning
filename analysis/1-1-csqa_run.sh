@@ -39,8 +39,6 @@ MAX_NEW_TOKENS=50
 results_dir="set-based-prompting-finetuning/results/csqa_quoted"
 input_dir="set-based-prompting-finetuning/data/csqa_quoted"
 
-
-
 # NOTE: can modify the models array to contain a list of paths to model weights (e.g. weights for a finetuned gpt model)
 models=(
     #"gpt2"
