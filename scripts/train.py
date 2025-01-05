@@ -441,9 +441,14 @@ def train() -> None:
         
         print(f"Overriding model for order independent training")
         model = order_independent_llm.input_processing.get_2D_attention_accepting_model(model)
+        print(model.forward)
         
         print("\nApplying LoRA...")
         model = get_peft_model(model, config)
+        
+        print(f"Overriding peft model for order independent training")
+        model = order_independent_llm.input_processing.get_2D_attention_accepting_model(model)
+        print(model.base_model.model.forward)
         
         # Verify LoRA modules
         #print("\nVerifying LoRA modules:")
