@@ -237,7 +237,7 @@ def run_experiment(
 
     order_independent_llm.print_with_timestamp("Loading model and tokenizer...")
 
-    model, tokenizer = order_independent_llm.load_model(model_name, torch_device)
+    model, tokenizer = order_independent_llm.load_model(model_name, torch_device, dtype="auto")
 
     prompts = order_independent_llm.SplitPrompt.from_json_file(input_file_name)
 
