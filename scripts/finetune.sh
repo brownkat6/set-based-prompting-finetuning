@@ -201,6 +201,9 @@ mkdir -p "${model_dir}"
 rm -f "${model_dir}/latest"
 ln -s "${RUN_DATETIME}" "${model_dir}/latest"
 
+# echo the path to the generate symlink
+echo "Symlink path: ${model_dir}/latest"
+
 # Define the final weights directory path
 FINAL_WEIGHTS_DIR="${OUTPUT_DIR}/final_weights"
 
