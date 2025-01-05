@@ -423,7 +423,7 @@ class TrustedTrainer(Trainer):
         l = loss.detach()
         # check if loss is nan
         if torch.isnan(l):
-            print("Loss is nan")
+            print("Training loss is nan")
             raise ValueError("Training step loss is nan")
         return l
 
@@ -632,7 +632,7 @@ def train() -> None:
         model=model,
     )
 
-    trainer = TrustedTrainer(
+    trainer = Trainer(
         model=model,
         args=training_args,
         train_dataset=data_module["train_dataset"],
