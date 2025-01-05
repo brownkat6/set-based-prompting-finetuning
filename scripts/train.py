@@ -248,41 +248,82 @@ class DataCollatorForSupervisedDataset(object):
         self.tokenizer = tokenizer
 
     def __call__(self, instances: Sequence[Dict[str, Any]]) -> Dict[str, torch.Tensor]:
-        input_ids = [instance["input_ids"] for instance in instances]
-        labels = [instance["labels"] for instance in instances]
-        attention_masks = [instance["attention_mask"] for instance in instances]
-        position_ids = [instance["position_ids"] for instance in instances]
+        # Collect lists of input_ids / labels
+        input_ids_list = [inst["input_ids"] for inst in instances]
+        labels_list = [inst["labels"] for inst in instances]
 
-        # Ensure consistent dtype during padding
+        # Flatten to 1D if needed, e.g. if shape is [1, seq_len] -> [seq_len]
+        def maybe_flatten(t: torch.Tensor) -> torch.Tensor:
+            # If dimension 0 is 1 and dimension 1 is seq_len, flatten
+            if t.dim() == 2 and t.size(0) == 1:
+                return t.view(-1)
+            return t
+
+        input_ids_list = [maybe_flatten(x) for x in input_ids_list]
+        labels_list = [maybe_flatten(x) for x in labels_list]
+
+        # Truncate to model max length, then gather the max length for this batch
+        max_len_for_model = self.tokenizer.model_max_length
+        input_ids_list = [x[:max_len_for_model] for x in input_ids_list]
+        labels_list = [x[:max_len_for_model] for x in labels_list]
+
+        # Now pad them to the same length in this batch
         input_ids = torch.nn.utils.rnn.pad_sequence(
-            input_ids, batch_first=True, padding_value=self.tokenizer.pad_token_id
-        ).long()
-        
-        labels = torch.nn.utils.rnn.pad_sequence(
-            labels, batch_first=True, padding_value=IGNORE_INDEX
-        ).long()
-
-        # Pad attention masks (need to handle 2D case)
-        max_len = input_ids.size(1)
-        batched_attention_mask = torch.zeros(
-            (len(instances), 1, max_len, max_len), 
-            dtype=torch.long
+            input_ids_list,
+            batch_first=True,
+            padding_value=self.tokenizer.pad_token_id
         )
-        for i, mask in enumerate(attention_masks):
-            seq_len = mask.size(-1)
-            batched_attention_mask[i, :, :seq_len, :seq_len] = mask
+        labels = torch.nn.utils.rnn.pad_sequence(
+            labels_list,
+            batch_first=True,
+            padding_value=IGNORE_INDEX
+        )
 
-        # Pad position ids
-        position_ids = torch.nn.utils.rnn.pad_sequence(
-            position_ids, batch_first=True, padding_value=0
-        ).long()
-
-        return {
+        # Construct the final dict
+        batch = {
             "input_ids": input_ids,
             "labels": labels,
-            "attention_mask": batched_attention_mask,
-            "position_ids": position_ids,
         }
+
+        # Now handle attention_mask or position_ids if they exist
+        # If your dataset doesn't store them, skip. Otherwise flatten/truncate similarly.
+        if "attention_mask" in instances[0]:
+            attn_list = [inst["attention_mask"] for inst in instances]
+            # Example: if shape is [1, seq_len, seq_len], flatten or fix dims
+            def process_2d_mask(m: torch.Tensor) -> torch.Tensor:
+                # If needed, clip to max_len_for_model along last two dims
+                seq_len = m.size(-1)
+                if seq_len > max_len_for_model:
+                    m = m[..., :max_len_for_model, :max_len_for_model]
+                return m
+
+            attn_list = [process_2d_mask(x) for x in attn_list]
+            # Now find the largest seq length in this batch after clipping
+            max_len_in_batch = max(x.size(-1) for x in attn_list)
+
+            # Pad each mask to that max_len_in_batch in the last two dims
+            padded_masks = []
+            for am in attn_list:
+                pad_amt = max_len_in_batch - am.size(-1)
+                if pad_amt > 0:
+                    am = torch.nn.functional.pad(am, (0, pad_amt, 0, pad_amt), value=0)
+                padded_masks.append(am)
+            attention_mask = torch.stack(padded_masks, dim=0)  # shape: (batch, 1, L, L)
+            batch["attention_mask"] = attention_mask
+
+        if "position_ids" in instances[0]:
+            pos_list = [inst["position_ids"] for inst in instances]
+            # Flatten if needed
+            pos_list = [maybe_flatten(x) for x in pos_list]
+            pos_list = [x[:max_len_for_model] for x in pos_list]
+            position_ids = torch.nn.utils.rnn.pad_sequence(
+                pos_list,
+                batch_first=True,
+                padding_value=0
+            )
+            batch["position_ids"] = position_ids
+
+        return batch
 
 class SubsetDatasetWithAttrs(torch.utils.data.Subset):
     """Subset that preserves dataset attributes."""
