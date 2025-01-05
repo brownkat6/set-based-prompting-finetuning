@@ -1,7 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=csqa_quoted
-#SBATCH --partition=seas_gpu
-#SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:1
+##SBATCH --partition=seas_gpu
+##SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:1
+#SBATCH --partition=gpu_requeue
+#SBATCH --gres=gpu:1
 #SBATCH --time=0-20:00
 #SBATCH --mem=32G
 #SBATCH --cpus-per-task=8
