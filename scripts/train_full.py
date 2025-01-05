@@ -273,9 +273,10 @@ def make_supervised_data_module(
         torch.cuda.manual_seed_all(42)
     
     print(f"Full dataset length: {len(full_dataset)}")
-    total_size = min(len(full_dataset), 1000)  # Only use 100 examples
-    indices = torch.randperm(len(full_dataset))[:total_size]
-    full_dataset = SubsetDatasetWithAttrs(full_dataset, indices)
+    total_size = len(full_dataset)
+    #total_size = min(len(full_dataset), 1000)  # Only use 100 examples
+    #indices = torch.randperm(len(full_dataset))[:total_size]
+    #full_dataset = SubsetDatasetWithAttrs(full_dataset, indices)
     
     # Calculate split sizes
     #total_size = len(full_dataset)
