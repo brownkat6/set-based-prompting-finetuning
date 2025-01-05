@@ -431,6 +431,10 @@ def train() -> None:
         if hasattr(model.config, 'use_flash_attention'):
             print(f"Model config has use_flash_attention: {model.config.use_flash_attention}")
             model.config.use_flash_attention = False
+        
+        print(f"Model config has use_sdpa: {model.config.use_sdpa}")
+        print(f"model.model._use_sdpa: {model.model._use_sdpa}")
+        model.model._use_sdpa = False # set sdpa to false
             
         print("SDPA and Flash Attention have been disabled")
         
@@ -454,17 +458,17 @@ def train() -> None:
         print("\nPreparing model for k-bit training...")
         model = prepare_model_for_kbit_training(model)
         
-        print(f"Overriding model for order independent training")
+        #print(f"Overriding model for order independent training")
         model = order_independent_llm.input_processing.get_2D_attention_accepting_model(model)
-        print(model._update_model_kwargs_for_generation)
+        #print(model._update_model_kwargs_for_generation)
         
         print("\nApplying LoRA...")
         model = get_peft_model(model, config)
         
         print(f"Overriding peft model for order independent training")
-        print(model.base_model.model._update_model_kwargs_for_generation)
+        #print(model.base_model.model._update_model_kwargs_for_generation)
         model = order_independent_llm.input_processing.get_2D_attention_accepting_model(model)
-        print(model.base_model.model._update_model_kwargs_for_generation)
+        #print(model.base_model.model._update_model_kwargs_for_generation)
         
         # Verify LoRA modules
         #print("\nVerifying LoRA modules:")
