@@ -33,7 +33,7 @@ echo "CUDA_VISIBLE_DEVICES: $CUDA_VISIBLE_DEVICES"
 echo "ARRAY TASK ID: $SLURM_ARRAY_TASK_ID"
 
 # Set this to the path of your python executable
-PYTHON_EXECUTABLE=/n/holylabs/LABS/dwork_lab/Lab/reidmcy/home/conda/envs/cuda_11/bin/python
+PYTHON_EXECUTABLE=/n/holylabs/LABS/dwork_lab/Lab/katrinabrown/home/conda/envs/thesis/bin/python
 
 MAX_NEW_TOKENS=50
 results_dir="set-based-prompting-finetuning/results/csqa_quoted"
@@ -61,7 +61,7 @@ model_path_safe=$(echo $model | sed 's/\//_/g')
 
 echo "Running model $model"
 
-/n/holylabs/LABS/dwork_lab/Lab/reidmcy/home/conda/envs/cuda_11/bin/python -c "import torch; print(torch.cuda.is_available()); print(torch.cuda.device_count()); print(torch.cuda.get_device_name(0))"
+/n/holylabs/LABS/dwork_lab/Lab/katrinabrown/home/conda/envs/thesis/bin/python -c "import torch; print(torch.cuda.is_available()); print(torch.cuda.device_count()); print(torch.cuda.get_device_name(0))"
 
 nvidia-smi
 
