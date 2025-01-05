@@ -73,7 +73,13 @@ model_results_dir=$results_dir/$model_path_safe-$MAX_NEW_TOKENS
 
 mkdir -p $model_results_dir
 
-for fname in "$input_dir"/*.json; do
+# List all JSON files and count them
+echo "Available input files in ${input_dir}:"
+ls ${input_dir}/*.json
+file_count=$(ls ${input_dir}/*.json | wc -l)
+echo "Found $file_count files to process"
+
+for fname in ${input_dir}/*.json; do
     start_time=$(date +%s)
     echo "Running model $model on $fname"
 
