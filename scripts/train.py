@@ -421,16 +421,15 @@ def train() -> None:
             model_args.model_name_or_path,
             cache_dir=training_args.cache_dir,
             torch_dtype=dtype,
-            # Explicitly disable SDPA in attention config
-            use_flash_attention=False,
-            use_sdpa=False,
         )
         model = model.to(device)
         
         # Verify SDPA is disabled
         if hasattr(model.config, 'use_sdpa'):
+            print(f"Model config has use_sdpa: {model.config.use_sdpa}")
             model.config.use_sdpa = False
         if hasattr(model.config, 'use_flash_attention'):
+            print(f"Model config has use_flash_attention: {model.config.use_flash_attention}")
             model.config.use_flash_attention = False
             
         print("SDPA and Flash Attention have been disabled")
