@@ -8,6 +8,7 @@ import accelerate
 import torch
 import transformers
 import transformers.tokenization_utils_base
+from peft import PeftModel
 
 from .attention_mask_editing import (
     get_attention_mask_2d_n_options,
@@ -26,7 +27,7 @@ from .utils import get_HF_TOKEN
 def get_2D_attention_accepting_model(model):
     if isinstance(model, transformers.GPT2LMHeadModel):
         return get_2D_attention_accepting_model_gpt(model)
-    elif isinstance(model, transformers.LlamaForCausalLM):
+    elif isinstance(model, transformers.LlamaForCausalLM) or isinstance(model, PeftModel):
         # print(f"Modify llama model to accept 2D attention mask")
         return get_2D_attention_accepting_model_llama(model)
     elif isinstance(model, transformers.MistralForCausalLM) or isinstance(model, transformers.MixtralForCausalLM):
