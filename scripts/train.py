@@ -549,6 +549,20 @@ def train() -> None:
         eval_dataset=data_module["eval_dataset"],
         data_collator=data_module["data_collator"],
     )
+    
+    print("=== DEBUG: Checking sample batch ===")
+    first_batch = next(iter(data_module["train_dataset"]))
+    # Inspect shape and example token indices
+    print("input_ids:", first_batch["input_ids"])
+    print("labels:", first_batch["labels"])
+    # Then run a quick forward pass manually
+    with torch.set_grad_enabled(True):
+        outputs = model(
+            input_ids=first_batch["input_ids"].unsqueeze(0).to(device),
+            labels=first_batch["labels"].unsqueeze(0).to(device)
+        )
+        print(outputs.keys())
+        print(outputs.loss, outputs.loss.requires_grad, outputs.logits.shape)
 
     # Verify trainer setup
     print("\nVerifying trainer configuration:")
