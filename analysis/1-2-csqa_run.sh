@@ -7,8 +7,8 @@
 #SBATCH --cpus-per-task=8
 
 #SBATCH --open-mode=append
-#SBATCH --output=slurm_logs/%x.stdout
-#SBATCH --error=slurm_logs/%x.stderr
+#SBATCH --output=slurm_logs/%x-%j.stdout
+#SBATCH --error=slurm_logs/%x-%j.stderr
 
 # Runs for a single model
 
