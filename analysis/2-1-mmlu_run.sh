@@ -71,7 +71,7 @@ model_results_dir=$results_dir/$model_path_safe-$MAX_NEW_TOKENS
 
 mkdir -p $model_results_dir
 
-for fname in $input_dir/*.json; do
+for fname in "$input_dir"/*.json; do
     start_time=$(date +%s)
     echo "Running model $model on $fname"
 
