@@ -33,21 +33,6 @@ def main() -> None:
         "--model-name",
         type=str,
         help="name of the model to test",
-        choices=[
-            "gpt2",
-            "meta-llama/Llama-2-7b-chat-hf",
-            "meta-llama/Llama-2-7b-hf",
-            "meta-llama/Llama-2-13b-hf",
-            "meta-llama/Llama-2-13b-chat-hf",
-            "meta-llama/Llama-2-70b-hf",
-            "meta-llama/llama-2-70b-chat-hf",
-            "WizardLM/WizardLM-7B-V1.0",
-            "lmsys/vicuna-7b-v1.5",
-            "meta-llama/Meta-Llama-3-8B",
-            "mistralai/Mistral-7B-Instruct-v0.2",
-            "meta-llama/Meta-Llama-3-70B",
-            "meta-llama/Meta-Llama-3-70B-Instruct",
-        ],
         default="gpt2",
     )
 
