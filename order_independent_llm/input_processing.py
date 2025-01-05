@@ -596,8 +596,15 @@ def order_independent_query(
         # Modify the given model to accept a 2D attention mask as input
         if modify_model:
             model = get_2D_attention_accepting_model(model)
+        # Ensure all inputs are on same device as model
+        model_device = next(model.parameters()).device
+        input_ids = tokAll["input_ids"].to(model_device)
+        if attention_mask_2d is not None:
+            attention_mask_2d = attention_mask_2d.to(model_device)
+        if position_ids is not None:
+            position_ids = position_ids.to(model_device)
         generated = model.generate(
-            tokAll["input_ids"],
+            input_ids,
             max_new_tokens=max_new_tokens,
             attention_mask=attention_mask_2d,
             position_ids=position_ids,
