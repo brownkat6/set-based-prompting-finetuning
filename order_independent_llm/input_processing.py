@@ -72,7 +72,7 @@ def get_tokenized_input_prompt_recursive(
             )  # type: ignore
             tokAll["attention_mask"] = torch.cat(
                 (tokAll["attention_mask"], toks["attention_mask"][0].unsqueeze(0)), dim=1  # type: ignore
-            )  # type: ignore
+            )
         else:
             for tokOption in toks:
                 tokAll["input_ids"] = torch.cat(
@@ -456,30 +456,55 @@ def calc_perplexity(input_ids, attention_mask, position_ids, model):
     perplexity=torch.exp(out.loss).item()
     return loss,perplexity
 
-def calc_perplexity_option(input_ids,attention_mask,position_ids,option,model,tokenizer):
+def calc_perplexity_option(input_ids, attention_mask, position_ids, option, model, tokenizer):
     '''
     Compute the perplexity of the sequence defined by input_ids and the tokenized option string
     '''
-    label_input_ids = tokenizer(option, return_tensors="pt")["input_ids"]
+    # Get model's device
+    device = model.device
+    
+    # Tokenize option and move to correct device
+    label_input_ids = tokenizer(option, return_tensors="pt")["input_ids"].to(device)
     nTokLabel = label_input_ids.shape[1]
+    
+    # Concatenate input_ids with label_input_ids (ensuring both are on same device)
     label_input_ids = torch.cat(
-            (input_ids, label_input_ids), dim=1  # type: ignore
-        )  # type: ignore
-    # Add nTokLabel ones (in triangular format) to the 2D attention mask
-    label_attention_mask=None
+        (input_ids.to(device), label_input_ids), dim=1
+    )
+
+    # Handle attention mask if present
+    label_attention_mask = None
     if attention_mask is not None:
-        n=attention_mask.shape[-1]
+        attention_mask = attention_mask.to(device)
+        n = attention_mask.shape[-1]
+        # Add zeros for new tokens
         label_attention_mask = torch.cat(
-            (attention_mask, torch.zeros((attention_mask.shape[0],1, attention_mask.shape[-1],nTokLabel), dtype=torch.int)), dim=3
+            (attention_mask, torch.zeros((attention_mask.shape[0], 1, attention_mask.shape[-1], nTokLabel), 
+                                      dtype=torch.int, device=device)), dim=3
         )
-        n=torch.ones(1,1,nTokLabel,n+nTokLabel)
-        n[0,0,:,-nTokLabel:]=torch.tril(torch.ones((1,1,nTokLabel,nTokLabel)))
+        # Create triangular attention pattern for new tokens
+        n = torch.ones(1, 1, nTokLabel, n + nTokLabel, device=device)
+        n[0, 0, :, -nTokLabel:] = torch.tril(torch.ones((1, 1, nTokLabel, nTokLabel), device=device))
         label_attention_mask = torch.cat(
             (label_attention_mask, n), dim=2
         )
+
+    # Handle position_ids if present
     if position_ids is not None:
-        position_ids = torch.cat((position_ids[0],torch.arange(position_ids.max()+1,position_ids.max()+1+nTokLabel))).unsqueeze(0)
-    option_loss,option_perplexity = calc_perplexity(label_input_ids, label_attention_mask, position_ids, model)
+        position_ids = position_ids.to(device)
+        position_ids = torch.cat(
+            (position_ids[0], 
+             torch.arange(position_ids.max()+1, position_ids.max()+1+nTokLabel, device=device)
+            )).unsqueeze(0)
+
+    # Calculate perplexity
+    option_loss, option_perplexity = calc_perplexity(
+        label_input_ids, 
+        label_attention_mask, 
+        position_ids, 
+        model
+    )
+    
     return option_perplexity
 
 def calc_options_perplexity_dict(input_ids,attention_mask,position_ids,metadata,model,tokenizer):
