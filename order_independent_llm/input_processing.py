@@ -301,7 +301,7 @@ def genOrderIndependentOutput(
     return generated, text
 
 
-def load_model(model_name, torch_device:typing.Literal["auto", "cpu", "cuda"]="auto", dtype:typing.Literal["float16", "float32", "bfloat16"]="float16") -> typing.Tuple[typing.Union[
+def load_model(model_name, torch_device:typing.Literal["auto", "cpu", "cuda"]="auto", dtype:typing.Literal["float16", "float32", "bfloat16", "auto"]="auto") -> typing.Tuple[typing.Union[
     transformers.PreTrainedModel,transformers.GPT2LMHeadModel],
     typing.Union[
     transformers.PreTrainedTokenizer,transformers.PreTrainedTokenizerFast],
