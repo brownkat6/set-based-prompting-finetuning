@@ -307,17 +307,43 @@ def load_model(model_name, torch_device:typing.Literal["auto", "cpu", "cuda"]="a
     transformers.PreTrainedTokenizer,transformers.PreTrainedTokenizerFast],
 ]:
     HF_TOKEN = get_HF_TOKEN()
+    
+    # Check if model_name is a local path
+    is_local_path = os.path.exists(model_name)
+    
     if model_name == "gpt2":
         model = transformers.GPT2LMHeadModel.from_pretrained("gpt2", device_map=torch_device, torch_dtype=dtype)
         tokenizer = transformers.GPT2Tokenizer.from_pretrained("gpt2")
         tokenizer.pad_token_id = tokenizer.eos_token_id
-    else:  # e.g model_name == "meta-llama/Llama-2-7b-chat-hf"
-        tokenizer = transformers.AutoTokenizer.from_pretrained(
-            model_name.replace("final_weights","initial_weights").replace("checkpoint-98","initial_weights"), use_auth_token=HF_TOKEN, use_fast=True, cache_dir="/n/holylabs/LABS/dwork_lab/Everyone/cache/transformers",
-        )
+    else:  # e.g model_name == "meta-llama/Llama-2-7b-chat-hf" or local path
+        # For local paths, we need the original model name to load the tokenizer
+        if is_local_path:
+            # Extract base model name from path (assuming standard directory structure)
+            base_model_name = "/".join(model_name.split("/")[-4:-2])  # e.g., "meta-llama/Llama-2-7b-hf"
+            print(f"Loading tokenizer from local path: {base_model_name}")
+            tokenizer = transformers.AutoTokenizer.from_pretrained(
+                base_model_name,
+                use_auth_token=HF_TOKEN,
+                use_fast=True,
+                cache_dir="/n/holylabs/LABS/dwork_lab/Everyone/cache/transformers",
+            )
+        else:
+            print(f"Loading tokenizer from HF Hub:",model_name.replace("final_weights","initial_weights").replace("checkpoint-98","initial_weights"))
+            tokenizer = transformers.AutoTokenizer.from_pretrained(
+                model_name.replace("final_weights","initial_weights").replace("checkpoint-98","initial_weights"),
+                use_auth_token=HF_TOKEN,
+                use_fast=True,
+                cache_dir="/n/holylabs/LABS/dwork_lab/Everyone/cache/transformers",
+            )
         tokenizer.pad_token_id = tokenizer.eos_token_id
+        
+        # Load the model (either from local path or HF Hub)
         model = transformers.AutoModelForCausalLM.from_pretrained(
-            model_name, use_auth_token=HF_TOKEN, device_map=torch_device, cache_dir="/n/holylabs/LABS/dwork_lab/Everyone/cache/transformers", torch_dtype=dtype,
+            model_name,
+            use_auth_token=HF_TOKEN,
+            device_map=torch_device,
+            cache_dir="/n/holylabs/LABS/dwork_lab/Everyone/cache/transformers",
+            torch_dtype=dtype,
         )
     return model, tokenizer  # type: ignore
 
