@@ -23,7 +23,7 @@ echo "Starting job $SLURM_JOB_ID"
 
 echo "loading modules"
 # Load modules
-# conda activate cuda_11
+# conda activate thesis
 module load python/3.10.9-fasrc01
 module load cuda/11.8.0-fasrc01
 module load cudnn/8.9.2.26_cuda11-fasrc01
@@ -33,7 +33,7 @@ echo "CUDA_VISIBLE_DEVICES: $CUDA_VISIBLE_DEVICES"
 echo "ARRAY TASK ID: $SLURM_ARRAY_TASK_ID"
 
 # Set this to the path of your python executable
-PYTHON_EXECUTABLE=/n/holylabs/LABS/dwork_lab/Lab/katrinabrown/home/conda/envs/cuda_11/bin/python
+PYTHON_EXECUTABLE=/n/holylabs/LABS/dwork_lab/Lab/katrinabrown/home/conda/envs/thesis/bin/python
 
 MAX_NEW_TOKENS=50
 results_dir="set-based-prompting-finetuning/results/mmlu_quoted"
@@ -59,7 +59,7 @@ model_path_safe=$(echo $model | sed 's/\//_/g')
 
 echo "Running model $model"
 
-/n/holylabs/LABS/dwork_lab/Lab/katrinabrown/home/conda/envs/cuda_11/bin/python -c "import torch; print(torch.cuda.is_available()); print(torch.cuda.device_count()); print(torch.cuda.get_device_name(0))"
+/n/holylabs/LABS/dwork_lab/Lab/katrinabrown/home/conda/envs/thesis/bin/python -c "import torch; print(torch.cuda.is_available()); print(torch.cuda.device_count()); print(torch.cuda.get_device_name(0))"
 
 nvidia-smi
 
