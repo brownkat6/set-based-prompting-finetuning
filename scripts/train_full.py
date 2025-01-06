@@ -149,15 +149,7 @@ def preprocess(
         labels.append(inputs["input_ids"][0])  # Labels are same as input_ids for causal LM
         attention_masks.append(inputs["attention_mask"][0])  # Remove batch dimension
         position_ids.append(inputs["position_ids"][0])  # Remove batch dimension
-    
-    # print some info about the dataset we just generated
-    print(f"Generated dataset with {len(input_ids)} examples")
-    print(sources[:5])
-    print(f"First example: {input_ids[0]}")
-    print(f"First label: {labels[0]}")
-    print(f"First attention mask: {attention_masks[0]}")
-    print(f"First position ids: {position_ids[0]}")
-    
+        
     return dict(
         input_ids=input_ids,
         labels=labels,
@@ -649,20 +641,6 @@ def train() -> None:
         eval_dataset=data_module["eval_dataset"],
         data_collator=data_module["data_collator"],
     )
-    
-    print("=== DEBUG: Checking sample batch ===")
-    first_batch = next(iter(data_module["train_dataset"]))
-    # Inspect shape and example token indices
-    print("input_ids:", first_batch["input_ids"])
-    print("labels:", first_batch["labels"])
-    # Then run a quick forward pass manually
-    with torch.set_grad_enabled(True):
-        outputs = model(
-            input_ids=first_batch["input_ids"].unsqueeze(0).to(device),
-            labels=first_batch["labels"].unsqueeze(0).to(device)
-        )
-        print(outputs.keys())
-        print(outputs.loss, outputs.loss.requires_grad, outputs.logits.shape)
 
     # Add timing callback
     class TimingCallback(transformers.TrainerCallback):
@@ -761,6 +739,32 @@ def get_parallel_inputs(
     Process a prompt and return the input tensors needed for processing.
     Handles both regular prompts and those with parallel substrings.
     """
+    # Check if this is a parallel processing prompt
+    if "<|start_2d|>" not in prompt:
+        # Regular prompt without parallel sections
+        tokAll = tokenizer(
+            prompt,
+            return_tensors="pt",
+            add_special_tokens=True,
+            return_token_type_ids=False,
+        )
+        nTokAll = tokAll["input_ids"].size(1)
+        
+        # Create standard causal attention mask expanded to 4D
+        causal_mask = torch.tril(torch.ones((nTokAll, nTokAll), dtype=torch.bool))
+        attention_mask_2d = causal_mask.unsqueeze(0).unsqueeze(0)  # Shape: [1, 1, seq_len, seq_len]
+        attention_mask_2d = attention_mask_2d.to(torch.float32)  # Convert to float32 like parallel case
+        
+        # Create standard ascending position IDs
+        position_ids = torch.arange(0, nTokAll).unsqueeze(0)  # Shape: [1, seq_len]
+        
+        return {
+            "input_ids": tokAll["input_ids"],
+            "position_ids": position_ids,
+            "attention_mask": attention_mask_2d
+        }
+
+    # Original parallel processing code for prompts with <|start_2d|> tags
     if "<|start_2d|>" not in prompt or "<|end_2d|>" not in prompt:
         raise ValueError("Prompt must contain <|start_2d|> and <|end_2d|> tags")
         
