@@ -103,7 +103,7 @@ fi
 MODEL_NAME="meta-llama/Llama-2-7b-hf"
 model_path_safe=$(echo $MODEL_NAME | sed 's/\//_/g')
 # Include IS_LORA in output directory name
-OUTPUT_DIR="${BASE_DIR}/${MODEL_NAME}/${RUN_DATETIME}-${IS_LORA}"
+OUTPUT_DIR="${BASE_DIR}/${MODEL_NAME}/${train_data_safe}/${RUN_DATETIME}-${IS_LORA}"
 
 # Create run-specific benchmarks file
 BENCHMARKS_FILE="${OUTPUT_DIR}/benchmarks.jsonl"
