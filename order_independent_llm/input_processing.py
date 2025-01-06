@@ -317,7 +317,8 @@ def load_model(model_name, torch_device:typing.Literal["auto", "cpu", "cuda"]="a
         tokenizer.pad_token_id = tokenizer.eos_token_id
     else:  # e.g model_name == "meta-llama/Llama-2-7b-chat-hf" or local path
         # For local paths, we need the original model name to load the tokenizer
-        if is_local_path:
+        #if is_local_path:
+        if False:
             # Extract base model name from path (assuming standard directory structure)
             base_model_name = "/".join(model_name.split("/")[-4:-2])  # e.g., "meta-llama/Llama-2-7b-hf"
             print(f"Loading tokenizer from local path: {base_model_name}")
