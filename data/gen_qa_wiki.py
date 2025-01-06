@@ -35,9 +35,12 @@ def process_file(input_path: str, output_path: str, wiki_texts):
         if not text or text.isspace():
             continue
             
-        # Create new entry with WikiText
+        # Truncate text to 200 characters
+        truncated_text = text[:250]
+            
+        # Create new entry with truncated WikiText
         wiki_entry = {
-            "prompt": text,
+            "prompt": truncated_text,
             "prompt_metadata": {}
         }
         all_entries.append(wiki_entry)
@@ -67,6 +70,10 @@ def main():
     wikitext = load_dataset("wikitext", "wikitext-103-v1", split="train")
     wiki_texts = wikitext["text"]
     print(f"Loaded {len(wiki_texts)} WikiText entries")
+    
+    # Find longest entry before truncation
+    max_length = max(len(text) for text in wiki_texts if text and not text.isspace())
+    print(f"Longest WikiText entry before truncation: {max_length} characters")
     
     # Create output directories and process files
     for dataset in ['csqa', 'mmlu']:

@@ -17,8 +17,8 @@ def process_file(input_path: str, output_path_qa: str, output_path_noqa: str):
     # Modify each entry to add s2d/e2d markers
     for entry in data_qa:
         # Add s2d before start_2d and e2d after end_2d
-        entry["prompt"] = entry["prompt"].replace("<|start_2d|>", "<s2d><|start_2d|>")
-        entry["prompt"] = entry["prompt"].replace("<|end_2d|>", "<|end_2d|><e2d>")
+        entry["prompt"] = entry["prompt"].replace("<|start_2d|>", "|s2d|<|start_2d|>")
+        entry["prompt"] = entry["prompt"].replace("<|end_2d|>", "<|end_2d|>|e2d|")
     
     # Modify non-QA entries (remove answer and add s2d/e2d markers)
     for entry in data_noqa:
@@ -26,8 +26,8 @@ def process_file(input_path: str, output_path_qa: str, output_path_noqa: str):
         if "Answer: " in entry["prompt"]:
             entry["prompt"] = entry["prompt"].split("Answer: ")[0] + "Answer: "
         # Add s2d before start_2d and e2d after end_2d
-        entry["prompt"] = entry["prompt"].replace("<|start_2d|>", "<s2d><|start_2d|>")
-        entry["prompt"] = entry["prompt"].replace("<|end_2d|>", "<|end_2d|><e2d>")
+        entry["prompt"] = entry["prompt"].replace("<|start_2d|>", "|s2d|<|start_2d|>")
+        entry["prompt"] = entry["prompt"].replace("<|end_2d|>", "<|end_2d|>|e2d|")
     
     # Write to output files
     os.makedirs(os.path.dirname(output_path_qa), exist_ok=True)
