@@ -27,10 +27,10 @@ cleanup() {
     exit $exit_code
 }
 
-# Sample: sbatch finetune.sh False mmlu_quoted.jsonl
-# Sample: sbatch finetune.sh False mmlu_quoted_qa.jsonl
-# Sample: sbatch finetune.sh False mmlu_quoted_qa_wiki.jsonl
-# Sample: sbatch finetune.sh False mmlu_quoted_qa_s2d.jsonl csqa_quoted_s2d mmlu_quoted_s2d
+# Sample: sbatch scripts/finetune.sh False mmlu_quoted.jsonl
+# Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa.jsonl
+# Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki.jsonl
+# Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_s2d.jsonl csqa_quoted_s2d mmlu_quoted_s2d
 
 # Register cleanup function to run on script exit
 trap cleanup EXIT
@@ -103,7 +103,7 @@ fi
 MODEL_NAME="meta-llama/Llama-2-7b-hf"
 model_path_safe=$(echo $MODEL_NAME | sed 's/\//_/g')
 # Include IS_LORA in output directory name
-OUTPUT_DIR="${BASE_DIR}/${MODEL_NAME}/${train_data_safe}/${RUN_DATETIME}-${IS_LORA}"
+OUTPUT_DIR="${BASE_DIR}/${MODEL_NAME}/${TRAIN_DATA%.jsonl}/${RUN_DATETIME}-${IS_LORA}"
 
 # Create run-specific benchmarks file
 BENCHMARKS_FILE="${OUTPUT_DIR}/benchmarks.jsonl"
