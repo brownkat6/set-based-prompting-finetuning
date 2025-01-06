@@ -102,34 +102,6 @@ def smart_tokenizer_and_embedding_resize(
         input_embeddings[-num_new_tokens:] = input_embeddings_avg
         output_embeddings[-num_new_tokens:] = output_embeddings_avg
 
-
-def _tokenize_fn(
-    strings: Sequence[str], 
-    tokenizer: transformers.PreTrainedTokenizer
-) -> Dict[str, List[Union[torch.Tensor, int]]]:
-    """Tokenize a list of strings."""
-    tokenized_list = [
-        tokenizer(
-            text,
-            return_tensors="pt",
-            padding="longest",
-            max_length=tokenizer.model_max_length,
-            truncation=True,
-        )
-        for text in strings
-    ]
-    input_ids = labels = [tokenized.input_ids[0] for tokenized in tokenized_list]
-    input_ids_lens = labels_lens = [
-        tokenized.input_ids.ne(tokenizer.pad_token_id).sum().item() for tokenized in tokenized_list
-    ]
-    return dict(
-        input_ids=input_ids,
-        labels=labels,
-        input_ids_lens=input_ids_lens,
-        labels_lens=labels_lens,
-    )
-
-
 def preprocess(
     sources: Sequence[str],
     tokenizer: transformers.PreTrainedTokenizer,
@@ -180,6 +152,9 @@ class SupervisedDataset(Dataset):
         self.attention_mask = data_dict["attention_mask"]
         self.position_ids = data_dict["position_ids"]
         self.dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
+        
+        print(self.attention_mask[0].dtype, self.attention_mask[0].shape, self.position_ids[0].dtype, self.position_ids[0].shape, self.input_ids[0].dtype, self.input_ids[0].shape)
+        
 
     def __len__(self) -> int:
         return len(self.input_ids)
@@ -188,8 +163,8 @@ class SupervisedDataset(Dataset):
         return {
                 "input_ids": self.input_ids[i].long(),
                 "labels": self.labels[i].long(),
-                "attention_mask": self.attention_mask[i],
-                "position_ids": self.position_ids[i]
+                "attention_mask": self.attention_mask[i].long(), # NOTE: converting attention_mask and position_ids to long as well
+                "position_ids": self.position_ids[i].long(),
             }
 
 
@@ -298,229 +273,6 @@ def make_supervised_data_module(
         eval_dataset=eval_dataset,
         data_collator=data_collator
     )
-
-class TrustedTrainer(Trainer):
-    """Custom trainer that handles noise functions during both training and evaluation."""
-    
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
-
-    def evaluate(self, eval_dataset=None, ignore_keys=None, metric_key_prefix="eval"):
-        """Run evaluation and returns metrics."""
-        print("Evaluating...")
-        
-        # Get current epoch number (1-based indexing)
-        current_epoch = int(self.state.epoch)
-        print(f"\nEvaluating epoch {current_epoch}")
-        
-        # Print eval dataset length
-        if eval_dataset is None:
-            eval_dataset = self.eval_dataset
-        print(f"Evaluation dataset length: {len(eval_dataset)}")
-        
-        # Get dataloader
-        eval_dataloader = self.get_eval_dataloader(eval_dataset)
-        print(f"Number of evaluation batches: {len(eval_dataloader)}")
-        
-        # Initialize metrics
-        total_loss = 0.0
-        num_batches = 0
-        
-        # Evaluation loop
-        model = self.model
-        model.eval()
-        
-        for batch in eval_dataloader:
-            with torch.no_grad():
-                loss = self.evaluation_step(model, batch)
-                total_loss += loss.item()
-                print(f"Batch loss: {loss}")
-                num_batches += 1
-                
-        # Compute average loss
-        if num_batches == 0:
-            print("No batches found")
-        avg_loss = total_loss / num_batches if num_batches > 0 else float('nan')
-        
-        metrics = {
-            "eval_loss": avg_loss,
-            "epoch": current_epoch
-        }
-        
-        print(f"Evaluation metrics: {metrics}")
-        return metrics
-
-    def _prepare_inputs(self, inputs: Dict[str, Union[torch.Tensor, Any]]) -> Dict[str, Union[torch.Tensor, Any]]:
-        """Prepare inputs by placing them on the correct device and dtype."""
-        inputs = super()._prepare_inputs(inputs)
-        
-        for k, v in inputs.items():
-            if isinstance(v, torch.Tensor):
-                if k not in ["input_ids", "labels", "attention_mask", "position_ids"]:
-                    inputs[k] = v.to(self.dtype)
-        
-        return inputs
-
-    def evaluation_step(self, model, inputs):
-        """Single evaluation step."""
-        model.eval()
-        with torch.no_grad():
-            inputs = self._prepare_inputs(inputs)
-            
-            # Validate tensor shapes
-            batch_size = inputs["input_ids"].size(0)
-            seq_len = inputs["input_ids"].size(1)
-            
-            assert inputs["attention_mask"].size() == (batch_size, 1, seq_len, seq_len), \
-                f"Attention mask should be 4D with shape {(batch_size, 1, seq_len, seq_len)}, got {inputs['attention_mask'].size()}"
-            
-            assert inputs["position_ids"].size() == (batch_size, seq_len), \
-                f"Position ids should be 2D with shape {(batch_size, seq_len)}, got {inputs['position_ids'].size()}"
-            
-            loss = self.compute_loss(model, inputs)
-
-        return loss
-
-    def get_eval_dataloader(self, eval_dataset=None):
-        """Override to ensure we use our custom data collator for evaluation."""
-        print("Getting eval dataloader...")
-        if eval_dataset is None and self.eval_dataset is None:
-            raise ValueError("Trainer: evaluation requires an eval_dataset.")
-        
-        eval_dataset = eval_dataset if eval_dataset is not None else self.eval_dataset
-        
-        return DataLoader(
-            eval_dataset,
-            batch_size=self.args.per_device_eval_batch_size,
-            collate_fn=self.data_collator,
-            num_workers=self.args.dataloader_num_workers,
-            pin_memory=self.args.dataloader_pin_memory,
-        )
-
-    def training_step(self, model, inputs):
-        """Training step with shape validation."""
-        #print(f"training step")
-        model.train()
-        inputs = self._prepare_inputs(inputs)
-        
-        # Validate tensor shapes
-        batch_size = inputs["input_ids"].size(0)
-        seq_len = inputs["input_ids"].size(1)
-        
-        assert inputs["attention_mask"].size() == (batch_size, 1, seq_len, seq_len), \
-            f"Attention mask should be 4D with shape {(batch_size, 1, seq_len, seq_len)}, got {inputs['attention_mask'].size()}"
-        
-        assert inputs["position_ids"].size() == (batch_size, seq_len), \
-            f"Position ids should be 2D with shape {(batch_size, seq_len)}, got {inputs['position_ids'].size()}"
-        
-        with self.compute_loss_context_manager():
-            loss = self.compute_loss(model, inputs)
-            
-        if self.args.gradient_accumulation_steps > 1:
-            loss = loss / self.args.gradient_accumulation_steps
-            
-        loss.backward()
-        
-        l = loss.detach()
-        # check if loss is nan
-        if torch.isnan(l):
-            print("Training loss is nan")
-            raise ValueError("Training step loss is nan")
-        return l
-
-    def create_optimizer(self):
-        """Setup optimizer with a dimension-based grouping so RMSNorm is included in no_decay."""
-        if self.optimizer is None:
-            print("Creating optimizer...")
-
-            # 1. Separate params into 'decay' vs. 'no_decay' via dimension (and bias).
-            decay, no_decay = [], []
-            for name, param in self.model.named_parameters():
-                if not param.requires_grad:
-                    continue
-
-                # Put 1D parameters (e.g., LayerNorm, RMSNorm, embeddings) and biases in no_decay
-                if param.ndim == 1 or name.endswith(".bias"):
-                    no_decay.append(param)
-                else:
-                    decay.append(param)
-
-            optimizer_grouped_parameters = [
-                {
-                    "params": decay,
-                    "weight_decay": self.args.weight_decay,
-                },
-                {
-                    "params": no_decay,
-                    "weight_decay": 0.0,
-                },
-            ]
-
-            print("Getting optimizer class and kwargs...")
-            optimizer_cls, optimizer_kwargs = Trainer.get_optimizer_cls_and_kwargs(self.args)
-
-            # 2. Check FSDP compatibility and other advanced features
-            print("Checking for FSDP...")
-            try:
-                if hasattr(self.model, "is_fsdp_enabled") and self.model.is_fsdp_enabled:
-                    print("FSDP detected - applying FSDP-specific optimizations")
-                    optimizer_kwargs["fsdp_optimizer"] = True
-                    if getattr(self.args, "fp16", False):
-                        from torch.distributed.fsdp.sharded_grad_scaler import ShardedGradScaler
-                        self.scaler = ShardedGradScaler()
-            except Exception as e:
-                print(f"Error during FSDP check: {e}")
-                print("Continuing with standard optimizer setup")
-
-            print("Creating optimizer with the following config:")
-            # NOTE: set foreach=False to avoid FSDP issues
-            optimizer_kwargs["foreach"] = False
-            print(f"  Optimizer class: {optimizer_cls.__name__}")
-            print(f"  Optimizer kwargs: {optimizer_kwargs}")
-            print(f"  Number of parameter groups: {len(optimizer_grouped_parameters)}")
-
-            self.optimizer = optimizer_cls(optimizer_grouped_parameters, **optimizer_kwargs)
-            print("Optimizer created successfully")
-        else:
-            print("Optimizer already exists")
-            # set foreach=False to avoid FSDP issues
-            self.optimizer.foreach = False
-
-        return self.optimizer
-
-    def _verify_optimizer_state(self):
-        """Verify optimizer state matches parameter shapes."""
-        total_params = 0
-        total_state_size = 0
-        
-        '''
-        for group_idx, group in enumerate(self.optimizer.param_groups):
-            print(f"\nParameter Group {group_idx}:")
-            for param_idx, p in enumerate(group['params']):
-                # Check parameter
-                print(f"\nParameter {param_idx}:")
-                print(f"  Shape: {p.shape}")
-                print(f"  Elements: {p.numel()}")
-                total_params += p.numel()
-                
-                # Print parameter info without checking optimizer state membership
-                try:
-                    print("  Parameter info:")
-                    print(f"    Size: {p.numel()}")
-                    if hasattr(p, 'grad') and p.grad is not None:
-                        print(f"    Gradient shape: {p.grad.shape}")
-                        print(f"    Gradient size: {p.grad.numel()}")
-                        total_state_size += p.grad.numel()
-                except Exception as e:
-                    print(f"  Error getting parameter info: {e}")
-        '''
-
-        print(f"\nTotal Statistics:")
-        print(f"Total parameter elements: {total_params}")
-        print(f"Total gradient elements: {total_state_size}")
-        # print whether optimizer is using foreach
-        print(f"Optimizer using foreach: {self.optimizer.foreach}")
 
 def train() -> None:
     parser = transformers.HfArgumentParser((ModelArguments, DataArguments, TrainingArguments))
@@ -641,6 +393,20 @@ def train() -> None:
         eval_dataset=data_module["eval_dataset"],
         data_collator=data_module["data_collator"],
     )
+    
+    print("=== DEBUG: Checking sample batch ===")
+    first_batch = next(iter(data_module["train_dataset"]))
+    # Inspect shape and example token indices
+    print("input_ids:", first_batch["input_ids"])
+    print("labels:", first_batch["labels"])
+    # Then run a quick forward pass manually
+    with torch.set_grad_enabled(True):
+        outputs = model(
+            input_ids=first_batch["input_ids"].unsqueeze(0).to(device),
+            labels=first_batch["labels"].unsqueeze(0).to(device)
+        )
+        print(outputs.keys())
+        print(outputs.loss, outputs.loss.requires_grad, outputs.logits.shape)
 
     # Add timing callback
     class TimingCallback(transformers.TrainerCallback):
