@@ -656,6 +656,8 @@ def order_independent_query(
         scores = torch.stack(generated.scores, dim=1).to("cpu") # type: ignore
         # We don't care about the logits for the special tokens
         scores[:, :, tokenizer.all_special_ids] = torch.nan
+        max_seq_len = scores.size(1)
+        class_ids = class_ids[:, :max_seq_len]  # Truncate to match sequence length
         score_of_labels = scores.gather(dim=2, index=class_ids.T.expand(1, -1, -1))
         # For each output sequence, compute the mean across the non-special tokens, then softmax across output sequences
         mean_logit_scores_per_label = score_of_labels.nanmean(dim=1)

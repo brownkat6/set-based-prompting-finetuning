@@ -386,7 +386,7 @@ def train() -> None:
         model=model,
     )
 
-    trainer = Trainer(
+    trainer = TrustedTrainer(
         model=model,
         args=training_args,
         train_dataset=data_module["train_dataset"],
@@ -576,6 +576,15 @@ def get_parallel_inputs(
         "position_ids": position_ids,
         "attention_mask": attention_mask_2d
     }
+
+
+class TrustedTrainer(Trainer):
+    def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
+        assert "labels" in inputs, "Labels must be present in inputs"
+        # assert that position_ids and attention_mask are present
+        assert "position_ids" in inputs, "Position IDs must be present in inputs"
+        assert "attention_mask" in inputs, "Attention mask must be present in inputs"
+        return super().compute_loss(model, inputs, return_outputs, num_items_in_batch)
 
 
 if __name__ == "__main__":
