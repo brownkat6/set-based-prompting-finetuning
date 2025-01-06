@@ -7,18 +7,11 @@
 ##SBATCH --gres=gpu:nvidia_h100_80gb_hbm3:4
 #SBATCH --gres=gpu:4
 #SBATCH --constraint='(a40|v100|a100|h100)'
-##SBATCH --constraint='!a100-mig'
 #SBATCH --time=0-12:00
 #SBATCH --mem=128G
 #SBATCH --cpus-per-task=8
 #SBATCH --output=slurm_logs/%j.out
 #SBATCH --error=slurm_logs/%j.err
-
-# TODO: fix train.py to work with LoRA and fix bigs-and-byptes issue (installed without CUDA support?)
-# TODO: debug why loss is NaN in train_full.py 
-# TODO: debug why loss in benchmark_model.py is NaN (might be related to why eval_loss is NaN in train_full.py)
-#        (in every model weights dir EXCEPT for initial_weights)
-# The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
 
 # Exit on any error
 set -e
@@ -34,6 +27,11 @@ cleanup() {
     exit $exit_code
 }
 
+# Sample: sbatch finetune.sh False mmlu_quoted
+# Sample: sbatch finetune.sh False mmlu_quoted_qa
+# Sample: sbatch finetune.sh False mmlu_quoted_qa_wiki
+# Sample: sbatch finetune.sh False mmlu_quoted_qa_s2d csqa_quoted_s2d mmlu_quoted_s2d
+
 # Register cleanup function to run on script exit
 trap cleanup EXIT
 
@@ -41,9 +39,14 @@ trap cleanup EXIT
 echo "Script started at: $(date)"
 
 # Parse command line arguments
-MODEL_NAME=${2:-"meta-llama/Llama-2-7b-hf"}  # Default to Llama-2-7b-hf if not provided
-IS_LORA=${1:-"True"}  # New parameter, defaults to True
-RUN_DATETIME=${3:-$(date +%Y%m%d-%H%M%S)}  # Use provided datetime or generate new one
+MODEL_NAME=${5:-"meta-llama/Llama-2-7b-hf"}  # Default to Llama-2-7b-hf if not provided
+IS_LORA=${1:-"False"}  # New parameter, defaults to False
+TRAIN_DATA=${2:-"mmlu_quoted.jsonl"}  # New parameter for training data
+# add command line argument for test_dir
+TEST_DIR_CSQA=${3:-"csqa_quoted"}  # New parameter for test directory
+TEST_DIR_MMLU=${4:-"mmlu_quoted"}  # New parameter for test directory
+# Generate run datetime
+RUN_DATETIME=$(date +%Y%m%d-%H%M%S)
 
 # Validate IS_LORA
 if [ "${IS_LORA}" != "True" ] && [ "${IS_LORA}" != "False" ]; then
@@ -100,7 +103,7 @@ fi
 MODEL_NAME="meta-llama/Llama-2-7b-hf"
 model_path_safe=$(echo $MODEL_NAME | sed 's/\//_/g')
 # Include IS_LORA in output directory name
-OUTPUT_DIR="${BASE_DIR}/${MODEL_NAME}/${RUN_DATETIME}_tags-${IS_LORA}"
+OUTPUT_DIR="${BASE_DIR}/${MODEL_NAME}/${RUN_DATETIME}-${IS_LORA}"
 
 # Create run-specific benchmarks file
 BENCHMARKS_FILE="${OUTPUT_DIR}/benchmarks.jsonl"
@@ -163,7 +166,7 @@ if ! torchrun \
     ${TRAIN_SCRIPT} \
     --model_name_or_path "${MODEL_NAME}" \
     --model_checkpoint "${MODEL_NAME}" \
-    --data_path "data/mmlu_quoted.jsonl" \
+    --data_path "data/${TRAIN_DATA}" \
     --bf16 True \
     --output_dir "${OUTPUT_DIR}" \
     --num_train_epochs 3 \
@@ -218,7 +221,7 @@ csqa_job_id=$(sbatch --dependency=afterok:$SLURM_JOB_ID \
     --wrap="source /n/home11/katrinabrown/.bashrc && \
            conda activate thesis && \
            module load cuda/11.8.0-fasrc01 cudnn/8.9.2.26_cuda11-fasrc01 && \
-           bash analysis/1-2-csqa_run.sh \"${FINAL_WEIGHTS_DIR}\"")
+           bash analysis/1-2-csqa_run.sh \"${FINAL_WEIGHTS_DIR}\" \"${TEST_DIR_CSQA}\"")
 
 if [ $? -ne 0 ] || ! [[ "$csqa_job_id" =~ ^[0-9]+$ ]]; then
     echo "Error: Failed to submit CSQA evaluation job"
@@ -236,7 +239,7 @@ mmlu_job_id=$(sbatch --dependency=afterok:$SLURM_JOB_ID \
     --wrap="source /n/home11/katrinabrown/.bashrc && \
            conda activate thesis && \
            module load cuda/11.8.0-fasrc01 cudnn/8.9.2.26_cuda11-fasrc01 && \
-           bash analysis/2-2-mmlu_run.sh \"${FINAL_WEIGHTS_DIR}\"")
+           bash analysis/2-2-mmlu_run.sh \"${FINAL_WEIGHTS_DIR}\" \"${TEST_DIR_MMLU}\"")
 
 if [ $? -ne 0 ] || ! [[ "$mmlu_job_id" =~ ^[0-9]+$ ]]; then
     echo "Error: Failed to submit MMLU evaluation job"

@@ -43,18 +43,19 @@ def combine_json_files(input_dir: str, output_file: str) -> None:
 def main():
     # Get the path to the root directory (one level up from scripts/)
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    data_dir = os.path.join(root_dir, "data")
     
-    # Process CSQA data
-    csqa_input = os.path.join(root_dir, "data/csqa_quoted")
-    csqa_output = os.path.join(root_dir, "data/csqa_quoted.jsonl")
-    print("\nProcessing CSQA data...")
-    combine_json_files(csqa_input, csqa_output)
+    # Get all subdirectories in the data directory
+    subdirs = [d for d in os.listdir(data_dir) 
+              if os.path.isdir(os.path.join(data_dir, d))]
     
-    # Process MMLU data
-    mmlu_input = os.path.join(root_dir, "data/mmlu_quoted")
-    mmlu_output = os.path.join(root_dir, "data/mmlu_quoted.jsonl")
-    print("\nProcessing MMLU data...")
-    combine_json_files(mmlu_input, mmlu_output)
+    # Process each subdirectory
+    for subdir in subdirs:
+        input_dir = os.path.join(data_dir, subdir)
+        output_file = os.path.join(data_dir, f"{subdir}.jsonl")
+        
+        print(f"\nProcessing {subdir}...")
+        combine_json_files(input_dir, output_file)
 
 if __name__ == "__main__":
     main()

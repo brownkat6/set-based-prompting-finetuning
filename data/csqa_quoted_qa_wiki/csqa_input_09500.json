@@ -1,0 +1,3133 @@
+[
+  {
+    "prompt": "What can happen to your car if you take a corner at too high a velocity?\n<|start_2d|>\"\n- roll over\" <|split_2d|>\"\n- move quickly\" <|split_2d|>\"\n- slow down\" <|split_2d|>\"\n- go fast\" <|split_2d|>\"\n- be late\" <|end_2d|>Answer: roll over",
+    "prompt_metadata": {
+      "label": "roll over",
+      "incorrect_answers": [
+        "move quickly",
+        "slow down",
+        "go fast",
+        "be late"
+      ]
+    }
+  },
+  {
+    "prompt": "For a stressed out mother a baby is cutest when it is able to what?\n<|start_2d|>\"\n- like spinach\" <|split_2d|>\"\n- laugh\" <|split_2d|>\"\n- sleep soundly\" <|split_2d|>\"\n- giggle\" <|split_2d|>\"\n- clap hands\" <|end_2d|>Answer: sleep soundly",
+    "prompt_metadata": {
+      "label": "sleep soundly",
+      "incorrect_answers": [
+        "like spinach",
+        "laugh",
+        "giggle",
+        "clap hands"
+      ]
+    }
+  },
+  {
+    "prompt": " Hall 's carbines 267 \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Where might a t-shirt be kept?\n<|start_2d|>\"\n- suitcase\" <|split_2d|>\"\n- underground\" <|split_2d|>\"\n- shirtdress\" <|split_2d|>\"\n- closet\" <|split_2d|>\"\n- drawer\" <|end_2d|>Answer: drawer",
+    "prompt_metadata": {
+      "label": "drawer",
+      "incorrect_answers": [
+        "suitcase",
+        "underground",
+        "shirtdress",
+        "closet"
+      ]
+    }
+  },
+  {
+    "prompt": " The music was composed by Hitoshi Sakimoto , who had also worked on the previous Valkyria Chronicles games . When he originally heard about the project , he thought it would be a light tone similar to other Valkyria Chronicles games , but found the themes much darker than expected . An early theme he designed around his original vision of the project was rejected . He <unk> the main theme about seven times through the music production due to this need to reassess the game . The main theme was initially recorded using orchestra , then Sakimoto removed elements such as the guitar and bass , then adjusted the theme using a synthesizer before redoing segments such as the guitar piece on their own before incorporating them into the theme . The rejected main theme was used as a hopeful tune that played during the game 's ending . The battle themes were designed around the concept of a \" modern battle \" divorced from a fantasy scenario by using modern musical instruments , constructed to create a sense of atonality . While Sakimoto was most used to working with synthesized music , he felt that he needed to incorporate live instruments such as orchestra and guitar . The guitar was played by Mitsuhiro Ohta , who also arranged several of the later tracks . The game 's opening theme song , \" If You Wish for ... \" ( <unk> , <unk> Kimi ga <unk> Nara ) , was sung by Japanese singer May 'n . Its theme was the reason soldiers fought , in particular their wish to protect what was precious to them rather than a sense of responsibility or duty . Its lyrics were written by Seiko Fujibayashi , who had worked on May 'n on previous singles . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "When making a list what comes after the main item?\n<|start_2d|>\"\n- minor\" <|split_2d|>\"\n- impossibles\" <|split_2d|>\"\n- secondary\" <|split_2d|>\"\n- maintopmast\" <|split_2d|>\"\n- peripheral\" <|end_2d|>Answer: secondary",
+    "prompt_metadata": {
+      "label": "secondary",
+      "incorrect_answers": [
+        "minor",
+        "impossibles",
+        "maintopmast",
+        "peripheral"
+      ]
+    }
+  },
+  {
+    "prompt": "Billy's disability prevented him from moving, but it didn't alter his mind or what?\n<|start_2d|>\"\n- activity\" <|split_2d|>\"\n- potence\" <|split_2d|>\"\n- qualification\" <|split_2d|>\"\n- competency\" <|split_2d|>\"\n- strength\" <|end_2d|>Answer: competency",
+    "prompt_metadata": {
+      "label": "competency",
+      "incorrect_answers": [
+        "activity",
+        "potence",
+        "qualification",
+        "strength"
+      ]
+    }
+  },
+  {
+    "prompt": "There was a cloud or two out but overall it was very what?\n<|start_2d|>\"\n- clear sky\" <|split_2d|>\"\n- eat cake\" <|split_2d|>\"\n- sunny\" <|split_2d|>\"\n- bringing rain\" <|split_2d|>\"\n- sunshine\" <|end_2d|>Answer: sunny",
+    "prompt_metadata": {
+      "label": "sunny",
+      "incorrect_answers": [
+        "clear sky",
+        "eat cake",
+        "bringing rain",
+        "sunshine"
+      ]
+    }
+  },
+  {
+    "prompt": "When someone is not living anymore they?\n<|start_2d|>\"\n- trying to stay happy\" <|split_2d|>\"\n- seeing\" <|split_2d|>\"\n- die\" <|split_2d|>\"\n- experiencing\" <|split_2d|>\"\n- expire\" <|end_2d|>Answer: die",
+    "prompt_metadata": {
+      "label": "die",
+      "incorrect_answers": [
+        "trying to stay happy",
+        "seeing",
+        "experiencing",
+        "expire"
+      ]
+    }
+  },
+  {
+    "prompt": "The student liked to play tennis, she frequented the tennis court on the what?\n<|start_2d|>\"\n- recreational center\" <|split_2d|>\"\n- athletic club\" <|split_2d|>\"\n- soccer field\" <|split_2d|>\"\n- town\" <|split_2d|>\"\n- college campus\" <|end_2d|>Answer: college campus",
+    "prompt_metadata": {
+      "label": "college campus",
+      "incorrect_answers": [
+        "recreational center",
+        "athletic club",
+        "soccer field",
+        "town"
+      ]
+    }
+  },
+  {
+    "prompt": "If you're caught buying beer for children what will happen?\n<|start_2d|>\"\n- problems\" <|split_2d|>\"\n- losing money\" <|split_2d|>\"\n- get arrested\" <|split_2d|>\"\n- fighting\" <|split_2d|>\"\n- relaxation\" <|end_2d|>Answer: get arrested",
+    "prompt_metadata": {
+      "label": "get arrested",
+      "incorrect_answers": [
+        "problems",
+        "losing money",
+        "fighting",
+        "relaxation"
+      ]
+    }
+  },
+  {
+    "prompt": "If man and mammoth wanted to meet, they would probably have to do it during when?\n<|start_2d|>\"\n- a baby shower\" <|split_2d|>\"\n- ancient history\" <|split_2d|>\"\n- storybook\" <|split_2d|>\"\n- stone age\" <|split_2d|>\"\n- forest\" <|end_2d|>Answer: stone age",
+    "prompt_metadata": {
+      "label": "stone age",
+      "incorrect_answers": [
+        "a baby shower",
+        "ancient history",
+        "storybook",
+        "forest"
+      ]
+    }
+  },
+  {
+    "prompt": " Total 10 @,@ 247 \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "John fell down the well.  he couldn't believe what he found down there. It was like something out of what?\n<|start_2d|>\"\n- fairytale\" <|split_2d|>\"\n- farm yard\" <|split_2d|>\"\n- farm country\" <|split_2d|>\"\n- michigan\" <|split_2d|>\"\n- horror movie\" <|end_2d|>Answer: fairytale",
+    "prompt_metadata": {
+      "label": "fairytale",
+      "incorrect_answers": [
+        "farm yard",
+        "farm country",
+        "michigan",
+        "horror movie"
+      ]
+    }
+  },
+  {
+    "prompt": "The big rolling machines made tons of newspapers everyday simply by getting the stories what?\n<|start_2d|>\"\n- tree\" <|split_2d|>\"\n- recycled\" <|split_2d|>\"\n- written on paper\" <|split_2d|>\"\n- printed on paper\" <|split_2d|>\"\n- local\" <|end_2d|>Answer: printed on paper",
+    "prompt_metadata": {
+      "label": "printed on paper",
+      "incorrect_answers": [
+        "tree",
+        "recycled",
+        "written on paper",
+        "local"
+      ]
+    }
+  },
+  {
+    "prompt": "A person surrounded by tools and oil cans would probably be found in a what?\n<|start_2d|>\"\n- garage\" <|split_2d|>\"\n- white house\" <|split_2d|>\"\n- synagogue\" <|split_2d|>\"\n- hospital\" <|split_2d|>\"\n- demonstration\" <|end_2d|>Answer: garage",
+    "prompt_metadata": {
+      "label": "garage",
+      "incorrect_answers": [
+        "white house",
+        "synagogue",
+        "hospital",
+        "demonstration"
+      ]
+    }
+  },
+  {
+    "prompt": " Troops are divided into five classes : Scouts , <unk> , Engineers , Lancers and Armored Soldier . Troopers can switch classes by changing their assigned weapon . Changing class does not greatly affect the stats gained while in a previous class . With victory in battle , experience points are awarded to the squad , which are distributed into five different attributes shared by the entire squad , a feature differing from early games ' method of distributing to different unit types . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": " = Valkyria Chronicles III = \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "The king strolled through his back courtyard, where was near?\n<|start_2d|>\"\n- palace\" <|split_2d|>\"\n- garden\" <|split_2d|>\"\n- country estate\" <|split_2d|>\"\n- large house\" <|split_2d|>\"\n- suburbs\" <|end_2d|>Answer: palace",
+    "prompt_metadata": {
+      "label": "palace",
+      "incorrect_answers": [
+        "garden",
+        "country estate",
+        "large house",
+        "suburbs"
+      ]
+    }
+  },
+  {
+    "prompt": "Where can you get a dining room table?\n<|start_2d|>\"\n- house\" <|split_2d|>\"\n- rug\" <|split_2d|>\"\n- shoe store\" <|split_2d|>\"\n- home\" <|split_2d|>\"\n- furniture store\" <|end_2d|>Answer: furniture store",
+    "prompt_metadata": {
+      "label": "furniture store",
+      "incorrect_answers": [
+        "house",
+        "rug",
+        "shoe store",
+        "home"
+      ]
+    }
+  },
+  {
+    "prompt": "She celebrated her success by giving a speech, where was she?\n<|start_2d|>\"\n- graveyard\" <|split_2d|>\"\n- awards ceremony\" <|split_2d|>\"\n- various situations\" <|split_2d|>\"\n- vocation\" <|split_2d|>\"\n- working hard\" <|end_2d|>Answer: awards ceremony",
+    "prompt_metadata": {
+      "label": "awards ceremony",
+      "incorrect_answers": [
+        "graveyard",
+        "various situations",
+        "vocation",
+        "working hard"
+      ]
+    }
+  },
+  {
+    "prompt": "John cut his feet on broken glass while walking.  Where might have he been walking?\n<|start_2d|>\"\n- street\" <|split_2d|>\"\n- landfill\" <|split_2d|>\"\n- field\" <|split_2d|>\"\n- trash\" <|split_2d|>\"\n- beach\" <|end_2d|>Answer: beach",
+    "prompt_metadata": {
+      "label": "beach",
+      "incorrect_answers": [
+        "street",
+        "landfill",
+        "field",
+        "trash"
+      ]
+    }
+  },
+  {
+    "prompt": "What did having sex as a gay man lead to twenty years ago?\n<|start_2d|>\"\n- making babies\" <|split_2d|>\"\n- bliss\" <|split_2d|>\"\n- unwanted pregnancy\" <|split_2d|>\"\n- aids\" <|split_2d|>\"\n- orgasm\" <|end_2d|>Answer: aids",
+    "prompt_metadata": {
+      "label": "aids",
+      "incorrect_answers": [
+        "making babies",
+        "bliss",
+        "unwanted pregnancy",
+        "orgasm"
+      ]
+    }
+  },
+  {
+    "prompt": " The majority of material created for previous games , such as the <unk> system and the design of maps , was carried over . Alongside this , improvements were made to the game 's graphics and some elements were expanded , such as map layouts , mission structure , and the number of playable units per mission . A part of this upgrade involved creating unique polygon models for each character 's body . In order to achieve this , the cooperative elements incorporated into the second game were removed , as they took up a large portion of memory space needed for the improvements . They also adjusted the difficulty settings and ease of play so they could appeal to new players while retaining the essential components of the series ' gameplay . The newer systems were decided upon early in development . The character designs were done by <unk> Honjou , who had worked on the previous Valkyria Chronicles games . When creating the Nameless Squad , Honjou was faced with the same problem he had had during the first game : the military uniforms essentially destroyed character individuality , despite him needing to create unique characters the player could identify while maintaining a sense of reality within the Valkyria Chronicles world . The main color of the Nameless was black . As with the previous Valkyria games , Valkyria Chronicles III used the <unk> graphics engine . The anime opening was produced by Production I.G. \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "The snake was very cold inside it's cage, so at the first opportunity it did what?\n<|start_2d|>\"\n- pet\" <|split_2d|>\"\n- rude\" <|split_2d|>\"\n- tropical forest\" <|split_2d|>\"\n- sun itself\" <|split_2d|>\"\n- tree\" <|end_2d|>Answer: sun itself",
+    "prompt_metadata": {
+      "label": "sun itself",
+      "incorrect_answers": [
+        "pet",
+        "rude",
+        "tropical forest",
+        "tree"
+      ]
+    }
+  },
+  {
+    "prompt": "John thought that it was relaxing to do what?\n<|start_2d|>\"\n- feeling better\" <|split_2d|>\"\n- lie back\" <|split_2d|>\"\n- lower blood pressure\" <|split_2d|>\"\n- feel happy\" <|split_2d|>\"\n- fall asleep\" <|end_2d|>Answer: lie back",
+    "prompt_metadata": {
+      "label": "lie back",
+      "incorrect_answers": [
+        "feeling better",
+        "lower blood pressure",
+        "feel happy",
+        "fall asleep"
+      ]
+    }
+  },
+  {
+    "prompt": "John wanted to keep his food fresh, she he bought something that would let him suck the air it, leaving empty space inside.   This would keep food fresh.  This item was a type of what?\n<|start_2d|>\"\n- front\" <|split_2d|>\"\n- jar\" <|split_2d|>\"\n- baggie\" <|split_2d|>\"\n- box\" <|split_2d|>\"\n- universe\" <|end_2d|>Answer: jar",
+    "prompt_metadata": {
+      "label": "jar",
+      "incorrect_answers": [
+        "front",
+        "baggie",
+        "box",
+        "universe"
+      ]
+    }
+  },
+  {
+    "prompt": "The temperature was such that one could see their breath, what was occuring?\n<|start_2d|>\"\n- increase\" <|split_2d|>\"\n- drop rapidly\" <|split_2d|>\"\n- drop to zero\" <|split_2d|>\"\n- mist\" <|split_2d|>\"\n- heat up\" <|end_2d|>Answer: drop to zero",
+    "prompt_metadata": {
+      "label": "drop to zero",
+      "incorrect_answers": [
+        "increase",
+        "drop rapidly",
+        "mist",
+        "heat up"
+      ]
+    }
+  },
+  {
+    "prompt": "If I wanted to work a crossword puzzle, where might I find one?\n<|start_2d|>\"\n- playground\" <|split_2d|>\"\n- newspaper\" <|split_2d|>\"\n- kindergarten class\" <|split_2d|>\"\n- toy store\" <|split_2d|>\"\n- toy shop\" <|end_2d|>Answer: newspaper",
+    "prompt_metadata": {
+      "label": "newspaper",
+      "incorrect_answers": [
+        "playground",
+        "kindergarten class",
+        "toy store",
+        "toy shop"
+      ]
+    }
+  },
+  {
+    "prompt": "After running twenty six miles he felt like he had lost twenty six pounds, this was from all the what?\n<|start_2d|>\"\n- exercise\" <|split_2d|>\"\n- sweat\" <|split_2d|>\"\n- pass out\" <|split_2d|>\"\n- collapse\" <|split_2d|>\"\n- drink water\" <|end_2d|>Answer: sweat",
+    "prompt_metadata": {
+      "label": "sweat",
+      "incorrect_answers": [
+        "exercise",
+        "pass out",
+        "collapse",
+        "drink water"
+      ]
+    }
+  },
+  {
+    "prompt": "Where might  jellyfish stay warm?\n<|start_2d|>\"\n- atlantic ocean\" <|split_2d|>\"\n- bikini bottom\" <|split_2d|>\"\n- japanese restaurant\" <|split_2d|>\"\n- store\" <|split_2d|>\"\n- pacific ocean\" <|end_2d|>Answer: pacific ocean",
+    "prompt_metadata": {
+      "label": "pacific ocean",
+      "incorrect_answers": [
+        "atlantic ocean",
+        "bikini bottom",
+        "japanese restaurant",
+        "store"
+      ]
+    }
+  },
+  {
+    "prompt": "Out changing society meets a lot of resistance by people who like the old way of things.   But slowly, new ways gain what?\n<|start_2d|>\"\n- happy times ahead\" <|split_2d|>\"\n- change in leadership\" <|split_2d|>\"\n- better standard of living\" <|split_2d|>\"\n- no water\" <|split_2d|>\"\n- acceptance\" <|end_2d|>Answer: acceptance",
+    "prompt_metadata": {
+      "label": "acceptance",
+      "incorrect_answers": [
+        "happy times ahead",
+        "change in leadership",
+        "better standard of living",
+        "no water"
+      ]
+    }
+  },
+  {
+    "prompt": "Lilly wanted to see every type of flower that there is.  But this is a tall order, because flowers grow all over what?\n<|start_2d|>\"\n- surface of earth\" <|split_2d|>\"\n- netherlands\" <|split_2d|>\"\n- countryside\" <|split_2d|>\"\n- state park\" <|split_2d|>\"\n- anthology\" <|end_2d|>Answer: surface of earth",
+    "prompt_metadata": {
+      "label": "surface of earth",
+      "incorrect_answers": [
+        "netherlands",
+        "countryside",
+        "state park",
+        "anthology"
+      ]
+    }
+  },
+  {
+    "prompt": "What floor do you run between rooms?\n<|start_2d|>\"\n- carpet\" <|split_2d|>\"\n- exchange\" <|split_2d|>\"\n- dance\" <|split_2d|>\"\n- building\" <|split_2d|>\"\n- hallway\" <|end_2d|>Answer: hallway",
+    "prompt_metadata": {
+      "label": "hallway",
+      "incorrect_answers": [
+        "carpet",
+        "exchange",
+        "dance",
+        "building"
+      ]
+    }
+  },
+  {
+    "prompt": "Bob is happy that the programs he was in will be seen by millions of people.  Where will these programs be shown?\n<|start_2d|>\"\n- group functions\" <|split_2d|>\"\n- conference\" <|split_2d|>\"\n- theater\" <|split_2d|>\"\n- compute\" <|split_2d|>\"\n- television\" <|end_2d|>Answer: television",
+    "prompt_metadata": {
+      "label": "television",
+      "incorrect_answers": [
+        "group functions",
+        "conference",
+        "theater",
+        "compute"
+      ]
+    }
+  },
+  {
+    "prompt": "He was really cashing in after the accident, the judge ruled he would be what in full?\n<|start_2d|>\"\n- selling out\" <|split_2d|>\"\n- hitting the jackpot\" <|split_2d|>\"\n- receiving money\" <|split_2d|>\"\n- happy\" <|split_2d|>\"\n- getting paid\" <|end_2d|>Answer: receiving money",
+    "prompt_metadata": {
+      "label": "receiving money",
+      "incorrect_answers": [
+        "selling out",
+        "hitting the jackpot",
+        "happy",
+        "getting paid"
+      ]
+    }
+  },
+  {
+    "prompt": "Washing hands too often can cause what?\n<|start_2d|>\"\n- health\" <|split_2d|>\"\n- dry skin\" <|split_2d|>\"\n- pink hands\" <|split_2d|>\"\n- become wet\" <|split_2d|>\"\n- wet floor\" <|end_2d|>Answer: dry skin",
+    "prompt_metadata": {
+      "label": "dry skin",
+      "incorrect_answers": [
+        "health",
+        "pink hands",
+        "become wet",
+        "wet floor"
+      ]
+    }
+  },
+  {
+    "prompt": " The governor would take possession of the arsenal in the name of the United States . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Billy enjoyed answering questions.  When all of the questioners went home he experienced what emotion?\n<|start_2d|>\"\n- contempt\" <|split_2d|>\"\n- irritation\" <|split_2d|>\"\n- discussion\" <|split_2d|>\"\n- polite\" <|split_2d|>\"\n- sadness\" <|end_2d|>Answer: sadness",
+    "prompt_metadata": {
+      "label": "sadness",
+      "incorrect_answers": [
+        "contempt",
+        "irritation",
+        "discussion",
+        "polite"
+      ]
+    }
+  },
+  {
+    "prompt": "The dumb kid tried to use his student ID at the door, this obviously did not get him into the what?\n<|start_2d|>\"\n- bar\" <|split_2d|>\"\n- gentleman's lounge\" <|split_2d|>\"\n- kindergarten class\" <|split_2d|>\"\n- university\" <|split_2d|>\"\n- school\" <|end_2d|>Answer: bar",
+    "prompt_metadata": {
+      "label": "bar",
+      "incorrect_answers": [
+        "gentleman's lounge",
+        "kindergarten class",
+        "university",
+        "school"
+      ]
+    }
+  },
+  {
+    "prompt": "What is something that the public can go to which involves a committee?\n<|start_2d|>\"\n- business\" <|split_2d|>\"\n- city council meeting\" <|split_2d|>\"\n- temple\" <|split_2d|>\"\n- office building\" <|split_2d|>\"\n- boardroom\" <|end_2d|>Answer: city council meeting",
+    "prompt_metadata": {
+      "label": "city council meeting",
+      "incorrect_answers": [
+        "business",
+        "temple",
+        "office building",
+        "boardroom"
+      ]
+    }
+  },
+  {
+    "prompt": "Where might I find seating while waiting to take public transit in a major city?\n<|start_2d|>\"\n- rest area\" <|split_2d|>\"\n- bus depot\" <|split_2d|>\"\n- theatre\" <|split_2d|>\"\n- bus stop\" <|split_2d|>\"\n- church\" <|end_2d|>Answer: bus depot",
+    "prompt_metadata": {
+      "label": "bus depot",
+      "incorrect_answers": [
+        "rest area",
+        "theatre",
+        "bus stop",
+        "church"
+      ]
+    }
+  },
+  {
+    "prompt": "Fish comes in all varieties, many people prefer the ones than can be what?\n<|start_2d|>\"\n- striped\" <|split_2d|>\"\n- colorful\" <|split_2d|>\"\n- gills\" <|split_2d|>\"\n- snakefish\" <|split_2d|>\"\n- eaten raw\" <|end_2d|>Answer: eaten raw",
+    "prompt_metadata": {
+      "label": "eaten raw",
+      "incorrect_answers": [
+        "striped",
+        "colorful",
+        "gills",
+        "snakefish"
+      ]
+    }
+  },
+  {
+    "prompt": " Hall 's rifles ( flintlock ) 2 @,@ 864 \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Where might you find a chair at an office?\n<|start_2d|>\"\n- stadium\" <|split_2d|>\"\n- kitchen\" <|split_2d|>\"\n- porch\" <|split_2d|>\"\n- cubicle\" <|split_2d|>\"\n- living room\" <|end_2d|>Answer: cubicle",
+    "prompt_metadata": {
+      "label": "cubicle",
+      "incorrect_answers": [
+        "stadium",
+        "kitchen",
+        "porch",
+        "living room"
+      ]
+    }
+  },
+  {
+    "prompt": " Concept work for Valkyria Chronicles III began after development finished on Valkyria Chronicles II in early 2010 , with full development beginning shortly after this . The director of Valkyria Chronicles II , Takeshi Ozawa , returned to that role for Valkyria Chronicles III . Development work took approximately one year . After the release of Valkyria Chronicles II , the staff took a look at both the popular response for the game and what they wanted to do next for the series . Like its predecessor , Valkyria Chronicles III was developed for PlayStation Portable : this was due to the team wanting to refine the mechanics created for Valkyria Chronicles II , and they had not come up with the \" revolutionary \" idea that would warrant a new entry for the PlayStation 3 . Speaking in an interview , it was stated that the development team considered Valkyria Chronicles III to be the series ' first true sequel : while Valkyria Chronicles II had required a large amount of trial and error during development due to the platform move , the third game gave them a chance to improve upon the best parts of Valkyria Chronicles II due to being on the same platform . In addition to Sega staff from the previous games , development work was also handled by <unk> The original scenario was written Kazuki Yamanobe , while the script was written by Hiroyuki Fujii , Koichi Majima , <unk> Miyagi , Seiki <unk> and Takayuki <unk> . Its story was darker and more somber than that of its predecessor . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Why are cooks hired?\n<|start_2d|>\"\n- to be fired\" <|split_2d|>\"\n- prepare meals\" <|split_2d|>\"\n- season with salt\" <|split_2d|>\"\n- better food\" <|split_2d|>\"\n- perfect food\" <|end_2d|>Answer: prepare meals",
+    "prompt_metadata": {
+      "label": "prepare meals",
+      "incorrect_answers": [
+        "to be fired",
+        "season with salt",
+        "better food",
+        "perfect food"
+      ]
+    }
+  },
+  {
+    "prompt": "John thought that there was no conflict between religion and what?\n<|start_2d|>\"\n- atheist\" <|split_2d|>\"\n- atheism\" <|split_2d|>\"\n- important to people\" <|split_2d|>\"\n- wars\" <|split_2d|>\"\n- science\" <|end_2d|>Answer: science",
+    "prompt_metadata": {
+      "label": "science",
+      "incorrect_answers": [
+        "atheist",
+        "atheism",
+        "important to people",
+        "wars"
+      ]
+    }
+  },
+  {
+    "prompt": "If you're standing in line all day and someone cuts in front of you what may you feel?\n<|start_2d|>\"\n- fainting\" <|split_2d|>\"\n- agitation\" <|split_2d|>\"\n- hunger\" <|split_2d|>\"\n- boredom\" <|split_2d|>\"\n- pain\" <|end_2d|>Answer: agitation",
+    "prompt_metadata": {
+      "label": "agitation",
+      "incorrect_answers": [
+        "fainting",
+        "hunger",
+        "boredom",
+        "pain"
+      ]
+    }
+  },
+  {
+    "prompt": "The person signed up for a dating website, what is he looking for?\n<|start_2d|>\"\n- financial security\" <|split_2d|>\"\n- quick marriage\" <|split_2d|>\"\n- live well\" <|split_2d|>\"\n- own house\" <|split_2d|>\"\n- good relationship\" <|end_2d|>Answer: good relationship",
+    "prompt_metadata": {
+      "label": "good relationship",
+      "incorrect_answers": [
+        "financial security",
+        "quick marriage",
+        "live well",
+        "own house"
+      ]
+    }
+  },
+  {
+    "prompt": "What is often the function of ice?\n<|start_2d|>\"\n- cool water\" <|split_2d|>\"\n- cool drink\" <|split_2d|>\"\n- harm humans\" <|split_2d|>\"\n- become water\" <|split_2d|>\"\n- form crystals\" <|end_2d|>Answer: cool drink",
+    "prompt_metadata": {
+      "label": "cool drink",
+      "incorrect_answers": [
+        "cool water",
+        "harm humans",
+        "become water",
+        "form crystals"
+      ]
+    }
+  },
+  {
+    "prompt": "Why does grooming require careful consideration.?\n<|start_2d|>\"\n- mistakes\" <|split_2d|>\"\n- neatness\" <|split_2d|>\"\n- errors\" <|split_2d|>\"\n- cleanliness\" <|split_2d|>\"\n- beauty\" <|end_2d|>Answer: mistakes",
+    "prompt_metadata": {
+      "label": "mistakes",
+      "incorrect_answers": [
+        "neatness",
+        "errors",
+        "cleanliness",
+        "beauty"
+      ]
+    }
+  },
+  {
+    "prompt": "Where is likely to have a large door?\n<|start_2d|>\"\n- van\" <|split_2d|>\"\n- building\" <|split_2d|>\"\n- apartment\" <|split_2d|>\"\n- neighbor's house\" <|split_2d|>\"\n- wall\" <|end_2d|>Answer: building",
+    "prompt_metadata": {
+      "label": "building",
+      "incorrect_answers": [
+        "van",
+        "apartment",
+        "neighbor's house",
+        "wall"
+      ]
+    }
+  },
+  {
+    "prompt": " <unk> common rifles 125 \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Chatting with friends can be bad for your health if you join them outside while they what?\n<|start_2d|>\"\n- laughing\" <|split_2d|>\"\n- smoke\" <|split_2d|>\"\n- laugh loud\" <|split_2d|>\"\n- tell story\" <|split_2d|>\"\n- lie\" <|end_2d|>Answer: smoke",
+    "prompt_metadata": {
+      "label": "smoke",
+      "incorrect_answers": [
+        "laughing",
+        "laugh loud",
+        "tell story",
+        "lie"
+      ]
+    }
+  },
+  {
+    "prompt": "Where would you find travelers that are planning to go to a different continent?\n<|start_2d|>\"\n- rest area\" <|split_2d|>\"\n- bus depot\" <|split_2d|>\"\n- train station\" <|split_2d|>\"\n- airport\" <|split_2d|>\"\n- book tickets\" <|end_2d|>Answer: airport",
+    "prompt_metadata": {
+      "label": "airport",
+      "incorrect_answers": [
+        "rest area",
+        "bus depot",
+        "train station",
+        "book tickets"
+      ]
+    }
+  },
+  {
+    "prompt": "Over-indulgence when having food can lead to what?\n<|start_2d|>\"\n- weight lost\" <|split_2d|>\"\n- eating food\" <|split_2d|>\"\n- digesting\" <|split_2d|>\"\n- being full\" <|split_2d|>\"\n- getting fat\" <|end_2d|>Answer: getting fat",
+    "prompt_metadata": {
+      "label": "getting fat",
+      "incorrect_answers": [
+        "weight lost",
+        "eating food",
+        "digesting",
+        "being full"
+      ]
+    }
+  },
+  {
+    "prompt": " <unk> <unk> 2 \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "What do people perform if they have a band?\n<|start_2d|>\"\n- standing ovation\" <|split_2d|>\"\n- music\" <|split_2d|>\"\n- tricks\" <|split_2d|>\"\n- applause\" <|split_2d|>\"\n- smile\" <|end_2d|>Answer: music",
+    "prompt_metadata": {
+      "label": "music",
+      "incorrect_answers": [
+        "standing ovation",
+        "tricks",
+        "applause",
+        "smile"
+      ]
+    }
+  },
+  {
+    "prompt": "Where are you likely to find endless shelves?\n<|start_2d|>\"\n- kitchen\" <|split_2d|>\"\n- corner\" <|split_2d|>\"\n- bookstore\" <|split_2d|>\"\n- refrigerator\" <|split_2d|>\"\n- cupboard\" <|end_2d|>Answer: bookstore",
+    "prompt_metadata": {
+      "label": "bookstore",
+      "incorrect_answers": [
+        "kitchen",
+        "corner",
+        "refrigerator",
+        "cupboard"
+      ]
+    }
+  },
+  {
+    "prompt": " Of this number , approximately 9600 weapons were serviceable , or ready @-@ for @-@ issue . Note there were only 1 @,@ 364 percussion weapons available . Disposition of the weapons found in the Arsenal is somewhat sketchy , but from various records it can be surmised that the 5th , 6th , 7th , and 8th Arkansas Infantry Regiments , mustered in June , 1861 , were issued <unk> / M1822 .69 caliber flintlocks . The 9th and 10th Arkansas , four companies of Kelly 's 9th Arkansas Battalion , and the 3rd Arkansas Cavalry Regiment were issued flintlock Hall 's Rifles . The units comprising the infantry force of Van Dorn 's Army of the West were the 1st and 2nd Arkansas Mounted Rifles were also armed with M1822 flintlocks from the Little Rock Arsenal . By the time the 11th and 12th Arkansas Infantry Regiments mustered in at Little Rock , the supply of arms had been almost completely exhausted , and only old \" junker \" weapons were left . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "He saw that he was about an hour from Jackson after heaidng east on the de Soto bridge, where was he?\n<|start_2d|>\"\n- tennessee\" <|split_2d|>\"\n- atlanta\" <|split_2d|>\"\n- wyoming\" <|split_2d|>\"\n- michigan\" <|split_2d|>\"\n- mississippi\" <|end_2d|>Answer: tennessee",
+    "prompt_metadata": {
+      "label": "tennessee",
+      "incorrect_answers": [
+        "atlanta",
+        "wyoming",
+        "michigan",
+        "mississippi"
+      ]
+    }
+  },
+  {
+    "prompt": "I live in a rural area, so where am I likely going if I drive through a turnpike?\n<|start_2d|>\"\n- drive to work\" <|split_2d|>\"\n- urban region\" <|split_2d|>\"\n- atlas\" <|split_2d|>\"\n- countryside\" <|split_2d|>\"\n- eastern united states\" <|end_2d|>Answer: urban region",
+    "prompt_metadata": {
+      "label": "urban region",
+      "incorrect_answers": [
+        "drive to work",
+        "atlas",
+        "countryside",
+        "eastern united states"
+      ]
+    }
+  },
+  {
+    "prompt": "If a person is trying new things, what is their goal?\n<|start_2d|>\"\n- cross street\" <|split_2d|>\"\n- man crew\" <|split_2d|>\"\n- cross road\" <|split_2d|>\"\n- lose weight\" <|split_2d|>\"\n- experience life\" <|end_2d|>Answer: experience life",
+    "prompt_metadata": {
+      "label": "experience life",
+      "incorrect_answers": [
+        "cross street",
+        "man crew",
+        "cross road",
+        "lose weight"
+      ]
+    }
+  },
+  {
+    "prompt": "Where can you store a pie?\n<|start_2d|>\"\n- outside\" <|split_2d|>\"\n- windowsill\" <|split_2d|>\"\n- freezer\" <|split_2d|>\"\n- refrigerator\" <|split_2d|>\"\n- oven\" <|end_2d|>Answer: refrigerator",
+    "prompt_metadata": {
+      "label": "refrigerator",
+      "incorrect_answers": [
+        "outside",
+        "windowsill",
+        "freezer",
+        "oven"
+      ]
+    }
+  },
+  {
+    "prompt": "When birds are looking for a mate they're going to be doing what?\n<|start_2d|>\"\n- pretty smart\" <|split_2d|>\"\n- small\" <|split_2d|>\"\n- very colorful\" <|split_2d|>\"\n- pick up prostitutes\" <|split_2d|>\"\n- singing\" <|end_2d|>Answer: singing",
+    "prompt_metadata": {
+      "label": "singing",
+      "incorrect_answers": [
+        "pretty smart",
+        "small",
+        "very colorful",
+        "pick up prostitutes"
+      ]
+    }
+  },
+  {
+    "prompt": "What do you get when you analysing something new?\n<|start_2d|>\"\n- change\" <|split_2d|>\"\n- better knowledge\" <|split_2d|>\"\n- enlightened\" <|split_2d|>\"\n- get smart\" <|split_2d|>\"\n- learning more about\" <|end_2d|>Answer: better knowledge",
+    "prompt_metadata": {
+      "label": "better knowledge",
+      "incorrect_answers": [
+        "change",
+        "enlightened",
+        "get smart",
+        "learning more about"
+      ]
+    }
+  },
+  {
+    "prompt": "What happened when economic forces don't match a changing society?\n<|start_2d|>\"\n- change in leadership\" <|split_2d|>\"\n- anger\" <|split_2d|>\"\n- resentment\" <|split_2d|>\"\n- heartache\" <|split_2d|>\"\n- depression\" <|end_2d|>Answer: depression",
+    "prompt_metadata": {
+      "label": "depression",
+      "incorrect_answers": [
+        "change in leadership",
+        "anger",
+        "resentment",
+        "heartache"
+      ]
+    }
+  },
+  {
+    "prompt": " On the morning of February 8 , 1861 , Rector and Totten signed an agreement placing the arsenal in the hands of state officials . That afternoon , the citizen militia marched to the arsenal with Governor Rector at its head . All of the federal troops had left at this point , except Totten who had stayed behind to listen to the Governor 's speech and to hand the arsenal over in person . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "They would only allow one more in, he was unfortunately a what?\n<|start_2d|>\"\n- forbid\" <|split_2d|>\"\n- deny\" <|split_2d|>\"\n- reject\" <|split_2d|>\"\n- reject\" <|split_2d|>\"\n- permitted\" <|end_2d|>Answer: reject",
+    "prompt_metadata": {
+      "label": "reject",
+      "incorrect_answers": [
+        "forbid",
+        "deny",
+        "permitted"
+      ]
+    }
+  },
+  {
+    "prompt": " The Little Rock Arsenal was classified in 1860 as an \" arsenal of deposit , \" meaning that it was simply a warehouse for the storage of weapons intended for the use of the state militia in times of crisis . Thus there were no substantial operations for ordnance fabrication or repairs , nor for the manufacture of cartridges at the time the Arsenal fell into State hands . Most of these operations were started from scratch through the efforts of the Arkansas Military Board . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Joe put clear tape on his glasses because he did not want to do what to his field of vision?\n<|start_2d|>\"\n- obscure\" <|split_2d|>\"\n- confusing\" <|split_2d|>\"\n- change\" <|split_2d|>\"\n- opaque\" <|split_2d|>\"\n- thick\" <|end_2d|>Answer: obscure",
+    "prompt_metadata": {
+      "label": "obscure",
+      "incorrect_answers": [
+        "confusing",
+        "change",
+        "opaque",
+        "thick"
+      ]
+    }
+  },
+  {
+    "prompt": "Where may a human find peace?\n<|start_2d|>\"\n- jail\" <|split_2d|>\"\n- train station\" <|split_2d|>\"\n- workplace\" <|split_2d|>\"\n- church\" <|split_2d|>\"\n- park\" <|end_2d|>Answer: church",
+    "prompt_metadata": {
+      "label": "church",
+      "incorrect_answers": [
+        "jail",
+        "train station",
+        "workplace",
+        "park"
+      ]
+    }
+  },
+  {
+    "prompt": "What events are typical, expected and not divine?\n<|start_2d|>\"\n- undivine\" <|split_2d|>\"\n- humdrum\" <|split_2d|>\"\n- godless\" <|split_2d|>\"\n- horrible\" <|split_2d|>\"\n- cursed\" <|end_2d|>Answer: humdrum",
+    "prompt_metadata": {
+      "label": "humdrum",
+      "incorrect_answers": [
+        "undivine",
+        "godless",
+        "horrible",
+        "cursed"
+      ]
+    }
+  },
+  {
+    "prompt": "If you're caught hurting someone else, what are you likely to have?\n<|start_2d|>\"\n- legal problems\" <|split_2d|>\"\n- more hurt\" <|split_2d|>\"\n- physical pain\" <|split_2d|>\"\n- public outcry\" <|split_2d|>\"\n- money\" <|end_2d|>Answer: legal problems",
+    "prompt_metadata": {
+      "label": "legal problems",
+      "incorrect_answers": [
+        "more hurt",
+        "physical pain",
+        "public outcry",
+        "money"
+      ]
+    }
+  },
+  {
+    "prompt": "A garage is a type of what?\n<|start_2d|>\"\n- home\" <|split_2d|>\"\n- building\" <|split_2d|>\"\n- downtown\" <|split_2d|>\"\n- storage area\" <|split_2d|>\"\n- car\" <|end_2d|>Answer: building",
+    "prompt_metadata": {
+      "label": "building",
+      "incorrect_answers": [
+        "home",
+        "downtown",
+        "storage area",
+        "car"
+      ]
+    }
+  },
+  {
+    "prompt": "Since we aren't immortal, people should what?\n<|start_2d|>\"\n- expect to die\" <|split_2d|>\"\n- pay bills\" <|split_2d|>\"\n- buy pets\" <|split_2d|>\"\n- stay in\" <|split_2d|>\"\n- eat corn\" <|end_2d|>Answer: expect to die",
+    "prompt_metadata": {
+      "label": "expect to die",
+      "incorrect_answers": [
+        "pay bills",
+        "buy pets",
+        "stay in",
+        "eat corn"
+      ]
+    }
+  },
+  {
+    "prompt": "Which group is the cover for tonight's musical program?\n<|start_2d|>\"\n- opera\" <|split_2d|>\"\n- concert\" <|split_2d|>\"\n- television\" <|split_2d|>\"\n- symphonic\" <|split_2d|>\"\n- computer\" <|end_2d|>Answer: concert",
+    "prompt_metadata": {
+      "label": "concert",
+      "incorrect_answers": [
+        "opera",
+        "television",
+        "symphonic",
+        "computer"
+      ]
+    }
+  },
+  {
+    "prompt": "The high rollers began playing poker, there were no blinds so they all did what?\n<|start_2d|>\"\n- skill\" <|split_2d|>\"\n- losing money\" <|split_2d|>\"\n- bet their shoes\" <|split_2d|>\"\n- ante\" <|split_2d|>\"\n- attention\" <|end_2d|>Answer: ante",
+    "prompt_metadata": {
+      "label": "ante",
+      "incorrect_answers": [
+        "skill",
+        "losing money",
+        "bet their shoes",
+        "attention"
+      ]
+    }
+  },
+  {
+    "prompt": "It is important to spend time in nature and sometimes get out of where?\n<|start_2d|>\"\n- city\" <|split_2d|>\"\n- man made\" <|split_2d|>\"\n- indoors\" <|split_2d|>\"\n- town\" <|split_2d|>\"\n- artificial\" <|end_2d|>Answer: city",
+    "prompt_metadata": {
+      "label": "city",
+      "incorrect_answers": [
+        "man made",
+        "indoors",
+        "town",
+        "artificial"
+      ]
+    }
+  },
+  {
+    "prompt": "What do I attend annually to check out the offered programs?\n<|start_2d|>\"\n- think tank\" <|split_2d|>\"\n- group functions\" <|split_2d|>\"\n- theater\" <|split_2d|>\"\n- conference\" <|split_2d|>\"\n- television\" <|end_2d|>Answer: conference",
+    "prompt_metadata": {
+      "label": "conference",
+      "incorrect_answers": [
+        "think tank",
+        "group functions",
+        "theater",
+        "television"
+      ]
+    }
+  },
+  {
+    "prompt": "If a person wants to take up harmonica where might they find one to get started?\n<|start_2d|>\"\n- blues band\" <|split_2d|>\"\n- outside\" <|split_2d|>\"\n- music shop\" <|split_2d|>\"\n- mouth\" <|split_2d|>\"\n- pocket\" <|end_2d|>Answer: music shop",
+    "prompt_metadata": {
+      "label": "music shop",
+      "incorrect_answers": [
+        "blues band",
+        "outside",
+        "mouth",
+        "pocket"
+      ]
+    }
+  },
+  {
+    "prompt": "What kind of parents make the happiest child?\n<|start_2d|>\"\n- birth\" <|split_2d|>\"\n- act of sex\" <|split_2d|>\"\n- loving couple\" <|split_2d|>\"\n- parents\" <|split_2d|>\"\n- adoption\" <|end_2d|>Answer: loving couple",
+    "prompt_metadata": {
+      "label": "loving couple",
+      "incorrect_answers": [
+        "birth",
+        "act of sex",
+        "parents",
+        "adoption"
+      ]
+    }
+  },
+  {
+    "prompt": "John wanted respect, but  Lud didn't even act like he was alive.  What was Lud doing?\n<|start_2d|>\"\n- befriending\" <|split_2d|>\"\n- disparagement\" <|split_2d|>\"\n- ignoring\" <|split_2d|>\"\n- dishonor\" <|split_2d|>\"\n- contumely\" <|end_2d|>Answer: ignoring",
+    "prompt_metadata": {
+      "label": "ignoring",
+      "incorrect_answers": [
+        "befriending",
+        "disparagement",
+        "dishonor",
+        "contumely"
+      ]
+    }
+  },
+  {
+    "prompt": "Computers with audio cards can do what?\n<|start_2d|>\"\n- do work\" <|split_2d|>\"\n- produce sound\" <|split_2d|>\"\n- follow instructions\" <|split_2d|>\"\n- advance knowledge\" <|split_2d|>\"\n- solve problems\" <|end_2d|>Answer: produce sound",
+    "prompt_metadata": {
+      "label": "produce sound",
+      "incorrect_answers": [
+        "do work",
+        "follow instructions",
+        "advance knowledge",
+        "solve problems"
+      ]
+    }
+  },
+  {
+    "prompt": "Where can a human in a large northeastern city find food?\n<|start_2d|>\"\n- store\" <|split_2d|>\"\n- school\" <|split_2d|>\"\n- many places\" <|split_2d|>\"\n- new york city\" <|split_2d|>\"\n- zoo\" <|end_2d|>Answer: many places",
+    "prompt_metadata": {
+      "label": "many places",
+      "incorrect_answers": [
+        "store",
+        "school",
+        "new york city",
+        "zoo"
+      ]
+    }
+  },
+  {
+    "prompt": "The big match was today and those lucky enough to have tickets filled in to the what?\n<|start_2d|>\"\n- football stadium\" <|split_2d|>\"\n- bus depot\" <|split_2d|>\"\n- bath\" <|split_2d|>\"\n- surface of earth\" <|split_2d|>\"\n- apartment\" <|end_2d|>Answer: football stadium",
+    "prompt_metadata": {
+      "label": "football stadium",
+      "incorrect_answers": [
+        "bus depot",
+        "bath",
+        "surface of earth",
+        "apartment"
+      ]
+    }
+  },
+  {
+    "prompt": "If a human breaks the law, where could they be placed?\n<|start_2d|>\"\n- school\" <|split_2d|>\"\n- church\" <|split_2d|>\"\n- love\" <|split_2d|>\"\n- jail\" <|split_2d|>\"\n- foster care\" <|end_2d|>Answer: jail",
+    "prompt_metadata": {
+      "label": "jail",
+      "incorrect_answers": [
+        "school",
+        "church",
+        "love",
+        "foster care"
+      ]
+    }
+  },
+  {
+    "prompt": "Must people get up and live life because they?\n<|start_2d|>\"\n- help people\" <|split_2d|>\"\n- all know\" <|split_2d|>\"\n- was given to\" <|split_2d|>\"\n- have no other choice\" <|split_2d|>\"\n- can't help it\" <|end_2d|>Answer: have no other choice",
+    "prompt_metadata": {
+      "label": "have no other choice",
+      "incorrect_answers": [
+        "help people",
+        "all know",
+        "was given to",
+        "can't help it"
+      ]
+    }
+  },
+  {
+    "prompt": "What will happen to someone writing a term paper too quickly likely encounter?\n<|start_2d|>\"\n- headaches\" <|split_2d|>\"\n- errors\" <|split_2d|>\"\n- low mark\" <|split_2d|>\"\n- anxiety\" <|split_2d|>\"\n- frustration\" <|end_2d|>Answer: errors",
+    "prompt_metadata": {
+      "label": "errors",
+      "incorrect_answers": [
+        "headaches",
+        "low mark",
+        "anxiety",
+        "frustration"
+      ]
+    }
+  },
+  {
+    "prompt": "If you get too drunk and make a mess with your own liquids what have you likely done?\n<|start_2d|>\"\n- vomit\" <|split_2d|>\"\n- fall down\" <|split_2d|>\"\n- stagger\" <|split_2d|>\"\n- spill gasoline\" <|split_2d|>\"\n- get arrested\" <|end_2d|>Answer: vomit",
+    "prompt_metadata": {
+      "label": "vomit",
+      "incorrect_answers": [
+        "fall down",
+        "stagger",
+        "spill gasoline",
+        "get arrested"
+      ]
+    }
+  },
+  {
+    "prompt": "What continent  has a country with a historical wall?\n<|start_2d|>\"\n- asia\" <|split_2d|>\"\n- canada\" <|split_2d|>\"\n- africa\" <|split_2d|>\"\n- great outdoors\" <|split_2d|>\"\n- region\" <|end_2d|>Answer: asia",
+    "prompt_metadata": {
+      "label": "asia",
+      "incorrect_answers": [
+        "canada",
+        "africa",
+        "great outdoors",
+        "region"
+      ]
+    }
+  },
+  {
+    "prompt": " = Tower Building of the Little Rock Arsenal = \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": " The game began development in 2010 , carrying over a large portion of the work done on Valkyria Chronicles II . While it retained the standard features of the series , it also underwent multiple adjustments , such as making the game more forgiving for series newcomers . Character designer <unk> Honjou and composer Hitoshi Sakimoto both returned from previous entries , along with Valkyria Chronicles II director Takeshi Ozawa . A large team of writers handled the script . The game 's opening theme was sung by May 'n . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": " The arsenal was constructed at the request of Governor James Sevier Conway in response to the perceived dangers of frontier life and fears of the many Native Americans who were passing through the state on their way to the newly established Oklahoma Territory . Thirty @-@ six acres were appropriated on the outskirts of Little Rock by Major Robert B. Lee of the U.S. Army . The land had been previously used as a racetrack by the local jockey club . John Wormley Walker , a builder for the Federal Government , supervised the construction . Originally $ 14 @,@ 000 was allocated for the construction of the arsenal , but proved inadequate . The budget was later increased to $ 30 @,@ 000 . Work began on the Tower Building in 1840 , and it was the first permanent structure of the arsenal to be built . Being originally constructed to store ammunition , the building was designed with 3 @-@ foot @-@ thick ( 0 @.@ 91 m ) exterior walls . The original plans called for it to be built of stone , however , masonry was used instead . The Arkansas Gazette referred to the structure as \" A splendid specimen of masonry \" . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Where can we see an elephant do tricks?\n<|start_2d|>\"\n- india\" <|split_2d|>\"\n- circus\" <|split_2d|>\"\n- zoo\" <|split_2d|>\"\n- safari\" <|split_2d|>\"\n- africa\" <|end_2d|>Answer: circus",
+    "prompt_metadata": {
+      "label": "circus",
+      "incorrect_answers": [
+        "india",
+        "zoo",
+        "safari",
+        "africa"
+      ]
+    }
+  },
+  {
+    "prompt": "People like to watch movies to escape for a couple hours, they find them very what?\n<|start_2d|>\"\n- entertaining\" <|split_2d|>\"\n- theasres\" <|split_2d|>\"\n- funny\" <|split_2d|>\"\n- watched on videos\" <|split_2d|>\"\n- excellent\" <|end_2d|>Answer: entertaining",
+    "prompt_metadata": {
+      "label": "entertaining",
+      "incorrect_answers": [
+        "theasres",
+        "funny",
+        "watched on videos",
+        "excellent"
+      ]
+    }
+  },
+  {
+    "prompt": "The tool didn't fit the bolt, and the tool had a standard sizing, what was the bolt like?\n<|start_2d|>\"\n- informal\" <|split_2d|>\"\n- colloquial\" <|split_2d|>\"\n- nonstandard\" <|split_2d|>\"\n- standard wing\" <|split_2d|>\"\n- stanine\" <|end_2d|>Answer: nonstandard",
+    "prompt_metadata": {
+      "label": "nonstandard",
+      "incorrect_answers": [
+        "informal",
+        "colloquial",
+        "standard wing",
+        "stanine"
+      ]
+    }
+  },
+  {
+    "prompt": "If you need a restroom while on the road where can you stop?\n<|start_2d|>\"\n- rest area\" <|split_2d|>\"\n- library\" <|split_2d|>\"\n- resturant\" <|split_2d|>\"\n- office building\" <|split_2d|>\"\n- gas station\" <|end_2d|>Answer: rest area",
+    "prompt_metadata": {
+      "label": "rest area",
+      "incorrect_answers": [
+        "library",
+        "resturant",
+        "office building",
+        "gas station"
+      ]
+    }
+  },
+  {
+    "prompt": "What might someone store in a ring binder?\n<|start_2d|>\"\n- stationary shop\" <|split_2d|>\"\n- school\" <|split_2d|>\"\n- office\" <|split_2d|>\"\n- notebook\" <|split_2d|>\"\n- backpack\" <|end_2d|>Answer: notebook",
+    "prompt_metadata": {
+      "label": "notebook",
+      "incorrect_answers": [
+        "stationary shop",
+        "school",
+        "office",
+        "backpack"
+      ]
+    }
+  },
+  {
+    "prompt": "What do people do when they remember that they left their oven turned on?\n<|start_2d|>\"\n- learn from each other\" <|split_2d|>\"\n- jump to conclusions\" <|split_2d|>\"\n- hurry home\" <|split_2d|>\"\n- build trust\" <|split_2d|>\"\n- talk to each other\" <|end_2d|>Answer: hurry home",
+    "prompt_metadata": {
+      "label": "hurry home",
+      "incorrect_answers": [
+        "learn from each other",
+        "jump to conclusions",
+        "build trust",
+        "talk to each other"
+      ]
+    }
+  },
+  {
+    "prompt": "These locker rooms are often visited by reporters.\n<|start_2d|>\"\n- jocks\" <|split_2d|>\"\n- health club\" <|split_2d|>\"\n- gymnasium\" <|split_2d|>\"\n- stadium\" <|split_2d|>\"\n- hatred\" <|end_2d|>Answer: stadium",
+    "prompt_metadata": {
+      "label": "stadium",
+      "incorrect_answers": [
+        "jocks",
+        "health club",
+        "gymnasium",
+        "hatred"
+      ]
+    }
+  },
+  {
+    "prompt": "The back courtyard led to a walkout basement, where was it attached to?\n<|start_2d|>\"\n- suburbs\" <|split_2d|>\"\n- large house\" <|split_2d|>\"\n- farm house\" <|split_2d|>\"\n- palace\" <|split_2d|>\"\n- country estate\" <|end_2d|>Answer: large house",
+    "prompt_metadata": {
+      "label": "large house",
+      "incorrect_answers": [
+        "suburbs",
+        "farm house",
+        "palace",
+        "country estate"
+      ]
+    }
+  },
+  {
+    "prompt": "Where would you find people using a laser to alleviate suffering?\n<|start_2d|>\"\n- nasa\" <|split_2d|>\"\n- cd players\" <|split_2d|>\"\n- laboratory\" <|split_2d|>\"\n- hospital\" <|split_2d|>\"\n- othamologist's office\" <|end_2d|>Answer: hospital",
+    "prompt_metadata": {
+      "label": "hospital",
+      "incorrect_answers": [
+        "nasa",
+        "cd players",
+        "laboratory",
+        "othamologist's office"
+      ]
+    }
+  },
+  {
+    "prompt": "where do you keep a tourniquet?\n<|start_2d|>\"\n- hospital\" <|split_2d|>\"\n- ambulance\" <|split_2d|>\"\n- pocket\" <|split_2d|>\"\n- emergency kit\" <|split_2d|>\"\n- applying even pressure\" <|end_2d|>Answer: emergency kit",
+    "prompt_metadata": {
+      "label": "emergency kit",
+      "incorrect_answers": [
+        "hospital",
+        "ambulance",
+        "pocket",
+        "applying even pressure"
+      ]
+    }
+  },
+  {
+    "prompt": "Where does a dog go to pee?\n<|start_2d|>\"\n- guard house\" <|split_2d|>\"\n- affection\" <|split_2d|>\"\n- walked\" <|split_2d|>\"\n- inside the house\" <|split_2d|>\"\n- go outside\" <|end_2d|>Answer: go outside",
+    "prompt_metadata": {
+      "label": "go outside",
+      "incorrect_answers": [
+        "guard house",
+        "affection",
+        "walked",
+        "inside the house"
+      ]
+    }
+  },
+  {
+    "prompt": "What can the stockholders of the company look at to see how well it's doing?\n<|start_2d|>\"\n- assets\" <|split_2d|>\"\n- you\" <|split_2d|>\"\n- cafeteria\" <|split_2d|>\"\n- board of directors\" <|split_2d|>\"\n- earnings\" <|end_2d|>Answer: earnings",
+    "prompt_metadata": {
+      "label": "earnings",
+      "incorrect_answers": [
+        "assets",
+        "you",
+        "cafeteria",
+        "board of directors"
+      ]
+    }
+  },
+  {
+    "prompt": "Where could you find a pebble that has been walked on?\n<|start_2d|>\"\n- lake\" <|split_2d|>\"\n- playground\" <|split_2d|>\"\n- pond\" <|split_2d|>\"\n- aquarium\" <|split_2d|>\"\n- stucco\" <|end_2d|>Answer: playground",
+    "prompt_metadata": {
+      "label": "playground",
+      "incorrect_answers": [
+        "lake",
+        "pond",
+        "aquarium",
+        "stucco"
+      ]
+    }
+  },
+  {
+    "prompt": "Sam's children are rambunctious.  What might they do?\n<|start_2d|>\"\n- break things\" <|split_2d|>\"\n- play sports\" <|split_2d|>\"\n- play with toys\" <|split_2d|>\"\n- play ball\" <|split_2d|>\"\n- throw things\" <|end_2d|>Answer: throw things",
+    "prompt_metadata": {
+      "label": "throw things",
+      "incorrect_answers": [
+        "break things",
+        "play sports",
+        "play with toys",
+        "play ball"
+      ]
+    }
+  },
+  {
+    "prompt": " = = = Release = = = \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "What would you be if you do not have work?\n<|start_2d|>\"\n- unemployed\" <|split_2d|>\"\n- do nothing\" <|split_2d|>\"\n- play\" <|split_2d|>\"\n- celebrate\" <|split_2d|>\"\n- laziness\" <|end_2d|>Answer: unemployed",
+    "prompt_metadata": {
+      "label": "unemployed",
+      "incorrect_answers": [
+        "do nothing",
+        "play",
+        "celebrate",
+        "laziness"
+      ]
+    }
+  },
+  {
+    "prompt": "What are people in awe of in New York City?\n<|start_2d|>\"\n- opera\" <|split_2d|>\"\n- buildings\" <|split_2d|>\"\n- fireworks\" <|split_2d|>\"\n- end of line\" <|split_2d|>\"\n- neighbor's house\" <|end_2d|>Answer: buildings",
+    "prompt_metadata": {
+      "label": "buildings",
+      "incorrect_answers": [
+        "opera",
+        "fireworks",
+        "end of line",
+        "neighbor's house"
+      ]
+    }
+  },
+  {
+    "prompt": "While getting drunk the body can only process so much at a time, go too fast and your belly might just make you what?\n<|start_2d|>\"\n- getting arrested\" <|split_2d|>\"\n- throw up\" <|split_2d|>\"\n- staggering\" <|split_2d|>\"\n- fall down\" <|split_2d|>\"\n- explode\" <|end_2d|>Answer: throw up",
+    "prompt_metadata": {
+      "label": "throw up",
+      "incorrect_answers": [
+        "getting arrested",
+        "staggering",
+        "fall down",
+        "explode"
+      ]
+    }
+  },
+  {
+    "prompt": "What state north of alabama has many a beaver?\n<|start_2d|>\"\n- beaverton\" <|split_2d|>\"\n- canada\" <|split_2d|>\"\n- river or stream\" <|split_2d|>\"\n- kentucky\" <|split_2d|>\"\n- montana\" <|end_2d|>Answer: kentucky",
+    "prompt_metadata": {
+      "label": "kentucky",
+      "incorrect_answers": [
+        "beaverton",
+        "canada",
+        "river or stream",
+        "montana"
+      ]
+    }
+  },
+  {
+    "prompt": "Where is driftwood usually found in large quantities?\n<|start_2d|>\"\n- sea\" <|split_2d|>\"\n- ocean\" <|split_2d|>\"\n- beach\" <|split_2d|>\"\n- sand\" <|split_2d|>\"\n- drift\" <|end_2d|>Answer: beach",
+    "prompt_metadata": {
+      "label": "beach",
+      "incorrect_answers": [
+        "sea",
+        "ocean",
+        "sand",
+        "drift"
+      ]
+    }
+  },
+  {
+    "prompt": " <unk> .69 cal smoothbore ( percussion ) 357 \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "What does kissing lead to?\n<|start_2d|>\"\n- like\" <|split_2d|>\"\n- drunkenness\" <|split_2d|>\"\n- happiness\" <|split_2d|>\"\n- herpes\" <|split_2d|>\"\n- shyness\" <|end_2d|>Answer: happiness",
+    "prompt_metadata": {
+      "label": "happiness",
+      "incorrect_answers": [
+        "like",
+        "drunkenness",
+        "herpes",
+        "shyness"
+      ]
+    }
+  },
+  {
+    "prompt": "I'm naked in the snow.  I need some method of getting warm.  What mightI try?\n<|start_2d|>\"\n- jump in a swimming pool\" <|split_2d|>\"\n- starting fire\" <|split_2d|>\"\n- pleasure\" <|split_2d|>\"\n- increase of temperature\" <|split_2d|>\"\n- feeling comfortable\" <|end_2d|>Answer: starting fire",
+    "prompt_metadata": {
+      "label": "starting fire",
+      "incorrect_answers": [
+        "jump in a swimming pool",
+        "pleasure",
+        "increase of temperature",
+        "feeling comfortable"
+      ]
+    }
+  },
+  {
+    "prompt": " The soldiers would be allowed to march away as men leaving under orders , not as conquered and surrendering soldiers . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": " Famitsu enjoyed the story , and were particularly pleased with the improvements to gameplay . Japanese gaming site Game Watch Impress , despite negatively noting its pacing and elements recycled from previous games , was generally positive about its story and characters , and found its gameplay entertaining despite off @-@ putting difficulty spikes . 4Gamer.net writer Naohiko <unk> , in a \" Play Test \" article based on the game 's PSN demo , felt that Valkyria Chronicles III provided a \" profound feeling of closure \" for the Valkyria Chronicles series . He praised its gameplay despite annoying limitations to aspects such as special abilities , and positively noted its shift in story to a tone similar to the first game . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "James finishes playing with his ball and left it on the floor.  His mother found it and put it somewhere that he could find it easily.  Where might she put it?\n<|start_2d|>\"\n- playroom\" <|split_2d|>\"\n- brush\" <|split_2d|>\"\n- closet\" <|split_2d|>\"\n- toy box\" <|split_2d|>\"\n- pool table\" <|end_2d|>Answer: toy box",
+    "prompt_metadata": {
+      "label": "toy box",
+      "incorrect_answers": [
+        "playroom",
+        "brush",
+        "closet",
+        "pool table"
+      ]
+    }
+  },
+  {
+    "prompt": "Where could you find a person standing next to a net?\n<|start_2d|>\"\n- ocean\" <|split_2d|>\"\n- soccer game\" <|split_2d|>\"\n- fishing gear\" <|split_2d|>\"\n- fisherman's boat\" <|split_2d|>\"\n- fishing boat\" <|end_2d|>Answer: soccer game",
+    "prompt_metadata": {
+      "label": "soccer game",
+      "incorrect_answers": [
+        "ocean",
+        "fishing gear",
+        "fisherman's boat",
+        "fishing boat"
+      ]
+    }
+  },
+  {
+    "prompt": "What must someone go through when heading to the sky?\n<|start_2d|>\"\n- outdoors\" <|split_2d|>\"\n- planetarium\" <|split_2d|>\"\n- head strain\" <|split_2d|>\"\n- atmosphere\" <|split_2d|>\"\n- heavens\" <|end_2d|>Answer: atmosphere",
+    "prompt_metadata": {
+      "label": "atmosphere",
+      "incorrect_answers": [
+        "outdoors",
+        "planetarium",
+        "head strain",
+        "heavens"
+      ]
+    }
+  },
+  {
+    "prompt": "When black and white balls are kicked with feet what is being played?\n<|start_2d|>\"\n- sporting event\" <|split_2d|>\"\n- gym\" <|split_2d|>\"\n- toy store\" <|split_2d|>\"\n- baseball\" <|split_2d|>\"\n- soccer game\" <|end_2d|>Answer: soccer game",
+    "prompt_metadata": {
+      "label": "soccer game",
+      "incorrect_answers": [
+        "sporting event",
+        "gym",
+        "toy store",
+        "baseball"
+      ]
+    }
+  },
+  {
+    "prompt": " = = Construction = = \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Where is a motorway likely to have tolls?\n<|start_2d|>\"\n- england\" <|split_2d|>\"\n- europe\" <|split_2d|>\"\n- city\" <|split_2d|>\"\n- new jersey\" <|split_2d|>\"\n- interstate\" <|end_2d|>Answer: new jersey",
+    "prompt_metadata": {
+      "label": "new jersey",
+      "incorrect_answers": [
+        "england",
+        "europe",
+        "city",
+        "interstate"
+      ]
+    }
+  },
+  {
+    "prompt": "Despite this name out front you will also find beer and wine where too?\n<|start_2d|>\"\n- liquor store\" <|split_2d|>\"\n- texas\" <|split_2d|>\"\n- art show\" <|split_2d|>\"\n- basement\" <|split_2d|>\"\n- spaghetti sauce\" <|end_2d|>Answer: liquor store",
+    "prompt_metadata": {
+      "label": "liquor store",
+      "incorrect_answers": [
+        "texas",
+        "art show",
+        "basement",
+        "spaghetti sauce"
+      ]
+    }
+  },
+  {
+    "prompt": " = = Legacy = = \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "John cooled the steam. What did the steam become?\n<|start_2d|>\"\n- condensate\" <|split_2d|>\"\n- electric smoke\" <|split_2d|>\"\n- smoke\" <|split_2d|>\"\n- liquid water\" <|split_2d|>\"\n- cold air\" <|end_2d|>Answer: liquid water",
+    "prompt_metadata": {
+      "label": "liquid water",
+      "incorrect_answers": [
+        "condensate",
+        "electric smoke",
+        "smoke",
+        "cold air"
+      ]
+    }
+  },
+  {
+    "prompt": "The man was crass and rude, all the what in the office filed a complaint together?\n<|start_2d|>\"\n- lady\" <|split_2d|>\"\n- wifes husband\" <|split_2d|>\"\n- women\" <|split_2d|>\"\n- her\" <|split_2d|>\"\n- female person\" <|end_2d|>Answer: women",
+    "prompt_metadata": {
+      "label": "women",
+      "incorrect_answers": [
+        "lady",
+        "wifes husband",
+        "her",
+        "female person"
+      ]
+    }
+  },
+  {
+    "prompt": "When someone is talking a lot and being lively, they are said to be?\n<|start_2d|>\"\n- speaking from mouth\" <|split_2d|>\"\n- voice\" <|split_2d|>\"\n- blabbering\" <|split_2d|>\"\n- being alive\" <|split_2d|>\"\n- speech\" <|end_2d|>Answer: being alive",
+    "prompt_metadata": {
+      "label": "being alive",
+      "incorrect_answers": [
+        "speaking from mouth",
+        "voice",
+        "blabbering",
+        "speech"
+      ]
+    }
+  },
+  {
+    "prompt": "Billy emptied his trash can into the big dumpster.  Housekeeping was supposed to do it, but it was easy for him, and this place was cheap.  Where is Billy?\n<|start_2d|>\"\n- dump\" <|split_2d|>\"\n- office\" <|split_2d|>\"\n- motel\" <|split_2d|>\"\n- park\" <|split_2d|>\"\n- corner\" <|end_2d|>Answer: motel",
+    "prompt_metadata": {
+      "label": "motel",
+      "incorrect_answers": [
+        "dump",
+        "office",
+        "park",
+        "corner"
+      ]
+    }
+  },
+  {
+    "prompt": "What could happen after you are eating lunch that affects other people?\n<|start_2d|>\"\n- gain weight\" <|split_2d|>\"\n- farts\" <|split_2d|>\"\n- jealous\" <|split_2d|>\"\n- heartburn\" <|split_2d|>\"\n- bad breath\" <|end_2d|>Answer: bad breath",
+    "prompt_metadata": {
+      "label": "bad breath",
+      "incorrect_answers": [
+        "gain weight",
+        "farts",
+        "jealous",
+        "heartburn"
+      ]
+    }
+  },
+  {
+    "prompt": "Driving to work can be monotonous, she would play her favorite music and just what along with it?\n<|start_2d|>\"\n- sing\" <|split_2d|>\"\n- listen to radio\" <|split_2d|>\"\n- listen to music\" <|split_2d|>\"\n- speed\" <|split_2d|>\"\n- head bang\" <|end_2d|>Answer: sing",
+    "prompt_metadata": {
+      "label": "sing",
+      "incorrect_answers": [
+        "listen to radio",
+        "listen to music",
+        "speed",
+        "head bang"
+      ]
+    }
+  },
+  {
+    "prompt": "Where south of the U.S. can you find a steak house serving Dos Equis cerveza?\n<|start_2d|>\"\n- japan\" <|split_2d|>\"\n- restaurant\" <|split_2d|>\"\n- mexico\" <|split_2d|>\"\n- united states\" <|split_2d|>\"\n- texas\" <|end_2d|>Answer: mexico",
+    "prompt_metadata": {
+      "label": "mexico",
+      "incorrect_answers": [
+        "japan",
+        "restaurant",
+        "united states",
+        "texas"
+      ]
+    }
+  },
+  {
+    "prompt": "What do most people hope to achieve when having sex?\n<|start_2d|>\"\n- unwanted pregnancy\" <|split_2d|>\"\n- bliss\" <|split_2d|>\"\n- aids\" <|split_2d|>\"\n- getting pregnant\" <|split_2d|>\"\n- orgasm\" <|end_2d|>Answer: orgasm",
+    "prompt_metadata": {
+      "label": "orgasm",
+      "incorrect_answers": [
+        "unwanted pregnancy",
+        "bliss",
+        "aids",
+        "getting pregnant"
+      ]
+    }
+  },
+  {
+    "prompt": "If I want to write a proper sentence, what must I make sure it is not?\n<|start_2d|>\"\n- incorrect\" <|split_2d|>\"\n- incomplete\" <|split_2d|>\"\n- impolite\" <|split_2d|>\"\n- inappropriate\" <|split_2d|>\"\n- prison\" <|end_2d|>Answer: incomplete",
+    "prompt_metadata": {
+      "label": "incomplete",
+      "incorrect_answers": [
+        "incorrect",
+        "impolite",
+        "inappropriate",
+        "prison"
+      ]
+    }
+  },
+  {
+    "prompt": "The writer wasn't known for them but he loved to what about nature?\n<|start_2d|>\"\n- write poems\" <|split_2d|>\"\n- advertising company\" <|split_2d|>\"\n- see work\" <|split_2d|>\"\n- write letter\" <|split_2d|>\"\n- write novels\" <|end_2d|>Answer: write poems",
+    "prompt_metadata": {
+      "label": "write poems",
+      "incorrect_answers": [
+        "advertising company",
+        "see work",
+        "write letter",
+        "write novels"
+      ]
+    }
+  },
+  {
+    "prompt": "The monkey was frightened because the zoo looked nothing like his home.  The plants were the same, the trees were the same, but it still wasn't right  Where did the monkey come from?\n<|start_2d|>\"\n- rain forest\" <|split_2d|>\"\n- treetops\" <|split_2d|>\"\n- tundra\" <|split_2d|>\"\n- playful mood\" <|split_2d|>\"\n- brazil\" <|end_2d|>Answer: brazil",
+    "prompt_metadata": {
+      "label": "brazil",
+      "incorrect_answers": [
+        "rain forest",
+        "treetops",
+        "tundra",
+        "playful mood"
+      ]
+    }
+  },
+  {
+    "prompt": "John buys a 5 pound block of salt. Where is he likely to keep it?\n<|start_2d|>\"\n- shaker\" <|split_2d|>\"\n- sea water\" <|split_2d|>\"\n- falling down\" <|split_2d|>\"\n- kitchen cupboard\" <|split_2d|>\"\n- fast food restaurant\" <|end_2d|>Answer: kitchen cupboard",
+    "prompt_metadata": {
+      "label": "kitchen cupboard",
+      "incorrect_answers": [
+        "shaker",
+        "sea water",
+        "falling down",
+        "fast food restaurant"
+      ]
+    }
+  },
+  {
+    "prompt": "Why do some people choose to not own cars?\n<|start_2d|>\"\n- cost money\" <|split_2d|>\"\n- slow down\" <|split_2d|>\"\n- move people\" <|split_2d|>\"\n- get to town\" <|split_2d|>\"\n- cars are cheap\" <|end_2d|>Answer: cost money",
+    "prompt_metadata": {
+      "label": "cost money",
+      "incorrect_answers": [
+        "slow down",
+        "move people",
+        "get to town",
+        "cars are cheap"
+      ]
+    }
+  },
+  {
+    "prompt": "Where would a beauty parlor be?\n<|start_2d|>\"\n- georgian houses\" <|split_2d|>\"\n- city\" <|split_2d|>\"\n- building\" <|split_2d|>\"\n- victorian house\" <|split_2d|>\"\n- underwater\" <|end_2d|>Answer: building",
+    "prompt_metadata": {
+      "label": "building",
+      "incorrect_answers": [
+        "georgian houses",
+        "city",
+        "victorian house",
+        "underwater"
+      ]
+    }
+  },
+  {
+    "prompt": "The plate was an antique, where did the man buy it?\n<|start_2d|>\"\n- kitchen cupboard\" <|split_2d|>\"\n- flea market\" <|split_2d|>\"\n- big box store\" <|split_2d|>\"\n- dishwasher\" <|split_2d|>\"\n- restaurant\" <|end_2d|>Answer: flea market",
+    "prompt_metadata": {
+      "label": "flea market",
+      "incorrect_answers": [
+        "kitchen cupboard",
+        "big box store",
+        "dishwasher",
+        "restaurant"
+      ]
+    }
+  },
+  {
+    "prompt": "John thought that using television is different from listening to radio. How is television different from radio?\n<|start_2d|>\"\n- visual\" <|split_2d|>\"\n- conformity\" <|split_2d|>\"\n- audio\" <|split_2d|>\"\n- entertained\" <|split_2d|>\"\n- laziness\" <|end_2d|>Answer: visual",
+    "prompt_metadata": {
+      "label": "visual",
+      "incorrect_answers": [
+        "conformity",
+        "audio",
+        "entertained",
+        "laziness"
+      ]
+    }
+  },
+  {
+    "prompt": "What is a steel cable called a wire rope primarily used for?\n<|start_2d|>\"\n- factory\" <|split_2d|>\"\n- building\" <|split_2d|>\"\n- winch\" <|split_2d|>\"\n- ship\" <|split_2d|>\"\n- jumprope\" <|end_2d|>Answer: ship",
+    "prompt_metadata": {
+      "label": "ship",
+      "incorrect_answers": [
+        "factory",
+        "building",
+        "winch",
+        "jumprope"
+      ]
+    }
+  },
+  {
+    "prompt": " M1822 .69 cal ( percussion @-@ converted ) 53 \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "James likes listening to after a long and hard day, along with a cool bath.  He finds that it makes him what?\n<|start_2d|>\"\n- ardor\" <|split_2d|>\"\n- amusement\" <|split_2d|>\"\n- fall asleep\" <|split_2d|>\"\n- feeling better\" <|split_2d|>\"\n- enlightenment\" <|end_2d|>Answer: feeling better",
+    "prompt_metadata": {
+      "label": "feeling better",
+      "incorrect_answers": [
+        "ardor",
+        "amusement",
+        "fall asleep",
+        "enlightenment"
+      ]
+    }
+  },
+  {
+    "prompt": "When you're telling many people about something you will need to do what to address them?\n<|start_2d|>\"\n- hand signals\" <|split_2d|>\"\n- speak\" <|split_2d|>\"\n- shout\" <|split_2d|>\"\n- earthquake\" <|split_2d|>\"\n- yell\" <|end_2d|>Answer: speak",
+    "prompt_metadata": {
+      "label": "speak",
+      "incorrect_answers": [
+        "hand signals",
+        "shout",
+        "earthquake",
+        "yell"
+      ]
+    }
+  },
+  {
+    "prompt": "Lilly was still getting warm.  She ran her hands over John's body, he kissed her.  She couldn't think straight anymore.  Every nerve was tingling.  Nothing ever felt so right. She was experiencing what?\n<|start_2d|>\"\n- stroke\" <|split_2d|>\"\n- pleasure\" <|split_2d|>\"\n- increase of temperature\" <|split_2d|>\"\n- get hot\" <|split_2d|>\"\n- euphoria\" <|end_2d|>Answer: euphoria",
+    "prompt_metadata": {
+      "label": "euphoria",
+      "incorrect_answers": [
+        "stroke",
+        "pleasure",
+        "increase of temperature",
+        "get hot"
+      ]
+    }
+  },
+  {
+    "prompt": "Where are gallons of beer held in one container?\n<|start_2d|>\"\n- outside\" <|split_2d|>\"\n- friend's house\" <|split_2d|>\"\n- neighbor's house\" <|split_2d|>\"\n- keg\" <|split_2d|>\"\n- refrigerator\" <|end_2d|>Answer: keg",
+    "prompt_metadata": {
+      "label": "keg",
+      "incorrect_answers": [
+        "outside",
+        "friend's house",
+        "neighbor's house",
+        "refrigerator"
+      ]
+    }
+  },
+  {
+    "prompt": " In September 2010 , a teaser website was revealed by Sega , hinting at a new Valkyria Chronicles game . In its September issue , Famitsu listed that Senj\u014d no Valkyria 3 would be arriving on the PlayStation Portable . Its first public appearance was at the 2010 Tokyo Game Show ( TGS ) , where a demo was made available for journalists and attendees . During the publicity , story details were kept scant so as not to spoil too much for potential players , along with some of its content still being in flux at the time of its reveal . To promote the game and detail the story leading into the game 's events , an episodic Flash visual novel written by Fujii began release in January 2011 . The game was released January 27 , 2011 . During an interview , the development team said that the game had the capacity for downloadable content ( DLC ) , but that no plans were finalized . Multiple DLC maps , featuring additional missions and recruitable characters , were released between February and April 2011 . An expanded edition of the game , Valkyria Chronicles III Extra Edition , released on November 23 , 2011 . Packaged and sold at a lower price than the original , Extra Edition game with seven additional episodes : three new , three chosen by staff from the game 's DLC , and one made available as a pre @-@ order bonus . People who also owned the original game could transfer their save data between versions . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Where do you put junk mail?\n<|start_2d|>\"\n- basket\" <|split_2d|>\"\n- trash\" <|split_2d|>\"\n- waste bin\" <|split_2d|>\"\n- mail box\" <|split_2d|>\"\n- desk\" <|end_2d|>Answer: trash",
+    "prompt_metadata": {
+      "label": "trash",
+      "incorrect_answers": [
+        "basket",
+        "waste bin",
+        "mail box",
+        "desk"
+      ]
+    }
+  },
+  {
+    "prompt": " Senj\u014d no Valkyria 3 : <unk> Chronicles ( Japanese : \u6226\u5834\u306e\u30f4\u30a1\u30eb\u30ad\u30e5\u30ea\u30a23 , lit . Valkyria of the Battlefield 3 ) , commonly referred to as Valkyria Chronicles III outside Japan , is a tactical role @-@ playing video game developed by Sega and Media.Vision for the PlayStation Portable . Released in January 2011 in Japan , it is the third game in the Valkyria series . Employing the same fusion of tactical and real @-@ time gameplay as its predecessors , the story runs parallel to the first game and follows the \" Nameless \" , a penal military unit serving the nation of Gallia during the Second Europan War who perform secret black operations and are pitted against the Imperial unit \" <unk> Raven \" . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "The salesperson had to be especially good with children, he did work where after all?\n<|start_2d|>\"\n- closing deal\" <|split_2d|>\"\n- bookstore\" <|split_2d|>\"\n- toy store\" <|split_2d|>\"\n- shop\" <|split_2d|>\"\n- restaurant\" <|end_2d|>Answer: toy store",
+    "prompt_metadata": {
+      "label": "toy store",
+      "incorrect_answers": [
+        "closing deal",
+        "bookstore",
+        "shop",
+        "restaurant"
+      ]
+    }
+  },
+  {
+    "prompt": "Computers were important in John's work, but they were useless if they weren't what?\n<|start_2d|>\"\n- help people\" <|split_2d|>\"\n- networked\" <|split_2d|>\"\n- crash\" <|split_2d|>\"\n- enable\" <|split_2d|>\"\n- do work\" <|end_2d|>Answer: networked",
+    "prompt_metadata": {
+      "label": "networked",
+      "incorrect_answers": [
+        "help people",
+        "crash",
+        "enable",
+        "do work"
+      ]
+    }
+  },
+  {
+    "prompt": " Perhaps because Abraham Lincoln had not yet been inaugurated as President , Captain Totten received no instructions from his superiors and was forced to withdraw his troops . He agreed to surrender the arsenal as long as the governor agreed to three provisions : \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "The robot could do lots of things, but unlike a human when presented with new situations it could not what?\n<|start_2d|>\"\n- torture\" <|split_2d|>\"\n- be clear\" <|split_2d|>\"\n- think and reason\" <|split_2d|>\"\n- think critically\" <|split_2d|>\"\n- have fever\" <|end_2d|>Answer: think and reason",
+    "prompt_metadata": {
+      "label": "think and reason",
+      "incorrect_answers": [
+        "torture",
+        "be clear",
+        "think critically",
+        "have fever"
+      ]
+    }
+  },
+  {
+    "prompt": "What do people do sometimes when they find a good deal?\n<|start_2d|>\"\n- race cars\" <|split_2d|>\"\n- believe in god\" <|split_2d|>\"\n- fight each other\" <|split_2d|>\"\n- fear death\" <|split_2d|>\"\n- murder each other\" <|end_2d|>Answer: fight each other",
+    "prompt_metadata": {
+      "label": "fight each other",
+      "incorrect_answers": [
+        "race cars",
+        "believe in god",
+        "fear death",
+        "murder each other"
+      ]
+    }
+  },
+  {
+    "prompt": "Max looked for the onions so that he could  made a stew.  Where might he have looked?\n<|start_2d|>\"\n- market\" <|split_2d|>\"\n- pizza\" <|split_2d|>\"\n- refrigerator\" <|split_2d|>\"\n- servant\" <|split_2d|>\"\n- table\" <|end_2d|>Answer: refrigerator",
+    "prompt_metadata": {
+      "label": "refrigerator",
+      "incorrect_answers": [
+        "market",
+        "pizza",
+        "servant",
+        "table"
+      ]
+    }
+  },
+  {
+    "prompt": "When young people are bored and want to recreate, what do they do?\n<|start_2d|>\"\n- play ball\" <|split_2d|>\"\n- choose life\" <|split_2d|>\"\n- talk to each other\" <|split_2d|>\"\n- play outside\" <|split_2d|>\"\n- write programs\" <|end_2d|>Answer: play outside",
+    "prompt_metadata": {
+      "label": "play outside",
+      "incorrect_answers": [
+        "play ball",
+        "choose life",
+        "talk to each other",
+        "write programs"
+      ]
+    }
+  },
+  {
+    "prompt": " Unlike its two predecessors , Valkyria Chronicles III was not released in the west . According to Sega , this was due to poor sales of Valkyria Chronicles II and the general unpopularity of the PSP in the west . An unofficial fan translation patch began development in February 2012 : players with a copy of Valkyria Chronicles III could download and apply the patch , which translated the game 's text into English . Compatible with the Extra Edition , the patch was released in January 2014 . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "If something attempted to destroy something but didn't fully succeed, then one might be able to do what to it afterwards?\n<|start_2d|>\"\n- demolish object\" <|split_2d|>\"\n- repair\" <|split_2d|>\"\n- fix\" <|split_2d|>\"\n- create\" <|split_2d|>\"\n- construct\" <|end_2d|>Answer: repair",
+    "prompt_metadata": {
+      "label": "repair",
+      "incorrect_answers": [
+        "demolish object",
+        "fix",
+        "create",
+        "construct"
+      ]
+    }
+  },
+  {
+    "prompt": "If the recipe called for a potato, where could you get one along with other ingredients?\n<|start_2d|>\"\n- pantry\" <|split_2d|>\"\n- farmer's field\" <|split_2d|>\"\n- cellar\" <|split_2d|>\"\n- food market\" <|split_2d|>\"\n- soil\" <|end_2d|>Answer: food market",
+    "prompt_metadata": {
+      "label": "food market",
+      "incorrect_answers": [
+        "pantry",
+        "farmer's field",
+        "cellar",
+        "soil"
+      ]
+    }
+  },
+  {
+    "prompt": "what is another word for getting drunk?\n<|start_2d|>\"\n- intoxication\" <|split_2d|>\"\n- blazed\" <|split_2d|>\"\n- vomiting\" <|split_2d|>\"\n- hangover\" <|split_2d|>\"\n- being sick\" <|end_2d|>Answer: intoxication",
+    "prompt_metadata": {
+      "label": "intoxication",
+      "incorrect_answers": [
+        "blazed",
+        "vomiting",
+        "hangover",
+        "being sick"
+      ]
+    }
+  },
+  {
+    "prompt": "What leads to mass death?\n<|start_2d|>\"\n- poisonous gas\" <|split_2d|>\"\n- homicide\" <|split_2d|>\"\n- suicide\" <|split_2d|>\"\n- poison leaves\" <|split_2d|>\"\n- nuclear weapons\" <|end_2d|>Answer: nuclear weapons",
+    "prompt_metadata": {
+      "label": "nuclear weapons",
+      "incorrect_answers": [
+        "poisonous gas",
+        "homicide",
+        "suicide",
+        "poison leaves"
+      ]
+    }
+  },
+  {
+    "prompt": "A reaching advantage will lead to what in a race?\n<|start_2d|>\"\n- victory\" <|split_2d|>\"\n- being ahead\" <|split_2d|>\"\n- winning prize\" <|split_2d|>\"\n- new option\" <|split_2d|>\"\n- fall\" <|end_2d|>Answer: being ahead",
+    "prompt_metadata": {
+      "label": "being ahead",
+      "incorrect_answers": [
+        "victory",
+        "winning prize",
+        "new option",
+        "fall"
+      ]
+    }
+  },
+  {
+    "prompt": " As with previous <unk> Chronicles games , Valkyria Chronicles III is a tactical role @-@ playing game where players take control of a military unit and take part in missions against enemy forces . Stories are told through comic book @-@ like panels with animated character portraits , with characters speaking partially through voiced speech bubbles and partially through unvoiced text . The player progresses through a series of linear missions , gradually unlocked as maps that can be freely scanned through and replayed as they are unlocked . The route to each story location on the map varies depending on an individual player 's approach : when one option is selected , the other is sealed off to the player . Outside missions , the player characters rest in a camp , where units can be customized and character growth occurs . Alongside the main story missions are character @-@ specific sub missions relating to different squad members . After the game 's completion , additional episodes are unlocked , some of them having a higher difficulty than those found in the rest of the game . There are also love simulation elements related to the game 's two main heroines , although they take a very minor role . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "When is good time for garlic bread?\n<|start_2d|>\"\n- refrigerator\" <|split_2d|>\"\n- dinner\" <|split_2d|>\"\n- jail\" <|split_2d|>\"\n- supermarket\" <|split_2d|>\"\n- going on a date\" <|end_2d|>Answer: dinner",
+    "prompt_metadata": {
+      "label": "dinner",
+      "incorrect_answers": [
+        "refrigerator",
+        "jail",
+        "supermarket",
+        "going on a date"
+      ]
+    }
+  },
+  {
+    "prompt": "Why did the police office pull the car over?\n<|start_2d|>\"\n- going too fast\" <|split_2d|>\"\n- last several years\" <|split_2d|>\"\n- go fast\" <|split_2d|>\"\n- careless driving\" <|split_2d|>\"\n- start running\" <|end_2d|>Answer: going too fast",
+    "prompt_metadata": {
+      "label": "going too fast",
+      "incorrect_answers": [
+        "last several years",
+        "go fast",
+        "careless driving",
+        "start running"
+      ]
+    }
+  },
+  {
+    "prompt": "You may see a beaver when visiting what state known as \"Big Sky Country\"?\n<|start_2d|>\"\n- kentucky\" <|split_2d|>\"\n- zoo\" <|split_2d|>\"\n- montana\" <|split_2d|>\"\n- river or stream\" <|split_2d|>\"\n- canada woodlands\" <|end_2d|>Answer: montana",
+    "prompt_metadata": {
+      "label": "montana",
+      "incorrect_answers": [
+        "kentucky",
+        "zoo",
+        "river or stream",
+        "canada woodlands"
+      ]
+    }
+  },
+  {
+    "prompt": "When one is stabbing to death another, they might look around and realize what a what they have made?\n<|start_2d|>\"\n- bleeding\" <|split_2d|>\"\n- knife\" <|split_2d|>\"\n- gruesome\" <|split_2d|>\"\n- killing\" <|split_2d|>\"\n- mess\" <|end_2d|>Answer: mess",
+    "prompt_metadata": {
+      "label": "mess",
+      "incorrect_answers": [
+        "bleeding",
+        "knife",
+        "gruesome",
+        "killing"
+      ]
+    }
+  },
+  {
+    "prompt": "If you rent a condominium in a glove-shaped state where are you?\n<|start_2d|>\"\n- great lake state\" <|split_2d|>\"\n- michigan\" <|split_2d|>\"\n- community\" <|split_2d|>\"\n- towels\" <|split_2d|>\"\n- complex\" <|end_2d|>Answer: michigan",
+    "prompt_metadata": {
+      "label": "michigan",
+      "incorrect_answers": [
+        "great lake state",
+        "community",
+        "towels",
+        "complex"
+      ]
+    }
+  },
+  {
+    "prompt": "The beaver swam through the country he symbolized, where was he likely to be?\n<|start_2d|>\"\n- japan\" <|split_2d|>\"\n- ontario\" <|split_2d|>\"\n- washington\" <|split_2d|>\"\n- woodlands\" <|split_2d|>\"\n- books\" <|end_2d|>Answer: ontario",
+    "prompt_metadata": {
+      "label": "ontario",
+      "incorrect_answers": [
+        "japan",
+        "washington",
+        "woodlands",
+        "books"
+      ]
+    }
+  },
+  {
+    "prompt": "Where might I find a history of the kingdom?\n<|start_2d|>\"\n- europe\" <|split_2d|>\"\n- monarchy\" <|split_2d|>\"\n- saudi arabia\" <|split_2d|>\"\n- book\" <|split_2d|>\"\n- crown jewels\" <|end_2d|>Answer: book",
+    "prompt_metadata": {
+      "label": "book",
+      "incorrect_answers": [
+        "europe",
+        "monarchy",
+        "saudi arabia",
+        "crown jewels"
+      ]
+    }
+  },
+  {
+    "prompt": "What type of homes are likely to have an attic?\n<|start_2d|>\"\n- victorian house\" <|split_2d|>\"\n- own home\" <|split_2d|>\"\n- older houses\" <|split_2d|>\"\n- boxes\" <|split_2d|>\"\n- apartment\" <|end_2d|>Answer: older houses",
+    "prompt_metadata": {
+      "label": "older houses",
+      "incorrect_answers": [
+        "victorian house",
+        "own home",
+        "boxes",
+        "apartment"
+      ]
+    }
+  },
+  {
+    "prompt": " The United States troops at the outposts of the western frontier of the state and in the Indian nation have all been recalled from winter quarters to reinforce the garrison at Fort Smith . The garrison at Fort Smith had been previously transferred to the United States Arsenal in this city ( Little Rock ) . The arsenal is one of the richest depositories of military stores in the United States and is supposed to be the ultimate destination of the <unk> [ sic ] ordered from the frontier . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "The catwalk was five stories up and exposed, everybody had to wear helmets and harnesses at the where?\n<|start_2d|>\"\n- mountain\" <|split_2d|>\"\n- construction site\" <|split_2d|>\"\n- theatre\" <|split_2d|>\"\n- fieldhouse\" <|split_2d|>\"\n- fashion show\" <|end_2d|>Answer: construction site",
+    "prompt_metadata": {
+      "label": "construction site",
+      "incorrect_answers": [
+        "mountain",
+        "theatre",
+        "fieldhouse",
+        "fashion show"
+      ]
+    }
+  },
+  {
+    "prompt": "The building could accommodate many people.  The entrance hall alone was impressive, being wide enough to admit a hundred shoulder to shoulder.  But the building was owned by a billionaire and used only for his personal entertainment.  How would you describe this place?\n<|start_2d|>\"\n- convention center\" <|split_2d|>\"\n- public building\" <|split_2d|>\"\n- large building\" <|split_2d|>\"\n- school\" <|split_2d|>\"\n- town hall\" <|end_2d|>Answer: large building",
+    "prompt_metadata": {
+      "label": "large building",
+      "incorrect_answers": [
+        "convention center",
+        "public building",
+        "school",
+        "town hall"
+      ]
+    }
+  },
+  {
+    "prompt": "What could happen as a secondary result of being tired?\n<|start_2d|>\"\n- lazy\" <|split_2d|>\"\n- stop bicycle\" <|split_2d|>\"\n- watch tv\" <|split_2d|>\"\n- snore\" <|split_2d|>\"\n- sit down\" <|end_2d|>Answer: snore",
+    "prompt_metadata": {
+      "label": "snore",
+      "incorrect_answers": [
+        "lazy",
+        "stop bicycle",
+        "watch tv",
+        "sit down"
+      ]
+    }
+  },
+  {
+    "prompt": "What leads someone to learning about world?\n<|start_2d|>\"\n- anger\" <|split_2d|>\"\n- open mind\" <|split_2d|>\"\n- biology book\" <|split_2d|>\"\n- smartness\" <|split_2d|>\"\n- cynicism\" <|end_2d|>Answer: open mind",
+    "prompt_metadata": {
+      "label": "open mind",
+      "incorrect_answers": [
+        "anger",
+        "biology book",
+        "smartness",
+        "cynicism"
+      ]
+    }
+  },
+  {
+    "prompt": "If you lost track of a monkey at home what is the closest place you should look first?\n<|start_2d|>\"\n- canada\" <|split_2d|>\"\n- friend's house\" <|split_2d|>\"\n- rain forest\" <|split_2d|>\"\n- amazon basin\" <|split_2d|>\"\n- african continent\" <|end_2d|>Answer: friend's house",
+    "prompt_metadata": {
+      "label": "friend's house",
+      "incorrect_answers": [
+        "canada",
+        "rain forest",
+        "amazon basin",
+        "african continent"
+      ]
+    }
+  },
+  {
+    "prompt": "The boy pondered commititng suicide, but didn't think of the consequences, what would he do should he carry though with it?\n<|start_2d|>\"\n- extreme pain\" <|split_2d|>\"\n- die\" <|split_2d|>\"\n- dying\" <|split_2d|>\"\n- interruption\" <|split_2d|>\"\n- sit down\" <|end_2d|>Answer: die",
+    "prompt_metadata": {
+      "label": "die",
+      "incorrect_answers": [
+        "extreme pain",
+        "dying",
+        "interruption",
+        "sit down"
+      ]
+    }
+  },
+  {
+    "prompt": " In a preview of the TGS demo , Ryan Geddes of IGN was left excited as to where the game would go after completing the demo , along with enjoying the improved visuals over Valkyria Chronicles II . Kotaku 's Richard Eisenbeis was highly positive about the game , citing is story as a return to form after Valkyria Chronicles II and its gameplay being the best in the series . His main criticisms were its length and gameplay repetition , along with expressing regret that it would not be localized . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Where would have a specialty hair salon for guests?\n<|start_2d|>\"\n- mail\" <|split_2d|>\"\n- shopping center\" <|split_2d|>\"\n- hotel\" <|split_2d|>\"\n- resort\" <|split_2d|>\"\n- metropolitan city\" <|end_2d|>Answer: hotel",
+    "prompt_metadata": {
+      "label": "hotel",
+      "incorrect_answers": [
+        "mail",
+        "shopping center",
+        "resort",
+        "metropolitan city"
+      ]
+    }
+  },
+  {
+    "prompt": "If people are told something controversial, what do they do next?\n<|start_2d|>\"\n- hope for peace\" <|split_2d|>\"\n- believe in god\" <|split_2d|>\"\n- start fighting\" <|split_2d|>\"\n- form opinions\" <|split_2d|>\"\n- worship idols\" <|end_2d|>Answer: form opinions",
+    "prompt_metadata": {
+      "label": "form opinions",
+      "incorrect_answers": [
+        "hope for peace",
+        "believe in god",
+        "start fighting",
+        "worship idols"
+      ]
+    }
+  },
+  {
+    "prompt": "What does a person do in a dirty kitchen?\n<|start_2d|>\"\n- wash dishes\" <|split_2d|>\"\n- cook dinner\" <|split_2d|>\"\n- thank god\" <|split_2d|>\"\n- mop\" <|split_2d|>\"\n- cook food\" <|end_2d|>Answer: wash dishes",
+    "prompt_metadata": {
+      "label": "wash dishes",
+      "incorrect_answers": [
+        "cook dinner",
+        "thank god",
+        "mop",
+        "cook food"
+      ]
+    }
+  },
+  {
+    "prompt": " Kurt and Riela were featured in the Nintendo 3DS crossover Project X Zone , representing the Valkyria series . Media.Vision would return to the series to develop Valkyria : Azure Revolution , with Ozawa returning as director . Azure Revolution is a role @-@ playing video game for the PlayStation 4 that forms the beginning of a new series within the Valkyria franchise . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Their first kiss was ruined, his bad choice of smoking had given him what?\n<|start_2d|>\"\n- lung disease\" <|split_2d|>\"\n- persistent cough\" <|split_2d|>\"\n- birth defects\" <|split_2d|>\"\n- bad breath\" <|split_2d|>\"\n- ashtray\" <|end_2d|>Answer: bad breath",
+    "prompt_metadata": {
+      "label": "bad breath",
+      "incorrect_answers": [
+        "lung disease",
+        "persistent cough",
+        "birth defects",
+        "ashtray"
+      ]
+    }
+  },
+  {
+    "prompt": "Religion plays a big role in many lives, but the what in the room is oddly often the most preachy?\n<|start_2d|>\"\n- atheism\" <|split_2d|>\"\n- atheist\" <|split_2d|>\"\n- science\" <|split_2d|>\"\n- wars\" <|split_2d|>\"\n- confusing\" <|end_2d|>Answer: atheist",
+    "prompt_metadata": {
+      "label": "atheist",
+      "incorrect_answers": [
+        "atheism",
+        "science",
+        "wars",
+        "confusing"
+      ]
+    }
+  },
+  {
+    "prompt": "When do people go shopping for souvenirs?\n<|start_2d|>\"\n- having money\" <|split_2d|>\"\n- money and time\" <|split_2d|>\"\n- funeral\" <|split_2d|>\"\n- spending money\" <|split_2d|>\"\n- travel\" <|end_2d|>Answer: travel",
+    "prompt_metadata": {
+      "label": "travel",
+      "incorrect_answers": [
+        "having money",
+        "money and time",
+        "funeral",
+        "spending money"
+      ]
+    }
+  },
+  {
+    "prompt": " Partly due to these events , and partly due to the major losses in manpower Gallia suffers towards the end of the war with the Empire , the Nameless are offered a formal position as a squad in the Gallian Army rather than serve as an anonymous shadow force . This is short @-@ lived , however , as following Maximilian 's defeat , Dahau and Calamity Raven move to activate an ancient <unk> super weapon within the Empire , kept secret by their benefactor . Without the support of Maximilian or the chance to prove themselves in the war with Gallia , it is Dahau 's last trump card in creating a new Darcsen nation . As an armed Gallian force invading the Empire just following the two nations ' cease @-@ fire would certainly wreck their newfound peace , Kurt decides to once again make his squad the Nameless , asking Crowe to list himself and all under his command as killed @-@ in @-@ action . Now owing allegiance to none other than themselves , the 422nd confronts Dahau and destroys the <unk> weapon . Each member then goes their separate ways in order to begin their lives anew . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "What would happen if you are having a good time while chatting with friends?\n<|start_2d|>\"\n- agreement\" <|split_2d|>\"\n- communication\" <|split_2d|>\"\n- love\" <|split_2d|>\"\n- happiness\" <|split_2d|>\"\n- discord\" <|end_2d|>Answer: happiness",
+    "prompt_metadata": {
+      "label": "happiness",
+      "incorrect_answers": [
+        "agreement",
+        "communication",
+        "love",
+        "discord"
+      ]
+    }
+  },
+  {
+    "prompt": " The Tower Building of the Little Rock Arsenal , also known as U.S. Arsenal Building , is a building located in MacArthur Park in downtown Little Rock , Arkansas . Built in 1840 , it was part of Little Rock 's first military installation . Since its decommissioning , The Tower Building has housed two museums . It was home to the Arkansas Museum of Natural History and Antiquities from 1942 to 1997 and the MacArthur Museum of Arkansas Military History since 2001 . It has also been the headquarters of the Little Rock \u00c6sthetic Club since 1894 . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": " The anime 's title was inspired by the principle purpose of the Nameless : to suffer in battle for the goals of others . A subtitle attached to the project during development was \" The Road to Kubinka \" , which referenced the Kubinka Tank Museum in Moscow . The game 's main theme was how the characters regained their sense of self when stripped of their names and identities , along with general themes focused on war and its consequences . While making the anime , the production team were told by Sega to make it as realistic as possible , with the consequence that the team did extensive research into aspects such as what happened when vehicles like tanks were overturned or damaged . Due to it being along the same timeline as the original game and its television anime adaptation , the cast of Valkyria Chronicles could make appearances , which pleased the team . The opening theme , \" Akari ( Light ) <unk> \" ( <unk> @-@ <unk> ) , was sung by Japanese singer <unk> . The ending theme , \" Someday the Flowers of Light Will Bloom \" ( <unk> , Itsuka Saku Hikari no Hana ) , was sung by Minami Kuribayashi . Both songs ' lyrics were written by their respective artists . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "He bought an apple tree to plant near Providence, where did the tree get planted?\n<|start_2d|>\"\n- beach\" <|split_2d|>\"\n- rhode island\" <|split_2d|>\"\n- idaho\" <|split_2d|>\"\n- new hampshire\" <|split_2d|>\"\n- fields\" <|end_2d|>Answer: rhode island",
+    "prompt_metadata": {
+      "label": "rhode island",
+      "incorrect_answers": [
+        "beach",
+        "idaho",
+        "new hampshire",
+        "fields"
+      ]
+    }
+  },
+  {
+    "prompt": " The building receives its name from its distinct octagonal tower . Besides being the last remaining structure of the original Little Rock Arsenal and one of the oldest buildings in central Arkansas , it was also the birthplace of General Douglas MacArthur , who became the supreme commander of US forces in the South Pacific during World War II . It was also the starting place of the Camden Expedition . In 2011 it was named as one of the top 10 attractions in the state of Arkansas by <unk> \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "What might happen to a person with a tumor?\n<|start_2d|>\"\n- travel\" <|split_2d|>\"\n- die of cancer\" <|split_2d|>\"\n- cross street\" <|split_2d|>\"\n- meet friends\" <|split_2d|>\"\n- say words\" <|end_2d|>Answer: die of cancer",
+    "prompt_metadata": {
+      "label": "die of cancer",
+      "incorrect_answers": [
+        "travel",
+        "cross street",
+        "meet friends",
+        "say words"
+      ]
+    }
+  },
+  {
+    "prompt": "What can planning vacation lead to between a couple when they disagree?\n<|start_2d|>\"\n- relaxation\" <|split_2d|>\"\n- enjoying\" <|split_2d|>\"\n- arguments\" <|split_2d|>\"\n- going abroad\" <|split_2d|>\"\n- spending money\" <|end_2d|>Answer: arguments",
+    "prompt_metadata": {
+      "label": "arguments",
+      "incorrect_answers": [
+        "relaxation",
+        "enjoying",
+        "going abroad",
+        "spending money"
+      ]
+    }
+  },
+  {
+    "prompt": "What do people who are collectivist do?\n<|start_2d|>\"\n- sail boats\" <|split_2d|>\"\n- believe in god\" <|split_2d|>\"\n- shake hands\" <|split_2d|>\"\n- share things\" <|split_2d|>\"\n- question authority\" <|end_2d|>Answer: share things",
+    "prompt_metadata": {
+      "label": "share things",
+      "incorrect_answers": [
+        "sail boats",
+        "believe in god",
+        "shake hands",
+        "question authority"
+      ]
+    }
+  },
+  {
+    "prompt": "The researcher cut his hand and went to the sink, where was the researcher?\n<|start_2d|>\"\n- home\" <|split_2d|>\"\n- chemistry lab\" <|split_2d|>\"\n- apartment\" <|split_2d|>\"\n- laboratory\" <|split_2d|>\"\n- laundry room\" <|end_2d|>Answer: laboratory",
+    "prompt_metadata": {
+      "label": "laboratory",
+      "incorrect_answers": [
+        "home",
+        "chemistry lab",
+        "apartment",
+        "laundry room"
+      ]
+    }
+  },
+  {
+    "prompt": " = = = Music = = = \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "The excavation workers had to take extra care to stay hydrated, what landscape might they be working?\n<|start_2d|>\"\n- city\" <|split_2d|>\"\n- montana\" <|split_2d|>\"\n- egypt\" <|split_2d|>\"\n- store\" <|split_2d|>\"\n- desert\" <|end_2d|>Answer: desert",
+    "prompt_metadata": {
+      "label": "desert",
+      "incorrect_answers": [
+        "city",
+        "montana",
+        "egypt",
+        "store"
+      ]
+    }
+  },
+  {
+    "prompt": "If a person sees an accident, what do they generally wonder?\n<|start_2d|>\"\n- wonder what happened\" <|split_2d|>\"\n- cross street\" <|split_2d|>\"\n- run away\" <|split_2d|>\"\n- wash themselves\" <|split_2d|>\"\n- feel lucky\" <|end_2d|>Answer: wonder what happened",
+    "prompt_metadata": {
+      "label": "wonder what happened",
+      "incorrect_answers": [
+        "cross street",
+        "run away",
+        "wash themselves",
+        "feel lucky"
+      ]
+    }
+  },
+  {
+    "prompt": " = = Plot = = \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Where are there often spiders in a house?\n<|start_2d|>\"\n- in wall\" <|split_2d|>\"\n- cellar\" <|split_2d|>\"\n- floor\" <|split_2d|>\"\n- web\" <|split_2d|>\"\n- basement\" <|end_2d|>Answer: basement",
+    "prompt_metadata": {
+      "label": "basement",
+      "incorrect_answers": [
+        "in wall",
+        "cellar",
+        "floor",
+        "web"
+      ]
+    }
+  },
+  {
+    "prompt": "Playing tennis can be a great workout, all the lateral movement really gets the whats?\n<|start_2d|>\"\n- legs\" <|split_2d|>\"\n- skill\" <|split_2d|>\"\n- hand\" <|split_2d|>\"\n- competition\" <|split_2d|>\"\n- tennis racket\" <|end_2d|>Answer: legs",
+    "prompt_metadata": {
+      "label": "legs",
+      "incorrect_answers": [
+        "skill",
+        "hand",
+        "competition",
+        "tennis racket"
+      ]
+    }
+  },
+  {
+    "prompt": "Where would you buy jeans in a place with a large number of indoor merchants?\n<|start_2d|>\"\n- shopping mall\" <|split_2d|>\"\n- laundromat\" <|split_2d|>\"\n- hospital\" <|split_2d|>\"\n- clothing store\" <|split_2d|>\"\n- thrift store\" <|end_2d|>Answer: shopping mall",
+    "prompt_metadata": {
+      "label": "shopping mall",
+      "incorrect_answers": [
+        "laundromat",
+        "hospital",
+        "clothing store",
+        "thrift store"
+      ]
+    }
+  },
+  {
+    "prompt": " Inside the Little Rock Arsenal after its seizure in February , 1861 , the Confederates inventoried some 10 @,@ 247 weapons , 250 @,@ 000 musket cartridges , and 520 @,@ 000 percussion caps , as well as the four bronze cannon of Totten 's battery . Long arms in the Arsenal 's inventory consisted of : \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Billy was was going on a long vacation, but before he did he got a bite to eat.  Where might he have eaten?\n<|start_2d|>\"\n- space shuttle\" <|split_2d|>\"\n- friend's house\" <|split_2d|>\"\n- disneyland\" <|split_2d|>\"\n- supermarket\" <|split_2d|>\"\n- gas station\" <|end_2d|>Answer: friend's house",
+    "prompt_metadata": {
+      "label": "friend's house",
+      "incorrect_answers": [
+        "space shuttle",
+        "disneyland",
+        "supermarket",
+        "gas station"
+      ]
+    }
+  },
+  {
+    "prompt": "John wants to eat at an Indian restaurant in on top of the space needle, where would he have to go?\n<|start_2d|>\"\n- reservation\" <|split_2d|>\"\n- curry\" <|split_2d|>\"\n- britsh town\" <|split_2d|>\"\n- seattle\" <|split_2d|>\"\n- large city\" <|end_2d|>Answer: seattle",
+    "prompt_metadata": {
+      "label": "seattle",
+      "incorrect_answers": [
+        "reservation",
+        "curry",
+        "britsh town",
+        "large city"
+      ]
+    }
+  },
+  {
+    "prompt": "What can long kissing lead to?\n<|start_2d|>\"\n- feeling good\" <|split_2d|>\"\n- pleasure\" <|split_2d|>\"\n- being happy\" <|split_2d|>\"\n- bad breath\" <|split_2d|>\"\n- sexual excitement\" <|end_2d|>Answer: sexual excitement",
+    "prompt_metadata": {
+      "label": "sexual excitement",
+      "incorrect_answers": [
+        "feeling good",
+        "pleasure",
+        "being happy",
+        "bad breath"
+      ]
+    }
+  },
+  {
+    "prompt": "If you're in North America traveling an expressway toward the Atlantic Ocean, where are you traveling to?\n<|start_2d|>\"\n- michigan\" <|split_2d|>\"\n- large city\" <|split_2d|>\"\n- state\" <|split_2d|>\"\n- american city\" <|split_2d|>\"\n- eastern united states\" <|end_2d|>Answer: eastern united states",
+    "prompt_metadata": {
+      "label": "eastern united states",
+      "incorrect_answers": [
+        "michigan",
+        "large city",
+        "state",
+        "american city"
+      ]
+    }
+  },
+  {
+    "prompt": "Who is someone competing against?\n<|start_2d|>\"\n- effort\" <|split_2d|>\"\n- time\" <|split_2d|>\"\n- opponent\" <|split_2d|>\"\n- skill\" <|split_2d|>\"\n- competition\" <|end_2d|>Answer: opponent",
+    "prompt_metadata": {
+      "label": "opponent",
+      "incorrect_answers": [
+        "effort",
+        "time",
+        "skill",
+        "competition"
+      ]
+    }
+  },
+  {
+    "prompt": "How does a doctor deal with suffering and death in his patients?\n<|start_2d|>\"\n- care for patients\" <|split_2d|>\"\n- distance himself\" <|split_2d|>\"\n- goes to therapy\" <|split_2d|>\"\n- let blood\" <|split_2d|>\"\n- study medicine\" <|end_2d|>Answer: distance himself",
+    "prompt_metadata": {
+      "label": "distance himself",
+      "incorrect_answers": [
+        "care for patients",
+        "goes to therapy",
+        "let blood",
+        "study medicine"
+      ]
+    }
+  },
+  {
+    "prompt": "What would someone need to do if he or she wanted to be going public?\n<|start_2d|>\"\n- consequences\" <|split_2d|>\"\n- being ridiculed\" <|split_2d|>\"\n- more money\" <|split_2d|>\"\n- more funding\" <|split_2d|>\"\n- telling all\" <|end_2d|>Answer: telling all",
+    "prompt_metadata": {
+      "label": "telling all",
+      "incorrect_answers": [
+        "consequences",
+        "being ridiculed",
+        "more money",
+        "more funding"
+      ]
+    }
+  },
+  {
+    "prompt": " The game 's battle system , the <unk> system , is carried over directly from <unk> Chronicles . During missions , players select each unit using a top @-@ down perspective of the battlefield map : once a character is selected , the player moves the character around the battlefield in third @-@ person . A character can only act once per @-@ turn , but characters can be granted multiple turns at the expense of other characters ' turns . Each character has a field and distance of movement limited by their Action Gauge . Up to nine characters can be assigned to a single mission . During gameplay , characters will call out if something happens to them , such as their health points ( HP ) getting low or being knocked out by enemy attacks . Each character has specific \" Potentials \" , skills unique to each character . They are divided into \" Personal Potential \" , which are innate skills that remain unaltered unless otherwise dictated by the story and can either help or impede a character , and \" Battle Potentials \" , which are grown throughout the game and always grant boons to a character . To learn Battle Potentials , each character has a unique \" Masters Table \" , a grid @-@ based skill table that can be used to acquire and link different skills . Characters also have Special Abilities that grant them temporary boosts on the battlefield : Kurt can activate \" Direct Command \" and move around the battlefield without depleting his Action Point gauge , the character <unk> can shift into her \" Valkyria Form \" and become invincible , while Imca can target multiple enemy units with her heavy weapon . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": " The game takes place during the Second Europan War . Gallian Army Squad 422 , also known as \" The Nameless \" , are a penal military unit composed of criminals , foreign deserters , and military offenders whose real names are erased from the records and thereon officially referred to by numbers . Ordered by the Gallian military to perform the most dangerous missions that the Regular Army and Militia will not do , they are nevertheless up to the task , exemplified by their motto , <unk> <unk> , meaning \" Always Ready . \" The three main characters are No.7 Kurt Irving , an army officer falsely accused of treason who wishes to redeem himself ; Ace No.1 Imca , a female Darcsen heavy weapons specialist who seeks revenge against the Valkyria who destroyed her home ; and No.13 Riela <unk> , a seemingly jinxed young woman who is unknowingly a descendant of the Valkyria . Together with their fellow squad members , these three are tasked to fight against a mysterious Imperial unit known as Calamity Raven , consisting of mostly Darcsen soldiers . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "You can land, claim your things, and go right to a bus stop where?\n<|start_2d|>\"\n- airport\" <|split_2d|>\"\n- city\" <|split_2d|>\"\n- urban area\" <|split_2d|>\"\n- towns\" <|split_2d|>\"\n- bus station\" <|end_2d|>Answer: airport",
+    "prompt_metadata": {
+      "label": "airport",
+      "incorrect_answers": [
+        "city",
+        "urban area",
+        "towns",
+        "bus station"
+      ]
+    }
+  },
+  {
+    "prompt": "What do you want to do when you love something?\n<|start_2d|>\"\n- please parents\" <|split_2d|>\"\n- get\" <|split_2d|>\"\n- make a promise\" <|split_2d|>\"\n- reproduce\" <|split_2d|>\"\n- obstruct justice\" <|end_2d|>Answer: get",
+    "prompt_metadata": {
+      "label": "get",
+      "incorrect_answers": [
+        "please parents",
+        "make a promise",
+        "reproduce",
+        "obstruct justice"
+      ]
+    }
+  },
+  {
+    "prompt": "Where would a box office be selling tickets for something that is happening outside?\n<|start_2d|>\"\n- movie theater\" <|split_2d|>\"\n- theater district\" <|split_2d|>\"\n- ballpark\" <|split_2d|>\"\n- theatre\" <|split_2d|>\"\n- street\" <|end_2d|>Answer: ballpark",
+    "prompt_metadata": {
+      "label": "ballpark",
+      "incorrect_answers": [
+        "movie theater",
+        "theater district",
+        "theatre",
+        "street"
+      ]
+    }
+  },
+  {
+    "prompt": "What can you put in a parking lot?\n<|start_2d|>\"\n- car\" <|split_2d|>\"\n- town\" <|split_2d|>\"\n- circus\" <|split_2d|>\"\n- city\" <|split_2d|>\"\n- business district\" <|end_2d|>Answer: car",
+    "prompt_metadata": {
+      "label": "car",
+      "incorrect_answers": [
+        "town",
+        "circus",
+        "city",
+        "business district"
+      ]
+    }
+  },
+  {
+    "prompt": "How might a bank statement arrive at someone's house?\n<|start_2d|>\"\n- legal document\" <|split_2d|>\"\n- newspaper\" <|split_2d|>\"\n- press release\" <|split_2d|>\"\n- email\" <|split_2d|>\"\n- mail\" <|end_2d|>Answer: mail",
+    "prompt_metadata": {
+      "label": "mail",
+      "incorrect_answers": [
+        "legal document",
+        "newspaper",
+        "press release",
+        "email"
+      ]
+    }
+  },
+  {
+    "prompt": "What has a surface with ripples?\n<|start_2d|>\"\n- mirror\" <|split_2d|>\"\n- object\" <|split_2d|>\"\n- cottage cheese\" <|split_2d|>\"\n- tetrahedron\" <|split_2d|>\"\n- lake\" <|end_2d|>Answer: lake",
+    "prompt_metadata": {
+      "label": "lake",
+      "incorrect_answers": [
+        "mirror",
+        "object",
+        "cottage cheese",
+        "tetrahedron"
+      ]
+    }
+  },
+  {
+    "prompt": "The woman called herself the Joy.  She married a man called what?\n<|start_2d|>\"\n- place plate on table\" <|split_2d|>\"\n- sadness\" <|split_2d|>\"\n- sorrow\" <|split_2d|>\"\n- misery\" <|split_2d|>\"\n- bad time\" <|end_2d|>Answer: sorrow",
+    "prompt_metadata": {
+      "label": "sorrow",
+      "incorrect_answers": [
+        "place plate on table",
+        "sadness",
+        "misery",
+        "bad time"
+      ]
+    }
+  },
+  {
+    "prompt": "What do soldiers do when their opponents get the upper hand?\n<|start_2d|>\"\n- follow orders\" <|split_2d|>\"\n- use weapons\" <|split_2d|>\"\n- call reinforcements\" <|split_2d|>\"\n- coming home\" <|split_2d|>\"\n- die in battle\" <|end_2d|>Answer: die in battle",
+    "prompt_metadata": {
+      "label": "die in battle",
+      "incorrect_answers": [
+        "follow orders",
+        "use weapons",
+        "call reinforcements",
+        "coming home"
+      ]
+    }
+  },
+  {
+    "prompt": "Stood below the balloons and studied them closely.  As he looked to the sky, he didn't see anything holding them up.  He wondered what the balloons where?\n<|start_2d|>\"\n- aloft\" <|split_2d|>\"\n- overhead\" <|split_2d|>\"\n- upwards\" <|split_2d|>\"\n- upstairs\" <|split_2d|>\"\n- above\" <|end_2d|>Answer: aloft",
+    "prompt_metadata": {
+      "label": "aloft",
+      "incorrect_answers": [
+        "overhead",
+        "upwards",
+        "upstairs",
+        "above"
+      ]
+    }
+  },
+  {
+    "prompt": "Where do you put a bowl after it is used?\n<|start_2d|>\"\n- cupboard\" <|split_2d|>\"\n- restaurant\" <|split_2d|>\"\n- cabinet\" <|split_2d|>\"\n- trash\" <|split_2d|>\"\n- dishwasher\" <|end_2d|>Answer: dishwasher",
+    "prompt_metadata": {
+      "label": "dishwasher",
+      "incorrect_answers": [
+        "cupboard",
+        "restaurant",
+        "cabinet",
+        "trash"
+      ]
+    }
+  },
+  {
+    "prompt": "Being fat is unhealthy, one who is should probably exercise to what?\n<|start_2d|>\"\n- stay fit\" <|split_2d|>\"\n- get in shape\" <|split_2d|>\"\n- look better\" <|split_2d|>\"\n- run faster\" <|split_2d|>\"\n- eat healthily\" <|end_2d|>Answer: get in shape",
+    "prompt_metadata": {
+      "label": "get in shape",
+      "incorrect_answers": [
+        "stay fit",
+        "look better",
+        "run faster",
+        "eat healthily"
+      ]
+    }
+  },
+  {
+    "prompt": " <unk> .58 cal rifle @-@ muskets 900 \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": " For several years the arsenal , which was owned by the federal government , served as a simple arms depot and was staffed with only a handful of soldiers . But in November 1860 , with the American Civil War on the horizon , a company of the Second United States Artillery , consisting of sixty @-@ five men , was transferred to Little Rock under the command of Captain James Totten . On January 15 , 1861 , the state legislature decided to hold a referendum to determine if a state convention should be held to consider the issue of secession and to elect delegates to such a convention . It was planned for February 18 ; however , events at the arsenal , would not wait . On January 28 , then Governor Henry Massey Rector informed Captain Totten that he and his soldiers would be \" permitted to remain in the possession of the Federal officers until the State , by authority of the people , shall have determined to sever their connection with the General Government , \" Totten responded to this by telling the Governor that his orders came from the United States Government and began a desperate but ultimately futile dispatch of letters and telegrams asking for reinforcements , although rumors were widely spread that they were already coming . The first telegraph wire to span between Little Rock and Memphis had recently been completed . Local attorney John M Harrel was asked to compose the first telegraph dispatched from Arkansas 's capital . In his message , Harrel reported unconfirmed rumors that more federal troops had been sent to reinforce the Little Rock Arsenal . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "When someone is learning about science what happens to them?\n<|start_2d|>\"\n- loss of interest\" <|split_2d|>\"\n- excitement\" <|split_2d|>\"\n- accidents\" <|split_2d|>\"\n- experiment\" <|split_2d|>\"\n- become educated\" <|end_2d|>Answer: become educated",
+    "prompt_metadata": {
+      "label": "become educated",
+      "incorrect_answers": [
+        "loss of interest",
+        "excitement",
+        "accidents",
+        "experiment"
+      ]
+    }
+  },
+  {
+    "prompt": "As the human rode in his spacecraft in orbit around his home planet, what did he have a view of?\n<|start_2d|>\"\n- workplace\" <|split_2d|>\"\n- international space station\" <|split_2d|>\"\n- anywhere on earth\" <|split_2d|>\"\n- places he knows well\" <|split_2d|>\"\n- strip club\" <|end_2d|>Answer: anywhere on earth",
+    "prompt_metadata": {
+      "label": "anywhere on earth",
+      "incorrect_answers": [
+        "workplace",
+        "international space station",
+        "places he knows well",
+        "strip club"
+      ]
+    }
+  },
+  {
+    "prompt": " Two manga adaptations were produced , following each of the game 's main female protagonists Imca and Riela . They were Senj\u014d no Valkyria 3 : Namo <unk> <unk> no Hana ( \u6226\u5834\u306e\u30f4\u30a1\u30eb\u30ad\u30e5\u30ea\u30a23 <unk> , lit . Valkyria of the Battlefield 3 : The Flower of the Nameless Oath ) , illustrated by Naoyuki Fujisawa and eventually released in two volumes after being serialized in Dengeki Maoh between 2011 and 2012 ; and Senj\u014d no Valkyria 3 : <unk> Unmei no <unk> <unk> ( \u6226\u5834\u306e\u30f4\u30a1\u30eb\u30ad\u30e5\u30ea\u30a23 <unk> , lit . Valkyria of the Battlefield 3 -The Valkyrie of the Crimson Fate ) , illustrated by Mizuki Tsuge and eventually released in a single volume by Kadokawa Shoten in 2012 . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": " = = Reception = = \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": " <unk> M Harrel Telegram , January 31 , 1861 \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Brother Mike escaped the collapsed mine.  Ever since, he was afraid of what?\n<|start_2d|>\"\n- be imprisoned\" <|split_2d|>\"\n- captured\" <|split_2d|>\"\n- stay in\" <|split_2d|>\"\n- being caught\" <|split_2d|>\"\n- being trapped\" <|end_2d|>Answer: being trapped",
+    "prompt_metadata": {
+      "label": "being trapped",
+      "incorrect_answers": [
+        "be imprisoned",
+        "captured",
+        "stay in",
+        "being caught"
+      ]
+    }
+  },
+  {
+    "prompt": " = = = Adaptations = = = \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Where do you go to see a dinosaur bone?\n<|start_2d|>\"\n- human body\" <|split_2d|>\"\n- arm\" <|split_2d|>\"\n- tomb\" <|split_2d|>\"\n- pyramid\" <|split_2d|>\"\n- museum\" <|end_2d|>Answer: museum",
+    "prompt_metadata": {
+      "label": "museum",
+      "incorrect_answers": [
+        "human body",
+        "arm",
+        "tomb",
+        "pyramid"
+      ]
+    }
+  },
+  {
+    "prompt": "What is usually the mood when chatting with friends?\n<|start_2d|>\"\n- love\" <|split_2d|>\"\n- social bonding\" <|split_2d|>\"\n- talkative\" <|split_2d|>\"\n- gathering of information\" <|split_2d|>\"\n- feel relaxed\" <|end_2d|>Answer: feel relaxed",
+    "prompt_metadata": {
+      "label": "feel relaxed",
+      "incorrect_answers": [
+        "love",
+        "social bonding",
+        "talkative",
+        "gathering of information"
+      ]
+    }
+  },
+  {
+    "prompt": " M1822 .69 cal ( flintlock ) 5 @,@ 625 \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "What could have an iron in some areas of it but not in other areas?\n<|start_2d|>\"\n- hematite\" <|split_2d|>\"\n- linen closet\" <|split_2d|>\"\n- house\" <|split_2d|>\"\n- laundry room\" <|split_2d|>\"\n- chemistry lab\" <|end_2d|>Answer: house",
+    "prompt_metadata": {
+      "label": "house",
+      "incorrect_answers": [
+        "hematite",
+        "linen closet",
+        "laundry room",
+        "chemistry lab"
+      ]
+    }
+  },
+  {
+    "prompt": "Where do tabby cats usually like to live?\n<|start_2d|>\"\n- dumpsters\" <|split_2d|>\"\n- alley\" <|split_2d|>\"\n- lap\" <|split_2d|>\"\n- home\" <|split_2d|>\"\n- barn\" <|end_2d|>Answer: barn",
+    "prompt_metadata": {
+      "label": "barn",
+      "incorrect_answers": [
+        "dumpsters",
+        "alley",
+        "lap",
+        "home"
+      ]
+    }
+  },
+  {
+    "prompt": " It met with positive sales in Japan , and was praised by both Japanese and western critics . After release , it received downloadable content , along with an expanded edition in November of that year . It was also adapted into manga and an original video animation series . Due to low sales of Valkyria Chronicles II , Valkyria Chronicles III was not localized , but a fan translation compatible with the game 's expanded edition was released in 2014 . Media.Vision would return to the franchise with the development of Valkyria : Azure Revolution for the PlayStation 4 . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "She was hitting bottle to the point that doing what would seem like sobering up even though it wasn't?\n<|start_2d|>\"\n- buying beer\" <|split_2d|>\"\n- table\" <|split_2d|>\"\n- alcoholism\" <|split_2d|>\"\n- aim\" <|split_2d|>\"\n- michigan\" <|end_2d|>Answer: buying beer",
+    "prompt_metadata": {
+      "label": "buying beer",
+      "incorrect_answers": [
+        "table",
+        "alcoholism",
+        "aim",
+        "michigan"
+      ]
+    }
+  },
+  {
+    "prompt": " <unk> rifle ( \" Mississippi Rifle \" ) 54 \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "How do you show that you are agreeing with someone?\n<|start_2d|>\"\n- handshake\" <|split_2d|>\"\n- kiss\" <|split_2d|>\"\n- nodding\" <|split_2d|>\"\n- lie\" <|split_2d|>\"\n- shaking hand\" <|end_2d|>Answer: nodding",
+    "prompt_metadata": {
+      "label": "nodding",
+      "incorrect_answers": [
+        "handshake",
+        "kiss",
+        "lie",
+        "shaking hand"
+      ]
+    }
+  },
+  {
+    "prompt": "It is hard to predict a rebound in basketball, this is because the ball and rim are what?\n<|start_2d|>\"\n- dribbling\" <|split_2d|>\"\n- full of air\" <|split_2d|>\"\n- bouncing around court\" <|split_2d|>\"\n- punctured\" <|split_2d|>\"\n- round\" <|end_2d|>Answer: round",
+    "prompt_metadata": {
+      "label": "round",
+      "incorrect_answers": [
+        "dribbling",
+        "full of air",
+        "bouncing around court",
+        "punctured"
+      ]
+    }
+  },
+  {
+    "prompt": "Where is highly unusual to put a furnace?\n<|start_2d|>\"\n- cellar\" <|split_2d|>\"\n- encampment\" <|split_2d|>\"\n- house\" <|split_2d|>\"\n- basement\" <|split_2d|>\"\n- home\" <|end_2d|>Answer: cellar",
+    "prompt_metadata": {
+      "label": "cellar",
+      "incorrect_answers": [
+        "encampment",
+        "house",
+        "basement",
+        "home"
+      ]
+    }
+  },
+  {
+    "prompt": "I forgot to pay the electricity bill, now what can't I do with my ground pump?\n<|start_2d|>\"\n- put in to the water\" <|split_2d|>\"\n- cause fire\" <|split_2d|>\"\n- produce heat\" <|split_2d|>\"\n- short fuse\" <|split_2d|>\"\n- shock\" <|end_2d|>Answer: produce heat",
+    "prompt_metadata": {
+      "label": "produce heat",
+      "incorrect_answers": [
+        "put in to the water",
+        "cause fire",
+        "short fuse",
+        "shock"
+      ]
+    }
+  },
+  {
+    "prompt": " Valkyria Chronicles 3 was adapted into a two @-@ episode original video animation series in the same year of its release . Titled Senj\u014d no Valkyria 3 : Taga Tame no <unk> ( <unk> <unk> , lit . Valkyria of the Battlefield 3 : The Wound Taken for Someone 's Sake ) , it was originally released through PlayStation Network and <unk> between April and May 2011 . The initially @-@ planned release and availability period needed to be extended due to a stoppage to PSN during the early summer of that year . It later released for DVD on June 29 and August 31 , 2011 , with separate \" Black \" and \" Blue \" editions being available for purchase . The anime is set during the latter half of Valkyria Chronicles III , detailing a mission by the Nameless against their Imperial rivals Calamity Raven . The anime was first announced in November 2010 . It was developed by A @-@ 1 Pictures , produced by Shinji <unk> , directed by Nobuhiro Kond\u014d , and written by Hiroshi <unk> . Sakimoto 's music for the game was used in the anime . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Where would you place a bed in a new house?\n<|start_2d|>\"\n- garage\" <|split_2d|>\"\n- furniture\" <|split_2d|>\"\n- floor\" <|split_2d|>\"\n- sleep\" <|split_2d|>\"\n- awake\" <|end_2d|>Answer: floor",
+    "prompt_metadata": {
+      "label": "floor",
+      "incorrect_answers": [
+        "garage",
+        "furniture",
+        "sleep",
+        "awake"
+      ]
+    }
+  },
+  {
+    "prompt": "What happens to a neighborhood when someone is known to be hurting someone else?\n<|start_2d|>\"\n- public outcry\" <|split_2d|>\"\n- more hurt\" <|split_2d|>\"\n- people become happy\" <|split_2d|>\"\n- legal problems\" <|split_2d|>\"\n- physical pain\" <|end_2d|>Answer: public outcry",
+    "prompt_metadata": {
+      "label": "public outcry",
+      "incorrect_answers": [
+        "more hurt",
+        "people become happy",
+        "legal problems",
+        "physical pain"
+      ]
+    }
+  },
+  {
+    "prompt": "The person took a ibuprofen after experiencing a headache, what happened to him next?\n<|start_2d|>\"\n- feel relieved\" <|split_2d|>\"\n- cross street\" <|split_2d|>\"\n- learn to swim\" <|split_2d|>\"\n- walk\" <|split_2d|>\"\n- act responsibly\" <|end_2d|>Answer: feel relieved",
+    "prompt_metadata": {
+      "label": "feel relieved",
+      "incorrect_answers": [
+        "cross street",
+        "learn to swim",
+        "walk",
+        "act responsibly"
+      ]
+    }
+  },
+  {
+    "prompt": "WHat do many people like to do at festivals?\n<|start_2d|>\"\n- play games\" <|split_2d|>\"\n- talk\" <|split_2d|>\"\n- hear birds voices\" <|split_2d|>\"\n- eat ice cream\" <|split_2d|>\"\n- listen to music\" <|end_2d|>Answer: listen to music",
+    "prompt_metadata": {
+      "label": "listen to music",
+      "incorrect_answers": [
+        "play games",
+        "talk",
+        "hear birds voices",
+        "eat ice cream"
+      ]
+    }
+  },
+  {
+    "prompt": "Children leave home with clean clothes and then?\n<|start_2d|>\"\n- use water\" <|split_2d|>\"\n- soap\" <|split_2d|>\"\n- launder\" <|split_2d|>\"\n- cry\" <|split_2d|>\"\n- get dirty\" <|end_2d|>Answer: get dirty",
+    "prompt_metadata": {
+      "label": "get dirty",
+      "incorrect_answers": [
+        "use water",
+        "soap",
+        "launder",
+        "cry"
+      ]
+    }
+  },
+  {
+    "prompt": "In what geological feature will you find fungus growing?\n<|start_2d|>\"\n- shower stall\" <|split_2d|>\"\n- toenails\" <|split_2d|>\"\n- basement\" <|split_2d|>\"\n- forrest\" <|split_2d|>\"\n- cave\" <|end_2d|>Answer: cave",
+    "prompt_metadata": {
+      "label": "cave",
+      "incorrect_answers": [
+        "shower stall",
+        "toenails",
+        "basement",
+        "forrest"
+      ]
+    }
+  },
+  {
+    "prompt": " On its day of release in Japan , Valkyria Chronicles III topped both platform @-@ exclusive and multi @-@ platform sales charts . By early February , the game sold 102 @,@ 779 units , coming in second overall to The Last Story for the Wii . By the end of the year , the game had sold just over 152 @,@ 500 units . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "James wanted to ruin the parade.  In order to do that, he did something in the middle of the street.  What did he do?\n<|start_2d|>\"\n- found\" <|split_2d|>\"\n- fix\" <|split_2d|>\"\n- new construction\" <|split_2d|>\"\n- construct\" <|split_2d|>\"\n- produce\" <|end_2d|>Answer: construct",
+    "prompt_metadata": {
+      "label": "construct",
+      "incorrect_answers": [
+        "found",
+        "fix",
+        "new construction",
+        "produce"
+      ]
+    }
+  },
+  {
+    "prompt": " = = Civil War = = \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "The christian rock band was on a large stage, the singer's foot got caught on a wire and he had a small what?\n<|start_2d|>\"\n- commit sin\" <|split_2d|>\"\n- fail\" <|split_2d|>\"\n- disobey\" <|split_2d|>\"\n- stumble\" <|split_2d|>\"\n- boo boo\" <|end_2d|>Answer: stumble",
+    "prompt_metadata": {
+      "label": "stumble",
+      "incorrect_answers": [
+        "commit sin",
+        "fail",
+        "disobey",
+        "boo boo"
+      ]
+    }
+  },
+  {
+    "prompt": "A sloth climbs slow, but it can eventually reach all the way up where?\n<|start_2d|>\"\n- forest canopy\" <|split_2d|>\"\n- universe\" <|split_2d|>\"\n- tropical rainforest\" <|split_2d|>\"\n- large trees\" <|split_2d|>\"\n- nature preserve\" <|end_2d|>Answer: forest canopy",
+    "prompt_metadata": {
+      "label": "forest canopy",
+      "incorrect_answers": [
+        "universe",
+        "tropical rainforest",
+        "large trees",
+        "nature preserve"
+      ]
+    }
+  },
+  {
+    "prompt": " PlayStation Official Magazine - UK praised the story 's blurring of Gallia 's moral standing , art style , and most points about its gameplay , positively noting the latter for both its continued quality and the tweaks to balance and content . Its one major criticism were multiple difficulty spikes , something that had affected the previous games . Heath Hindman of gaming website PlayStation Lifestyle praised the addition of non @-@ linear elements and improvements or removal of mechanics from Valkyria Chronicles II in addition to praising the returning gameplay style of previous games . He also positively noted the story 's serious tone . Points criticized in the review were recycled elements , awkward cutscenes that seemed to include all characters in a scene for no good reason , pacing issues , and occasional problems with the game 's AI . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "The guy ate a lunch of onions, sardines, and garlic, what did he have as a result?\n<|start_2d|>\"\n- bad breath\" <|split_2d|>\"\n- no friends\" <|split_2d|>\"\n- farts\" <|split_2d|>\"\n- late for work\" <|split_2d|>\"\n- gain weight\" <|end_2d|>Answer: bad breath",
+    "prompt_metadata": {
+      "label": "bad breath",
+      "incorrect_answers": [
+        "no friends",
+        "farts",
+        "late for work",
+        "gain weight"
+      ]
+    }
+  },
+  {
+    "prompt": "What does a spider build to capture it's prey?\n<|start_2d|>\"\n- web\" <|split_2d|>\"\n- bridge\" <|split_2d|>\"\n- cellar\" <|split_2d|>\"\n- basement\" <|split_2d|>\"\n- hanging in air\" <|end_2d|>Answer: web",
+    "prompt_metadata": {
+      "label": "web",
+      "incorrect_answers": [
+        "bridge",
+        "cellar",
+        "basement",
+        "hanging in air"
+      ]
+    }
+  },
+  {
+    "prompt": "Where would you go if you want to get many types of goods?\n<|start_2d|>\"\n- shop\" <|split_2d|>\"\n- supermarket\" <|split_2d|>\"\n- shop\" <|split_2d|>\"\n- mall\" <|split_2d|>\"\n- grocery store\" <|end_2d|>Answer: supermarket",
+    "prompt_metadata": {
+      "label": "supermarket",
+      "incorrect_answers": [
+        "shop",
+        "shop",
+        "mall",
+        "grocery store"
+      ]
+    }
+  },
+  {
+    "prompt": "My chest is swelling at the prospect of gaining more land. Why is my chest swelling?\n<|start_2d|>\"\n- go to war\" <|split_2d|>\"\n- higher taxes\" <|split_2d|>\"\n- heart attack\" <|split_2d|>\"\n- pride\" <|split_2d|>\"\n- disputes\" <|end_2d|>Answer: pride",
+    "prompt_metadata": {
+      "label": "pride",
+      "incorrect_answers": [
+        "go to war",
+        "higher taxes",
+        "heart attack",
+        "disputes"
+      ]
+    }
+  },
+  {
+    "prompt": "They all wanted to play a board game, it was retrieved from inside where?\n<|start_2d|>\"\n- cupboard\" <|split_2d|>\"\n- under the bed\" <|split_2d|>\"\n- shelf\" <|split_2d|>\"\n- toy store\" <|split_2d|>\"\n- house\" <|end_2d|>Answer: cupboard",
+    "prompt_metadata": {
+      "label": "cupboard",
+      "incorrect_answers": [
+        "under the bed",
+        "shelf",
+        "toy store",
+        "house"
+      ]
+    }
+  },
+  {
+    "prompt": "He was eating too much and the doctors warned him, what was his condition?\n<|start_2d|>\"\n- gain weight\" <|split_2d|>\"\n- obesity\" <|split_2d|>\"\n- getting fit\" <|split_2d|>\"\n- getting sick\" <|split_2d|>\"\n- gas\" <|end_2d|>Answer: obesity",
+    "prompt_metadata": {
+      "label": "obesity",
+      "incorrect_answers": [
+        "gain weight",
+        "getting fit",
+        "getting sick",
+        "gas"
+      ]
+    }
+  },
+  {
+    "prompt": "What is writing a form of?\n<|start_2d|>\"\n- communication\" <|split_2d|>\"\n- listening\" <|split_2d|>\"\n- carpal tunnel syndrome\" <|split_2d|>\"\n- revolutions\" <|split_2d|>\"\n- writer's cramp\" <|end_2d|>Answer: communication",
+    "prompt_metadata": {
+      "label": "communication",
+      "incorrect_answers": [
+        "listening",
+        "carpal tunnel syndrome",
+        "revolutions",
+        "writer's cramp"
+      ]
+    }
+  },
+  {
+    "prompt": "What do you add to you dough when making bread to make it rise?\n<|start_2d|>\"\n- yeast\" <|split_2d|>\"\n- oven\" <|split_2d|>\"\n- mess\" <|split_2d|>\"\n- flour\" <|split_2d|>\"\n- biscuit\" <|end_2d|>Answer: yeast",
+    "prompt_metadata": {
+      "label": "yeast",
+      "incorrect_answers": [
+        "oven",
+        "mess",
+        "flour",
+        "biscuit"
+      ]
+    }
+  },
+  {
+    "prompt": "Where can a woman get birth control pills?\n<|start_2d|>\"\n- drug store\" <|split_2d|>\"\n- medicine cabinet\" <|split_2d|>\"\n- hormones\" <|split_2d|>\"\n- vagina\" <|split_2d|>\"\n- pharmacy\" <|end_2d|>Answer: pharmacy",
+    "prompt_metadata": {
+      "label": "pharmacy",
+      "incorrect_answers": [
+        "drug store",
+        "medicine cabinet",
+        "hormones",
+        "vagina"
+      ]
+    }
+  },
+  {
+    "prompt": "The old house had a loose window, this meant the what needed a coat of paint yearly?\n<|start_2d|>\"\n- windowsill\" <|split_2d|>\"\n- door\" <|split_2d|>\"\n- garage\" <|split_2d|>\"\n- hardware store\" <|split_2d|>\"\n- shelf\" <|end_2d|>Answer: windowsill",
+    "prompt_metadata": {
+      "label": "windowsill",
+      "incorrect_answers": [
+        "door",
+        "garage",
+        "hardware store",
+        "shelf"
+      ]
+    }
+  },
+  {
+    "prompt": " The item was intended simply as a piece of news , but telegraph lines quickly spread the news throughout the state , fueling procession sentiment . The rumor was interpreted by some Arkansans as a call from the governor to assemble to help expel the federal troops from the arsenal . By February 5 , six militia units , consisting of 1 @,@ 000 men , with a guarantee that the numbers could be increased to 5 @,@ 000 if the situations deemed it necessary , had assembled in Little Rock . Governor Rector vehemently denied ordering the troops to assemble or giving any order at all in connection with the troops . Faced with the fact that the military had assembled believing they were following his orders and the consensus of the citizens of Little Rock against any armed conflict between the civilian army and federal troops , Governor Rector was forced to take control of the situation . On February 6 , he sent a formal demand for surrender of the arsenal to Captain Totten , \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Jane was going to the party.  She didn't care about making friends or gorging on alcohol, she just wanted to do what?\n<|start_2d|>\"\n- plan\" <|split_2d|>\"\n- meet new people\" <|split_2d|>\"\n- work\" <|split_2d|>\"\n- have fun\" <|split_2d|>\"\n- getting drunk\" <|end_2d|>Answer: have fun",
+    "prompt_metadata": {
+      "label": "have fun",
+      "incorrect_answers": [
+        "plan",
+        "meet new people",
+        "work",
+        "getting drunk"
+      ]
+    }
+  },
+  {
+    "prompt": " This movement is prompted by the feeling that pervades the citizens of this State that in the present emergency the arms and munitions of war in the Arsenal should be under the control of the State authorities , in order to their security . This movement , although not authorized by me , has assumed such an aspect that it becomes my duty , as the executive of this <unk> , to interpose my official authority to prevent a collision between the people of the State and the Federal troops under your command . I therefore demand in the name of the State the delivery of the possession of the Arsenal and munitions of war under your charge to the State authorities , to be held subject to the action of the convention to be held on the 4th of March next . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "John needed to go across the country so he ordered tickets online and got into his car.  Where might he be going?\n<|start_2d|>\"\n- train station\" <|split_2d|>\"\n- opera\" <|split_2d|>\"\n- car rental shop\" <|split_2d|>\"\n- show\" <|split_2d|>\"\n- race track\" <|end_2d|>Answer: train station",
+    "prompt_metadata": {
+      "label": "train station",
+      "incorrect_answers": [
+        "opera",
+        "car rental shop",
+        "show",
+        "race track"
+      ]
+    }
+  },
+  {
+    "prompt": "If a couple is having financial issues, buying products can lead to what?\n<|start_2d|>\"\n- economic boom\" <|split_2d|>\"\n- being able to use\" <|split_2d|>\"\n- disagreements\" <|split_2d|>\"\n- spending money\" <|split_2d|>\"\n- joy\" <|end_2d|>Answer: disagreements",
+    "prompt_metadata": {
+      "label": "disagreements",
+      "incorrect_answers": [
+        "economic boom",
+        "being able to use",
+        "spending money",
+        "joy"
+      ]
+    }
+  },
+  {
+    "prompt": "What are you trying to achieve when you're talking?\n<|start_2d|>\"\n- opera\" <|split_2d|>\"\n- making sound\" <|split_2d|>\"\n- people to listen\" <|split_2d|>\"\n- attempting to communicate\" <|split_2d|>\"\n- dry mouth\" <|end_2d|>Answer: attempting to communicate",
+    "prompt_metadata": {
+      "label": "attempting to communicate",
+      "incorrect_answers": [
+        "opera",
+        "making sound",
+        "people to listen",
+        "dry mouth"
+      ]
+    }
+  },
+  {
+    "prompt": "Prescriptions being the specialty the store charges higher prices for most other goods, I'd be paying for convenience if I bought a hair dryer where?\n<|start_2d|>\"\n- drug store\" <|split_2d|>\"\n- high end store\" <|split_2d|>\"\n- beauty salon\" <|split_2d|>\"\n- box\" <|split_2d|>\"\n- bathroom\" <|end_2d|>Answer: drug store",
+    "prompt_metadata": {
+      "label": "drug store",
+      "incorrect_answers": [
+        "high end store",
+        "beauty salon",
+        "box",
+        "bathroom"
+      ]
+    }
+  },
+  {
+    "prompt": " The soldiers would be allowed safe passage in any direction carrying any personal and public property besides munitions of war . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": " As the Nameless officially do not exist , the upper echelons of the Gallian Army exploit the concept of plausible deniability in order to send them on missions that would otherwise make Gallia lose face in the war . While at times this works to their advantage , such as a successful incursion into Imperial territory , other orders cause certain members of the 422nd great distress . One such member , <unk> , becomes so enraged that he abandons his post and defects into the ranks of Calamity Raven , attached to the ideal of Darcsen independence proposed by their leader , Dahau . At the same time , elements within Gallian Army Command move to erase the Nameless in order to protect their own interests . Hounded by both allies and enemies , and combined with the presence of a traitor within their ranks , the 422nd desperately move to keep themselves alive while at the same time fight to help the Gallian war effort . This continues until the Nameless 's commanding officer , Ramsey Crowe , who had been kept under house arrest , is escorted to the capital city of <unk> in order to present evidence exonerating the weary soldiers and expose the real traitor , the Gallian General that had accused Kurt of Treason . \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Humans enjoy sitting while expressing themselves artistically, so what did they invent?\n<|start_2d|>\"\n- sit down\" <|split_2d|>\"\n- play piano\" <|split_2d|>\"\n- excrete\" <|split_2d|>\"\n- eat meat\" <|split_2d|>\"\n- catch fish\" <|end_2d|>Answer: play piano",
+    "prompt_metadata": {
+      "label": "play piano",
+      "incorrect_answers": [
+        "sit down",
+        "excrete",
+        "eat meat",
+        "catch fish"
+      ]
+    }
+  },
+  {
+    "prompt": "I am lost on a turnpike without a GPS, so what should I consult?\n<|start_2d|>\"\n- eastern united states\" <|split_2d|>\"\n- burying needle\" <|split_2d|>\"\n- atlas\" <|split_2d|>\"\n- urban region\" <|split_2d|>\"\n- interstate highway\" <|end_2d|>Answer: atlas",
+    "prompt_metadata": {
+      "label": "atlas",
+      "incorrect_answers": [
+        "eastern united states",
+        "burying needle",
+        "urban region",
+        "interstate highway"
+      ]
+    }
+  },
+  {
+    "prompt": "Lily bought some new clothing at the mall. She put it in her car and took it somewhere. Where might she take it?\n<|start_2d|>\"\n- closet\" <|split_2d|>\"\n- yard sale\" <|split_2d|>\"\n- drawer\" <|split_2d|>\"\n- trunk\" <|split_2d|>\"\n- house\" <|end_2d|>Answer: house",
+    "prompt_metadata": {
+      "label": "house",
+      "incorrect_answers": [
+        "closet",
+        "yard sale",
+        "drawer",
+        "trunk"
+      ]
+    }
+  },
+  {
+    "prompt": "Something that you need to have inside of you when opening a business is a lot of?\n<|start_2d|>\"\n- workers\" <|split_2d|>\"\n- money\" <|split_2d|>\"\n- determination\" <|split_2d|>\"\n- funding\" <|split_2d|>\"\n- creativity\" <|end_2d|>Answer: determination",
+    "prompt_metadata": {
+      "label": "determination",
+      "incorrect_answers": [
+        "workers",
+        "money",
+        "funding",
+        "creativity"
+      ]
+    }
+  },
+  {
+    "prompt": "Why would someone close a door?\n<|start_2d|>\"\n- keep people out\" <|split_2d|>\"\n- prevent wind\" <|split_2d|>\"\n- enclose cupboard\" <|split_2d|>\"\n- open\" <|split_2d|>\"\n- glass\" <|end_2d|>Answer: keep people out",
+    "prompt_metadata": {
+      "label": "keep people out",
+      "incorrect_answers": [
+        "prevent wind",
+        "enclose cupboard",
+        "open",
+        "glass"
+      ]
+    }
+  },
+  {
+    "prompt": " = = Development = = \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "A hurricane is similar to what other wind event?\n<|start_2d|>\"\n- tornadocane\" <|split_2d|>\"\n- disaster\" <|split_2d|>\"\n- tornadoes\" <|split_2d|>\"\n- death\" <|split_2d|>\"\n- horrendous\" <|end_2d|>Answer: tornadoes",
+    "prompt_metadata": {
+      "label": "tornadoes",
+      "incorrect_answers": [
+        "tornadocane",
+        "disaster",
+        "death",
+        "horrendous"
+      ]
+    }
+  },
+  {
+    "prompt": " = = Gameplay = = \n",
+    "prompt_metadata": {}
+  },
+  {
+    "prompt": "Lance owns a vineyard.  To make grapes he needs plenty of what?\n<|start_2d|>\"\n- deserts\" <|split_2d|>\"\n- shops\" <|split_2d|>\"\n- sunshine\" <|split_2d|>\"\n- kitchen\" <|split_2d|>\"\n- terrain\" <|end_2d|>Answer: sunshine",
+    "prompt_metadata": {
+      "label": "sunshine",
+      "incorrect_answers": [
+        "deserts",
+        "shops",
+        "kitchen",
+        "terrain"
+      ]
+    }
+  },
+  {
+    "prompt": "All the parents gathered in the cafeteria to watch the performance, Mark's were there to watch him play trombone in the what?\n<|start_2d|>\"\n- orchestra\" <|split_2d|>\"\n- brass quartet\" <|split_2d|>\"\n- marching band\" <|split_2d|>\"\n- school band\" <|split_2d|>\"\n- school play\" <|end_2d|>Answer: school band",
+    "prompt_metadata": {
+      "label": "school band",
+      "incorrect_answers": [
+        "orchestra",
+        "brass quartet",
+        "marching band",
+        "school play"
+      ]
+    }
+  },
+  {
+    "prompt": "The CEO's curiosity about the product got the best of her, so she decided to do what with it?\n<|start_2d|>\"\n- hear news\" <|split_2d|>\"\n- purchase it\" <|split_2d|>\"\n- examine thing\" <|split_2d|>\"\n- attend school\" <|split_2d|>\"\n- go to market\" <|end_2d|>Answer: go to market",
+    "prompt_metadata": {
+      "label": "go to market",
+      "incorrect_answers": [
+        "hear news",
+        "purchase it",
+        "examine thing",
+        "attend school"
+      ]
+    }
+  },
+  {
+    "prompt": "What is often a side effect of traveling on the water?\n<|start_2d|>\"\n- seasickness\" <|split_2d|>\"\n- motion sickness\" <|split_2d|>\"\n- jet lag\" <|split_2d|>\"\n- diarrhea\" <|split_2d|>\"\n- fatigue\" <|end_2d|>Answer: motion sickness",
+    "prompt_metadata": {
+      "label": "motion sickness",
+      "incorrect_answers": [
+        "seasickness",
+        "jet lag",
+        "diarrhea",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "prompt": "He enjoyed to watch film a second time with director's commentary, he loved the insight and would do what intently?\n<|start_2d|>\"\n- go to movies\" <|split_2d|>\"\n- rent one\" <|split_2d|>\"\n- sit down\" <|split_2d|>\"\n- listen\" <|split_2d|>\"\n- quite\" <|end_2d|>Answer: listen",
+    "prompt_metadata": {
+      "label": "listen",
+      "incorrect_answers": [
+        "go to movies",
+        "rent one",
+        "sit down",
+        "quite"
+      ]
+    }
+  },
+  {
+    "prompt": "Where is a dress shirt kept?\n<|start_2d|>\"\n- garderobe\" <|split_2d|>\"\n- drawer\" <|split_2d|>\"\n- suitcase\" <|split_2d|>\"\n- absence heat\" <|split_2d|>\"\n- closet\" <|end_2d|>Answer: closet",
+    "prompt_metadata": {
+      "label": "closet",
+      "incorrect_answers": [
+        "garderobe",
+        "drawer",
+        "suitcase",
+        "absence heat"
+      ]
+    }
+  },
+  {
+    "prompt": "John didn't know what to get for anyone. Buying Christmas presents was stressful for him, and finishing was whaat?\n<|start_2d|>\"\n- relief\" <|split_2d|>\"\n- happiness\" <|split_2d|>\"\n- very sad\" <|split_2d|>\"\n- lack of money\" <|split_2d|>\"\n- debt\" <|end_2d|>Answer: relief",
+    "prompt_metadata": {
+      "label": "relief",
+      "incorrect_answers": [
+        "happiness",
+        "very sad",
+        "lack of money",
+        "debt"
+      ]
+    }
+  },
+  {
+    "prompt": "Where can you buy a complex system?\n<|start_2d|>\"\n- place\" <|split_2d|>\"\n- clothing store\" <|split_2d|>\"\n- computer store\" <|split_2d|>\"\n- human body\" <|split_2d|>\"\n- computer science\" <|end_2d|>Answer: computer store",
+    "prompt_metadata": {
+      "label": "computer store",
+      "incorrect_answers": [
+        "place",
+        "clothing store",
+        "human body",
+        "computer science"
+      ]
+    }
+  },
+  {
+    "prompt": "Where in your home would you store a satchel?\n<|start_2d|>\"\n- room\" <|split_2d|>\"\n- desk\" <|split_2d|>\"\n- clothing store\" <|split_2d|>\"\n- school\" <|split_2d|>\"\n- luggage compartment\" <|end_2d|>Answer: room",
+    "prompt_metadata": {
+      "label": "room",
+      "incorrect_answers": [
+        "desk",
+        "clothing store",
+        "school",
+        "luggage compartment"
+      ]
+    }
+  },
+  {
+    "prompt": "After doing what he held his breathe?\n<|start_2d|>\"\n- inhale\" <|split_2d|>\"\n- inhaling\" <|split_2d|>\"\n- wheeze\" <|split_2d|>\"\n- take breath\" <|split_2d|>\"\n- meditate\" <|end_2d|>Answer: inhaling",
+    "prompt_metadata": {
+      "label": "inhaling",
+      "incorrect_answers": [
+        "inhale",
+        "wheeze",
+        "take breath",
+        "meditate"
+      ]
+    }
+  },
+  {
+    "prompt": "When is food never cold?\n<|start_2d|>\"\n- prepared\" <|split_2d|>\"\n- hot\" <|split_2d|>\"\n- baking\" <|split_2d|>\"\n- amiable\" <|split_2d|>\"\n- cooking\" <|end_2d|>Answer: baking",
+    "prompt_metadata": {
+      "label": "baking",
+      "incorrect_answers": [
+        "prepared",
+        "hot",
+        "amiable",
+        "cooking"
+      ]
+    }
+  },
+  {
+    "prompt": "Two year college degrees are either an associates of science or an associates of what?\n<|start_2d|>\"\n- math\" <|split_2d|>\"\n- astronomy\" <|split_2d|>\"\n- bachelor\" <|split_2d|>\"\n- arts\" <|split_2d|>\"\n- faith\" <|end_2d|>Answer: arts",
+    "prompt_metadata": {
+      "label": "arts",
+      "incorrect_answers": [
+        "math",
+        "astronomy",
+        "bachelor",
+        "faith"
+      ]
+    }
+  }
+]

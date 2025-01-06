@@ -17,12 +17,15 @@ echo "Starting job $SLURM_JOB_ID"
 # Check if model name was provided
 if [ -z "$1" ]; then
     echo "Error: Model name must be provided as argument"
-    echo "Usage: sbatch $0 <model_name>"
+    echo "Usage: sbatch $0 <model_name> [test_dir]"
     exit 1
 fi
 
 model="$1"
+# Use second argument if provided, otherwise default to csqa_quoted
+TEST_DIR=${2:-"csqa_quoted"}
 echo "Using model: $model"
+echo "Using test directory: $TEST_DIR"
 
 echo "loading modules"
 module load python/3.10.9-fasrc01
@@ -35,8 +38,8 @@ echo "CUDA_VISIBLE_DEVICES: $CUDA_VISIBLE_DEVICES"
 PYTHON_EXECUTABLE=/n/holylabs/LABS/dwork_lab/Lab/katrinabrown/home/conda/envs/thesis/bin/python
 
 MAX_NEW_TOKENS=50
-results_dir="set-based-prompting-finetuning/results/csqa_quoted"
-input_dir="set-based-prompting-finetuning/data/csqa_quoted"
+results_dir="set-based-prompting-finetuning/results/${TEST_DIR}"
+input_dir="set-based-prompting-finetuning/data/${TEST_DIR}"
 
 model_path_safe=$(echo $model | sed 's/\//_/g')
 
