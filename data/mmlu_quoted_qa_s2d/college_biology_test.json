@@ -1,6 +1,6 @@
 [
   {
-    "prompt": "Based on the characteristic population curves that result from plotting population growth of a species, the most effective means of controlling the mosquito population is to~tag~<|start_2d|>\"maintain the population at a point corresponding to the midpoint of its logistic curve\" <|split_2d|>\"opt for zero population control once the K value of the curve has been reached\" <|split_2d|>\"reduce the carrying capacity cif the environment to lower the K value\" <|split_2d|>\"increase the mortality rate\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Based on the characteristic population curves that result from plotting population growth of a species, the most effective means of controlling the mosquito population is to*tag*<|start_2d|>\"maintain the population at a point corresponding to the midpoint of its logistic curve\" <|split_2d|>\"opt for zero population control once the K value of the curve has been reached\" <|split_2d|>\"reduce the carrying capacity cif the environment to lower the K value\" <|split_2d|>\"increase the mortality rate\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "reduce the carrying capacity cif the environment to lower the K value",
       "incorrect_answers": [
@@ -11,7 +11,7 @@
     }
   },
   {
-    "prompt": "A frameshift mutation is created when~tag~<|start_2d|>\"telomeric sequences are removed from DNA\" <|split_2d|>\"a codon's nucleotide sequence changes so that it calls for production of a different amino acid than the original one\" <|split_2d|>\"a base pair is either inserted or deleted in a gene\" <|split_2d|>\"a codon's nucleotide sequence is changed so that instead of coding for a given amino acid it acts to terminate translation\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A frameshift mutation is created when*tag*<|start_2d|>\"telomeric sequences are removed from DNA\" <|split_2d|>\"a codon's nucleotide sequence changes so that it calls for production of a different amino acid than the original one\" <|split_2d|>\"a base pair is either inserted or deleted in a gene\" <|split_2d|>\"a codon's nucleotide sequence is changed so that instead of coding for a given amino acid it acts to terminate translation\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "a base pair is either inserted or deleted in a gene",
       "incorrect_answers": [
@@ -22,7 +22,7 @@
     }
   },
   {
-    "prompt": "To prevent desiccation and injury, the embryos of terrestrial vertebrates are encased within a fluid secreted by the~tag~<|start_2d|>\"amnion\" <|split_2d|>\"chorion\" <|split_2d|>\"allantois\" <|split_2d|>\"yolk sac\" <|end_2d|>~etag~Answer: ",
+    "prompt": "To prevent desiccation and injury, the embryos of terrestrial vertebrates are encased within a fluid secreted by the*tag*<|start_2d|>\"amnion\" <|split_2d|>\"chorion\" <|split_2d|>\"allantois\" <|split_2d|>\"yolk sac\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "amnion",
       "incorrect_answers": [
@@ -33,7 +33,7 @@
     }
   },
   {
-    "prompt": "Which of the following is a second messenger that stimulates release of calcium ions into the cytoplasm?~tag~<|start_2d|>\"Prostaglandins\" <|split_2d|>\"Inositol triphosphate\" <|split_2d|>\"Cyclic AMP\" <|split_2d|>\"Calmodulin\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following is a second messenger that stimulates release of calcium ions into the cytoplasm?*tag*<|start_2d|>\"Prostaglandins\" <|split_2d|>\"Inositol triphosphate\" <|split_2d|>\"Cyclic AMP\" <|split_2d|>\"Calmodulin\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Inositol triphosphate",
       "incorrect_answers": [
@@ -44,7 +44,7 @@
     }
   },
   {
-    "prompt": "Synthesis of an RNA/DNA hybrid from a single-stranded RNA template requires~tag~<|start_2d|>\"a DNA or RNA primer and reverse transcriptase\" <|split_2d|>\"a DNA or RNA primer and DNA polymerase\" <|split_2d|>\"RNase only\" <|split_2d|>\"reverse transcriptase only\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Synthesis of an RNA/DNA hybrid from a single-stranded RNA template requires*tag*<|start_2d|>\"a DNA or RNA primer and reverse transcriptase\" <|split_2d|>\"a DNA or RNA primer and DNA polymerase\" <|split_2d|>\"RNase only\" <|split_2d|>\"reverse transcriptase only\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "a DNA or RNA primer and reverse transcriptase",
       "incorrect_answers": [
@@ -55,7 +55,7 @@
     }
   },
   {
-    "prompt": "In order for the Hardy-Weinberg law to operate with respect to a population of organisms, each of the following conditions must be met EXCEPT:~tag~<|start_2d|>\"Genes are exchanged with other populations.\" <|split_2d|>\"Population size is large.\" <|split_2d|>\"Natural selection does not take place.\" <|split_2d|>\"Matings are random.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In order for the Hardy-Weinberg law to operate with respect to a population of organisms, each of the following conditions must be met EXCEPT:*tag*<|start_2d|>\"Genes are exchanged with other populations.\" <|split_2d|>\"Population size is large.\" <|split_2d|>\"Natural selection does not take place.\" <|split_2d|>\"Matings are random.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Genes are exchanged with other populations.",
       "incorrect_answers": [
@@ -66,7 +66,7 @@
     }
   },
   {
-    "prompt": "The Barr body found within female mammalian cells' nuclei is an example of~tag~<|start_2d|>\"euchromatin\" <|split_2d|>\"heterochromatin\" <|split_2d|>\"a cistron\" <|split_2d|>\"pseudogenes\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The Barr body found within female mammalian cells' nuclei is an example of*tag*<|start_2d|>\"euchromatin\" <|split_2d|>\"heterochromatin\" <|split_2d|>\"a cistron\" <|split_2d|>\"pseudogenes\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "heterochromatin",
       "incorrect_answers": [
@@ -77,7 +77,7 @@
     }
   },
   {
-    "prompt": "Which of the following is NOT a source of atmospheric carbon?~tag~<|start_2d|>\"Respiration\" <|split_2d|>\"Photosynthesis\" <|split_2d|>\"Bacterial decomposition\" <|split_2d|>\"Combustion of fossil fuels\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following is NOT a source of atmospheric carbon?*tag*<|start_2d|>\"Respiration\" <|split_2d|>\"Photosynthesis\" <|split_2d|>\"Bacterial decomposition\" <|split_2d|>\"Combustion of fossil fuels\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Photosynthesis",
       "incorrect_answers": [
@@ -88,7 +88,7 @@
     }
   },
   {
-    "prompt": "The concept of punctuated equilibrium refers to~tag~<|start_2d|>\"oscillating ecological successional stages\" <|split_2d|>\"ecological succession arrested by sudden environmental changes, e.g., fire\" <|split_2d|>\"persistent predator-prey relationships in relatively stable environments\" <|split_2d|>\"bursts of speciation followed by relatively unchanging lineages\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The concept of punctuated equilibrium refers to*tag*<|start_2d|>\"oscillating ecological successional stages\" <|split_2d|>\"ecological succession arrested by sudden environmental changes, e.g., fire\" <|split_2d|>\"persistent predator-prey relationships in relatively stable environments\" <|split_2d|>\"bursts of speciation followed by relatively unchanging lineages\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "bursts of speciation followed by relatively unchanging lineages",
       "incorrect_answers": [
@@ -99,7 +99,7 @@
     }
   },
   {
-    "prompt": "When an influenza virus enters a cell, it immediately starts to do which of the following?~tag~<|start_2d|>\"Incorporate viral DNA into the host cell\u2019s chromosome\" <|split_2d|>\"Destroy the host cell\u2019s transcriptional machinery\" <|split_2d|>\"Replicate its genetic material and synthesize viral proteins\" <|split_2d|>\"Use a viral copy of reverse transcriptase to manufacture viral DNA\" <|end_2d|>~etag~Answer: ",
+    "prompt": "When an influenza virus enters a cell, it immediately starts to do which of the following?*tag*<|start_2d|>\"Incorporate viral DNA into the host cell\u2019s chromosome\" <|split_2d|>\"Destroy the host cell\u2019s transcriptional machinery\" <|split_2d|>\"Replicate its genetic material and synthesize viral proteins\" <|split_2d|>\"Use a viral copy of reverse transcriptase to manufacture viral DNA\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Replicate its genetic material and synthesize viral proteins",
       "incorrect_answers": [
@@ -110,7 +110,7 @@
     }
   },
   {
-    "prompt": "Cleavage symmetry arising from early cell divisions that occur at an oblique angle to the polar axis is known as~tag~<|start_2d|>\"meroblastic cleavage\" <|split_2d|>\"radial cleavage\" <|split_2d|>\"spiral cleavage\" <|split_2d|>\"superficial cleavage\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Cleavage symmetry arising from early cell divisions that occur at an oblique angle to the polar axis is known as*tag*<|start_2d|>\"meroblastic cleavage\" <|split_2d|>\"radial cleavage\" <|split_2d|>\"spiral cleavage\" <|split_2d|>\"superficial cleavage\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "spiral cleavage",
       "incorrect_answers": [
@@ -121,7 +121,7 @@
     }
   },
   {
-    "prompt": "Targeting of a newly synthesized protein is most likely to require two different signal peptides for which of the following destinations?~tag~<|start_2d|>\"Plasma membrane\" <|split_2d|>\"Lysosome\" <|split_2d|>\"Cytosol\" <|split_2d|>\"Chloroplast\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Targeting of a newly synthesized protein is most likely to require two different signal peptides for which of the following destinations?*tag*<|start_2d|>\"Plasma membrane\" <|split_2d|>\"Lysosome\" <|split_2d|>\"Cytosol\" <|split_2d|>\"Chloroplast\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Chloroplast",
       "incorrect_answers": [
@@ -132,7 +132,7 @@
     }
   },
   {
-    "prompt": "In Sweden, the red fox (Vulpes vulpes) severely limits populations of its prey, including hares. However, red fox populations are sometimes attacked by a fatal parasite, the mange mite. As mite population sizes increase at a given site, how are hare and fox populations most likely to respond at the same site? (Assume that hares have no major predators at this site other than foxes.)~tag~<|start_2d|>\"Both fox and hare populations will decrease.\" <|split_2d|>\"Both fox and hare populations will increase.\" <|split_2d|>\"Fox populations will decrease and hare populations will increase.\" <|split_2d|>\"Fox populations will increase and hare populations will decrease.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In Sweden, the red fox (Vulpes vulpes) severely limits populations of its prey, including hares. However, red fox populations are sometimes attacked by a fatal parasite, the mange mite. As mite population sizes increase at a given site, how are hare and fox populations most likely to respond at the same site? (Assume that hares have no major predators at this site other than foxes.)*tag*<|start_2d|>\"Both fox and hare populations will decrease.\" <|split_2d|>\"Both fox and hare populations will increase.\" <|split_2d|>\"Fox populations will decrease and hare populations will increase.\" <|split_2d|>\"Fox populations will increase and hare populations will decrease.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Fox populations will decrease and hare populations will increase.",
       "incorrect_answers": [
@@ -143,7 +143,7 @@
     }
   },
   {
-    "prompt": "A cell nucleus contains which of the following?\nI. DNA\nII. Protein\nIII. RNA~tag~<|start_2d|>\"I only\" <|split_2d|>\"II only\" <|split_2d|>\"III only\" <|split_2d|>\"I, II, and III\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A cell nucleus contains which of the following?\nI. DNA\nII. Protein\nIII. RNA*tag*<|start_2d|>\"I only\" <|split_2d|>\"II only\" <|split_2d|>\"III only\" <|split_2d|>\"I, II, and III\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "I, II, and III",
       "incorrect_answers": [
@@ -154,7 +154,7 @@
     }
   },
   {
-    "prompt": "In one taxonomic classification, Archaea, Eukarya, and Bacteria represent the three major domains of life. Eukarya utilize the general transcription factors TBP (TATA-binding protein) and TFIIB in transcription, whereas Bacteria do not. At least one member of Archaea has a protein similar to TBP and a protein similar to TFIIB. Based on this observation, which of the following scenarios is most likely?~tag~<|start_2d|>\"Archaea and Eukarya diverged after their common ancestor diverged from Bacteria.\" <|split_2d|>\"Archaea and Bacteria diverged after their common ancestor diverged from Eukarya.\" <|split_2d|>\"Bacteria and Eukarya diverged after their common ancestor diverged from Archaea.\" <|split_2d|>\"Archaea, Eukarya, and Bacteria diverged simultaneously from a common ancestor.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In one taxonomic classification, Archaea, Eukarya, and Bacteria represent the three major domains of life. Eukarya utilize the general transcription factors TBP (TATA-binding protein) and TFIIB in transcription, whereas Bacteria do not. At least one member of Archaea has a protein similar to TBP and a protein similar to TFIIB. Based on this observation, which of the following scenarios is most likely?*tag*<|start_2d|>\"Archaea and Eukarya diverged after their common ancestor diverged from Bacteria.\" <|split_2d|>\"Archaea and Bacteria diverged after their common ancestor diverged from Eukarya.\" <|split_2d|>\"Bacteria and Eukarya diverged after their common ancestor diverged from Archaea.\" <|split_2d|>\"Archaea, Eukarya, and Bacteria diverged simultaneously from a common ancestor.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Archaea and Eukarya diverged after their common ancestor diverged from Bacteria.",
       "incorrect_answers": [
@@ -165,7 +165,7 @@
     }
   },
   {
-    "prompt": "A rise in intracellular free calcium in the sea urchin oocyte causes the release of proteolytic enzymes which act to prevent polyspermy. The events just described entail the~tag~<|start_2d|>\"zona reaction\" <|split_2d|>\"acrosomal reaction\" <|split_2d|>\"cortical reaction\" <|split_2d|>\"fertilization reaction\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A rise in intracellular free calcium in the sea urchin oocyte causes the release of proteolytic enzymes which act to prevent polyspermy. The events just described entail the*tag*<|start_2d|>\"zona reaction\" <|split_2d|>\"acrosomal reaction\" <|split_2d|>\"cortical reaction\" <|split_2d|>\"fertilization reaction\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "cortical reaction",
       "incorrect_answers": [
@@ -176,7 +176,7 @@
     }
   },
   {
-    "prompt": "Which of the following is a benefit that mycorrhizal fungi confer to many plants?~tag~<|start_2d|>\"They protect plant roots from desiccation in extremely dry habitats.\" <|split_2d|>\"They fix nitrogen, which is particularly important for plants in nitrogen-limited habitats.\" <|split_2d|>\"They provide access to phosphorus, an essential element that is limited in many kinds of soils.\" <|split_2d|>\"They provide carbon to plants in exchange for fixed nitrogen.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following is a benefit that mycorrhizal fungi confer to many plants?*tag*<|start_2d|>\"They protect plant roots from desiccation in extremely dry habitats.\" <|split_2d|>\"They fix nitrogen, which is particularly important for plants in nitrogen-limited habitats.\" <|split_2d|>\"They provide access to phosphorus, an essential element that is limited in many kinds of soils.\" <|split_2d|>\"They provide carbon to plants in exchange for fixed nitrogen.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "They provide access to phosphorus, an essential element that is limited in many kinds of soils.",
       "incorrect_answers": [
@@ -187,7 +187,7 @@
     }
   },
   {
-    "prompt": "Experiments on song development in birds have shown that when a young male reared in isolation hears only the song of a different bird species, he will develop an adult song repertoire that lacks certain characteristics typical of his own species. This result shows that the song of his species is most likely~tag~<|start_2d|>\"entirely learned during development\" <|split_2d|>\"entirely instinctive\" <|split_2d|>\"both instinctive and learned\" <|split_2d|>\"dependent upon hormones for proper development\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Experiments on song development in birds have shown that when a young male reared in isolation hears only the song of a different bird species, he will develop an adult song repertoire that lacks certain characteristics typical of his own species. This result shows that the song of his species is most likely*tag*<|start_2d|>\"entirely learned during development\" <|split_2d|>\"entirely instinctive\" <|split_2d|>\"both instinctive and learned\" <|split_2d|>\"dependent upon hormones for proper development\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "both instinctive and learned",
       "incorrect_answers": [
@@ -198,7 +198,7 @@
     }
   },
   {
-    "prompt": "Which of the following most accurately describes a retrotransposon?~tag~<|start_2d|>\"A DNA sequence that can move from one site in the genome to another without replicating\" <|split_2d|>\"A DNA sequence that can be deleted from the genome without consequence\" <|split_2d|>\"A DNA sequence that replicates via an RNA intermediate\" <|split_2d|>\"A DNA sequence that replicates via a protein intermediate\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following most accurately describes a retrotransposon?*tag*<|start_2d|>\"A DNA sequence that can move from one site in the genome to another without replicating\" <|split_2d|>\"A DNA sequence that can be deleted from the genome without consequence\" <|split_2d|>\"A DNA sequence that replicates via an RNA intermediate\" <|split_2d|>\"A DNA sequence that replicates via a protein intermediate\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "A DNA sequence that replicates via an RNA intermediate",
       "incorrect_answers": [
@@ -209,7 +209,7 @@
     }
   },
   {
-    "prompt": "The soils of which of the following biomes has the highest rate of leaching and cycling of nutrients?~tag~<|start_2d|>\"Tropical rain forest\" <|split_2d|>\"Tundra\" <|split_2d|>\"Taiga\" <|split_2d|>\"Desert\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The soils of which of the following biomes has the highest rate of leaching and cycling of nutrients?*tag*<|start_2d|>\"Tropical rain forest\" <|split_2d|>\"Tundra\" <|split_2d|>\"Taiga\" <|split_2d|>\"Desert\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Tropical rain forest",
       "incorrect_answers": [
@@ -220,7 +220,7 @@
     }
   },
   {
-    "prompt": "Which of the following best explains why enzymes are effective in facilitating chemical reactions?~tag~<|start_2d|>\"They raise the temperature of the reaction mixture, thereby speeding up the conversion of reactants to products.\" <|split_2d|>\"They alter the equilibrium constant of a reaction (K_eq) so that more reactant can be converted to product.\" <|split_2d|>\"They increase the maximal rate of the chemical reaction (V_max).\" <|split_2d|>\"They lower the activation energy, thereby speeding up the conversion of reactants to products.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following best explains why enzymes are effective in facilitating chemical reactions?*tag*<|start_2d|>\"They raise the temperature of the reaction mixture, thereby speeding up the conversion of reactants to products.\" <|split_2d|>\"They alter the equilibrium constant of a reaction (K_eq) so that more reactant can be converted to product.\" <|split_2d|>\"They increase the maximal rate of the chemical reaction (V_max).\" <|split_2d|>\"They lower the activation energy, thereby speeding up the conversion of reactants to products.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "They lower the activation energy, thereby speeding up the conversion of reactants to products.",
       "incorrect_answers": [
@@ -231,7 +231,7 @@
     }
   },
   {
-    "prompt": "In the growth of a population, the point at which natality and mortality rates are equal to one another is referred to as~tag~<|start_2d|>\"a population crash\" <|split_2d|>\"a population explosion\" <|split_2d|>\"zero population growth\" <|split_2d|>\"exponential growth\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In the growth of a population, the point at which natality and mortality rates are equal to one another is referred to as*tag*<|start_2d|>\"a population crash\" <|split_2d|>\"a population explosion\" <|split_2d|>\"zero population growth\" <|split_2d|>\"exponential growth\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "zero population growth",
       "incorrect_answers": [
@@ -242,7 +242,7 @@
     }
   },
   {
-    "prompt": "The wings of a bat and the wings of a butterfly are~tag~<|start_2d|>\"homologous structures\" <|split_2d|>\"analogous structures\" <|split_2d|>\"vestigial structures\" <|split_2d|>\"dissimilar in form and function\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The wings of a bat and the wings of a butterfly are*tag*<|start_2d|>\"homologous structures\" <|split_2d|>\"analogous structures\" <|split_2d|>\"vestigial structures\" <|split_2d|>\"dissimilar in form and function\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "analogous structures",
       "incorrect_answers": [
@@ -253,7 +253,7 @@
     }
   },
   {
-    "prompt": "The cell type comprising the pith tissue centered within a dicot stem is the~tag~<|start_2d|>\"parenchyma\" <|split_2d|>\"sclerenchyma\" <|split_2d|>\"vascular cambium\" <|split_2d|>\"vascular bundle\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The cell type comprising the pith tissue centered within a dicot stem is the*tag*<|start_2d|>\"parenchyma\" <|split_2d|>\"sclerenchyma\" <|split_2d|>\"vascular cambium\" <|split_2d|>\"vascular bundle\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "parenchyma",
       "incorrect_answers": [
@@ -264,7 +264,7 @@
     }
   },
   {
-    "prompt": "Mobile regions of DNA capable of inserting themselves into an existing genome are~tag~<|start_2d|>\"prions\" <|split_2d|>\"cistrons\" <|split_2d|>\"introns\" <|split_2d|>\"transposons\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Mobile regions of DNA capable of inserting themselves into an existing genome are*tag*<|start_2d|>\"prions\" <|split_2d|>\"cistrons\" <|split_2d|>\"introns\" <|split_2d|>\"transposons\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "transposons",
       "incorrect_answers": [
@@ -275,7 +275,7 @@
     }
   },
   {
-    "prompt": "The process in which pioneer species colonize a bare substrate such as rock, sand, or glacial till is known as~tag~<|start_2d|>\"weathering\" <|split_2d|>\"stabilizing succession\" <|split_2d|>\"secondary succession\" <|split_2d|>\"primary succession\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The process in which pioneer species colonize a bare substrate such as rock, sand, or glacial till is known as*tag*<|start_2d|>\"weathering\" <|split_2d|>\"stabilizing succession\" <|split_2d|>\"secondary succession\" <|split_2d|>\"primary succession\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "primary succession",
       "incorrect_answers": [
@@ -286,7 +286,7 @@
     }
   },
   {
-    "prompt": "Brood parasites such as the cuckoo successfully trick other species of birds into rearing their young by exploiting the host birds' instinctive response to the loud begging cues of a fledgling in their nest. The genes that allow the host bird species to be duped into rearing the cuckoo fledglings to the detriment of their own offspring most likely remain in the gene pool of the population because~tag~<|start_2d|>\"on average, the host birds' response allows them to rear their own young efficiently by feeding only those who indicate they are hungry\" <|split_2d|>\"the maximum fitness of the duped bird is not compromised when the bird rears an interloper of another species\" <|split_2d|>\"on average, little energy is spent on rearing a fledgling bird, whether it is an interloper or one's own\" <|split_2d|>\"the maximum fitness of the cuckoo would then be reduced\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Brood parasites such as the cuckoo successfully trick other species of birds into rearing their young by exploiting the host birds' instinctive response to the loud begging cues of a fledgling in their nest. The genes that allow the host bird species to be duped into rearing the cuckoo fledglings to the detriment of their own offspring most likely remain in the gene pool of the population because*tag*<|start_2d|>\"on average, the host birds' response allows them to rear their own young efficiently by feeding only those who indicate they are hungry\" <|split_2d|>\"the maximum fitness of the duped bird is not compromised when the bird rears an interloper of another species\" <|split_2d|>\"on average, little energy is spent on rearing a fledgling bird, whether it is an interloper or one's own\" <|split_2d|>\"the maximum fitness of the cuckoo would then be reduced\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "on average, the host birds' response allows them to rear their own young efficiently by feeding only those who indicate they are hungry",
       "incorrect_answers": [
@@ -297,7 +297,7 @@
     }
   },
   {
-    "prompt": "Cell motility, as viewed in a cultured fibroblast, encompasses all of the following EXCEPT~tag~<|start_2d|>\"adhesion plaques\" <|split_2d|>\"vinculin\" <|split_2d|>\"clathrin\" <|split_2d|>\"lamellipodia\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Cell motility, as viewed in a cultured fibroblast, encompasses all of the following EXCEPT*tag*<|start_2d|>\"adhesion plaques\" <|split_2d|>\"vinculin\" <|split_2d|>\"clathrin\" <|split_2d|>\"lamellipodia\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "clathrin",
       "incorrect_answers": [
@@ -308,7 +308,7 @@
     }
   },
   {
-    "prompt": "According to Hamilton\u2019s rule, an altruistic trait can evolve if c < br, where c is the fitness cost of the altruistic behavior to the donor, b is the fitness benefit to the recipient, and r is the~tag~<|start_2d|>\"coefficient of relatedness\" <|split_2d|>\"frequency of the altruistic allele\" <|split_2d|>\"inbreeding coefficient\" <|split_2d|>\"rate of reciprocity\" <|end_2d|>~etag~Answer: ",
+    "prompt": "According to Hamilton\u2019s rule, an altruistic trait can evolve if c < br, where c is the fitness cost of the altruistic behavior to the donor, b is the fitness benefit to the recipient, and r is the*tag*<|start_2d|>\"coefficient of relatedness\" <|split_2d|>\"frequency of the altruistic allele\" <|split_2d|>\"inbreeding coefficient\" <|split_2d|>\"rate of reciprocity\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "coefficient of relatedness",
       "incorrect_answers": [
@@ -319,7 +319,7 @@
     }
   },
   {
-    "prompt": "Adaptations of plants to minimize water loss in environments with high temperatures include which of the following?~tag~<|start_2d|>\"Numerous stomata\" <|split_2d|>\"Thin cuticles\" <|split_2d|>\"Spines instead of leaves\" <|split_2d|>\"Large surface-to-volume ratios\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Adaptations of plants to minimize water loss in environments with high temperatures include which of the following?*tag*<|start_2d|>\"Numerous stomata\" <|split_2d|>\"Thin cuticles\" <|split_2d|>\"Spines instead of leaves\" <|split_2d|>\"Large surface-to-volume ratios\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Spines instead of leaves",
       "incorrect_answers": [
@@ -330,7 +330,7 @@
     }
   },
   {
-    "prompt": "All of the following might be found in connective tissue EXCEPT~tag~<|start_2d|>\"thrombin\" <|split_2d|>\"glycosaminoglycans\" <|split_2d|>\"collagens\" <|split_2d|>\"fibroblasts\" <|end_2d|>~etag~Answer: ",
+    "prompt": "All of the following might be found in connective tissue EXCEPT*tag*<|start_2d|>\"thrombin\" <|split_2d|>\"glycosaminoglycans\" <|split_2d|>\"collagens\" <|split_2d|>\"fibroblasts\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "thrombin",
       "incorrect_answers": [
@@ -341,7 +341,7 @@
     }
   },
   {
-    "prompt": "Which of the following is typically NOT found in normal somatic cells of a human male?~tag~<|start_2d|>\"The entire genetic information possessed by the original zygote\" <|split_2d|>\"An inactivated X chromosome\" <|split_2d|>\"Forty-four autosomes\" <|split_2d|>\"A diploid nucleus\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following is typically NOT found in normal somatic cells of a human male?*tag*<|start_2d|>\"The entire genetic information possessed by the original zygote\" <|split_2d|>\"An inactivated X chromosome\" <|split_2d|>\"Forty-four autosomes\" <|split_2d|>\"A diploid nucleus\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "An inactivated X chromosome",
       "incorrect_answers": [
@@ -352,7 +352,7 @@
     }
   },
   {
-    "prompt": "The members of a bird species capable of nesting in treetops or on the ledges of nearby cliffs make their homes only in the treetops due to the established presence of a more aggressive bird species on the cliff ledges. With respect to habitat, the treetop-nesting birds are utilizing~tag~<|start_2d|>\"their fundamental niche only\" <|split_2d|>\"their realistic niche only\" <|split_2d|>\"their ecological niche only\" <|split_2d|>\"neither their fundamental niche nor their realistic niche\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The members of a bird species capable of nesting in treetops or on the ledges of nearby cliffs make their homes only in the treetops due to the established presence of a more aggressive bird species on the cliff ledges. With respect to habitat, the treetop-nesting birds are utilizing*tag*<|start_2d|>\"their fundamental niche only\" <|split_2d|>\"their realistic niche only\" <|split_2d|>\"their ecological niche only\" <|split_2d|>\"neither their fundamental niche nor their realistic niche\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "their realistic niche only",
       "incorrect_answers": [
@@ -363,7 +363,7 @@
     }
   },
   {
-    "prompt": "All of the following characteristics are typical of r-selected species EXCEPT~tag~<|start_2d|>\"high reproductive rate\" <|split_2d|>\"small body size\" <|split_2d|>\"occupancy of unstable environments\" <|split_2d|>\"high competitive ability\" <|end_2d|>~etag~Answer: ",
+    "prompt": "All of the following characteristics are typical of r-selected species EXCEPT*tag*<|start_2d|>\"high reproductive rate\" <|split_2d|>\"small body size\" <|split_2d|>\"occupancy of unstable environments\" <|split_2d|>\"high competitive ability\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "high competitive ability",
       "incorrect_answers": [
@@ -374,7 +374,7 @@
     }
   },
   {
-    "prompt": "A DNA strand with the sequence 5\u2032 CGA TTG 3\u2032 would be complementary to the sequence~tag~<|start_2d|>\"5\u2032 GCU AAC 3\u2032\" <|split_2d|>\"5\u2032 GCT AAC 3\u2032\" <|split_2d|>\"5\u2032 GTT AGC 3\u2032\" <|split_2d|>\"5\u2032 CAA TCG 3\u2032\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A DNA strand with the sequence 5\u2032 CGA TTG 3\u2032 would be complementary to the sequence*tag*<|start_2d|>\"5\u2032 GCU AAC 3\u2032\" <|split_2d|>\"5\u2032 GCT AAC 3\u2032\" <|split_2d|>\"5\u2032 GTT AGC 3\u2032\" <|split_2d|>\"5\u2032 CAA TCG 3\u2032\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "5\u2032 CAA TCG 3\u2032",
       "incorrect_answers": [
@@ -385,7 +385,7 @@
     }
   },
   {
-    "prompt": "Ferns undergo alternation of generations in which a~tag~<|start_2d|>\"dominant sporophyte alternates with an independent gametophyte\" <|split_2d|>\"dominant gametophyte alternates with a dependent sporophyte\" <|split_2d|>\"sporophyte and a gametophyte have equal life spans\" <|split_2d|>\"gametophyte produces gametes by meiosis\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Ferns undergo alternation of generations in which a*tag*<|start_2d|>\"dominant sporophyte alternates with an independent gametophyte\" <|split_2d|>\"dominant gametophyte alternates with a dependent sporophyte\" <|split_2d|>\"sporophyte and a gametophyte have equal life spans\" <|split_2d|>\"gametophyte produces gametes by meiosis\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "dominant sporophyte alternates with an independent gametophyte",
       "incorrect_answers": [
@@ -396,7 +396,7 @@
     }
   },
   {
-    "prompt": "Which of the following statements concerning a sarcomere of a striated muscle (such as skeletal muscle) is correct?~tag~<|start_2d|>\"During contraction H zones become elongated.\" <|split_2d|>\"In the relaxed position tropomyosin impedes myosin's access to the binding site of actin.\" <|split_2d|>\"Each myosin helical tail contains an actinbinding site and an ATP-hydrolyzing site.\" <|split_2d|>\"The proteins troponin and tropomyosin constitute the thick and thin filaments, respectively.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following statements concerning a sarcomere of a striated muscle (such as skeletal muscle) is correct?*tag*<|start_2d|>\"During contraction H zones become elongated.\" <|split_2d|>\"In the relaxed position tropomyosin impedes myosin's access to the binding site of actin.\" <|split_2d|>\"Each myosin helical tail contains an actinbinding site and an ATP-hydrolyzing site.\" <|split_2d|>\"The proteins troponin and tropomyosin constitute the thick and thin filaments, respectively.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "In the relaxed position tropomyosin impedes myosin's access to the binding site of actin.",
       "incorrect_answers": [
@@ -407,7 +407,7 @@
     }
   },
   {
-    "prompt": "Aggressive ants live in the swollen thorns of a small tropical tree and feed on oil-rich bodies that the tree produces at the tips of its leaflets. Which of the following experiments best tests the hypothesis that ants defend the plant by either killing or chasing away leaf-feeding insects?~tag~<|start_2d|>\"Remove ants and measure subsequent leaf damage.\" <|split_2d|>\"Remove oil-rich bodies and measure subsequent ant density.\" <|split_2d|>\"Remove the thorns and measure subsequent density of ants.\" <|split_2d|>\"Remove leaf-feeding insects and measure subsequent ant density.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Aggressive ants live in the swollen thorns of a small tropical tree and feed on oil-rich bodies that the tree produces at the tips of its leaflets. Which of the following experiments best tests the hypothesis that ants defend the plant by either killing or chasing away leaf-feeding insects?*tag*<|start_2d|>\"Remove ants and measure subsequent leaf damage.\" <|split_2d|>\"Remove oil-rich bodies and measure subsequent ant density.\" <|split_2d|>\"Remove the thorns and measure subsequent density of ants.\" <|split_2d|>\"Remove leaf-feeding insects and measure subsequent ant density.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Remove ants and measure subsequent leaf damage.",
       "incorrect_answers": [
@@ -418,7 +418,7 @@
     }
   },
   {
-    "prompt": "The sight organs of crustaceans and insects contain ommatidia, which make up the individual visual units of the~tag~<|start_2d|>\"eyespot\" <|split_2d|>\"simple eye\" <|split_2d|>\"compound eye\" <|split_2d|>\"binocular eye\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The sight organs of crustaceans and insects contain ommatidia, which make up the individual visual units of the*tag*<|start_2d|>\"eyespot\" <|split_2d|>\"simple eye\" <|split_2d|>\"compound eye\" <|split_2d|>\"binocular eye\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "compound eye",
       "incorrect_answers": [
@@ -429,7 +429,7 @@
     }
   },
   {
-    "prompt": "An embryologist studying the development of a vertebrate organism from the zygote stage to fetus would be justified in drawing which of the following conclusions?~tag~<|start_2d|>\"Ontogeny recapitulates phylogeny.\" <|split_2d|>\"Early embryos display identical features of their class, order, and species.\" <|split_2d|>\"An early human embryo has features in common with early fish and avian embryos.\" <|split_2d|>\"A human embryo displays features of adult fish and birds in the course of its development.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "An embryologist studying the development of a vertebrate organism from the zygote stage to fetus would be justified in drawing which of the following conclusions?*tag*<|start_2d|>\"Ontogeny recapitulates phylogeny.\" <|split_2d|>\"Early embryos display identical features of their class, order, and species.\" <|split_2d|>\"An early human embryo has features in common with early fish and avian embryos.\" <|split_2d|>\"A human embryo displays features of adult fish and birds in the course of its development.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Ontogeny recapitulates phylogeny.",
       "incorrect_answers": [
@@ -440,7 +440,7 @@
     }
   },
   {
-    "prompt": "A stem-boring beetle has laid its eggs in the center of a 5-year-old wood twig, and the eggs have matured into larvae. In proper order (inside to outside), what tissues and tissue regions would the larvae encounter as they eat their way toward the outside of the twig? (For simplicity, assume that the epidermis has already fallen off completely.)~tag~<|start_2d|>\"Pith; primary xylem; secondary xylem; vascular cambium; primary phloem; secondary phloem; cortex\" <|split_2d|>\"Pith; secondary xylem; primary xylem; vascular cambium; secondary phloem; primary phloem; cortex\" <|split_2d|>\"Pith; secondary xylem; primary xylem; vascular cambium; primary phloem; secondary phloem; cortex\" <|split_2d|>\"Pith; primary xylem; secondary xylem; vascular cambium; secondary phloem; primary phloem; cortex\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A stem-boring beetle has laid its eggs in the center of a 5-year-old wood twig, and the eggs have matured into larvae. In proper order (inside to outside), what tissues and tissue regions would the larvae encounter as they eat their way toward the outside of the twig? (For simplicity, assume that the epidermis has already fallen off completely.)*tag*<|start_2d|>\"Pith; primary xylem; secondary xylem; vascular cambium; primary phloem; secondary phloem; cortex\" <|split_2d|>\"Pith; secondary xylem; primary xylem; vascular cambium; secondary phloem; primary phloem; cortex\" <|split_2d|>\"Pith; secondary xylem; primary xylem; vascular cambium; primary phloem; secondary phloem; cortex\" <|split_2d|>\"Pith; primary xylem; secondary xylem; vascular cambium; secondary phloem; primary phloem; cortex\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Pith; primary xylem; secondary xylem; vascular cambium; secondary phloem; primary phloem; cortex",
       "incorrect_answers": [
@@ -451,7 +451,7 @@
     }
   },
   {
-    "prompt": "The following pairs were placed in solution together. Which two could be separated by performing low-speed centrifugation?~tag~<|start_2d|>\"DNA and mRNA\" <|split_2d|>\"Nuclei and secretory vesicles\" <|split_2d|>\"Golgi apparatus and endoplasmic reticulum\" <|split_2d|>\"Lysosomes and endosomes\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The following pairs were placed in solution together. Which two could be separated by performing low-speed centrifugation?*tag*<|start_2d|>\"DNA and mRNA\" <|split_2d|>\"Nuclei and secretory vesicles\" <|split_2d|>\"Golgi apparatus and endoplasmic reticulum\" <|split_2d|>\"Lysosomes and endosomes\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Nuclei and secretory vesicles",
       "incorrect_answers": [
@@ -462,7 +462,7 @@
     }
   },
   {
-    "prompt": "Which of the following would increase the rate at which a gas diffuses between the alveoli of the lung and the blood within a pulmonary capillary?~tag~<|start_2d|>\"Decreasing the partial pressure gradient of the gas\" <|split_2d|>\"Decreasing the solubility of the gas in water\" <|split_2d|>\"Increasing the total surface area available for diffusion\" <|split_2d|>\"Decreasing the rate of blood flow through the pulmonary capillary\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following would increase the rate at which a gas diffuses between the alveoli of the lung and the blood within a pulmonary capillary?*tag*<|start_2d|>\"Decreasing the partial pressure gradient of the gas\" <|split_2d|>\"Decreasing the solubility of the gas in water\" <|split_2d|>\"Increasing the total surface area available for diffusion\" <|split_2d|>\"Decreasing the rate of blood flow through the pulmonary capillary\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Increasing the total surface area available for diffusion",
       "incorrect_answers": [
@@ -473,7 +473,7 @@
     }
   },
   {
-    "prompt": "The structures that act as sites of gas exchange in a woody stem are the~tag~<|start_2d|>\"lenticels\" <|split_2d|>\"terminal buds\" <|split_2d|>\"nodes\" <|split_2d|>\"internodes\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The structures that act as sites of gas exchange in a woody stem are the*tag*<|start_2d|>\"lenticels\" <|split_2d|>\"terminal buds\" <|split_2d|>\"nodes\" <|split_2d|>\"internodes\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "lenticels",
       "incorrect_answers": [
@@ -484,7 +484,7 @@
     }
   },
   {
-    "prompt": "Natural enemies have been implicated as a strong selective force for all of the following EXCEPT~tag~<|start_2d|>\"aposematic coloration\" <|split_2d|>\"chemical defenses\" <|split_2d|>\"masting (synchronous fruiting)\" <|split_2d|>\"lekking behavior\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Natural enemies have been implicated as a strong selective force for all of the following EXCEPT*tag*<|start_2d|>\"aposematic coloration\" <|split_2d|>\"chemical defenses\" <|split_2d|>\"masting (synchronous fruiting)\" <|split_2d|>\"lekking behavior\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "lekking behavior",
       "incorrect_answers": [
@@ -495,7 +495,7 @@
     }
   },
   {
-    "prompt": "Which of the following is NOT a characteristic of introns?~tag~<|start_2d|>\"They occur only in eukaryotes.\" <|split_2d|>\"They represent noncoding regions.\" <|split_2d|>\"They are found interspersed with exons on a region of DNA that codes for a polypeptide chain.\" <|split_2d|>\"They are excised from the primary transcript before it gains a 5' cap and a 3' poly(A)tail.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following is NOT a characteristic of introns?*tag*<|start_2d|>\"They occur only in eukaryotes.\" <|split_2d|>\"They represent noncoding regions.\" <|split_2d|>\"They are found interspersed with exons on a region of DNA that codes for a polypeptide chain.\" <|split_2d|>\"They are excised from the primary transcript before it gains a 5' cap and a 3' poly(A)tail.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "They are excised from the primary transcript before it gains a 5' cap and a 3' poly(A)tail.",
       "incorrect_answers": [
@@ -506,7 +506,7 @@
     }
   },
   {
-    "prompt": "A healthy person sitting at rest consciously begins to breathe too fast. Which of the following describes the change in the person\u2019s blood caused by this hyperventilation?~tag~<|start_2d|>\"A decrease in partial pressure of carbon dioxide and an increase in concentration of hydrogen ions\" <|split_2d|>\"A decrease in partial pressure of carbon dioxide and a decrease in concentration of hydrogen ions\" <|split_2d|>\"An increase in partial pressure of carbon dioxide and an increase in concentration of hydrogen ions\" <|split_2d|>\"An increase in partial pressure of carbon dioxide and a decrease in concentration of hydrogen ions\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A healthy person sitting at rest consciously begins to breathe too fast. Which of the following describes the change in the person\u2019s blood caused by this hyperventilation?*tag*<|start_2d|>\"A decrease in partial pressure of carbon dioxide and an increase in concentration of hydrogen ions\" <|split_2d|>\"A decrease in partial pressure of carbon dioxide and a decrease in concentration of hydrogen ions\" <|split_2d|>\"An increase in partial pressure of carbon dioxide and an increase in concentration of hydrogen ions\" <|split_2d|>\"An increase in partial pressure of carbon dioxide and a decrease in concentration of hydrogen ions\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "A decrease in partial pressure of carbon dioxide and a decrease in concentration of hydrogen ions",
       "incorrect_answers": [
@@ -517,7 +517,7 @@
     }
   },
   {
-    "prompt": "Which of the following is the correct anatomical order of structures in the mammalian female reproductive tract?~tag~<|start_2d|>\"Oviduct, uterus, rete, vagina\" <|split_2d|>\"Oviduct, epididymis, uterus, vagina\" <|split_2d|>\"Ovary, oviduct, uterus, vagina\" <|split_2d|>\"Ovary, uterus, vagina, rete\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following is the correct anatomical order of structures in the mammalian female reproductive tract?*tag*<|start_2d|>\"Oviduct, uterus, rete, vagina\" <|split_2d|>\"Oviduct, epididymis, uterus, vagina\" <|split_2d|>\"Ovary, oviduct, uterus, vagina\" <|split_2d|>\"Ovary, uterus, vagina, rete\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Ovary, oviduct, uterus, vagina",
       "incorrect_answers": [
@@ -528,7 +528,7 @@
     }
   },
   {
-    "prompt": "A marine ecosystem region characterized by penetrance of solar radiation and upwelling of nutrients is the~tag~<|start_2d|>\"bathyl zone\" <|split_2d|>\"neritic zone\" <|split_2d|>\"pelagic zone\" <|split_2d|>\"benthyl zone\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A marine ecosystem region characterized by penetrance of solar radiation and upwelling of nutrients is the*tag*<|start_2d|>\"bathyl zone\" <|split_2d|>\"neritic zone\" <|split_2d|>\"pelagic zone\" <|split_2d|>\"benthyl zone\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "neritic zone",
       "incorrect_answers": [
@@ -539,7 +539,7 @@
     }
   },
   {
-    "prompt": "In humans, a hereditary disorder called xeroderma pigmentosum (XP) can result in the inability to repair ultraviolet damage to DNA. Which of the following molecular lesions is most likely to accrue in individuals with XP?~tag~<|start_2d|>\"Thymine dimers\" <|split_2d|>\"Deamination of cytosine\" <|split_2d|>\"Depurination\" <|split_2d|>\"Single strand DNA breaks\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In humans, a hereditary disorder called xeroderma pigmentosum (XP) can result in the inability to repair ultraviolet damage to DNA. Which of the following molecular lesions is most likely to accrue in individuals with XP?*tag*<|start_2d|>\"Thymine dimers\" <|split_2d|>\"Deamination of cytosine\" <|split_2d|>\"Depurination\" <|split_2d|>\"Single strand DNA breaks\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Thymine dimers",
       "incorrect_answers": [
@@ -550,7 +550,7 @@
     }
   },
   {
-    "prompt": "Chemosynthetic bacteria can produce their own food despite their lack of photonabsorbing pigments because the chemosynthetic bacteria derive energy by~tag~<|start_2d|>\"oxidizing inorganic substances such as ammonia, sulfur, or hydrogen\" <|split_2d|>\"reducing inorganic substances such as ammonia, sulfur, or hydrogen\" <|split_2d|>\"oxidizing organic compounds\" <|split_2d|>\"transducing light energy into chemical energy\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Chemosynthetic bacteria can produce their own food despite their lack of photonabsorbing pigments because the chemosynthetic bacteria derive energy by*tag*<|start_2d|>\"oxidizing inorganic substances such as ammonia, sulfur, or hydrogen\" <|split_2d|>\"reducing inorganic substances such as ammonia, sulfur, or hydrogen\" <|split_2d|>\"oxidizing organic compounds\" <|split_2d|>\"transducing light energy into chemical energy\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "oxidizing inorganic substances such as ammonia, sulfur, or hydrogen",
       "incorrect_answers": [
@@ -561,7 +561,7 @@
     }
   },
   {
-    "prompt": "All of the following may serve as intracellular messengers EXCEPT~tag~<|start_2d|>\"calcium ions\" <|split_2d|>\"cAMP\" <|split_2d|>\"acetylcholine\" <|split_2d|>\"inositol 1,4,5-triphosphate\" <|end_2d|>~etag~Answer: ",
+    "prompt": "All of the following may serve as intracellular messengers EXCEPT*tag*<|start_2d|>\"calcium ions\" <|split_2d|>\"cAMP\" <|split_2d|>\"acetylcholine\" <|split_2d|>\"inositol 1,4,5-triphosphate\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "acetylcholine",
       "incorrect_answers": [
@@ -572,7 +572,7 @@
     }
   },
   {
-    "prompt": "All of the following statements about plant embryogenesis are correct EXCEPT:~tag~<|start_2d|>\"The suspensor is derived from the basal cell.\" <|split_2d|>\"Cotyledons are derived from the apical cell.\" <|split_2d|>\"Shoot apical meristem formation occurs after seed formation.\" <|split_2d|>\"Precursors of all three plant tissue systems are formed during embryogenesis.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "All of the following statements about plant embryogenesis are correct EXCEPT:*tag*<|start_2d|>\"The suspensor is derived from the basal cell.\" <|split_2d|>\"Cotyledons are derived from the apical cell.\" <|split_2d|>\"Shoot apical meristem formation occurs after seed formation.\" <|split_2d|>\"Precursors of all three plant tissue systems are formed during embryogenesis.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Shoot apical meristem formation occurs after seed formation.",
       "incorrect_answers": [
@@ -583,7 +583,7 @@
     }
   },
   {
-    "prompt": "Mouse sperm contain receptor proteins that bind to a glycoprotein (ZP3) in the zona pellucida of mouse eggs. Binding of ZP3 receptors to ZP3 initiates the sperm\u2019s acrosomal reaction. All of the following experimental observations would be expected EXCEPT:~tag~<|start_2d|>\"Injecting eggs with antibodies that bind to ZP3 blocks in vitro fertilization.\" <|split_2d|>\"Incubating sperm with purified ZP3 prior to mixing sperm and eggs blocks in vitro fertilization.\" <|split_2d|>\"Incubating eggs with antibodies that bind to ZP3 blocks in vitro fertilization.\" <|split_2d|>\"Coating synthetic beads with a different glycoprotein, ZP2, fails to lead to sperm aggregation on the beads.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Mouse sperm contain receptor proteins that bind to a glycoprotein (ZP3) in the zona pellucida of mouse eggs. Binding of ZP3 receptors to ZP3 initiates the sperm\u2019s acrosomal reaction. All of the following experimental observations would be expected EXCEPT:*tag*<|start_2d|>\"Injecting eggs with antibodies that bind to ZP3 blocks in vitro fertilization.\" <|split_2d|>\"Incubating sperm with purified ZP3 prior to mixing sperm and eggs blocks in vitro fertilization.\" <|split_2d|>\"Incubating eggs with antibodies that bind to ZP3 blocks in vitro fertilization.\" <|split_2d|>\"Coating synthetic beads with a different glycoprotein, ZP2, fails to lead to sperm aggregation on the beads.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Injecting eggs with antibodies that bind to ZP3 blocks in vitro fertilization.",
       "incorrect_answers": [
@@ -594,7 +594,7 @@
     }
   },
   {
-    "prompt": "Which of the following factors does NOT promote linkage disequilibrium?~tag~<|start_2d|>\"Asexual reproduction\" <|split_2d|>\"Coadapted gene complexes\" <|split_2d|>\"Epistasis\" <|split_2d|>\"Random mating\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following factors does NOT promote linkage disequilibrium?*tag*<|start_2d|>\"Asexual reproduction\" <|split_2d|>\"Coadapted gene complexes\" <|split_2d|>\"Epistasis\" <|split_2d|>\"Random mating\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Random mating",
       "incorrect_answers": [
@@ -605,7 +605,7 @@
     }
   },
   {
-    "prompt": "In an experiment, the first cleavage plane of an amphibian zygote was manipulated so that the gray crescent was contained in only one of the two blastomeres that result from the first cleavage. The two blastomeres were then separated. What is the expected fate of the blastomeres?~tag~<|start_2d|>\"The blastomere with the gray crescent will grow in size more quickly than the one without the gray crescent.\" <|split_2d|>\"The blastomere with the gray crescent will form a complete, but small, embryo.\" <|split_2d|>\"The blastomere without the gray crescent will form a complete, but small, embryo.\" <|split_2d|>\"The blastomere with the gray crescent will stop dividing and die before the second cleavage.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In an experiment, the first cleavage plane of an amphibian zygote was manipulated so that the gray crescent was contained in only one of the two blastomeres that result from the first cleavage. The two blastomeres were then separated. What is the expected fate of the blastomeres?*tag*<|start_2d|>\"The blastomere with the gray crescent will grow in size more quickly than the one without the gray crescent.\" <|split_2d|>\"The blastomere with the gray crescent will form a complete, but small, embryo.\" <|split_2d|>\"The blastomere without the gray crescent will form a complete, but small, embryo.\" <|split_2d|>\"The blastomere with the gray crescent will stop dividing and die before the second cleavage.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The blastomere with the gray crescent will form a complete, but small, embryo.",
       "incorrect_answers": [
@@ -616,7 +616,7 @@
     }
   },
   {
-    "prompt": "Nerve outgrowth from a developing neuron begins at the growth cone, located at the tip of the axon. Microspikes of the growth cone extend and retract in order to move the growth cone forward. Exposure of the neuron to cytochasalin B at this stage of development causes~tag~<|start_2d|>\"microtubules in the axon to undergo reversible dissociation\" <|split_2d|>\"microtubules in the axon to undergo irreversible dissociation\" <|split_2d|>\"microfilaments in the microspike to undergo reversible depolymerization\" <|split_2d|>\"microfilaments in the microspike to undergo irreversible depolymerization\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Nerve outgrowth from a developing neuron begins at the growth cone, located at the tip of the axon. Microspikes of the growth cone extend and retract in order to move the growth cone forward. Exposure of the neuron to cytochasalin B at this stage of development causes*tag*<|start_2d|>\"microtubules in the axon to undergo reversible dissociation\" <|split_2d|>\"microtubules in the axon to undergo irreversible dissociation\" <|split_2d|>\"microfilaments in the microspike to undergo reversible depolymerization\" <|split_2d|>\"microfilaments in the microspike to undergo irreversible depolymerization\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "microfilaments in the microspike to undergo reversible depolymerization",
       "incorrect_answers": [
@@ -627,7 +627,7 @@
     }
   },
   {
-    "prompt": "Monoclonal antisera are distinguished from polyclonal antisera in which of the following ways?~tag~<|start_2d|>\"Each type of antibody in a monoclonal antiserum reacts against a single region of a single antigen; each type of antibody in a polyclonal antiserum reacts against multiple regions of different antigens.\" <|split_2d|>\"A monoclonal antibody reacts against multiple regions of a single antigen; a polyclonal antibody reacts against a single region of related antigens.\" <|split_2d|>\"A monoclonal antiserum contains antibodies secreted from the descendants of a single B lymphocyte; a polyclonal antiserum contains antibodies secreted from the descendants of different B lymphocytes.\" <|split_2d|>\"A monoclonal antiserum contains antibodies secreted from the descendants of a single B lymphocyte; a polyclonal antiserum contains antibodies secreted from the descendants of both B and T lymphocytes.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Monoclonal antisera are distinguished from polyclonal antisera in which of the following ways?*tag*<|start_2d|>\"Each type of antibody in a monoclonal antiserum reacts against a single region of a single antigen; each type of antibody in a polyclonal antiserum reacts against multiple regions of different antigens.\" <|split_2d|>\"A monoclonal antibody reacts against multiple regions of a single antigen; a polyclonal antibody reacts against a single region of related antigens.\" <|split_2d|>\"A monoclonal antiserum contains antibodies secreted from the descendants of a single B lymphocyte; a polyclonal antiserum contains antibodies secreted from the descendants of different B lymphocytes.\" <|split_2d|>\"A monoclonal antiserum contains antibodies secreted from the descendants of a single B lymphocyte; a polyclonal antiserum contains antibodies secreted from the descendants of both B and T lymphocytes.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "A monoclonal antiserum contains antibodies secreted from the descendants of a single B lymphocyte; a polyclonal antiserum contains antibodies secreted from the descendants of different B lymphocytes.",
       "incorrect_answers": [
@@ -638,7 +638,7 @@
     }
   },
   {
-    "prompt": "The first groups of animals to develop lung tissue adequate to support their respiratory requirements without the use of supplementary gas exchange organs were the~tag~<|start_2d|>\"amphibians\" <|split_2d|>\"reptiles\" <|split_2d|>\"mammals\" <|split_2d|>\"trematoda\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The first groups of animals to develop lung tissue adequate to support their respiratory requirements without the use of supplementary gas exchange organs were the*tag*<|start_2d|>\"amphibians\" <|split_2d|>\"reptiles\" <|split_2d|>\"mammals\" <|split_2d|>\"trematoda\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "reptiles",
       "incorrect_answers": [
@@ -649,7 +649,7 @@
     }
   },
   {
-    "prompt": "Which of the following is a biological attribute that would most likely allow a species to become cosmopolitan in distribution?~tag~<|start_2d|>\"Extreme habitat specialization\" <|split_2d|>\"K-selected reproductive rate\" <|split_2d|>\"Limited dispersal abilities\" <|split_2d|>\"Capacity for long-distance dispersal\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following is a biological attribute that would most likely allow a species to become cosmopolitan in distribution?*tag*<|start_2d|>\"Extreme habitat specialization\" <|split_2d|>\"K-selected reproductive rate\" <|split_2d|>\"Limited dispersal abilities\" <|split_2d|>\"Capacity for long-distance dispersal\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Capacity for long-distance dispersal",
       "incorrect_answers": [
@@ -660,7 +660,7 @@
     }
   },
   {
-    "prompt": "In the formation of the earliest cells, which of the following components most likely arose first?~tag~<|start_2d|>\"Nucleus\" <|split_2d|>\"Plasma membrane\" <|split_2d|>\"Mitochondrion\" <|split_2d|>\"Flagellum\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In the formation of the earliest cells, which of the following components most likely arose first?*tag*<|start_2d|>\"Nucleus\" <|split_2d|>\"Plasma membrane\" <|split_2d|>\"Mitochondrion\" <|split_2d|>\"Flagellum\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Plasma membrane",
       "incorrect_answers": [
@@ -671,7 +671,7 @@
     }
   },
   {
-    "prompt": "Which of the following facts was established prior to 1859, the year in which Charles Darwin published On the Origin of Species?~tag~<|start_2d|>\"DNA provides the macromolecular basis of heredity.\" <|split_2d|>\"Mendelian principles explain why some traits are dominant and others are recessive.\" <|split_2d|>\"Prokaryotes include two major domains, the Bacteria and the Archaea.\" <|split_2d|>\"There exist fossilized remains of species that have become extinct.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following facts was established prior to 1859, the year in which Charles Darwin published On the Origin of Species?*tag*<|start_2d|>\"DNA provides the macromolecular basis of heredity.\" <|split_2d|>\"Mendelian principles explain why some traits are dominant and others are recessive.\" <|split_2d|>\"Prokaryotes include two major domains, the Bacteria and the Archaea.\" <|split_2d|>\"There exist fossilized remains of species that have become extinct.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "There exist fossilized remains of species that have become extinct.",
       "incorrect_answers": [
@@ -682,7 +682,7 @@
     }
   },
   {
-    "prompt": "Fungi participate in each of the following EXCEPT~tag~<|start_2d|>\"photosynthesis to produce glucose\" <|split_2d|>\"fermentation to produce alcohol\" <|split_2d|>\"association with humans to produce ringworm\" <|split_2d|>\"association with the roots of plants to form mycorrhizae\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Fungi participate in each of the following EXCEPT*tag*<|start_2d|>\"photosynthesis to produce glucose\" <|split_2d|>\"fermentation to produce alcohol\" <|split_2d|>\"association with humans to produce ringworm\" <|split_2d|>\"association with the roots of plants to form mycorrhizae\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "photosynthesis to produce glucose",
       "incorrect_answers": [
@@ -693,7 +693,7 @@
     }
   },
   {
-    "prompt": "In chloroplasts, a certain protein is found in the lumen of the thylakoid (thylakoid space). It is transcribed in the nucleus and synthesized on cytoplasmic ribosomes. How many membrane bilayers must this protein cross to reach its final location?~tag~<|start_2d|>\"One\" <|split_2d|>\"Two\" <|split_2d|>\"Three\" <|split_2d|>\"Four\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In chloroplasts, a certain protein is found in the lumen of the thylakoid (thylakoid space). It is transcribed in the nucleus and synthesized on cytoplasmic ribosomes. How many membrane bilayers must this protein cross to reach its final location?*tag*<|start_2d|>\"One\" <|split_2d|>\"Two\" <|split_2d|>\"Three\" <|split_2d|>\"Four\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Three",
       "incorrect_answers": [
@@ -704,7 +704,7 @@
     }
   },
   {
-    "prompt": "During the mammalian cardiac cycle, a volume of blood equivalent to ventricular stroke volume is transferred from the more compliant venous side to the less compliant arterial side of the circulation. In terms of pressures within the venous and arterial compartments, this transfer results in~tag~<|start_2d|>\"no change in pressure in either compartment\" <|split_2d|>\"no effect on venous pressure and a small increase in arterial pressure\" <|split_2d|>\"an increase in venous pressure and an equal but opposite decrease in arterial pressure\" <|split_2d|>\"little effect on venous pressure and a large increase in arterial pressure\" <|end_2d|>~etag~Answer: ",
+    "prompt": "During the mammalian cardiac cycle, a volume of blood equivalent to ventricular stroke volume is transferred from the more compliant venous side to the less compliant arterial side of the circulation. In terms of pressures within the venous and arterial compartments, this transfer results in*tag*<|start_2d|>\"no change in pressure in either compartment\" <|split_2d|>\"no effect on venous pressure and a small increase in arterial pressure\" <|split_2d|>\"an increase in venous pressure and an equal but opposite decrease in arterial pressure\" <|split_2d|>\"little effect on venous pressure and a large increase in arterial pressure\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "little effect on venous pressure and a large increase in arterial pressure",
       "incorrect_answers": [
@@ -715,7 +715,7 @@
     }
   },
   {
-    "prompt": "Which of the following statements concerning the Golgi apparatus of a eukaryote is correct?~tag~<|start_2d|>\"It is oriented in the cytoplasm so that its cis face is closest to the endoplasmic reticulum.\" <|split_2d|>\"It is typically associated with small secretory vesicles located near its cis face.\" <|split_2d|>\"Its composite flattened cisternae are continuous with one another.\" <|split_2d|>\"Glycosylation of certain secretory proteins occurs prior to the protein's entry into its lumen.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following statements concerning the Golgi apparatus of a eukaryote is correct?*tag*<|start_2d|>\"It is oriented in the cytoplasm so that its cis face is closest to the endoplasmic reticulum.\" <|split_2d|>\"It is typically associated with small secretory vesicles located near its cis face.\" <|split_2d|>\"Its composite flattened cisternae are continuous with one another.\" <|split_2d|>\"Glycosylation of certain secretory proteins occurs prior to the protein's entry into its lumen.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "It is oriented in the cytoplasm so that its cis face is closest to the endoplasmic reticulum.",
       "incorrect_answers": [
@@ -726,7 +726,7 @@
     }
   },
   {
-    "prompt": "The first point of entry of water at the roots of a monocot plant is through the cytoplasm of cells of the~tag~<|start_2d|>\"root cap\" <|split_2d|>\"Casparian strip\" <|split_2d|>\"pericycle\" <|split_2d|>\"endoderm\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The first point of entry of water at the roots of a monocot plant is through the cytoplasm of cells of the*tag*<|start_2d|>\"root cap\" <|split_2d|>\"Casparian strip\" <|split_2d|>\"pericycle\" <|split_2d|>\"endoderm\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "endoderm",
       "incorrect_answers": [
@@ -737,7 +737,7 @@
     }
   },
   {
-    "prompt": "Which of the following plant cells undergoes programmed cell death to become functional?~tag~<|start_2d|>\"Phloem sieve tube member\" <|split_2d|>\"Xylem vessel member\" <|split_2d|>\"Stomatal guard cell\" <|split_2d|>\"Root cap cell\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following plant cells undergoes programmed cell death to become functional?*tag*<|start_2d|>\"Phloem sieve tube member\" <|split_2d|>\"Xylem vessel member\" <|split_2d|>\"Stomatal guard cell\" <|split_2d|>\"Root cap cell\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Xylem vessel member",
       "incorrect_answers": [
@@ -748,7 +748,7 @@
     }
   },
   {
-    "prompt": "Which of the following characteristics distinguishes angiosperms from gymnosperms?~tag~<|start_2d|>\"Perennial growth\" <|split_2d|>\"True roots\" <|split_2d|>\"Apical growth\" <|split_2d|>\"Seeds enclosed in ovaries\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following characteristics distinguishes angiosperms from gymnosperms?*tag*<|start_2d|>\"Perennial growth\" <|split_2d|>\"True roots\" <|split_2d|>\"Apical growth\" <|split_2d|>\"Seeds enclosed in ovaries\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Seeds enclosed in ovaries",
       "incorrect_answers": [
@@ -759,7 +759,7 @@
     }
   },
   {
-    "prompt": "A species of goose nests on both cliffs and beaches near the ocean. Soon after hatching, all chicks must make their way to the ocean. Chicks from cliff nests must tumble down the cliff to get to the ocean, and many are killed by the fall. Which of the following is most consistent with the hypothesis that cliff nesting is adaptive in this goose species?~tag~<|start_2d|>\"Many more geese nest on the beaches than on the cliffs.\" <|split_2d|>\"Cliff-side nesting confers a higher fitness than does beach nesting.\" <|split_2d|>\"Chicks from cliff nests instinctively step off the cliffs at the appropriate time.\" <|split_2d|>\"More chicks survive the fall from the cliffs than are killed.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A species of goose nests on both cliffs and beaches near the ocean. Soon after hatching, all chicks must make their way to the ocean. Chicks from cliff nests must tumble down the cliff to get to the ocean, and many are killed by the fall. Which of the following is most consistent with the hypothesis that cliff nesting is adaptive in this goose species?*tag*<|start_2d|>\"Many more geese nest on the beaches than on the cliffs.\" <|split_2d|>\"Cliff-side nesting confers a higher fitness than does beach nesting.\" <|split_2d|>\"Chicks from cliff nests instinctively step off the cliffs at the appropriate time.\" <|split_2d|>\"More chicks survive the fall from the cliffs than are killed.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Cliff-side nesting confers a higher fitness than does beach nesting.",
       "incorrect_answers": [
@@ -770,7 +770,7 @@
     }
   },
   {
-    "prompt": "Immunoglobulins having epsilon heavy chains and located on the plasma membranes of mast cells and basophilic leukocytes belong to the class of antibodies called~tag~<|start_2d|>\"IgE\" <|split_2d|>\"IgA\" <|split_2d|>\"IgD\" <|split_2d|>\"IgM\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Immunoglobulins having epsilon heavy chains and located on the plasma membranes of mast cells and basophilic leukocytes belong to the class of antibodies called*tag*<|start_2d|>\"IgE\" <|split_2d|>\"IgA\" <|split_2d|>\"IgD\" <|split_2d|>\"IgM\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "IgE",
       "incorrect_answers": [
@@ -781,7 +781,7 @@
     }
   },
   {
-    "prompt": "A fluorescent molecule of 1,000 daltons injected into one cell is observed to enter an adjacent cell by passing through a~tag~<|start_2d|>\"spot desmosome\" <|split_2d|>\"belt desmosome\" <|split_2d|>\"gap junction\" <|split_2d|>\"tight junction\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A fluorescent molecule of 1,000 daltons injected into one cell is observed to enter an adjacent cell by passing through a*tag*<|start_2d|>\"spot desmosome\" <|split_2d|>\"belt desmosome\" <|split_2d|>\"gap junction\" <|split_2d|>\"tight junction\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "gap junction",
       "incorrect_answers": [
@@ -792,7 +792,7 @@
     }
   },
   {
-    "prompt": "Annelids and arthropods are similar to each other in that members of both phyla~tag~<|start_2d|>\"have segmented bodies\" <|split_2d|>\"have a closed circulatory system\" <|split_2d|>\"conduct gas exchange by diffusion through a moist membrane\" <|split_2d|>\"have well-developed sense organs\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Annelids and arthropods are similar to each other in that members of both phyla*tag*<|start_2d|>\"have segmented bodies\" <|split_2d|>\"have a closed circulatory system\" <|split_2d|>\"conduct gas exchange by diffusion through a moist membrane\" <|split_2d|>\"have well-developed sense organs\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "have segmented bodies",
       "incorrect_answers": [
@@ -803,7 +803,7 @@
     }
   },
   {
-    "prompt": "Approximately what fraction of the human genome encodes proteins?~tag~<|start_2d|>\"2%\" <|split_2d|>\"25%\" <|split_2d|>\"50%\" <|split_2d|>\"90%\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Approximately what fraction of the human genome encodes proteins?*tag*<|start_2d|>\"2%\" <|split_2d|>\"25%\" <|split_2d|>\"50%\" <|split_2d|>\"90%\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "2%",
       "incorrect_answers": [
@@ -814,7 +814,7 @@
     }
   },
   {
-    "prompt": "Which of the following statements is true of air as compared to water?~tag~<|start_2d|>\"Air provides more physical support.\" <|split_2d|>\"Air has a higher O2 concentration.\" <|split_2d|>\"Air offers more resistance to motion.\" <|split_2d|>\"Air has more thermal inertia.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following statements is true of air as compared to water?*tag*<|start_2d|>\"Air provides more physical support.\" <|split_2d|>\"Air has a higher O2 concentration.\" <|split_2d|>\"Air offers more resistance to motion.\" <|split_2d|>\"Air has more thermal inertia.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Air has a higher O2 concentration.",
       "incorrect_answers": [
@@ -825,7 +825,7 @@
     }
   },
   {
-    "prompt": "Which of the following is true of organisms belonging to the kingdom Protista?~tag~<|start_2d|>\"They are eukaryotic.\" <|split_2d|>\"They include the cyanobacteria.\" <|split_2d|>\"They are heterotrophic.\" <|split_2d|>\"They possess cell walls composed of peptidoglycan.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following is true of organisms belonging to the kingdom Protista?*tag*<|start_2d|>\"They are eukaryotic.\" <|split_2d|>\"They include the cyanobacteria.\" <|split_2d|>\"They are heterotrophic.\" <|split_2d|>\"They possess cell walls composed of peptidoglycan.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "They are eukaryotic.",
       "incorrect_answers": [
@@ -836,7 +836,7 @@
     }
   },
   {
-    "prompt": "The section of chromosome that serves as the site of attachment by the mitotic spindle during cell division is the~tag~<|start_2d|>\"chromatophore\" <|split_2d|>\"chromomere\" <|split_2d|>\"kinetochore\" <|split_2d|>\"centriole\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The section of chromosome that serves as the site of attachment by the mitotic spindle during cell division is the*tag*<|start_2d|>\"chromatophore\" <|split_2d|>\"chromomere\" <|split_2d|>\"kinetochore\" <|split_2d|>\"centriole\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "kinetochore",
       "incorrect_answers": [
@@ -847,7 +847,7 @@
     }
   },
   {
-    "prompt": "A plant that grows along a trellis exhibits~tag~<|start_2d|>\"thigmotropism\" <|split_2d|>\"phototropism\" <|split_2d|>\"gravidotropism\" <|split_2d|>\"negative gravidotropism\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A plant that grows along a trellis exhibits*tag*<|start_2d|>\"thigmotropism\" <|split_2d|>\"phototropism\" <|split_2d|>\"gravidotropism\" <|split_2d|>\"negative gravidotropism\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "thigmotropism",
       "incorrect_answers": [
@@ -858,7 +858,7 @@
     }
   },
   {
-    "prompt": "If the activity of an enzyme is constant over a broad range of pH values, it is likely that~tag~<|start_2d|>\"only ionizing groups on the enzyme participate in the reaction\" <|split_2d|>\"only ionizing groups on the substrate participate in the reaction\" <|split_2d|>\"ionizing groups on both the enzyme and substrate participate in the reaction\" <|split_2d|>\"no ionizing groups on the enzyme or substrate participate in the reaction\" <|end_2d|>~etag~Answer: ",
+    "prompt": "If the activity of an enzyme is constant over a broad range of pH values, it is likely that*tag*<|start_2d|>\"only ionizing groups on the enzyme participate in the reaction\" <|split_2d|>\"only ionizing groups on the substrate participate in the reaction\" <|split_2d|>\"ionizing groups on both the enzyme and substrate participate in the reaction\" <|split_2d|>\"no ionizing groups on the enzyme or substrate participate in the reaction\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "no ionizing groups on the enzyme or substrate participate in the reaction",
       "incorrect_answers": [
@@ -869,7 +869,7 @@
     }
   },
   {
-    "prompt": "In garden peas, the allele for tall plants (D) is completely dominant to the allele for dwarf plants (d) and the allele for violet flower color (W) is completely dominant to the allele for white flower color (w). In a cross between a tall violet plant, with the genotype DDWw, and a dwarf white plant, what phenotypic ratio of the progeny would be expected from this cross?~tag~<|start_2d|>\"All tall violet\" <|split_2d|>\"1 tall violet: 1 dwarf violet\" <|split_2d|>\"1 tall violet: 1 tall white: 1 dwarf violet: 1 dwarf white\" <|split_2d|>\"1 tall violet: 1 tall white\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In garden peas, the allele for tall plants (D) is completely dominant to the allele for dwarf plants (d) and the allele for violet flower color (W) is completely dominant to the allele for white flower color (w). In a cross between a tall violet plant, with the genotype DDWw, and a dwarf white plant, what phenotypic ratio of the progeny would be expected from this cross?*tag*<|start_2d|>\"All tall violet\" <|split_2d|>\"1 tall violet: 1 dwarf violet\" <|split_2d|>\"1 tall violet: 1 tall white: 1 dwarf violet: 1 dwarf white\" <|split_2d|>\"1 tall violet: 1 tall white\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "1 tall violet: 1 tall white",
       "incorrect_answers": [
@@ -880,7 +880,7 @@
     }
   },
   {
-    "prompt": "Cancer cells grown in culture are similar to normal cells grown in culture in that they~tag~<|start_2d|>\"divide an indefinite number of times\" <|split_2d|>\"do not display contact inhibition\" <|split_2d|>\"require a surface for attachment in order to grow\" <|split_2d|>\"proliferate to the same cell density\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Cancer cells grown in culture are similar to normal cells grown in culture in that they*tag*<|start_2d|>\"divide an indefinite number of times\" <|split_2d|>\"do not display contact inhibition\" <|split_2d|>\"require a surface for attachment in order to grow\" <|split_2d|>\"proliferate to the same cell density\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "require a surface for attachment in order to grow",
       "incorrect_answers": [
@@ -891,7 +891,7 @@
     }
   },
   {
-    "prompt": "Which of the following techniques could be used to demonstrate protein binding to specific DNA sequences?~tag~<|start_2d|>\"Western blot hybridization\" <|split_2d|>\"Northern blot hybridization\" <|split_2d|>\"Southern blot hybridization\" <|split_2d|>\"Electrophoretic mobility shift assay\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following techniques could be used to demonstrate protein binding to specific DNA sequences?*tag*<|start_2d|>\"Western blot hybridization\" <|split_2d|>\"Northern blot hybridization\" <|split_2d|>\"Southern blot hybridization\" <|split_2d|>\"Electrophoretic mobility shift assay\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Electrophoretic mobility shift assay",
       "incorrect_answers": [
@@ -902,7 +902,7 @@
     }
   },
   {
-    "prompt": "Adequate serum levels of calcium are maintained in humans by the secretion of~tag~<|start_2d|>\"thyroxine\" <|split_2d|>\"glucagon\" <|split_2d|>\"growth hormone\" <|split_2d|>\"parathyroid hormone\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Adequate serum levels of calcium are maintained in humans by the secretion of*tag*<|start_2d|>\"thyroxine\" <|split_2d|>\"glucagon\" <|split_2d|>\"growth hormone\" <|split_2d|>\"parathyroid hormone\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "parathyroid hormone",
       "incorrect_answers": [
@@ -913,7 +913,7 @@
     }
   },
   {
-    "prompt": "The amino acid ornithine is regenerated during each turn of the urea cycle in a similar manner to which of the following participants in the citric acid cycle?~tag~<|start_2d|>\"Succinate\" <|split_2d|>\"Fumarate\" <|split_2d|>\"Oxaloacetate\" <|split_2d|>\"Citrate\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The amino acid ornithine is regenerated during each turn of the urea cycle in a similar manner to which of the following participants in the citric acid cycle?*tag*<|start_2d|>\"Succinate\" <|split_2d|>\"Fumarate\" <|split_2d|>\"Oxaloacetate\" <|split_2d|>\"Citrate\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Oxaloacetate",
       "incorrect_answers": [
@@ -924,7 +924,7 @@
     }
   },
   {
-    "prompt": "Which is a characteristic unique to angiosperms?~tag~<|start_2d|>\"Wind-borne pollen\" <|split_2d|>\"A dominant sporophyte life cycle\" <|split_2d|>\"Alteration of generations\" <|split_2d|>\"Double fertilization\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which is a characteristic unique to angiosperms?*tag*<|start_2d|>\"Wind-borne pollen\" <|split_2d|>\"A dominant sporophyte life cycle\" <|split_2d|>\"Alteration of generations\" <|split_2d|>\"Double fertilization\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Double fertilization",
       "incorrect_answers": [
@@ -935,7 +935,7 @@
     }
   },
   {
-    "prompt": "Mammals are homeostatic for all of the following EXCEPT~tag~<|start_2d|>\"body temperature\" <|split_2d|>\"blood glucose concentration\" <|split_2d|>\"blood pH\" <|split_2d|>\"metabolic rate\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Mammals are homeostatic for all of the following EXCEPT*tag*<|start_2d|>\"body temperature\" <|split_2d|>\"blood glucose concentration\" <|split_2d|>\"blood pH\" <|split_2d|>\"metabolic rate\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "metabolic rate",
       "incorrect_answers": [
@@ -946,7 +946,7 @@
     }
   },
   {
-    "prompt": "The crouching of very young birds in response to a predator\u2019s shape overhead is an example of~tag~<|start_2d|>\"a conditioned response\" <|split_2d|>\"a fixed action pattern\" <|split_2d|>\"an imprinted behavior\" <|split_2d|>\"learned behavior\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The crouching of very young birds in response to a predator\u2019s shape overhead is an example of*tag*<|start_2d|>\"a conditioned response\" <|split_2d|>\"a fixed action pattern\" <|split_2d|>\"an imprinted behavior\" <|split_2d|>\"learned behavior\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "a fixed action pattern",
       "incorrect_answers": [
@@ -957,7 +957,7 @@
     }
   },
   {
-    "prompt": "Among primates, a high degree of sexual dimorphism in a species usually indicates intense competition between~tag~<|start_2d|>\"males in order to obtain individual food resources\" <|split_2d|>\"males in order to obtain mates\" <|split_2d|>\"females in order to obtain individual food resources\" <|split_2d|>\"females in order to obtain mates\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Among primates, a high degree of sexual dimorphism in a species usually indicates intense competition between*tag*<|start_2d|>\"males in order to obtain individual food resources\" <|split_2d|>\"males in order to obtain mates\" <|split_2d|>\"females in order to obtain individual food resources\" <|split_2d|>\"females in order to obtain mates\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "males in order to obtain mates",
       "incorrect_answers": [
@@ -968,7 +968,7 @@
     }
   },
   {
-    "prompt": "Which of the following tissues in an actively photosynthesizing plant would have the highest rate of oxygen production?~tag~<|start_2d|>\"Cortex\" <|split_2d|>\"Palisade mesophyll\" <|split_2d|>\"Epidermis\" <|split_2d|>\"Vascular cambium\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following tissues in an actively photosynthesizing plant would have the highest rate of oxygen production?*tag*<|start_2d|>\"Cortex\" <|split_2d|>\"Palisade mesophyll\" <|split_2d|>\"Epidermis\" <|split_2d|>\"Vascular cambium\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Palisade mesophyll",
       "incorrect_answers": [
@@ -979,7 +979,7 @@
     }
   },
   {
-    "prompt": "A recent theory concerning an unusual rise in asthma attacks following a thunderstorm proposes that while pollen grains at 5 microns are too large to enter the airways, their exposure to water precipitates the release of starch granules as a result of osmotic shock. The starch granules are small enough to enter the lower airways and trigger an asthmatic attack. If this theory is true, which of the following is a correct statement?~tag~<|start_2d|>\"The interior of the pollen grains was hypotonic compared to the surrounding environment.\" <|split_2d|>\"The interior of the pollen grains had a higher osmotic pressure than did the surrounding environment.\" <|split_2d|>\"The pollen grains underwent plasmolysis prior to releasing their contents.\" <|split_2d|>\"The pollen grains underwent shrinking before they ruptured and released their contents.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A recent theory concerning an unusual rise in asthma attacks following a thunderstorm proposes that while pollen grains at 5 microns are too large to enter the airways, their exposure to water precipitates the release of starch granules as a result of osmotic shock. The starch granules are small enough to enter the lower airways and trigger an asthmatic attack. If this theory is true, which of the following is a correct statement?*tag*<|start_2d|>\"The interior of the pollen grains was hypotonic compared to the surrounding environment.\" <|split_2d|>\"The interior of the pollen grains had a higher osmotic pressure than did the surrounding environment.\" <|split_2d|>\"The pollen grains underwent plasmolysis prior to releasing their contents.\" <|split_2d|>\"The pollen grains underwent shrinking before they ruptured and released their contents.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The interior of the pollen grains had a higher osmotic pressure than did the surrounding environment.",
       "incorrect_answers": [
@@ -990,7 +990,7 @@
     }
   },
   {
-    "prompt": "Hybrids between some related species of plants are sterile because the parent plants had different chromosome numbers. Occasionally the chromosome number of such a hybrid plant doubles spontaneously. Which of the following best describes the descendants of those plants with the double chromosome number?~tag~<|start_2d|>\"The plant with the double chromosome number would be genetically defective and have no descendants.\" <|split_2d|>\"The descendants would be at a selective advantage because of the increased ability to introgress.\" <|split_2d|>\"The descendants would be reproductively successful because they could backcross with the parental species.\" <|split_2d|>\"The descendants would regain the ability to reproduce sexually because chromosomes could pair normally.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Hybrids between some related species of plants are sterile because the parent plants had different chromosome numbers. Occasionally the chromosome number of such a hybrid plant doubles spontaneously. Which of the following best describes the descendants of those plants with the double chromosome number?*tag*<|start_2d|>\"The plant with the double chromosome number would be genetically defective and have no descendants.\" <|split_2d|>\"The descendants would be at a selective advantage because of the increased ability to introgress.\" <|split_2d|>\"The descendants would be reproductively successful because they could backcross with the parental species.\" <|split_2d|>\"The descendants would regain the ability to reproduce sexually because chromosomes could pair normally.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The descendants would regain the ability to reproduce sexually because chromosomes could pair normally.",
       "incorrect_answers": [
@@ -1001,7 +1001,7 @@
     }
   },
   {
-    "prompt": "Phalloidin is a toxin made by the death cap mushroom. The toxin binds to actin subunits and disrupts actin function. Which of the following structures would be most directly affected by phalloidin?~tag~<|start_2d|>\"Intermediate filaments\" <|split_2d|>\"Collagen fibers\" <|split_2d|>\"Microfilaments\" <|split_2d|>\"Microtubules\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Phalloidin is a toxin made by the death cap mushroom. The toxin binds to actin subunits and disrupts actin function. Which of the following structures would be most directly affected by phalloidin?*tag*<|start_2d|>\"Intermediate filaments\" <|split_2d|>\"Collagen fibers\" <|split_2d|>\"Microfilaments\" <|split_2d|>\"Microtubules\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Microfilaments",
       "incorrect_answers": [
@@ -1012,7 +1012,7 @@
     }
   },
   {
-    "prompt": "Hardy-Weinberg equilibrium generally assumes all of the following EXCEPT~tag~<|start_2d|>\"a large population\" <|split_2d|>\"genetic drift\" <|split_2d|>\"random mating\" <|split_2d|>\"absence of selection\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Hardy-Weinberg equilibrium generally assumes all of the following EXCEPT*tag*<|start_2d|>\"a large population\" <|split_2d|>\"genetic drift\" <|split_2d|>\"random mating\" <|split_2d|>\"absence of selection\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "genetic drift",
       "incorrect_answers": [
@@ -1023,7 +1023,7 @@
     }
   },
   {
-    "prompt": "Which of the following statements about fungi is NOT true?~tag~<|start_2d|>\"They all are eukaryotic.\" <|split_2d|>\"They all have rigid cell walls.\" <|split_2d|>\"Most are filamentous.\" <|split_2d|>\"Some are photosynthetic.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following statements about fungi is NOT true?*tag*<|start_2d|>\"They all are eukaryotic.\" <|split_2d|>\"They all have rigid cell walls.\" <|split_2d|>\"Most are filamentous.\" <|split_2d|>\"Some are photosynthetic.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Some are photosynthetic.",
       "incorrect_answers": [
@@ -1034,7 +1034,7 @@
     }
   },
   {
-    "prompt": "Which of the following is encoded by the src oncogene and catalyzes the specific addition of phosphate groups to cellular proteins?~tag~<|start_2d|>\"Protein phosphatase\" <|split_2d|>\"Adenylate cyclase\" <|split_2d|>\"G protein-linked receptor\" <|split_2d|>\"Tyrosine kinase\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following is encoded by the src oncogene and catalyzes the specific addition of phosphate groups to cellular proteins?*tag*<|start_2d|>\"Protein phosphatase\" <|split_2d|>\"Adenylate cyclase\" <|split_2d|>\"G protein-linked receptor\" <|split_2d|>\"Tyrosine kinase\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Tyrosine kinase",
       "incorrect_answers": [
@@ -1045,7 +1045,7 @@
     }
   },
   {
-    "prompt": "Both C4 and CAM plants employ physiological and biochemical strategies to reduce photorespiration. Which of the following is an accurate comparison of the two strategies?~tag~<|start_2d|>\"C4 plants fix CO2 as the 4-carbon acid oxaloacetate, while CAM plants fix CO2 as the 5-carbon acid ribulose 1, 5-bisphosphate.\" <|split_2d|>\"C4 plants fix CO2 in the mesophyll but carry out the Calvin cycle in the bundle sheath, while CAM plants fix CO2 and carry out the Calvin cycle in the mesophyll.\" <|split_2d|>\"C4 plants fix CO2 in the bundle sheath but carry out the Calvin cycle in the mesophyll, while CAM plants fix CO2 and carry out the Calvin cycle in the bundle sheath.\" <|split_2d|>\"C4 plants store CO2 as phosphoglycolate, while CAM plants store CO2 as oxaloacetate.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Both C4 and CAM plants employ physiological and biochemical strategies to reduce photorespiration. Which of the following is an accurate comparison of the two strategies?*tag*<|start_2d|>\"C4 plants fix CO2 as the 4-carbon acid oxaloacetate, while CAM plants fix CO2 as the 5-carbon acid ribulose 1, 5-bisphosphate.\" <|split_2d|>\"C4 plants fix CO2 in the mesophyll but carry out the Calvin cycle in the bundle sheath, while CAM plants fix CO2 and carry out the Calvin cycle in the mesophyll.\" <|split_2d|>\"C4 plants fix CO2 in the bundle sheath but carry out the Calvin cycle in the mesophyll, while CAM plants fix CO2 and carry out the Calvin cycle in the bundle sheath.\" <|split_2d|>\"C4 plants store CO2 as phosphoglycolate, while CAM plants store CO2 as oxaloacetate.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "C4 plants fix CO2 in the mesophyll but carry out the Calvin cycle in the bundle sheath, while CAM plants fix CO2 and carry out the Calvin cycle in the mesophyll.",
       "incorrect_answers": [
@@ -1056,7 +1056,7 @@
     }
   },
   {
-    "prompt": "Which of the following depicts the correct sequence of membranes of the chloroplast, beginning with the innermost membrane and ending with the outermost membrane?~tag~<|start_2d|>\"Thylakoid membrane, inner membrane, outer membrane\" <|split_2d|>\"Inner membrane, outer membrane, thylakoid membrane\" <|split_2d|>\"Outer membrane, inner membrane, thylakoid membrane\" <|split_2d|>\"Strama, outer membrane, inner membrane\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following depicts the correct sequence of membranes of the chloroplast, beginning with the innermost membrane and ending with the outermost membrane?*tag*<|start_2d|>\"Thylakoid membrane, inner membrane, outer membrane\" <|split_2d|>\"Inner membrane, outer membrane, thylakoid membrane\" <|split_2d|>\"Outer membrane, inner membrane, thylakoid membrane\" <|split_2d|>\"Strama, outer membrane, inner membrane\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Thylakoid membrane, inner membrane, outer membrane",
       "incorrect_answers": [
@@ -1067,7 +1067,7 @@
     }
   },
   {
-    "prompt": "Antibiotics that affect bacterial cells interfere with all of the following EXCEPT~tag~<|start_2d|>\"peptidoglycan synthesis\" <|split_2d|>\"protein synthesis\" <|split_2d|>\"DNA synthesis\" <|split_2d|>\"reverse transcriptase\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Antibiotics that affect bacterial cells interfere with all of the following EXCEPT*tag*<|start_2d|>\"peptidoglycan synthesis\" <|split_2d|>\"protein synthesis\" <|split_2d|>\"DNA synthesis\" <|split_2d|>\"reverse transcriptase\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "reverse transcriptase",
       "incorrect_answers": [
@@ -1078,7 +1078,7 @@
     }
   },
   {
-    "prompt": "The polytene chromosomes seen in Drosophila silvarentis with the aid of a light microscope are~tag~<|start_2d|>\"not actively carrying out transcription\" <|split_2d|>\"produced only during mitosis\" <|split_2d|>\"produced by repeated rounds of DNA replication followed by nuclear division\" <|split_2d|>\"multiple copies of a single chromosome\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The polytene chromosomes seen in Drosophila silvarentis with the aid of a light microscope are*tag*<|start_2d|>\"not actively carrying out transcription\" <|split_2d|>\"produced only during mitosis\" <|split_2d|>\"produced by repeated rounds of DNA replication followed by nuclear division\" <|split_2d|>\"multiple copies of a single chromosome\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "multiple copies of a single chromosome",
       "incorrect_answers": [
@@ -1089,7 +1089,7 @@
     }
   },
   {
-    "prompt": "Which of the following agents will induce polyploidy in a dividing eukaryote?~tag~<|start_2d|>\"Penicillin\" <|split_2d|>\"Colchicine\" <|split_2d|>\"Tetracycline\" <|split_2d|>\"Puromycin\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following agents will induce polyploidy in a dividing eukaryote?*tag*<|start_2d|>\"Penicillin\" <|split_2d|>\"Colchicine\" <|split_2d|>\"Tetracycline\" <|split_2d|>\"Puromycin\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Colchicine",
       "incorrect_answers": [
@@ -1100,7 +1100,7 @@
     }
   },
   {
-    "prompt": "Which of the following statements about mitochondria and chloroplasts is generally true?~tag~<|start_2d|>\"Plants have chloroplasts but no mitochondria; animals have mitochondria but no chloroplasts.\" <|split_2d|>\"Plants have chloroplasts but no mitochondria; fungi have mitochondria but no chloroplasts.\" <|split_2d|>\"Plants and fungi have chloroplasts but no mitochondria; animals have only mitochondria.\" <|split_2d|>\"Plants have both chloroplasts and mitochondria; animals and fungi have only mitochondria.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following statements about mitochondria and chloroplasts is generally true?*tag*<|start_2d|>\"Plants have chloroplasts but no mitochondria; animals have mitochondria but no chloroplasts.\" <|split_2d|>\"Plants have chloroplasts but no mitochondria; fungi have mitochondria but no chloroplasts.\" <|split_2d|>\"Plants and fungi have chloroplasts but no mitochondria; animals have only mitochondria.\" <|split_2d|>\"Plants have both chloroplasts and mitochondria; animals and fungi have only mitochondria.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Plants have both chloroplasts and mitochondria; animals and fungi have only mitochondria.",
       "incorrect_answers": [
@@ -1111,7 +1111,7 @@
     }
   },
   {
-    "prompt": "How do cyanobacteria differ from green unicellular algae?~tag~<|start_2d|>\"Cyanobacteria reduce sulfur compounds.\" <|split_2d|>\"Cyanobacteria lack cell walls.\" <|split_2d|>\"Cyanobacteria have no nuclei.\" <|split_2d|>\"Green algae produce cell membranes.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "How do cyanobacteria differ from green unicellular algae?*tag*<|start_2d|>\"Cyanobacteria reduce sulfur compounds.\" <|split_2d|>\"Cyanobacteria lack cell walls.\" <|split_2d|>\"Cyanobacteria have no nuclei.\" <|split_2d|>\"Green algae produce cell membranes.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Cyanobacteria have no nuclei.",
       "incorrect_answers": [
@@ -1122,7 +1122,7 @@
     }
   },
   {
-    "prompt": "Stabilization of the unique coiled structure of an alpha helix in a protein is primarily attributed to (A) hydrogen bonding between the peptide backbone atoms~tag~<|start_2d|>\"hydrogen bonding between the peptide backbone atoms\" <|split_2d|>\"disulfide bridges between cysteine side chains\" <|split_2d|>\"carbohydrate moieties attached to polar amino acids\" <|split_2d|>\"peptide linkages that covalently bond amino acids\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Stabilization of the unique coiled structure of an alpha helix in a protein is primarily attributed to (A) hydrogen bonding between the peptide backbone atoms*tag*<|start_2d|>\"hydrogen bonding between the peptide backbone atoms\" <|split_2d|>\"disulfide bridges between cysteine side chains\" <|split_2d|>\"carbohydrate moieties attached to polar amino acids\" <|split_2d|>\"peptide linkages that covalently bond amino acids\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "hydrogen bonding between the peptide backbone atoms",
       "incorrect_answers": [
@@ -1133,7 +1133,7 @@
     }
   },
   {
-    "prompt": "The target of digestion of a nucleosome dimer to nucleosome monomers by DNase is~tag~<|start_2d|>\"the H1 histone\" <|split_2d|>\"histones H2A, H2B, H3, and H4\" <|split_2d|>\"the nucleosome core\" <|split_2d|>\"linker DNA\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The target of digestion of a nucleosome dimer to nucleosome monomers by DNase is*tag*<|start_2d|>\"the H1 histone\" <|split_2d|>\"histones H2A, H2B, H3, and H4\" <|split_2d|>\"the nucleosome core\" <|split_2d|>\"linker DNA\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "linker DNA",
       "incorrect_answers": [
@@ -1144,7 +1144,7 @@
     }
   },
   {
-    "prompt": "A prokaryote that is thermophilic and methanogenic and has isoprenylglycerol ethers in its membrane instead of phospholipids is most likely~tag~<|start_2d|>\"a proteobacterium\" <|split_2d|>\"a spirochete\" <|split_2d|>\"a member of the genus Chlamydia\" <|split_2d|>\"an archaeon\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A prokaryote that is thermophilic and methanogenic and has isoprenylglycerol ethers in its membrane instead of phospholipids is most likely*tag*<|start_2d|>\"a proteobacterium\" <|split_2d|>\"a spirochete\" <|split_2d|>\"a member of the genus Chlamydia\" <|split_2d|>\"an archaeon\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "an archaeon",
       "incorrect_answers": [
@@ -1155,7 +1155,7 @@
     }
   },
   {
-    "prompt": "All of the following environmental conditions increase the rate of transpiration from plants EXCEPT~tag~<|start_2d|>\"high temperature\" <|split_2d|>\"high relative humidity\" <|split_2d|>\"low relative humidity\" <|split_2d|>\"wind\" <|end_2d|>~etag~Answer: ",
+    "prompt": "All of the following environmental conditions increase the rate of transpiration from plants EXCEPT*tag*<|start_2d|>\"high temperature\" <|split_2d|>\"high relative humidity\" <|split_2d|>\"low relative humidity\" <|split_2d|>\"wind\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "high relative humidity",
       "incorrect_answers": [
@@ -1166,7 +1166,7 @@
     }
   },
   {
-    "prompt": "Which of the following statements about embryonic cleavage is NOT true?~tag~<|start_2d|>\"The presence of yolk inhibits cleavage.\" <|split_2d|>\"Telolecithal eggs undergo meroblastic cleavage.\" <|split_2d|>\"The vegetal pole undergoes cleavage more readily than does the animal pole\" <|split_2d|>\"The rapid mitotic divisions of cleavage directly give rise to blastomeres.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following statements about embryonic cleavage is NOT true?*tag*<|start_2d|>\"The presence of yolk inhibits cleavage.\" <|split_2d|>\"Telolecithal eggs undergo meroblastic cleavage.\" <|split_2d|>\"The vegetal pole undergoes cleavage more readily than does the animal pole\" <|split_2d|>\"The rapid mitotic divisions of cleavage directly give rise to blastomeres.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The vegetal pole undergoes cleavage more readily than does the animal pole",
       "incorrect_answers": [
@@ -1177,7 +1177,7 @@
     }
   },
   {
-    "prompt": "In eukaryotic photosynthetic cells, which of the following occurs when electrons flow cyclically through the electron transport chain associated with photosystem I?~tag~<|start_2d|>\"Synthesis of ATP\" <|split_2d|>\"Reduction of NADP+ to NADPH\" <|split_2d|>\"Release of O2\" <|split_2d|>\"Reduction of CO2 to sugar\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In eukaryotic photosynthetic cells, which of the following occurs when electrons flow cyclically through the electron transport chain associated with photosystem I?*tag*<|start_2d|>\"Synthesis of ATP\" <|split_2d|>\"Reduction of NADP+ to NADPH\" <|split_2d|>\"Release of O2\" <|split_2d|>\"Reduction of CO2 to sugar\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Synthesis of ATP",
       "incorrect_answers": [
@@ -1188,7 +1188,7 @@
     }
   },
   {
-    "prompt": "Many marine birds drink seawater yet maintain their internal osmolarity at a constant level that is hypoosmotic to seawater. Which of the following physiological strategies best explains how the birds maintain their tissue osmolarity?~tag~<|start_2d|>\"Marine birds absorb water from the environment through specialized salt-exchange glands and produce large volumes of dilute urine in the kidneys.\" <|split_2d|>\"Marine birds absorb salts from the environment through specialized salt-exchange glands and produce large volumes of concentrated urine in the kidneys.\" <|split_2d|>\"Marine birds excrete salts through specialized salt-exchange glands and excrete small volumes of urine.\" <|split_2d|>\"Marine birds excrete salts and nitrogenous wastes through specialized nasal glands.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Many marine birds drink seawater yet maintain their internal osmolarity at a constant level that is hypoosmotic to seawater. Which of the following physiological strategies best explains how the birds maintain their tissue osmolarity?*tag*<|start_2d|>\"Marine birds absorb water from the environment through specialized salt-exchange glands and produce large volumes of dilute urine in the kidneys.\" <|split_2d|>\"Marine birds absorb salts from the environment through specialized salt-exchange glands and produce large volumes of concentrated urine in the kidneys.\" <|split_2d|>\"Marine birds excrete salts through specialized salt-exchange glands and excrete small volumes of urine.\" <|split_2d|>\"Marine birds excrete salts and nitrogenous wastes through specialized nasal glands.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Marine birds excrete salts through specialized salt-exchange glands and excrete small volumes of urine.",
       "incorrect_answers": [
@@ -1199,7 +1199,7 @@
     }
   },
   {
-    "prompt": "A species of small rodent eats seeds from only one species of pine. In normal years, a pair of these rodents will have a litter of two or three. It is unusual for small rodents to have such small litter sizes. The rodents are most likely to exhibit which other characteristic?~tag~<|start_2d|>\"Moderate sexual size dimorphism\" <|split_2d|>\"High parental investment\" <|split_2d|>\"Precocial young\" <|split_2d|>\"Frequent extrapair matings\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A species of small rodent eats seeds from only one species of pine. In normal years, a pair of these rodents will have a litter of two or three. It is unusual for small rodents to have such small litter sizes. The rodents are most likely to exhibit which other characteristic?*tag*<|start_2d|>\"Moderate sexual size dimorphism\" <|split_2d|>\"High parental investment\" <|split_2d|>\"Precocial young\" <|split_2d|>\"Frequent extrapair matings\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "High parental investment",
       "incorrect_answers": [
@@ -1210,7 +1210,7 @@
     }
   },
   {
-    "prompt": "Which of the following sources makes the greatest contribution to the dry mass of organic matter that comprises an oak tree?~tag~<|start_2d|>\"Organic molecules from decaying matter in the soil that are taken up by the roots\" <|split_2d|>\"Mineral nutrients dissolved in groundwater that are taken up by the roots\" <|split_2d|>\"Water that is taken up by the roots and carbon dioxide from the air\" <|split_2d|>\"Endosperm located in the cotyledons of the acorn\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following sources makes the greatest contribution to the dry mass of organic matter that comprises an oak tree?*tag*<|start_2d|>\"Organic molecules from decaying matter in the soil that are taken up by the roots\" <|split_2d|>\"Mineral nutrients dissolved in groundwater that are taken up by the roots\" <|split_2d|>\"Water that is taken up by the roots and carbon dioxide from the air\" <|split_2d|>\"Endosperm located in the cotyledons of the acorn\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Water that is taken up by the roots and carbon dioxide from the air",
       "incorrect_answers": [
@@ -1221,7 +1221,7 @@
     }
   },
   {
-    "prompt": "Which of the following must be true in order for evolution to have occurred?~tag~<|start_2d|>\"The frequencies of some alleles in a population's gene pool has changed over successive generations.\" <|split_2d|>\"The frequencies of some alleles in a population's gene pool has changed during the organisms' lifetimes.\" <|split_2d|>\"The frequencies of each allele in a population's gene pool has remained constant over successive generations.\" <|split_2d|>\"The frequencies of each allele in an organism's genotype has remained constant within the organism's lifetime.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following must be true in order for evolution to have occurred?*tag*<|start_2d|>\"The frequencies of some alleles in a population's gene pool has changed over successive generations.\" <|split_2d|>\"The frequencies of some alleles in a population's gene pool has changed during the organisms' lifetimes.\" <|split_2d|>\"The frequencies of each allele in a population's gene pool has remained constant over successive generations.\" <|split_2d|>\"The frequencies of each allele in an organism's genotype has remained constant within the organism's lifetime.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The frequencies of some alleles in a population's gene pool has changed over successive generations.",
       "incorrect_answers": [
@@ -1232,7 +1232,7 @@
     }
   },
   {
-    "prompt": "From an evolutionary perspective, the optimality theory as applied to a given trait is best represented by the idea that~tag~<|start_2d|>\"if the benefits gained from the trait exceed the cost of the trait to the animal performing them, that trait will persist in the genome\" <|split_2d|>\"if the trait reaps the best return for the cost relative to alternative forms of the trait, that trait will win out over the alternative forms\" <|split_2d|>\"beneficial traits are always worth the cost to the organism in energy and physiology, so those traits will persist in the genome\" <|split_2d|>\"the relative fitness of an organism must be improved due to a specific trait in order for the trait to remain in a population's gene pool\" <|end_2d|>~etag~Answer: ",
+    "prompt": "From an evolutionary perspective, the optimality theory as applied to a given trait is best represented by the idea that*tag*<|start_2d|>\"if the benefits gained from the trait exceed the cost of the trait to the animal performing them, that trait will persist in the genome\" <|split_2d|>\"if the trait reaps the best return for the cost relative to alternative forms of the trait, that trait will win out over the alternative forms\" <|split_2d|>\"beneficial traits are always worth the cost to the organism in energy and physiology, so those traits will persist in the genome\" <|split_2d|>\"the relative fitness of an organism must be improved due to a specific trait in order for the trait to remain in a population's gene pool\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "if the trait reaps the best return for the cost relative to alternative forms of the trait, that trait will win out over the alternative forms",
       "incorrect_answers": [
@@ -1243,7 +1243,7 @@
     }
   },
   {
-    "prompt": "In the presence of alcohol dehydrogenase, the rate of reduction of acetaldehyde to ethanol increases as the concentration of acetaldehyde is increased. Eventually, the rate of the reaction reaches a maximum, after which point further increases in the concentration of acetaldehyde have no effect. Which of the following is true at the maximal rate of reaction?~tag~<|start_2d|>\"Nearly all of the enzyme molecules are interacting with acetaldehyde molecules.\" <|split_2d|>\"The activation energy of the reaction decreases.\" <|split_2d|>\"The change in free energy of the reaction decreases.\" <|split_2d|>\"The enzyme is no longer specific for acetaldehyde.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In the presence of alcohol dehydrogenase, the rate of reduction of acetaldehyde to ethanol increases as the concentration of acetaldehyde is increased. Eventually, the rate of the reaction reaches a maximum, after which point further increases in the concentration of acetaldehyde have no effect. Which of the following is true at the maximal rate of reaction?*tag*<|start_2d|>\"Nearly all of the enzyme molecules are interacting with acetaldehyde molecules.\" <|split_2d|>\"The activation energy of the reaction decreases.\" <|split_2d|>\"The change in free energy of the reaction decreases.\" <|split_2d|>\"The enzyme is no longer specific for acetaldehyde.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Nearly all of the enzyme molecules are interacting with acetaldehyde molecules.",
       "incorrect_answers": [
@@ -1254,7 +1254,7 @@
     }
   },
   {
-    "prompt": "Which of the following best explains how mutations in DNA can result in the expression of a new phenotype?~tag~<|start_2d|>\"A different polypeptide is produced.\" <|split_2d|>\"The polarity of tRNA becomes the opposite of that of DNA.\" <|split_2d|>\"Nucleic acids are methylated.\" <|split_2d|>\"The gene is now read in the 3\u2032 to 5\u2032 direction.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following best explains how mutations in DNA can result in the expression of a new phenotype?*tag*<|start_2d|>\"A different polypeptide is produced.\" <|split_2d|>\"The polarity of tRNA becomes the opposite of that of DNA.\" <|split_2d|>\"Nucleic acids are methylated.\" <|split_2d|>\"The gene is now read in the 3\u2032 to 5\u2032 direction.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "A different polypeptide is produced.",
       "incorrect_answers": [
@@ -1265,7 +1265,7 @@
     }
   },
   {
-    "prompt": "A competitive inhibitor of an enzyme exerts its effect by~tag~<|start_2d|>\"irreversibly forming covalent links with the enzyme, effectively preventing the enzyme's dissociation from it\" <|split_2d|>\"irreversibly modifying some of the amino acid residues that help to comprise the enzyme's active site\" <|split_2d|>\"competing with the substrate molecule for the same enzyme but a different binding site than the substrate binding site\" <|split_2d|>\"reversibly decreasing the number of enzyme molecules that are available to bind substrates\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A competitive inhibitor of an enzyme exerts its effect by*tag*<|start_2d|>\"irreversibly forming covalent links with the enzyme, effectively preventing the enzyme's dissociation from it\" <|split_2d|>\"irreversibly modifying some of the amino acid residues that help to comprise the enzyme's active site\" <|split_2d|>\"competing with the substrate molecule for the same enzyme but a different binding site than the substrate binding site\" <|split_2d|>\"reversibly decreasing the number of enzyme molecules that are available to bind substrates\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "reversibly decreasing the number of enzyme molecules that are available to bind substrates",
       "incorrect_answers": [
@@ -1276,7 +1276,7 @@
     }
   },
   {
-    "prompt": "The ability of the brain to detect differences in stimulus intensity is best explained by the fact that which of the following varies with the stimulus intensity?~tag~<|start_2d|>\"The amplitude of the action potential\" <|split_2d|>\"The threshold potential\" <|split_2d|>\"The number of action potentials per second\" <|split_2d|>\"The number of synapses crossed\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The ability of the brain to detect differences in stimulus intensity is best explained by the fact that which of the following varies with the stimulus intensity?*tag*<|start_2d|>\"The amplitude of the action potential\" <|split_2d|>\"The threshold potential\" <|split_2d|>\"The number of action potentials per second\" <|split_2d|>\"The number of synapses crossed\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The number of action potentials per second",
       "incorrect_answers": [
@@ -1287,7 +1287,7 @@
     }
   },
   {
-    "prompt": "Which of the following is the best explanation for why net primary productivity in terrestrial ecosystems tends to increase toward the tropics?~tag~<|start_2d|>\"The higher species diversity in the tropics tends to increase plant growth.\" <|split_2d|>\"There are lower metabolic costs to plant growth in the tropics.\" <|split_2d|>\"The availability of water and warm temperatures in the tropics fosters photosynthesis.\" <|split_2d|>\"The tropics have more predators that minimize herbivory.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following is the best explanation for why net primary productivity in terrestrial ecosystems tends to increase toward the tropics?*tag*<|start_2d|>\"The higher species diversity in the tropics tends to increase plant growth.\" <|split_2d|>\"There are lower metabolic costs to plant growth in the tropics.\" <|split_2d|>\"The availability of water and warm temperatures in the tropics fosters photosynthesis.\" <|split_2d|>\"The tropics have more predators that minimize herbivory.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The availability of water and warm temperatures in the tropics fosters photosynthesis.",
       "incorrect_answers": [
@@ -1298,7 +1298,7 @@
     }
   },
   {
-    "prompt": "Proteins were shown to move about in a plane of the plasma membrane when mouse cellsurface proteins and human cell-surface proteins were observed to integrate along a fused mouse-human cell plasma membrane. Which of the following cell culture techniques was most likely employed in order to yield these results?~tag~<|start_2d|>\"Producing a heterokaryon\" <|split_2d|>\"Producing a hybrid cell\" <|split_2d|>\"Isolating an immortal variant cell from culture and using it to create a cell line\" <|split_2d|>\"Inserting a tumor-inducing virus into a normal cell to initiate transformation\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Proteins were shown to move about in a plane of the plasma membrane when mouse cellsurface proteins and human cell-surface proteins were observed to integrate along a fused mouse-human cell plasma membrane. Which of the following cell culture techniques was most likely employed in order to yield these results?*tag*<|start_2d|>\"Producing a heterokaryon\" <|split_2d|>\"Producing a hybrid cell\" <|split_2d|>\"Isolating an immortal variant cell from culture and using it to create a cell line\" <|split_2d|>\"Inserting a tumor-inducing virus into a normal cell to initiate transformation\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Producing a heterokaryon",
       "incorrect_answers": [
@@ -1309,7 +1309,7 @@
     }
   },
   {
-    "prompt": "Gene flow between populations results in~tag~<|start_2d|>\"an increase in genetic homogeneity in the metapopulation\" <|split_2d|>\"an increase in the rate of deleterious mutations in the metapopulation\" <|split_2d|>\"an increased likelihood of speciation\" <|split_2d|>\"disruption of Hardy-Weinberg equilibrium in the metapopulation\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Gene flow between populations results in*tag*<|start_2d|>\"an increase in genetic homogeneity in the metapopulation\" <|split_2d|>\"an increase in the rate of deleterious mutations in the metapopulation\" <|split_2d|>\"an increased likelihood of speciation\" <|split_2d|>\"disruption of Hardy-Weinberg equilibrium in the metapopulation\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "an increase in genetic homogeneity in the metapopulation",
       "incorrect_answers": [
@@ -1320,7 +1320,7 @@
     }
   },
   {
-    "prompt": "A subunit of DNA and protein consisting of 134-base-pair long stretches of DNA surrounding a protein octomer is called (a)~tag~<|start_2d|>\"histone\" <|split_2d|>\"chromatin\" <|split_2d|>\"nucleosome\" <|split_2d|>\"solenoid\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A subunit of DNA and protein consisting of 134-base-pair long stretches of DNA surrounding a protein octomer is called (a)*tag*<|start_2d|>\"histone\" <|split_2d|>\"chromatin\" <|split_2d|>\"nucleosome\" <|split_2d|>\"solenoid\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "nucleosome",
       "incorrect_answers": [
@@ -1331,7 +1331,7 @@
     }
   },
   {
-    "prompt": "Which of the following would be the most dependable environmental signal that a plant in a temperate ecosystem could use to initiate flowering at the correct time of the year?~tag~<|start_2d|>\"Circadian rhythm\" <|split_2d|>\"Photoperiod\" <|split_2d|>\"Changing air temperature\" <|split_2d|>\"Fluctuations in abscisic acid levels\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following would be the most dependable environmental signal that a plant in a temperate ecosystem could use to initiate flowering at the correct time of the year?*tag*<|start_2d|>\"Circadian rhythm\" <|split_2d|>\"Photoperiod\" <|split_2d|>\"Changing air temperature\" <|split_2d|>\"Fluctuations in abscisic acid levels\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Photoperiod",
       "incorrect_answers": [
@@ -1342,7 +1342,7 @@
     }
   },
   {
-    "prompt": "Mitochondria isolated and placed in a buffered solution with a low pH begin to manufacture ATP. Which of the following is the best explanation for the effect of low external pH?~tag~<|start_2d|>\"It increases the concentration of OH-, causing the mitochondria to pump H+ to the intermembrane space.\" <|split_2d|>\"It increases the OH- concentration in the mitochondria matrix.\" <|split_2d|>\"It increases the acid concentration in the mitochondria matrix.\" <|split_2d|>\"It increases diffusion of H+ from the intermembrane space to the matrix.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Mitochondria isolated and placed in a buffered solution with a low pH begin to manufacture ATP. Which of the following is the best explanation for the effect of low external pH?*tag*<|start_2d|>\"It increases the concentration of OH-, causing the mitochondria to pump H+ to the intermembrane space.\" <|split_2d|>\"It increases the OH- concentration in the mitochondria matrix.\" <|split_2d|>\"It increases the acid concentration in the mitochondria matrix.\" <|split_2d|>\"It increases diffusion of H+ from the intermembrane space to the matrix.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "It increases diffusion of H+ from the intermembrane space to the matrix.",
       "incorrect_answers": [
@@ -1353,7 +1353,7 @@
     }
   },
   {
-    "prompt": "An organism belonging to the nekton is which one of the following?~tag~<|start_2d|>\"Whale\" <|split_2d|>\"Barnacle\" <|split_2d|>\"Cyanobacterium\" <|split_2d|>\"Protist\" <|end_2d|>~etag~Answer: ",
+    "prompt": "An organism belonging to the nekton is which one of the following?*tag*<|start_2d|>\"Whale\" <|split_2d|>\"Barnacle\" <|split_2d|>\"Cyanobacterium\" <|split_2d|>\"Protist\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Whale",
       "incorrect_answers": [
@@ -1364,7 +1364,7 @@
     }
   },
   {
-    "prompt": "A behavioral response called a fixed action pattern shown by animals~tag~<|start_2d|>\"occurs the second time an animal is exposed to the correct stimulus at the appropriate time in its life\" <|split_2d|>\"occurs in the absence of sensory feedback\" <|split_2d|>\"is a motor response which once released may be terminated spontaneously\" <|split_2d|>\"is triggered by a number of sensory signals in the animal's environment\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A behavioral response called a fixed action pattern shown by animals*tag*<|start_2d|>\"occurs the second time an animal is exposed to the correct stimulus at the appropriate time in its life\" <|split_2d|>\"occurs in the absence of sensory feedback\" <|split_2d|>\"is a motor response which once released may be terminated spontaneously\" <|split_2d|>\"is triggered by a number of sensory signals in the animal's environment\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "occurs in the absence of sensory feedback",
       "incorrect_answers": [
@@ -1375,7 +1375,7 @@
     }
   },
   {
-    "prompt": "Which of the following adaptations would limit pollination by bees and promote hummingbird pollination?~tag~<|start_2d|>\"Patterns of ultraviolet color on the petals\" <|split_2d|>\"Modified petals to provide a landing space\" <|split_2d|>\"Pendant (hanging) red-colored flowers\" <|split_2d|>\"Nectar with high sugar concentration produced in limited amounts\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following adaptations would limit pollination by bees and promote hummingbird pollination?*tag*<|start_2d|>\"Patterns of ultraviolet color on the petals\" <|split_2d|>\"Modified petals to provide a landing space\" <|split_2d|>\"Pendant (hanging) red-colored flowers\" <|split_2d|>\"Nectar with high sugar concentration produced in limited amounts\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Pendant (hanging) red-colored flowers",
       "incorrect_answers": [
@@ -1386,7 +1386,7 @@
     }
   },
   {
-    "prompt": "Double fertilization is a unique feature of flowering plants. In this process, one sperm unites with the egg to yield a zygote. The second sperm unites with the polar nuclei to initiate the formation of the~tag~<|start_2d|>\"megagametophyte\" <|split_2d|>\"endodermis\" <|split_2d|>\"embryo\" <|split_2d|>\"endosperm\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Double fertilization is a unique feature of flowering plants. In this process, one sperm unites with the egg to yield a zygote. The second sperm unites with the polar nuclei to initiate the formation of the*tag*<|start_2d|>\"megagametophyte\" <|split_2d|>\"endodermis\" <|split_2d|>\"embryo\" <|split_2d|>\"endosperm\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "endosperm",
       "incorrect_answers": [
@@ -1397,7 +1397,7 @@
     }
   },
   {
-    "prompt": "Mutation of homeotic cluster genes often results in which of the following developmental defects in Drosophila?~tag~<|start_2d|>\"Absence of a group of contiguous segments\" <|split_2d|>\"Transformation of one segment into another\" <|split_2d|>\"Polarity defects in every segment along the anterior-posterior axis\" <|split_2d|>\"Tumor formation in imaginal discs\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Mutation of homeotic cluster genes often results in which of the following developmental defects in Drosophila?*tag*<|start_2d|>\"Absence of a group of contiguous segments\" <|split_2d|>\"Transformation of one segment into another\" <|split_2d|>\"Polarity defects in every segment along the anterior-posterior axis\" <|split_2d|>\"Tumor formation in imaginal discs\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Transformation of one segment into another",
       "incorrect_answers": [
@@ -1408,7 +1408,7 @@
     }
   },
   {
-    "prompt": "Root pressure created by a plant's roots causes water to enter the roots by~tag~<|start_2d|>\"translocation\" <|split_2d|>\"adhesion\" <|split_2d|>\"osmosis\" <|split_2d|>\"capillary action\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Root pressure created by a plant's roots causes water to enter the roots by*tag*<|start_2d|>\"translocation\" <|split_2d|>\"adhesion\" <|split_2d|>\"osmosis\" <|split_2d|>\"capillary action\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "osmosis",
       "incorrect_answers": [
@@ -1419,7 +1419,7 @@
     }
   },
   {
-    "prompt": "Cellular uptake of cholesterol occurs through internalization of low density lipoproteincholesterol complexes. Cholesterol uptake involves all of the following EXCEPT~tag~<|start_2d|>\"cell-surface receptors\" <|split_2d|>\"adhesion plaques\" <|split_2d|>\"endosome formation\" <|split_2d|>\"receptor-mediated endocytosis\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Cellular uptake of cholesterol occurs through internalization of low density lipoproteincholesterol complexes. Cholesterol uptake involves all of the following EXCEPT*tag*<|start_2d|>\"cell-surface receptors\" <|split_2d|>\"adhesion plaques\" <|split_2d|>\"endosome formation\" <|split_2d|>\"receptor-mediated endocytosis\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "adhesion plaques",
       "incorrect_answers": [
@@ -1430,7 +1430,7 @@
     }
   },
   {
-    "prompt": "Two xylem plant cell types that provide support and conduct water and minerals are the~tag~<|start_2d|>\"collenchyma and sclerenchyma\" <|split_2d|>\"sieve tube members and companion cells\" <|split_2d|>\"tracheids and vessel elements\" <|split_2d|>\"vessel elements and companion cells\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Two xylem plant cell types that provide support and conduct water and minerals are the*tag*<|start_2d|>\"collenchyma and sclerenchyma\" <|split_2d|>\"sieve tube members and companion cells\" <|split_2d|>\"tracheids and vessel elements\" <|split_2d|>\"vessel elements and companion cells\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "tracheids and vessel elements",
       "incorrect_answers": [
@@ -1441,7 +1441,7 @@
     }
   },
   {
-    "prompt": "Which of the following statements about excretory organs is true?~tag~<|start_2d|>\"The kidneys of saltwater fishes produce urine hyperosmotic to their tissues.\" <|split_2d|>\"The kidneys of desert mammals produce urine that is hypoosmotic to the urine of freshwater fishes.\" <|split_2d|>\"Malpighian tubules allow insects to excrete waste through the exoskeleton.\" <|split_2d|>\"Juxtamedullary nephrons in the mammalian kidney allow the organism to produce hyperosmotic urine.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following statements about excretory organs is true?*tag*<|start_2d|>\"The kidneys of saltwater fishes produce urine hyperosmotic to their tissues.\" <|split_2d|>\"The kidneys of desert mammals produce urine that is hypoosmotic to the urine of freshwater fishes.\" <|split_2d|>\"Malpighian tubules allow insects to excrete waste through the exoskeleton.\" <|split_2d|>\"Juxtamedullary nephrons in the mammalian kidney allow the organism to produce hyperosmotic urine.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Juxtamedullary nephrons in the mammalian kidney allow the organism to produce hyperosmotic urine.",
       "incorrect_answers": [
@@ -1452,7 +1452,7 @@
     }
   },
   {
-    "prompt": "Mimicry is a strategy that has evolved through natural selection to increase the fitness of organisms to their environment. Which of the following represents a form of Batesian mimicry?~tag~<|start_2d|>\"A type of millipede that is toxic to a toad is permanently avoided by the toad following the toad's initial attempt to consume it.\" <|split_2d|>\"A moth exhibits false eyes at its tail end in order to disorient predators.\" <|split_2d|>\"A moth exhibits nearly identical coloration to that of a stinging bee.\" <|split_2d|>\"A ground-nesting gull chick displays a coloration pattern that is nearly indistinguishable from its surroundings.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Mimicry is a strategy that has evolved through natural selection to increase the fitness of organisms to their environment. Which of the following represents a form of Batesian mimicry?*tag*<|start_2d|>\"A type of millipede that is toxic to a toad is permanently avoided by the toad following the toad's initial attempt to consume it.\" <|split_2d|>\"A moth exhibits false eyes at its tail end in order to disorient predators.\" <|split_2d|>\"A moth exhibits nearly identical coloration to that of a stinging bee.\" <|split_2d|>\"A ground-nesting gull chick displays a coloration pattern that is nearly indistinguishable from its surroundings.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "A moth exhibits nearly identical coloration to that of a stinging bee.",
       "incorrect_answers": [
@@ -1463,7 +1463,7 @@
     }
   },
   {
-    "prompt": "Keystone species are thought to have profound effects on the structure and composition of ecological communities because they~tag~<|start_2d|>\"tend to reduce diversity by eliminating food resources for other species\" <|split_2d|>\"provide the foundation for food webs\" <|split_2d|>\"are more abundant than most other species in their communities\" <|split_2d|>\"can prevent superior competitors from driving inferior competitors to local extinction\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Keystone species are thought to have profound effects on the structure and composition of ecological communities because they*tag*<|start_2d|>\"tend to reduce diversity by eliminating food resources for other species\" <|split_2d|>\"provide the foundation for food webs\" <|split_2d|>\"are more abundant than most other species in their communities\" <|split_2d|>\"can prevent superior competitors from driving inferior competitors to local extinction\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "can prevent superior competitors from driving inferior competitors to local extinction",
       "incorrect_answers": [
@@ -1474,7 +1474,7 @@
     }
   },
   {
-    "prompt": "Which of the following is a reason that geneticists use mitochondrial DNA (mtDNA) to study the relatedness of animal populations?~tag~<|start_2d|>\"mtDNA mutates at a slower rate than nuclear DNA.\" <|split_2d|>\"mtDNA is passed from mother to child and is free from recombination that occurs between pairs of chromosomes.\" <|split_2d|>\"There are few single nucleotide polymorphisms in the hypervariable, noncoding regions.\" <|split_2d|>\"All mitochondrial proteins are coded for by mitochondrial genes.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following is a reason that geneticists use mitochondrial DNA (mtDNA) to study the relatedness of animal populations?*tag*<|start_2d|>\"mtDNA mutates at a slower rate than nuclear DNA.\" <|split_2d|>\"mtDNA is passed from mother to child and is free from recombination that occurs between pairs of chromosomes.\" <|split_2d|>\"There are few single nucleotide polymorphisms in the hypervariable, noncoding regions.\" <|split_2d|>\"All mitochondrial proteins are coded for by mitochondrial genes.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "mtDNA is passed from mother to child and is free from recombination that occurs between pairs of chromosomes.",
       "incorrect_answers": [
@@ -1485,7 +1485,7 @@
     }
   },
   {
-    "prompt": "A quote from a natural resources text states: \"Whenever the original ecosystem becomes restructured by man, it tends to become simplified, with a resultant disruption of the stabilizing influences of density-dependent regulatory factors.\" This implies that in a disturbed ecosystem~tag~<|start_2d|>\"there exist large populations of a low number of species\" <|split_2d|>\"population levels of a species are kept at equilibrium through natural regulatory mechanisms\" <|split_2d|>\"a given prey organism is subject to higher predation rates by more diverse predators\" <|split_2d|>\"a given prey organism is less likely to undergo a population surge\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A quote from a natural resources text states: \"Whenever the original ecosystem becomes restructured by man, it tends to become simplified, with a resultant disruption of the stabilizing influences of density-dependent regulatory factors.\" This implies that in a disturbed ecosystem*tag*<|start_2d|>\"there exist large populations of a low number of species\" <|split_2d|>\"population levels of a species are kept at equilibrium through natural regulatory mechanisms\" <|split_2d|>\"a given prey organism is subject to higher predation rates by more diverse predators\" <|split_2d|>\"a given prey organism is less likely to undergo a population surge\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "there exist large populations of a low number of species",
       "incorrect_answers": [
@@ -1496,7 +1496,7 @@
     }
   },
   {
-    "prompt": "A female fruit fly bearing linked genes that produce the phenotype gray body and normal wings mates with a male fruit fly of phenotype black body and vestigial wings. The presence of gray-bodied, vestigialwinged flies among the progeny is best explained by~tag~<|start_2d|>\"crossing over\" <|split_2d|>\"independent assortment\" <|split_2d|>\"segregation of alleles\" <|split_2d|>\"penetrance\" <|end_2d|>~etag~Answer: ",
+    "prompt": "A female fruit fly bearing linked genes that produce the phenotype gray body and normal wings mates with a male fruit fly of phenotype black body and vestigial wings. The presence of gray-bodied, vestigialwinged flies among the progeny is best explained by*tag*<|start_2d|>\"crossing over\" <|split_2d|>\"independent assortment\" <|split_2d|>\"segregation of alleles\" <|split_2d|>\"penetrance\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "crossing over",
       "incorrect_answers": [
@@ -1507,7 +1507,7 @@
     }
   },
   {
-    "prompt": "Which of the following active pools of carbon is the largest on Earth and contributes the most to carbon cycling?~tag~<|start_2d|>\"The atmosphere\" <|split_2d|>\"Rain-forest vegetation\" <|split_2d|>\"Recoverable fossil fuels\" <|split_2d|>\"The oceans\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following active pools of carbon is the largest on Earth and contributes the most to carbon cycling?*tag*<|start_2d|>\"The atmosphere\" <|split_2d|>\"Rain-forest vegetation\" <|split_2d|>\"Recoverable fossil fuels\" <|split_2d|>\"The oceans\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The oceans",
       "incorrect_answers": [
@@ -1518,7 +1518,7 @@
     }
   },
   {
-    "prompt": "Charles Darwin's proposed conditions for natural selection encompass all of the following with regard to a given population EXCEPT~tag~<|start_2d|>\"inheritance of both 'fit' and 'unfit' genes\" <|split_2d|>\"differential survival and reproductive success\" <|split_2d|>\"competition for limited resources\" <|split_2d|>\"overproduction of offspring\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Charles Darwin's proposed conditions for natural selection encompass all of the following with regard to a given population EXCEPT*tag*<|start_2d|>\"inheritance of both 'fit' and 'unfit' genes\" <|split_2d|>\"differential survival and reproductive success\" <|split_2d|>\"competition for limited resources\" <|split_2d|>\"overproduction of offspring\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "inheritance of both \"fit\" and \"unfit\" genes",
       "incorrect_answers": [
@@ -1529,7 +1529,7 @@
     }
   },
   {
-    "prompt": "Which of the following is a correct statement about the cohesion-tension theory for the ascent of water in the xylem?~tag~<|start_2d|>\"The evaporation of water from leaf mesophyll cells generates tension in the water column.\" <|split_2d|>\"Water moves from a source region with high hydrostatic pressure to a sink region with low hydrostatic pressure.\" <|split_2d|>\"The cohesion of water molecules is responsible for the formation of embolisms (air bubbles) in the water column.\" <|split_2d|>\"Living cells of the xylem provide the main conduit for an ascent of water.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following is a correct statement about the cohesion-tension theory for the ascent of water in the xylem?*tag*<|start_2d|>\"The evaporation of water from leaf mesophyll cells generates tension in the water column.\" <|split_2d|>\"Water moves from a source region with high hydrostatic pressure to a sink region with low hydrostatic pressure.\" <|split_2d|>\"The cohesion of water molecules is responsible for the formation of embolisms (air bubbles) in the water column.\" <|split_2d|>\"Living cells of the xylem provide the main conduit for an ascent of water.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The evaporation of water from leaf mesophyll cells generates tension in the water column.",
       "incorrect_answers": [
@@ -1540,7 +1540,7 @@
     }
   },
   {
-    "prompt": "In fungi, cell walls are reinforced by which of the following?~tag~<|start_2d|>\"Chitin\" <|split_2d|>\"Silica\" <|split_2d|>\"Lignin\" <|split_2d|>\"Collagen fibers\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In fungi, cell walls are reinforced by which of the following?*tag*<|start_2d|>\"Chitin\" <|split_2d|>\"Silica\" <|split_2d|>\"Lignin\" <|split_2d|>\"Collagen fibers\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Chitin",
       "incorrect_answers": [
@@ -1551,7 +1551,7 @@
     }
   },
   {
-    "prompt": "In plants, proton pumps are involved in the process of loading sugars into the phloem for transport. Which of the following is true about this process?~tag~<|start_2d|>\"It is passive.\" <|split_2d|>\"It depends on DNA.\" <|split_2d|>\"It requires ATP.\" <|split_2d|>\"It translocates starch.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In plants, proton pumps are involved in the process of loading sugars into the phloem for transport. Which of the following is true about this process?*tag*<|start_2d|>\"It is passive.\" <|split_2d|>\"It depends on DNA.\" <|split_2d|>\"It requires ATP.\" <|split_2d|>\"It translocates starch.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "It requires ATP.",
       "incorrect_answers": [
@@ -1562,7 +1562,7 @@
     }
   },
   {
-    "prompt": "Which of the following characteristics is predicted for an early-successional plant community?~tag~<|start_2d|>\"High niche divergence among co-occurring species\" <|split_2d|>\"High ratios of primary production to standing-crop biomass\" <|split_2d|>\"High frequency of K-selected species\" <|split_2d|>\"High detrital biomass\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following characteristics is predicted for an early-successional plant community?*tag*<|start_2d|>\"High niche divergence among co-occurring species\" <|split_2d|>\"High ratios of primary production to standing-crop biomass\" <|split_2d|>\"High frequency of K-selected species\" <|split_2d|>\"High detrital biomass\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "High ratios of primary production to standing-crop biomass",
       "incorrect_answers": [
@@ -1573,7 +1573,7 @@
     }
   },
   {
-    "prompt": "Which of the following is the symplastic pathway for the movement of sucrose from the site of photosynthesis in mesophyll cells into the phloem?~tag~<|start_2d|>\"Fibers, phloem parenchyma, companion cell, sieve tube\" <|split_2d|>\"Phloem parenchyma, fibers, bundle sheath, tracheids\" <|split_2d|>\"Companion cells, phloem parenchyma, fibers, sieve tube\" <|split_2d|>\"Bundle sheath, phloem parenchyma, companion cell, sieve tube\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following is the symplastic pathway for the movement of sucrose from the site of photosynthesis in mesophyll cells into the phloem?*tag*<|start_2d|>\"Fibers, phloem parenchyma, companion cell, sieve tube\" <|split_2d|>\"Phloem parenchyma, fibers, bundle sheath, tracheids\" <|split_2d|>\"Companion cells, phloem parenchyma, fibers, sieve tube\" <|split_2d|>\"Bundle sheath, phloem parenchyma, companion cell, sieve tube\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Bundle sheath, phloem parenchyma, companion cell, sieve tube",
       "incorrect_answers": [

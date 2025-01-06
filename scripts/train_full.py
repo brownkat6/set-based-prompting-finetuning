@@ -747,32 +747,6 @@ def get_parallel_inputs(
     Process a prompt and return the input tensors needed for processing.
     Handles both regular prompts and those with parallel substrings.
     """
-    # Check if this is a parallel processing prompt
-    if "<|start_2d|>" not in prompt:
-        # Regular prompt without parallel sections
-        tokAll = tokenizer(
-            prompt,
-            return_tensors="pt",
-            add_special_tokens=True,
-            return_token_type_ids=False,
-        )
-        nTokAll = tokAll["input_ids"].size(1)
-        
-        # Create standard causal attention mask expanded to 4D
-        causal_mask = torch.tril(torch.ones((nTokAll, nTokAll), dtype=torch.bool))
-        attention_mask_2d = causal_mask.unsqueeze(0).unsqueeze(0)  # Shape: [1, 1, seq_len, seq_len]
-        attention_mask_2d = attention_mask_2d.to(torch.float32)  # Convert to float32 like parallel case
-        
-        # Create standard ascending position IDs
-        position_ids = torch.arange(0, nTokAll).unsqueeze(0)  # Shape: [1, seq_len]
-        
-        return {
-            "input_ids": tokAll["input_ids"],
-            "position_ids": position_ids,
-            "attention_mask": attention_mask_2d
-        }
-
-    # Original parallel processing code for prompts with <|start_2d|> tags
     if "<|start_2d|>" not in prompt or "<|end_2d|>" not in prompt:
         raise ValueError("Prompt must contain <|start_2d|> and <|end_2d|> tags")
         

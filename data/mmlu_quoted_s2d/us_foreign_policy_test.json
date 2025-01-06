@@ -1,6 +1,6 @@
 [
   {
-    "prompt": "What is the structure of the United Nations Security Council?~tag~<|start_2d|>\"5 permanent members with veto power, 10 rotating members with no veto power\" <|split_2d|>\"5 permanent members and 10 rotating members, all with veto power\" <|split_2d|>\"10 permanent members with veto power, and 5 rotating members without veto power\" <|split_2d|>\"15 permanent members with veto power\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What is the structure of the United Nations Security Council?*tag*<|start_2d|>\"5 permanent members with veto power, 10 rotating members with no veto power\" <|split_2d|>\"5 permanent members and 10 rotating members, all with veto power\" <|split_2d|>\"10 permanent members with veto power, and 5 rotating members without veto power\" <|split_2d|>\"15 permanent members with veto power\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "5 permanent members with veto power, 10 rotating members with no veto power",
       "incorrect_answers": [
@@ -11,7 +11,7 @@
     }
   },
   {
-    "prompt": "What was the significance of the Gulf of Tonkin resolution?~tag~<|start_2d|>\"It allowed the US to intensify its involvement in Vietnam\" <|split_2d|>\"It illustrated the influence of public opinion on US foreign policy\" <|split_2d|>\"It enhanced Congressional control over the Vietnam War\" <|split_2d|>\"It curtailed US involvement in Vietnam\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What was the significance of the Gulf of Tonkin resolution?*tag*<|start_2d|>\"It allowed the US to intensify its involvement in Vietnam\" <|split_2d|>\"It illustrated the influence of public opinion on US foreign policy\" <|split_2d|>\"It enhanced Congressional control over the Vietnam War\" <|split_2d|>\"It curtailed US involvement in Vietnam\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "It allowed the US to intensify its involvement in Vietnam",
       "incorrect_answers": [
@@ -22,7 +22,7 @@
     }
   },
   {
-    "prompt": "Which is not a nonstate actor that poses a threat to the United States?~tag~<|start_2d|>\"Terrorists\" <|split_2d|>\"Organized crime\" <|split_2d|>\"Drug traffickers\" <|split_2d|>\"China\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which is not a nonstate actor that poses a threat to the United States?*tag*<|start_2d|>\"Terrorists\" <|split_2d|>\"Organized crime\" <|split_2d|>\"Drug traffickers\" <|split_2d|>\"China\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "China",
       "incorrect_answers": [
@@ -33,7 +33,7 @@
     }
   },
   {
-    "prompt": "Who was the first American president to visit communist China?~tag~<|start_2d|>\"Richard Nixon\" <|split_2d|>\"George H. W. Bush\" <|split_2d|>\"Jimmy Carter\" <|split_2d|>\"Ronald Reagan\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Who was the first American president to visit communist China?*tag*<|start_2d|>\"Richard Nixon\" <|split_2d|>\"George H. W. Bush\" <|split_2d|>\"Jimmy Carter\" <|split_2d|>\"Ronald Reagan\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Richard Nixon",
       "incorrect_answers": [
@@ -44,7 +44,7 @@
     }
   },
   {
-    "prompt": "The Strategic Arms Reduction Treaty was the first accord~tag~<|start_2d|>\"on nuclear weapons signed between the United States and the Soviet Union.\" <|split_2d|>\"cutting conventional arms in Europe.\" <|split_2d|>\"to be rejected by the U.S. Senate.\" <|split_2d|>\"mandating the elimination of many long-range nuclear missiles.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The Strategic Arms Reduction Treaty was the first accord*tag*<|start_2d|>\"on nuclear weapons signed between the United States and the Soviet Union.\" <|split_2d|>\"cutting conventional arms in Europe.\" <|split_2d|>\"to be rejected by the U.S. Senate.\" <|split_2d|>\"mandating the elimination of many long-range nuclear missiles.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "mandating the elimination of many long-range nuclear missiles.",
       "incorrect_answers": [
@@ -55,7 +55,7 @@
     }
   },
   {
-    "prompt": "What were the implications of the Cold War for American exceptionalism?~tag~<|start_2d|>\"It ended the influence of American exceptionalism entirely\" <|split_2d|>\"Exceptionalism was enhanced by America's status as the 'leader of the free world'\" <|split_2d|>\"The extension of American power globally challenged core assumptions of exceptionalism\" <|split_2d|>\"Both b and c\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What were the implications of the Cold War for American exceptionalism?*tag*<|start_2d|>\"It ended the influence of American exceptionalism entirely\" <|split_2d|>\"Exceptionalism was enhanced by America's status as the 'leader of the free world'\" <|split_2d|>\"The extension of American power globally challenged core assumptions of exceptionalism\" <|split_2d|>\"Both b and c\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Both b and c",
       "incorrect_answers": [
@@ -66,7 +66,7 @@
     }
   },
   {
-    "prompt": "Why did Franklin D. Roosevelt initially favour an 'isolationist' stance on the part of the US during the 1930s?~tag~<|start_2d|>\"He believed that internal reform rather than international negotiation was the key to economic regeneration of the US\" <|split_2d|>\"He believed that German domination of Europe would be in US interests\" <|split_2d|>\"He always favoured isolationism\" <|split_2d|>\"All of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Why did Franklin D. Roosevelt initially favour an 'isolationist' stance on the part of the US during the 1930s?*tag*<|start_2d|>\"He believed that internal reform rather than international negotiation was the key to economic regeneration of the US\" <|split_2d|>\"He believed that German domination of Europe would be in US interests\" <|split_2d|>\"He always favoured isolationism\" <|split_2d|>\"All of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "He believed that internal reform rather than international negotiation was the key to economic regeneration of the US",
       "incorrect_answers": [
@@ -77,7 +77,7 @@
     }
   },
   {
-    "prompt": "What was the 'New Populism'?~tag~<|start_2d|>\"A strand of neo-isolationist sentiment\" <|split_2d|>\"A strand of internationalist sentiment\" <|split_2d|>\"An expression of American cultural superiority\" <|split_2d|>\"Increased incorporation of public opinion in foreign policy making\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What was the 'New Populism'?*tag*<|start_2d|>\"A strand of neo-isolationist sentiment\" <|split_2d|>\"A strand of internationalist sentiment\" <|split_2d|>\"An expression of American cultural superiority\" <|split_2d|>\"Increased incorporation of public opinion in foreign policy making\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "A strand of neo-isolationist sentiment",
       "incorrect_answers": [
@@ -88,7 +88,7 @@
     }
   },
   {
-    "prompt": "How did World War I shift economic power from Europe to the United States?~tag~<|start_2d|>\"The war reduced European population levels below that of the United States\" <|split_2d|>\"The United States seized German resources after the war\" <|split_2d|>\"European countries paid the United States for assistance\" <|split_2d|>\"The United States became a creditor country and financial centre, with European war spending boosting the US economy\" <|end_2d|>~etag~Answer: ",
+    "prompt": "How did World War I shift economic power from Europe to the United States?*tag*<|start_2d|>\"The war reduced European population levels below that of the United States\" <|split_2d|>\"The United States seized German resources after the war\" <|split_2d|>\"European countries paid the United States for assistance\" <|split_2d|>\"The United States became a creditor country and financial centre, with European war spending boosting the US economy\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The United States became a creditor country and financial centre, with European war spending boosting the US economy",
       "incorrect_answers": [
@@ -99,7 +99,7 @@
     }
   },
   {
-    "prompt": "In American government, the power to declare war rests with~tag~<|start_2d|>\"the president of the United States.\" <|split_2d|>\"the secretary of defense.\" <|split_2d|>\"the chairman of the Joint Chiefs of Staff.\" <|split_2d|>\"Congress.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In American government, the power to declare war rests with*tag*<|start_2d|>\"the president of the United States.\" <|split_2d|>\"the secretary of defense.\" <|split_2d|>\"the chairman of the Joint Chiefs of Staff.\" <|split_2d|>\"Congress.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Congress.",
       "incorrect_answers": [
@@ -110,7 +110,7 @@
     }
   },
   {
-    "prompt": "How did the Cold War context shape US perceptions of the Third World?~tag~<|start_2d|>\"The US ignored the Third World\" <|split_2d|>\"Local developments were viewed through a geopolitical lens\" <|split_2d|>\"The US unreservedly supported decolonization\" <|split_2d|>\"None of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "How did the Cold War context shape US perceptions of the Third World?*tag*<|start_2d|>\"The US ignored the Third World\" <|split_2d|>\"Local developments were viewed through a geopolitical lens\" <|split_2d|>\"The US unreservedly supported decolonization\" <|split_2d|>\"None of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Local developments were viewed through a geopolitical lens",
       "incorrect_answers": [
@@ -121,7 +121,7 @@
     }
   },
   {
-    "prompt": "What was unique about the NATO intervention in Kosovo?~tag~<|start_2d|>\"It was the first time the US became involved in the Balkans\" <|split_2d|>\"It was the first time NATO used military force\" <|split_2d|>\"It was the first war won by airpower alone\" <|split_2d|>\"It was the first war to employ 'smart weapons'\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What was unique about the NATO intervention in Kosovo?*tag*<|start_2d|>\"It was the first time the US became involved in the Balkans\" <|split_2d|>\"It was the first time NATO used military force\" <|split_2d|>\"It was the first war won by airpower alone\" <|split_2d|>\"It was the first war to employ 'smart weapons'\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "It was the first war won by airpower alone",
       "incorrect_answers": [
@@ -132,7 +132,7 @@
     }
   },
   {
-    "prompt": "What, according to Systemic theories, is the primary determinant of a state's foreign policy?~tag~<|start_2d|>\"The character of a state's leader\" <|split_2d|>\"The distribution of power in the international system\" <|split_2d|>\"The distribution of power within a state's governmental system\" <|split_2d|>\"A state's political ideology\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What, according to Systemic theories, is the primary determinant of a state's foreign policy?*tag*<|start_2d|>\"The character of a state's leader\" <|split_2d|>\"The distribution of power in the international system\" <|split_2d|>\"The distribution of power within a state's governmental system\" <|split_2d|>\"A state's political ideology\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The distribution of power in the international system",
       "incorrect_answers": [
@@ -143,7 +143,7 @@
     }
   },
   {
-    "prompt": "Why is there so much uncertainty over which states have nuclear weapons?~tag~<|start_2d|>\"Leaders have incentives to lie\" <|split_2d|>\"If leaders revealed their programs, they would be more likely to be attacked\" <|split_2d|>\"Leaders will not always grant foreign monitors access to their nuclear programs\" <|split_2d|>\"ALL of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Why is there so much uncertainty over which states have nuclear weapons?*tag*<|start_2d|>\"Leaders have incentives to lie\" <|split_2d|>\"If leaders revealed their programs, they would be more likely to be attacked\" <|split_2d|>\"Leaders will not always grant foreign monitors access to their nuclear programs\" <|split_2d|>\"ALL of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "ALL of the above",
       "incorrect_answers": [
@@ -154,7 +154,7 @@
     }
   },
   {
-    "prompt": "Within American politics, the power to accord official recognition to other countries belongs to~tag~<|start_2d|>\"the Senate.\" <|split_2d|>\"the president.\" <|split_2d|>\"the Secretary of State.\" <|split_2d|>\"the chairman of the Joint Chiefs.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Within American politics, the power to accord official recognition to other countries belongs to*tag*<|start_2d|>\"the Senate.\" <|split_2d|>\"the president.\" <|split_2d|>\"the Secretary of State.\" <|split_2d|>\"the chairman of the Joint Chiefs.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "the president.",
       "incorrect_answers": [
@@ -165,7 +165,7 @@
     }
   },
   {
-    "prompt": "What did the Moscow Treaty on Strategic Offensive Reductions do?~tag~<|start_2d|>\"Required the United States and Russia to demobilize their armies\" <|split_2d|>\"Required the United States and Russia to dismantle a significant number of their nuclear weapons\" <|split_2d|>\"Prohibited the acquisition of new military bases\" <|split_2d|>\"Prohibited short-range nuclear weapons\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What did the Moscow Treaty on Strategic Offensive Reductions do?*tag*<|start_2d|>\"Required the United States and Russia to demobilize their armies\" <|split_2d|>\"Required the United States and Russia to dismantle a significant number of their nuclear weapons\" <|split_2d|>\"Prohibited the acquisition of new military bases\" <|split_2d|>\"Prohibited short-range nuclear weapons\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Required the United States and Russia to dismantle a significant number of their nuclear weapons",
       "incorrect_answers": [
@@ -176,7 +176,7 @@
     }
   },
   {
-    "prompt": "What were the 'open-door notes'?~tag~<|start_2d|>\"An American declaration that the US was always open to Chinese immigration\" <|split_2d|>\"An American proclamation that China should be divided up between the US, Japan and the European empires\" <|split_2d|>\"An American proclamation that China should be open to US trade and missionaries\" <|split_2d|>\"An American declaration of support for Chinese economic protectionism\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What were the 'open-door notes'?*tag*<|start_2d|>\"An American declaration that the US was always open to Chinese immigration\" <|split_2d|>\"An American proclamation that China should be divided up between the US, Japan and the European empires\" <|split_2d|>\"An American proclamation that China should be open to US trade and missionaries\" <|split_2d|>\"An American declaration of support for Chinese economic protectionism\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "An American proclamation that China should be open to US trade and missionaries",
       "incorrect_answers": [
@@ -187,7 +187,7 @@
     }
   },
   {
-    "prompt": "International trade will almost always benefit both countries, so why do countries try to protect their own firms from exposure to the world market?~tag~<|start_2d|>\"Irrationality on the part of the leadership\" <|split_2d|>\"Costs of free trade are concentrated, but benefits are dispersed\" <|split_2d|>\"Regime type\" <|split_2d|>\"International conflict prevents trade\" <|end_2d|>~etag~Answer: ",
+    "prompt": "International trade will almost always benefit both countries, so why do countries try to protect their own firms from exposure to the world market?*tag*<|start_2d|>\"Irrationality on the part of the leadership\" <|split_2d|>\"Costs of free trade are concentrated, but benefits are dispersed\" <|split_2d|>\"Regime type\" <|split_2d|>\"International conflict prevents trade\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Costs of free trade are concentrated, but benefits are dispersed",
       "incorrect_answers": [
@@ -198,7 +198,7 @@
     }
   },
   {
-    "prompt": "Why did George H.W. Bush allow Saddam Hussein to remain in power after the Gulf War of 1991?~tag~<|start_2d|>\"Lack of US firepower\" <|split_2d|>\"Concern over oil supplies\" <|split_2d|>\"Limited UN mandate and fear of a protracted conflict\" <|split_2d|>\"Difficult terrain and fear of civilian casualties\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Why did George H.W. Bush allow Saddam Hussein to remain in power after the Gulf War of 1991?*tag*<|start_2d|>\"Lack of US firepower\" <|split_2d|>\"Concern over oil supplies\" <|split_2d|>\"Limited UN mandate and fear of a protracted conflict\" <|split_2d|>\"Difficult terrain and fear of civilian casualties\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Limited UN mandate and fear of a protracted conflict",
       "incorrect_answers": [
@@ -209,7 +209,7 @@
     }
   },
   {
-    "prompt": "Why do Liberal Internationalists argue that international institutions are important to US grand strategy?~tag~<|start_2d|>\"They allow the US to withdraw from the international arena\" <|split_2d|>\"They serve American interests\" <|split_2d|>\"The US is incapable of acting alone\" <|split_2d|>\"None of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Why do Liberal Internationalists argue that international institutions are important to US grand strategy?*tag*<|start_2d|>\"They allow the US to withdraw from the international arena\" <|split_2d|>\"They serve American interests\" <|split_2d|>\"The US is incapable of acting alone\" <|split_2d|>\"None of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "They serve American interests",
       "incorrect_answers": [
@@ -220,7 +220,7 @@
     }
   },
   {
-    "prompt": "What was the significance of the Truman Doctrine?~tag~<|start_2d|>\"It indicated the special place of Greece and Turkey in American interests\" <|split_2d|>\"It was Truman's first statement on European affairs\" <|split_2d|>\"It indicated US reluctance to get involved in incidents outside of its immediate sphere of influence\" <|split_2d|>\"It indicated that the US would now view all local revolts through a geopolitical lens\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What was the significance of the Truman Doctrine?*tag*<|start_2d|>\"It indicated the special place of Greece and Turkey in American interests\" <|split_2d|>\"It was Truman's first statement on European affairs\" <|split_2d|>\"It indicated US reluctance to get involved in incidents outside of its immediate sphere of influence\" <|split_2d|>\"It indicated that the US would now view all local revolts through a geopolitical lens\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "It indicated that the US would now view all local revolts through a geopolitical lens",
       "incorrect_answers": [
@@ -231,7 +231,7 @@
     }
   },
   {
-    "prompt": "What tend to be the effects of oil and other natural resource trade on developing states?~tag~<|start_2d|>\"It democratizes countries\" <|split_2d|>\"It has no real effect\" <|split_2d|>\"It encourages stability of the regime\" <|split_2d|>\"It changes the nature of the investor\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What tend to be the effects of oil and other natural resource trade on developing states?*tag*<|start_2d|>\"It democratizes countries\" <|split_2d|>\"It has no real effect\" <|split_2d|>\"It encourages stability of the regime\" <|split_2d|>\"It changes the nature of the investor\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "It encourages stability of the regime",
       "incorrect_answers": [
@@ -242,7 +242,7 @@
     }
   },
   {
-    "prompt": "The dominant course for foreign policy throughout most of American history can be categorized as~tag~<|start_2d|>\"containment.\" <|split_2d|>\"neoconservatism.\" <|split_2d|>\"isolationism.\" <|split_2d|>\"protectionism.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The dominant course for foreign policy throughout most of American history can be categorized as*tag*<|start_2d|>\"containment.\" <|split_2d|>\"neoconservatism.\" <|split_2d|>\"isolationism.\" <|split_2d|>\"protectionism.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "isolationism.",
       "incorrect_answers": [
@@ -253,7 +253,7 @@
     }
   },
   {
-    "prompt": "What led Britain to impose new taxes on their American colonies?~tag~<|start_2d|>\"To increase the wealth of King George III\" <|split_2d|>\"The growing costs of war with France\" <|split_2d|>\"Anger at America's growing prosperity\" <|split_2d|>\"Pressure from rich merchants\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What led Britain to impose new taxes on their American colonies?*tag*<|start_2d|>\"To increase the wealth of King George III\" <|split_2d|>\"The growing costs of war with France\" <|split_2d|>\"Anger at America's growing prosperity\" <|split_2d|>\"Pressure from rich merchants\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The growing costs of war with France",
       "incorrect_answers": [
@@ -264,7 +264,7 @@
     }
   },
   {
-    "prompt": "Who said \"Globalization is not something we can hold off or turn off. It is the economic equivalent of a force of nature-like wind or water\"?~tag~<|start_2d|>\"Ronald Reagan\" <|split_2d|>\"George Soros\" <|split_2d|>\"Bill Clinton\" <|split_2d|>\"George W. Bush\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Who said \"Globalization is not something we can hold off or turn off. It is the economic equivalent of a force of nature-like wind or water\"?*tag*<|start_2d|>\"Ronald Reagan\" <|split_2d|>\"George Soros\" <|split_2d|>\"Bill Clinton\" <|split_2d|>\"George W. Bush\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Bill Clinton",
       "incorrect_answers": [
@@ -275,7 +275,7 @@
     }
   },
   {
-    "prompt": "The idea that war is \"the continuation of politics by other means\" helps to capture~tag~<|start_2d|>\"diplomacy is the quietest instrument of influence in global politics.\" <|split_2d|>\"the way political parties fight with each other.\" <|split_2d|>\"the idea that governments use their military to help pursue policy goals.\" <|split_2d|>\"the way Democrats and Republicans differ over the war in Iraq.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The idea that war is \"the continuation of politics by other means\" helps to capture*tag*<|start_2d|>\"diplomacy is the quietest instrument of influence in global politics.\" <|split_2d|>\"the way political parties fight with each other.\" <|split_2d|>\"the idea that governments use their military to help pursue policy goals.\" <|split_2d|>\"the way Democrats and Republicans differ over the war in Iraq.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "the idea that governments use their military to help pursue policy goals.",
       "incorrect_answers": [
@@ -286,7 +286,7 @@
     }
   },
   {
-    "prompt": "What are the key elements of the Liberal approach to US foreign policy?~tag~<|start_2d|>\"Promotion of Democracy, free-trade and international institutions\" <|split_2d|>\"Alliances, diplomacy and protectionism\" <|split_2d|>\"The balance of power, self-sufficiency and prudence\" <|split_2d|>\"None of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What are the key elements of the Liberal approach to US foreign policy?*tag*<|start_2d|>\"Promotion of Democracy, free-trade and international institutions\" <|split_2d|>\"Alliances, diplomacy and protectionism\" <|split_2d|>\"The balance of power, self-sufficiency and prudence\" <|split_2d|>\"None of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Promotion of Democracy, free-trade and international institutions",
       "incorrect_answers": [
@@ -297,7 +297,7 @@
     }
   },
   {
-    "prompt": "What was the key difference between US expansion pre- and post- 1865?~tag~<|start_2d|>\"US expansion was based on territory rather than markets post-1865\" <|split_2d|>\"US expansion was based on markets rather than territory post-1865\" <|split_2d|>\"US expansion was limited to Latin America post-1865\" <|split_2d|>\"US expansion ended after 1865\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What was the key difference between US expansion pre- and post- 1865?*tag*<|start_2d|>\"US expansion was based on territory rather than markets post-1865\" <|split_2d|>\"US expansion was based on markets rather than territory post-1865\" <|split_2d|>\"US expansion was limited to Latin America post-1865\" <|split_2d|>\"US expansion ended after 1865\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "US expansion was based on markets rather than territory post-1865",
       "incorrect_answers": [
@@ -308,7 +308,7 @@
     }
   },
   {
-    "prompt": "What case did President Eisenhower make against the 'military-industrial complex' in his farewell speech?~tag~<|start_2d|>\"That the capitalist search for profits was the leading cause of armed conflict\" <|split_2d|>\"That the United States no longer needed to be militarily strong\" <|split_2d|>\"That military spending gave the arms industry unwarranted influence on politics and government\" <|split_2d|>\"That private companies would undermine the role of the Armed Forces\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What case did President Eisenhower make against the 'military-industrial complex' in his farewell speech?*tag*<|start_2d|>\"That the capitalist search for profits was the leading cause of armed conflict\" <|split_2d|>\"That the United States no longer needed to be militarily strong\" <|split_2d|>\"That military spending gave the arms industry unwarranted influence on politics and government\" <|split_2d|>\"That private companies would undermine the role of the Armed Forces\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "That military spending gave the arms industry unwarranted influence on politics and government",
       "incorrect_answers": [
@@ -319,7 +319,7 @@
     }
   },
   {
-    "prompt": "Within the United Nations, real power is located in~tag~<|start_2d|>\"the Security Council.\" <|split_2d|>\"the Chamber of Deputies.\" <|split_2d|>\"the Council of Ministers.\" <|split_2d|>\"the Secretariat.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Within the United Nations, real power is located in*tag*<|start_2d|>\"the Security Council.\" <|split_2d|>\"the Chamber of Deputies.\" <|split_2d|>\"the Council of Ministers.\" <|split_2d|>\"the Secretariat.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "the Security Council.",
       "incorrect_answers": [
@@ -330,7 +330,7 @@
     }
   },
   {
-    "prompt": "In general, how do conservatives and liberals differ when it comes to defense spending?~tag~<|start_2d|>\"Conservatives are skeptical of increases in defense spending; liberals advocate increases in defense spending.\" <|split_2d|>\"Conservatives favor social spending over defense spending; liberals favor defense spending over social spending.\" <|split_2d|>\"Conservatives advocate increases in defense spending; liberals are generally skeptical of increases in defense spending.\" <|split_2d|>\"Conservatives emphasize strong economies; liberals emphasize strong military readiness.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In general, how do conservatives and liberals differ when it comes to defense spending?*tag*<|start_2d|>\"Conservatives are skeptical of increases in defense spending; liberals advocate increases in defense spending.\" <|split_2d|>\"Conservatives favor social spending over defense spending; liberals favor defense spending over social spending.\" <|split_2d|>\"Conservatives advocate increases in defense spending; liberals are generally skeptical of increases in defense spending.\" <|split_2d|>\"Conservatives emphasize strong economies; liberals emphasize strong military readiness.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Conservatives advocate increases in defense spending; liberals are generally skeptical of increases in defense spending.",
       "incorrect_answers": [
@@ -341,7 +341,7 @@
     }
   },
   {
-    "prompt": "Intergovernmental organizations SELDOM do which of the following?~tag~<|start_2d|>\"Provide strong enforcement\" <|split_2d|>\"Monitor parties\" <|split_2d|>\"Provide fora for discussion\" <|split_2d|>\"Reduce transaction costs for agreements\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Intergovernmental organizations SELDOM do which of the following?*tag*<|start_2d|>\"Provide strong enforcement\" <|split_2d|>\"Monitor parties\" <|split_2d|>\"Provide fora for discussion\" <|split_2d|>\"Reduce transaction costs for agreements\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Provide strong enforcement",
       "incorrect_answers": [
@@ -352,7 +352,7 @@
     }
   },
   {
-    "prompt": "Which of the following are possible constraints on US foreign policy decision making?~tag~<|start_2d|>\"Foreign policies of other states\" <|split_2d|>\"International law\" <|split_2d|>\"Intergovernmental organizations\" <|split_2d|>\"All of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following are possible constraints on US foreign policy decision making?*tag*<|start_2d|>\"Foreign policies of other states\" <|split_2d|>\"International law\" <|split_2d|>\"Intergovernmental organizations\" <|split_2d|>\"All of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "All of the above",
       "incorrect_answers": [
@@ -363,7 +363,7 @@
     }
   },
   {
-    "prompt": "What is direct diplomacy?~tag~<|start_2d|>\"Members of Congress negotiating directly with foreign governments\" <|split_2d|>\"Face-to-face meetings between state leaders\" <|split_2d|>\"The president consulting Congress on foreign policy issues\" <|split_2d|>\"Bilateral talks that do not involve a third-party negotiator\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What is direct diplomacy?*tag*<|start_2d|>\"Members of Congress negotiating directly with foreign governments\" <|split_2d|>\"Face-to-face meetings between state leaders\" <|split_2d|>\"The president consulting Congress on foreign policy issues\" <|split_2d|>\"Bilateral talks that do not involve a third-party negotiator\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Members of Congress negotiating directly with foreign governments",
       "incorrect_answers": [
@@ -374,7 +374,7 @@
     }
   },
   {
-    "prompt": "What was the Clinton Administration's policy on the Russian economy?~tag~<|start_2d|>\"The US inhibited the marketization of the Russian economy\" <|split_2d|>\"The US promoted the marketization of the Russian economy\" <|split_2d|>\"The US supported public ownership of natural resources\" <|split_2d|>\"None, the US was only concerned with security issues\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What was the Clinton Administration's policy on the Russian economy?*tag*<|start_2d|>\"The US inhibited the marketization of the Russian economy\" <|split_2d|>\"The US promoted the marketization of the Russian economy\" <|split_2d|>\"The US supported public ownership of natural resources\" <|split_2d|>\"None, the US was only concerned with security issues\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The US promoted the marketization of the Russian economy",
       "incorrect_answers": [
@@ -385,7 +385,7 @@
     }
   },
   {
-    "prompt": "How many major powers are there in a multipolar system?~tag~<|start_2d|>\"0\" <|split_2d|>\"1\" <|split_2d|>\"2\" <|split_2d|>\"3 or more\" <|end_2d|>~etag~Answer: ",
+    "prompt": "How many major powers are there in a multipolar system?*tag*<|start_2d|>\"0\" <|split_2d|>\"1\" <|split_2d|>\"2\" <|split_2d|>\"3 or more\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "3 or more",
       "incorrect_answers": [
@@ -396,7 +396,7 @@
     }
   },
   {
-    "prompt": "Why did Americans believe that they could found a different kind of empire after 1776?~tag~<|start_2d|>\"This would be an 'empire of liberty'\" <|split_2d|>\"This empire would be multi-cultural\" <|split_2d|>\"This type of empire would be based on expansion\" <|split_2d|>\"This would be empire free of slavery\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Why did Americans believe that they could found a different kind of empire after 1776?*tag*<|start_2d|>\"This would be an 'empire of liberty'\" <|split_2d|>\"This empire would be multi-cultural\" <|split_2d|>\"This type of empire would be based on expansion\" <|split_2d|>\"This would be empire free of slavery\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "This would be an 'empire of liberty'",
       "incorrect_answers": [
@@ -407,7 +407,7 @@
     }
   },
   {
-    "prompt": "The trade-off between defense and social spending is often referred to as a choice between~tag~<|start_2d|>\"bread and butter.\" <|split_2d|>\"war and peace.\" <|split_2d|>\"guns and butter.\" <|split_2d|>\"bombs and books.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The trade-off between defense and social spending is often referred to as a choice between*tag*<|start_2d|>\"bread and butter.\" <|split_2d|>\"war and peace.\" <|split_2d|>\"guns and butter.\" <|split_2d|>\"bombs and books.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "guns and butter.",
       "incorrect_answers": [
@@ -418,7 +418,7 @@
     }
   },
   {
-    "prompt": "What did Charles Krauthammer mean by a 'unipolar moment' when describing the post-Cold War system?~tag~<|start_2d|>\"The chance for the United States to share power with other countries in the world\" <|split_2d|>\"An opportunity to use to collapse of the Soviet Union to extend US power\" <|split_2d|>\"An international system that didn't face any threats\" <|split_2d|>\"The never-ending domination of the United States\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What did Charles Krauthammer mean by a 'unipolar moment' when describing the post-Cold War system?*tag*<|start_2d|>\"The chance for the United States to share power with other countries in the world\" <|split_2d|>\"An opportunity to use to collapse of the Soviet Union to extend US power\" <|split_2d|>\"An international system that didn't face any threats\" <|split_2d|>\"The never-ending domination of the United States\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "An opportunity to use to collapse of the Soviet Union to extend US power",
       "incorrect_answers": [
@@ -429,7 +429,7 @@
     }
   },
   {
-    "prompt": "Which of the following considers it immoral to use force abroad to do good things (such human rights protection, democracy, etc)?~tag~<|start_2d|>\"Realism\" <|split_2d|>\"Idealism\" <|split_2d|>\"Liberalism\" <|split_2d|>\"None of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following considers it immoral to use force abroad to do good things (such human rights protection, democracy, etc)?*tag*<|start_2d|>\"Realism\" <|split_2d|>\"Idealism\" <|split_2d|>\"Liberalism\" <|split_2d|>\"None of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Realism",
       "incorrect_answers": [
@@ -440,7 +440,7 @@
     }
   },
   {
-    "prompt": "According to realists, what is the fundamental difference between the international system and the domestic system?~tag~<|start_2d|>\"Armed conflict\" <|split_2d|>\"Anarchy\" <|split_2d|>\"Institutions\" <|split_2d|>\"No common language\" <|end_2d|>~etag~Answer: ",
+    "prompt": "According to realists, what is the fundamental difference between the international system and the domestic system?*tag*<|start_2d|>\"Armed conflict\" <|split_2d|>\"Anarchy\" <|split_2d|>\"Institutions\" <|split_2d|>\"No common language\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Anarchy",
       "incorrect_answers": [
@@ -451,7 +451,7 @@
     }
   },
   {
-    "prompt": "Which is NOT a reason for why intergovernmental organizations are ineffective at promoting human rights?~tag~<|start_2d|>\"These organizations merely identify those states who already support human rights\" <|split_2d|>\"They cannot get enough information about which leaders will abuse their citizens\" <|split_2d|>\"These organizations have little ability to constrain abusive leaders\" <|split_2d|>\"None of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which is NOT a reason for why intergovernmental organizations are ineffective at promoting human rights?*tag*<|start_2d|>\"These organizations merely identify those states who already support human rights\" <|split_2d|>\"They cannot get enough information about which leaders will abuse their citizens\" <|split_2d|>\"These organizations have little ability to constrain abusive leaders\" <|split_2d|>\"None of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "They cannot get enough information about which leaders will abuse their citizens",
       "incorrect_answers": [
@@ -462,7 +462,7 @@
     }
   },
   {
-    "prompt": "Why might the 'Philadelphian System' be linked to the idea of American exceptionalism?~tag~<|start_2d|>\"It encouraged greater involvement in European politics\" <|split_2d|>\"It was designed as the antithesis of European politics\" <|split_2d|>\"It created a large standing army\" <|split_2d|>\"It encouraged the centralization of political power in the US\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Why might the 'Philadelphian System' be linked to the idea of American exceptionalism?*tag*<|start_2d|>\"It encouraged greater involvement in European politics\" <|split_2d|>\"It was designed as the antithesis of European politics\" <|split_2d|>\"It created a large standing army\" <|split_2d|>\"It encouraged the centralization of political power in the US\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "It was designed as the antithesis of European politics",
       "incorrect_answers": [
@@ -473,7 +473,7 @@
     }
   },
   {
-    "prompt": "Which of the following are possible constraints on US foreign policy decision making?~tag~<|start_2d|>\"Foreign policies of other states\" <|split_2d|>\"International law\" <|split_2d|>\"Intergovernmental organizations\" <|split_2d|>\"All of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following are possible constraints on US foreign policy decision making?*tag*<|start_2d|>\"Foreign policies of other states\" <|split_2d|>\"International law\" <|split_2d|>\"Intergovernmental organizations\" <|split_2d|>\"All of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "All of the above",
       "incorrect_answers": [
@@ -484,7 +484,7 @@
     }
   },
   {
-    "prompt": "D\u00e9tente, or the relaxing of tensions coupled with firm guarantees of mutual security, represented a shift in American foreign policy toward the communist world ushered in by~tag~<|start_2d|>\"Richard Nixon.\" <|split_2d|>\"Eugene McCarthy\" <|split_2d|>\"Lyndon Johnson.\" <|split_2d|>\"Robert Kennedy.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "D\u00e9tente, or the relaxing of tensions coupled with firm guarantees of mutual security, represented a shift in American foreign policy toward the communist world ushered in by*tag*<|start_2d|>\"Richard Nixon.\" <|split_2d|>\"Eugene McCarthy\" <|split_2d|>\"Lyndon Johnson.\" <|split_2d|>\"Robert Kennedy.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Richard Nixon.",
       "incorrect_answers": [
@@ -495,7 +495,7 @@
     }
   },
   {
-    "prompt": "Which of these is not a component of the 'American Creed'?~tag~<|start_2d|>\"Liberty\" <|split_2d|>\"Equality\" <|split_2d|>\"Autocracy\" <|split_2d|>\"Individualism\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of these is not a component of the 'American Creed'?*tag*<|start_2d|>\"Liberty\" <|split_2d|>\"Equality\" <|split_2d|>\"Autocracy\" <|split_2d|>\"Individualism\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Autocracy",
       "incorrect_answers": [
@@ -506,7 +506,7 @@
     }
   },
   {
-    "prompt": "During the early years of his administration, Reagan's foreign and defense policies emphasized~tag~<|start_2d|>\"nuclear disarmament.\" <|split_2d|>\"d\u00e9tente.\" <|split_2d|>\"anticommunism.\" <|split_2d|>\"international free trade.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "During the early years of his administration, Reagan's foreign and defense policies emphasized*tag*<|start_2d|>\"nuclear disarmament.\" <|split_2d|>\"d\u00e9tente.\" <|split_2d|>\"anticommunism.\" <|split_2d|>\"international free trade.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "anticommunism.",
       "incorrect_answers": [
@@ -517,7 +517,7 @@
     }
   },
   {
-    "prompt": "The Vietnam War can be understood as~tag~<|start_2d|>\"a war that deeply divided the United States and fostered cynicism toward the American government.\" <|split_2d|>\"an example of the doctrine of containment, because U.S. involvement was designed to prevent the fall of South Vietnam to the communists.\" <|split_2d|>\"an example of how even a great power may not be able to prevail against a determined enemy unless there is a clear objective and the national will to do so.\" <|split_2d|>\"All of the above are true.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The Vietnam War can be understood as*tag*<|start_2d|>\"a war that deeply divided the United States and fostered cynicism toward the American government.\" <|split_2d|>\"an example of the doctrine of containment, because U.S. involvement was designed to prevent the fall of South Vietnam to the communists.\" <|split_2d|>\"an example of how even a great power may not be able to prevail against a determined enemy unless there is a clear objective and the national will to do so.\" <|split_2d|>\"All of the above are true.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "All of the above are true.",
       "incorrect_answers": [
@@ -528,7 +528,7 @@
     }
   },
   {
-    "prompt": "The departments of the executive branch that assist the president in designing and carrying out U.S. foreign policy are known as~tag~<|start_2d|>\"the United Nations.\" <|split_2d|>\"the National Security Council.\" <|split_2d|>\"the State Department.\" <|split_2d|>\"the National Security Agency.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The departments of the executive branch that assist the president in designing and carrying out U.S. foreign policy are known as*tag*<|start_2d|>\"the United Nations.\" <|split_2d|>\"the National Security Council.\" <|split_2d|>\"the State Department.\" <|split_2d|>\"the National Security Agency.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "the State Department.",
       "incorrect_answers": [
@@ -539,7 +539,7 @@
     }
   },
   {
-    "prompt": "The largest increase in peacetime defense spending in American history occurred under which president?~tag~<|start_2d|>\"Jimmy Carter\" <|split_2d|>\"Ronald Reagan\" <|split_2d|>\"Bill Clinton\" <|split_2d|>\"Dwight Eisenhower\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The largest increase in peacetime defense spending in American history occurred under which president?*tag*<|start_2d|>\"Jimmy Carter\" <|split_2d|>\"Ronald Reagan\" <|split_2d|>\"Bill Clinton\" <|split_2d|>\"Dwight Eisenhower\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Ronald Reagan",
       "incorrect_answers": [
@@ -550,7 +550,7 @@
     }
   },
   {
-    "prompt": "What caused a public uproar involving the National Security Agency in 2005?~tag~<|start_2d|>\"Revelations that the NSA was monitoring the communications of American citizens without obtaining warrants\" <|split_2d|>\"A leaked memo that linked the events of September 11, 2001, with the Democratic National Committee\" <|split_2d|>\"Revelations that the NSA had tortured prisoners at Guantanamo, Cuba\" <|split_2d|>\"A scathing report condemning the George W. Bush administration for 'building a case for the war in Iraq on a quicksand foundation'\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What caused a public uproar involving the National Security Agency in 2005?*tag*<|start_2d|>\"Revelations that the NSA was monitoring the communications of American citizens without obtaining warrants\" <|split_2d|>\"A leaked memo that linked the events of September 11, 2001, with the Democratic National Committee\" <|split_2d|>\"Revelations that the NSA had tortured prisoners at Guantanamo, Cuba\" <|split_2d|>\"A scathing report condemning the George W. Bush administration for 'building a case for the war in Iraq on a quicksand foundation'\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Revelations that the NSA was monitoring the communications of American citizens without obtaining warrants",
       "incorrect_answers": [
@@ -561,7 +561,7 @@
     }
   },
   {
-    "prompt": "What was the Marshall Plan?~tag~<|start_2d|>\"A plan that provided economic assistance to rebuild Europe.\" <|split_2d|>\"A plan to provide aid to Greece and Turkey in their stand against Soviet and Soviet-assisted threats\" <|split_2d|>\"A plan that provided Europe with military assistance to counter the Soviet threat\" <|split_2d|>\"The plan designed to stop communism in Asia\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What was the Marshall Plan?*tag*<|start_2d|>\"A plan that provided economic assistance to rebuild Europe.\" <|split_2d|>\"A plan to provide aid to Greece and Turkey in their stand against Soviet and Soviet-assisted threats\" <|split_2d|>\"A plan that provided Europe with military assistance to counter the Soviet threat\" <|split_2d|>\"The plan designed to stop communism in Asia\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "A plan that provided economic assistance to rebuild Europe.",
       "incorrect_answers": [
@@ -572,7 +572,7 @@
     }
   },
   {
-    "prompt": "Bureaucratic politics suggests we should be worried about which of the following with regard to nuclear weapons?~tag~<|start_2d|>\"Having the capability to deter the most powerful rival\" <|split_2d|>\"Having the capability to deter smaller states\" <|split_2d|>\"How nuclear attacks are identified and responded to; who controls the weapons\" <|split_2d|>\"Bureaucratic politics provides no information about nuclear proliferation and use\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Bureaucratic politics suggests we should be worried about which of the following with regard to nuclear weapons?*tag*<|start_2d|>\"Having the capability to deter the most powerful rival\" <|split_2d|>\"Having the capability to deter smaller states\" <|split_2d|>\"How nuclear attacks are identified and responded to; who controls the weapons\" <|split_2d|>\"Bureaucratic politics provides no information about nuclear proliferation and use\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "How nuclear attacks are identified and responded to; who controls the weapons",
       "incorrect_answers": [
@@ -583,7 +583,7 @@
     }
   },
   {
-    "prompt": "According to International Institutionalists, what problems have international institutions been designed to address?~tag~<|start_2d|>\"War\" <|split_2d|>\"Anarchy\" <|split_2d|>\"Collective action and coordination problems\" <|split_2d|>\"All of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "According to International Institutionalists, what problems have international institutions been designed to address?*tag*<|start_2d|>\"War\" <|split_2d|>\"Anarchy\" <|split_2d|>\"Collective action and coordination problems\" <|split_2d|>\"All of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "All of the above",
       "incorrect_answers": [
@@ -594,7 +594,7 @@
     }
   },
   {
-    "prompt": "What was meant by the term 'New World Order'?~tag~<|start_2d|>\"A new democratic internationalism led by the United States\" <|split_2d|>\"A new balance of power between the US and China\" <|split_2d|>\"A new global economic framework\" <|split_2d|>\"A new era of globalization\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What was meant by the term 'New World Order'?*tag*<|start_2d|>\"A new democratic internationalism led by the United States\" <|split_2d|>\"A new balance of power between the US and China\" <|split_2d|>\"A new global economic framework\" <|split_2d|>\"A new era of globalization\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "A new democratic internationalism led by the United States",
       "incorrect_answers": [
@@ -605,7 +605,7 @@
     }
   },
   {
-    "prompt": "The best known and perhaps most important international organization is~tag~<|start_2d|>\"the United Nations.\" <|split_2d|>\"the North Atlantic Treaty Organization (NATO).\" <|split_2d|>\"the Organization of Petroleum Exporting Countries (OPEC).\" <|split_2d|>\"the World Trade Organization (WTO).\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The best known and perhaps most important international organization is*tag*<|start_2d|>\"the United Nations.\" <|split_2d|>\"the North Atlantic Treaty Organization (NATO).\" <|split_2d|>\"the Organization of Petroleum Exporting Countries (OPEC).\" <|split_2d|>\"the World Trade Organization (WTO).\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "the United Nations.",
       "incorrect_answers": [
@@ -616,7 +616,7 @@
     }
   },
   {
-    "prompt": "What was meant by the term 'American multiplication table'?~tag~<|start_2d|>\"Increase in the US population\" <|split_2d|>\"Increase in US finances\" <|split_2d|>\"Increase in US military capability\" <|split_2d|>\"Increase in US international influence\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What was meant by the term 'American multiplication table'?*tag*<|start_2d|>\"Increase in the US population\" <|split_2d|>\"Increase in US finances\" <|split_2d|>\"Increase in US military capability\" <|split_2d|>\"Increase in US international influence\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Increase in the US population",
       "incorrect_answers": [
@@ -627,7 +627,7 @@
     }
   },
   {
-    "prompt": "Global and regional international trade agreements work by using which of the following mechanisms?~tag~<|start_2d|>\"Reciprocity across multiple issues\" <|split_2d|>\"Reputational concerns of the actors\" <|split_2d|>\"Side payments for adjusting to the organization (such as the Common Agricultural Policy in the EU)\" <|split_2d|>\"ALL of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Global and regional international trade agreements work by using which of the following mechanisms?*tag*<|start_2d|>\"Reciprocity across multiple issues\" <|split_2d|>\"Reputational concerns of the actors\" <|split_2d|>\"Side payments for adjusting to the organization (such as the Common Agricultural Policy in the EU)\" <|split_2d|>\"ALL of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "ALL of the above",
       "incorrect_answers": [
@@ -638,7 +638,7 @@
     }
   },
   {
-    "prompt": "Why did Lincoln oppose the southward expansion of the US?~tag~<|start_2d|>\"It would have drained the US economically\" <|split_2d|>\"It would have involved compromising opposition to slavery\" <|split_2d|>\"It would have increased immigration to the US\" <|split_2d|>\"None of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Why did Lincoln oppose the southward expansion of the US?*tag*<|start_2d|>\"It would have drained the US economically\" <|split_2d|>\"It would have involved compromising opposition to slavery\" <|split_2d|>\"It would have increased immigration to the US\" <|split_2d|>\"None of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "It would have involved compromising opposition to slavery",
       "incorrect_answers": [
@@ -649,7 +649,7 @@
     }
   },
   {
-    "prompt": "Growing tension between the United States and the Soviet Union resulted in a policy that John Foster Dulles referred to as~tag~<|start_2d|>\"'mutual assured destruction.'\" <|split_2d|>\"'brinkmanship.'\" <|split_2d|>\"'realism.'\" <|split_2d|>\"'not in my backyard.'\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Growing tension between the United States and the Soviet Union resulted in a policy that John Foster Dulles referred to as*tag*<|start_2d|>\"'mutual assured destruction.'\" <|split_2d|>\"'brinkmanship.'\" <|split_2d|>\"'realism.'\" <|split_2d|>\"'not in my backyard.'\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "\"brinkmanship.\"",
       "incorrect_answers": [
@@ -660,7 +660,7 @@
     }
   },
   {
-    "prompt": "Why do some scholars claim that Reagan 'won the Cold War'?~tag~<|start_2d|>\"Reagan's first term military spending pressured the Soviet Union to keep up its international commitments\" <|split_2d|>\"Reagan encouraged engagement with the Soviet Union\" <|split_2d|>\"Reagan encouraged a softer approach towards communism\" <|split_2d|>\"Reagan reduced military spending and this allowed the Soviet Union space to reform\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Why do some scholars claim that Reagan 'won the Cold War'?*tag*<|start_2d|>\"Reagan's first term military spending pressured the Soviet Union to keep up its international commitments\" <|split_2d|>\"Reagan encouraged engagement with the Soviet Union\" <|split_2d|>\"Reagan encouraged a softer approach towards communism\" <|split_2d|>\"Reagan reduced military spending and this allowed the Soviet Union space to reform\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Reagan's first term military spending pressured the Soviet Union to keep up its international commitments",
       "incorrect_answers": [
@@ -671,7 +671,7 @@
     }
   },
   {
-    "prompt": "What is the implication of American exceptionalism in terms of global economics?~tag~<|start_2d|>\"It encourages the use of tariffs\" <|split_2d|>\"It encourages nationalization\" <|split_2d|>\"It encourages liberalization of global trade\" <|split_2d|>\"It encourages redistribution of wealth\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What is the implication of American exceptionalism in terms of global economics?*tag*<|start_2d|>\"It encourages the use of tariffs\" <|split_2d|>\"It encourages nationalization\" <|split_2d|>\"It encourages liberalization of global trade\" <|split_2d|>\"It encourages redistribution of wealth\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "It encourages liberalization of global trade",
       "incorrect_answers": [
@@ -682,7 +682,7 @@
     }
   },
   {
-    "prompt": "What were the primary institutions of the liberal international economic order?\nI. GATT\nII. IMF\nIII. World Bank\nIV. NATO~tag~<|start_2d|>\"IV only\" <|split_2d|>\"II and III\" <|split_2d|>\"I, II, and III\" <|split_2d|>\"I, II, III, and IV\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What were the primary institutions of the liberal international economic order?\nI. GATT\nII. IMF\nIII. World Bank\nIV. NATO*tag*<|start_2d|>\"IV only\" <|split_2d|>\"II and III\" <|split_2d|>\"I, II, and III\" <|split_2d|>\"I, II, III, and IV\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "I, II, and III",
       "incorrect_answers": [
@@ -693,7 +693,7 @@
     }
   },
   {
-    "prompt": "According to Rosenau, which factor is important to consider in explaining the foreign policy behavior of the United States?~tag~<|start_2d|>\"The external environment of the international system\" <|split_2d|>\"Domestic environment, government and bureaucracy\" <|split_2d|>\"The President's individual personality.\" <|split_2d|>\"All of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "According to Rosenau, which factor is important to consider in explaining the foreign policy behavior of the United States?*tag*<|start_2d|>\"The external environment of the international system\" <|split_2d|>\"Domestic environment, government and bureaucracy\" <|split_2d|>\"The President's individual personality.\" <|split_2d|>\"All of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "All of the above",
       "incorrect_answers": [
@@ -704,7 +704,7 @@
     }
   },
   {
-    "prompt": "How many states in the international system are likely to have nuclear weapons right now?~tag~<|start_2d|>\"Fewer than 7\" <|split_2d|>\"Between 8 and 15\" <|split_2d|>\"Between 16 and 25\" <|split_2d|>\"More than 25\" <|end_2d|>~etag~Answer: ",
+    "prompt": "How many states in the international system are likely to have nuclear weapons right now?*tag*<|start_2d|>\"Fewer than 7\" <|split_2d|>\"Between 8 and 15\" <|split_2d|>\"Between 16 and 25\" <|split_2d|>\"More than 25\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Between 8 and 15",
       "incorrect_answers": [
@@ -715,7 +715,7 @@
     }
   },
   {
-    "prompt": "Why is NSC 68 seen as a turning point in US Cold War Foreign policy?~tag~<|start_2d|>\"It indicated the primacy of economic containment\" <|split_2d|>\"It indicated a desire to engage with the Soviet Union\" <|split_2d|>\"It indicated a shift towards military containment\" <|split_2d|>\"It dispensed with the idea of containment\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Why is NSC 68 seen as a turning point in US Cold War Foreign policy?*tag*<|start_2d|>\"It indicated the primacy of economic containment\" <|split_2d|>\"It indicated a desire to engage with the Soviet Union\" <|split_2d|>\"It indicated a shift towards military containment\" <|split_2d|>\"It dispensed with the idea of containment\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "It indicated a shift towards military containment",
       "incorrect_answers": [
@@ -726,7 +726,7 @@
     }
   },
   {
-    "prompt": "What was meant by the term 'Rogue States'?~tag~<|start_2d|>\"States aligned with the USSR during the Cold War\" <|split_2d|>\"States outside of the 'family of nations'\" <|split_2d|>\"Communist States\" <|split_2d|>\"The former Soviet states\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What was meant by the term 'Rogue States'?*tag*<|start_2d|>\"States aligned with the USSR during the Cold War\" <|split_2d|>\"States outside of the 'family of nations'\" <|split_2d|>\"Communist States\" <|split_2d|>\"The former Soviet states\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "States outside of the 'family of nations'",
       "incorrect_answers": [
@@ -737,7 +737,7 @@
     }
   },
   {
-    "prompt": "The foreign policy doctrine that European nations should stay out of Latin America is known as~tag~<|start_2d|>\"the Powell Doctrine.\" <|split_2d|>\"the Roosevelt Doctrine.\" <|split_2d|>\"the Bush Doctrine.\" <|split_2d|>\"the Monroe Doctrine.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The foreign policy doctrine that European nations should stay out of Latin America is known as*tag*<|start_2d|>\"the Powell Doctrine.\" <|split_2d|>\"the Roosevelt Doctrine.\" <|split_2d|>\"the Bush Doctrine.\" <|split_2d|>\"the Monroe Doctrine.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "the Monroe Doctrine.",
       "incorrect_answers": [
@@ -748,7 +748,7 @@
     }
   },
   {
-    "prompt": "Why do contemporary European liberal democrats tend to object to the influence of exceptionalism on American foreign policy?~tag~<|start_2d|>\"They see it as a challenge to European global influence\" <|split_2d|>\"They see it as an ideological fa\u00e7ade for US imperialism\" <|split_2d|>\"They see it as a temporary phenomenon\" <|split_2d|>\"None of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Why do contemporary European liberal democrats tend to object to the influence of exceptionalism on American foreign policy?*tag*<|start_2d|>\"They see it as a challenge to European global influence\" <|split_2d|>\"They see it as an ideological fa\u00e7ade for US imperialism\" <|split_2d|>\"They see it as a temporary phenomenon\" <|split_2d|>\"None of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "They see it as an ideological fa\u00e7ade for US imperialism",
       "incorrect_answers": [
@@ -759,7 +759,7 @@
     }
   },
   {
-    "prompt": "In what sense might exceptionalism link isolationist and internationalist strategies?~tag~<|start_2d|>\"Both encourage world government\" <|split_2d|>\"Both focus on the decline of the American power\" <|split_2d|>\"It doesn't - the two are fundamentally opposed\" <|split_2d|>\"Both can be viewed as different means of achieving the same liberal ends\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In what sense might exceptionalism link isolationist and internationalist strategies?*tag*<|start_2d|>\"Both encourage world government\" <|split_2d|>\"Both focus on the decline of the American power\" <|split_2d|>\"It doesn't - the two are fundamentally opposed\" <|split_2d|>\"Both can be viewed as different means of achieving the same liberal ends\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Both can be viewed as different means of achieving the same liberal ends",
       "incorrect_answers": [
@@ -770,7 +770,7 @@
     }
   },
   {
-    "prompt": "Why do realists tend to object to the influence of exceptionalism on American foreign policy?~tag~<|start_2d|>\"It leads to a diminished focus on collective security\" <|split_2d|>\"It diminishes the prospects for world government\" <|split_2d|>\"It enhances the prospects for world government\" <|split_2d|>\"It leads to a diminished focus on security, power and interest\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Why do realists tend to object to the influence of exceptionalism on American foreign policy?*tag*<|start_2d|>\"It leads to a diminished focus on collective security\" <|split_2d|>\"It diminishes the prospects for world government\" <|split_2d|>\"It enhances the prospects for world government\" <|split_2d|>\"It leads to a diminished focus on security, power and interest\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "It leads to a diminished focus on security, power and interest",
       "incorrect_answers": [
@@ -781,7 +781,7 @@
     }
   },
   {
-    "prompt": "What features distinguish Socio-Economic accounts of US Cold War foreign policy?~tag~<|start_2d|>\"A focus on class and economic interests\" <|split_2d|>\"A focus on liberal ideology\" <|split_2d|>\"A focus on language and culture\" <|split_2d|>\"All of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What features distinguish Socio-Economic accounts of US Cold War foreign policy?*tag*<|start_2d|>\"A focus on class and economic interests\" <|split_2d|>\"A focus on liberal ideology\" <|split_2d|>\"A focus on language and culture\" <|split_2d|>\"All of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "A focus on class and economic interests",
       "incorrect_answers": [
@@ -792,7 +792,7 @@
     }
   },
   {
-    "prompt": "What did Paul Kennedy argue in his book The Rise and Fall of the Great Powers?~tag~<|start_2d|>\"All of the world's leading economies were declining due to low growth and inflation\" <|split_2d|>\"The United States could no longer remain a superpower and was in decline\" <|split_2d|>\"The soft power of the United States would allow it to avoid decline\" <|split_2d|>\"The rise of Japan had been exaggerated\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What did Paul Kennedy argue in his book The Rise and Fall of the Great Powers?*tag*<|start_2d|>\"All of the world's leading economies were declining due to low growth and inflation\" <|split_2d|>\"The United States could no longer remain a superpower and was in decline\" <|split_2d|>\"The soft power of the United States would allow it to avoid decline\" <|split_2d|>\"The rise of Japan had been exaggerated\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The United States could no longer remain a superpower and was in decline",
       "incorrect_answers": [
@@ -803,7 +803,7 @@
     }
   },
   {
-    "prompt": "The Joint Chiefs of Staff is made up of~tag~<|start_2d|>\"the critical domestic and foreign policy advisers to the president.\" <|split_2d|>\"foreign policy advisers who meet with the president daily.\" <|split_2d|>\"the commanding officers of each branch of the armed services, along with a chairperson and vice chairperson.\" <|split_2d|>\"the highest-ranking generals in the U.S. Army.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The Joint Chiefs of Staff is made up of*tag*<|start_2d|>\"the critical domestic and foreign policy advisers to the president.\" <|split_2d|>\"foreign policy advisers who meet with the president daily.\" <|split_2d|>\"the commanding officers of each branch of the armed services, along with a chairperson and vice chairperson.\" <|split_2d|>\"the highest-ranking generals in the U.S. Army.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "the commanding officers of each branch of the armed services, along with a chairperson and vice chairperson.",
       "incorrect_answers": [
@@ -814,7 +814,7 @@
     }
   },
   {
-    "prompt": "What is American exceptionalism?~tag~<|start_2d|>\"The belief that the United States is different from other major powers because it is concerned not only with Power, but also with Principles.\" <|split_2d|>\"The belief that the United States is different because it is the most powerful nation in the world.\" <|split_2d|>\"The belief that the United States is pacifist.\" <|split_2d|>\"The belief that the United States is different because it is motivated more by economic factors than other countries are.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What is American exceptionalism?*tag*<|start_2d|>\"The belief that the United States is different from other major powers because it is concerned not only with Power, but also with Principles.\" <|split_2d|>\"The belief that the United States is different because it is the most powerful nation in the world.\" <|split_2d|>\"The belief that the United States is pacifist.\" <|split_2d|>\"The belief that the United States is different because it is motivated more by economic factors than other countries are.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The belief that the United States is different from other major powers because it is concerned not only with Power, but also with Principles.",
       "incorrect_answers": [
@@ -825,7 +825,7 @@
     }
   },
   {
-    "prompt": "The role of gathering and interpreting intelligence about foreign countries in order to allow policymakers to make good foreign policy decisions was given to~tag~<|start_2d|>\"the Central Intelligence Agency (CIA).\" <|split_2d|>\"the Federal Bureau of Investigation (FBI).\" <|split_2d|>\"the National Security Council.\" <|split_2d|>\"Both A and B are correct.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The role of gathering and interpreting intelligence about foreign countries in order to allow policymakers to make good foreign policy decisions was given to*tag*<|start_2d|>\"the Central Intelligence Agency (CIA).\" <|split_2d|>\"the Federal Bureau of Investigation (FBI).\" <|split_2d|>\"the National Security Council.\" <|split_2d|>\"Both A and B are correct.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "the Central Intelligence Agency (CIA).",
       "incorrect_answers": [
@@ -836,7 +836,7 @@
     }
   },
   {
-    "prompt": "The cooperative international organization of 185 countries designed to stabilize the exchange of currencies and the world economy is~tag~<|start_2d|>\"the World Bank.\" <|split_2d|>\"the United Nations.\" <|split_2d|>\"UNICEF.\" <|split_2d|>\"the International Monetary Fund.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The cooperative international organization of 185 countries designed to stabilize the exchange of currencies and the world economy is*tag*<|start_2d|>\"the World Bank.\" <|split_2d|>\"the United Nations.\" <|split_2d|>\"UNICEF.\" <|split_2d|>\"the International Monetary Fund.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "the International Monetary Fund.",
       "incorrect_answers": [
@@ -847,7 +847,7 @@
     }
   },
   {
-    "prompt": "What policies are part of a grand strategy of Offshore Balancing?~tag~<|start_2d|>\"Maintaining a balance between the United States and other countries and not entering into alliances\" <|split_2d|>\"Investing equally in domestic and international security with balanced protection against terrorism and other states\" <|split_2d|>\"Embrace multi-polarity, show greater restraint internationally and require other states to meet their own security burdens.\" <|split_2d|>\"Isolate the US from the international system and not seek global power\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What policies are part of a grand strategy of Offshore Balancing?*tag*<|start_2d|>\"Maintaining a balance between the United States and other countries and not entering into alliances\" <|split_2d|>\"Investing equally in domestic and international security with balanced protection against terrorism and other states\" <|split_2d|>\"Embrace multi-polarity, show greater restraint internationally and require other states to meet their own security burdens.\" <|split_2d|>\"Isolate the US from the international system and not seek global power\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Embrace multi-polarity, show greater restraint internationally and require other states to meet their own security burdens.",
       "incorrect_answers": [
@@ -858,7 +858,7 @@
     }
   },
   {
-    "prompt": "What was the Marshall plan?~tag~<|start_2d|>\"A plan designed to aid the economy recovery of Europe\" <|split_2d|>\"An attempt to diminish the potential attraction of the Soviet system to Europeans\" <|split_2d|>\"An aid programme that embedded US influence in Europe\" <|split_2d|>\"All of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What was the Marshall plan?*tag*<|start_2d|>\"A plan designed to aid the economy recovery of Europe\" <|split_2d|>\"An attempt to diminish the potential attraction of the Soviet system to Europeans\" <|split_2d|>\"An aid programme that embedded US influence in Europe\" <|split_2d|>\"All of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "All of the above",
       "incorrect_answers": [
@@ -869,7 +869,7 @@
     }
   },
   {
-    "prompt": "What accounted for the US avoidance of catastrophe at the hands of the British in 1814?~tag~<|start_2d|>\"Naval victories\" <|split_2d|>\"Diplomacy\" <|split_2d|>\"British preoccupation with Europe\" <|split_2d|>\"All of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What accounted for the US avoidance of catastrophe at the hands of the British in 1814?*tag*<|start_2d|>\"Naval victories\" <|split_2d|>\"Diplomacy\" <|split_2d|>\"British preoccupation with Europe\" <|split_2d|>\"All of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "All of the above",
       "incorrect_answers": [
@@ -880,7 +880,7 @@
     }
   },
   {
-    "prompt": "What was a main organizational change proposed by the 9/11 Commission with regard to the U.S. intelligence community?~tag~<|start_2d|>\"Creation of the Department of Homeland Security\" <|split_2d|>\"Moving the Department of Defense Intelligence Agencies to the CIA for better coordination\" <|split_2d|>\"Creation of the National Intelligence Director\" <|split_2d|>\"Moving the domestic intelligence component of the FBI to the CIA\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What was a main organizational change proposed by the 9/11 Commission with regard to the U.S. intelligence community?*tag*<|start_2d|>\"Creation of the Department of Homeland Security\" <|split_2d|>\"Moving the Department of Defense Intelligence Agencies to the CIA for better coordination\" <|split_2d|>\"Creation of the National Intelligence Director\" <|split_2d|>\"Moving the domestic intelligence component of the FBI to the CIA\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Creation of the National Intelligence Director",
       "incorrect_answers": [
@@ -891,7 +891,7 @@
     }
   },
   {
-    "prompt": "The government body formed to coordinate American foreign and military policy is known as~tag~<|start_2d|>\"the National Security Council.\" <|split_2d|>\"the Pentagon.\" <|split_2d|>\"the Defense Policy Institute.\" <|split_2d|>\"the Joint Chiefs of Staff.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The government body formed to coordinate American foreign and military policy is known as*tag*<|start_2d|>\"the National Security Council.\" <|split_2d|>\"the Pentagon.\" <|split_2d|>\"the Defense Policy Institute.\" <|split_2d|>\"the Joint Chiefs of Staff.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "the National Security Council.",
       "incorrect_answers": [
@@ -902,7 +902,7 @@
     }
   },
   {
-    "prompt": "What drives US foreign policy according to the Marxist perspective?~tag~<|start_2d|>\"Economic protectionism\" <|split_2d|>\"Class consciousness\" <|split_2d|>\"The search for new markets\" <|split_2d|>\"Superstructure\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What drives US foreign policy according to the Marxist perspective?*tag*<|start_2d|>\"Economic protectionism\" <|split_2d|>\"Class consciousness\" <|split_2d|>\"The search for new markets\" <|split_2d|>\"Superstructure\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The search for new markets",
       "incorrect_answers": [
@@ -913,7 +913,7 @@
     }
   },
   {
-    "prompt": "Why might American exceptionalism lead to opposition to world government?~tag~<|start_2d|>\"Its general anti-statism opposes centralized government\" <|split_2d|>\"It views world government as impractical\" <|split_2d|>\"It views the UN as a sufficient form of global governance\" <|split_2d|>\"None of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Why might American exceptionalism lead to opposition to world government?*tag*<|start_2d|>\"Its general anti-statism opposes centralized government\" <|split_2d|>\"It views world government as impractical\" <|split_2d|>\"It views the UN as a sufficient form of global governance\" <|split_2d|>\"None of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Its general anti-statism opposes centralized government",
       "incorrect_answers": [
@@ -924,7 +924,7 @@
     }
   },
   {
-    "prompt": "Which of the following considers states to be the primary actors in international relations?~tag~<|start_2d|>\"Realism\" <|split_2d|>\"Idealism\" <|split_2d|>\"Liberalism\" <|split_2d|>\"None of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following considers states to be the primary actors in international relations?*tag*<|start_2d|>\"Realism\" <|split_2d|>\"Idealism\" <|split_2d|>\"Liberalism\" <|split_2d|>\"None of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Realism",
       "incorrect_answers": [
@@ -935,7 +935,7 @@
     }
   },
   {
-    "prompt": "The importance of oil in shaping U.S. foreign policy helps to highlight~tag~<|start_2d|>\"the importance of military superiority.\" <|split_2d|>\"how the importance of oil is often overexaggerated.\" <|split_2d|>\"the increasing importance of economic instruments of foreign policy.\" <|split_2d|>\"the need to drill for domestic sources.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The importance of oil in shaping U.S. foreign policy helps to highlight*tag*<|start_2d|>\"the importance of military superiority.\" <|split_2d|>\"how the importance of oil is often overexaggerated.\" <|split_2d|>\"the increasing importance of economic instruments of foreign policy.\" <|split_2d|>\"the need to drill for domestic sources.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "the increasing importance of economic instruments of foreign policy.",
       "incorrect_answers": [
@@ -946,7 +946,7 @@
     }
   },
   {
-    "prompt": "The president's principal civilian adviser on the military is the~tag~<|start_2d|>\"national security adviser.\" <|split_2d|>\"director of the CIA.\" <|split_2d|>\"secretary of defense.\" <|split_2d|>\"secretary of state.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "The president's principal civilian adviser on the military is the*tag*<|start_2d|>\"national security adviser.\" <|split_2d|>\"director of the CIA.\" <|split_2d|>\"secretary of defense.\" <|split_2d|>\"secretary of state.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "secretary of defense.",
       "incorrect_answers": [
@@ -957,7 +957,7 @@
     }
   },
   {
-    "prompt": "How do Ideational approaches to US foreign policy during the Cold War differ from Realist accounts of the same period?~tag~<|start_2d|>\"They place greater emphasis on economic factors\" <|split_2d|>\"They place greater emphasis on material interests and power\" <|split_2d|>\"They place greater emphasis on ideology and beliefs\" <|split_2d|>\"They place greater emphasis on geopolitics\" <|end_2d|>~etag~Answer: ",
+    "prompt": "How do Ideational approaches to US foreign policy during the Cold War differ from Realist accounts of the same period?*tag*<|start_2d|>\"They place greater emphasis on economic factors\" <|split_2d|>\"They place greater emphasis on material interests and power\" <|split_2d|>\"They place greater emphasis on ideology and beliefs\" <|split_2d|>\"They place greater emphasis on geopolitics\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "They place greater emphasis on ideology and beliefs",
       "incorrect_answers": [
@@ -968,7 +968,7 @@
     }
   },
   {
-    "prompt": "How did the relationship between President and Congress develop under George H.W. Bush and Bill Clinton?~tag~<|start_2d|>\"Congress asserted its primacy in foreign policy\" <|split_2d|>\"US foreign policy became substantially decentralized\" <|split_2d|>\"The Presidency welcomed the influence of Congress\" <|split_2d|>\"None of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "How did the relationship between President and Congress develop under George H.W. Bush and Bill Clinton?*tag*<|start_2d|>\"Congress asserted its primacy in foreign policy\" <|split_2d|>\"US foreign policy became substantially decentralized\" <|split_2d|>\"The Presidency welcomed the influence of Congress\" <|split_2d|>\"None of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "None of the above",
       "incorrect_answers": [
@@ -979,7 +979,7 @@
     }
   },
   {
-    "prompt": "Which of the following points supports the argument for American unilateralism?~tag~<|start_2d|>\"Benevolent hegemony\" <|split_2d|>\"Ineffectiveness of multilateralism\" <|split_2d|>\"American power\" <|split_2d|>\"All of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following points supports the argument for American unilateralism?*tag*<|start_2d|>\"Benevolent hegemony\" <|split_2d|>\"Ineffectiveness of multilateralism\" <|split_2d|>\"American power\" <|split_2d|>\"All of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "All of the above",
       "incorrect_answers": [
@@ -990,7 +990,7 @@
     }
   },
   {
-    "prompt": "Historically, what has been the general pattern of defense spending in the United States?~tag~<|start_2d|>\"Steady increases over time.\" <|split_2d|>\"Increased spending during wars, with demobilization bringing spending down but not back to prewar levels\" <|split_2d|>\"Unpredictable fluctuations.\" <|split_2d|>\"Increased spending during wars, with further increases after the war to prepare for future engagements.\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Historically, what has been the general pattern of defense spending in the United States?*tag*<|start_2d|>\"Steady increases over time.\" <|split_2d|>\"Increased spending during wars, with demobilization bringing spending down but not back to prewar levels\" <|split_2d|>\"Unpredictable fluctuations.\" <|split_2d|>\"Increased spending during wars, with further increases after the war to prepare for future engagements.\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Increased spending during wars, with demobilization bringing spending down but not back to prewar levels",
       "incorrect_answers": [
@@ -1001,7 +1001,7 @@
     }
   },
   {
-    "prompt": "International development may be tied to the security of the state, why?~tag~<|start_2d|>\"Threats to the state centralize political and economic power, threatening state development\" <|split_2d|>\"Too many casualties drain the productive power of the state\" <|split_2d|>\"Threats to the state encourage socialism\" <|split_2d|>\"The two are correlated, but there is no causal effect\" <|end_2d|>~etag~Answer: ",
+    "prompt": "International development may be tied to the security of the state, why?*tag*<|start_2d|>\"Threats to the state centralize political and economic power, threatening state development\" <|split_2d|>\"Too many casualties drain the productive power of the state\" <|split_2d|>\"Threats to the state encourage socialism\" <|split_2d|>\"The two are correlated, but there is no causal effect\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Threats to the state centralize political and economic power, threatening state development",
       "incorrect_answers": [
@@ -1012,7 +1012,7 @@
     }
   },
   {
-    "prompt": "What was the 'Domino Theory'?~tag~<|start_2d|>\"The idea that the Cold War operated according to the principles of game theory\" <|split_2d|>\"The idea that certain states were of higher value than others to the US during the Cold War\" <|split_2d|>\"The idea that the fall of one state to communism would inexorably lead to the fall of its neighbors\" <|split_2d|>\"The idea that the growth of democracy in one state would inexorably lead to its growth in others\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What was the 'Domino Theory'?*tag*<|start_2d|>\"The idea that the Cold War operated according to the principles of game theory\" <|split_2d|>\"The idea that certain states were of higher value than others to the US during the Cold War\" <|split_2d|>\"The idea that the fall of one state to communism would inexorably lead to the fall of its neighbors\" <|split_2d|>\"The idea that the growth of democracy in one state would inexorably lead to its growth in others\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "The idea that the fall of one state to communism would inexorably lead to the fall of its neighbors",
       "incorrect_answers": [
@@ -1023,7 +1023,7 @@
     }
   },
   {
-    "prompt": "What has been an effective way of disbursing US foreign aid to encourage change in target states?~tag~<|start_2d|>\"Conditional programs, such as the Millennium Challenge, that require change before receipt of aid\" <|split_2d|>\"the use of intergovernmental organizations to monitor aid disbursement\" <|split_2d|>\"withdrawal of aid for bad policies\" <|split_2d|>\"None of the above, international aid never works\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What has been an effective way of disbursing US foreign aid to encourage change in target states?*tag*<|start_2d|>\"Conditional programs, such as the Millennium Challenge, that require change before receipt of aid\" <|split_2d|>\"the use of intergovernmental organizations to monitor aid disbursement\" <|split_2d|>\"withdrawal of aid for bad policies\" <|split_2d|>\"None of the above, international aid never works\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Conditional programs, such as the Millennium Challenge, that require change before receipt of aid",
       "incorrect_answers": [
@@ -1034,7 +1034,7 @@
     }
   },
   {
-    "prompt": "What was established at Bretton Woods in 1994 to stabilize the global economy?~tag~<|start_2d|>\"The International Monetary Fund (IMF)\" <|split_2d|>\"The US Dollar as the world's reserve currency\" <|split_2d|>\"The General Agreement on Tariffs and Trade (GATT)\" <|split_2d|>\"All of the above\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What was established at Bretton Woods in 1994 to stabilize the global economy?*tag*<|start_2d|>\"The International Monetary Fund (IMF)\" <|split_2d|>\"The US Dollar as the world's reserve currency\" <|split_2d|>\"The General Agreement on Tariffs and Trade (GATT)\" <|split_2d|>\"All of the above\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "All of the above",
       "incorrect_answers": [
@@ -1045,7 +1045,7 @@
     }
   },
   {
-    "prompt": "Which of the following is NOT a good predictor of which states will get nuclear weapons?~tag~<|start_2d|>\"Receipt of sensitive nuclear assistance\" <|split_2d|>\"Wealth/GDP\" <|split_2d|>\"Rivalry with a nuclear state\" <|split_2d|>\"Regime type\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Which of the following is NOT a good predictor of which states will get nuclear weapons?*tag*<|start_2d|>\"Receipt of sensitive nuclear assistance\" <|split_2d|>\"Wealth/GDP\" <|split_2d|>\"Rivalry with a nuclear state\" <|split_2d|>\"Regime type\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Regime type",
       "incorrect_answers": [
@@ -1056,7 +1056,7 @@
     }
   },
   {
-    "prompt": "What was 'democratic enlargement'?~tag~<|start_2d|>\"A proposal for reform of the US system of government\" <|split_2d|>\"A proposal for the extension of democratic rule globally\" <|split_2d|>\"A proposal for the extension of free markets\" <|split_2d|>\"Both b and c\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What was 'democratic enlargement'?*tag*<|start_2d|>\"A proposal for reform of the US system of government\" <|split_2d|>\"A proposal for the extension of democratic rule globally\" <|split_2d|>\"A proposal for the extension of free markets\" <|split_2d|>\"Both b and c\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Both b and c",
       "incorrect_answers": [
@@ -1067,7 +1067,7 @@
     }
   },
   {
-    "prompt": "What is meant by the phrase 'empire by invitation'?~tag~<|start_2d|>\"Voluntary reliance on an external power for security\" <|split_2d|>\"Willful openness to colonization\" <|split_2d|>\"Cultural imperialism\" <|split_2d|>\"Open advocacy of imperialism for economic gain\" <|end_2d|>~etag~Answer: ",
+    "prompt": "What is meant by the phrase 'empire by invitation'?*tag*<|start_2d|>\"Voluntary reliance on an external power for security\" <|split_2d|>\"Willful openness to colonization\" <|split_2d|>\"Cultural imperialism\" <|split_2d|>\"Open advocacy of imperialism for economic gain\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Voluntary reliance on an external power for security",
       "incorrect_answers": [
@@ -1078,7 +1078,7 @@
     }
   },
   {
-    "prompt": "In what way did the George W Bush administration change the direction of US foreign policy?~tag~<|start_2d|>\"It criticized international organizations, rather than trying to strengthen them\" <|split_2d|>\"It expanded NATO to include former Soviet states\" <|split_2d|>\"It focused on a more personal style of leadership\" <|split_2d|>\"It increased international support for the United States\" <|end_2d|>~etag~Answer: ",
+    "prompt": "In what way did the George W Bush administration change the direction of US foreign policy?*tag*<|start_2d|>\"It criticized international organizations, rather than trying to strengthen them\" <|split_2d|>\"It expanded NATO to include former Soviet states\" <|split_2d|>\"It focused on a more personal style of leadership\" <|split_2d|>\"It increased international support for the United States\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "It criticized international organizations, rather than trying to strengthen them",
       "incorrect_answers": [
@@ -1089,7 +1089,7 @@
     }
   },
   {
-    "prompt": "Peace, commerce, and honest friendship with all nations, entangling alliances with none'. Identify the speaker.~tag~<|start_2d|>\"James Madison\" <|split_2d|>\"Abraham Lincoln\" <|split_2d|>\"Woodrow Wilson\" <|split_2d|>\"Thomas Jefferson\" <|end_2d|>~etag~Answer: ",
+    "prompt": "Peace, commerce, and honest friendship with all nations, entangling alliances with none'. Identify the speaker.*tag*<|start_2d|>\"James Madison\" <|split_2d|>\"Abraham Lincoln\" <|split_2d|>\"Woodrow Wilson\" <|split_2d|>\"Thomas Jefferson\" <|end_2d|>*etag*Answer: ",
     "prompt_metadata": {
       "label": "Thomas Jefferson",
       "incorrect_answers": [
