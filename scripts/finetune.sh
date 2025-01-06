@@ -130,6 +130,9 @@ echo "MODEL_NAME: ${MODEL_NAME}"
 echo "DATETIME: ${RUN_DATETIME}"
 echo "OUTPUT_DIR: ${OUTPUT_DIR}"
 echo "IS_LORA: ${IS_LORA}"
+echo "TRAIN_DATA: ${TRAIN_DATA}"
+echo "TEST_DIR_CSQA: ${TEST_DIR_CSQA}"
+echo "TEST_DIR_MMLU: ${TEST_DIR_MMLU}"
 echo "Current directory: $(pwd)"
 
 # Get GPU count using nvidia-smi
