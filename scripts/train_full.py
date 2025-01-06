@@ -205,6 +205,9 @@ class DataCollatorForSupervisedDataset(object):
             position_ids, batch_first=True, padding_value=0
         ).long()
 
+        print("Attention mask dtype:", batched_attention_mask.dtype)
+        print("Position ids dtype:", position_ids.dtype)
+        
         return {
             "input_ids": input_ids,
             "labels": labels,
@@ -217,13 +220,10 @@ class SubsetDatasetWithAttrs(torch.utils.data.Subset):
     """Subset that preserves dataset attributes."""
     def __getitem__(self, idx):
         item = super().__getitem__(idx)
-        # Preserve noise_fn and noise_fn_kwargs if they exist
-        #if hasattr(self.dataset, 'noise_fn'):
-        #    item['noise_fn'] = self.dataset.noise_fn
-        #if hasattr(self.dataset, 'noise_fn_kwargs'):
-        #    item['noise_fn_kwargs'] = self.dataset.noise_fn_kwargs[idx]
         item['attention_mask'] = self.dataset.attention_mask[idx]
         item['position_ids'] = self.dataset.position_ids[idx]
+        item['input_ids'] = self.dataset.input_ids[idx]
+        item['labels'] = self.dataset.labels[idx]
         return item
 
 
