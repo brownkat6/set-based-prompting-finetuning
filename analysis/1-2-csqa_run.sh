@@ -3,7 +3,7 @@
 #SBATCH --partition=gpu_requeue
 #SBATCH --gres=gpu:1
 #SBATCH --time=0-20:00
-#SBATCH --mem=32G
+#SBATCH --mem=64G
 #SBATCH --cpus-per-task=8
 
 #SBATCH --open-mode=append
