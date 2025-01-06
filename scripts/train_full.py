@@ -149,7 +149,15 @@ def preprocess(
         labels.append(inputs["input_ids"][0])  # Labels are same as input_ids for causal LM
         attention_masks.append(inputs["attention_mask"][0])  # Remove batch dimension
         position_ids.append(inputs["position_ids"][0])  # Remove batch dimension
-        
+    
+    # print some info about the dataset we just generated
+    print(f"Generated dataset with {len(input_ids)} examples")
+    print(sources[:5])
+    print(f"First example: {input_ids[0]}")
+    print(f"First label: {labels[0]}")
+    print(f"First attention mask: {attention_masks[0]}")
+    print(f"First position ids: {position_ids[0]}")
+    
     return dict(
         input_ids=input_ids,
         labels=labels,
