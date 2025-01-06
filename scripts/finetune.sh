@@ -27,10 +27,10 @@ cleanup() {
     exit $exit_code
 }
 
-# Sample: sbatch finetune.sh False mmlu_quoted
-# Sample: sbatch finetune.sh False mmlu_quoted_qa
-# Sample: sbatch finetune.sh False mmlu_quoted_qa_wiki
-# Sample: sbatch finetune.sh False mmlu_quoted_qa_s2d csqa_quoted_s2d mmlu_quoted_s2d
+# Sample: sbatch finetune.sh False mmlu_quoted.jsonl
+# Sample: sbatch finetune.sh False mmlu_quoted_qa.jsonl
+# Sample: sbatch finetune.sh False mmlu_quoted_qa_wiki.jsonl
+# Sample: sbatch finetune.sh False mmlu_quoted_qa_s2d.jsonl csqa_quoted_s2d mmlu_quoted_s2d
 
 # Register cleanup function to run on script exit
 trap cleanup EXIT
