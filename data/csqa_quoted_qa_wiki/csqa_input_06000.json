@@ -216,11 +216,11 @@
     }
   },
   {
-    "prompt": " As with previous <unk> Chronicles games , Valkyria Chronicles III is a tactical role @-@ playing game where players take control of a military unit and take part in missions against enemy forces . Stories are told through comic book @-@ like panels ",
+    "prompt": "<|start_2d|> As with previous <unk> Chronicles games , Valkyria Chronicles III is a tactical role @-@ playing game where players take control of a military unit a<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " Guard , office , and police duties . \n",
+    "prompt": "<|start_2d|> Guard , office , and police duties . \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -272,15 +272,15 @@
     }
   },
   {
-    "prompt": " Barker was equally proficient in watercolour , pen and ink , oils , and pastels . Kate Greenaway and the Pre @-@ Raphaelites were the principal influences on her work . She claimed to paint instinctively and rejected artistic theories . Barker died ",
+    "prompt": "<|start_2d|> Barker was equally proficient in watercolour , pen and ink , oils , and pastels . Kate Greenaway and the Pre @-@ Raphaelites were the principal influ<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " Two manga adaptations were produced , following each of the game 's main female protagonists Imca and Riela . They were Senj\u014d no Valkyria 3 : Namo <unk> <unk> no Hana ( \u6226\u5834\u306e\u30f4\u30a1\u30eb\u30ad\u30e5\u30ea\u30a23 <unk> , lit . Valkyria of the Battlefield 3 : The Flower of the Name",
+    "prompt": "<|start_2d|> Two manga adaptations were produced , following each of the game 's main female protagonists Imca and Riela . They were Senj\u014d no Valkyria 3 : Namo <u<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " Unlike its two predecessors , Valkyria Chronicles III was not released in the west . According to Sega , this was due to poor sales of Valkyria Chronicles II and the general unpopularity of the PSP in the west . An unofficial fan translation patch b",
+    "prompt": "<|start_2d|> Unlike its two predecessors , Valkyria Chronicles III was not released in the west . According to Sega , this was due to poor sales of Valkyria Chron<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -404,7 +404,7 @@
     }
   },
   {
-    "prompt": " Received & Issued : \n",
+    "prompt": "<|start_2d|> Received & Issued : \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -504,11 +504,11 @@
     }
   },
   {
-    "prompt": " = = = Flower Fairies of the Spring , 1923 = = = \n",
+    "prompt": "<|start_2d|> = = = Flower Fairies of the Spring , 1923 = = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " = Cicely Mary Barker = \n",
+    "prompt": "<|start_2d|> = Cicely Mary Barker = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -536,7 +536,7 @@
     }
   },
   {
-    "prompt": " The Confederate ordnance establishment at Little Rock was reactivated in August , 1862 . Looking around for a suitable person to head this activity , General Hindman turned to the Confederate Navy and borrowed Lieutenant John W. Dunnington . Lt. Dun",
+    "prompt": "<|start_2d|> The Confederate ordnance establishment at Little Rock was reactivated in August , 1862 . Looking around for a suitable person to head this activity ,<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -552,7 +552,7 @@
     }
   },
   {
-    "prompt": " 4 gun carriages \n",
+    "prompt": "<|start_2d|> 4 gun carriages \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -592,7 +592,7 @@
     }
   },
   {
-    "prompt": " Kurt and Riela were featured in the Nintendo 3DS crossover Project X Zone , representing the Valkyria series . Media.Vision would return to the series to develop Valkyria : Azure Revolution , with Ozawa returning as director . Azure Revolution is a ",
+    "prompt": "<|start_2d|> Kurt and Riela were featured in the Nintendo 3DS crossover Project X Zone , representing the Valkyria series . Media.Vision would return to the serie<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -608,7 +608,7 @@
     }
   },
   {
-    "prompt": " 117 rounds , 6 @-@ pounder canister shot \n",
+    "prompt": "<|start_2d|> 117 rounds , 6 @-@ pounder canister shot \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -660,7 +660,7 @@
     }
   },
   {
-    "prompt": " A \" Summary of the Work Done for November , 1862 , Little Rock Arsenal \" shows : Fabrication : \n",
+    "prompt": "<|start_2d|> A \" Summary of the Work Done for November , 1862 , Little Rock Arsenal \" shows : Fabrication : \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -676,7 +676,7 @@
     }
   },
   {
-    "prompt": " The governor would take possession of the arsenal in the name of the United States . \n",
+    "prompt": "<|start_2d|> The governor would take possession of the arsenal in the name of the United States . \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -716,7 +716,7 @@
     }
   },
   {
-    "prompt": " In 1923 , Barker sent her flower fairy paintings to various publishers . Blackie paid \u00a3 25 for 24 paintings with accompanying verses , but it wasn 't until publication of Flower Fairies of the Summer in 1925 that Barker received royalties for her wo",
+    "prompt": "<|start_2d|> In 1923 , Barker sent her flower fairy paintings to various publishers . Blackie paid \u00a3 25 for 24 paintings with accompanying verses , but it wasn 't<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -780,7 +780,7 @@
     }
   },
   {
-    "prompt": " In the 1880s , the federal government began closing many small arsenals around the country in favor of smaller ones built near railroads for quick deployment . The arsenal commander received word from Washington that the Little Rock site must be aba",
+    "prompt": "<|start_2d|> In the 1880s , the federal government began closing many small arsenals around the country in favor of smaller ones built near railroads for quick de<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -892,7 +892,7 @@
     }
   },
   {
-    "prompt": " In the late 1920s , Barker began to doubt she was doing enough for the church and considered focusing solely on sacred works . Family and friends recommended she continue secular and sacred works , which she did . \n",
+    "prompt": "<|start_2d|> In the late 1920s , Barker began to doubt she was doing enough for the church and considered focusing solely on sacred works . Family and friends rec<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -932,7 +932,7 @@
     }
   },
   {
-    "prompt": " Hall 's carbines 267 \n",
+    "prompt": "<|start_2d|> Hall 's carbines 267 \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -984,7 +984,7 @@
     }
   },
   {
-    "prompt": " The arsenal was listed in the National Register of Historic Places in 1970 . Due to its association with the Camden Expedition of 1864 , the arsenal may be included in the Camden Expedition Sites National Historic Landmark designated in 1994 . \n",
+    "prompt": "<|start_2d|> The arsenal was listed in the National Register of Historic Places in 1970 . Due to its association with the Camden Expedition of 1864 , the arsenal <|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1000,7 +1000,7 @@
     }
   },
   {
-    "prompt": " This movement is prompted by the feeling that pervades the citizens of this State that in the present emergency the arms and munitions of war in the Arsenal should be under the control of the State authorities , in order to their security . This mov",
+    "prompt": "<|start_2d|> This movement is prompted by the feeling that pervades the citizens of this State that in the present emergency the arms and munitions of war in the <|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1100,7 +1100,7 @@
     }
   },
   {
-    "prompt": " Cicely Mary Barker ( 28 June 1895 \u2013 16 February 1973 ) was an English illustrator best known for a series of fantasy illustrations depicting fairies and flowers . Barker 's art education began in girlhood with correspondence courses and instruction ",
+    "prompt": "<|start_2d|> Cicely Mary Barker ( 28 June 1895 \u2013 16 February 1973 ) was an English illustrator best known for a series of fantasy illustrations depicting fairies <|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1116,7 +1116,7 @@
     }
   },
   {
-    "prompt": " 14 @,@ 000 buck & ball cartridges - flint \n",
+    "prompt": "<|start_2d|> 14 @,@ 000 buck & ball cartridges - flint \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1156,7 +1156,7 @@
     }
   },
   {
-    "prompt": " = = = Middle years = = = \n",
+    "prompt": "<|start_2d|> = = = Middle years = = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1208,7 +1208,7 @@
     }
   },
   {
-    "prompt": " It met with positive sales in Japan , and was praised by both Japanese and western critics . After release , it received downloadable content , along with an expanded edition in November of that year . It was also adapted into manga and an original ",
+    "prompt": "<|start_2d|> It met with positive sales in Japan , and was praised by both Japanese and western critics . After release , it received downloadable content , along<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1260,7 +1260,7 @@
     }
   },
   {
-    "prompt": " = = = Early life = = = \n",
+    "prompt": "<|start_2d|> = = = Early life = = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1348,11 +1348,11 @@
     }
   },
   {
-    "prompt": " <unk> <unk> 2 \n",
+    "prompt": "<|start_2d|> <unk> <unk> 2 \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " The game 's battle system , the <unk> system , is carried over directly from <unk> Chronicles . During missions , players select each unit using a top @-@ down perspective of the battlefield map : once a character is selected , the player moves the ",
+    "prompt": "<|start_2d|> The game 's battle system , the <unk> system , is carried over directly from <unk> Chronicles . During missions , players select each unit using a to<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1416,15 +1416,15 @@
     }
   },
   {
-    "prompt": " = = Reception = = \n",
+    "prompt": "<|start_2d|> = = Reception = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " Hall 's rifles ( flintlock ) 2 @,@ 864 \n",
+    "prompt": "<|start_2d|> Hall 's rifles ( flintlock ) 2 @,@ 864 \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " Barker was a devout Anglican , and donated her artworks to Christian fundraisers and missionary organizations . She produced a few Christian @-@ themed books such as The Children \u2019 s Book of Hymns and , in collaboration with her sister Dorothy , He ",
+    "prompt": "<|start_2d|> Barker was a devout Anglican , and donated her artworks to Christian fundraisers and missionary organizations . She produced a few Christian @-@ them<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1464,7 +1464,7 @@
     }
   },
   {
-    "prompt": " Troops are divided into five classes : Scouts , <unk> , Engineers , Lancers and Armored Soldier . Troopers can switch classes by changing their assigned weapon . Changing class does not greatly affect the stats gained while in a previous class . Wit",
+    "prompt": "<|start_2d|> Troops are divided into five classes : Scouts , <unk> , Engineers , Lancers and Armored Soldier . Troopers can switch classes by changing their assig<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1610,7 +1610,7 @@
     }
   },
   {
-    "prompt": " = Tower Building of the Little Rock Arsenal = \n",
+    "prompt": "<|start_2d|> = Tower Building of the Little Rock Arsenal = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1698,7 +1698,7 @@
     }
   },
   {
-    "prompt": " = = Biography = = \n",
+    "prompt": "<|start_2d|> = = Biography = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1738,7 +1738,7 @@
     }
   },
   {
-    "prompt": " Repaired : \n",
+    "prompt": "<|start_2d|> Repaired : \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1814,7 +1814,7 @@
     }
   },
   {
-    "prompt": " <unk> M Harrel Telegram , January 31 , 1861 \n",
+    "prompt": "<|start_2d|> <unk> M Harrel Telegram , January 31 , 1861 \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1842,7 +1842,7 @@
     }
   },
   {
-    "prompt": " The soldiers would be allowed safe passage in any direction carrying any personal and public property besides munitions of war . \n",
+    "prompt": "<|start_2d|> The soldiers would be allowed safe passage in any direction carrying any personal and public property besides munitions of war . \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1894,7 +1894,7 @@
     }
   },
   {
-    "prompt": " In 1940 , the Barker 's live @-@ in maid retired , and Dorothy Barker closed her school at the back of the house in The Waldrons . She continued to supervise the household , and to give both her mother and sister the care they needed . Dorothy and h",
+    "prompt": "<|start_2d|> In 1940 , the Barker 's live @-@ in maid retired , and Dorothy Barker closed her school at the back of the house in The Waldrons . She continued to s<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1910,7 +1910,7 @@
     }
   },
   {
-    "prompt": " The game began development in 2010 , carrying over a large portion of the work done on Valkyria Chronicles II . While it retained the standard features of the series , it also underwent multiple adjustments , such as making the game more forgiving f",
+    "prompt": "<|start_2d|> The game began development in 2010 , carrying over a large portion of the work done on Valkyria Chronicles II . While it retained the standard featur<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1926,7 +1926,7 @@
     }
   },
   {
-    "prompt": " = = Public use = = \n",
+    "prompt": "<|start_2d|> = = Public use = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -1966,7 +1966,7 @@
     }
   },
   {
-    "prompt": " Fairies became a popular theme in art and literature in the early 20th century following the releases of The Coming of the Fairies by Sir Arthur Conan Doyle , Peter Pan by J.M. Barrie , and the fairy @-@ themed work of Australian Ida <unk> Outhwaite",
+    "prompt": "<|start_2d|> Fairies became a popular theme in art and literature in the early 20th century following the releases of The Coming of the Fairies by Sir Arthur Cona<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -2066,7 +2066,7 @@
     }
   },
   {
-    "prompt": " The anime 's title was inspired by the principle purpose of the Nameless : to suffer in battle for the goals of others . A subtitle attached to the project during development was \" The Road to Kubinka \" , which referenced the Kubinka Tank Museum in ",
+    "prompt": "<|start_2d|> The anime 's title was inspired by the principle purpose of the Nameless : to suffer in battle for the goals of others . A subtitle attached to the p<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -2154,7 +2154,7 @@
     }
   },
   {
-    "prompt": " Of this number , approximately 9600 weapons were serviceable , or ready @-@ for @-@ issue . Note there were only 1 @,@ 364 percussion weapons available . Disposition of the weapons found in the Arsenal is somewhat sketchy , but from various records ",
+    "prompt": "<|start_2d|> Of this number , approximately 9600 weapons were serviceable , or ready @-@ for @-@ issue . Note there were only 1 @,@ 364 percussion weapons availab<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -2242,7 +2242,7 @@
     }
   },
   {
-    "prompt": " In 1911 , Raphael Tuck & Sons bought four of Barker 's \" little drawings \" for half a sovereign , and published them as postcards . In October 1911 , she won second prize in the Croydon Art Society 's poster competition , and shortly afterward was e",
+    "prompt": "<|start_2d|> In 1911 , Raphael Tuck & Sons bought four of Barker 's \" little drawings \" for half a sovereign , and published them as postcards . In October 1911 ,<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -2270,7 +2270,7 @@
     }
   },
   {
-    "prompt": " Senj\u014d no Valkyria 3 : <unk> Chronicles ( Japanese : \u6226\u5834\u306e\u30f4\u30a1\u30eb\u30ad\u30e5\u30ea\u30a23 , lit . Valkyria of the Battlefield 3 ) , commonly referred to as Valkyria Chronicles III outside Japan , is a tactical role @-@ playing video game developed by Sega and Media.Vision fo",
+    "prompt": "<|start_2d|> Senj\u014d no Valkyria 3 : <unk> Chronicles ( Japanese : \u6226\u5834\u306e\u30f4\u30a1\u30eb\u30ad\u30e5\u30ea\u30a23 , lit . Valkyria of the Battlefield 3 ) , commonly referred to as Valkyria Chronicles<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -2310,7 +2310,7 @@
     }
   },
   {
-    "prompt": " The United States troops at the outposts of the western frontier of the state and in the Indian nation have all been recalled from winter quarters to reinforce the garrison at Fort Smith . The garrison at Fort Smith had been previously transferred t",
+    "prompt": "<|start_2d|> The United States troops at the outposts of the western frontier of the state and in the Indian nation have all been recalled from winter quarters to<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -2338,7 +2338,7 @@
     }
   },
   {
-    "prompt": " In a preview of the TGS demo , Ryan Geddes of IGN was left excited as to where the game would go after completing the demo , along with enjoying the improved visuals over Valkyria Chronicles II . Kotaku 's Richard Eisenbeis was highly positive about",
+    "prompt": "<|start_2d|> In a preview of the TGS demo , Ryan Geddes of IGN was left excited as to where the game would go after completing the demo , along with enjoying the <|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -2354,11 +2354,11 @@
     }
   },
   {
-    "prompt": " 275 paper fuzes \n",
+    "prompt": "<|start_2d|> 275 paper fuzes \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " Valkyria Chronicles 3 was adapted into a two @-@ episode original video animation series in the same year of its release . Titled Senj\u014d no Valkyria 3 : Taga Tame no <unk> ( <unk> <unk> , lit . Valkyria of the Battlefield 3 : The Wound Taken for Some",
+    "prompt": "<|start_2d|> Valkyria Chronicles 3 was adapted into a two @-@ episode original video animation series in the same year of its release . Titled Senj\u014d no Valkyria 3<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -2542,11 +2542,11 @@
     }
   },
   {
-    "prompt": " = = Legacy = = \n",
+    "prompt": "<|start_2d|> = = Legacy = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " Barker 's mother died in 1960 , and , in 1961 , Barker moved from 23 The Waldrons to 6 <unk> Avenue in Croydon . She restored a maisonette in Storrington , Sussex , England , bequeathed by her friend Edith Major , and named it St. Andrew 's . After ",
+    "prompt": "<|start_2d|> Barker 's mother died in 1960 , and , in 1961 , Barker moved from 23 The Waldrons to 6 <unk> Avenue in Croydon . She restored a maisonette in Storrin<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -2622,11 +2622,11 @@
     }
   },
   {
-    "prompt": " M1822 .69 cal ( percussion @-@ converted ) 53 \n",
+    "prompt": "<|start_2d|> M1822 .69 cal ( percussion @-@ converted ) 53 \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " <unk> .58 cal rifle @-@ muskets 900 \n",
+    "prompt": "<|start_2d|> <unk> .58 cal rifle @-@ muskets 900 \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -2642,11 +2642,11 @@
     }
   },
   {
-    "prompt": " Famitsu enjoyed the story , and were particularly pleased with the improvements to gameplay . Japanese gaming site Game Watch Impress , despite negatively noting its pacing and elements recycled from previous games , was generally positive about its",
+    "prompt": "<|start_2d|> Famitsu enjoyed the story , and were particularly pleased with the improvements to gameplay . Japanese gaming site Game Watch Impress , despite negat<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " The family of four was moderately well off , and belonged to the lower end of the upper middle class . A nanny , a governess , and a cook to prepare special meals for Barker were hired . She spent much time in bed at home amusing herself with painti",
+    "prompt": "<|start_2d|> The family of four was moderately well off , and belonged to the lower end of the upper middle class . A nanny , a governess , and a cook to prepare <|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -2686,7 +2686,7 @@
     }
   },
   {
-    "prompt": " In 1873 , the building was renamed Little Rock Barracks and used as a barracks for married officers and their families . The building was drastically altered the inside and outside . Prior to renovation , a rear basement door provided the only entra",
+    "prompt": "<|start_2d|> In 1873 , the building was renamed Little Rock Barracks and used as a barracks for married officers and their families . The building was drastically<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -2762,7 +2762,7 @@
     }
   },
   {
-    "prompt": " Barker died at Worthing Hospital on 16 February 1973 , aged 77 years . Two funeral services were held \u2013 one in Storrington Church and one in Barker 's maisonette . Her ashes were scattered in Storrington churchyard . In 1989 , Frederick Warne , a di",
+    "prompt": "<|start_2d|> Barker died at Worthing Hospital on 16 February 1973 , aged 77 years . Two funeral services were held \u2013 one in Storrington Church and one in Barker '<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -2910,7 +2910,7 @@
     }
   },
   {
-    "prompt": " PlayStation Official Magazine - UK praised the story 's blurring of Gallia 's moral standing , art style , and most points about its gameplay , positively noting the latter for both its continued quality and the tweaks to balance and content . Its o",
+    "prompt": "<|start_2d|> PlayStation Official Magazine - UK praised the story 's blurring of Gallia 's moral standing , art style , and most points about its gameplay , posit<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -2950,7 +2950,7 @@
     }
   },
   {
-    "prompt": " For several years the arsenal , which was owned by the federal government , served as a simple arms depot and was staffed with only a handful of soldiers . But in November 1860 , with the American Civil War on the horizon , a company of the Second U",
+    "prompt": "<|start_2d|> For several years the arsenal , which was owned by the federal government , served as a simple arms depot and was staffed with only a handful of sold<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3002,7 +3002,7 @@
     }
   },
   {
-    "prompt": " = = \u00c6sthetic Club = = \n",
+    "prompt": "<|start_2d|> = = \u00c6sthetic Club = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3066,7 +3066,7 @@
     }
   },
   {
-    "prompt": " The soldiers would be allowed to march away as men leaving under orders , not as conquered and surrendering soldiers . \n",
+    "prompt": "<|start_2d|> The soldiers would be allowed to march away as men leaving under orders , not as conquered and surrendering soldiers . \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3154,7 +3154,7 @@
     }
   },
   {
-    "prompt": " The music was composed by Hitoshi Sakimoto , who had also worked on the previous Valkyria Chronicles games . When he originally heard about the project , he thought it would be a light tone similar to other Valkyria Chronicles games , but found the ",
+    "prompt": "<|start_2d|> The music was composed by Hitoshi Sakimoto , who had also worked on the previous Valkyria Chronicles games . When he originally heard about the proje<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3194,7 +3194,7 @@
     }
   },
   {
-    "prompt": " = = Civil War = = \n",
+    "prompt": "<|start_2d|> = = Civil War = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3222,7 +3222,7 @@
     }
   },
   {
-    "prompt": " = = = Adaptations = = = \n",
+    "prompt": "<|start_2d|> = = = Adaptations = = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3262,7 +3262,7 @@
     }
   },
   {
-    "prompt": " = = = Music = = = \n",
+    "prompt": "<|start_2d|> = = = Music = = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3290,7 +3290,7 @@
     }
   },
   {
-    "prompt": " The Tower Building of the Little Rock Arsenal , also known as U.S. Arsenal Building , is a building located in MacArthur Park in downtown Little Rock , Arkansas . Built in 1840 , it was part of Little Rock 's first military installation . Since its ",
+    "prompt": "<|start_2d|> The Tower Building of the Little Rock Arsenal , also known as U.S. Arsenal Building , is a building located in MacArthur Park in downtown Little Rock<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3438,7 +3438,7 @@
     }
   },
   {
-    "prompt": " As the Nameless officially do not exist , the upper echelons of the Gallian Army exploit the concept of plausible deniability in order to send them on missions that would otherwise make Gallia lose face in the war . While at times this works to thei",
+    "prompt": "<|start_2d|> As the Nameless officially do not exist , the upper echelons of the Gallian Army exploit the concept of plausible deniability in order to send them o<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3478,7 +3478,7 @@
     }
   },
   {
-    "prompt": " The children in the kindergarten modelled for the Flower Fairies until the kindergarten closed in 1940 . In an interview in 1958 , Barker said , \" My sister ran a kindergarten and I used to borrow her students for models . For many years I had an at",
+    "prompt": "<|start_2d|> The children in the kindergarten modelled for the Flower Fairies until the kindergarten closed in 1940 . In an interview in 1958 , Barker said , \" My<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3494,7 +3494,7 @@
     }
   },
   {
-    "prompt": " 96 ammunition packing boxes \n",
+    "prompt": "<|start_2d|> 96 ammunition packing boxes \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3558,7 +3558,7 @@
     }
   },
   {
-    "prompt": " The majority of material created for previous games , such as the <unk> system and the design of maps , was carried over . Alongside this , improvements were made to the game 's graphics and some elements were expanded , such as map layouts , missio",
+    "prompt": "<|start_2d|> The majority of material created for previous games , such as the <unk> system and the design of maps , was carried over . Alongside this , improveme<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3610,7 +3610,7 @@
     }
   },
   {
-    "prompt": " The \" Summaries of Work done at Little Rock Arsenal , C.S.A. \" continue at about the same pace and scale from August 1862 until August 1863 . <unk> to the \" Summary \" for August , 1863 is the ominous notation , \" During the last week in the month , ",
+    "prompt": "<|start_2d|> The \" Summaries of Work done at Little Rock Arsenal , C.S.A. \" continue at about the same pace and scale from August 1862 until August 1863 . <unk> t<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3626,7 +3626,7 @@
     }
   },
   {
-    "prompt": " = = = Release = = = \n",
+    "prompt": "<|start_2d|> = = = Release = = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3798,15 +3798,15 @@
     }
   },
   {
-    "prompt": " = = Plot = = \n",
+    "prompt": "<|start_2d|> = = Plot = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " Perhaps because Abraham Lincoln had not yet been inaugurated as President , Captain Totten received no instructions from his superiors and was forced to withdraw his troops . He agreed to surrender the arsenal as long as the governor agreed to three",
+    "prompt": "<|start_2d|> Perhaps because Abraham Lincoln had not yet been inaugurated as President , Captain Totten received no instructions from his superiors and was forced<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " Lt. Col. Dunnington continued to build up his works at Little Rock until November 1862 , when Captain Sanford C. Faulkner ( composer of The Arkansas Traveler ) was placed in charge of the Arsenal . Dunnington presumably returned to his naval duties ",
+    "prompt": "<|start_2d|> Lt. Col. Dunnington continued to build up his works at Little Rock until November 1862 , when Captain Sanford C. Faulkner ( composer of The Arkansas <|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3834,7 +3834,7 @@
     }
   },
   {
-    "prompt": " Except for \u00c6sthetic Club meetings , the Tower Building remained largely unoccupied for almost fifty years and suffered significant deterioration . The \u00c6sthetic Club provided much @-@ needed financial support during the period and even paid the elect",
+    "prompt": "<|start_2d|> Except for \u00c6sthetic Club meetings , the Tower Building remained largely unoccupied for almost fifty years and suffered significant deterioration . Th<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3873,11 +3873,11 @@
     }
   },
   {
-    "prompt": " In September 2010 , a teaser website was revealed by Sega , hinting at a new Valkyria Chronicles game . In its September issue , Famitsu listed that Senj\u014d no Valkyria 3 would be arriving on the PlayStation Portable . Its first public appearance was ",
+    "prompt": "<|start_2d|> In September 2010 , a teaser website was revealed by Sega , hinting at a new Valkyria Chronicles game . In its September issue , Famitsu listed that <|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " <unk> .69 cal smoothbore ( percussion ) 357 \n",
+    "prompt": "<|start_2d|> <unk> .69 cal smoothbore ( percussion ) 357 \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -3917,7 +3917,7 @@
     }
   },
   {
-    "prompt": " Concept work for Valkyria Chronicles III began after development finished on Valkyria Chronicles II in early 2010 , with full development beginning shortly after this . The director of Valkyria Chronicles II , Takeshi Ozawa , returned to that role f",
+    "prompt": "<|start_2d|> Concept work for Valkyria Chronicles III began after development finished on Valkyria Chronicles II in early 2010 , with full development beginning s<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -4005,7 +4005,7 @@
     }
   },
   {
-    "prompt": " = = Development = = \n",
+    "prompt": "<|start_2d|> = = Development = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -4081,7 +4081,7 @@
     }
   },
   {
-    "prompt": " \" Machinery was made for manufacturing percussion caps and small arms , and both were turned out in small quantity , but of excellent quality . Lead mines were opened and worked , and a chemical laboratory was established and successfully operated i",
+    "prompt": "<|start_2d|> \" Machinery was made for manufacturing percussion caps and small arms , and both were turned out in small quantity , but of excellent quality . Lead <|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -4109,7 +4109,7 @@
     }
   },
   {
-    "prompt": " The military force at Little Rock under Dunnington 's command consisted of four officers : himself , Major John B. Lockman , Captain C.C. Green , and 2nd Lt. W.W. Murphy . In addition to these , he had 20 enlisted men and a civilian force composed o",
+    "prompt": "<|start_2d|> The military force at Little Rock under Dunnington 's command consisted of four officers : himself , Major John B. Lockman , Captain C.C. Green , and<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -4137,7 +4137,7 @@
     }
   },
   {
-    "prompt": " On its day of release in Japan , Valkyria Chronicles III topped both platform @-@ exclusive and multi @-@ platform sales charts . By early February , the game sold 102 @,@ 779 units , coming in second overall to The Last Story for the Wii . By the e",
+    "prompt": "<|start_2d|> On its day of release in Japan , Valkyria Chronicles III topped both platform @-@ exclusive and multi @-@ platform sales charts . By early February ,<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -4165,7 +4165,7 @@
     }
   },
   {
-    "prompt": " 130 rounds , 6 @-@ pounder ball shot \n",
+    "prompt": "<|start_2d|> 130 rounds , 6 @-@ pounder ball shot \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -4181,7 +4181,7 @@
     }
   },
   {
-    "prompt": " 75 @,@ 000 buck & ball cartridges - percussion \n",
+    "prompt": "<|start_2d|> 75 @,@ 000 buck & ball cartridges - percussion \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -4197,11 +4197,11 @@
     }
   },
   {
-    "prompt": " In 1924 , the family moved into a four @-@ level , semi @-@ detached Victorian house at 23 The Waldrons . Barker had a studio built in the garden and her sister conducted a kindergarten in a room at the back of the house . The family lived frugally ",
+    "prompt": "<|start_2d|> In 1924 , the family moved into a four @-@ level , semi @-@ detached Victorian house at 23 The Waldrons . Barker had a studio built in the garden and<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " The arsenal was briefly seized once more by Joseph Brooks loyalists during the Brooks @-@ Baxter War of 1874 . \n",
+    "prompt": "<|start_2d|> The arsenal was briefly seized once more by Joseph Brooks loyalists during the Brooks @-@ Baxter War of 1874 . \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -4289,7 +4289,7 @@
     }
   },
   {
-    "prompt": " Barker took correspondence courses in art , probably until about 1919 . In 1908 at 13 years , she entered an evening class at the Croydon School of Art , and attended the school into the 1940s . In time , she received a teaching position . \n",
+    "prompt": "<|start_2d|> Barker took correspondence courses in art , probably until about 1919 . In 1908 at 13 years , she entered an evening class at the Croydon School of A<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -4341,7 +4341,7 @@
     }
   },
   {
-    "prompt": " In 1894 the Little Rock \u00c6sthetic Club , one of the oldest women 's societies west of the Mississippi River , moved into the Tower Building . This was prompted due to increased membership and a need for larger , more permanent quarters . The previous",
+    "prompt": "<|start_2d|> In 1894 the Little Rock \u00c6sthetic Club , one of the oldest women 's societies west of the Mississippi River , moved into the Tower Building . This was<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -4369,11 +4369,11 @@
     }
   },
   {
-    "prompt": " Most of the equipment , arms , and machinery at the Little Rock Arsenal was removed to east of the Mississippi River by order of Maj. Gen. Earl Van Dorn in April and May 1862 , and accountability for it is lost at that point . By all appearances , t",
+    "prompt": "<|start_2d|> Most of the equipment , arms , and machinery at the Little Rock Arsenal was removed to east of the Mississippi River by order of Maj. Gen. Earl Van D<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " Total 10 @,@ 247 \n",
+    "prompt": "<|start_2d|> Total 10 @,@ 247 \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -4401,7 +4401,7 @@
     }
   },
   {
-    "prompt": " The building and the surrounding park were used for many public purposes throughout the early 20th century . The Tower Building served as headquarters for the United Confederate Veterans Reunion , May 15 \u2013 18 , 1911 . Over 106 @,@ 000 Civil War vete",
+    "prompt": "<|start_2d|> The building and the surrounding park were used for many public purposes throughout the early 20th century . The Tower Building served as headquarter<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -4501,7 +4501,7 @@
     }
   },
   {
-    "prompt": " Perhaps the most illuminating points of the above \" Summary of Work \" and those for following months are that the standard ammunition made was . \" buck & ball \" , indicating that the .69 caliber smoothbores and shotguns remained the predominant cali",
+    "prompt": "<|start_2d|> Perhaps the most illuminating points of the above \" Summary of Work \" and those for following months are that the standard ammunition made was . \" bu<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -4613,7 +4613,7 @@
     }
   },
   {
-    "prompt": " = = Construction = = \n",
+    "prompt": "<|start_2d|> = = Construction = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -4713,11 +4713,11 @@
     }
   },
   {
-    "prompt": " 23 pistols ( repaired mostly for troops in service ) \n",
+    "prompt": "<|start_2d|> 23 pistols ( repaired mostly for troops in service ) \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " <unk> rifle ( \" Mississippi Rifle \" ) 54 \n",
+    "prompt": "<|start_2d|> <unk> rifle ( \" Mississippi Rifle \" ) 54 \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -5081,11 +5081,11 @@
     }
   },
   {
-    "prompt": " In 1997 , the Museum of Science and Natural History merged with the Little Rock Children 's Museum , which had been located in Union Station , to form the Arkansas Museum of Discovery . The new museum was relocated to a historic building in the Litt",
+    "prompt": "<|start_2d|> In 1997 , the Museum of Science and Natural History merged with the Little Rock Children 's Museum , which had been located in Union Station , to for<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " = = = The Waldrons = = = \n",
+    "prompt": "<|start_2d|> = = = The Waldrons = = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -5101,11 +5101,11 @@
     }
   },
   {
-    "prompt": " This ammunition , and that which I brought with me , was rapidly prepared for use at the Laboratory established at the Little Rock Arsenal for that purpose . As illustrating as the pitiful scarcity of material in the country , the fact may be stated",
+    "prompt": "<|start_2d|> This ammunition , and that which I brought with me , was rapidly prepared for use at the Laboratory established at the Little Rock Arsenal for that p<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " = = Gameplay = = \n",
+    "prompt": "<|start_2d|> = = Gameplay = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -5217,7 +5217,7 @@
     }
   },
   {
-    "prompt": " Barker was born the second daughter and youngest child of Walter Barker , a partner in a seed supply company and an amateur artist , and his wife Mary Eleanor ( Oswald ) Barker on 28 June 1895 at home at 66 Waddon Road in Croydon , Surrey , England ",
+    "prompt": "<|start_2d|> Barker was born the second daughter and youngest child of Walter Barker , a partner in a seed supply company and an amateur artist , and his wife Mar<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -5233,7 +5233,7 @@
     }
   },
   {
-    "prompt": " The building receives its name from its distinct octagonal tower . Besides being the last remaining structure of the original Little Rock Arsenal and one of the oldest buildings in central Arkansas , it was also the birthplace of General Douglas Mac",
+    "prompt": "<|start_2d|> The building receives its name from its distinct octagonal tower . Besides being the last remaining structure of the original Little Rock Arsenal and<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -5380,15 +5380,15 @@
     }
   },
   {
-    "prompt": " Following her father \u2019 s death in June 1912 , the seventeen @-@ year @-@ old Barker submitted art and poetry to My Magazine , Child \u2019 s Own , Leading Strings , and Raphael Tuck annuals in an effort to support both her mother and sister . Her sister ",
+    "prompt": "<|start_2d|> Following her father \u2019 s death in June 1912 , the seventeen @-@ year @-@ old Barker submitted art and poetry to My Magazine , Child \u2019 s Own , Leading<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " In 1942 , the Tower Building was renovated due to the efforts of the \u00c6sthetic Club , Little Rock philanthropist Frederick W. Allsop , and the Works Progress Administration . It became the new home of The Arkansas Museum of Natural History and Antiqu",
+    "prompt": "<|start_2d|> In 1942 , the Tower Building was renovated due to the efforts of the \u00c6sthetic Club , Little Rock philanthropist Frederick W. Allsop , and the Works P<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " Repaired and painted : \n",
+    "prompt": "<|start_2d|> Repaired and painted : \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -5524,7 +5524,7 @@
     }
   },
   {
-    "prompt": " Lt. Col. Dunnington 's \" Returns for the month of August , 1862 , at Little Rock Arsenal , C.S.A. , \" are found in Vol . 149 , Chapter IV of the \" Captured Rebel Ordnance Records , \" and are most enlightening as to the scope of Confederate ordnance ",
+    "prompt": "<|start_2d|> Lt. Col. Dunnington 's \" Returns for the month of August , 1862 , at Little Rock Arsenal , C.S.A. , \" are found in Vol . 149 , Chapter IV of the \" Ca<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -5540,11 +5540,11 @@
     }
   },
   {
-    "prompt": " The item was intended simply as a piece of news , but telegraph lines quickly spread the news throughout the state , fueling procession sentiment . The rumor was interpreted by some Arkansans as a call from the governor to assemble to help expel the",
+    "prompt": "<|start_2d|> The item was intended simply as a piece of news , but telegraph lines quickly spread the news throughout the state , fueling procession sentiment . T<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " Performed : \n",
+    "prompt": "<|start_2d|> Performed : \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -5572,7 +5572,7 @@
     }
   },
   {
-    "prompt": " Major General Thomas C. Hindman , sent to command the district of Arkansas in May , 1862 , found the state nearly destitute of military material . Hindman established another armory at Arkadelphia , and revived the Little Rock Arsenal as a collectio",
+    "prompt": "<|start_2d|> Major General Thomas C. Hindman , sent to command the district of Arkansas in May , 1862 , found the state nearly destitute of military material . Hi<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -5648,7 +5648,7 @@
     }
   },
   {
-    "prompt": " 2 @,@ 236 shotguns and rifles ( repaired mostly for troops in service ) \n",
+    "prompt": "<|start_2d|> 2 @,@ 236 shotguns and rifles ( repaired mostly for troops in service ) \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -5664,11 +5664,11 @@
     }
   },
   {
-    "prompt": " = = = Art education and first professional work = = = \n",
+    "prompt": "<|start_2d|> = = = Art education and first professional work = = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " In 1864 , after Little Rock fell to the Union Army and the arsenal had been recaptured , General Fredrick Steele marched 8 @,@ 500 troops from the arsenal beginning the Camden Expedition . \n",
+    "prompt": "<|start_2d|> In 1864 , after Little Rock fell to the Union Army and the arsenal had been recaptured , General Fredrick Steele marched 8 @,@ 500 troops from the ar<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -5684,7 +5684,7 @@
     }
   },
   {
-    "prompt": " The game takes place during the Second Europan War . Gallian Army Squad 422 , also known as \" The Nameless \" , are a penal military unit composed of criminals , foreign deserters , and military offenders whose real names are erased from the records ",
+    "prompt": "<|start_2d|> The game takes place during the Second Europan War . Gallian Army Squad 422 , also known as \" The Nameless \" , are a penal military unit composed of <|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -5868,7 +5868,7 @@
     }
   },
   {
-    "prompt": " = = Decommissioning = = \n",
+    "prompt": "<|start_2d|> = = Decommissioning = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -5884,7 +5884,7 @@
     }
   },
   {
-    "prompt": " = = = Later life and death = = = \n",
+    "prompt": "<|start_2d|> = = = Later life and death = = = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -5924,7 +5924,7 @@
     }
   },
   {
-    "prompt": " M1822 .69 cal ( flintlock ) 5 @,@ 625 \n",
+    "prompt": "<|start_2d|> M1822 .69 cal ( flintlock ) 5 @,@ 625 \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -5940,7 +5940,7 @@
     }
   },
   {
-    "prompt": " The arsenal was constructed at the request of Governor James Sevier Conway in response to the perceived dangers of frontier life and fears of the many Native Americans who were passing through the state on their way to the newly established Oklahoma",
+    "prompt": "<|start_2d|> The arsenal was constructed at the request of Governor James Sevier Conway in response to the perceived dangers of frontier life and fears of the man<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -6064,11 +6064,11 @@
     }
   },
   {
-    "prompt": " On the morning of February 8 , 1861 , Rector and Totten signed an agreement placing the arsenal in the hands of state officials . That afternoon , the citizen militia marched to the arsenal with Governor Rector at its head . All of the federal troop",
+    "prompt": "<|start_2d|> On the morning of February 8 , 1861 , Rector and Totten signed an agreement placing the arsenal in the hands of state officials . That afternoon , th<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " Partly due to these events , and partly due to the major losses in manpower Gallia suffers towards the end of the war with the Empire , the Nameless are offered a formal position as a squad in the Gallian Army rather than serve as an anonymous shado",
+    "prompt": "<|start_2d|> Partly due to these events , and partly due to the major losses in manpower Gallia suffers towards the end of the war with the Empire , the Nameless <|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -6084,7 +6084,7 @@
     }
   },
   {
-    "prompt": " <unk> common rifles 125 \n",
+    "prompt": "<|start_2d|> <unk> common rifles 125 \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -6112,7 +6112,7 @@
     }
   },
   {
-    "prompt": " = Valkyria Chronicles III = \n",
+    "prompt": "<|start_2d|> = Valkyria Chronicles III = \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -6224,7 +6224,7 @@
     }
   },
   {
-    "prompt": " Barker continued to attend evening classes at the Croydon Art School between the 1920s and the 1940s , eventually receiving a teaching position . She took sketching trips to Amberley and Storrington in Sussex and to Cornwall and the southern coast w",
+    "prompt": "<|start_2d|> Barker continued to attend evening classes at the Croydon Art School between the 1920s and the 1940s , eventually receiving a teaching position . She<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -6300,7 +6300,7 @@
     }
   },
   {
-    "prompt": " During the month of August , 1862 , the following work was performed : \" <unk> : one pair of musket bullet moulds ; 10 @,@ 000 buck & ball shot cartridges ; repaired : 750 muskets , shotguns , and rifles ; received and repaired : ordnance stores and",
+    "prompt": "<|start_2d|> During the month of August , 1862 , the following work was performed : \" <unk> : one pair of musket bullet moulds ; 10 @,@ 000 buck & ball shot cartr<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -6376,7 +6376,7 @@
     }
   },
   {
-    "prompt": " The Little Rock Arsenal was classified in 1860 as an \" arsenal of deposit , \" meaning that it was simply a warehouse for the storage of weapons intended for the use of the state militia in times of crisis . Thus there were no substantial operations ",
+    "prompt": "<|start_2d|> The Little Rock Arsenal was classified in 1860 as an \" arsenal of deposit , \" meaning that it was simply a warehouse for the storage of weapons inten<|end_2d|>",
     "prompt_metadata": {}
   },
   {
@@ -6464,11 +6464,11 @@
     }
   },
   {
-    "prompt": " Inside the Little Rock Arsenal after its seizure in February , 1861 , the Confederates inventoried some 10 @,@ 247 weapons , 250 @,@ 000 musket cartridges , and 520 @,@ 000 percussion caps , as well as the four bronze cannon of Totten 's battery . L",
+    "prompt": "<|start_2d|> Inside the Little Rock Arsenal after its seizure in February , 1861 , the Confederates inventoried some 10 @,@ 247 weapons , 250 @,@ 000 musket cartr<|end_2d|>",
     "prompt_metadata": {}
   },
   {
-    "prompt": " 752 packages of ordnance and ordnance stores received and mostly issued to troops in service . \n",
+    "prompt": "<|start_2d|> 752 packages of ordnance and ordnance stores received and mostly issued to troops in service . \n<|end_2d|>",
     "prompt_metadata": {}
   },
   {

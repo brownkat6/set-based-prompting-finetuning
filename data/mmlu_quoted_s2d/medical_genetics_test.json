@@ -1,6 +1,6 @@
 [
   {
-    "prompt": "In a Robertsonian translocation fusion occurs at the:|s2d|<|start_2d|>\"telomeres.\" <|split_2d|>\"centromeres.\" <|split_2d|>\"histones.\" <|split_2d|>\"ends of the long arms.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "In a Robertsonian translocation fusion occurs at the:~tag~<|start_2d|>\"telomeres.\" <|split_2d|>\"centromeres.\" <|split_2d|>\"histones.\" <|split_2d|>\"ends of the long arms.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "centromeres.",
       "incorrect_answers": [
@@ -11,7 +11,7 @@
     }
   },
   {
-    "prompt": "Zinc finger proteins and helix-turn-helix proteins are|s2d|<|start_2d|>\"types of DNA-binding proteins\" <|split_2d|>\"involved in the control of translation\" <|split_2d|>\"components of ribosomes\" <|split_2d|>\"part of the hemoglobin in blood cells\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Zinc finger proteins and helix-turn-helix proteins are~tag~<|start_2d|>\"types of DNA-binding proteins\" <|split_2d|>\"involved in the control of translation\" <|split_2d|>\"components of ribosomes\" <|split_2d|>\"part of the hemoglobin in blood cells\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "types of DNA-binding proteins",
       "incorrect_answers": [
@@ -22,7 +22,7 @@
     }
   },
   {
-    "prompt": "If the frequency of males affected with an X-linked recessive condition in a human population is .10 (one in ten), what will be the expected frequency of affected females?|s2d|<|start_2d|>\"0.01\" <|split_2d|>\"0.001\" <|split_2d|>\"0.02\" <|split_2d|>\"0.0001\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "If the frequency of males affected with an X-linked recessive condition in a human population is .10 (one in ten), what will be the expected frequency of affected females?~tag~<|start_2d|>\"0.01\" <|split_2d|>\"0.001\" <|split_2d|>\"0.02\" <|split_2d|>\"0.0001\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "0.01",
       "incorrect_answers": [
@@ -33,7 +33,7 @@
     }
   },
   {
-    "prompt": "In DNA adenine normally pairs with:|s2d|<|start_2d|>\"cytosine.\" <|split_2d|>\"guanine.\" <|split_2d|>\"thymine.\" <|split_2d|>\"uracil.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "In DNA adenine normally pairs with:~tag~<|start_2d|>\"cytosine.\" <|split_2d|>\"guanine.\" <|split_2d|>\"thymine.\" <|split_2d|>\"uracil.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "thymine.",
       "incorrect_answers": [
@@ -44,7 +44,7 @@
     }
   },
   {
-    "prompt": "The pattern of inheritance shown by malignant hyperthermia (hyperpyrexia) is:|s2d|<|start_2d|>\"autosomal dominant.\" <|split_2d|>\"autosomal recessive.\" <|split_2d|>\"X-linked dominant.\" <|split_2d|>\"X-linked recessive.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The pattern of inheritance shown by malignant hyperthermia (hyperpyrexia) is:~tag~<|start_2d|>\"autosomal dominant.\" <|split_2d|>\"autosomal recessive.\" <|split_2d|>\"X-linked dominant.\" <|split_2d|>\"X-linked recessive.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "autosomal dominant.",
       "incorrect_answers": [
@@ -55,7 +55,7 @@
     }
   },
   {
-    "prompt": "Mapping of human chromosomes:|s2d|<|start_2d|>\"has been restricted to the sex chromosomes because of small family sizes\" <|split_2d|>\"proceeded much more successfully as large numbers of DNA markers became available.\" <|split_2d|>\"has determined that the number of linkage groups is about twice the number of chromosomes\" <|split_2d|>\"has demonstrated that almost all of the DNA is involved in coding for genes\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Mapping of human chromosomes:~tag~<|start_2d|>\"has been restricted to the sex chromosomes because of small family sizes\" <|split_2d|>\"proceeded much more successfully as large numbers of DNA markers became available.\" <|split_2d|>\"has determined that the number of linkage groups is about twice the number of chromosomes\" <|split_2d|>\"has demonstrated that almost all of the DNA is involved in coding for genes\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "proceeded much more successfully as large numbers of DNA markers became available.",
       "incorrect_answers": [
@@ -66,7 +66,7 @@
     }
   },
   {
-    "prompt": "Intergenerational transmission to offspring can occur as a result of parental exposures to ______.|s2d|<|start_2d|>\"war\" <|split_2d|>\"natural disasters\" <|split_2d|>\"hunger\" <|split_2d|>\"all of these\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Intergenerational transmission to offspring can occur as a result of parental exposures to ______.~tag~<|start_2d|>\"war\" <|split_2d|>\"natural disasters\" <|split_2d|>\"hunger\" <|split_2d|>\"all of these\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "all of these",
       "incorrect_answers": [
@@ -77,7 +77,7 @@
     }
   },
   {
-    "prompt": "Asp235Phe in a molecular report indicates that:|s2d|<|start_2d|>\"asparagine has been replaced by phenylalanine.\" <|split_2d|>\"phenylalanine has been replaced by asparagine.\" <|split_2d|>\"aspartic acid has been replaced by phenylalanine.\" <|split_2d|>\"phenylalanine has been replaced by aspartic acid.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Asp235Phe in a molecular report indicates that:~tag~<|start_2d|>\"asparagine has been replaced by phenylalanine.\" <|split_2d|>\"phenylalanine has been replaced by asparagine.\" <|split_2d|>\"aspartic acid has been replaced by phenylalanine.\" <|split_2d|>\"phenylalanine has been replaced by aspartic acid.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "aspartic acid has been replaced by phenylalanine.",
       "incorrect_answers": [
@@ -88,7 +88,7 @@
     }
   },
   {
-    "prompt": "The risk of abnormality in the child of a mother with untreated phenylketonuria is:|s2d|<|start_2d|>\"1%\" <|split_2d|>\"10%\" <|split_2d|>\"25%\" <|split_2d|>\"Almost 100%\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The risk of abnormality in the child of a mother with untreated phenylketonuria is:~tag~<|start_2d|>\"1%\" <|split_2d|>\"10%\" <|split_2d|>\"25%\" <|split_2d|>\"Almost 100%\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Almost 100%",
       "incorrect_answers": [
@@ -99,7 +99,7 @@
     }
   },
   {
-    "prompt": "Exon skipping is associated with:|s2d|<|start_2d|>\"nonsense mutations.\" <|split_2d|>\"regulatory mutations.\" <|split_2d|>\"RNA processing mutations.\" <|split_2d|>\"silent mutations.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Exon skipping is associated with:~tag~<|start_2d|>\"nonsense mutations.\" <|split_2d|>\"regulatory mutations.\" <|split_2d|>\"RNA processing mutations.\" <|split_2d|>\"silent mutations.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "RNA processing mutations.",
       "incorrect_answers": [
@@ -110,7 +110,7 @@
     }
   },
   {
-    "prompt": "Which of the following is not a chromosome instability syndrome?|s2d|<|start_2d|>\"Klinefelter syndrome\" <|split_2d|>\"Ataxia telangiectasia\" <|split_2d|>\"Fanconi anaemia\" <|split_2d|>\"Bloom syndrome\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following is not a chromosome instability syndrome?~tag~<|start_2d|>\"Klinefelter syndrome\" <|split_2d|>\"Ataxia telangiectasia\" <|split_2d|>\"Fanconi anaemia\" <|split_2d|>\"Bloom syndrome\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Klinefelter syndrome",
       "incorrect_answers": [
@@ -121,7 +121,7 @@
     }
   },
   {
-    "prompt": "Normal adult haemoglobin (Hb A) consists of:|s2d|<|start_2d|>\"two \u03b1 (alpha) and two \u03b2 (beta) chains.\" <|split_2d|>\"two \u03b1 and two \u03b3 (gamma) chains.\" <|split_2d|>\"two \u03b1 and two \u03b4 (delta) chains.\" <|split_2d|>\"four \u03b3 chains.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Normal adult haemoglobin (Hb A) consists of:~tag~<|start_2d|>\"two \u03b1 (alpha) and two \u03b2 (beta) chains.\" <|split_2d|>\"two \u03b1 and two \u03b3 (gamma) chains.\" <|split_2d|>\"two \u03b1 and two \u03b4 (delta) chains.\" <|split_2d|>\"four \u03b3 chains.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "two \u03b1 (alpha) and two \u03b2 (beta) chains.",
       "incorrect_answers": [
@@ -132,7 +132,7 @@
     }
   },
   {
-    "prompt": "In a condition such as schizophrenia the recurrence risk will be greatest for which of the following relatives of an affected individual?|s2d|<|start_2d|>\"Brother\" <|split_2d|>\"Nephew\" <|split_2d|>\"Grandchild\" <|split_2d|>\"Aunt\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "In a condition such as schizophrenia the recurrence risk will be greatest for which of the following relatives of an affected individual?~tag~<|start_2d|>\"Brother\" <|split_2d|>\"Nephew\" <|split_2d|>\"Grandchild\" <|split_2d|>\"Aunt\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Brother",
       "incorrect_answers": [
@@ -143,7 +143,7 @@
     }
   },
   {
-    "prompt": "The mutation in sickle-cell disease consists of:|s2d|<|start_2d|>\"a deletion.\" <|split_2d|>\"a duplication.\" <|split_2d|>\"an insertion.\" <|split_2d|>\"a point mutation.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The mutation in sickle-cell disease consists of:~tag~<|start_2d|>\"a deletion.\" <|split_2d|>\"a duplication.\" <|split_2d|>\"an insertion.\" <|split_2d|>\"a point mutation.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "a point mutation.",
       "incorrect_answers": [
@@ -154,7 +154,7 @@
     }
   },
   {
-    "prompt": "Which of the following is an example of monosomy?|s2d|<|start_2d|>\"46,XX\" <|split_2d|>\"47,XXX\" <|split_2d|>\"69,XYY\" <|split_2d|>\"45,X\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following is an example of monosomy?~tag~<|start_2d|>\"46,XX\" <|split_2d|>\"47,XXX\" <|split_2d|>\"69,XYY\" <|split_2d|>\"45,X\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "45,X",
       "incorrect_answers": [
@@ -165,7 +165,7 @@
     }
   },
   {
-    "prompt": "QTL analysis is used to|s2d|<|start_2d|>\"identify chromosome regions associated with a complex trait in a genetic cross\" <|split_2d|>\"determine which genes are expressed at a developmental stage\" <|split_2d|>\"map genes in bacterial viruses\" <|split_2d|>\"identify RNA polymerase binding sites\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "QTL analysis is used to~tag~<|start_2d|>\"identify chromosome regions associated with a complex trait in a genetic cross\" <|split_2d|>\"determine which genes are expressed at a developmental stage\" <|split_2d|>\"map genes in bacterial viruses\" <|split_2d|>\"identify RNA polymerase binding sites\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "identify chromosome regions associated with a complex trait in a genetic cross",
       "incorrect_answers": [
@@ -176,7 +176,7 @@
     }
   },
   {
-    "prompt": "What would be the frequency of AABBCC individuals from a mating of two AaBbCc individuals?|s2d|<|start_2d|>\"1.0/64\" <|split_2d|>\"1.0/32\" <|split_2d|>\"1.0/128\" <|split_2d|>\"1.0/256\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "What would be the frequency of AABBCC individuals from a mating of two AaBbCc individuals?~tag~<|start_2d|>\"1.0/64\" <|split_2d|>\"1.0/32\" <|split_2d|>\"1.0/128\" <|split_2d|>\"1.0/256\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "1.0/64",
       "incorrect_answers": [
@@ -187,7 +187,7 @@
     }
   },
   {
-    "prompt": "It is currently estimated that there are ______ human protein-coding genes although this estimate may be reduced over time.|s2d|<|start_2d|>\"10,000\u201315,000\" <|split_2d|>\"19,000\u201320,000\" <|split_2d|>\"29,000\u201330,000\" <|split_2d|>\"100,000\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "It is currently estimated that there are ______ human protein-coding genes although this estimate may be reduced over time.~tag~<|start_2d|>\"10,000\u201315,000\" <|split_2d|>\"19,000\u201320,000\" <|split_2d|>\"29,000\u201330,000\" <|split_2d|>\"100,000\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "19,000\u201320,000",
       "incorrect_answers": [
@@ -198,7 +198,7 @@
     }
   },
   {
-    "prompt": "With which of the following relatives is an individual most likely to share a common HLA haplotype?|s2d|<|start_2d|>\"Father\" <|split_2d|>\"Mother\" <|split_2d|>\"Sister\" <|split_2d|>\"Son\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "With which of the following relatives is an individual most likely to share a common HLA haplotype?~tag~<|start_2d|>\"Father\" <|split_2d|>\"Mother\" <|split_2d|>\"Sister\" <|split_2d|>\"Son\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Sister",
       "incorrect_answers": [
@@ -209,7 +209,7 @@
     }
   },
   {
-    "prompt": "Which of the following genes conveys susceptibility for polygenic Alzheimer disease?|s2d|<|start_2d|>\"APP\" <|split_2d|>\"PS1\" <|split_2d|>\"PS2\" <|split_2d|>\"APOE\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following genes conveys susceptibility for polygenic Alzheimer disease?~tag~<|start_2d|>\"APP\" <|split_2d|>\"PS1\" <|split_2d|>\"PS2\" <|split_2d|>\"APOE\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "APOE",
       "incorrect_answers": [
@@ -220,7 +220,7 @@
     }
   },
   {
-    "prompt": "The DiGeorge/Shprintzen syndrome is caused by a deletion in which chromosome?|s2d|<|start_2d|>\"4\" <|split_2d|>\"7\" <|split_2d|>\"15\" <|split_2d|>\"22\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The DiGeorge/Shprintzen syndrome is caused by a deletion in which chromosome?~tag~<|start_2d|>\"4\" <|split_2d|>\"7\" <|split_2d|>\"15\" <|split_2d|>\"22\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "22",
       "incorrect_answers": [
@@ -231,7 +231,7 @@
     }
   },
   {
-    "prompt": "X-chromosome inactivation|s2d|<|start_2d|>\"results in genetically turning off one of the two X chromosomes in female mammals\" <|split_2d|>\"takes place in humans so that the same X chromosome is inactive in all of the cells of a female\" <|split_2d|>\"is the cause of the Y chromosome being genetically inactive\" <|split_2d|>\"occurs in fruit flies but not in mammals\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "X-chromosome inactivation~tag~<|start_2d|>\"results in genetically turning off one of the two X chromosomes in female mammals\" <|split_2d|>\"takes place in humans so that the same X chromosome is inactive in all of the cells of a female\" <|split_2d|>\"is the cause of the Y chromosome being genetically inactive\" <|split_2d|>\"occurs in fruit flies but not in mammals\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "results in genetically turning off one of the two X chromosomes in female mammals",
       "incorrect_answers": [
@@ -242,7 +242,7 @@
     }
   },
   {
-    "prompt": "The pattern of inheritance shown by glucose-6-phosphate dehydrogenase (G6PD) deficiency is:|s2d|<|start_2d|>\"autosomal dominant.\" <|split_2d|>\"autosomal recessive.\" <|split_2d|>\"X-linked dominant.\" <|split_2d|>\"X-linked recessive.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The pattern of inheritance shown by glucose-6-phosphate dehydrogenase (G6PD) deficiency is:~tag~<|start_2d|>\"autosomal dominant.\" <|split_2d|>\"autosomal recessive.\" <|split_2d|>\"X-linked dominant.\" <|split_2d|>\"X-linked recessive.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "X-linked recessive.",
       "incorrect_answers": [
@@ -253,7 +253,7 @@
     }
   },
   {
-    "prompt": "Homeobox sequences|s2d|<|start_2d|>\"are present in the genome of many animal species\" <|split_2d|>\"are found in prokaryotes but not in eukaryotes\" <|split_2d|>\"were identified as the integration sites for bacterial viruses\" <|split_2d|>\"represent integration sites for transposable elements\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Homeobox sequences~tag~<|start_2d|>\"are present in the genome of many animal species\" <|split_2d|>\"are found in prokaryotes but not in eukaryotes\" <|split_2d|>\"were identified as the integration sites for bacterial viruses\" <|split_2d|>\"represent integration sites for transposable elements\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "are present in the genome of many animal species",
       "incorrect_answers": [
@@ -264,7 +264,7 @@
     }
   },
   {
-    "prompt": "Which of the following karyotypes is diagnostic of Down syndrome|s2d|<|start_2d|>\"46,XX,der(14;21)(q10;q10)pat+21\" <|split_2d|>\"47,XY,+13\" <|split_2d|>\"45,XX,rob,(14;21)(q10;q10)\" <|split_2d|>\"46,XY,t(2;3)(q21;q12)\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following karyotypes is diagnostic of Down syndrome~tag~<|start_2d|>\"46,XX,der(14;21)(q10;q10)pat+21\" <|split_2d|>\"47,XY,+13\" <|split_2d|>\"45,XX,rob,(14;21)(q10;q10)\" <|split_2d|>\"46,XY,t(2;3)(q21;q12)\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "46,XX,der(14;21)(q10;q10)pat+21",
       "incorrect_answers": [
@@ -275,7 +275,7 @@
     }
   },
   {
-    "prompt": "Nature is more important for ______ differences, while nurture has greater influence on ______ differences.|s2d|<|start_2d|>\"structural and anatomical; psychological and social\" <|split_2d|>\"psychological and social; structural and anatomical\" <|split_2d|>\"structural and psychological; anatomical and social\" <|split_2d|>\"social and anatomical; psychological and structural\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Nature is more important for ______ differences, while nurture has greater influence on ______ differences.~tag~<|start_2d|>\"structural and anatomical; psychological and social\" <|split_2d|>\"psychological and social; structural and anatomical\" <|split_2d|>\"structural and psychological; anatomical and social\" <|split_2d|>\"social and anatomical; psychological and structural\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "structural and anatomical; psychological and social",
       "incorrect_answers": [
@@ -286,7 +286,7 @@
     }
   },
   {
-    "prompt": "Which of the following would result in Angelman syndrome?|s2d|<|start_2d|>\"Maternal UPD 15\" <|split_2d|>\"Paternal UPD 15\" <|split_2d|>\"Deletion in the paternally derived chromosome 15\" <|split_2d|>\"A mutation in the SNRPN promoter\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following would result in Angelman syndrome?~tag~<|start_2d|>\"Maternal UPD 15\" <|split_2d|>\"Paternal UPD 15\" <|split_2d|>\"Deletion in the paternally derived chromosome 15\" <|split_2d|>\"A mutation in the SNRPN promoter\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Paternal UPD 15",
       "incorrect_answers": [
@@ -297,7 +297,7 @@
     }
   },
   {
-    "prompt": "Recombinant alpha-iduronidase is used for the treatment of which disease/syndrome?|s2d|<|start_2d|>\"Fabry disease\" <|split_2d|>\"Gaucher disease\" <|split_2d|>\"Hurler syndrome\" <|split_2d|>\"Pompe disease\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Recombinant alpha-iduronidase is used for the treatment of which disease/syndrome?~tag~<|start_2d|>\"Fabry disease\" <|split_2d|>\"Gaucher disease\" <|split_2d|>\"Hurler syndrome\" <|split_2d|>\"Pompe disease\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Hurler syndrome",
       "incorrect_answers": [
@@ -308,7 +308,7 @@
     }
   },
   {
-    "prompt": "Research from Moshe Szyf and colleagues has provided significant findings on the epigenetic influences of prenatal maternal stress. This work has been labelled ______.|s2d|<|start_2d|>\"developmental epigenetics\" <|split_2d|>\"social epigenetics\" <|split_2d|>\"fetal epigenetics\" <|split_2d|>\"maternal epigenetics\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Research from Moshe Szyf and colleagues has provided significant findings on the epigenetic influences of prenatal maternal stress. This work has been labelled ______.~tag~<|start_2d|>\"developmental epigenetics\" <|split_2d|>\"social epigenetics\" <|split_2d|>\"fetal epigenetics\" <|split_2d|>\"maternal epigenetics\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "social epigenetics",
       "incorrect_answers": [
@@ -319,7 +319,7 @@
     }
   },
   {
-    "prompt": "If both parents are affected with the same autosomal recessive disorder then the probability that each of their children will be affected equals ___.|s2d|<|start_2d|>\"1 in 4\" <|split_2d|>\"1 in 2\" <|split_2d|>\"2 in 3\" <|split_2d|>\"1\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "If both parents are affected with the same autosomal recessive disorder then the probability that each of their children will be affected equals ___.~tag~<|start_2d|>\"1 in 4\" <|split_2d|>\"1 in 2\" <|split_2d|>\"2 in 3\" <|split_2d|>\"1\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "1",
       "incorrect_answers": [
@@ -330,7 +330,7 @@
     }
   },
   {
-    "prompt": "The mutational mechanism in \u03b4\u03b2-thalassaemia consists of:|s2d|<|start_2d|>\"a deletion.\" <|split_2d|>\"a duplication.\" <|split_2d|>\"an insertion.\" <|split_2d|>\"a point mutation.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The mutational mechanism in \u03b4\u03b2-thalassaemia consists of:~tag~<|start_2d|>\"a deletion.\" <|split_2d|>\"a duplication.\" <|split_2d|>\"an insertion.\" <|split_2d|>\"a point mutation.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "a deletion.",
       "incorrect_answers": [
@@ -341,7 +341,7 @@
     }
   },
   {
-    "prompt": "Assuming Hardy-Weinberg equilibrium, the genoypte frequency of heterozygotes, if the frequency of the two alleles at the gene being studied are 0.6 and 0.4, will be:|s2d|<|start_2d|>\"0.8\" <|split_2d|>\"0.64\" <|split_2d|>\"0.48\" <|split_2d|>\"0.32\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Assuming Hardy-Weinberg equilibrium, the genoypte frequency of heterozygotes, if the frequency of the two alleles at the gene being studied are 0.6 and 0.4, will be:~tag~<|start_2d|>\"0.8\" <|split_2d|>\"0.64\" <|split_2d|>\"0.48\" <|split_2d|>\"0.32\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "0.48",
       "incorrect_answers": [
@@ -352,7 +352,7 @@
     }
   },
   {
-    "prompt": "Familial hypercholesterolaemia is caused by mutations in the gene which encodes what?|s2d|<|start_2d|>\"High density lipoprotein\" <|split_2d|>\"HMG-CoA reductase\" <|split_2d|>\"Low density lipoprotein\" <|split_2d|>\"Low density lipoprotein receptor\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Familial hypercholesterolaemia is caused by mutations in the gene which encodes what?~tag~<|start_2d|>\"High density lipoprotein\" <|split_2d|>\"HMG-CoA reductase\" <|split_2d|>\"Low density lipoprotein\" <|split_2d|>\"Low density lipoprotein receptor\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Low density lipoprotein receptor",
       "incorrect_answers": [
@@ -363,7 +363,7 @@
     }
   },
   {
-    "prompt": "A cross between two true breeding lines one with dark blue flowers and one with bright white flowers produces F1 offspring that are light blue. When the F1 progeny are selfed a 1:2:1 ratio of dark blue to light blue to white flowers is observed. What genetic phenomenon is consistent with these results?|s2d|<|start_2d|>\"epistasis\" <|split_2d|>\"incomplete dominance\" <|split_2d|>\"codominance\" <|split_2d|>\"inbreeding depression\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "A cross between two true breeding lines one with dark blue flowers and one with bright white flowers produces F1 offspring that are light blue. When the F1 progeny are selfed a 1:2:1 ratio of dark blue to light blue to white flowers is observed. What genetic phenomenon is consistent with these results?~tag~<|start_2d|>\"epistasis\" <|split_2d|>\"incomplete dominance\" <|split_2d|>\"codominance\" <|split_2d|>\"inbreeding depression\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "incomplete dominance",
       "incorrect_answers": [
@@ -374,7 +374,7 @@
     }
   },
   {
-    "prompt": "The proportion of babies that have an abnormality identifiable at birth is _____.|s2d|<|start_2d|>\"1 in 10\" <|split_2d|>\"1 in 40\" <|split_2d|>\"1 in 100\" <|split_2d|>\"1 in 500\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The proportion of babies that have an abnormality identifiable at birth is _____.~tag~<|start_2d|>\"1 in 10\" <|split_2d|>\"1 in 40\" <|split_2d|>\"1 in 100\" <|split_2d|>\"1 in 500\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "1 in 40",
       "incorrect_answers": [
@@ -385,7 +385,7 @@
     }
   },
   {
-    "prompt": "______ explained genetic disorders such as alkaptonuria and albinism.|s2d|<|start_2d|>\"Recessive inheritance has\" <|split_2d|>\"Dominant genes have\" <|split_2d|>\"X chromosomes\" <|split_2d|>\"Y chromosomes\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "______ explained genetic disorders such as alkaptonuria and albinism.~tag~<|start_2d|>\"Recessive inheritance has\" <|split_2d|>\"Dominant genes have\" <|split_2d|>\"X chromosomes\" <|split_2d|>\"Y chromosomes\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Recessive inheritance has",
       "incorrect_answers": [
@@ -396,7 +396,7 @@
     }
   },
   {
-    "prompt": "Which of the following conditions shows anticipation in paternal transmission?|s2d|<|start_2d|>\"Huntington disease\" <|split_2d|>\"Marfan syndrome\" <|split_2d|>\"Cystic fibrosis\" <|split_2d|>\"Fragile X syndrome\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following conditions shows anticipation in paternal transmission?~tag~<|start_2d|>\"Huntington disease\" <|split_2d|>\"Marfan syndrome\" <|split_2d|>\"Cystic fibrosis\" <|split_2d|>\"Fragile X syndrome\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Huntington disease",
       "incorrect_answers": [
@@ -407,7 +407,7 @@
     }
   },
   {
-    "prompt": "A homeotic mutation is one which|s2d|<|start_2d|>\"is present in only one form in an individual\" <|split_2d|>\"substitutes one body part for another in development\" <|split_2d|>\"results in development of a tumor\" <|split_2d|>\"is wild type at one temperature and abnormal at another\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "A homeotic mutation is one which~tag~<|start_2d|>\"is present in only one form in an individual\" <|split_2d|>\"substitutes one body part for another in development\" <|split_2d|>\"results in development of a tumor\" <|split_2d|>\"is wild type at one temperature and abnormal at another\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "substitutes one body part for another in development",
       "incorrect_answers": [
@@ -418,7 +418,7 @@
     }
   },
   {
-    "prompt": "Which of the following is not a familial cancer syndrome|s2d|<|start_2d|>\"Familial adenomatous polyposis\" <|split_2d|>\"Li-Fraumeni syndrome\" <|split_2d|>\"Von Hippel-Lindau syndrome\" <|split_2d|>\"Waardenburg syndrome\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following is not a familial cancer syndrome~tag~<|start_2d|>\"Familial adenomatous polyposis\" <|split_2d|>\"Li-Fraumeni syndrome\" <|split_2d|>\"Von Hippel-Lindau syndrome\" <|split_2d|>\"Waardenburg syndrome\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Waardenburg syndrome",
       "incorrect_answers": [
@@ -429,7 +429,7 @@
     }
   },
   {
-    "prompt": "The epigenetic inheritance system has been described as ______ (Mayr and Provine, 1980).|s2d|<|start_2d|>\"genotype inheritance\" <|split_2d|>\"soft inheritance\" <|split_2d|>\"RNA inheritance\" <|split_2d|>\"hard inheritance\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The epigenetic inheritance system has been described as ______ (Mayr and Provine, 1980).~tag~<|start_2d|>\"genotype inheritance\" <|split_2d|>\"soft inheritance\" <|split_2d|>\"RNA inheritance\" <|split_2d|>\"hard inheritance\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "soft inheritance",
       "incorrect_answers": [
@@ -440,7 +440,7 @@
     }
   },
   {
-    "prompt": "Severe anaemia at birth is a feature of what?|s2d|<|start_2d|>\"Alpha-thalassaemia\" <|split_2d|>\"Beta-thalassaemia\" <|split_2d|>\"Hereditary persistence of fetal haemoglobin\" <|split_2d|>\"Sickle cell disease\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Severe anaemia at birth is a feature of what?~tag~<|start_2d|>\"Alpha-thalassaemia\" <|split_2d|>\"Beta-thalassaemia\" <|split_2d|>\"Hereditary persistence of fetal haemoglobin\" <|split_2d|>\"Sickle cell disease\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Alpha-thalassaemia",
       "incorrect_answers": [
@@ -451,7 +451,7 @@
     }
   },
   {
-    "prompt": "If an X-linked recessive disorder is in Hardy-Weinberg equilibrium and the incidence in males equals 1 in 100, then the expected incidence of affected homozygous females would be _______.|s2d|<|start_2d|>\"1 in 1000\" <|split_2d|>\"1 in 4000\" <|split_2d|>\"1 in 10 000\" <|split_2d|>\"1 in 40 000\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "If an X-linked recessive disorder is in Hardy-Weinberg equilibrium and the incidence in males equals 1 in 100, then the expected incidence of affected homozygous females would be _______.~tag~<|start_2d|>\"1 in 1000\" <|split_2d|>\"1 in 4000\" <|split_2d|>\"1 in 10 000\" <|split_2d|>\"1 in 40 000\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "1 in 10 000",
       "incorrect_answers": [
@@ -462,7 +462,7 @@
     }
   },
   {
-    "prompt": "Tay-Sachs disease is caused by deficiency of _________________?|s2d|<|start_2d|>\"Alpha-L-iduronidase\" <|split_2d|>\"Glucose-6-phosphatase\" <|split_2d|>\"Hexosaminidase A\" <|split_2d|>\"Homogentisic acid oxidase\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Tay-Sachs disease is caused by deficiency of _________________?~tag~<|start_2d|>\"Alpha-L-iduronidase\" <|split_2d|>\"Glucose-6-phosphatase\" <|split_2d|>\"Hexosaminidase A\" <|split_2d|>\"Homogentisic acid oxidase\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Hexosaminidase A",
       "incorrect_answers": [
@@ -473,7 +473,7 @@
     }
   },
   {
-    "prompt": "A nonsense mutation involves:|s2d|<|start_2d|>\"a regulatory sequence.\" <|split_2d|>\"an AG splice acceptor site.\" <|split_2d|>\"the creation of a different amino acid.\" <|split_2d|>\"the creation of a stop codon.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "A nonsense mutation involves:~tag~<|start_2d|>\"a regulatory sequence.\" <|split_2d|>\"an AG splice acceptor site.\" <|split_2d|>\"the creation of a different amino acid.\" <|split_2d|>\"the creation of a stop codon.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "the creation of a stop codon.",
       "incorrect_answers": [
@@ -484,7 +484,7 @@
     }
   },
   {
-    "prompt": "The polymerase chain reaction or PCR is a technique that|s2d|<|start_2d|>\"was used to demonstrate DNA as the genetic material\" <|split_2d|>\"is used to determine the content of minerals in a soil sample\" <|split_2d|>\"uses short DNA primers and a thermostable DNA polymerase to replicate specific DNA sequences in vitro.\" <|split_2d|>\"measures the ribosome transfer rate during translation\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The polymerase chain reaction or PCR is a technique that~tag~<|start_2d|>\"was used to demonstrate DNA as the genetic material\" <|split_2d|>\"is used to determine the content of minerals in a soil sample\" <|split_2d|>\"uses short DNA primers and a thermostable DNA polymerase to replicate specific DNA sequences in vitro.\" <|split_2d|>\"measures the ribosome transfer rate during translation\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "uses short DNA primers and a thermostable DNA polymerase to replicate specific DNA sequences in vitro.",
       "incorrect_answers": [
@@ -495,7 +495,7 @@
     }
   },
   {
-    "prompt": "The maternal serum level of alpha-fetoprotein (AFP) is lower than average in which situation?|s2d|<|start_2d|>\"Down syndrome\" <|split_2d|>\"Exomphalos\" <|split_2d|>\"Neural tube defects\" <|split_2d|>\"Twin pregnancies\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The maternal serum level of alpha-fetoprotein (AFP) is lower than average in which situation?~tag~<|start_2d|>\"Down syndrome\" <|split_2d|>\"Exomphalos\" <|split_2d|>\"Neural tube defects\" <|split_2d|>\"Twin pregnancies\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Down syndrome",
       "incorrect_answers": [
@@ -506,7 +506,7 @@
     }
   },
   {
-    "prompt": "______ has been described as the phenomenon by which one genotype can give rise to a range of different physiological or morphological states in response to different environmental conditions during development (West-Eberhard, 1989).|s2d|<|start_2d|>\"Fetal plasticity\" <|split_2d|>\"The fetal origins hypothesis\" <|split_2d|>\"Developmental plasticity\" <|split_2d|>\"Environmental plasticity\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "______ has been described as the phenomenon by which one genotype can give rise to a range of different physiological or morphological states in response to different environmental conditions during development (West-Eberhard, 1989).~tag~<|start_2d|>\"Fetal plasticity\" <|split_2d|>\"The fetal origins hypothesis\" <|split_2d|>\"Developmental plasticity\" <|split_2d|>\"Environmental plasticity\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Developmental plasticity",
       "incorrect_answers": [
@@ -517,7 +517,7 @@
     }
   },
   {
-    "prompt": "Arabidopsis is advantageous for plant genetic research because:|s2d|<|start_2d|>\"it is commercially important as a food crop\" <|split_2d|>\"it is an endangered species\" <|split_2d|>\"it is the closest to humans of any existing plant\" <|split_2d|>\"it is a small plant with a small genome size which can be raised inexpensively\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Arabidopsis is advantageous for plant genetic research because:~tag~<|start_2d|>\"it is commercially important as a food crop\" <|split_2d|>\"it is an endangered species\" <|split_2d|>\"it is the closest to humans of any existing plant\" <|split_2d|>\"it is a small plant with a small genome size which can be raised inexpensively\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "it is a small plant with a small genome size which can be raised inexpensively",
       "incorrect_answers": [
@@ -528,7 +528,7 @@
     }
   },
   {
-    "prompt": "The proportion of genes shared by first cousins is on average ___.|s2d|<|start_2d|>\"1.0/2\" <|split_2d|>\"1.0/4\" <|split_2d|>\"1.0/8\" <|split_2d|>\"1.0/16\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The proportion of genes shared by first cousins is on average ___.~tag~<|start_2d|>\"1.0/2\" <|split_2d|>\"1.0/4\" <|split_2d|>\"1.0/8\" <|split_2d|>\"1.0/16\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "1.0/8",
       "incorrect_answers": [
@@ -539,7 +539,7 @@
     }
   },
   {
-    "prompt": "Which of the following is not a tumour suppressor gene?|s2d|<|start_2d|>\"APC\" <|split_2d|>\"NF1\" <|split_2d|>\"RB1\" <|split_2d|>\"RET\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following is not a tumour suppressor gene?~tag~<|start_2d|>\"APC\" <|split_2d|>\"NF1\" <|split_2d|>\"RB1\" <|split_2d|>\"RET\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "RET",
       "incorrect_answers": [
@@ -550,7 +550,7 @@
     }
   },
   {
-    "prompt": "Which of the following is a feature of X-linked dominant inheritance?|s2d|<|start_2d|>\"Parental consanguinity\" <|split_2d|>\"Male to male transmission\" <|split_2d|>\"Transmission only by females\" <|split_2d|>\"Transmitted by males only to females\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following is a feature of X-linked dominant inheritance?~tag~<|start_2d|>\"Parental consanguinity\" <|split_2d|>\"Male to male transmission\" <|split_2d|>\"Transmission only by females\" <|split_2d|>\"Transmitted by males only to females\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Transmitted by males only to females",
       "incorrect_answers": [
@@ -561,7 +561,7 @@
     }
   },
   {
-    "prompt": "On average, how many fragments would a restriction enzyme which recognizes a specific 4 base sequence in DNA be expected to cleave a double-stranded bacteriophage with a genome size of 5,000 bp into?|s2d|<|start_2d|>\"about 2\" <|split_2d|>\"about 4\" <|split_2d|>\"about 20\" <|split_2d|>\"about 50\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "On average, how many fragments would a restriction enzyme which recognizes a specific 4 base sequence in DNA be expected to cleave a double-stranded bacteriophage with a genome size of 5,000 bp into?~tag~<|start_2d|>\"about 2\" <|split_2d|>\"about 4\" <|split_2d|>\"about 20\" <|split_2d|>\"about 50\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "about 20",
       "incorrect_answers": [
@@ -572,7 +572,7 @@
     }
   },
   {
-    "prompt": "Positional cloning refers to|s2d|<|start_2d|>\"using a selection procedure to clone a cDNA\" <|split_2d|>\"cloning a portion of a gene using PCR\" <|split_2d|>\"isolating a gene by PCR using primers from another species\" <|split_2d|>\"mapping a gene to a chromosomal region and then identifying and cloning a genomic copy of the gene from the region\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Positional cloning refers to~tag~<|start_2d|>\"using a selection procedure to clone a cDNA\" <|split_2d|>\"cloning a portion of a gene using PCR\" <|split_2d|>\"isolating a gene by PCR using primers from another species\" <|split_2d|>\"mapping a gene to a chromosomal region and then identifying and cloning a genomic copy of the gene from the region\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "mapping a gene to a chromosomal region and then identifying and cloning a genomic copy of the gene from the region",
       "incorrect_answers": [
@@ -583,7 +583,7 @@
     }
   },
   {
-    "prompt": "Plasmid vectors for cloning|s2d|<|start_2d|>\"can generally accommodate larger inserts than phage vectors can\" <|split_2d|>\"grow within bacteria, and are present in bacterial colonies on an agar plate\" <|split_2d|>\"can accommodate inserts of over 100 kilobases\" <|split_2d|>\"include centromeres to allow propagation in yeast\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Plasmid vectors for cloning~tag~<|start_2d|>\"can generally accommodate larger inserts than phage vectors can\" <|split_2d|>\"grow within bacteria, and are present in bacterial colonies on an agar plate\" <|split_2d|>\"can accommodate inserts of over 100 kilobases\" <|split_2d|>\"include centromeres to allow propagation in yeast\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "grow within bacteria, and are present in bacterial colonies on an agar plate",
       "incorrect_answers": [
@@ -594,7 +594,7 @@
     }
   },
   {
-    "prompt": "Transcriptional activator proteins|s2d|<|start_2d|>\"bind regions near a eukaryotic gene and allow an RNA polymerase to transcribe a gene\" <|split_2d|>\"bind to ribosomes to activate the production of specific proteins\" <|split_2d|>\"are produced during an infection of bacteria by a phage\" <|split_2d|>\"are essential to function of transfer RNAs during translation\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Transcriptional activator proteins~tag~<|start_2d|>\"bind regions near a eukaryotic gene and allow an RNA polymerase to transcribe a gene\" <|split_2d|>\"bind to ribosomes to activate the production of specific proteins\" <|split_2d|>\"are produced during an infection of bacteria by a phage\" <|split_2d|>\"are essential to function of transfer RNAs during translation\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "bind regions near a eukaryotic gene and allow an RNA polymerase to transcribe a gene",
       "incorrect_answers": [
@@ -605,7 +605,7 @@
     }
   },
   {
-    "prompt": "Assuming that the level of glucose is low, a mutation in the repressor associated with the lac operon of E. coli which prevents binding of the repressor to lactose should result in: |s2d|<|start_2d|>\"constitutive expression of the lac operon genes\" <|split_2d|>\"lack of expression or reduced expression of the lac operon genes under all circumstances\" <|split_2d|>\"expression of the genes only when lactose is present\" <|split_2d|>\"expression of the genes only when lactose is absent\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Assuming that the level of glucose is low, a mutation in the repressor associated with the lac operon of E. coli which prevents binding of the repressor to lactose should result in: ~tag~<|start_2d|>\"constitutive expression of the lac operon genes\" <|split_2d|>\"lack of expression or reduced expression of the lac operon genes under all circumstances\" <|split_2d|>\"expression of the genes only when lactose is present\" <|split_2d|>\"expression of the genes only when lactose is absent\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "lack of expression or reduced expression of the lac operon genes under all circumstances",
       "incorrect_answers": [
@@ -616,7 +616,7 @@
     }
   },
   {
-    "prompt": "In meiosis, recombination occurs in:|s2d|<|start_2d|>\"Metaphase I.\" <|split_2d|>\"Prophase I.\" <|split_2d|>\"Metaphase II.\" <|split_2d|>\"Prophase II.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "In meiosis, recombination occurs in:~tag~<|start_2d|>\"Metaphase I.\" <|split_2d|>\"Prophase I.\" <|split_2d|>\"Metaphase II.\" <|split_2d|>\"Prophase II.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Prophase I.",
       "incorrect_answers": [
@@ -627,7 +627,7 @@
     }
   },
   {
-    "prompt": "Leber's hereditary optic atrophy is caused by a mutation in:|s2d|<|start_2d|>\"chromosome 12.\" <|split_2d|>\"chromosome 18.\" <|split_2d|>\"chromosome 21.\" <|split_2d|>\"mitochondrial DNA.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Leber's hereditary optic atrophy is caused by a mutation in:~tag~<|start_2d|>\"chromosome 12.\" <|split_2d|>\"chromosome 18.\" <|split_2d|>\"chromosome 21.\" <|split_2d|>\"mitochondrial DNA.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "mitochondrial DNA.",
       "incorrect_answers": [
@@ -638,7 +638,7 @@
     }
   },
   {
-    "prompt": "Regarding exons, which, if any, of the following statements is correct?|s2d|<|start_2d|>\"Some exons in protein-coding genes consist of noncoding DNA.\" <|split_2d|>\"The first exon of a protein-coding gene always contains the translational start site.\" <|split_2d|>\"The last exon of a protein-coding gene always contains the normal termination codon.\" <|split_2d|>\"A coding exon is always translated in just one of the three possible forward reading frames.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Regarding exons, which, if any, of the following statements is correct?~tag~<|start_2d|>\"Some exons in protein-coding genes consist of noncoding DNA.\" <|split_2d|>\"The first exon of a protein-coding gene always contains the translational start site.\" <|split_2d|>\"The last exon of a protein-coding gene always contains the normal termination codon.\" <|split_2d|>\"A coding exon is always translated in just one of the three possible forward reading frames.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Some exons in protein-coding genes consist of noncoding DNA.",
       "incorrect_answers": [
@@ -649,7 +649,7 @@
     }
   },
   {
-    "prompt": "In humans, each cell normally contains ______ of chromosomes.|s2d|<|start_2d|>\"11 pairs\" <|split_2d|>\"23 pairs\" <|split_2d|>\"32 pairs\" <|split_2d|>\"46 pairs\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "In humans, each cell normally contains ______ of chromosomes.~tag~<|start_2d|>\"11 pairs\" <|split_2d|>\"23 pairs\" <|split_2d|>\"32 pairs\" <|split_2d|>\"46 pairs\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "23 pairs",
       "incorrect_answers": [
@@ -660,7 +660,7 @@
     }
   },
   {
-    "prompt": "An increase in the inbreeding coefficient, F, is likely to result in:|s2d|<|start_2d|>\"reduced likelihood of heterozygotes being present in a population\" <|split_2d|>\"higher proportion of genes that show linkage\" <|split_2d|>\"higher proportion of genes with introns\" <|split_2d|>\"higher level of difference between RNA molecules in two daughter cells\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "An increase in the inbreeding coefficient, F, is likely to result in:~tag~<|start_2d|>\"reduced likelihood of heterozygotes being present in a population\" <|split_2d|>\"higher proportion of genes that show linkage\" <|split_2d|>\"higher proportion of genes with introns\" <|split_2d|>\"higher level of difference between RNA molecules in two daughter cells\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "reduced likelihood of heterozygotes being present in a population",
       "incorrect_answers": [
@@ -671,7 +671,7 @@
     }
   },
   {
-    "prompt": "Which of the following findings on prenatal ultrasound examination would not raise suspicion of a chromosome abnormality?|s2d|<|start_2d|>\"Duodenal atresia\" <|split_2d|>\"Holoprosencephaly\" <|split_2d|>\"Hydrops fetalis\" <|split_2d|>\"Monozygotic twins\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following findings on prenatal ultrasound examination would not raise suspicion of a chromosome abnormality?~tag~<|start_2d|>\"Duodenal atresia\" <|split_2d|>\"Holoprosencephaly\" <|split_2d|>\"Hydrops fetalis\" <|split_2d|>\"Monozygotic twins\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Monozygotic twins",
       "incorrect_answers": [
@@ -682,7 +682,7 @@
     }
   },
   {
-    "prompt": "The likelihood of an individual in a population carrying two specific alleles of a human DNA marker, each of which has a frequency of 0.2, will be:|s2d|<|start_2d|>\"0.4\" <|split_2d|>\"0.32\" <|split_2d|>\"0.08\" <|split_2d|>\"0.02\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The likelihood of an individual in a population carrying two specific alleles of a human DNA marker, each of which has a frequency of 0.2, will be:~tag~<|start_2d|>\"0.4\" <|split_2d|>\"0.32\" <|split_2d|>\"0.08\" <|split_2d|>\"0.02\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "0.08",
       "incorrect_answers": [
@@ -693,7 +693,7 @@
     }
   },
   {
-    "prompt": "An Hfr strain of E. coli contains:|s2d|<|start_2d|>\"a vector of yeast or bacterial origin which is used to make many copies of a particular DNA sequence\" <|split_2d|>\"a bacterial chromosome with a human gene inserted\" <|split_2d|>\"a bacterial chromosome with the F factor inserted\" <|split_2d|>\"a human chromosome with a transposable element inserted\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "An Hfr strain of E. coli contains:~tag~<|start_2d|>\"a vector of yeast or bacterial origin which is used to make many copies of a particular DNA sequence\" <|split_2d|>\"a bacterial chromosome with a human gene inserted\" <|split_2d|>\"a bacterial chromosome with the F factor inserted\" <|split_2d|>\"a human chromosome with a transposable element inserted\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "a bacterial chromosome with the F factor inserted",
       "incorrect_answers": [
@@ -704,7 +704,7 @@
     }
   },
   {
-    "prompt": "Male to male transmission is a key feature of which pattern of inheritance?|s2d|<|start_2d|>\"Autosomal dominant\" <|split_2d|>\"Autosomal recessive\" <|split_2d|>\"X-linked dominant\" <|split_2d|>\"X-linked recessive\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Male to male transmission is a key feature of which pattern of inheritance?~tag~<|start_2d|>\"Autosomal dominant\" <|split_2d|>\"Autosomal recessive\" <|split_2d|>\"X-linked dominant\" <|split_2d|>\"X-linked recessive\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Autosomal dominant",
       "incorrect_answers": [
@@ -715,7 +715,7 @@
     }
   },
   {
-    "prompt": "Simple tandem repeat polymorphisms in humans are most useful for|s2d|<|start_2d|>\"solving criminal and paternity cases\" <|split_2d|>\"reconstructing the relationships of humans and chimps.\" <|split_2d|>\"estimating relationships of humans and Neanderthals\" <|split_2d|>\"transferring disease resistance factors into bone marrow cells\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Simple tandem repeat polymorphisms in humans are most useful for~tag~<|start_2d|>\"solving criminal and paternity cases\" <|split_2d|>\"reconstructing the relationships of humans and chimps.\" <|split_2d|>\"estimating relationships of humans and Neanderthals\" <|split_2d|>\"transferring disease resistance factors into bone marrow cells\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "solving criminal and paternity cases",
       "incorrect_answers": [
@@ -726,7 +726,7 @@
     }
   },
   {
-    "prompt": "Which of the following disorders is not suitable for population carrier screening?|s2d|<|start_2d|>\"Cystic fibrosis\" <|split_2d|>\"Oculocutaneous albinism\" <|split_2d|>\"Sickle cell disease\" <|split_2d|>\"Tay-Sachs disease\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following disorders is not suitable for population carrier screening?~tag~<|start_2d|>\"Cystic fibrosis\" <|split_2d|>\"Oculocutaneous albinism\" <|split_2d|>\"Sickle cell disease\" <|split_2d|>\"Tay-Sachs disease\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Oculocutaneous albinism",
       "incorrect_answers": [
@@ -737,7 +737,7 @@
     }
   },
   {
-    "prompt": "Which of the following disorders does not show X-linked inheritance?|s2d|<|start_2d|>\"Duchenne muscular dystrophy\" <|split_2d|>\"Tay-Sachs disease\" <|split_2d|>\"Haemophilia A\" <|split_2d|>\"Haemophilia B\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following disorders does not show X-linked inheritance?~tag~<|start_2d|>\"Duchenne muscular dystrophy\" <|split_2d|>\"Tay-Sachs disease\" <|split_2d|>\"Haemophilia A\" <|split_2d|>\"Haemophilia B\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Tay-Sachs disease",
       "incorrect_answers": [
@@ -748,7 +748,7 @@
     }
   },
   {
-    "prompt": "The most common chromosome abnormality in first trimester spontaneous miscarriages is:|s2d|<|start_2d|>\"trisomy.\" <|split_2d|>\"monosomy.\" <|split_2d|>\"triploidy.\" <|split_2d|>\"tetrasomy.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The most common chromosome abnormality in first trimester spontaneous miscarriages is:~tag~<|start_2d|>\"trisomy.\" <|split_2d|>\"monosomy.\" <|split_2d|>\"triploidy.\" <|split_2d|>\"tetrasomy.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "trisomy.",
       "incorrect_answers": [
@@ -759,7 +759,7 @@
     }
   },
   {
-    "prompt": "Which of the following karyotypes is not compatible with survival to birth?|s2d|<|start_2d|>\"47,XY,+13\" <|split_2d|>\"47,XX,+18\" <|split_2d|>\"47,XY,+21\" <|split_2d|>\"45,Y\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following karyotypes is not compatible with survival to birth?~tag~<|start_2d|>\"47,XY,+13\" <|split_2d|>\"47,XX,+18\" <|split_2d|>\"47,XY,+21\" <|split_2d|>\"45,Y\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "45,Y",
       "incorrect_answers": [
@@ -770,7 +770,7 @@
     }
   },
   {
-    "prompt": "Male breast cancer is associated with mutations in ___.|s2d|<|start_2d|>\"BRCA1\" <|split_2d|>\"BRCA2\" <|split_2d|>\"NF1\" <|split_2d|>\"RET\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Male breast cancer is associated with mutations in ___.~tag~<|start_2d|>\"BRCA1\" <|split_2d|>\"BRCA2\" <|split_2d|>\"NF1\" <|split_2d|>\"RET\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "BRCA2",
       "incorrect_answers": [
@@ -781,7 +781,7 @@
     }
   },
   {
-    "prompt": "Pseudocholinesterase deficiency is associated with increased sensitivity to what?|s2d|<|start_2d|>\"Fava beans\" <|split_2d|>\"Halothane\" <|split_2d|>\"Primaquine\" <|split_2d|>\"Succinylcholine\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Pseudocholinesterase deficiency is associated with increased sensitivity to what?~tag~<|start_2d|>\"Fava beans\" <|split_2d|>\"Halothane\" <|split_2d|>\"Primaquine\" <|split_2d|>\"Succinylcholine\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Succinylcholine",
       "incorrect_answers": [
@@ -792,7 +792,7 @@
     }
   },
   {
-    "prompt": "The most common cystic fibrosis mutation consists of:|s2d|<|start_2d|>\"a deletion.\" <|split_2d|>\"a duplication.\" <|split_2d|>\"a substitution.\" <|split_2d|>\"an insertion.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The most common cystic fibrosis mutation consists of:~tag~<|start_2d|>\"a deletion.\" <|split_2d|>\"a duplication.\" <|split_2d|>\"a substitution.\" <|split_2d|>\"an insertion.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "a deletion.",
       "incorrect_answers": [
@@ -803,7 +803,7 @@
     }
   },
   {
-    "prompt": "The normal human chromosome diploid number is:|s2d|<|start_2d|>\"23\" <|split_2d|>\"24\" <|split_2d|>\"46\" <|split_2d|>\"48\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The normal human chromosome diploid number is:~tag~<|start_2d|>\"23\" <|split_2d|>\"24\" <|split_2d|>\"46\" <|split_2d|>\"48\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "46",
       "incorrect_answers": [
@@ -814,7 +814,7 @@
     }
   },
   {
-    "prompt": "Advantages of using adenoviruses for gene therapy include:|s2d|<|start_2d|>\"long term expression.\" <|split_2d|>\"low risk of insertional mutagenesis.\" <|split_2d|>\"low immunogenecity.\" <|split_2d|>\"easy assembly.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Advantages of using adenoviruses for gene therapy include:~tag~<|start_2d|>\"long term expression.\" <|split_2d|>\"low risk of insertional mutagenesis.\" <|split_2d|>\"low immunogenecity.\" <|split_2d|>\"easy assembly.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "low risk of insertional mutagenesis.",
       "incorrect_answers": [
@@ -825,7 +825,7 @@
     }
   },
   {
-    "prompt": "Which of the following statements about Hirschsprung disease is incorrect?|s2d|<|start_2d|>\"It shows an association with Down syndrome.\" <|split_2d|>\"It is more common in girls than in boys.\" <|split_2d|>\"RET is a major susceptibility gene.\" <|split_2d|>\"Recurrence risks are greater for long segment disease than for short segment disease.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following statements about Hirschsprung disease is incorrect?~tag~<|start_2d|>\"It shows an association with Down syndrome.\" <|split_2d|>\"It is more common in girls than in boys.\" <|split_2d|>\"RET is a major susceptibility gene.\" <|split_2d|>\"Recurrence risks are greater for long segment disease than for short segment disease.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "It is more common in girls than in boys.",
       "incorrect_answers": [
@@ -836,7 +836,7 @@
     }
   },
   {
-    "prompt": "Which of the following conditions is caused by a trinucleotide (triplet) repeat expansion?|s2d|<|start_2d|>\"Cystic fibrosis\" <|split_2d|>\"Duchenne muscular dystrophy\" <|split_2d|>\"Huntington disease\" <|split_2d|>\"Osteogenesis imperfecta\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following conditions is caused by a trinucleotide (triplet) repeat expansion?~tag~<|start_2d|>\"Cystic fibrosis\" <|split_2d|>\"Duchenne muscular dystrophy\" <|split_2d|>\"Huntington disease\" <|split_2d|>\"Osteogenesis imperfecta\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Huntington disease",
       "incorrect_answers": [
@@ -847,7 +847,7 @@
     }
   },
   {
-    "prompt": "Which of the following causes female pseudohermaphroditism?|s2d|<|start_2d|>\"Androgen insensitivity\" <|split_2d|>\"Campomelic dysplasia\" <|split_2d|>\"Congenital adrenal hyperplasia\" <|split_2d|>\"Klinefelter syndrome\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following causes female pseudohermaphroditism?~tag~<|start_2d|>\"Androgen insensitivity\" <|split_2d|>\"Campomelic dysplasia\" <|split_2d|>\"Congenital adrenal hyperplasia\" <|split_2d|>\"Klinefelter syndrome\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Congenital adrenal hyperplasia",
       "incorrect_answers": [
@@ -858,7 +858,7 @@
     }
   },
   {
-    "prompt": "Which component of transcribed RNA in eukaryotes is present in the initial transcript but is removed before translation occurs?|s2d|<|start_2d|>\"Intron\" <|split_2d|>\"3\u2019 Poly A tail\" <|split_2d|>\"Ribosome binding site\" <|split_2d|>\"5\u2019 cap\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which component of transcribed RNA in eukaryotes is present in the initial transcript but is removed before translation occurs?~tag~<|start_2d|>\"Intron\" <|split_2d|>\"3\u2019 Poly A tail\" <|split_2d|>\"Ribosome binding site\" <|split_2d|>\"5\u2019 cap\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Intron",
       "incorrect_answers": [
@@ -869,7 +869,7 @@
     }
   },
   {
-    "prompt": "Which of the following is not a recognized complication of cystic fibrosis?|s2d|<|start_2d|>\"Cancer of the oesophagus\" <|split_2d|>\"Congenital absence of the vas deferens\" <|split_2d|>\"Diabetes mellitus\" <|split_2d|>\"Liver cirrhosis\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following is not a recognized complication of cystic fibrosis?~tag~<|start_2d|>\"Cancer of the oesophagus\" <|split_2d|>\"Congenital absence of the vas deferens\" <|split_2d|>\"Diabetes mellitus\" <|split_2d|>\"Liver cirrhosis\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Cancer of the oesophagus",
       "incorrect_answers": [
@@ -880,7 +880,7 @@
     }
   },
   {
-    "prompt": "Which of the following diagnostic techniques is of no value for the diagnosis of neural tube defects?|s2d|<|start_2d|>\"Amniocentesis\" <|split_2d|>\"Chorion villus sampling (CVS)\" <|split_2d|>\"Maternal serum screening\" <|split_2d|>\"Ultrasonography\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following diagnostic techniques is of no value for the diagnosis of neural tube defects?~tag~<|start_2d|>\"Amniocentesis\" <|split_2d|>\"Chorion villus sampling (CVS)\" <|split_2d|>\"Maternal serum screening\" <|split_2d|>\"Ultrasonography\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Chorion villus sampling (CVS)",
       "incorrect_answers": [
@@ -891,7 +891,7 @@
     }
   },
   {
-    "prompt": "Which of the following conditions is a peroxisomal disorder?|s2d|<|start_2d|>\"Acute intermittent porphyria\" <|split_2d|>\"Maple syrup urine disease\" <|split_2d|>\"Medium chain acyl-CoA dehydrogenase deficiency\" <|split_2d|>\"Zellweger syndrome\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following conditions is a peroxisomal disorder?~tag~<|start_2d|>\"Acute intermittent porphyria\" <|split_2d|>\"Maple syrup urine disease\" <|split_2d|>\"Medium chain acyl-CoA dehydrogenase deficiency\" <|split_2d|>\"Zellweger syndrome\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Zellweger syndrome",
       "incorrect_answers": [
@@ -902,7 +902,7 @@
     }
   },
   {
-    "prompt": "Marked microsatellite instability is a feature of:|s2d|<|start_2d|>\"familial adenomatous polyposis.\" <|split_2d|>\"hereditary non-polyposis colon cancer (HNPCC).\" <|split_2d|>\"multiple endocrine adenomatosis type 2.\" <|split_2d|>\"neurofibromatosis 1.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Marked microsatellite instability is a feature of:~tag~<|start_2d|>\"familial adenomatous polyposis.\" <|split_2d|>\"hereditary non-polyposis colon cancer (HNPCC).\" <|split_2d|>\"multiple endocrine adenomatosis type 2.\" <|split_2d|>\"neurofibromatosis 1.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "hereditary non-polyposis colon cancer (HNPCC).",
       "incorrect_answers": [
@@ -913,7 +913,7 @@
     }
   },
   {
-    "prompt": "The common mutation in \u03b1-thalassaemia consists of:|s2d|<|start_2d|>\"a deletion.\" <|split_2d|>\"a duplication.\" <|split_2d|>\"an insertion.\" <|split_2d|>\"a point mutation.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The common mutation in \u03b1-thalassaemia consists of:~tag~<|start_2d|>\"a deletion.\" <|split_2d|>\"a duplication.\" <|split_2d|>\"an insertion.\" <|split_2d|>\"a point mutation.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "a deletion.",
       "incorrect_answers": [
@@ -924,7 +924,7 @@
     }
   },
   {
-    "prompt": "A baby born with pulmonary hypoplasia secondary to oligohydramnios caused by renal agenesis would be classified as having:|s2d|<|start_2d|>\"an association.\" <|split_2d|>\"a dysplasia.\" <|split_2d|>\"a sequence.\" <|split_2d|>\"a syndrome.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "A baby born with pulmonary hypoplasia secondary to oligohydramnios caused by renal agenesis would be classified as having:~tag~<|start_2d|>\"an association.\" <|split_2d|>\"a dysplasia.\" <|split_2d|>\"a sequence.\" <|split_2d|>\"a syndrome.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "a sequence.",
       "incorrect_answers": [
@@ -935,7 +935,7 @@
     }
   },
   {
-    "prompt": "The ______ is the set of observable characteristics and is the sum of genetic and environmental effects.|s2d|<|start_2d|>\"genotype\" <|split_2d|>\"phenotype\" <|split_2d|>\"both genotype and phenotype\" <|split_2d|>\"neither genotype or phenotype\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The ______ is the set of observable characteristics and is the sum of genetic and environmental effects.~tag~<|start_2d|>\"genotype\" <|split_2d|>\"phenotype\" <|split_2d|>\"both genotype and phenotype\" <|split_2d|>\"neither genotype or phenotype\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "phenotype",
       "incorrect_answers": [
@@ -946,7 +946,7 @@
     }
   },
   {
-    "prompt": "Which of the following trisomy karyotypes has the mildest effect on human development?|s2d|<|start_2d|>\"47,XXX\" <|split_2d|>\"47,XXY\" <|split_2d|>\"47,XX,+13\" <|split_2d|>\"47,XY,+21\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following trisomy karyotypes has the mildest effect on human development?~tag~<|start_2d|>\"47,XXX\" <|split_2d|>\"47,XXY\" <|split_2d|>\"47,XX,+13\" <|split_2d|>\"47,XY,+21\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "47,XXX",
       "incorrect_answers": [
@@ -957,7 +957,7 @@
     }
   },
   {
-    "prompt": "Mutations that cause achondroplasia exert an effect which can be classified as:|s2d|<|start_2d|>\"dominant negative.\" <|split_2d|>\"gain-of-function.\" <|split_2d|>\"haploinsufficiency.\" <|split_2d|>\"loss-of-function.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Mutations that cause achondroplasia exert an effect which can be classified as:~tag~<|start_2d|>\"dominant negative.\" <|split_2d|>\"gain-of-function.\" <|split_2d|>\"haploinsufficiency.\" <|split_2d|>\"loss-of-function.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "gain-of-function.",
       "incorrect_answers": [
@@ -968,7 +968,7 @@
     }
   },
   {
-    "prompt": "The presence of two or more cell lines from different zygotes in a single individual is known as:|s2d|<|start_2d|>\"mosaicism.\" <|split_2d|>\"diploidy.\" <|split_2d|>\"aneuploidy.\" <|split_2d|>\"chimaerism.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The presence of two or more cell lines from different zygotes in a single individual is known as:~tag~<|start_2d|>\"mosaicism.\" <|split_2d|>\"diploidy.\" <|split_2d|>\"aneuploidy.\" <|split_2d|>\"chimaerism.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "chimaerism.",
       "incorrect_answers": [
@@ -979,7 +979,7 @@
     }
   },
   {
-    "prompt": "The risk for miscarriage associated with amniocentesis is approximately ____.|s2d|<|start_2d|>\"1 in 10\" <|split_2d|>\"1 in 50\" <|split_2d|>\"1 in 100 to 1 in 200\" <|split_2d|>\"1 in 1000\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The risk for miscarriage associated with amniocentesis is approximately ____.~tag~<|start_2d|>\"1 in 10\" <|split_2d|>\"1 in 50\" <|split_2d|>\"1 in 100 to 1 in 200\" <|split_2d|>\"1 in 1000\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "1 in 100 to 1 in 200",
       "incorrect_answers": [
@@ -990,7 +990,7 @@
     }
   },
   {
-    "prompt": "Autozygosity mapping is used to map disorders that show which pattern of inheritance?|s2d|<|start_2d|>\"Autosomal dominant\" <|split_2d|>\"Autosomal recessive\" <|split_2d|>\"X-linked dominant\" <|split_2d|>\"X-linked recessive\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Autozygosity mapping is used to map disorders that show which pattern of inheritance?~tag~<|start_2d|>\"Autosomal dominant\" <|split_2d|>\"Autosomal recessive\" <|split_2d|>\"X-linked dominant\" <|split_2d|>\"X-linked recessive\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Autosomal recessive",
       "incorrect_answers": [
@@ -1001,7 +1001,7 @@
     }
   },
   {
-    "prompt": "Consanguinity shows a strong association with which pattern of inheritance?|s2d|<|start_2d|>\"Autosomal dominant\" <|split_2d|>\"Autosomal recessive\" <|split_2d|>\"X-linked dominant\" <|split_2d|>\"X-linked recessive\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Consanguinity shows a strong association with which pattern of inheritance?~tag~<|start_2d|>\"Autosomal dominant\" <|split_2d|>\"Autosomal recessive\" <|split_2d|>\"X-linked dominant\" <|split_2d|>\"X-linked recessive\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Autosomal recessive",
       "incorrect_answers": [
@@ -1012,7 +1012,7 @@
     }
   },
   {
-    "prompt": "Most new mutations appear to be|s2d|<|start_2d|>\"beneficial\" <|split_2d|>\"neutral or deleterious\" <|split_2d|>\"present in homozygotes rather than heterozygotes\" <|split_2d|>\"detectable using allozyme studies (protein electrophoresis)\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Most new mutations appear to be~tag~<|start_2d|>\"beneficial\" <|split_2d|>\"neutral or deleterious\" <|split_2d|>\"present in homozygotes rather than heterozygotes\" <|split_2d|>\"detectable using allozyme studies (protein electrophoresis)\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "neutral or deleterious",
       "incorrect_answers": [
@@ -1023,7 +1023,7 @@
     }
   },
   {
-    "prompt": "Twin studies in humans are useful because|s2d|<|start_2d|>\"they allow genetic as opposed to environmental influences on variation in a trait to be estimated\" <|split_2d|>\"cloning of genes is facilitated by the presence of extra copies\" <|split_2d|>\"they allow improved expression of genes\" <|split_2d|>\"twins have a greater likelihood of being heterozygous\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Twin studies in humans are useful because~tag~<|start_2d|>\"they allow genetic as opposed to environmental influences on variation in a trait to be estimated\" <|split_2d|>\"cloning of genes is facilitated by the presence of extra copies\" <|split_2d|>\"they allow improved expression of genes\" <|split_2d|>\"twins have a greater likelihood of being heterozygous\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "they allow genetic as opposed to environmental influences on variation in a trait to be estimated",
       "incorrect_answers": [
@@ -1034,7 +1034,7 @@
     }
   },
   {
-    "prompt": "Complete the following sentence. The Philadelphia chromosome:|s2d|<|start_2d|>\"is an example of gene amplification.\" <|split_2d|>\"is a product of a reciprocal translocation.\" <|split_2d|>\"causes Burkitt's lymphoma.\" <|split_2d|>\"causes retinoblastoma.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Complete the following sentence. The Philadelphia chromosome:~tag~<|start_2d|>\"is an example of gene amplification.\" <|split_2d|>\"is a product of a reciprocal translocation.\" <|split_2d|>\"causes Burkitt's lymphoma.\" <|split_2d|>\"causes retinoblastoma.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "is a product of a reciprocal translocation.",
       "incorrect_answers": [
@@ -1045,7 +1045,7 @@
     }
   },
   {
-    "prompt": "Enzyme assay can be used to identify carriers of:|s2d|<|start_2d|>\"Cystic fibrosis.\" <|split_2d|>\"Fragile X syndrome.\" <|split_2d|>\"Oculocutaneous albinism.\" <|split_2d|>\"Tay-Sachs disease.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Enzyme assay can be used to identify carriers of:~tag~<|start_2d|>\"Cystic fibrosis.\" <|split_2d|>\"Fragile X syndrome.\" <|split_2d|>\"Oculocutaneous albinism.\" <|split_2d|>\"Tay-Sachs disease.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Tay-Sachs disease.",
       "incorrect_answers": [
@@ -1056,7 +1056,7 @@
     }
   },
   {
-    "prompt": "A high blood ammonia level occurs in:|s2d|<|start_2d|>\"galactosaemia.\" <|split_2d|>\"Hurler's syndrome.\" <|split_2d|>\"ornithine transcarbamylase (OTC) deficiency.\" <|split_2d|>\"phenylketonuria.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "A high blood ammonia level occurs in:~tag~<|start_2d|>\"galactosaemia.\" <|split_2d|>\"Hurler's syndrome.\" <|split_2d|>\"ornithine transcarbamylase (OTC) deficiency.\" <|split_2d|>\"phenylketonuria.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "ornithine transcarbamylase (OTC) deficiency.",
       "incorrect_answers": [
@@ -1067,7 +1067,7 @@
     }
   },
   {
-    "prompt": "In genome-wide association studies, known SNPs explain ______ of the variation in body mass index despite the evidence of greater than 50% heritability from twin and family studies.|s2d|<|start_2d|>\"only 5%\" <|split_2d|>\"less than 1%\" <|split_2d|>\"only 13%\" <|split_2d|>\"less than 2%\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "In genome-wide association studies, known SNPs explain ______ of the variation in body mass index despite the evidence of greater than 50% heritability from twin and family studies.~tag~<|start_2d|>\"only 5%\" <|split_2d|>\"less than 1%\" <|split_2d|>\"only 13%\" <|split_2d|>\"less than 2%\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "less than 2%",
       "incorrect_answers": [
@@ -1078,7 +1078,7 @@
     }
   },
   {
-    "prompt": "Differential distribution of substances in the egg most typically results in:|s2d|<|start_2d|>\"differences in gene expression which may establish a pattern in the embryo as the cells divide\" <|split_2d|>\"amplification of specific genes during development\" <|split_2d|>\"development of polyploid tissues\" <|split_2d|>\"loss of specific genes during development\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Differential distribution of substances in the egg most typically results in:~tag~<|start_2d|>\"differences in gene expression which may establish a pattern in the embryo as the cells divide\" <|split_2d|>\"amplification of specific genes during development\" <|split_2d|>\"development of polyploid tissues\" <|split_2d|>\"loss of specific genes during development\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "differences in gene expression which may establish a pattern in the embryo as the cells divide",
       "incorrect_answers": [
@@ -1089,7 +1089,7 @@
     }
   },
   {
-    "prompt": "Which of the following conditions is not caused by a mutation in FGFR3?|s2d|<|start_2d|>\"Achondroplasia\" <|split_2d|>\"Crouzon syndrome\" <|split_2d|>\"Thanatophoric dysplasia\" <|split_2d|>\"Waardenburg syndrome\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following conditions is not caused by a mutation in FGFR3?~tag~<|start_2d|>\"Achondroplasia\" <|split_2d|>\"Crouzon syndrome\" <|split_2d|>\"Thanatophoric dysplasia\" <|split_2d|>\"Waardenburg syndrome\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Waardenburg syndrome",
       "incorrect_answers": [

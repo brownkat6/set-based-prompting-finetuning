@@ -1,6 +1,6 @@
 [
   {
-    "prompt": "A valid disjunctive syllogism has a major premise that:|s2d|<|start_2d|>\"includes two or more alternatives\" <|split_2d|>\"classifies subjects\" <|split_2d|>\"affirms the antecedent or denies the consequent\" <|split_2d|>\"leads to a valid conclusion\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "A valid disjunctive syllogism has a major premise that:~tag~<|start_2d|>\"includes two or more alternatives\" <|split_2d|>\"classifies subjects\" <|split_2d|>\"affirms the antecedent or denies the consequent\" <|split_2d|>\"leads to a valid conclusion\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "includes two or more alternatives",
       "incorrect_answers": [
@@ -11,7 +11,7 @@
     }
   },
   {
-    "prompt": "Which of the following best describes the fallacy of style over substance?|s2d|<|start_2d|>\"Changing the meaning of a word or phrase from one part of the argument to another.\" <|split_2d|>\"Confusing figurative language with literal language.\" <|split_2d|>\"Reasoning that ideas presented in an appealing manner are correct, regardless of the content of the message.\" <|split_2d|>\"Using emotionally charged language to create an impression about the subject of a claim, without making an argument that the language fits the subject.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following best describes the fallacy of style over substance?~tag~<|start_2d|>\"Changing the meaning of a word or phrase from one part of the argument to another.\" <|split_2d|>\"Confusing figurative language with literal language.\" <|split_2d|>\"Reasoning that ideas presented in an appealing manner are correct, regardless of the content of the message.\" <|split_2d|>\"Using emotionally charged language to create an impression about the subject of a claim, without making an argument that the language fits the subject.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Reasoning that ideas presented in an appealing manner are correct, regardless of the content of the message.",
       "incorrect_answers": [
@@ -22,7 +22,7 @@
     }
   },
   {
-    "prompt": "Which of the following fallacies is a way of suppressing evidence that eliminates a source of evidence from consideration by claiming the source is flawed, when there is no true relationship between the alleged flaw and the reliability of the source?|s2d|<|start_2d|>\"significance\" <|split_2d|>\"snob appeal\" <|split_2d|>\"poisoning the well\" <|split_2d|>\"appeal to anonymous authority\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following fallacies is a way of suppressing evidence that eliminates a source of evidence from consideration by claiming the source is flawed, when there is no true relationship between the alleged flaw and the reliability of the source?~tag~<|start_2d|>\"significance\" <|split_2d|>\"snob appeal\" <|split_2d|>\"poisoning the well\" <|split_2d|>\"appeal to anonymous authority\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "poisoning the well",
       "incorrect_answers": [
@@ -33,7 +33,7 @@
     }
   },
   {
-    "prompt": "The false analogy fallacy is|s2d|<|start_2d|>\"a specific type of false cause fallacy that argues that since two event happened at the same time one event must have caused the other\" <|split_2d|>\"arguing that an event that preceded another event necessarily is the cause of the second event\" <|split_2d|>\"arguing that since something is new it is necessarily good\" <|split_2d|>\"drawing a conclusion based on a comparison when the items being compared are not similar enough to support the conclusion.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The false analogy fallacy is~tag~<|start_2d|>\"a specific type of false cause fallacy that argues that since two event happened at the same time one event must have caused the other\" <|split_2d|>\"arguing that an event that preceded another event necessarily is the cause of the second event\" <|split_2d|>\"arguing that since something is new it is necessarily good\" <|split_2d|>\"drawing a conclusion based on a comparison when the items being compared are not similar enough to support the conclusion.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "drawing a conclusion based on a comparison when the items being compared are not similar enough to support the conclusion.",
       "incorrect_answers": [
@@ -44,7 +44,7 @@
     }
   },
   {
-    "prompt": "The _ad nauseam_ fallacy is|s2d|<|start_2d|>\"arguing that something should be done because that's the way it's been done in the past.\" <|split_2d|>\"arguing that an act should be carried out because it will not have any significant consequences, when there is no evidence of the effects\" <|split_2d|>\"reasoning that a conclusion is true because it's been claimed so often\" <|split_2d|>\"reasoning that a claim is true because so many people believe it is true\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The _ad nauseam_ fallacy is~tag~<|start_2d|>\"arguing that something should be done because that's the way it's been done in the past.\" <|split_2d|>\"arguing that an act should be carried out because it will not have any significant consequences, when there is no evidence of the effects\" <|split_2d|>\"reasoning that a conclusion is true because it's been claimed so often\" <|split_2d|>\"reasoning that a claim is true because so many people believe it is true\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "reasoning that a conclusion is true because it's been claimed so often",
       "incorrect_answers": [
@@ -55,7 +55,7 @@
     }
   },
   {
-    "prompt": "Arguing that what is true of an entire object is also true of each part of that object is the fallacy of|s2d|<|start_2d|>\"false criteria\" <|split_2d|>\"hasty generalization\" <|split_2d|>\"ad crumenam\" <|split_2d|>\"division\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Arguing that what is true of an entire object is also true of each part of that object is the fallacy of~tag~<|start_2d|>\"false criteria\" <|split_2d|>\"hasty generalization\" <|split_2d|>\"ad crumenam\" <|split_2d|>\"division\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "division",
       "incorrect_answers": [
@@ -66,7 +66,7 @@
     }
   },
   {
-    "prompt": "Which of the following describes the horse laugh fallacy?|s2d|<|start_2d|>\"responding to an argument with an expression of derision instead of a counter argument\" <|split_2d|>\"attempts to gain agreement based solely the feelings aroused by the message\" <|split_2d|>\"characterizing an opponent's position in such way to make it or its consequences appear to be ridiculous\" <|split_2d|>\"arguing actions should be taken to avoid negative results, when those results are exaggerated, unlikely, or irrelevant\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following describes the horse laugh fallacy?~tag~<|start_2d|>\"responding to an argument with an expression of derision instead of a counter argument\" <|split_2d|>\"attempts to gain agreement based solely the feelings aroused by the message\" <|split_2d|>\"characterizing an opponent's position in such way to make it or its consequences appear to be ridiculous\" <|split_2d|>\"arguing actions should be taken to avoid negative results, when those results are exaggerated, unlikely, or irrelevant\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "responding to an argument with an expression of derision instead of a counter argument",
       "incorrect_answers": [
@@ -77,7 +77,7 @@
     }
   },
   {
-    "prompt": "Arguing that a lack of evidence proves something is the fallacy of...|s2d|<|start_2d|>\"Appeal to ignorance\" <|split_2d|>\"Double negative\" <|split_2d|>\"Equivocation\" <|split_2d|>\"Burden of proof\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Arguing that a lack of evidence proves something is the fallacy of...~tag~<|start_2d|>\"Appeal to ignorance\" <|split_2d|>\"Double negative\" <|split_2d|>\"Equivocation\" <|split_2d|>\"Burden of proof\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Appeal to ignorance",
       "incorrect_answers": [
@@ -88,7 +88,7 @@
     }
   },
   {
-    "prompt": "The argument against the person consists of|s2d|<|start_2d|>\"ignoring another person's arguments and attacking her character instead\" <|split_2d|>\"asserting an opposing arguer has taken an easily defeated position, which she has not really taken\" <|split_2d|>\"causing confusion during an argument by a lack of ability to engage in refutation\" <|split_2d|>\"using threats of harm instead of reasoning to gain agreement\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The argument against the person consists of~tag~<|start_2d|>\"ignoring another person's arguments and attacking her character instead\" <|split_2d|>\"asserting an opposing arguer has taken an easily defeated position, which she has not really taken\" <|split_2d|>\"causing confusion during an argument by a lack of ability to engage in refutation\" <|split_2d|>\"using threats of harm instead of reasoning to gain agreement\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "ignoring another person's arguments and attacking her character instead",
       "incorrect_answers": [
@@ -99,7 +99,7 @@
     }
   },
   {
-    "prompt": "Which of the following fallacies happens when someone concludes that someone must be honest because the people he hangs around with are honest?|s2d|<|start_2d|>\"Laudatory personality\" <|split_2d|>\"Guilt by association\" <|split_2d|>\"Reprehensible personality\" <|split_2d|>\"Circular reasoning\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following fallacies happens when someone concludes that someone must be honest because the people he hangs around with are honest?~tag~<|start_2d|>\"Laudatory personality\" <|split_2d|>\"Guilt by association\" <|split_2d|>\"Reprehensible personality\" <|split_2d|>\"Circular reasoning\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Guilt by association",
       "incorrect_answers": [
@@ -110,7 +110,7 @@
     }
   },
   {
-    "prompt": "Asking a question that includes an unproven assumption may lead to which of the following fallacies?|s2d|<|start_2d|>\"Appeal to ignorance\" <|split_2d|>\"Extension\" <|split_2d|>\"a priori\" <|split_2d|>\"Complex question\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Asking a question that includes an unproven assumption may lead to which of the following fallacies?~tag~<|start_2d|>\"Appeal to ignorance\" <|split_2d|>\"Extension\" <|split_2d|>\"a priori\" <|split_2d|>\"Complex question\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Complex question",
       "incorrect_answers": [
@@ -121,7 +121,7 @@
     }
   },
   {
-    "prompt": "Polonius in William Shakespeare's Hamlet: \"Your noble son is mad: Mad call I it, for to define true madness, What is't but to be nothing else but mad?\"|s2d|<|start_2d|>\"Attacking the Person (ad hominem)\" <|split_2d|>\"Equivocation\" <|split_2d|>\"Begging the Question\" <|split_2d|>\"Appeal to Pity\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Polonius in William Shakespeare's Hamlet: \"Your noble son is mad: Mad call I it, for to define true madness, What is't but to be nothing else but mad?\"~tag~<|start_2d|>\"Attacking the Person (ad hominem)\" <|split_2d|>\"Equivocation\" <|split_2d|>\"Begging the Question\" <|split_2d|>\"Appeal to Pity\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Begging the Question",
       "incorrect_answers": [
@@ -132,7 +132,7 @@
     }
   },
   {
-    "prompt": "Notice from the Hyatt Regency Hotel in New Orleans: We are pleased to confirm your reservation. It will be held on a space-available basis.|s2d|<|start_2d|>\"Equivocation\" <|split_2d|>\"Affirming the Consequent\" <|split_2d|>\"Gambler's Fallacy\" <|split_2d|>\"Inconsistency\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Notice from the Hyatt Regency Hotel in New Orleans: We are pleased to confirm your reservation. It will be held on a space-available basis.~tag~<|start_2d|>\"Equivocation\" <|split_2d|>\"Affirming the Consequent\" <|split_2d|>\"Gambler's Fallacy\" <|split_2d|>\"Inconsistency\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Inconsistency",
       "incorrect_answers": [
@@ -143,7 +143,7 @@
     }
   },
   {
-    "prompt": "The natural law fallacy is|s2d|<|start_2d|>\"arguing that something is necessarily bad because it doesn't cost very much\" <|split_2d|>\"substituting individual stories for a larger sample when supporting a generalization\" <|split_2d|>\"arguing that what is true in nature must be true about humans\" <|split_2d|>\"the same thing as the  post hoc  fallacy\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The natural law fallacy is~tag~<|start_2d|>\"arguing that something is necessarily bad because it doesn't cost very much\" <|split_2d|>\"substituting individual stories for a larger sample when supporting a generalization\" <|split_2d|>\"arguing that what is true in nature must be true about humans\" <|split_2d|>\"the same thing as the  post hoc  fallacy\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing that what is true in nature must be true about humans",
       "incorrect_answers": [
@@ -154,7 +154,7 @@
     }
   },
   {
-    "prompt": "If someone uses an emotionally charged restatement of a claim in place of support for the claim, that person may have committed which of the following fallacies?|s2d|<|start_2d|>\"Style over substance\" <|split_2d|>\"Question begging epithets\" <|split_2d|>\"Hypostatization\" <|split_2d|>\"Amphiboly\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "If someone uses an emotionally charged restatement of a claim in place of support for the claim, that person may have committed which of the following fallacies?~tag~<|start_2d|>\"Style over substance\" <|split_2d|>\"Question begging epithets\" <|split_2d|>\"Hypostatization\" <|split_2d|>\"Amphiboly\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Question begging epithets",
       "incorrect_answers": [
@@ -165,7 +165,7 @@
     }
   },
   {
-    "prompt": "Arguing that a claim must be true merely because a substantial number of people believe it is called the fallacy of...|s2d|<|start_2d|>\"Tu quoque\" <|split_2d|>\"Composition\" <|split_2d|>\"Appeal to the masses\" <|split_2d|>\"Appeal to reason\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Arguing that a claim must be true merely because a substantial number of people believe it is called the fallacy of...~tag~<|start_2d|>\"Tu quoque\" <|split_2d|>\"Composition\" <|split_2d|>\"Appeal to the masses\" <|split_2d|>\"Appeal to reason\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Appeal to the masses",
       "incorrect_answers": [
@@ -176,7 +176,7 @@
     }
   },
   {
-    "prompt": "_Ad populum_. is another name for which fallacy?|s2d|<|start_2d|>\"poisoning the well\" <|split_2d|>\"suppressed evidence\" <|split_2d|>\"appeal to pride\" <|split_2d|>\"appeal to the people\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "_Ad populum_. is another name for which fallacy?~tag~<|start_2d|>\"poisoning the well\" <|split_2d|>\"suppressed evidence\" <|split_2d|>\"appeal to pride\" <|split_2d|>\"appeal to the people\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "appeal to the people",
       "incorrect_answers": [
@@ -187,7 +187,7 @@
     }
   },
   {
-    "prompt": "In a valid disjunctive syllogism the minor premise must|s2d|<|start_2d|>\"accept one choice\" <|split_2d|>\"reject all but one choice\" <|split_2d|>\"either A or B\" <|split_2d|>\"none of the above\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "In a valid disjunctive syllogism the minor premise must~tag~<|start_2d|>\"accept one choice\" <|split_2d|>\"reject all but one choice\" <|split_2d|>\"either A or B\" <|split_2d|>\"none of the above\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "either A or B",
       "incorrect_answers": [
@@ -198,7 +198,7 @@
     }
   },
   {
-    "prompt": "Which of the following describes the fallacy of appeal to spite?|s2d|<|start_2d|>\"responding to an argument with an expression of derision instead of a counter argument\" <|split_2d|>\"arguing against a position based only on negative personal feelings toward the position\" <|split_2d|>\"arguing someone should do something only because that person dislikes someone else\" <|split_2d|>\"saying someone shouldn't do something because if he or she does it people won't like him or her\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following describes the fallacy of appeal to spite?~tag~<|start_2d|>\"responding to an argument with an expression of derision instead of a counter argument\" <|split_2d|>\"arguing against a position based only on negative personal feelings toward the position\" <|split_2d|>\"arguing someone should do something only because that person dislikes someone else\" <|split_2d|>\"saying someone shouldn't do something because if he or she does it people won't like him or her\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing someone should do something only because that person dislikes someone else",
       "incorrect_answers": [
@@ -209,7 +209,7 @@
     }
   },
   {
-    "prompt": "_Ad hominem_ is another name for the fallacy of|s2d|<|start_2d|>\"appeal to loyalty\" <|split_2d|>\"reducing to an absurdity\" <|split_2d|>\"ignorance of refutation\" <|split_2d|>\"argument against the person\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "_Ad hominem_ is another name for the fallacy of~tag~<|start_2d|>\"appeal to loyalty\" <|split_2d|>\"reducing to an absurdity\" <|split_2d|>\"ignorance of refutation\" <|split_2d|>\"argument against the person\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "argument against the person",
       "incorrect_answers": [
@@ -220,7 +220,7 @@
     }
   },
   {
-    "prompt": "The fallacy of appeal to the person is rejecting a claim by...|s2d|<|start_2d|>\"Using rhetoric\" <|split_2d|>\"Making false statements\" <|split_2d|>\"Ignoring the person\" <|split_2d|>\"Criticizing the person who makes it\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The fallacy of appeal to the person is rejecting a claim by...~tag~<|start_2d|>\"Using rhetoric\" <|split_2d|>\"Making false statements\" <|split_2d|>\"Ignoring the person\" <|split_2d|>\"Criticizing the person who makes it\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Criticizing the person who makes it",
       "incorrect_answers": [
@@ -231,7 +231,7 @@
     }
   },
   {
-    "prompt": "Another name for hasty conclusion is|s2d|<|start_2d|>\"hasty generalization\" <|split_2d|>\"post hoc ergo prompter hoc\" <|split_2d|>\"jumping to a conclusion\" <|split_2d|>\"ad novitatem\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Another name for hasty conclusion is~tag~<|start_2d|>\"hasty generalization\" <|split_2d|>\"post hoc ergo prompter hoc\" <|split_2d|>\"jumping to a conclusion\" <|split_2d|>\"ad novitatem\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "jumping to a conclusion",
       "incorrect_answers": [
@@ -242,7 +242,7 @@
     }
   },
   {
-    "prompt": "John S. Knight, Detroit Free Press (3 July 1970): ...Capitalism is the economic system in which the means of production and distribution are privately owned and operated for profit. The alternative system is called socialism, the theory of the ownership and operation of the means of production by society, with all members sharing in the work and the products.|s2d|<|start_2d|>\"Begging the Question\" <|split_2d|>\"False Dilemma\" <|split_2d|>\"Straw Man\" <|split_2d|>\"Appeal to Gallery (Provicialism)\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "John S. Knight, Detroit Free Press (3 July 1970): ...Capitalism is the economic system in which the means of production and distribution are privately owned and operated for profit. The alternative system is called socialism, the theory of the ownership and operation of the means of production by society, with all members sharing in the work and the products.~tag~<|start_2d|>\"Begging the Question\" <|split_2d|>\"False Dilemma\" <|split_2d|>\"Straw Man\" <|split_2d|>\"Appeal to Gallery (Provicialism)\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "False Dilemma",
       "incorrect_answers": [
@@ -253,7 +253,7 @@
     }
   },
   {
-    "prompt": "The fallacy of composition is|s2d|<|start_2d|>\"attributing the cause of an event to a simple cause when the cause is more complex\" <|split_2d|>\"arguing that what is true of part of an object must be true of the entire object\" <|split_2d|>\"drawing a conclusion without enough evidence to support that conclusion\" <|split_2d|>\"drawing a conclusion based on sign reasoning when there is not really a direct relationship between the alleged sign and the subject of the conclusion\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The fallacy of composition is~tag~<|start_2d|>\"attributing the cause of an event to a simple cause when the cause is more complex\" <|split_2d|>\"arguing that what is true of part of an object must be true of the entire object\" <|split_2d|>\"drawing a conclusion without enough evidence to support that conclusion\" <|split_2d|>\"drawing a conclusion based on sign reasoning when there is not really a direct relationship between the alleged sign and the subject of the conclusion\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing that what is true of part of an object must be true of the entire object",
       "incorrect_answers": [
@@ -264,7 +264,7 @@
     }
   },
   {
-    "prompt": "\" _Ad crumenam_ \" is a specific kind of|s2d|<|start_2d|>\"False analogy\" <|split_2d|>\"Hasty Generalization\" <|split_2d|>\"False sign\" <|split_2d|>\"Hasty Conclusion\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "\" _Ad crumenam_ \" is a specific kind of~tag~<|start_2d|>\"False analogy\" <|split_2d|>\"Hasty Generalization\" <|split_2d|>\"False sign\" <|split_2d|>\"Hasty Conclusion\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "False sign",
       "incorrect_answers": [
@@ -275,7 +275,7 @@
     }
   },
   {
-    "prompt": "Which of the following fallacies happens when someone draws a conclusion that is simply a restatement of one of the premises?|s2d|<|start_2d|>\"Laudatory personality\" <|split_2d|>\"Guilt by association\" <|split_2d|>\"Accident\" <|split_2d|>\"Begging the question\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following fallacies happens when someone draws a conclusion that is simply a restatement of one of the premises?~tag~<|start_2d|>\"Laudatory personality\" <|split_2d|>\"Guilt by association\" <|split_2d|>\"Accident\" <|split_2d|>\"Begging the question\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Begging the question",
       "incorrect_answers": [
@@ -286,7 +286,7 @@
     }
   },
   {
-    "prompt": "I don't know what the answer is to number 8. But Heather hasn't made the third option into the correct answer for a while, and even then only once, so I'm guessing that this is the fallacy of Composition!|s2d|<|start_2d|>\"Gambler's Fallacy\" <|split_2d|>\"Equivocation\" <|split_2d|>\"Fallacy of Composition\" <|split_2d|>\"Appeal to Pity\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "I don't know what the answer is to number 8. But Heather hasn't made the third option into the correct answer for a while, and even then only once, so I'm guessing that this is the fallacy of Composition!~tag~<|start_2d|>\"Gambler's Fallacy\" <|split_2d|>\"Equivocation\" <|split_2d|>\"Fallacy of Composition\" <|split_2d|>\"Appeal to Pity\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Gambler's Fallacy",
       "incorrect_answers": [
@@ -297,7 +297,7 @@
     }
   },
   {
-    "prompt": "When someone argues that making a change will have no significant effect, but there is no evidence that the effect will not be significant, that person has committed which of the following fallacies?|s2d|<|start_2d|>\"poisoning the well\" <|split_2d|>\"solid slope\" <|split_2d|>\"appeal to tradition\" <|split_2d|>\"argument from authority\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "When someone argues that making a change will have no significant effect, but there is no evidence that the effect will not be significant, that person has committed which of the following fallacies?~tag~<|start_2d|>\"poisoning the well\" <|split_2d|>\"solid slope\" <|split_2d|>\"appeal to tradition\" <|split_2d|>\"argument from authority\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "solid slope",
       "incorrect_answers": [
@@ -308,7 +308,7 @@
     }
   },
   {
-    "prompt": "Which of the following best describes the fallacy of question begging epithets?|s2d|<|start_2d|>\"Treating something that exists in the mind as if it was a real object.\" <|split_2d|>\"A form of loaded language that uses an emotionally charged restatement of the claim, often in the form of name calling, in place of support for the claim.\" <|split_2d|>\"Changing the meaning of a word or phrase from one part of the argument to another.\" <|split_2d|>\"Reasoning that ideas presented in an appealing manner are correct, regardless of the content of the message.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following best describes the fallacy of question begging epithets?~tag~<|start_2d|>\"Treating something that exists in the mind as if it was a real object.\" <|split_2d|>\"A form of loaded language that uses an emotionally charged restatement of the claim, often in the form of name calling, in place of support for the claim.\" <|split_2d|>\"Changing the meaning of a word or phrase from one part of the argument to another.\" <|split_2d|>\"Reasoning that ideas presented in an appealing manner are correct, regardless of the content of the message.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "A form of loaded language that uses an emotionally charged restatement of the claim, often in the form of name calling, in place of support for the claim.",
       "incorrect_answers": [
@@ -319,7 +319,7 @@
     }
   },
   {
-    "prompt": "Which of the following describes he fallacy of appeal to pride?|s2d|<|start_2d|>\"arguing a claim should be accepted based only on evidence that unidentified authorities accept it.\" <|split_2d|>\"arguing someone should accept a claim based only on the evidence that he or she has the favorable characteristics to understand the truth of the claim.\" <|split_2d|>\"arguing something should be done based only on evidence that it's been done that way in the past, or should be believed only because it's been believed for a long time.\" <|split_2d|>\"arguing that an act or series of acts should be carried out because they will have no significant consequences, when there is no evidence for the lack of significant effects.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following describes he fallacy of appeal to pride?~tag~<|start_2d|>\"arguing a claim should be accepted based only on evidence that unidentified authorities accept it.\" <|split_2d|>\"arguing someone should accept a claim based only on the evidence that he or she has the favorable characteristics to understand the truth of the claim.\" <|split_2d|>\"arguing something should be done based only on evidence that it's been done that way in the past, or should be believed only because it's been believed for a long time.\" <|split_2d|>\"arguing that an act or series of acts should be carried out because they will have no significant consequences, when there is no evidence for the lack of significant effects.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing someone should accept a claim based only on the evidence that he or she has the favorable characteristics to understand the truth of the claim.",
       "incorrect_answers": [
@@ -330,7 +330,7 @@
     }
   },
   {
-    "prompt": "A syllogism that is formally invalid|s2d|<|start_2d|>\"cannot be materially true\" <|split_2d|>\"might be materially true\" <|split_2d|>\"might be materially untrue\" <|split_2d|>\"both B and C\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "A syllogism that is formally invalid~tag~<|start_2d|>\"cannot be materially true\" <|split_2d|>\"might be materially true\" <|split_2d|>\"might be materially untrue\" <|split_2d|>\"both B and C\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "both B and C",
       "incorrect_answers": [
@@ -341,7 +341,7 @@
     }
   },
   {
-    "prompt": "Another name for the fallacy of false dilemma is|s2d|<|start_2d|>\"Guilt by association\" <|split_2d|>\"Circular reasoning\" <|split_2d|>\"Laudatory personality\" <|split_2d|>\"False dichotomy\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Another name for the fallacy of false dilemma is~tag~<|start_2d|>\"Guilt by association\" <|split_2d|>\"Circular reasoning\" <|split_2d|>\"Laudatory personality\" <|split_2d|>\"False dichotomy\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "False dichotomy",
       "incorrect_answers": [
@@ -352,7 +352,7 @@
     }
   },
   {
-    "prompt": "When someone responds to your argument with a sarcastic statement such as, \"Yeah, right. Like that's ever going to happen,\" that person may have committed which fallacy?|s2d|<|start_2d|>\"appeal to indignation\" <|split_2d|>\"appeal to spite\" <|split_2d|>\"horse laugh\" <|split_2d|>\"tu quoque\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "When someone responds to your argument with a sarcastic statement such as, \"Yeah, right. Like that's ever going to happen,\" that person may have committed which fallacy?~tag~<|start_2d|>\"appeal to indignation\" <|split_2d|>\"appeal to spite\" <|split_2d|>\"horse laugh\" <|split_2d|>\"tu quoque\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "horse laugh",
       "incorrect_answers": [
@@ -363,7 +363,7 @@
     }
   },
   {
-    "prompt": "The _post hoc_ fallacy is|s2d|<|start_2d|>\"arguing that a single event caused another when the cause is really several events\" <|split_2d|>\"arguing that since two things happened at the same time one must have caused the other\" <|split_2d|>\"drawing a conclusion about a causal relationship when there is no evidence of a causal relationship\" <|split_2d|>\"arguing that since one event preceded another event the first event must have caused the second event\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The _post hoc_ fallacy is~tag~<|start_2d|>\"arguing that a single event caused another when the cause is really several events\" <|split_2d|>\"arguing that since two things happened at the same time one must have caused the other\" <|split_2d|>\"drawing a conclusion about a causal relationship when there is no evidence of a causal relationship\" <|split_2d|>\"arguing that since one event preceded another event the first event must have caused the second event\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing that since one event preceded another event the first event must have caused the second event",
       "incorrect_answers": [
@@ -374,7 +374,7 @@
     }
   },
   {
-    "prompt": "The fallacy of reprehensible personality is a specific type of|s2d|<|start_2d|>\"the fallacy of accident\" <|split_2d|>\"False dilemma\" <|split_2d|>\"Begging the question\" <|split_2d|>\"Circular reasoning\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The fallacy of reprehensible personality is a specific type of~tag~<|start_2d|>\"the fallacy of accident\" <|split_2d|>\"False dilemma\" <|split_2d|>\"Begging the question\" <|split_2d|>\"Circular reasoning\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "the fallacy of accident",
       "incorrect_answers": [
@@ -385,7 +385,7 @@
     }
   },
   {
-    "prompt": "_A priori_ is a fallacy that involves|s2d|<|start_2d|>\"asking a question that includes either an unproven assumption or more than one question, thus making a straightforward yes or no answer meaningless.\" <|split_2d|>\"arguing something is inferior just because it doesn't do something it was never intended to do.\" <|split_2d|>\"arguing that a claim must be true because there is no evidence that it is false.\" <|split_2d|>\"reasoning that determines the conclusion one wants first, then accepts only evidence supporting that conclusion, or interprets all evidence as support for that conclusion.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "_A priori_ is a fallacy that involves~tag~<|start_2d|>\"asking a question that includes either an unproven assumption or more than one question, thus making a straightforward yes or no answer meaningless.\" <|split_2d|>\"arguing something is inferior just because it doesn't do something it was never intended to do.\" <|split_2d|>\"arguing that a claim must be true because there is no evidence that it is false.\" <|split_2d|>\"reasoning that determines the conclusion one wants first, then accepts only evidence supporting that conclusion, or interprets all evidence as support for that conclusion.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "reasoning that determines the conclusion one wants first, then accepts only evidence supporting that conclusion, or interprets all evidence as support for that conclusion.",
       "incorrect_answers": [
@@ -396,7 +396,7 @@
     }
   },
   {
-    "prompt": "If you say an opposing arguer has taken a position that you can easily defeat, when he or she has not taken that position, then you go on to defeat that position and claim to have done significant damage to that arguer's overall argument, you are probably guilty of which of the following fallacies?|s2d|<|start_2d|>\"genetic fallacy\" <|split_2d|>\"appeal to emotions\" <|split_2d|>\"straw person\" <|split_2d|>\"ignorance of refutation\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "If you say an opposing arguer has taken a position that you can easily defeat, when he or she has not taken that position, then you go on to defeat that position and claim to have done significant damage to that arguer's overall argument, you are probably guilty of which of the following fallacies?~tag~<|start_2d|>\"genetic fallacy\" <|split_2d|>\"appeal to emotions\" <|split_2d|>\"straw person\" <|split_2d|>\"ignorance of refutation\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "straw person",
       "incorrect_answers": [
@@ -407,7 +407,7 @@
     }
   },
   {
-    "prompt": "\"The minor premise must affirm the antecedent or deny the consequent\" is a way to determine the validity of which type of argument?|s2d|<|start_2d|>\"Categorical syllogism\" <|split_2d|>\"Disjunctive syllogism\" <|split_2d|>\"Hypothetical syllogism\" <|split_2d|>\"Toulmin model\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "\"The minor premise must affirm the antecedent or deny the consequent\" is a way to determine the validity of which type of argument?~tag~<|start_2d|>\"Categorical syllogism\" <|split_2d|>\"Disjunctive syllogism\" <|split_2d|>\"Hypothetical syllogism\" <|split_2d|>\"Toulmin model\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Hypothetical syllogism",
       "incorrect_answers": [
@@ -418,7 +418,7 @@
     }
   },
   {
-    "prompt": "Arguing that someone couldn't have done something good because he is incapable of doing good commits the fallacy of|s2d|<|start_2d|>\"Begging the question\" <|split_2d|>\"False dilemma\" <|split_2d|>\"Accident\" <|split_2d|>\"False dichotomy\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Arguing that someone couldn't have done something good because he is incapable of doing good commits the fallacy of~tag~<|start_2d|>\"Begging the question\" <|split_2d|>\"False dilemma\" <|split_2d|>\"Accident\" <|split_2d|>\"False dichotomy\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Begging the question",
       "incorrect_answers": [
@@ -429,7 +429,7 @@
     }
   },
   {
-    "prompt": "The complex proposition fallacy involves|s2d|<|start_2d|>\"including more than one claim in the proposition and treating proof for one claim as proof for all the claims.\" <|split_2d|>\"asking a question that includes either an unproven assumption or more than one question, thus making a straightforward yes or no answer meaningless.\" <|split_2d|>\"arguing that a claim must be true because there is no evidence that it is false.\" <|split_2d|>\"arguing something is inferior just because it doesn't do something it was never intended to do.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The complex proposition fallacy involves~tag~<|start_2d|>\"including more than one claim in the proposition and treating proof for one claim as proof for all the claims.\" <|split_2d|>\"asking a question that includes either an unproven assumption or more than one question, thus making a straightforward yes or no answer meaningless.\" <|split_2d|>\"arguing that a claim must be true because there is no evidence that it is false.\" <|split_2d|>\"arguing something is inferior just because it doesn't do something it was never intended to do.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "including more than one claim in the proposition and treating proof for one claim as proof for all the claims.",
       "incorrect_answers": [
@@ -440,7 +440,7 @@
     }
   },
   {
-    "prompt": "Anecdotal evidence is a specific kind of|s2d|<|start_2d|>\"False sign\" <|split_2d|>\"False criteria\" <|split_2d|>\"False cause\" <|split_2d|>\"Hasty Generalization\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Anecdotal evidence is a specific kind of~tag~<|start_2d|>\"False sign\" <|split_2d|>\"False criteria\" <|split_2d|>\"False cause\" <|split_2d|>\"Hasty Generalization\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Hasty Generalization",
       "incorrect_answers": [
@@ -451,7 +451,7 @@
     }
   },
   {
-    "prompt": "Fallacies can be psychologically persuasive even though they are...|s2d|<|start_2d|>\"Psychologically impotent\" <|split_2d|>\"Logically flawed\" <|split_2d|>\"Deductively valid\" <|split_2d|>\"Inductively valid\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Fallacies can be psychologically persuasive even though they are...~tag~<|start_2d|>\"Psychologically impotent\" <|split_2d|>\"Logically flawed\" <|split_2d|>\"Deductively valid\" <|split_2d|>\"Inductively valid\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Logically flawed",
       "incorrect_answers": [
@@ -462,7 +462,7 @@
     }
   },
   {
-    "prompt": "Referring to an act committed by an opponent in negative terms while referring to the same act committed by the arguer or supporters in favorable terms describes which of the following fallacies?|s2d|<|start_2d|>\"Ambiguity\" <|split_2d|>\"Special pleading\" <|split_2d|>\"Reification\" <|split_2d|>\"Hypostatization\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Referring to an act committed by an opponent in negative terms while referring to the same act committed by the arguer or supporters in favorable terms describes which of the following fallacies?~tag~<|start_2d|>\"Ambiguity\" <|split_2d|>\"Special pleading\" <|split_2d|>\"Reification\" <|split_2d|>\"Hypostatization\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Special pleading",
       "incorrect_answers": [
@@ -473,7 +473,7 @@
     }
   },
   {
-    "prompt": "Which of the following explanations best fits the fallacy of ignorance of refutation?|s2d|<|start_2d|>\"asserting an argumentative opponent has taken an easily defeated position, which the opponent has not really taken, defeating the position, and acting as if you've done significant damage to that person's overall argument.\" <|split_2d|>\"causing confusion during refutation because of a real or feigned lack of the ability to engage in refutation\" <|split_2d|>\"characterizing an opposing argument in such a way to make it or its consequences appear to be ridiculous\" <|split_2d|>\"arguing an action should be taken based only on the need to be loyal to someone or to a group\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following explanations best fits the fallacy of ignorance of refutation?~tag~<|start_2d|>\"asserting an argumentative opponent has taken an easily defeated position, which the opponent has not really taken, defeating the position, and acting as if you've done significant damage to that person's overall argument.\" <|split_2d|>\"causing confusion during refutation because of a real or feigned lack of the ability to engage in refutation\" <|split_2d|>\"characterizing an opposing argument in such a way to make it or its consequences appear to be ridiculous\" <|split_2d|>\"arguing an action should be taken based only on the need to be loyal to someone or to a group\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "causing confusion during refutation because of a real or feigned lack of the ability to engage in refutation",
       "incorrect_answers": [
@@ -484,7 +484,7 @@
     }
   },
   {
-    "prompt": "Another name for the fallacy of reducing to an absurdity is|s2d|<|start_2d|>\"tu quoque\" <|split_2d|>\"ad baculum\" <|split_2d|>\"ad hominem\" <|split_2d|>\"reductio ad absurdum\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Another name for the fallacy of reducing to an absurdity is~tag~<|start_2d|>\"tu quoque\" <|split_2d|>\"ad baculum\" <|split_2d|>\"ad hominem\" <|split_2d|>\"reductio ad absurdum\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "reductio ad absurdum",
       "incorrect_answers": [
@@ -495,7 +495,7 @@
     }
   },
   {
-    "prompt": "Another name for the fallacy of complex question is|s2d|<|start_2d|>\"Fallacy of interrogation\" <|split_2d|>\"Compound proposition\" <|split_2d|>\"Appeal to ignorance\" <|split_2d|>\"Extension\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Another name for the fallacy of complex question is~tag~<|start_2d|>\"Fallacy of interrogation\" <|split_2d|>\"Compound proposition\" <|split_2d|>\"Appeal to ignorance\" <|split_2d|>\"Extension\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Fallacy of interrogation",
       "incorrect_answers": [
@@ -506,7 +506,7 @@
     }
   },
   {
-    "prompt": "The appeal to joy fallacy involves|s2d|<|start_2d|>\"arguing that someone should do something based only on the assertion that it will make him or her feel happier\" <|split_2d|>\"causing confusion during refutation because of a lack of ability to engage in refutation\" <|split_2d|>\"arguing for a conclusion based only on feeling sorry for someone when that feeling is irrelevant to the conclusion\" <|split_2d|>\"arguing someone should do something only because other people will like him or her for doing it\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The appeal to joy fallacy involves~tag~<|start_2d|>\"arguing that someone should do something based only on the assertion that it will make him or her feel happier\" <|split_2d|>\"causing confusion during refutation because of a lack of ability to engage in refutation\" <|split_2d|>\"arguing for a conclusion based only on feeling sorry for someone when that feeling is irrelevant to the conclusion\" <|split_2d|>\"arguing someone should do something only because other people will like him or her for doing it\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing that someone should do something based only on the assertion that it will make him or her feel happier",
       "incorrect_answers": [
@@ -517,7 +517,7 @@
     }
   },
   {
-    "prompt": "Another name for the fallacy of accident is|s2d|<|start_2d|>\"Sweeping generalization\" <|split_2d|>\"Black-or-white fallacy\" <|split_2d|>\"Petitio principii\" <|split_2d|>\"False dichotomy\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Another name for the fallacy of accident is~tag~<|start_2d|>\"Sweeping generalization\" <|split_2d|>\"Black-or-white fallacy\" <|split_2d|>\"Petitio principii\" <|split_2d|>\"False dichotomy\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Sweeping generalization",
       "incorrect_answers": [
@@ -528,7 +528,7 @@
     }
   },
   {
-    "prompt": "Which of the following describes the fallacy of evading the issue?|s2d|<|start_2d|>\"arguing that someone should do something only because of ill will towards someone else\" <|split_2d|>\"characterizing an opponent's position in a way that makes it seem ridiculous\" <|split_2d|>\"supporting a claim with evidence or reasoning that is not relevant to the proposition, or responding to another's argument by changing the subject\" <|split_2d|>\"attempting to gain agreement based only on the feelings aroused in the message\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following describes the fallacy of evading the issue?~tag~<|start_2d|>\"arguing that someone should do something only because of ill will towards someone else\" <|split_2d|>\"characterizing an opponent's position in a way that makes it seem ridiculous\" <|split_2d|>\"supporting a claim with evidence or reasoning that is not relevant to the proposition, or responding to another's argument by changing the subject\" <|split_2d|>\"attempting to gain agreement based only on the feelings aroused in the message\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "supporting a claim with evidence or reasoning that is not relevant to the proposition, or responding to another's argument by changing the subject",
       "incorrect_answers": [
@@ -539,7 +539,7 @@
     }
   },
   {
-    "prompt": "Including more than one claim in a proposition may lead to which of the following fallacies?|s2d|<|start_2d|>\"Complex question\" <|split_2d|>\"Appeal to ignorance\" <|split_2d|>\"Compound proposition\" <|split_2d|>\"Extension\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Including more than one claim in a proposition may lead to which of the following fallacies?~tag~<|start_2d|>\"Complex question\" <|split_2d|>\"Appeal to ignorance\" <|split_2d|>\"Compound proposition\" <|split_2d|>\"Extension\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Compound proposition",
       "incorrect_answers": [
@@ -550,7 +550,7 @@
     }
   },
   {
-    "prompt": "Which of the following fallacies happens when someone concludes that someone couldn't have done something bad because he or she has good qualities?|s2d|<|start_2d|>\"Laudatory personality\" <|split_2d|>\"Guilt by association\" <|split_2d|>\"Reprehensible personality\" <|split_2d|>\"Circular reasoning\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following fallacies happens when someone concludes that someone couldn't have done something bad because he or she has good qualities?~tag~<|start_2d|>\"Laudatory personality\" <|split_2d|>\"Guilt by association\" <|split_2d|>\"Reprehensible personality\" <|split_2d|>\"Circular reasoning\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Laudatory personality",
       "incorrect_answers": [
@@ -561,7 +561,7 @@
     }
   },
   {
-    "prompt": "Which of the following describes the fallacy of appeal to popularity?|s2d|<|start_2d|>\"saying someone should do something because he or she dislikes someone else\" <|split_2d|>\"saying someone should do something to be better liked by others\" <|split_2d|>\"saying someone should do something because it will make him or her feel good\" <|split_2d|>\"saying someone should accept an idea because of the source of the idea\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following describes the fallacy of appeal to popularity?~tag~<|start_2d|>\"saying someone should do something because he or she dislikes someone else\" <|split_2d|>\"saying someone should do something to be better liked by others\" <|split_2d|>\"saying someone should do something because it will make him or her feel good\" <|split_2d|>\"saying someone should accept an idea because of the source of the idea\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "saying someone should do something to be better liked by others",
       "incorrect_answers": [
@@ -572,7 +572,7 @@
     }
   },
   {
-    "prompt": "Which fallacy happens because of a failure to recognize the alternatives presented are not mutually exclusive?|s2d|<|start_2d|>\"Begging the Question\" <|split_2d|>\"Accident\" <|split_2d|>\"Circular reasoning\" <|split_2d|>\"False dilemma\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which fallacy happens because of a failure to recognize the alternatives presented are not mutually exclusive?~tag~<|start_2d|>\"Begging the Question\" <|split_2d|>\"Accident\" <|split_2d|>\"Circular reasoning\" <|split_2d|>\"False dilemma\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "False dilemma",
       "incorrect_answers": [
@@ -583,7 +583,7 @@
     }
   },
   {
-    "prompt": "In a conditional syllogism, when the minor premise denies the antecedent|s2d|<|start_2d|>\"no valid conclusion can be drawn\" <|split_2d|>\"the conclusion must affirm the consequent\" <|split_2d|>\"the conclusion must deny the consequent\" <|split_2d|>\"the conclusion must affirm the antecedent\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "In a conditional syllogism, when the minor premise denies the antecedent~tag~<|start_2d|>\"no valid conclusion can be drawn\" <|split_2d|>\"the conclusion must affirm the consequent\" <|split_2d|>\"the conclusion must deny the consequent\" <|split_2d|>\"the conclusion must affirm the antecedent\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "no valid conclusion can be drawn",
       "incorrect_answers": [
@@ -594,7 +594,7 @@
     }
   },
   {
-    "prompt": "The Dean was showing a visitor around the campus. The visitor asked, \"About how many students do you have here?\" After a moment of reflection the Dean replied, \"Oh, I'd guess about one in a hundred.\"|s2d|<|start_2d|>\"Equivocation\" <|split_2d|>\"Fallacy of Division\" <|split_2d|>\"Appeal to Authority\" <|split_2d|>\"Denying the Antecedent\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The Dean was showing a visitor around the campus. The visitor asked, \"About how many students do you have here?\" After a moment of reflection the Dean replied, \"Oh, I'd guess about one in a hundred.\"~tag~<|start_2d|>\"Equivocation\" <|split_2d|>\"Fallacy of Division\" <|split_2d|>\"Appeal to Authority\" <|split_2d|>\"Denying the Antecedent\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Equivocation",
       "incorrect_answers": [
@@ -605,7 +605,7 @@
     }
   },
   {
-    "prompt": "The appeal to anonymous authority fallacy consists of|s2d|<|start_2d|>\"reasoning that an act or series of acts should be carried out because they will have no significant consequences, when there is no evidence there will be no consequences.\" <|split_2d|>\"arguing that a claim should be accepted based on the evidence that a large number of people accept it\" <|split_2d|>\"arguing that something should be done because it has been done in the past\" <|split_2d|>\"arguing a claim should be accepted based only on the assertion that unidentified authorities accept it\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The appeal to anonymous authority fallacy consists of~tag~<|start_2d|>\"reasoning that an act or series of acts should be carried out because they will have no significant consequences, when there is no evidence there will be no consequences.\" <|split_2d|>\"arguing that a claim should be accepted based on the evidence that a large number of people accept it\" <|split_2d|>\"arguing that something should be done because it has been done in the past\" <|split_2d|>\"arguing a claim should be accepted based only on the assertion that unidentified authorities accept it\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing a claim should be accepted based only on the assertion that unidentified authorities accept it",
       "incorrect_answers": [
@@ -616,7 +616,7 @@
     }
   },
   {
-    "prompt": "A hasty generalization is a fallacy of...|s2d|<|start_2d|>\"Acceptable premises\" <|split_2d|>\"Unacceptable premises\" <|split_2d|>\"Deduction\" <|split_2d|>\"Acceptable but untrue premises\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "A hasty generalization is a fallacy of...~tag~<|start_2d|>\"Acceptable premises\" <|split_2d|>\"Unacceptable premises\" <|split_2d|>\"Deduction\" <|split_2d|>\"Acceptable but untrue premises\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Unacceptable premises",
       "incorrect_answers": [
@@ -627,7 +627,7 @@
     }
   },
   {
-    "prompt": "Which of the following best describes the fallacy of figure of speech?|s2d|<|start_2d|>\"Using emotionally charged language to create an impression about the subject of a claim, without making an argument that the language fits the subject.\" <|split_2d|>\"Treating something that exists in the mind as if it was a real object.\" <|split_2d|>\"Confusing figurative language with literal language.\" <|split_2d|>\"A form of loaded language that uses an emotionally charged restatement of the claim in place of support for the claim.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following best describes the fallacy of figure of speech?~tag~<|start_2d|>\"Using emotionally charged language to create an impression about the subject of a claim, without making an argument that the language fits the subject.\" <|split_2d|>\"Treating something that exists in the mind as if it was a real object.\" <|split_2d|>\"Confusing figurative language with literal language.\" <|split_2d|>\"A form of loaded language that uses an emotionally charged restatement of the claim in place of support for the claim.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Confusing figurative language with literal language.",
       "incorrect_answers": [
@@ -638,7 +638,7 @@
     }
   },
   {
-    "prompt": "The fallacy of extension consists of|s2d|<|start_2d|>\"asking a question that includes either an unproven assumption or more than one question, thus making a straightforward yes or no answer meaningless.\" <|split_2d|>\"arguing something is flawed because it doesn't do what it was never intended to do.\" <|split_2d|>\"arguing about something when you don't know what you're talking about\" <|split_2d|>\"including more than one claim in the proposition and treating proof for one claim as proof for all the claims.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The fallacy of extension consists of~tag~<|start_2d|>\"asking a question that includes either an unproven assumption or more than one question, thus making a straightforward yes or no answer meaningless.\" <|split_2d|>\"arguing something is flawed because it doesn't do what it was never intended to do.\" <|split_2d|>\"arguing about something when you don't know what you're talking about\" <|split_2d|>\"including more than one claim in the proposition and treating proof for one claim as proof for all the claims.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing something is flawed because it doesn't do what it was never intended to do.",
       "incorrect_answers": [
@@ -649,7 +649,7 @@
     }
   },
   {
-    "prompt": "Arguing that a claim must be true because there is no evidence that it is false is which of the following fallacies?|s2d|<|start_2d|>\"a priori\" <|split_2d|>\"Extension\" <|split_2d|>\"Appeal to ignorance\" <|split_2d|>\"plurium interrogationum\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Arguing that a claim must be true because there is no evidence that it is false is which of the following fallacies?~tag~<|start_2d|>\"a priori\" <|split_2d|>\"Extension\" <|split_2d|>\"Appeal to ignorance\" <|split_2d|>\"plurium interrogationum\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Appeal to ignorance",
       "incorrect_answers": [
@@ -660,7 +660,7 @@
     }
   },
   {
-    "prompt": "Which of the following describes the fallacy of appeal to common practice?|s2d|<|start_2d|>\"eliminating a source of evidence from consideration by claiming the source is flawed, when there is no true relationship between the alleged flaw and the reliability of the source\" <|split_2d|>\"reasoning that an act or series of acts should be carried out because they will have no significant consequences, when there is no evidence there will be no consequences\" <|split_2d|>\"drawing a conclusion after purposely leaving out evidence or ignoring known evidence that might contradict a claim\" <|split_2d|>\"arguing that something is the right thing to do based only on evidence that other people are already doing it.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following describes the fallacy of appeal to common practice?~tag~<|start_2d|>\"eliminating a source of evidence from consideration by claiming the source is flawed, when there is no true relationship between the alleged flaw and the reliability of the source\" <|split_2d|>\"reasoning that an act or series of acts should be carried out because they will have no significant consequences, when there is no evidence there will be no consequences\" <|split_2d|>\"drawing a conclusion after purposely leaving out evidence or ignoring known evidence that might contradict a claim\" <|split_2d|>\"arguing that something is the right thing to do based only on evidence that other people are already doing it.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing that something is the right thing to do based only on evidence that other people are already doing it.",
       "incorrect_answers": [
@@ -671,7 +671,7 @@
     }
   },
   {
-    "prompt": "Which of the following is another name for evading the issue?|s2d|<|start_2d|>\"'you too' fallacy\" <|split_2d|>\"irrelevant conclusion\" <|split_2d|>\"appeal to fear\" <|split_2d|>\"argument against the person\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following is another name for evading the issue?~tag~<|start_2d|>\"'you too' fallacy\" <|split_2d|>\"irrelevant conclusion\" <|split_2d|>\"appeal to fear\" <|split_2d|>\"argument against the person\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "irrelevant conclusion",
       "incorrect_answers": [
@@ -682,7 +682,7 @@
     }
   },
   {
-    "prompt": "I don't understand why everyone thinks they belong in college. After all, everyone knows that when you are intelligent you'll succeed. But so many people that elect to attend college don't have even the most basic intelligence. How do they expect to get anywhere here?|s2d|<|start_2d|>\"Attacking the Person (ad hominem)\" <|split_2d|>\"Straw Man\" <|split_2d|>\"Denying the Antecedent\" <|split_2d|>\"Begging the Question\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "I don't understand why everyone thinks they belong in college. After all, everyone knows that when you are intelligent you'll succeed. But so many people that elect to attend college don't have even the most basic intelligence. How do they expect to get anywhere here?~tag~<|start_2d|>\"Attacking the Person (ad hominem)\" <|split_2d|>\"Straw Man\" <|split_2d|>\"Denying the Antecedent\" <|split_2d|>\"Begging the Question\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Denying the Antecedent",
       "incorrect_answers": [
@@ -693,7 +693,7 @@
     }
   },
   {
-    "prompt": "When someone treats an imaginary concept as if it was something tangible that person might commit the fallacy of|s2d|<|start_2d|>\"Question begging epithets\" <|split_2d|>\"Misusing ambiguity\" <|split_2d|>\"Hypostatization\" <|split_2d|>\"Amphiboly\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "When someone treats an imaginary concept as if it was something tangible that person might commit the fallacy of~tag~<|start_2d|>\"Question begging epithets\" <|split_2d|>\"Misusing ambiguity\" <|split_2d|>\"Hypostatization\" <|split_2d|>\"Amphiboly\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Hypostatization",
       "incorrect_answers": [
@@ -704,7 +704,7 @@
     }
   },
   {
-    "prompt": "Another name for hasty generalization is|s2d|<|start_2d|>\"false criteria\" <|split_2d|>\"secundum quid\" <|split_2d|>\"anecdotal evidence\" <|split_2d|>\"ad crumenam\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Another name for hasty generalization is~tag~<|start_2d|>\"false criteria\" <|split_2d|>\"secundum quid\" <|split_2d|>\"anecdotal evidence\" <|split_2d|>\"ad crumenam\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "secundum quid",
       "incorrect_answers": [
@@ -715,7 +715,7 @@
     }
   },
   {
-    "prompt": "An arguer who threatens another to gain agreement commits the fallacy of|s2d|<|start_2d|>\"appeal to force\" <|split_2d|>\"tu quoque\" <|split_2d|>\"ignorance of refutation\" <|split_2d|>\"straw person\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "An arguer who threatens another to gain agreement commits the fallacy of~tag~<|start_2d|>\"appeal to force\" <|split_2d|>\"tu quoque\" <|split_2d|>\"ignorance of refutation\" <|split_2d|>\"straw person\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "appeal to force",
       "incorrect_answers": [
@@ -726,7 +726,7 @@
     }
   },
   {
-    "prompt": "Which type of syllogism's major premise takes the form, \"All A's are B\"?|s2d|<|start_2d|>\"categorical\" <|split_2d|>\"disjunctive\" <|split_2d|>\"conditional\" <|split_2d|>\"hypothetical\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which type of syllogism's major premise takes the form, \"All A's are B\"?~tag~<|start_2d|>\"categorical\" <|split_2d|>\"disjunctive\" <|split_2d|>\"conditional\" <|split_2d|>\"hypothetical\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "categorical",
       "incorrect_answers": [
@@ -737,7 +737,7 @@
     }
   },
   {
-    "prompt": "Which of the following fallacies happens when someone argues that a choice must be made among a certain set of alternatives, when there are really other alternatives to choose from?|s2d|<|start_2d|>\"Laudatory personality\" <|split_2d|>\"Accident\" <|split_2d|>\"False dilemma\" <|split_2d|>\"Circular reasoning\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following fallacies happens when someone argues that a choice must be made among a certain set of alternatives, when there are really other alternatives to choose from?~tag~<|start_2d|>\"Laudatory personality\" <|split_2d|>\"Accident\" <|split_2d|>\"False dilemma\" <|split_2d|>\"Circular reasoning\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "False dilemma",
       "incorrect_answers": [
@@ -748,7 +748,7 @@
     }
   },
   {
-    "prompt": "If you think that someone's argument is strong based on their compelling use of language and confident delivery, you've probably committed which fallacy?|s2d|<|start_2d|>\"Amphiboly\" <|split_2d|>\"Equivocation\" <|split_2d|>\"Special pleading\" <|split_2d|>\"Style over substance\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "If you think that someone's argument is strong based on their compelling use of language and confident delivery, you've probably committed which fallacy?~tag~<|start_2d|>\"Amphiboly\" <|split_2d|>\"Equivocation\" <|split_2d|>\"Special pleading\" <|split_2d|>\"Style over substance\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Style over substance",
       "incorrect_answers": [
@@ -759,7 +759,7 @@
     }
   },
   {
-    "prompt": "Which of the following describes the fallacy of appeal to indignation?|s2d|<|start_2d|>\"attacking the character or background of someone making an argument instead of his or her evidence and reasoning\" <|split_2d|>\"responding to charges of wrongdoing by saying other people do the same thing\" <|split_2d|>\"arguing against a position only based on personal feelings toward the position\" <|split_2d|>\"responding to an argument with an expression of derision instead of a counter argument\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following describes the fallacy of appeal to indignation?~tag~<|start_2d|>\"attacking the character or background of someone making an argument instead of his or her evidence and reasoning\" <|split_2d|>\"responding to charges of wrongdoing by saying other people do the same thing\" <|split_2d|>\"arguing against a position only based on personal feelings toward the position\" <|split_2d|>\"responding to an argument with an expression of derision instead of a counter argument\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing against a position only based on personal feelings toward the position",
       "incorrect_answers": [
@@ -770,7 +770,7 @@
     }
   },
   {
-    "prompt": "Evading burden of proof is another name for the fallacy of|s2d|<|start_2d|>\"Extension\" <|split_2d|>\"Appeal to ignorance\" <|split_2d|>\"Complex question\" <|split_2d|>\"Complex proposition\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Evading burden of proof is another name for the fallacy of~tag~<|start_2d|>\"Extension\" <|split_2d|>\"Appeal to ignorance\" <|split_2d|>\"Complex question\" <|split_2d|>\"Complex proposition\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Appeal to ignorance",
       "incorrect_answers": [
@@ -781,7 +781,7 @@
     }
   },
   {
-    "prompt": "In a hypothetical syllogism, when the minor premise affirms the antecedent|s2d|<|start_2d|>\"no valid conclusion can be drawn\" <|split_2d|>\"the conclusion must affirm the consequent\" <|split_2d|>\"the conclusion must deny the consequent\" <|split_2d|>\"the conclusion must deny the antecedent\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "In a hypothetical syllogism, when the minor premise affirms the antecedent~tag~<|start_2d|>\"no valid conclusion can be drawn\" <|split_2d|>\"the conclusion must affirm the consequent\" <|split_2d|>\"the conclusion must deny the consequent\" <|split_2d|>\"the conclusion must deny the antecedent\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "the conclusion must affirm the consequent",
       "incorrect_answers": [
@@ -792,7 +792,7 @@
     }
   },
   {
-    "prompt": "Moses Maimonides, \"The Guide of the Perplexed\": God, may He be exalted ... existed alone, and nothing else. ...Afterwards, through His will and His volition, He brought into existence out of nothing all the beings as they are, time itself being one of the created things. For time is consequent upon motion, and motion is an accident of what is moved. Furthermore, what is moved...is itself created in time ....|s2d|<|start_2d|>\"Equivocation\" <|split_2d|>\"Appeal to Authority\" <|split_2d|>\"Inconsisteny\" <|split_2d|>\"Slippery Slope\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Moses Maimonides, \"The Guide of the Perplexed\": God, may He be exalted ... existed alone, and nothing else. ...Afterwards, through His will and His volition, He brought into existence out of nothing all the beings as they are, time itself being one of the created things. For time is consequent upon motion, and motion is an accident of what is moved. Furthermore, what is moved...is itself created in time ....~tag~<|start_2d|>\"Equivocation\" <|split_2d|>\"Appeal to Authority\" <|split_2d|>\"Inconsisteny\" <|split_2d|>\"Slippery Slope\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Inconsisteny",
       "incorrect_answers": [
@@ -803,7 +803,7 @@
     }
   },
   {
-    "prompt": "John Stuart Mill: Each person's happiness is a good to that person, and the general happiness, therefore, a good to the aggregate of all persons.|s2d|<|start_2d|>\"Fallacy of Composition\" <|split_2d|>\"Fallacy of Division\" <|split_2d|>\"Gambler's Fallacy\" <|split_2d|>\"Equivocation\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "John Stuart Mill: Each person's happiness is a good to that person, and the general happiness, therefore, a good to the aggregate of all persons.~tag~<|start_2d|>\"Fallacy of Composition\" <|split_2d|>\"Fallacy of Division\" <|split_2d|>\"Gambler's Fallacy\" <|split_2d|>\"Equivocation\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Fallacy of Composition",
       "incorrect_answers": [
@@ -814,7 +814,7 @@
     }
   },
   {
-    "prompt": "_Circulus in probando_ is another name for|s2d|<|start_2d|>\"The fallacy of accident\" <|split_2d|>\"False dilemma\" <|split_2d|>\"Begging the question\" <|split_2d|>\"Guilt by association\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "_Circulus in probando_ is another name for~tag~<|start_2d|>\"The fallacy of accident\" <|split_2d|>\"False dilemma\" <|split_2d|>\"Begging the question\" <|split_2d|>\"Guilt by association\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Begging the question",
       "incorrect_answers": [
@@ -825,7 +825,7 @@
     }
   },
   {
-    "prompt": "Arguing that an idea should be accepted or rejected only because of the source of the idea commits which of the following fallacies?|s2d|<|start_2d|>\"genetic fallacy\" <|split_2d|>\"appeal to popularity\" <|split_2d|>\"scare tactics\" <|split_2d|>\"appeal to emotions\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Arguing that an idea should be accepted or rejected only because of the source of the idea commits which of the following fallacies?~tag~<|start_2d|>\"genetic fallacy\" <|split_2d|>\"appeal to popularity\" <|split_2d|>\"scare tactics\" <|split_2d|>\"appeal to emotions\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "genetic fallacy",
       "incorrect_answers": [
@@ -836,7 +836,7 @@
     }
   },
   {
-    "prompt": "At the end of the course, Professor Jones told us that we were the best class he had ever had. That's why I'm sure that the 0.0 the appeared on my grade report is a mistake. Surely, if we were as good a class as Professor Jones said we were, none of us deserved to fail.|s2d|<|start_2d|>\"Fallacy of Composition\" <|split_2d|>\"Fallacy of Division\" <|split_2d|>\"Questionable Cause\" <|split_2d|>\"Appeal to Gallery (Provicialism)\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "At the end of the course, Professor Jones told us that we were the best class he had ever had. That's why I'm sure that the 0.0 the appeared on my grade report is a mistake. Surely, if we were as good a class as Professor Jones said we were, none of us deserved to fail.~tag~<|start_2d|>\"Fallacy of Composition\" <|split_2d|>\"Fallacy of Division\" <|split_2d|>\"Questionable Cause\" <|split_2d|>\"Appeal to Gallery (Provicialism)\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Fallacy of Division",
       "incorrect_answers": [
@@ -847,7 +847,7 @@
     }
   },
   {
-    "prompt": "Which of the following best describes the fallacy of equivocation?|s2d|<|start_2d|>\"A form of loaded language that uses an emotionally charged restatement of the claim in place of support for the claim.\" <|split_2d|>\"Changing the meaning of a word or phrase from one part of the argument to another.\" <|split_2d|>\"Confusing figurative language with literal language.\" <|split_2d|>\"Referring to an act committed by an opponent in negative terms while referring to the same act committed by the arguer or supporters in favorable terms.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following best describes the fallacy of equivocation?~tag~<|start_2d|>\"A form of loaded language that uses an emotionally charged restatement of the claim in place of support for the claim.\" <|split_2d|>\"Changing the meaning of a word or phrase from one part of the argument to another.\" <|split_2d|>\"Confusing figurative language with literal language.\" <|split_2d|>\"Referring to an act committed by an opponent in negative terms while referring to the same act committed by the arguer or supporters in favorable terms.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Changing the meaning of a word or phrase from one part of the argument to another.",
       "incorrect_answers": [
@@ -858,7 +858,7 @@
     }
   },
   {
-    "prompt": "The fallacy of appeal to emotions consists of|s2d|<|start_2d|>\"trying to make an opponent's argument seem ridiculous\" <|split_2d|>\"defending wrongdoing by claiming the opposing arguer does the same thing\" <|split_2d|>\"arguing that an argument should be rejected because the source of the argument\" <|split_2d|>\"trying to get someone else to agree to a claim only by arousing that person's feelings about the subject\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The fallacy of appeal to emotions consists of~tag~<|start_2d|>\"trying to make an opponent's argument seem ridiculous\" <|split_2d|>\"defending wrongdoing by claiming the opposing arguer does the same thing\" <|split_2d|>\"arguing that an argument should be rejected because the source of the argument\" <|split_2d|>\"trying to get someone else to agree to a claim only by arousing that person's feelings about the subject\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "trying to get someone else to agree to a claim only by arousing that person's feelings about the subject",
       "incorrect_answers": [
@@ -869,7 +869,7 @@
     }
   },
   {
-    "prompt": "\"To be valid, the minor premise must either agree with the antecedent, or disagree with the consequent\" is a requirement for|s2d|<|start_2d|>\"a disjunctive syllogism\" <|split_2d|>\"a categorical syllogism\" <|split_2d|>\"a conditional syllogism\" <|split_2d|>\"disjunctive enthymeme\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "\"To be valid, the minor premise must either agree with the antecedent, or disagree with the consequent\" is a requirement for~tag~<|start_2d|>\"a disjunctive syllogism\" <|split_2d|>\"a categorical syllogism\" <|split_2d|>\"a conditional syllogism\" <|split_2d|>\"disjunctive enthymeme\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "a conditional syllogism",
       "incorrect_answers": [
@@ -880,7 +880,7 @@
     }
   },
   {
-    "prompt": "Which of the following fallacies happens when someone concludes that someone couldn't have done something good because he or she has negative qualities?|s2d|<|start_2d|>\"Laudatory personality\" <|split_2d|>\"Guilt by association\" <|split_2d|>\"Reprehensible personality\" <|split_2d|>\"Circular reasoning\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following fallacies happens when someone concludes that someone couldn't have done something good because he or she has negative qualities?~tag~<|start_2d|>\"Laudatory personality\" <|split_2d|>\"Guilt by association\" <|split_2d|>\"Reprehensible personality\" <|split_2d|>\"Circular reasoning\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Reprehensible personality",
       "incorrect_answers": [
@@ -891,7 +891,7 @@
     }
   },
   {
-    "prompt": "Another name for the bandwagon appeal is|s2d|<|start_2d|>\"appeal to beliefs\" <|split_2d|>\"appeal to authority\" <|split_2d|>\"appeal to the people\" <|split_2d|>\"common man appeal\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Another name for the bandwagon appeal is~tag~<|start_2d|>\"appeal to beliefs\" <|split_2d|>\"appeal to authority\" <|split_2d|>\"appeal to the people\" <|split_2d|>\"common man appeal\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "appeal to the people",
       "incorrect_answers": [
@@ -902,7 +902,7 @@
     }
   },
   {
-    "prompt": "A valid disjunctive syllogism has which of the following characteristics?|s2d|<|start_2d|>\"The minor premise must either affirm the antecedent or deny the consequent\" <|split_2d|>\"The minor premise must either accept an alternative or reject an alternative\" <|split_2d|>\"One of the premises is missing\" <|split_2d|>\"It reaches a truthful conclusion\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "A valid disjunctive syllogism has which of the following characteristics?~tag~<|start_2d|>\"The minor premise must either affirm the antecedent or deny the consequent\" <|split_2d|>\"The minor premise must either accept an alternative or reject an alternative\" <|split_2d|>\"One of the premises is missing\" <|split_2d|>\"It reaches a truthful conclusion\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "The minor premise must either accept an alternative or reject an alternative",
       "incorrect_answers": [
@@ -913,7 +913,7 @@
     }
   },
   {
-    "prompt": "Appeal to beliefs is another name for which of the following fallacies?|s2d|<|start_2d|>\"ad nauseam\" <|split_2d|>\"appeal to tradition\" <|split_2d|>\"solid slope\" <|split_2d|>\"self evident truths\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Appeal to beliefs is another name for which of the following fallacies?~tag~<|start_2d|>\"ad nauseam\" <|split_2d|>\"appeal to tradition\" <|split_2d|>\"solid slope\" <|split_2d|>\"self evident truths\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "self evident truths",
       "incorrect_answers": [
@@ -924,7 +924,7 @@
     }
   },
   {
-    "prompt": "When a claim is supported only by asserting that unidentified experts accept the claim the arguer has committed which of the following fallacies?|s2d|<|start_2d|>\"appeal to tradition\" <|split_2d|>\"ad vericundiam\" <|split_2d|>\"appeal to anonymous authority\" <|split_2d|>\"snob appeal\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "When a claim is supported only by asserting that unidentified experts accept the claim the arguer has committed which of the following fallacies?~tag~<|start_2d|>\"appeal to tradition\" <|split_2d|>\"ad vericundiam\" <|split_2d|>\"appeal to anonymous authority\" <|split_2d|>\"snob appeal\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "appeal to anonymous authority",
       "incorrect_answers": [
@@ -935,7 +935,7 @@
     }
   },
   {
-    "prompt": "The black-or-white fallacy is another name for|s2d|<|start_2d|>\"The fallacy of accident\" <|split_2d|>\"False dilemma\" <|split_2d|>\"Begging the question\" <|split_2d|>\"Circular reasoning\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The black-or-white fallacy is another name for~tag~<|start_2d|>\"The fallacy of accident\" <|split_2d|>\"False dilemma\" <|split_2d|>\"Begging the question\" <|split_2d|>\"Circular reasoning\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "False dilemma",
       "incorrect_answers": [
@@ -946,7 +946,7 @@
     }
   },
   {
-    "prompt": "The false sign fallacy is|s2d|<|start_2d|>\"arguing that what is true of part of an object is necessarily true of the entire object\" <|split_2d|>\"arguing that two things are similar enough that what is true of one is true of the other\" <|split_2d|>\"arguing that since something is inexpensive it is necessarily of low quality\" <|split_2d|>\"reasoning by sign when there is really not a direct relationship between the alleged sign and the subject of the argument\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The false sign fallacy is~tag~<|start_2d|>\"arguing that what is true of part of an object is necessarily true of the entire object\" <|split_2d|>\"arguing that two things are similar enough that what is true of one is true of the other\" <|split_2d|>\"arguing that since something is inexpensive it is necessarily of low quality\" <|split_2d|>\"reasoning by sign when there is really not a direct relationship between the alleged sign and the subject of the argument\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "reasoning by sign when there is really not a direct relationship between the alleged sign and the subject of the argument",
       "incorrect_answers": [
@@ -957,7 +957,7 @@
     }
   },
   {
-    "prompt": "\" _Ad novitatem_ \" is|s2d|<|start_2d|>\"arguing that what is true of a few members of a class is true of all members of the class\" <|split_2d|>\"drawing a conclusion by applying irrelevant criteria to a subject\" <|split_2d|>\"substituting individual stories for a larger sample as support for a claim\" <|split_2d|>\"arguing that something must be good because it is new, or must be bad because it is old\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "\" _Ad novitatem_ \" is~tag~<|start_2d|>\"arguing that what is true of a few members of a class is true of all members of the class\" <|split_2d|>\"drawing a conclusion by applying irrelevant criteria to a subject\" <|split_2d|>\"substituting individual stories for a larger sample as support for a claim\" <|split_2d|>\"arguing that something must be good because it is new, or must be bad because it is old\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing that something must be good because it is new, or must be bad because it is old",
       "incorrect_answers": [
@@ -968,7 +968,7 @@
     }
   },
   {
-    "prompt": "When someone tries to support a proposition with information that really has nothing to do with the claim being made, that person has probably committed which of the following fallacies?|s2d|<|start_2d|>\"straw person\" <|split_2d|>\"genetic fallacy\" <|split_2d|>\"irrelevant conclusion\" <|split_2d|>\"ignoratio elenchi\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "When someone tries to support a proposition with information that really has nothing to do with the claim being made, that person has probably committed which of the following fallacies?~tag~<|start_2d|>\"straw person\" <|split_2d|>\"genetic fallacy\" <|split_2d|>\"irrelevant conclusion\" <|split_2d|>\"ignoratio elenchi\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "irrelevant conclusion",
       "incorrect_answers": [
@@ -979,7 +979,7 @@
     }
   },
   {
-    "prompt": "Applying irrelevant standards to the subject of the argument is the fallacy of|s2d|<|start_2d|>\"ad crumenam\" <|split_2d|>\"ad antiquitatem\" <|split_2d|>\"false criteria\" <|split_2d|>\"hasty generalization\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Applying irrelevant standards to the subject of the argument is the fallacy of~tag~<|start_2d|>\"ad crumenam\" <|split_2d|>\"ad antiquitatem\" <|split_2d|>\"false criteria\" <|split_2d|>\"hasty generalization\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "false criteria",
       "incorrect_answers": [
@@ -990,7 +990,7 @@
     }
   },
   {
-    "prompt": "If you argued something is flawed because it fails to do something, when it was never intended to do that, you may have committed which of the following fallacies?|s2d|<|start_2d|>\"ad ignorantium\" <|split_2d|>\"Many questions\" <|split_2d|>\"Extension\" <|split_2d|>\"Compound proposition\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "If you argued something is flawed because it fails to do something, when it was never intended to do that, you may have committed which of the following fallacies?~tag~<|start_2d|>\"ad ignorantium\" <|split_2d|>\"Many questions\" <|split_2d|>\"Extension\" <|split_2d|>\"Compound proposition\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Extension",
       "incorrect_answers": [
@@ -1001,7 +1001,7 @@
     }
   },
   {
-    "prompt": "\" _Ad antiquitatem_ \" is|s2d|<|start_2d|>\"a specific type of false cause fallacy that argues that since two event happened at the same time one event must have caused the other\" <|split_2d|>\"a specific type of false sign fallacy that reasons something is necessarily better because it is old, or is worse because it is new\" <|split_2d|>\"a specific type of false sign fallacy that reasons something is necessarily better because it is new, or is worse because it is old\" <|split_2d|>\"arguing that what is true of an individual part of an object must be true of the entire object\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "\" _Ad antiquitatem_ \" is~tag~<|start_2d|>\"a specific type of false cause fallacy that argues that since two event happened at the same time one event must have caused the other\" <|split_2d|>\"a specific type of false sign fallacy that reasons something is necessarily better because it is old, or is worse because it is new\" <|split_2d|>\"a specific type of false sign fallacy that reasons something is necessarily better because it is new, or is worse because it is old\" <|split_2d|>\"arguing that what is true of an individual part of an object must be true of the entire object\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "a specific type of false sign fallacy that reasons something is necessarily better because it is old, or is worse because it is new",
       "incorrect_answers": [
@@ -1012,7 +1012,7 @@
     }
   },
   {
-    "prompt": "\" _Ad crumenam_ \" is|s2d|<|start_2d|>\"basing a conclusion on an analogy when the items being compared are not similar enough to sustain the analogy\" <|split_2d|>\"a specific type of false sign fallacy that reasons someone is necessarily better because he or she is wealthy, or is worse because he or she is poor\" <|split_2d|>\"drawing a firm conclusion without enough evidence to support that conclusion\" <|split_2d|>\"a specific type of false cause that involves mistakenly attributing the cause of an event to a simple cause when the cause is more complex\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "\" _Ad crumenam_ \" is~tag~<|start_2d|>\"basing a conclusion on an analogy when the items being compared are not similar enough to sustain the analogy\" <|split_2d|>\"a specific type of false sign fallacy that reasons someone is necessarily better because he or she is wealthy, or is worse because he or she is poor\" <|split_2d|>\"drawing a firm conclusion without enough evidence to support that conclusion\" <|split_2d|>\"a specific type of false cause that involves mistakenly attributing the cause of an event to a simple cause when the cause is more complex\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "a specific type of false sign fallacy that reasons someone is necessarily better because he or she is wealthy, or is worse because he or she is poor",
       "incorrect_answers": [
@@ -1023,7 +1023,7 @@
     }
   },
   {
-    "prompt": "The fallacy of laudatory personality is a specific type of|s2d|<|start_2d|>\"The fallacy of accident\" <|split_2d|>\"False dilemma\" <|split_2d|>\"Begging the question\" <|split_2d|>\"Circular reasoning\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The fallacy of laudatory personality is a specific type of~tag~<|start_2d|>\"The fallacy of accident\" <|split_2d|>\"False dilemma\" <|split_2d|>\"Begging the question\" <|split_2d|>\"Circular reasoning\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "The fallacy of accident",
       "incorrect_answers": [
@@ -1034,7 +1034,7 @@
     }
   },
   {
-    "prompt": "Appeal to ignorance is a fallacy that involves|s2d|<|start_2d|>\"determining the conclusion one wants first, then accepting only evidence supporting that conclusion, or interpreting all evidence as support for that conclusion.\" <|split_2d|>\"arguing something is inferior just because it doesn't do something it was never intended to do.\" <|split_2d|>\"arguing that a claim must be true because there is no evidence that it is false.\" <|split_2d|>\"arguing about something when you are ignorant about the subject\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Appeal to ignorance is a fallacy that involves~tag~<|start_2d|>\"determining the conclusion one wants first, then accepting only evidence supporting that conclusion, or interpreting all evidence as support for that conclusion.\" <|split_2d|>\"arguing something is inferior just because it doesn't do something it was never intended to do.\" <|split_2d|>\"arguing that a claim must be true because there is no evidence that it is false.\" <|split_2d|>\"arguing about something when you are ignorant about the subject\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing that a claim must be true because there is no evidence that it is false.",
       "incorrect_answers": [
@@ -1045,7 +1045,7 @@
     }
   },
   {
-    "prompt": "Which of the following statements is **not** true?|s2d|<|start_2d|>\"A formally valid syllogism may be materially untrue\" <|split_2d|>\"A formally valid syllogism must be materially true\" <|split_2d|>\"A materially true conclusion may arise from a formally valid syllogism\" <|split_2d|>\"The formal validity of a syllogism does not guarantee it is materially true\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following statements is **not** true?~tag~<|start_2d|>\"A formally valid syllogism may be materially untrue\" <|split_2d|>\"A formally valid syllogism must be materially true\" <|split_2d|>\"A materially true conclusion may arise from a formally valid syllogism\" <|split_2d|>\"The formal validity of a syllogism does not guarantee it is materially true\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "A formally valid syllogism must be materially true",
       "incorrect_answers": [
@@ -1056,7 +1056,7 @@
     }
   },
   {
-    "prompt": "\"The minor premise must affirm the antecedent or deny the consequent\" is a validity requirement of which type of argument?|s2d|<|start_2d|>\"Toulmin\" <|split_2d|>\"Categorical\" <|split_2d|>\"Disjunctive\" <|split_2d|>\"Conditional (or hypothetical)\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "\"The minor premise must affirm the antecedent or deny the consequent\" is a validity requirement of which type of argument?~tag~<|start_2d|>\"Toulmin\" <|split_2d|>\"Categorical\" <|split_2d|>\"Disjunctive\" <|split_2d|>\"Conditional (or hypothetical)\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Conditional (or hypothetical)",
       "incorrect_answers": [
@@ -1067,7 +1067,7 @@
     }
   },
   {
-    "prompt": "Which of the following describes the fallacy of appeal to loyalty?|s2d|<|start_2d|>\"arguing that someone should do something because it will make him or her better liked by others\" <|split_2d|>\"responding to an argument with an expression of derision\" <|split_2d|>\"arguing that an idea should be accepted only because of who originated the idea\" <|split_2d|>\"arguing that someone should do something to be loyal to a person or a group\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following describes the fallacy of appeal to loyalty?~tag~<|start_2d|>\"arguing that someone should do something because it will make him or her better liked by others\" <|split_2d|>\"responding to an argument with an expression of derision\" <|split_2d|>\"arguing that an idea should be accepted only because of who originated the idea\" <|split_2d|>\"arguing that someone should do something to be loyal to a person or a group\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing that someone should do something to be loyal to a person or a group",
       "incorrect_answers": [
@@ -1078,7 +1078,7 @@
     }
   },
   {
-    "prompt": "Arguing in favor of a claim based only on the evidence that some regular people believe the claim is one way to commit which of the following fallacies?|s2d|<|start_2d|>\"poisoning the well\" <|split_2d|>\"common person appeal\" <|split_2d|>\"ad numerum\" <|split_2d|>\"suppressed evidence\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Arguing in favor of a claim based only on the evidence that some regular people believe the claim is one way to commit which of the following fallacies?~tag~<|start_2d|>\"poisoning the well\" <|split_2d|>\"common person appeal\" <|split_2d|>\"ad numerum\" <|split_2d|>\"suppressed evidence\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "common person appeal",
       "incorrect_answers": [
@@ -1089,7 +1089,7 @@
     }
   },
   {
-    "prompt": "The appeal to fear involves|s2d|<|start_2d|>\"arguing something should be done only because it will make the person doing it feel good\" <|split_2d|>\"arguing someone should do something only because of ill will towards someone else\" <|split_2d|>\"arguing actions should be taken to avoid exaggerated, unlikely, or irrelevant negative results\" <|split_2d|>\"characterizing an opponents position in a way that makes it seem silly\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The appeal to fear involves~tag~<|start_2d|>\"arguing something should be done only because it will make the person doing it feel good\" <|split_2d|>\"arguing someone should do something only because of ill will towards someone else\" <|split_2d|>\"arguing actions should be taken to avoid exaggerated, unlikely, or irrelevant negative results\" <|split_2d|>\"characterizing an opponents position in a way that makes it seem silly\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing actions should be taken to avoid exaggerated, unlikely, or irrelevant negative results",
       "incorrect_answers": [
@@ -1100,7 +1100,7 @@
     }
   },
   {
-    "prompt": "It's silly to pass laws against discrimination, since it is obvious that we can't live without it. We discriminate between pleasant and unpleasant tastes in selecting our food, between pleasant and unpleasant sounds in selecting our music, between harmonious and unharmonious colors in decorating our homes, between interesting and uninteresting people in choosing our friends, and so on. We can't live without discriminating.|s2d|<|start_2d|>\"Prejudicial Language\" <|split_2d|>\"Equivocation\" <|split_2d|>\"Inconsistency\" <|split_2d|>\"Straw Man\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "It's silly to pass laws against discrimination, since it is obvious that we can't live without it. We discriminate between pleasant and unpleasant tastes in selecting our food, between pleasant and unpleasant sounds in selecting our music, between harmonious and unharmonious colors in decorating our homes, between interesting and uninteresting people in choosing our friends, and so on. We can't live without discriminating.~tag~<|start_2d|>\"Prejudicial Language\" <|split_2d|>\"Equivocation\" <|split_2d|>\"Inconsistency\" <|split_2d|>\"Straw Man\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Equivocation",
       "incorrect_answers": [
@@ -1111,7 +1111,7 @@
     }
   },
   {
-    "prompt": "The fallacy of guilt by association is a specific type of|s2d|<|start_2d|>\"Fallacy of accident\" <|split_2d|>\"Laudatory personality\" <|split_2d|>\"Begging the question\" <|split_2d|>\"Circular reasoning\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The fallacy of guilt by association is a specific type of~tag~<|start_2d|>\"Fallacy of accident\" <|split_2d|>\"Laudatory personality\" <|split_2d|>\"Begging the question\" <|split_2d|>\"Circular reasoning\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Fallacy of accident",
       "incorrect_answers": [
@@ -1122,7 +1122,7 @@
     }
   },
   {
-    "prompt": "Appeal to compassion is|s2d|<|start_2d|>\"an appeal to emotion that argues against a position based only on negative personal feelings toward the position\" <|split_2d|>\"an appeal to emotion that argues a conclusion should be made based only on feeling sorry for someone\" <|split_2d|>\"an appeal to emotion that argues an action should be taken based only on the need to be loyal to someone\" <|split_2d|>\"arguing that an idea should be accepted based only on who originated the idea\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Appeal to compassion is~tag~<|start_2d|>\"an appeal to emotion that argues against a position based only on negative personal feelings toward the position\" <|split_2d|>\"an appeal to emotion that argues a conclusion should be made based only on feeling sorry for someone\" <|split_2d|>\"an appeal to emotion that argues an action should be taken based only on the need to be loyal to someone\" <|split_2d|>\"arguing that an idea should be accepted based only on who originated the idea\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "an appeal to emotion that argues a conclusion should be made based only on feeling sorry for someone",
       "incorrect_answers": [
@@ -1133,7 +1133,7 @@
     }
   },
   {
-    "prompt": "When someone uses highly emotionally charged terms during an argument, without giving any reasons why those terms fit the subject, that person may have committed which of the following fallacies?|s2d|<|start_2d|>\"Special pleading\" <|split_2d|>\"Amphiboly\" <|split_2d|>\"Equivocation\" <|split_2d|>\"Loaded language\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "When someone uses highly emotionally charged terms during an argument, without giving any reasons why those terms fit the subject, that person may have committed which of the following fallacies?~tag~<|start_2d|>\"Special pleading\" <|split_2d|>\"Amphiboly\" <|split_2d|>\"Equivocation\" <|split_2d|>\"Loaded language\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Loaded language",
       "incorrect_answers": [
@@ -1144,7 +1144,7 @@
     }
   },
   {
-    "prompt": "Arguing that someone couldn't have done something good because she holds a particular position commits the fallacy of|s2d|<|start_2d|>\"Guilt by association\" <|split_2d|>\"False dilemma\" <|split_2d|>\"Reprehensible personality\" <|split_2d|>\"False dichotomy\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Arguing that someone couldn't have done something good because she holds a particular position commits the fallacy of~tag~<|start_2d|>\"Guilt by association\" <|split_2d|>\"False dilemma\" <|split_2d|>\"Reprehensible personality\" <|split_2d|>\"False dichotomy\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Reprehensible personality",
       "incorrect_answers": [
@@ -1155,7 +1155,7 @@
     }
   },
   {
-    "prompt": "\" _Ad antiquitatem_ \" is a specific kind of|s2d|<|start_2d|>\"False cause\" <|split_2d|>\"False sign\" <|split_2d|>\"False analogy\" <|split_2d|>\"Hasty Generalization\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "\" _Ad antiquitatem_ \" is a specific kind of~tag~<|start_2d|>\"False cause\" <|split_2d|>\"False sign\" <|split_2d|>\"False analogy\" <|split_2d|>\"Hasty Generalization\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "False sign",
       "incorrect_answers": [
@@ -1166,7 +1166,7 @@
     }
   },
   {
-    "prompt": "The hasty conclusion fallacy is|s2d|<|start_2d|>\"arguing that a single event caused another when the cause is really several events\" <|split_2d|>\"making an argument without enough evidence to support the conclusion\" <|split_2d|>\"substituting individual stories for a larger sample in support of a claim\" <|split_2d|>\"reasoning that applies irrelevant criteria to the subject of the argument.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The hasty conclusion fallacy is~tag~<|start_2d|>\"arguing that a single event caused another when the cause is really several events\" <|split_2d|>\"making an argument without enough evidence to support the conclusion\" <|split_2d|>\"substituting individual stories for a larger sample in support of a claim\" <|split_2d|>\"reasoning that applies irrelevant criteria to the subject of the argument.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "making an argument without enough evidence to support the conclusion",
       "incorrect_answers": [
@@ -1177,7 +1177,7 @@
     }
   },
   {
-    "prompt": "\" _Ad lazarum_ \" is|s2d|<|start_2d|>\"a specific type of false sign that argues there is necessarily an inverse relationship between cost and quality, so something is necessarily a better value because it costs less\" <|split_2d|>\"arguing that what is true of an entire object must also be true of every individual part of that object\" <|split_2d|>\"a specific type of false analogy that reasons what is true about nature must be true about humans\" <|split_2d|>\"drawing a conclusion without enough evidence to support that conclusion\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "\" _Ad lazarum_ \" is~tag~<|start_2d|>\"a specific type of false sign that argues there is necessarily an inverse relationship between cost and quality, so something is necessarily a better value because it costs less\" <|split_2d|>\"arguing that what is true of an entire object must also be true of every individual part of that object\" <|split_2d|>\"a specific type of false analogy that reasons what is true about nature must be true about humans\" <|split_2d|>\"drawing a conclusion without enough evidence to support that conclusion\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "a specific type of false sign that argues there is necessarily an inverse relationship between cost and quality, so something is necessarily a better value because it costs less",
       "incorrect_answers": [
@@ -1188,7 +1188,7 @@
     }
   },
   {
-    "prompt": "All things that are spoiled are inedible. Timothy is spoiled. So, Timothy is inedible.|s2d|<|start_2d|>\"Equivocation\" <|split_2d|>\"Attacking the Person (ad hominem)\" <|split_2d|>\"Fallacy of Division\" <|split_2d|>\"Questionable Cause\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "All things that are spoiled are inedible. Timothy is spoiled. So, Timothy is inedible.~tag~<|start_2d|>\"Equivocation\" <|split_2d|>\"Attacking the Person (ad hominem)\" <|split_2d|>\"Fallacy of Division\" <|split_2d|>\"Questionable Cause\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Equivocation",
       "incorrect_answers": [
@@ -1199,7 +1199,7 @@
     }
   },
   {
-    "prompt": "Which of the statements below is correct about the following argument?\n\n\"If the sky is blue there won't be rain. The sky is blue today. Therefore, there won't be rain.\"|s2d|<|start_2d|>\"It is a formally valid categorical syllogism\" <|split_2d|>\"It is a formally invalid disjunctive syllogism\" <|split_2d|>\"It is a formally valid conditional syllogism\" <|split_2d|>\"It is a formally invalid conditional syllogism\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the statements below is correct about the following argument?\n\n\"If the sky is blue there won't be rain. The sky is blue today. Therefore, there won't be rain.\"~tag~<|start_2d|>\"It is a formally valid categorical syllogism\" <|split_2d|>\"It is a formally invalid disjunctive syllogism\" <|split_2d|>\"It is a formally valid conditional syllogism\" <|split_2d|>\"It is a formally invalid conditional syllogism\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "It is a formally valid conditional syllogism",
       "incorrect_answers": [
@@ -1210,7 +1210,7 @@
     }
   },
   {
-    "prompt": "Which of the following best describes the snob appeal fallacy?|s2d|<|start_2d|>\"reasoning that a claim is true based only on the evidence that it has been made so often.\" <|split_2d|>\"arguing someone should accept a claim based only on the evidence that he or she has the favorable characteristics to understand the truth of the claim.\" <|split_2d|>\"arguing a claim should be accepted based only on evidence that unidentified authorities accept it.\" <|split_2d|>\"arguing that someone should accept an idea or product based only on evidence that prestigious people accept it, or that non-prestigious people reject it.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following best describes the snob appeal fallacy?~tag~<|start_2d|>\"reasoning that a claim is true based only on the evidence that it has been made so often.\" <|split_2d|>\"arguing someone should accept a claim based only on the evidence that he or she has the favorable characteristics to understand the truth of the claim.\" <|split_2d|>\"arguing a claim should be accepted based only on evidence that unidentified authorities accept it.\" <|split_2d|>\"arguing that someone should accept an idea or product based only on evidence that prestigious people accept it, or that non-prestigious people reject it.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing that someone should accept an idea or product based only on evidence that prestigious people accept it, or that non-prestigious people reject it.",
       "incorrect_answers": [
@@ -1221,7 +1221,7 @@
     }
   },
   {
-    "prompt": "\"Each term must be used twice, no more and no less,\" is a test of validity for which type of syllogism?|s2d|<|start_2d|>\"Enthymeme\" <|split_2d|>\"Categorical\" <|split_2d|>\"Disjunctive\" <|split_2d|>\"Conditional\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "\"Each term must be used twice, no more and no less,\" is a test of validity for which type of syllogism?~tag~<|start_2d|>\"Enthymeme\" <|split_2d|>\"Categorical\" <|split_2d|>\"Disjunctive\" <|split_2d|>\"Conditional\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Categorical",
       "incorrect_answers": [
@@ -1232,7 +1232,7 @@
     }
   },
   {
-    "prompt": "The universe, like a watch, must have a maker.|s2d|<|start_2d|>\"Fallacy of Accident\" <|split_2d|>\"Questionable Analogy\" <|split_2d|>\"Questionable Cause\" <|split_2d|>\"Fallacy of Composition\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The universe, like a watch, must have a maker.~tag~<|start_2d|>\"Fallacy of Accident\" <|split_2d|>\"Questionable Analogy\" <|split_2d|>\"Questionable Cause\" <|split_2d|>\"Fallacy of Composition\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Questionable Analogy",
       "incorrect_answers": [
@@ -1243,7 +1243,7 @@
     }
   },
   {
-    "prompt": "The natural law fallacy is a specific type of|s2d|<|start_2d|>\"false analogy\" <|split_2d|>\"false cause\" <|split_2d|>\"false criteria\" <|split_2d|>\"false sign\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The natural law fallacy is a specific type of~tag~<|start_2d|>\"false analogy\" <|split_2d|>\"false cause\" <|split_2d|>\"false criteria\" <|split_2d|>\"false sign\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "false analogy",
       "incorrect_answers": [
@@ -1254,7 +1254,7 @@
     }
   },
   {
-    "prompt": "Given the following major premise, which of the following minor premises could lead to a valid conclusion?\n\n\"Either I'm going to do well on this test or I'm going to be mad.\"|s2d|<|start_2d|>\"'I won't do well on the test'\" <|split_2d|>\"'I won't take the test'\" <|split_2d|>\"'My birthday is today'\" <|split_2d|>\"both A and B\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Given the following major premise, which of the following minor premises could lead to a valid conclusion?\n\n\"Either I'm going to do well on this test or I'm going to be mad.\"~tag~<|start_2d|>\"'I won't do well on the test'\" <|split_2d|>\"'I won't take the test'\" <|split_2d|>\"'My birthday is today'\" <|split_2d|>\"both A and B\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "\"I won't do well on the test\"",
       "incorrect_answers": [
@@ -1265,7 +1265,7 @@
     }
   },
   {
-    "prompt": "Men are better drivers than women are. The proof of this is that men are more capable than women of managing cars on the road.|s2d|<|start_2d|>\"Begging the question\" <|split_2d|>\"Ad hominem (Attacking the Person)\" <|split_2d|>\"False Dilemma\" <|split_2d|>\"Appeal to Pity\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Men are better drivers than women are. The proof of this is that men are more capable than women of managing cars on the road.~tag~<|start_2d|>\"Begging the question\" <|split_2d|>\"Ad hominem (Attacking the Person)\" <|split_2d|>\"False Dilemma\" <|split_2d|>\"Appeal to Pity\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Begging the question",
       "incorrect_answers": [
@@ -1276,7 +1276,7 @@
     }
   },
   {
-    "prompt": "In a faulty analogy, the things being compared are...|s2d|<|start_2d|>\"Sufficiently similar\" <|split_2d|>\"Sufficiently similar in irrelevant ways\" <|split_2d|>\"Complete opposites\" <|split_2d|>\"Not sufficiently similar in relevant ways\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "In a faulty analogy, the things being compared are...~tag~<|start_2d|>\"Sufficiently similar\" <|split_2d|>\"Sufficiently similar in irrelevant ways\" <|split_2d|>\"Complete opposites\" <|split_2d|>\"Not sufficiently similar in relevant ways\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Not sufficiently similar in relevant ways",
       "incorrect_answers": [
@@ -1287,7 +1287,7 @@
     }
   },
   {
-    "prompt": "Which of the following describes the _tu quoque_ fallacy?|s2d|<|start_2d|>\"summarizing an opponent's position in a way that makes it seem silly\" <|split_2d|>\"attempting to gain agreement based only on the feelings aroused in the argument\" <|split_2d|>\"responding to charges of wrongdoing by saying the accuser does the same thing\" <|split_2d|>\"arguing against a position based only on negative personal feelings toward the position\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following describes the _tu quoque_ fallacy?~tag~<|start_2d|>\"summarizing an opponent's position in a way that makes it seem silly\" <|split_2d|>\"attempting to gain agreement based only on the feelings aroused in the argument\" <|split_2d|>\"responding to charges of wrongdoing by saying the accuser does the same thing\" <|split_2d|>\"arguing against a position based only on negative personal feelings toward the position\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "responding to charges of wrongdoing by saying the accuser does the same thing",
       "incorrect_answers": [
@@ -1298,7 +1298,7 @@
     }
   },
   {
-    "prompt": "Responding to charges of wrongdoing by saying the accuser or others do the same thing describes which of the following fallacies?|s2d|<|start_2d|>\"ignoratio elenchi\" <|split_2d|>\"ad baculum\" <|split_2d|>\"ad misericordiam\" <|split_2d|>\"tu quoque\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Responding to charges of wrongdoing by saying the accuser or others do the same thing describes which of the following fallacies?~tag~<|start_2d|>\"ignoratio elenchi\" <|split_2d|>\"ad baculum\" <|split_2d|>\"ad misericordiam\" <|split_2d|>\"tu quoque\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "tu quoque",
       "incorrect_answers": [
@@ -1309,7 +1309,7 @@
     }
   },
   {
-    "prompt": "The fallacy that involves reasoning that determines the conclusion one wants first, then accepts only evidence supporting that conclusion, or interprets all evidence as support for that conclusion is known as|s2d|<|start_2d|>\"ad ignorantium\" <|split_2d|>\"a priori\" <|split_2d|>\"plurium interrogationum\" <|split_2d|>\"Extension\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The fallacy that involves reasoning that determines the conclusion one wants first, then accepts only evidence supporting that conclusion, or interprets all evidence as support for that conclusion is known as~tag~<|start_2d|>\"ad ignorantium\" <|split_2d|>\"a priori\" <|split_2d|>\"plurium interrogationum\" <|split_2d|>\"Extension\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "a priori",
       "incorrect_answers": [
@@ -1320,7 +1320,7 @@
     }
   },
   {
-    "prompt": "The genetic fallacy consists of|s2d|<|start_2d|>\"arguing that a conclusion should be made based on feeling sorry for someone when that feeling is irrelevant to the conclusion\" <|split_2d|>\"responding to charges of wrongdoing by saying the accuser does something just as bad\" <|split_2d|>\"arguing that an idea should be accepted or rejected based only on who originated the idea.\" <|split_2d|>\"causing confusion during refutation because of a real or feigned lack of ability to engage in refutation\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The genetic fallacy consists of~tag~<|start_2d|>\"arguing that a conclusion should be made based on feeling sorry for someone when that feeling is irrelevant to the conclusion\" <|split_2d|>\"responding to charges of wrongdoing by saying the accuser does something just as bad\" <|split_2d|>\"arguing that an idea should be accepted or rejected based only on who originated the idea.\" <|split_2d|>\"causing confusion during refutation because of a real or feigned lack of ability to engage in refutation\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing that an idea should be accepted or rejected based only on who originated the idea.",
       "incorrect_answers": [
@@ -1331,7 +1331,7 @@
     }
   },
   {
-    "prompt": "Another name for the fallacy of begging the question is|s2d|<|start_2d|>\"Dito simpliciter\" <|split_2d|>\"Bifurcation\" <|split_2d|>\"Reprehensible personality\" <|split_2d|>\"Circular reasoning\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Another name for the fallacy of begging the question is~tag~<|start_2d|>\"Dito simpliciter\" <|split_2d|>\"Bifurcation\" <|split_2d|>\"Reprehensible personality\" <|split_2d|>\"Circular reasoning\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Circular reasoning",
       "incorrect_answers": [
@@ -1342,7 +1342,7 @@
     }
   },
   {
-    "prompt": "The fallacy of _ignoratio elenchi_ is also known as|s2d|<|start_2d|>\"argument against the person\" <|split_2d|>\"appeal to compassion\" <|split_2d|>\"ignorance of refutation\" <|split_2d|>\"the 'you too' fallacy\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The fallacy of _ignoratio elenchi_ is also known as~tag~<|start_2d|>\"argument against the person\" <|split_2d|>\"appeal to compassion\" <|split_2d|>\"ignorance of refutation\" <|split_2d|>\"the 'you too' fallacy\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "ignorance of refutation",
       "incorrect_answers": [
@@ -1353,7 +1353,7 @@
     }
   },
   {
-    "prompt": "William Safire in American Heritage Magazine (December 1987): ...The greatness of Lincoln was his purposefulness. He saw something that few others saw: that the democratic experiment centered on the Union and that majority rule was everything. The minute you allowed secession, you made democracy an absurdity---because what would happen would be continued subdivision.|s2d|<|start_2d|>\"Slippery Slope\" <|split_2d|>\"Questionable Analogy\" <|split_2d|>\"Appeal to Authority\" <|split_2d|>\"Straw Man\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "William Safire in American Heritage Magazine (December 1987): ...The greatness of Lincoln was his purposefulness. He saw something that few others saw: that the democratic experiment centered on the Union and that majority rule was everything. The minute you allowed secession, you made democracy an absurdity---because what would happen would be continued subdivision.~tag~<|start_2d|>\"Slippery Slope\" <|split_2d|>\"Questionable Analogy\" <|split_2d|>\"Appeal to Authority\" <|split_2d|>\"Straw Man\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Slippery Slope",
       "incorrect_answers": [
@@ -1364,7 +1364,7 @@
     }
   },
   {
-    "prompt": "So, how long have you been beating your wife?|s2d|<|start_2d|>\"Attacking the Person (ad hominem)\" <|split_2d|>\"False Dilemma\" <|split_2d|>\"Prejudicial Language\" <|split_2d|>\"Appeal to Force\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "So, how long have you been beating your wife?~tag~<|start_2d|>\"Attacking the Person (ad hominem)\" <|split_2d|>\"False Dilemma\" <|split_2d|>\"Prejudicial Language\" <|split_2d|>\"Appeal to Force\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Prejudicial Language",
       "incorrect_answers": [
@@ -1375,7 +1375,7 @@
     }
   },
   {
-    "prompt": "\"Misuse of statistics,\" \"questionable statistics,\" and \"questionable use of statistics\" are all other names for the fallacy of|s2d|<|start_2d|>\"appeal to a pride\" <|split_2d|>\"significance\" <|split_2d|>\"poisoning the well\" <|split_2d|>\"slippery slope\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "\"Misuse of statistics,\" \"questionable statistics,\" and \"questionable use of statistics\" are all other names for the fallacy of~tag~<|start_2d|>\"appeal to a pride\" <|split_2d|>\"significance\" <|split_2d|>\"poisoning the well\" <|split_2d|>\"slippery slope\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "significance",
       "incorrect_answers": [
@@ -1386,7 +1386,7 @@
     }
   },
   {
-    "prompt": "E.F. Schumacher, famous economist, in an article in the Atlantic (April 1979): Fifteen months [after I had advised that rural India should have a technology intermediate between the hoe and the tractor,] an all-India conference on intermediate technology was arranged. (They still didn't like the term [intermediate], so they called it appropriate technology. That's all right: when I come to India and somebody says, \"Oh, Mr. Schumacher, I don't believe in appropriate technology\", I just look him straight in the face and say, \"Oh, that's splendid. Do you believe in inappropriate technology?\")|s2d|<|start_2d|>\"Equivocation\" <|split_2d|>\"Inconsistency\" <|split_2d|>\"Appeal to Authority\" <|split_2d|>\"Prejudicial Language\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "E.F. Schumacher, famous economist, in an article in the Atlantic (April 1979): Fifteen months [after I had advised that rural India should have a technology intermediate between the hoe and the tractor,] an all-India conference on intermediate technology was arranged. (They still didn't like the term [intermediate], so they called it appropriate technology. That's all right: when I come to India and somebody says, \"Oh, Mr. Schumacher, I don't believe in appropriate technology\", I just look him straight in the face and say, \"Oh, that's splendid. Do you believe in inappropriate technology?\")~tag~<|start_2d|>\"Equivocation\" <|split_2d|>\"Inconsistency\" <|split_2d|>\"Appeal to Authority\" <|split_2d|>\"Prejudicial Language\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Equivocation",
       "incorrect_answers": [
@@ -1397,7 +1397,7 @@
     }
   },
   {
-    "prompt": "We must assume that he is a Communist, because he says that he is not, and we know that Communists are taught always to deny party membership.|s2d|<|start_2d|>\"Argument from Ignorance\" <|split_2d|>\"Affirming the Consequent\" <|split_2d|>\"Denying the Antecedent\" <|split_2d|>\"Begging the Question\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "We must assume that he is a Communist, because he says that he is not, and we know that Communists are taught always to deny party membership.~tag~<|start_2d|>\"Argument from Ignorance\" <|split_2d|>\"Affirming the Consequent\" <|split_2d|>\"Denying the Antecedent\" <|split_2d|>\"Begging the Question\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Affirming the Consequent",
       "incorrect_answers": [
@@ -1408,7 +1408,7 @@
     }
   },
   {
-    "prompt": "If someone argues that something should be done in a certain way because that's the way it's always been done, that person has committed which of the following fallacies?|s2d|<|start_2d|>\"slippery slope\" <|split_2d|>\"appeal to tradition\" <|split_2d|>\"argument from authority\" <|split_2d|>\"ad nauseam\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "If someone argues that something should be done in a certain way because that's the way it's always been done, that person has committed which of the following fallacies?~tag~<|start_2d|>\"slippery slope\" <|split_2d|>\"appeal to tradition\" <|split_2d|>\"argument from authority\" <|split_2d|>\"ad nauseam\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "appeal to tradition",
       "incorrect_answers": [
@@ -1419,7 +1419,7 @@
     }
   },
   {
-    "prompt": "False analogy is another name for which fallacy?|s2d|<|start_2d|>\"Over generalization\" <|split_2d|>\"Composition\" <|split_2d|>\"Concomitant variation\" <|split_2d|>\"Imperfect analogy\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "False analogy is another name for which fallacy?~tag~<|start_2d|>\"Over generalization\" <|split_2d|>\"Composition\" <|split_2d|>\"Concomitant variation\" <|split_2d|>\"Imperfect analogy\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Imperfect analogy",
       "incorrect_answers": [
@@ -1430,7 +1430,7 @@
     }
   },
   {
-    "prompt": "Which of the following fallacies happen if someone argues that you are a reasonable and intelligent person, so of course you understand his claim is true?|s2d|<|start_2d|>\"significance\" <|split_2d|>\"argument from authority\" <|split_2d|>\"appeal to pride\" <|split_2d|>\"slippery slope\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following fallacies happen if someone argues that you are a reasonable and intelligent person, so of course you understand his claim is true?~tag~<|start_2d|>\"significance\" <|split_2d|>\"argument from authority\" <|split_2d|>\"appeal to pride\" <|split_2d|>\"slippery slope\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "appeal to pride",
       "incorrect_answers": [
@@ -1441,7 +1441,7 @@
     }
   },
   {
-    "prompt": "Which fallacy happens when someone argues in favor of a two part proposition, only supports one part of the proposition, then asserts that the entire proposition has been supported.|s2d|<|start_2d|>\"a priori\" <|split_2d|>\"Complex proposition\" <|split_2d|>\"Extension\" <|split_2d|>\"Appeal to ignorance\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which fallacy happens when someone argues in favor of a two part proposition, only supports one part of the proposition, then asserts that the entire proposition has been supported.~tag~<|start_2d|>\"a priori\" <|split_2d|>\"Complex proposition\" <|split_2d|>\"Extension\" <|split_2d|>\"Appeal to ignorance\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Complex proposition",
       "incorrect_answers": [
@@ -1452,7 +1452,7 @@
     }
   },
   {
-    "prompt": "Which of the following is a test of the validity of a conditional syllogism?|s2d|<|start_2d|>\"Every term must be used twice--no more and no less\" <|split_2d|>\"If one premise is negative, the conclusion must be negative\" <|split_2d|>\"The minor premise must affirm the antecedent or deny the consequent\" <|split_2d|>\"The alternatives presented must be mutually exclusive\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following is a test of the validity of a conditional syllogism?~tag~<|start_2d|>\"Every term must be used twice--no more and no less\" <|split_2d|>\"If one premise is negative, the conclusion must be negative\" <|split_2d|>\"The minor premise must affirm the antecedent or deny the consequent\" <|split_2d|>\"The alternatives presented must be mutually exclusive\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "The minor premise must affirm the antecedent or deny the consequent",
       "incorrect_answers": [
@@ -1463,7 +1463,7 @@
     }
   },
   {
-    "prompt": "Which of the following fallacies happens when someone attributes the cause of an event to a simple cause when the cause is actually more complicated?|s2d|<|start_2d|>\"complex cause\" <|split_2d|>\"hasty generalization\" <|split_2d|>\"post hoc\" <|split_2d|>\"division\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following fallacies happens when someone attributes the cause of an event to a simple cause when the cause is actually more complicated?~tag~<|start_2d|>\"complex cause\" <|split_2d|>\"hasty generalization\" <|split_2d|>\"post hoc\" <|split_2d|>\"division\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "complex cause",
       "incorrect_answers": [
@@ -1474,7 +1474,7 @@
     }
   },
   {
-    "prompt": "Which of the following is another name for the fallacy of amphiboly?|s2d|<|start_2d|>\"Misusing ambiguity\" <|split_2d|>\"Reification\" <|split_2d|>\"Figure of speech\" <|split_2d|>\"Special pleading\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following is another name for the fallacy of amphiboly?~tag~<|start_2d|>\"Misusing ambiguity\" <|split_2d|>\"Reification\" <|split_2d|>\"Figure of speech\" <|split_2d|>\"Special pleading\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Misusing ambiguity",
       "incorrect_answers": [
@@ -1485,7 +1485,7 @@
     }
   },
   {
-    "prompt": "Tan ah Tiat, forty-nine years old, a native of Kuala Lumpar, Malaysia, was charged with possession of opium. Arguing for acquittal, he told the judge that his opium habit did no harm, as he was too old to work anyway. Asked how he lived, he replied that he lived on the earnings of his grandmother.|s2d|<|start_2d|>\"Straw Man\" <|split_2d|>\"False Dilemma\" <|split_2d|>\"Inconsistency\" <|split_2d|>\"Appeal to Authority\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Tan ah Tiat, forty-nine years old, a native of Kuala Lumpar, Malaysia, was charged with possession of opium. Arguing for acquittal, he told the judge that his opium habit did no harm, as he was too old to work anyway. Asked how he lived, he replied that he lived on the earnings of his grandmother.~tag~<|start_2d|>\"Straw Man\" <|split_2d|>\"False Dilemma\" <|split_2d|>\"Inconsistency\" <|split_2d|>\"Appeal to Authority\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Inconsistency",
       "incorrect_answers": [
@@ -1496,7 +1496,7 @@
     }
   },
   {
-    "prompt": "Which of the following best describes the fallacy of self-evident truths?|s2d|<|start_2d|>\"arguing that a claim is true based only on evidence that an authority figure accepts the claim.\" <|split_2d|>\"arguing a claim should be accepted based only on evidence that unidentified authorities accept it.\" <|split_2d|>\"arguing that a claim should be accepted based on evidence that is not presented, but is asserted to be well known or obvious.\" <|split_2d|>\"arguing someone should accept a claim based only on the evidence that he or she has the favorable characteristics to understand the truth of the claim.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following best describes the fallacy of self-evident truths?~tag~<|start_2d|>\"arguing that a claim is true based only on evidence that an authority figure accepts the claim.\" <|split_2d|>\"arguing a claim should be accepted based only on evidence that unidentified authorities accept it.\" <|split_2d|>\"arguing that a claim should be accepted based on evidence that is not presented, but is asserted to be well known or obvious.\" <|split_2d|>\"arguing someone should accept a claim based only on the evidence that he or she has the favorable characteristics to understand the truth of the claim.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing that a claim should be accepted based on evidence that is not presented, but is asserted to be well known or obvious.",
       "incorrect_answers": [
@@ -1507,7 +1507,7 @@
     }
   },
   {
-    "prompt": "\" _Ad lazarum_ \" is a specific kind of|s2d|<|start_2d|>\"Anecdotal evidence\" <|split_2d|>\"Complex cause\" <|split_2d|>\"False criteria\" <|split_2d|>\"False sign\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "\" _Ad lazarum_ \" is a specific kind of~tag~<|start_2d|>\"Anecdotal evidence\" <|split_2d|>\"Complex cause\" <|split_2d|>\"False criteria\" <|split_2d|>\"False sign\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "False sign",
       "incorrect_answers": [
@@ -1518,7 +1518,7 @@
     }
   },
   {
-    "prompt": "We're perfectly entitled to believe there is a God. After all, every effort by atheists to prove otherwise has failed.|s2d|<|start_2d|>\"Appeal to Authority\" <|split_2d|>\"Denying the Antecedent\" <|split_2d|>\"Attacking the Person (ad hominem)\" <|split_2d|>\"Argument from Ignorance\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "We're perfectly entitled to believe there is a God. After all, every effort by atheists to prove otherwise has failed.~tag~<|start_2d|>\"Appeal to Authority\" <|split_2d|>\"Denying the Antecedent\" <|split_2d|>\"Attacking the Person (ad hominem)\" <|split_2d|>\"Argument from Ignorance\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Argument from Ignorance",
       "incorrect_answers": [
@@ -1529,7 +1529,7 @@
     }
   },
   {
-    "prompt": "When someone makes an argument, and the only evidence he or she uses to support the claim is the testimony that an authority figure believes the claim, the arguer has committed which fallacy?|s2d|<|start_2d|>\"Questionable use of statistics\" <|split_2d|>\"Apple polishing\" <|split_2d|>\"Self evident truths\" <|split_2d|>\"Argument from authority\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "When someone makes an argument, and the only evidence he or she uses to support the claim is the testimony that an authority figure believes the claim, the arguer has committed which fallacy?~tag~<|start_2d|>\"Questionable use of statistics\" <|split_2d|>\"Apple polishing\" <|split_2d|>\"Self evident truths\" <|split_2d|>\"Argument from authority\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Argument from authority",
       "incorrect_answers": [
@@ -1540,7 +1540,7 @@
     }
   },
   {
-    "prompt": "When someone changes the meaning of a word or phrase from one part of the argument to another that person may have committed which of the following fallacies?|s2d|<|start_2d|>\"Special pleading\" <|split_2d|>\"Hypostatization\" <|split_2d|>\"Question begging epithets\" <|split_2d|>\"Equivocation\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "When someone changes the meaning of a word or phrase from one part of the argument to another that person may have committed which of the following fallacies?~tag~<|start_2d|>\"Special pleading\" <|split_2d|>\"Hypostatization\" <|split_2d|>\"Question begging epithets\" <|split_2d|>\"Equivocation\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Equivocation",
       "incorrect_answers": [
@@ -1551,7 +1551,7 @@
     }
   },
   {
-    "prompt": "Another name for the fallacy of accident is|s2d|<|start_2d|>\"Laudatory personality\" <|split_2d|>\"Guilt by association\" <|split_2d|>\"Either-or fallacy\" <|split_2d|>\"Dicto simpliciter\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Another name for the fallacy of accident is~tag~<|start_2d|>\"Laudatory personality\" <|split_2d|>\"Guilt by association\" <|split_2d|>\"Either-or fallacy\" <|split_2d|>\"Dicto simpliciter\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Dicto simpliciter",
       "incorrect_answers": [
@@ -1562,7 +1562,7 @@
     }
   },
   {
-    "prompt": "\"Each term must be used twice, no more and no less\" is a requirement for|s2d|<|start_2d|>\"valid categorical syllogism\" <|split_2d|>\"a valid disjunctive syllogism\" <|split_2d|>\"a valid conditional syllogism\" <|split_2d|>\"a materially true hypothetical syllogism\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "\"Each term must be used twice, no more and no less\" is a requirement for~tag~<|start_2d|>\"valid categorical syllogism\" <|split_2d|>\"a valid disjunctive syllogism\" <|split_2d|>\"a valid conditional syllogism\" <|split_2d|>\"a materially true hypothetical syllogism\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "valid categorical syllogism",
       "incorrect_answers": [
@@ -1573,7 +1573,7 @@
     }
   },
   {
-    "prompt": "The false cause fallacy is|s2d|<|start_2d|>\"arguing that since someone is poor she must have high moral character\" <|split_2d|>\"arguing that two things are causally related without evidence of a causal relationship\" <|split_2d|>\"arguing that since something is new it is necessarily bad\" <|split_2d|>\"substituting individual stories for a larger sample in support of a claim\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The false cause fallacy is~tag~<|start_2d|>\"arguing that since someone is poor she must have high moral character\" <|split_2d|>\"arguing that two things are causally related without evidence of a causal relationship\" <|split_2d|>\"arguing that since something is new it is necessarily bad\" <|split_2d|>\"substituting individual stories for a larger sample in support of a claim\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing that two things are causally related without evidence of a causal relationship",
       "incorrect_answers": [
@@ -1584,7 +1584,7 @@
     }
   },
   {
-    "prompt": "Arguing that someone should do something because other people are doing it is a description of which of the following fallacies?|s2d|<|start_2d|>\"appeal to common practice\" <|split_2d|>\"snob appeal\" <|split_2d|>\"argument by consensus\" <|split_2d|>\"appeal to tradition\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Arguing that someone should do something because other people are doing it is a description of which of the following fallacies?~tag~<|start_2d|>\"appeal to common practice\" <|split_2d|>\"snob appeal\" <|split_2d|>\"argument by consensus\" <|split_2d|>\"appeal to tradition\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "appeal to common practice",
       "incorrect_answers": [
@@ -1595,7 +1595,7 @@
     }
   },
   {
-    "prompt": "Which of the following describes the fallacy of false consolation?|s2d|<|start_2d|>\"arguing against a position based only on negative personal feelings toward the position\" <|split_2d|>\"responding to charges of wrongdoing by saying others do things as bad or worse\" <|split_2d|>\"arguing that someone is not really harmed because things could be worse or by pointing out what they have to be thankful for\" <|split_2d|>\"using threats of harm instead of reasoning to get agreement\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following describes the fallacy of false consolation?~tag~<|start_2d|>\"arguing against a position based only on negative personal feelings toward the position\" <|split_2d|>\"responding to charges of wrongdoing by saying others do things as bad or worse\" <|split_2d|>\"arguing that someone is not really harmed because things could be worse or by pointing out what they have to be thankful for\" <|split_2d|>\"using threats of harm instead of reasoning to get agreement\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing that someone is not really harmed because things could be worse or by pointing out what they have to be thankful for",
       "incorrect_answers": [
@@ -1606,7 +1606,7 @@
     }
   },
   {
-    "prompt": "Which of the following fallacies happens when someone concludes that a legitimate generalization necessarily applies to a particular case?|s2d|<|start_2d|>\"False dilemma\" <|split_2d|>\"Circular reasoning\" <|split_2d|>\"Accident\" <|split_2d|>\"Bifurcation\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following fallacies happens when someone concludes that a legitimate generalization necessarily applies to a particular case?~tag~<|start_2d|>\"False dilemma\" <|split_2d|>\"Circular reasoning\" <|split_2d|>\"Accident\" <|split_2d|>\"Bifurcation\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Accident",
       "incorrect_answers": [
@@ -1617,7 +1617,7 @@
     }
   },
   {
-    "prompt": "Which of the following best describes the fallacy of poisoning the well?|s2d|<|start_2d|>\"a way of suppressing evidence that eliminates a source of evidence from consideration by claiming the source is flawed, when there is no true relationship between the alleged flaw and the reliability of the source\" <|split_2d|>\"arguing that a claim should be accepted based on evidence that is not presented, but asserted to be well known or obvious.\" <|split_2d|>\"arguing something should be done based only on evidence that it's been done that way in the past, or should be believed only because it's been believed for a long time.\" <|split_2d|>\"reasoning that a claim is true based only on the evidence that it has been made so often.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following best describes the fallacy of poisoning the well?~tag~<|start_2d|>\"a way of suppressing evidence that eliminates a source of evidence from consideration by claiming the source is flawed, when there is no true relationship between the alleged flaw and the reliability of the source\" <|split_2d|>\"arguing that a claim should be accepted based on evidence that is not presented, but asserted to be well known or obvious.\" <|split_2d|>\"arguing something should be done based only on evidence that it's been done that way in the past, or should be believed only because it's been believed for a long time.\" <|split_2d|>\"reasoning that a claim is true based only on the evidence that it has been made so often.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "a way of suppressing evidence that eliminates a source of evidence from consideration by claiming the source is flawed, when there is no true relationship between the alleged flaw and the reliability of the source",
       "incorrect_answers": [
@@ -1628,7 +1628,7 @@
     }
   },
   {
-    "prompt": "Which of the following describes the straw person fallacy?|s2d|<|start_2d|>\"arguing someone should do something only because it will make him or her better liked\" <|split_2d|>\"saying an opposing arguer has taken a position that you can easily defeat, when he or she has not taken that position, then going on to defeat that position and claim to have done significant damage to that arguer's overall argument\" <|split_2d|>\"attacking the character or background of an opposing arguer instead of responding to that person's arguments with good evidence and sound reasoni\" <|split_2d|>\"responding to an argument with an expression of derision instead of a counter argument\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following describes the straw person fallacy?~tag~<|start_2d|>\"arguing someone should do something only because it will make him or her better liked\" <|split_2d|>\"saying an opposing arguer has taken a position that you can easily defeat, when he or she has not taken that position, then going on to defeat that position and claim to have done significant damage to that arguer's overall argument\" <|split_2d|>\"attacking the character or background of an opposing arguer instead of responding to that person's arguments with good evidence and sound reasoni\" <|split_2d|>\"responding to an argument with an expression of derision instead of a counter argument\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "saying an opposing arguer has taken a position that you can easily defeat, when he or she has not taken that position, then going on to defeat that position and claim to have done significant damage to that arguer's overall argument",
       "incorrect_answers": [
@@ -1639,7 +1639,7 @@
     }
   },
   {
-    "prompt": "Which of the following is another name for appeal to the people?|s2d|<|start_2d|>\"argument by consensus\" <|split_2d|>\"appeal to beliefs\" <|split_2d|>\"no true Scotsman\" <|split_2d|>\"overlooked evidence\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following is another name for appeal to the people?~tag~<|start_2d|>\"argument by consensus\" <|split_2d|>\"appeal to beliefs\" <|split_2d|>\"no true Scotsman\" <|split_2d|>\"overlooked evidence\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "argument by consensus",
       "incorrect_answers": [
@@ -1650,7 +1650,7 @@
     }
   },
   {
-    "prompt": "Which of the following describes the fallacy of appeal to tradition?|s2d|<|start_2d|>\"reasoning that a claim must be true because it's been made so often\" <|split_2d|>\"reasoning that a claim must be true because a regular person believes it\" <|split_2d|>\"reasoning that a claim must be true because it's been believed in the past\" <|split_2d|>\"reasoning that a claim must be true because a lot of people believe it\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following describes the fallacy of appeal to tradition?~tag~<|start_2d|>\"reasoning that a claim must be true because it's been made so often\" <|split_2d|>\"reasoning that a claim must be true because a regular person believes it\" <|split_2d|>\"reasoning that a claim must be true because it's been believed in the past\" <|split_2d|>\"reasoning that a claim must be true because a lot of people believe it\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "reasoning that a claim must be true because it's been believed in the past",
       "incorrect_answers": [
@@ -1661,7 +1661,7 @@
     }
   },
   {
-    "prompt": "Which of the following is the best explanation of the fallacy of loaded language?|s2d|<|start_2d|>\"Using emotionally charged language to create an impression about the subject of a claim, without making an argument that the language fits the subject.\" <|split_2d|>\"Referring to an act committed by an opponent in negative terms while referring to the same act committed by the arguer or supporters in favorable terms.\" <|split_2d|>\"Using language and punctuation in a way that a statement can have multiple interpretations, so it's not really clear what is meant.\" <|split_2d|>\"Confusing figurative language with literal language\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following is the best explanation of the fallacy of loaded language?~tag~<|start_2d|>\"Using emotionally charged language to create an impression about the subject of a claim, without making an argument that the language fits the subject.\" <|split_2d|>\"Referring to an act committed by an opponent in negative terms while referring to the same act committed by the arguer or supporters in favorable terms.\" <|split_2d|>\"Using language and punctuation in a way that a statement can have multiple interpretations, so it's not really clear what is meant.\" <|split_2d|>\"Confusing figurative language with literal language\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Using emotionally charged language to create an impression about the subject of a claim, without making an argument that the language fits the subject.",
       "incorrect_answers": [
@@ -1672,7 +1672,7 @@
     }
   },
   {
-    "prompt": "Automatically rejecting a claim just because it's traditional is...|s2d|<|start_2d|>\"Not reasonable\" <|split_2d|>\"An appeal to tradition\" <|split_2d|>\"An appeal to the masses\" <|split_2d|>\"Reasonable\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Automatically rejecting a claim just because it's traditional is...~tag~<|start_2d|>\"Not reasonable\" <|split_2d|>\"An appeal to tradition\" <|split_2d|>\"An appeal to the masses\" <|split_2d|>\"Reasonable\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Not reasonable",
       "incorrect_answers": [
@@ -1683,7 +1683,7 @@
     }
   },
   {
-    "prompt": "A slippery-slope pattern of argument is fallacious when...|s2d|<|start_2d|>\"It is hypothetical\" <|split_2d|>\"There is good reason to think that doing one action will inevitably lead to another undesirable action\" <|split_2d|>\"There are only two possible results\" <|split_2d|>\"There is no good reason to think that doing one action will inevitably lead to another undesirable action\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "A slippery-slope pattern of argument is fallacious when...~tag~<|start_2d|>\"It is hypothetical\" <|split_2d|>\"There is good reason to think that doing one action will inevitably lead to another undesirable action\" <|split_2d|>\"There are only two possible results\" <|split_2d|>\"There is no good reason to think that doing one action will inevitably lead to another undesirable action\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "There is no good reason to think that doing one action will inevitably lead to another undesirable action",
       "incorrect_answers": [
@@ -1694,7 +1694,7 @@
     }
   },
   {
-    "prompt": "Which of the following best describes the fallacy of special pleading?|s2d|<|start_2d|>\"Reasoning that ideas presented in an appealing manner are correct, regardless of the content of the message.\" <|split_2d|>\"Using language and punctuation in a way that a statement can have multiple interpretations, so it's not really clear what is meant.\" <|split_2d|>\"Confusing figurative language with literal language.\" <|split_2d|>\"Referring to an act committed by an opponent in negative terms while referring to the same act committed by the arguer or supporters in favorable terms\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following best describes the fallacy of special pleading?~tag~<|start_2d|>\"Reasoning that ideas presented in an appealing manner are correct, regardless of the content of the message.\" <|split_2d|>\"Using language and punctuation in a way that a statement can have multiple interpretations, so it's not really clear what is meant.\" <|split_2d|>\"Confusing figurative language with literal language.\" <|split_2d|>\"Referring to an act committed by an opponent in negative terms while referring to the same act committed by the arguer or supporters in favorable terms\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Referring to an act committed by an opponent in negative terms while referring to the same act committed by the arguer or supporters in favorable terms",
       "incorrect_answers": [
@@ -1705,7 +1705,7 @@
     }
   },
   {
-    "prompt": "Whether someone is hypocritical regarding her claims is...|s2d|<|start_2d|>\"Irrelevant to her character\" <|split_2d|>\"Evidence that the claims are false\" <|split_2d|>\"Irrelevant to the truth of the claims\" <|split_2d|>\"Relevant only in court\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Whether someone is hypocritical regarding her claims is...~tag~<|start_2d|>\"Irrelevant to her character\" <|split_2d|>\"Evidence that the claims are false\" <|split_2d|>\"Irrelevant to the truth of the claims\" <|split_2d|>\"Relevant only in court\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Irrelevant to the truth of the claims",
       "incorrect_answers": [
@@ -1716,7 +1716,7 @@
     }
   },
   {
-    "prompt": "If someone says if you do something it will lead to extreme consequences, but doesn't provide you with any evidence of a cause and effect relationship between your act and those consequences, that person has probably committed which of the following fallacies?|s2d|<|start_2d|>\"ad nauseam\" <|split_2d|>\"self evident truths\" <|split_2d|>\"slippery slope\" <|split_2d|>\"suppressed evidence\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "If someone says if you do something it will lead to extreme consequences, but doesn't provide you with any evidence of a cause and effect relationship between your act and those consequences, that person has probably committed which of the following fallacies?~tag~<|start_2d|>\"ad nauseam\" <|split_2d|>\"self evident truths\" <|split_2d|>\"slippery slope\" <|split_2d|>\"suppressed evidence\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "slippery slope",
       "incorrect_answers": [
@@ -1727,7 +1727,7 @@
     }
   },
   {
-    "prompt": "The concomitant variation fallacy is|s2d|<|start_2d|>\"attributing the cause of an event to a single cause when the cause is more complicated\" <|split_2d|>\"arguing that since two events happened at the same time, one event must have caused the other\" <|split_2d|>\"arguing that since one event preceded another event it must have caused the second event\" <|split_2d|>\"drawing a conclusion based on sign reasoning when there is not really a direct relationship between the alleged sign and the subject of the conclusion\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "The concomitant variation fallacy is~tag~<|start_2d|>\"attributing the cause of an event to a single cause when the cause is more complicated\" <|split_2d|>\"arguing that since two events happened at the same time, one event must have caused the other\" <|split_2d|>\"arguing that since one event preceded another event it must have caused the second event\" <|split_2d|>\"drawing a conclusion based on sign reasoning when there is not really a direct relationship between the alleged sign and the subject of the conclusion\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "arguing that since two events happened at the same time, one event must have caused the other",
       "incorrect_answers": [
@@ -1738,7 +1738,7 @@
     }
   },
   {
-    "prompt": "\" _Ad novitatem_ \" is a specific kind of fallacy of|s2d|<|start_2d|>\"Division\" <|split_2d|>\"False sign\" <|split_2d|>\"False cause\" <|split_2d|>\"Hasty Generalization\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "\" _Ad novitatem_ \" is a specific kind of fallacy of~tag~<|start_2d|>\"Division\" <|split_2d|>\"False sign\" <|split_2d|>\"False cause\" <|split_2d|>\"Hasty Generalization\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "False sign",
       "incorrect_answers": [
@@ -1749,7 +1749,7 @@
     }
   },
   {
-    "prompt": "Rejecting a claim by criticizing the person who makes it rather than the claim itself is known as the fallacy of...|s2d|<|start_2d|>\"Division\" <|split_2d|>\"Appeal to emotion\" <|split_2d|>\"Composition\" <|split_2d|>\"Appeal to the person\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Rejecting a claim by criticizing the person who makes it rather than the claim itself is known as the fallacy of...~tag~<|start_2d|>\"Division\" <|split_2d|>\"Appeal to emotion\" <|split_2d|>\"Composition\" <|split_2d|>\"Appeal to the person\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Appeal to the person",
       "incorrect_answers": [
@@ -1760,7 +1760,7 @@
     }
   },
   {
-    "prompt": "Which of the following best describes the fallacy of amphiboly?|s2d|<|start_2d|>\"Using emotionally charged languages to create an impression about the subject of a claim, without making an argument that the language fits the subject.\" <|split_2d|>\"Referring to an act committed by an opponent in negative terms while referring to the same act committed by the arguer or supporters in favorable terms.\" <|split_2d|>\"Using grammar and punctuation in a way that a statement may have multiple interpretations, so it's not really clear what is meant.\" <|split_2d|>\"Changing the meaning of a word or phrase from one part of the argument to another.\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Which of the following best describes the fallacy of amphiboly?~tag~<|start_2d|>\"Using emotionally charged languages to create an impression about the subject of a claim, without making an argument that the language fits the subject.\" <|split_2d|>\"Referring to an act committed by an opponent in negative terms while referring to the same act committed by the arguer or supporters in favorable terms.\" <|split_2d|>\"Using grammar and punctuation in a way that a statement may have multiple interpretations, so it's not really clear what is meant.\" <|split_2d|>\"Changing the meaning of a word or phrase from one part of the argument to another.\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Using grammar and punctuation in a way that a statement may have multiple interpretations, so it's not really clear what is meant.",
       "incorrect_answers": [
@@ -1771,7 +1771,7 @@
     }
   },
   {
-    "prompt": "When someone uses grammar or punctuation in a way that makes a statement have more than one possible interpretation, that person may have committed which of the following fallacies?|s2d|<|start_2d|>\"Amphiboly\" <|split_2d|>\"Hypostatization\" <|split_2d|>\"Question begging epithets\" <|split_2d|>\"Style over substance\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "When someone uses grammar or punctuation in a way that makes a statement have more than one possible interpretation, that person may have committed which of the following fallacies?~tag~<|start_2d|>\"Amphiboly\" <|split_2d|>\"Hypostatization\" <|split_2d|>\"Question begging epithets\" <|split_2d|>\"Style over substance\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "Amphiboly",
       "incorrect_answers": [
@@ -1782,7 +1782,7 @@
     }
   },
   {
-    "prompt": "Telling people that they haven't been harmed because there is something they should be thankful for commits which of the following fallacies?|s2d|<|start_2d|>\"genetic fallacy\" <|split_2d|>\"horse laugh\" <|split_2d|>\"false consolation\" <|split_2d|>\"appeal to joy\" <|end_2d|>|e2d|Answer: ",
+    "prompt": "Telling people that they haven't been harmed because there is something they should be thankful for commits which of the following fallacies?~tag~<|start_2d|>\"genetic fallacy\" <|split_2d|>\"horse laugh\" <|split_2d|>\"false consolation\" <|split_2d|>\"appeal to joy\" <|end_2d|>~etag~Answer: ",
     "prompt_metadata": {
       "label": "false consolation",
       "incorrect_answers": [

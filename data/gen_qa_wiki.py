@@ -32,15 +32,15 @@ def process_file(input_path: str, output_path: str, wiki_texts):
             break
             
         # Skip empty or whitespace-only texts
-        if not text or text.isspace():
+        if not text or text.isspace() or len(text) < 10:
             continue
             
         # Truncate text to 200 characters
-        truncated_text = text[:250]
+        truncated_text = text[:150]
             
         # Create new entry with truncated WikiText
         wiki_entry = {
-            "prompt": truncated_text,
+            "prompt": "<|start_2d|>" + truncated_text + "<|end_2d|>",
             "prompt_metadata": {}
         }
         all_entries.append(wiki_entry)
