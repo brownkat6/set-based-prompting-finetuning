@@ -4,7 +4,7 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 
 import copy
-import logging
+#import logging
 import time
 from dataclasses import dataclass, field
 from typing import Dict, Optional, Sequence, List, Any, Tuple, Union, Callable
@@ -140,10 +140,10 @@ class SupervisedDataset(Dataset):
         model: transformers.PreTrainedModel,
     ) -> None:
         super(SupervisedDataset, self).__init__()
-        logging.warning("Loading data...")
+        print("Loading data...")
         sources = utils.jsonl_load(data_path)
 
-        logging.warning("Tokenizing inputs... This may take some time...")
+        print("Tokenizing inputs... This may take some time...")
         print(f"Creating dataset with custom position ids and attention mask")
         data_dict = preprocess(sources, tokenizer)
 
@@ -384,12 +384,12 @@ def train() -> None:
         if not any(os.scandir(initial_weights_dir)):  # Check if directory is empty
             model.save_pretrained(initial_weights_dir)
             tokenizer.save_pretrained(initial_weights_dir)
-            logging.info(f"Saved initial model weights to {initial_weights_dir}")
+            print(f"Saved initial model weights to {initial_weights_dir}")
     except Exception as e:
-        logging.error(f"Failed to save initial weights: {e}")
+        print(f"Failed to save initial weights: {e}")
         raise
     else:
-        logging.info(f"Initial weights directory already exists at {initial_weights_dir}")
+        print(f"Initial weights directory already exists at {initial_weights_dir}")
     
     # Create data module with model
     data_module = make_supervised_data_module(
@@ -503,7 +503,7 @@ def train() -> None:
         final_weights_dir = os.path.join(training_args.output_dir, "final_weights")
         os.makedirs(final_weights_dir, exist_ok=True)
         trainer.save_model(output_dir=final_weights_dir)
-        logging.info(f"Saved final model weights to {final_weights_dir}")
+        print(f"Saved final model weights to {final_weights_dir}")
 
 
 def get_pca_components(model_name: str) -> int:
@@ -677,9 +677,9 @@ class TrustedTrainer(Trainer):
 
 if __name__ == "__main__":
     # Configure logging
-    logging.basicConfig(
-        format="%(asctime)s - %(levelname)s - %(message)s",
-        datefmt="%m/%d/%Y %H:%M:%S",
-        level=logging.INFO,
-    )
+    #logging.basicConfig(
+    #    format="%(asctime)s - %(levelname)s - %(message)s",
+    #    datefmt="%m/%d/%Y %H:%M:%S",
+    #    level=print,
+    #)
     train()
