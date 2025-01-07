@@ -2,13 +2,16 @@
 #SBATCH --job-name=csqa_quoted
 #SBATCH --partition=gpu_requeue
 #SBATCH --gres=gpu:1
+#SBATCH --constraint='(a100|h100)' ## Ensure enough memory
 #SBATCH --time=0-20:00
-#SBATCH --mem=64G
+#SBATCH --mem=128G
 #SBATCH --cpus-per-task=8
 
 #SBATCH --open-mode=append
 #SBATCH --output=slurm_logs/%x-%j.stdout
 #SBATCH --error=slurm_logs/%x-%j.stderr
+
+# TODO: debug OOM ERRORS!!! Increasing 32-64GB did not fix. Need to clear cuda cache somewhere????
 
 # Runs for a single model
 
