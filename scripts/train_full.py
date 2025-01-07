@@ -613,10 +613,6 @@ class TrustedTrainer(Trainer):
 
         Subclass and override for custom behavior.
         """
-        if (self.label_smoother is not None or self.compute_loss_func is not None) and "labels" in inputs:
-            labels = inputs.pop("labels")
-        else:
-            labels = None
         if self.model_accepts_loss_kwargs:
             loss_kwargs = {}
             if num_items_in_batch is not None:
