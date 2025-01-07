@@ -397,14 +397,17 @@ def train() -> None:
         data_args=data_args,
         model=model,
     )
-
+    try:
+        training_args.remove_unused_columns = False
+    except:
+        print("Failed to set remove_unused_columns to False in training_args")
+        pass
     trainer = TrustedTrainer(
         model=model,
         args=training_args,
         train_dataset=data_module["train_dataset"],
         eval_dataset=data_module["eval_dataset"],
         data_collator=data_module["data_collator"],
-        remove_unused_columns=False,
     )
     
     print("=== DEBUG: Checking sample batch ===")
