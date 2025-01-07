@@ -630,8 +630,15 @@ class TrustedTrainer(Trainer):
         outputs = model(**inputs)
         # Save past state if it exists
         # TODO: this needs to be fixed and made cleaner later.
+        try:
+            loss = outputs[0]
+        except:
+            print("Outputs:", outputs)
+            raise ValueError("Outputs is not a tuple! Could not get loss from outputs.")
+        '''
         if self.args.past_index >= 0:
             self._past = outputs[self.args.past_index]
+        
 
         if labels is not None:
             unwrapped_model = self.accelerator.unwrap_model(model)
@@ -654,7 +661,7 @@ class TrustedTrainer(Trainer):
                 )
             # We don't use .loss here since the model may return tuples instead of ModelOutput.
             loss = outputs["loss"] if isinstance(outputs, dict) else outputs[0]
-
+        '''
         if self.args.average_tokens_across_devices and self.model_accepts_loss_kwargs:
             loss *= self.accelerator.num_processes
 
