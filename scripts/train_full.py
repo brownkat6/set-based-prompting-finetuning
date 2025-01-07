@@ -596,7 +596,7 @@ class TrustedTrainer(Trainer):
         # assert that position_ids and attention_mask are present
         assert "position_ids" in inputs, "Position IDs must be present in inputs"
         assert "attention_mask" in inputs, "Attention mask must be present in inputs"
-        return super().compute_loss(model, inputs, return_outputs, num_items_in_batch)
+        return super().compute_loss(model=model, inputs=inputs, return_outputs=return_outputs)
 
     def get_train_dataloader(self) -> DataLoader:
         """
