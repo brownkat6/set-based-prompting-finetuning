@@ -6,13 +6,13 @@ import torch
 from dataclasses import dataclass, field
 from typing import Optional
 import transformers
-from transformers import Trainer, HfArgumentParser
+from transformers import Trainer, HfArgumentParser, LlamaForCausalLM
 import order_independent_llm
 from order_independent_llm.input_processing import load_model
 
 @dataclass
 class ModelArguments:
-    model_name_or_path: Optional[str] = field(default="facebook/opt-125m")
+    model_name_or_path: Optional[str] = field(default="meta-llama/Llama-2-7b-hf")
 
 @dataclass
 class DataArguments:
@@ -32,6 +32,8 @@ def main():
     
     print("\nLoading model and tokenizer...")
     model, tokenizer = load_model(model_args.model_name_or_path, device, torch.float32)
+    # Modify model to accept 2D attention masks
+    model = order_independent_llm.input_processing.get_2D_attention_accepting_model(model)
     
     print("\nPreparing datasets...")
     from train_full import make_supervised_data_module
