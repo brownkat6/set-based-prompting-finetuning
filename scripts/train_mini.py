@@ -47,7 +47,8 @@ def main():
     print("Eval dataset first item keys:", next(iter(eval_dataset)).keys())
     
     print("\nCreating trainer...")
-    trainer = Trainer(
+    from train_full import TrustedTrainer
+    trainer = TrustedTrainer(
         model=model,
         args=training_args,
         train_dataset=data_module["train_dataset"],
