@@ -180,20 +180,21 @@ class DataCollatorForSupervisedDataset(object):
         self.dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
 
     def __call__(self, instances: Sequence[Dict[str, Any]]) -> Dict[str, torch.Tensor]:
-        print("train_full __call__ keys", instances[0].keys())  # Already added
-        
-        # Add more detailed debugging
-        for i, instance in enumerate(instances):
-            if "position_ids" not in instance or "attention_mask" not in instance:
-                print(f"Instance {i} missing position_ids or attention_mask!")
-                print(f"Instance {i} keys:", instance.keys())
-
         input_ids = [instance["input_ids"] for instance in instances]
         labels = [instance["labels"] for instance in instances]
         attention_masks = [instance["attention_mask"] for instance in instances]
         position_ids = [instance["position_ids"] for instance in instances]
 
-        # Ensure consistent dtype during padding
+        # Validate shapes before padding
+        for i, (ids, mask, pos) in enumerate(zip(input_ids, attention_masks, position_ids)):
+            if ids.dim() != 1:
+                raise ValueError(f"Expected 1D input_ids, got {ids.dim()}D at index {i}")
+            if mask.dim() != 3:
+                raise ValueError(f"Expected 3D attention_mask, got {mask.dim()}D at index {i}")
+            if pos.dim() != 1:
+                raise ValueError(f"Expected 1D position_ids, got {pos.dim()}D at index {i}")
+
+        # Ensure consistent dtypes during padding
         input_ids = torch.nn.utils.rnn.pad_sequence(
             input_ids, batch_first=True, padding_value=self.tokenizer.pad_token_id
         ).long()
@@ -206,26 +207,38 @@ class DataCollatorForSupervisedDataset(object):
         max_len = input_ids.size(1)
         batched_attention_mask = torch.zeros(
             (len(instances), 1, max_len, max_len), 
-            dtype=torch.long
+            dtype=torch.long,
+            device=input_ids.device
         )
+        
+        # Careful padding of attention mask
         for i, mask in enumerate(attention_masks):
             seq_len = mask.size(-1)
+            if seq_len > max_len:
+                mask = mask[:, :seq_len, :seq_len]
             batched_attention_mask[i, :, :seq_len, :seq_len] = mask
 
-        # Pad position ids
+        # Pad position ids with proper masking value
         position_ids = torch.nn.utils.rnn.pad_sequence(
             position_ids, batch_first=True, padding_value=0
         ).long()
 
-        print("Attention mask dtype:", batched_attention_mask.dtype)
-        print("Position ids dtype:", position_ids.dtype)
-        
-        return {
+        # Final validation
+        batch = {
             "input_ids": input_ids,
             "labels": labels,
             "attention_mask": batched_attention_mask,
             "position_ids": position_ids,
         }
+
+        # Validate final batch
+        for k, v in batch.items():
+            if torch.isnan(v).any():
+                raise ValueError(f"NaN values found in {k}")
+            if torch.isinf(v).any():
+                raise ValueError(f"Inf values found in {k}")
+
+        return batch
 
 
 class SubsetDatasetWithAttrs(torch.utils.data.Subset):
@@ -423,10 +436,14 @@ def train() -> None:
     with torch.set_grad_enabled(True):
         outputs = model(
             input_ids=first_batch["input_ids"].unsqueeze(0).to(device),
-            labels=first_batch["labels"].unsqueeze(0).to(device)
+            labels=first_batch["labels"].unsqueeze(0).to(device),
+            position_ids=first_batch["position_ids"].unsqueeze(0).to(device),
+            attention_mask=first_batch["attention_mask"].unsqueeze(0).to(device),
         )
         print(outputs.keys())
         print(outputs.loss, outputs.loss.requires_grad, outputs.logits.shape)
+        print(outputs.logits)
+    print(f"Finish debug sample batch")
 
     # Add timing callback
     class TimingCallback(transformers.TrainerCallback):
@@ -610,64 +627,62 @@ class TrustedTrainer(Trainer):
     def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
         """
         How the loss is computed by Trainer. By default, all models return the loss in the first element.
-
-        Subclass and override for custom behavior.
         """
-        #if self.model_accepts_loss_kwargs:
-        #    loss_kwargs = {}
-        #   if num_items_in_batch is not None:
-        #        loss_kwargs["num_items_in_batch"] = num_items_in_batch
-        #    inputs = {**inputs, **loss_kwargs}
-        assert "position_ids" in inputs, "Position IDs must be present in inputs"
-        assert "attention_mask" in inputs, "Attention mask must be present in inputs"
-        assert "labels" in inputs, "Labels must be present in inputs"
-        assert "input_ids" in inputs, "Input IDs must be present in inputs"
-        print("compute_loss")
-        outputs = model(**inputs)
-        # Save past state if it exists
-        # TODO: this needs to be fixed and made cleaner later.
-        try:
-            loss = outputs[0]
-        except:
-            print("Outputs:", outputs)
-            raise ValueError("Outputs is not a tuple! Could not get loss from outputs.")
-        '''
-        if self.args.past_index >= 0:
-            self._past = outputs[self.args.past_index]
+        # Add detailed input validation and debugging
+        print("\nDEBUG INPUT SHAPES:")
+        for k, v in inputs.items():
+            print(f"{k}: shape={v.shape}, dtype={v.dtype}, device={v.device}")
+            print(f"Sample values: min={v.min().item()}, max={v.max().item()}")
+            # Check for NaN/Inf in inputs
+            if torch.isnan(v).any() or torch.isinf(v).any():
+                print(f"WARNING: Found NaN/Inf in {k}")
+            
+        # Verify attention mask format
+        if inputs["attention_mask"].dim() != 4:
+            raise ValueError(f"Expected 4D attention mask, got {inputs['attention_mask'].dim()}D")
         
+        # Ensure consistent device placement
+        device = model.device
+        inputs = {k: v.to(device) for k, v in inputs.items()}
+        
+        # Add gradient debugging
+        def hook_fn(grad):
+            if torch.isnan(grad).any():
+                print(f"NaN gradient detected!")
+                return grad
+            return grad
+        
+        # Register hooks on model parameters
+        hooks = []
+        for name, param in model.named_parameters():
+            hooks.append(param.register_hook(lambda grad, name=name: hook_fn(grad)))
 
-        if labels is not None:
-            unwrapped_model = self.accelerator.unwrap_model(model)
-            if _is_peft_model(unwrapped_model):
-                model_name = unwrapped_model.base_model.model._get_name()
-            else:
-                model_name = unwrapped_model._get_name()
-            # User-defined compute_loss function
-            if self.compute_loss_func is not None:
-                loss = self.compute_loss_func(outputs, labels, num_items_in_batch=num_items_in_batch)
-            elif model_name in MODEL_FOR_CAUSAL_LM_MAPPING_NAMES.values():
-                loss = self.label_smoother(outputs, labels, shift_labels=True)
-            else:
-                loss = self.label_smoother(outputs, labels)
-        else:
-            if isinstance(outputs, dict) and "loss" not in outputs:
-                raise ValueError(
-                    "The model did not return a loss from the inputs, only the following keys: "
-                    f"{','.join(outputs.keys())}. For reference, the inputs it received are {','.join(inputs.keys())}."
-                )
-            # We don't use .loss here since the model may return tuples instead of ModelOutput.
-            loss = outputs["loss"] if isinstance(outputs, dict) else outputs[0]
-        '''
-        #if self.args.average_tokens_across_devices and self.model_accepts_loss_kwargs:
-        #    loss *= self.accelerator.num_processes
-
-        # check if loss is nan
-        if torch.isnan(loss):
-            print("Loss is nan!")
-            print("Inputs:", inputs)
-            print("Outputs:", outputs)
-            print("Loss:", loss)
-            raise ValueError("Loss is nan!")
+        try:
+            with torch.autograd.detect_anomaly():
+                outputs = model(**inputs)
+                
+                print("\nDEBUG MODEL OUTPUTS:")
+                if isinstance(outputs, dict):
+                    for k, v in outputs.items():
+                        if isinstance(v, torch.Tensor):
+                            print(f"{k}: shape={v.shape}, dtype={v.dtype}")
+                            print(f"Sample values: min={v.min().item()}, max={v.max().item()}")
+                            if torch.isnan(v).any():
+                                print(f"WARNING: Found NaN in output {k}")
+                
+                loss = outputs[0] if not isinstance(outputs, dict) else outputs["loss"]
+                
+                # Check loss value before returning
+                if torch.isnan(loss) or torch.isinf(loss):
+                    print("WARNING: Loss is NaN/Inf!")
+                    print("Last layer outputs:", outputs.logits[-1, :, :])
+                    raise ValueError("Loss computation produced NaN/Inf values")
+                
+        finally:
+            # Remove hooks
+            for hook in hooks:
+                hook.remove()
+            
         return (loss, outputs) if return_outputs else loss
     
     def _get_collator_with_removed_columns(
