@@ -648,56 +648,70 @@ from transformers.trainer import _is_peft_model
 class TrustedTrainer(Trainer):
     def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
         """
-        How the loss is computed by Trainer. By default, all models return the loss in the first element.
+        Compute the loss for each example individually.
+        If any example produces NaN/Inf, print that example's input info.
+        Otherwise, aggregate all losses.
         """
-        # Add detailed input validation and debugging
-        print("\nDEBUG INPUT SHAPES:")
+        print("\nDEBUG INPUT SHAPES (BATCH):")
         for k, v in inputs.items():
             print(f"{k}: shape={v.shape}, dtype={v.dtype}, device={v.device}")
             print(f"Sample values: min={v.min().item()}, max={v.max().item()}")
-            
+
         # Ensure consistent device placement and dtype
         device = model.device
-        dtype = next(model.parameters()).dtype
+        model_dtype = next(model.parameters()).dtype
         inputs = {k: v.to(device) for k, v in inputs.items()}
-        
-        # Convert attention mask to float
-        if inputs["attention_mask"].dtype != dtype:
-            inputs["attention_mask"] = inputs["attention_mask"].to(dtype)
-        
-        try:
-            with torch.autograd.detect_anomaly():
-                # Forward pass with extra error checking
-                try:
-                    outputs = model(**inputs)
-                except RuntimeError as e:
-                    print(f"Forward pass failed: {e}")
-                    for k, v in inputs.items():
-                        print(f"{k} stats: mean={v.float().mean().item():.4f}, std={v.float().std().item():.4f}")
-                    raise
-                
-                # Get loss and check for invalid values
-                loss = outputs[0] if not isinstance(outputs, dict) else outputs["loss"]
-                
-                if torch.isnan(loss) or torch.isinf(loss):
-                    print("WARNING: Loss is NaN/Inf!")
-                    print("Model dtype:", next(model.parameters()).dtype)
-                    print("Loss dtype:", loss.dtype)
-                    print("Logits stats:", 
-                          f"mean={outputs.logits.float().mean().item():.4f}, "
-                          f"std={outputs.logits.float().std().item():.4f}")
-                    raise ValueError("Loss computation produced NaN/Inf values")
-                
-                # Scale loss if it's too large
-                if loss.item() > 1e4:
-                    print(f"Warning: Large loss value: {loss.item()}, scaling down")
-                    loss = loss * 0.1
-                    
-        except Exception as e:
-            print(f"Error in compute_loss: {e}")
-            raise
 
-        return (loss, outputs) if return_outputs else loss
+        # Convert attention mask to model's dtype if it mismatches
+        if inputs["attention_mask"].dtype != model_dtype:
+            inputs["attention_mask"] = inputs["attention_mask"].to(model_dtype)
+
+        batch_size = inputs["input_ids"].shape[0]
+
+        # We'll accumulate valid losses here
+        example_losses = []
+
+        for i in range(batch_size):
+            single_inputs = {}
+            for k, v in inputs.items():
+                # For attention_mask or others that may have extra dimensions, slice carefully
+                if v.dim() > 1:
+                    # We want just the i-th sample: keep the batch dimension for forward pass
+                    single_inputs[k] = v[i : i + 1]
+                else:
+                    single_inputs[k] = v[i]
+
+            try:
+                with torch.autograd.detect_anomaly():
+                    # Forward pass for a single example
+                    outputs = model(**single_inputs)
+                    loss = outputs[0] if not isinstance(outputs, dict) else outputs["loss"]
+                    
+                    if torch.isnan(loss) or torch.isinf(loss):
+                        print("WARNING: Detected NaN/Inf loss for example index:", i)
+                        print("Model dtype:", model_dtype)
+                        print("Loss dtype:", loss.dtype)
+                        # Print out the single_inputs stats for debugging
+                        for k, v in single_inputs.items():
+                            # shape, device, min/max etc.
+                            print(f"Example {i} | {k}: shape={v.shape}, dtype={v.dtype}, device={v.device}")
+                            print(f"  values range: min={v.min().item()}, max={v.max().item()}")
+                        raise ValueError(f"NaN/Inf loss in example index {i}")
+                    else:
+                        example_losses.append(loss)
+            except Exception as e:
+                print(f"Error in compute_loss for example index {i}: {e}")
+                raise
+
+        # If no example produced NaN/Inf, aggregate the losses
+        if not example_losses:
+            # In case the entire batch was empty or something unexpected
+            raise ValueError("No valid examples in batch (all produced NaN/Inf or batch was empty)")
+
+        # Compute average
+        total_loss = torch.stack(example_losses).mean()
+
+        return (total_loss, outputs) if return_outputs else total_loss
     
     def _get_collator_with_removed_columns(
         self, data_collator: Callable, description: Optional[str] = None
