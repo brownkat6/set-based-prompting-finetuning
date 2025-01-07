@@ -404,6 +404,7 @@ def train() -> None:
         train_dataset=data_module["train_dataset"],
         eval_dataset=data_module["eval_dataset"],
         data_collator=data_module["data_collator"],
+        remove_unused_columns=False,
     )
     
     print("=== DEBUG: Checking sample batch ===")
@@ -597,11 +598,16 @@ class TrustedTrainer(Trainer):
         assert "position_ids" in inputs, "Position IDs must be present in inputs"
         assert "attention_mask" in inputs, "Attention mask must be present in inputs"
         return super().compute_loss(model=model, inputs=inputs, return_outputs=return_outputs)
-
+    
+    def _get_collator_with_removed_columns(
+        self, data_collator: Callable, description: Optional[str] = None
+    ) -> Callable:
+        # Don't remove any columns - skip the _remove_unused_columns call
+        # that normally happens in Trainer
+        return data_collator
+        
+    '''
     def get_train_dataloader(self) -> DataLoader:
-        """
-        Returns the training DataLoader.
-        """
         if self.train_dataset is None:
             raise ValueError("Trainer: training requires a train_dataset.")
 
@@ -628,9 +634,6 @@ class TrustedTrainer(Trainer):
         return DataLoader(train_dataset, **dataloader_params)
 
     def get_eval_dataloader(self, eval_dataset=None) -> DataLoader:
-        """
-        Returns the evaluation DataLoader.
-        """
         if eval_dataset is None and self.eval_dataset is None:
             raise ValueError("Trainer: evaluation requires an eval_dataset.")
 
@@ -664,7 +667,7 @@ class TrustedTrainer(Trainer):
                 self._eval_dataloaders = {dataloader_key: eval_dataloader}
 
         return self.accelerator.prepare(eval_dataloader)
-    
+    '''
     def _remove_unused_columns(self, dataset, description: Optional[str] = None):
         """Override to keep all columns"""
         return dataset
