@@ -176,7 +176,14 @@ class DataCollatorForSupervisedDataset(object):
         self.dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
 
     def __call__(self, instances: Sequence[Dict[str, Any]]) -> Dict[str, torch.Tensor]:
-        print("train_full __call__ keys",instances[0].keys())
+        print("train_full __call__ keys", instances[0].keys())  # Already added
+        
+        # Add more detailed debugging
+        for i, instance in enumerate(instances):
+            print(f"Instance {i} keys:", instance.keys())
+            if "position_ids" not in instance:
+                print(f"Instance {i} missing position_ids!")
+
         input_ids = [instance["input_ids"] for instance in instances]
         labels = [instance["labels"] for instance in instances]
         attention_masks = [instance["attention_mask"] for instance in instances]

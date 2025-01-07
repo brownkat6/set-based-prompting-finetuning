@@ -37,6 +37,15 @@ def main():
     from train_full import make_supervised_data_module
     data_module = make_supervised_data_module(tokenizer, data_args, model)
     
+    # Add debugging prints
+    print("\nChecking dataset contents:")
+    train_dataset = data_module["train_dataset"]
+    eval_dataset = data_module["eval_dataset"]
+    
+    # Check first item in each dataset
+    print("Train dataset first item keys:", next(iter(train_dataset)).keys())
+    print("Eval dataset first item keys:", next(iter(eval_dataset)).keys())
+    
     print("\nCreating trainer...")
     trainer = Trainer(
         model=model,
