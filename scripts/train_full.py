@@ -59,7 +59,10 @@ class DataArguments:
 
 @dataclass
 class TrainingArguments(transformers.TrainingArguments):
-    cache_dir: Optional[str] = field(default=None)
+    cache_dir: Optional[str] = field(
+        default=None,
+        metadata={"help": "Path to cache directory for storing model and data"}
+    )
     optim: str = field(default="adamw_torch")
     model_max_length: int = field(
         default=512,
@@ -75,6 +78,7 @@ class TrainingArguments(transformers.TrainingArguments):
     )
 
     def __post_init__(self):
+        # Make sure to call parent's post init
         super().__post_init__()
         # Ensure find_unused_parameters is False for DDP
         self.ddp_find_unused_parameters = False
