@@ -613,11 +613,11 @@ class TrustedTrainer(Trainer):
 
         Subclass and override for custom behavior.
         """
-        if self.model_accepts_loss_kwargs:
-            loss_kwargs = {}
-            if num_items_in_batch is not None:
-                loss_kwargs["num_items_in_batch"] = num_items_in_batch
-            inputs = {**inputs, **loss_kwargs}
+        #if self.model_accepts_loss_kwargs:
+        #    loss_kwargs = {}
+        #   if num_items_in_batch is not None:
+        #        loss_kwargs["num_items_in_batch"] = num_items_in_batch
+        #    inputs = {**inputs, **loss_kwargs}
         assert "position_ids" in inputs, "Position IDs must be present in inputs"
         assert "attention_mask" in inputs, "Attention mask must be present in inputs"
         assert "labels" in inputs, "Labels must be present in inputs"
