@@ -223,6 +223,12 @@ class DataCollatorForSupervisedDataset(object):
             position_ids, batch_first=True, padding_value=0
         ).long()
 
+        # Ensure attention mask values are exactly 0 or 1
+        batched_attention_mask = batched_attention_mask.bool().long()
+        
+        # Convert attention mask to float for better numerical stability
+        batched_attention_mask = batched_attention_mask.to(torch.float32)
+        
         # Final validation
         batch = {
             "input_ids": input_ids,
@@ -307,6 +313,9 @@ def train() -> None:
     parser = transformers.HfArgumentParser((ModelArguments, DataArguments, TrainingArguments))
     model_args, data_args, training_args = parser.parse_args_into_dataclasses()
 
+    # Add gradient clipping
+    training_args.max_grad_norm = 1.0
+    
     # More robust GPU checking and dtype setting
     try:
         torch.cuda.init()
@@ -314,24 +323,33 @@ def train() -> None:
         
         if torch.cuda.is_available():
             device = torch.device("cuda")
-            dtype = torch.bfloat16
+            # Use float32 for initial loading to avoid numerical instability
+            dtype = torch.float32
             n_gpus = torch.cuda.device_count()
             print(f"Found {n_gpus} CUDA devices")
-            for i in range(n_gpus):
-                print(f"  Device {i}: {torch.cuda.get_device_name(i)}")
-        elif torch.backends.mps.is_available():
-            device = torch.device("mps")
-            dtype = torch.float32
         else:
-            print("Warning: No GPU found. Training will be slow!")
             device = torch.device("cpu")
             dtype = torch.float32
     except Exception as e:
         print(f"Error during CUDA initialization: {e}")
-        print("Falling back to CPU due to CUDA error")
         device = torch.device("cpu")
         dtype = torch.float32
+
     model, tokenizer = load_model(model_args.model_name_or_path, device, dtype)
+    
+    # Initialize weights with small values if needed
+    def init_weights(m):
+        if isinstance(m, torch.nn.Linear):
+            torch.nn.init.xavier_normal_(m.weight, gain=0.01)
+            if m.bias is not None:
+                torch.nn.init.zeros_(m.bias)
+    
+    model.apply(init_weights)
+    
+    # Convert to bfloat16 after initialization if using GPU
+    if device.type == "cuda":
+        model = model.bfloat16()
+    
     # Modify model to accept 2D attention masks
     model = order_independent_llm.input_processing.get_2D_attention_accepting_model(model)
     # Modify training arguments based on device
@@ -432,6 +450,8 @@ def train() -> None:
     # Inspect shape and example token indices
     print("input_ids:", first_batch["input_ids"])
     print("labels:", first_batch["labels"])
+    print("attention_mask:", first_batch["attention_mask"])
+    print("position_ids:", first_batch["position_ids"])
     # Then run a quick forward pass manually
     with torch.set_grad_enabled(True):
         outputs = model(
@@ -617,13 +637,6 @@ def get_parallel_inputs(
 from transformers.trainer import *
 from transformers.trainer import _is_peft_model
 class TrustedTrainer(Trainer):
-    #def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
-    #    assert "labels" in inputs, "Labels must be present in inputs"
-    #    # assert that position_ids and attention_mask are present
-    #    assert "position_ids" in inputs, "Position IDs must be present in inputs"
-    #    assert "attention_mask" in inputs, "Attention mask must be present in inputs"
-    #    return super().compute_loss(model=model, inputs=inputs, return_outputs=return_outputs)
-    
     def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
         """
         How the loss is computed by Trainer. By default, all models return the loss in the first element.
@@ -633,56 +646,48 @@ class TrustedTrainer(Trainer):
         for k, v in inputs.items():
             print(f"{k}: shape={v.shape}, dtype={v.dtype}, device={v.device}")
             print(f"Sample values: min={v.min().item()}, max={v.max().item()}")
-            # Check for NaN/Inf in inputs
-            if torch.isnan(v).any() or torch.isinf(v).any():
-                print(f"WARNING: Found NaN/Inf in {k}")
             
-        # Verify attention mask format
-        if inputs["attention_mask"].dim() != 4:
-            raise ValueError(f"Expected 4D attention mask, got {inputs['attention_mask'].dim()}D")
-        
-        # Ensure consistent device placement
+        # Ensure consistent device placement and dtype
         device = model.device
+        dtype = next(model.parameters()).dtype
         inputs = {k: v.to(device) for k, v in inputs.items()}
         
-        # Add gradient debugging
-        def hook_fn(grad):
-            if torch.isnan(grad).any():
-                print(f"NaN gradient detected!")
-                return grad
-            return grad
+        # Convert attention mask to float
+        if inputs["attention_mask"].dtype != dtype:
+            inputs["attention_mask"] = inputs["attention_mask"].to(dtype)
         
-        # Register hooks on model parameters
-        hooks = []
-        for name, param in model.named_parameters():
-            hooks.append(param.register_hook(lambda grad, name=name: hook_fn(grad)))
-
         try:
             with torch.autograd.detect_anomaly():
-                outputs = model(**inputs)
+                # Forward pass with extra error checking
+                try:
+                    outputs = model(**inputs)
+                except RuntimeError as e:
+                    print(f"Forward pass failed: {e}")
+                    for k, v in inputs.items():
+                        print(f"{k} stats: mean={v.float().mean().item():.4f}, std={v.float().std().item():.4f}")
+                    raise
                 
-                print("\nDEBUG MODEL OUTPUTS:")
-                if isinstance(outputs, dict):
-                    for k, v in outputs.items():
-                        if isinstance(v, torch.Tensor):
-                            print(f"{k}: shape={v.shape}, dtype={v.dtype}")
-                            print(f"Sample values: min={v.min().item()}, max={v.max().item()}")
-                            if torch.isnan(v).any():
-                                print(f"WARNING: Found NaN in output {k}")
-                
+                # Get loss and check for invalid values
                 loss = outputs[0] if not isinstance(outputs, dict) else outputs["loss"]
                 
-                # Check loss value before returning
                 if torch.isnan(loss) or torch.isinf(loss):
                     print("WARNING: Loss is NaN/Inf!")
-                    print("Last layer outputs:", outputs.logits[-1, :, :])
+                    print("Model dtype:", next(model.parameters()).dtype)
+                    print("Loss dtype:", loss.dtype)
+                    print("Logits stats:", 
+                          f"mean={outputs.logits.float().mean().item():.4f}, "
+                          f"std={outputs.logits.float().std().item():.4f}")
                     raise ValueError("Loss computation produced NaN/Inf values")
                 
-        finally:
-            # Remove hooks
-            for hook in hooks:
-                hook.remove()
-            
+                # Scale loss if it's too large
+                if loss.item() > 1e4:
+                    print(f"Warning: Large loss value: {loss.item()}, scaling down")
+                    loss = loss * 0.1
+                    
+        except Exception as e:
+            print(f"Error in compute_loss: {e}")
+            raise
+
         return (loss, outputs) if return_outputs else loss
     
     def _get_collator_with_removed_columns(
