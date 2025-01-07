@@ -176,6 +176,7 @@ class DataCollatorForSupervisedDataset(object):
         self.dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
 
     def __call__(self, instances: Sequence[Dict[str, Any]]) -> Dict[str, torch.Tensor]:
+        print("train_full __call__ keys",instances[0].keys())
         input_ids = [instance["input_ids"] for instance in instances]
         labels = [instance["labels"] for instance in instances]
         attention_masks = [instance["attention_mask"] for instance in instances]
@@ -220,6 +221,10 @@ class SubsetDatasetWithAttrs(torch.utils.data.Subset):
     """Subset that preserves dataset attributes."""
     def __getitem__(self, idx):
         item = super().__getitem__(idx)
+        assert 'attention_mask' in item, "Attention mask must be present in item"
+        assert 'position_ids' in item, "Position IDs must be present in item"
+        assert 'input_ids' in item, "Input IDs must be present in item"
+        assert 'labels' in item, "Labels must be present in item"
         item['attention_mask'] = self.dataset.attention_mask[idx]
         item['position_ids'] = self.dataset.position_ids[idx]
         item['input_ids'] = self.dataset.input_ids[idx]
