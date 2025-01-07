@@ -605,69 +605,8 @@ class TrustedTrainer(Trainer):
         # Don't remove any columns - skip the _remove_unused_columns call
         # that normally happens in Trainer
         return data_collator
-        
-    '''
-    def get_train_dataloader(self) -> DataLoader:
-        if self.train_dataset is None:
-            raise ValueError("Trainer: training requires a train_dataset.")
-
-        train_dataset = self.train_dataset
-        data_collator = self.data_collator
-
-        # Don't remove any columns - skip the _remove_unused_columns call
-        # that normally happens in Trainer
-        
-        dataloader_params = {
-            "batch_size": self._train_batch_size,
-            "collate_fn": data_collator,
-            "num_workers": self.args.dataloader_num_workers,
-            "pin_memory": self.args.dataloader_pin_memory,
-            "persistent_workers": self.args.dataloader_persistent_workers,
-        }
-
-        if not isinstance(train_dataset, torch.utils.data.IterableDataset):
-            dataloader_params["sampler"] = self._get_train_sampler()
-            dataloader_params["drop_last"] = self.args.dataloader_drop_last
-            dataloader_params["worker_init_fn"] = seed_worker
-            dataloader_params["prefetch_factor"] = self.args.dataloader_prefetch_factor
-
-        return DataLoader(train_dataset, **dataloader_params)
-
-    def get_eval_dataloader(self, eval_dataset=None) -> DataLoader:
-        if eval_dataset is None and self.eval_dataset is None:
-            raise ValueError("Trainer: evaluation requires an eval_dataset.")
-
-        eval_dataset = eval_dataset if eval_dataset is not None else self.eval_dataset
-        data_collator = self.data_collator
-
-        # Don't remove any columns - skip the _remove_unused_columns call
-        # that normally happens in Trainer
-
-        dataloader_params = {
-            "batch_size": self.args.eval_batch_size,
-            "collate_fn": data_collator,
-            "num_workers": self.args.dataloader_num_workers,
-            "pin_memory": self.args.dataloader_pin_memory,
-            "persistent_workers": self.args.dataloader_persistent_workers,
-        }
-
-        if not isinstance(eval_dataset, torch.utils.data.IterableDataset):
-            dataloader_params["sampler"] = self._get_eval_sampler(eval_dataset)
-            dataloader_params["drop_last"] = self.args.dataloader_drop_last
-            dataloader_params["prefetch_factor"] = self.args.dataloader_prefetch_factor
-
-        # accelerator.free_memory() will destroy the references, so
-        # we need to store the non-prepared version
-        eval_dataloader = DataLoader(eval_dataset, **dataloader_params)
-        dataloader_key = eval_dataset if isinstance(eval_dataset, str) else "eval"
-        if self.args.dataloader_persistent_workers:
-            if hasattr(self, "_eval_dataloaders"):
-                self._eval_dataloaders[dataloader_key] = eval_dataloader
-            else:
-                self._eval_dataloaders = {dataloader_key: eval_dataloader}
-
-        return self.accelerator.prepare(eval_dataloader)
-    '''
+    
+    
     def _remove_unused_columns(self, dataset, description: Optional[str] = None):
         """Override to keep all columns"""
         return dataset
