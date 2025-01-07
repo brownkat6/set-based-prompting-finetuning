@@ -65,7 +65,7 @@ class TrainingArguments(transformers.TrainingArguments):
     #)
     optim: str = field(default="adamw_torch")
     model_max_length: int = field(
-        default=512,
+        default=256,
         metadata={"help": "Maximum sequence length. Sequences will be right padded (and possibly truncated)."},
     )
     evaluation_strategy: str = field(
@@ -116,9 +116,22 @@ def preprocess(
     attention_masks = []
     position_ids = []
     
+    max_length = 256  # Hard-code max length to 256
+    
     for source in sources:
         # Get parallel processing tensors
         inputs = get_parallel_inputs(source, tokenizer)
+        
+        # Truncate all tensors to max_length
+        for key in ['input_ids', 'attention_mask', 'position_ids']:
+            if key in inputs:
+                if inputs[key].size(-1) > max_length:
+                    if key == 'attention_mask':
+                        # For 4D attention mask
+                        inputs[key] = inputs[key][:, :, :max_length, :max_length]
+                    else:
+                        # For 2D tensors
+                        inputs[key] = inputs[key][:, :max_length]
         
         # Store tensors
         input_ids.append(inputs["input_ids"][0])  # Remove batch dimension
@@ -178,6 +191,7 @@ class DataCollatorForSupervisedDataset(object):
     def __init__(self, tokenizer: transformers.PreTrainedTokenizer):
         self.tokenizer = tokenizer
         self.dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
+        self.max_length = 256  # Add max_length parameter
 
     def __call__(self, instances: Sequence[Dict[str, Any]]) -> Dict[str, torch.Tensor]:
         input_ids = [instance["input_ids"] for instance in instances]
@@ -193,6 +207,13 @@ class DataCollatorForSupervisedDataset(object):
                 raise ValueError(f"Expected 3D attention_mask, got {mask.dim()}D at index {i}")
             if pos.dim() != 1:
                 raise ValueError(f"Expected 1D position_ids, got {pos.dim()}D at index {i}")
+            
+            # Truncate if necessary
+            if ids.size(0) > self.max_length:
+                input_ids[i] = ids[:self.max_length]
+                labels[i] = labels[i][:self.max_length]
+                attention_masks[i] = mask[:, :self.max_length, :self.max_length]
+                position_ids[i] = pos[:self.max_length]
 
         # Ensure consistent dtypes during padding
         input_ids = torch.nn.utils.rnn.pad_sequence(
@@ -316,26 +337,15 @@ def train() -> None:
     # Add gradient clipping
     training_args.max_grad_norm = 1.0
     
-    # More robust GPU checking and dtype setting
-    try:
-        torch.cuda.init()
-        torch.cuda.synchronize()
-        
-        if torch.cuda.is_available():
-            device = torch.device("cuda")
-            # Use float32 for initial loading to avoid numerical instability
-            dtype = torch.float32
-            n_gpus = torch.cuda.device_count()
-            print(f"Found {n_gpus} CUDA devices")
-        else:
-            device = torch.device("cpu")
-            dtype = torch.float32
-    except Exception as e:
-        print(f"Error during CUDA initialization: {e}")
-        device = torch.device("cpu")
-        dtype = torch.float32
-
+    # Force float32 for testing
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    dtype = torch.float32  # Changed from bfloat16 to float32
+    print(f"Using device: {device}, dtype: {dtype}")
+    
     model, tokenizer = load_model(model_args.model_name_or_path, device, dtype)
+    
+    # Ensure model is in float32
+    model = model.float()
     
     # Initialize weights with small values if needed
     def init_weights(m):
@@ -346,9 +356,8 @@ def train() -> None:
     
     model.apply(init_weights)
     
-    # Convert to bfloat16 after initialization if using GPU
-    if device.type == "cuda":
-        model = model.bfloat16()
+    # Verify model dtype
+    print(f"Model dtype after initialization: {next(model.parameters()).dtype}")
     
     # Modify model to accept 2D attention masks
     model = order_independent_llm.input_processing.get_2D_attention_accepting_model(model)
