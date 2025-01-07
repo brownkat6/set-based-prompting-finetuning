@@ -189,8 +189,8 @@ if ! torchrun \
     --fsdp_transformer_layer_cls_to_wrap "LlamaDecoderLayer" \
     --gradient_checkpointing True \
     --run_name "${model_path_safe}-finetuning-${RUN_DATETIME}" \
-    --logging_dir "${OUTPUT_DIR}/logs" \
-    --cache_dir "${BASE_DIR}/cache/transformers"
+    --logging_dir "${OUTPUT_DIR}/logs" 
+    #--cache_dir "${BASE_DIR}/cache/transformers"
 then
     echo "Error: Training failed"
     exit 1

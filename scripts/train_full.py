@@ -59,10 +59,10 @@ class DataArguments:
 
 @dataclass
 class TrainingArguments(transformers.TrainingArguments):
-    cache_dir: Optional[str] = field(
-        default=None,
-        metadata={"help": "Path to cache directory for storing model and data"}
-    )
+    #cache_dir: Optional[str] = field(
+    #    default=None,
+    #    metadata={"help": "Path to cache directory for storing model and data"}
+    #)
     optim: str = field(default="adamw_torch")
     model_max_length: int = field(
         default=512,
