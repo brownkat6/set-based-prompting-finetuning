@@ -241,7 +241,7 @@ class DataCollatorForSupervisedDataset(object):
 
         # Pad position ids with proper masking value
         position_ids = torch.nn.utils.rnn.pad_sequence(
-            position_ids, batch_first=True, padding_value=max_len
+            position_ids, batch_first=True, padding_value=(max_len-1)
         ).long()
 
         # Ensure attention mask values are exactly 0 or 1
