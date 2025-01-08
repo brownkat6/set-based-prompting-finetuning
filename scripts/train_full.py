@@ -343,7 +343,7 @@ def train() -> None:
     print(f"Using device: {device}, dtype: {dtype}")
     
     model, tokenizer = load_model(model_args.model_name_or_path, device, dtype)
-    tokenizer.pad_token_id
+    tokenizer.pad_token_id = 0
     
     # Ensure model is in float32
     model = model.float()
@@ -727,7 +727,7 @@ class TrustedTrainer(Trainer):
                         #raise ValueError(f"NaN/Inf loss in example index {i}")
                     else:
                         print(f"Example {i} | loss: {loss.item()}")
-                        print(f"na loss entry contains -100:",(-100 in single_inputs['labels']))
+                        print(f"real loss entry contains -100:",(-100 in single_inputs['labels']))
                         #print(single_inputs["input_ids"])
                         #print(single_inputs["labels"])
                         #print(single_inputs["position_ids"])
