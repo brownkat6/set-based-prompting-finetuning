@@ -339,7 +339,7 @@ def train() -> None:
     
     # Force float32 for testing
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    dtype = torch.float32  # Changed from bfloat16 to float32
+    dtype = torch.bfloat16  # Changed from bfloat16 to float32
     print(f"Using device: {device}, dtype: {dtype}")
     
     model, tokenizer = load_model(model_args.model_name_or_path, device, dtype)
@@ -454,15 +454,15 @@ def train() -> None:
         eval_dataset=data_module["eval_dataset"],
         data_collator=data_module["data_collator"],
     )
-    
-    print("=== DEBUG: Checking sample batch ===")
-    first_batch = next(iter(data_module["train_dataset"]))
+    '''
+    #print("=== DEBUG: Checking sample batch ===")
+    #first_batch = next(iter(data_module["train_dataset"]))
     # Inspect shape and example token indices
-    print("input_ids:", first_batch["input_ids"])
-    print("labels:", first_batch["labels"])
-    print("attention_mask:", first_batch["attention_mask"])
-    print("position_ids:", first_batch["position_ids"])
-    print(first_batch["input_ids"].unsqueeze(0).shape, first_batch["labels"].unsqueeze(0).shape, first_batch["position_ids"].unsqueeze(0).shape, first_batch["attention_mask"].unsqueeze(0).shape)
+    #print("input_ids:", first_batch["input_ids"])
+    #print("labels:", first_batch["labels"])
+    #print("attention_mask:", first_batch["attention_mask"])
+    #print("position_ids:", first_batch["position_ids"])
+    #print(first_batch["input_ids"].unsqueeze(0).shape, first_batch["labels"].unsqueeze(0).shape, first_batch["position_ids"].unsqueeze(0).shape, first_batch["attention_mask"].unsqueeze(0).shape)
     # Then run a quick forward pass manually
     with torch.set_grad_enabled(True):
         outputs = model(
@@ -475,7 +475,7 @@ def train() -> None:
         print(outputs.loss, outputs.loss.requires_grad, outputs.logits.shape)
         print(outputs.logits)
     print(f"Finish debug sample batch")
-
+    '''
     # Add timing callback
     class TimingCallback(transformers.TrainerCallback):
         def __init__(self, print_interval_steps=100):
@@ -556,13 +556,6 @@ def train() -> None:
         os.makedirs(final_weights_dir, exist_ok=True)
         trainer.save_model(output_dir=final_weights_dir)
         print(f"Saved final model weights to {final_weights_dir}")
-
-
-def get_pca_components(model_name: str) -> int:
-    if model_name not in utils.N_PCA_COMPONENTS_DICT:
-        raise ValueError(f"Model {model_name} not found in utils.N_PCA_COMPONENTS_DICT. "
-                       f"Available models: {list(utils.N_PCA_COMPONENTS_DICT.keys())}")
-    return utils.N_PCA_COMPONENTS_DICT[model_name]
 
 
 def get_parallel_inputs(
@@ -650,85 +643,23 @@ from transformers.trainer import _is_peft_model
 class TrustedTrainer(Trainer):
     def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
         """
-        Compute the loss for each example individually.
-        If any example produces NaN/Inf, print that example's input info.
-        Otherwise, aggregate all losses.
+        Compute loss assuming batch_size=1 for efficiency
         """
-        #print("\nDEBUG INPUT SHAPES (BATCH):")
-        #for k, v in inputs.items():
-        #    print(f"{k}: shape={v.shape}, dtype={v.dtype}, device={v.device}")
-        #    print(f"Sample values: min={v.min().item()}, max={v.max().item()}")
-
-        # Ensure consistent device placement and dtype
-        device = model.device
-        model_dtype = next(model.parameters()).dtype
-        inputs = {k: v.to(device) for k, v in inputs.items()}
-
-        # Convert attention mask to model's dtype if it mismatches
-        if inputs["attention_mask"].dtype != model_dtype:
-            inputs["attention_mask"] = inputs["attention_mask"].to(model_dtype)
-
-        batch_size = inputs["input_ids"].shape[0]
-        
-        # Find pad token positions (both from input_ids and labels)
-        # Print attention mask stats before zeroing out
-
-        # We'll accumulate valid losses here
-        example_losses = []
-
-        for i in range(batch_size):
-            single_inputs = {}
-            for k, v in inputs.items():
-                # For attention_mask or others that may have extra dimensions, slice carefully
-                if v.dim() > 1:
-                    # We want just the i-th sample: keep the batch dimension for forward pass
-                    single_inputs[k] = v[i : i + 1]
-                else:
-                    single_inputs[k] = v[i]
-            #if -100 in single_inputs["labels"]:
-            #    continue # skip examples where values were padded just to see what happens
-            try:
-                with torch.autograd.detect_anomaly():
-                    # Forward pass for a single example
-                    outputs = model(**single_inputs)
-                    loss = outputs[0] if not isinstance(outputs, dict) else outputs["loss"]
-                    
-                    if torch.isnan(loss) or torch.isinf(loss):
-                        print(f"na loss entry contains -100:",(-100 in single_inputs['labels']))
-                        print("WARNING: Detected NaN/Inf loss for example index:", i)
-                        print("Model dtype:", model_dtype)
-                        print("Loss dtype:", loss.dtype)
-                        # Print out the single_inputs stats for debugging
-                        for k, v in single_inputs.items():
-                            # shape, device, min/max etc.
-                            print(f"Example {i} | {k}: shape={v.shape}, dtype={v.dtype}, device={v.device}")
-                            print(f"  values range: min={v.min().item()}, max={v.max().item()}")
-                            #print(single_inputs["input_ids"])
-                            #print(single_inputs["labels"])
-                            #print(single_inputs["position_ids"])
-                            #print(single_inputs["attention_mask"])
-                        #raise ValueError(f"NaN/Inf loss in example index {i}")
-                    else:
-                        print(f"Example {i} | loss: {loss.item()}")
-                        print(f"real loss entry contains -100:",(-100 in single_inputs['labels']))
-                        #print(single_inputs["input_ids"])
-                        #print(single_inputs["labels"])
-                        #print(single_inputs["position_ids"])
-                        #print(single_inputs["attention_mask"])
-                        example_losses.append(loss)
-            except Exception as e:
-                print(f"Error in compute_loss for example index {i}: {e}")
-                raise
-
-        # If no example produced NaN/Inf, aggregate the losses
-        if not example_losses:
-            # In case the entire batch was empty or something unexpected
-            raise ValueError("No valid examples in batch (all produced NaN/Inf or batch was empty)")
-
-        # Compute average
-        total_loss = torch.stack(example_losses).mean()
-
-        return (total_loss, outputs) if return_outputs else total_loss
+        #device = model.device
+        #model_dtype = next(model.parameters()).dtype
+       # inputs = {k: v.to(device) for k, v in inputs.items()}
+        outputs = model(**inputs)
+        loss = outputs[0] if not isinstance(outputs, dict) else outputs["loss"]
+                
+        if torch.isnan(loss) or torch.isinf(loss):
+                    print(f"WARNING: NaN/Inf loss detected")
+                    print(f"input_ids:", inputs["input_ids"][0])
+                    print(f"labels:", inputs["labels"][0])
+                    print(f"position_ids:", inputs["position_ids"][0])
+                    print(f"attention_mask shape:", inputs["attention_mask"].shape)
+                    raise ValueError("NaN/Inf loss")
+                
+        return (loss, outputs) if return_outputs else loss
     
     def _get_collator_with_removed_columns(
         self, data_collator: Callable, description: Optional[str] = None
