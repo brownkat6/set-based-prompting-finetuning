@@ -703,6 +703,11 @@ class TrustedTrainer(Trainer):
                             print(single_inputs["attention_mask"])
                         raise ValueError(f"NaN/Inf loss in example index {i}")
                     else:
+                        print(f"Example {i} | loss: {loss.item()}")
+                        print(single_inputs["input_ids"])
+                        print(single_inputs["labels"])
+                        print(single_inputs["position_ids"])
+                        print(single_inputs["attention_mask"])
                         example_losses.append(loss)
             except Exception as e:
                 print(f"Error in compute_loss for example index {i}: {e}")
