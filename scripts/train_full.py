@@ -343,6 +343,7 @@ def train() -> None:
     print(f"Using device: {device}, dtype: {dtype}")
     
     model, tokenizer = load_model(model_args.model_name_or_path, device, dtype)
+    tokenizer.pad_token_id
     
     # Ensure model is in float32
     model = model.float()
@@ -668,6 +669,26 @@ class TrustedTrainer(Trainer):
             inputs["attention_mask"] = inputs["attention_mask"].to(model_dtype)
 
         batch_size = inputs["input_ids"].shape[0]
+        
+        # Find pad token positions (both from input_ids and labels)
+        # Print attention mask stats before zeroing out
+        print("\nAttention mask before zeroing out pad positions:")
+        print(f"Non-zero elements: {torch.count_nonzero(inputs['attention_mask']).item()}")
+        label_pad_positions = (inputs["labels"] == -100)
+        
+        # Zero out attention for pad tokens (both attending to and being attended to)
+        batch_size = inputs["attention_mask"].size(0)
+        for b in range(batch_size):
+            # Get pad positions for this example
+            example_pad_positions = label_pad_positions[b]
+            
+            # Zero out attention to pad tokens (columns)
+            inputs["attention_mask"][b, :, :, example_pad_positions] = 0
+            
+            # Zero out attention from pad tokens (rows)
+            inputs["attention_mask"][b, :, example_pad_positions, :] = 0
+        print("\nAttention mask after zeroing out pad positions:")
+        print(f"Non-zero elements: {torch.count_nonzero(inputs['attention_mask']).item()}")
 
         # We'll accumulate valid losses here
         example_losses = []
@@ -681,8 +702,8 @@ class TrustedTrainer(Trainer):
                     single_inputs[k] = v[i : i + 1]
                 else:
                     single_inputs[k] = v[i]
-            if -100 in single_inputs["labels"]:
-                continue # skip examples where values were padded just to see what happens
+            #if -100 in single_inputs["labels"]:
+            #    continue # skip examples where values were padded just to see what happens
             try:
                 with torch.autograd.detect_anomaly():
                     # Forward pass for a single example
@@ -690,6 +711,7 @@ class TrustedTrainer(Trainer):
                     loss = outputs[0] if not isinstance(outputs, dict) else outputs["loss"]
                     
                     if torch.isnan(loss) or torch.isinf(loss):
+                        print(f"na loss entry contains -100:",(-100 in single_inputs['labels']))
                         print("WARNING: Detected NaN/Inf loss for example index:", i)
                         print("Model dtype:", model_dtype)
                         print("Loss dtype:", loss.dtype)
@@ -702,13 +724,14 @@ class TrustedTrainer(Trainer):
                             print(single_inputs["labels"])
                             print(single_inputs["position_ids"])
                             print(single_inputs["attention_mask"])
-                        raise ValueError(f"NaN/Inf loss in example index {i}")
+                        #raise ValueError(f"NaN/Inf loss in example index {i}")
                     else:
                         print(f"Example {i} | loss: {loss.item()}")
-                        print(single_inputs["input_ids"])
-                        print(single_inputs["labels"])
-                        print(single_inputs["position_ids"])
-                        print(single_inputs["attention_mask"])
+                        print(f"na loss entry contains -100:",(-100 in single_inputs['labels']))
+                        #print(single_inputs["input_ids"])
+                        #print(single_inputs["labels"])
+                        #print(single_inputs["position_ids"])
+                        #print(single_inputs["attention_mask"])
                         example_losses.append(loss)
             except Exception as e:
                 print(f"Error in compute_loss for example index {i}: {e}")
