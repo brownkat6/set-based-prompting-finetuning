@@ -160,8 +160,7 @@ class SupervisedDataset(Dataset):
         print("Loading data...")
         sources = utils.jsonl_load(data_path)
 
-        print("Tokenizing inputs... This may take some time...")
-        print(f"Creating dataset with custom position ids and attention mask")
+        print(f"Creating dataset with custom position ids and attention mask... This may take some time...")
         data_dict = preprocess(sources, tokenizer)
 
         self.input_ids = data_dict["input_ids"]
@@ -170,7 +169,7 @@ class SupervisedDataset(Dataset):
         self.position_ids = data_dict["position_ids"]
         self.dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
         
-        print(self.attention_mask[0].dtype, self.attention_mask[0].shape, self.position_ids[0].dtype, self.position_ids[0].shape, self.input_ids[0].dtype, self.input_ids[0].shape)
+        # print(self.attention_mask[0].dtype, self.attention_mask[0].shape, self.position_ids[0].dtype, self.position_ids[0].shape, self.input_ids[0].dtype, self.input_ids[0].shape)
         
 
     def __len__(self) -> int:
@@ -346,7 +345,7 @@ def train() -> None:
     tokenizer.pad_token_id = 0
     
     # Ensure model is in float32
-    model = model.float()
+    # model = model.float()
     
     # Initialize weights with small values if needed
     def init_weights(m):
@@ -368,43 +367,7 @@ def train() -> None:
         os.environ["ACCELERATE_USE_FSDP"] = "false"
         training_args.fsdp = ""
         training_args.fsdp_config = None
-    '''
-    try:
-        model = LlamaForCausalLM.from_pretrained(
-            model_args.model_name_or_path,
-            cache_dir=training_args.cache_dir,
-            torch_dtype=dtype,
-        )
-        model = model.to(device)
-        
-        # Ensure model parameters are on correct device and dtype
-
-            
-        for name, param in model.named_parameters():
-            if param.device != device:
-                param.data = param.data.to(device)
-            if param.dtype != dtype:
-                param.data = param.data.to(dtype)
-                
-    except Exception as e:
-        print(f"Failed to load model: {e}")
-        raise
-
-    model = override_forwards(model)
     
-    # Add error handling for tokenizer loading
-    try:
-        tokenizer = transformers.AutoTokenizer.from_pretrained(
-            model_args.model_name_or_path,
-            cache_dir=training_args.cache_dir,
-            model_max_length=training_args.model_max_length,
-            padding_side="right",
-            use_fast=True,
-        )
-    except Exception as e:
-        print(f"Failed to load tokenizer: {e}")
-        raise
-    '''
     special_tokens_dict = dict()
     if tokenizer.pad_token is None:
         special_tokens_dict["pad_token"] = DEFAULT_PAD_TOKEN
@@ -660,7 +623,7 @@ class TrustedTrainer(Trainer):
                     raise ValueError("NaN/Inf loss")
                 
         return (loss, outputs) if return_outputs else loss
-    
+    '''
     def _get_collator_with_removed_columns(
         self, data_collator: Callable, description: Optional[str] = None
     ) -> Callable:
@@ -672,7 +635,8 @@ class TrustedTrainer(Trainer):
     def _remove_unused_columns(self, dataset, description: Optional[str] = None):
         """Override to keep all columns"""
         return dataset
-
+    '''
+    
 if __name__ == "__main__":
     # Configure logging
     #logging.basicConfig(
