@@ -681,7 +681,8 @@ class TrustedTrainer(Trainer):
                     single_inputs[k] = v[i : i + 1]
                 else:
                     single_inputs[k] = v[i]
-
+            if -100 in single_inputs["labels"]:
+                continue # skip examples where values were padded just to see what happens
             try:
                 with torch.autograd.detect_anomaly():
                     # Forward pass for a single example
