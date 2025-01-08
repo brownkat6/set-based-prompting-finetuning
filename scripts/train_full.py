@@ -241,7 +241,7 @@ class DataCollatorForSupervisedDataset(object):
 
         # Pad position ids with proper masking value
         position_ids = torch.nn.utils.rnn.pad_sequence(
-            position_ids, batch_first=True, padding_value=0
+            position_ids, batch_first=True, padding_value=max_len
         ).long()
 
         # Ensure attention mask values are exactly 0 or 1
@@ -675,6 +675,7 @@ class TrustedTrainer(Trainer):
         print("\nAttention mask before zeroing out pad positions:")
         print(f"Non-zero elements: {torch.count_nonzero(inputs['attention_mask']).item()}")
         label_pad_positions = (inputs["labels"] == -100)
+        
         
         # Zero out attention for pad tokens (both attending to and being attended to)
         batch_size = inputs["attention_mask"].size(0)
