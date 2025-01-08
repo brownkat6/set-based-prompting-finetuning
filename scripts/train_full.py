@@ -65,7 +65,7 @@ class TrainingArguments(transformers.TrainingArguments):
     #)
     optim: str = field(default="adamw_torch")
     model_max_length: int = field(
-        default=256,
+        default=64,
         metadata={"help": "Maximum sequence length. Sequences will be right padded (and possibly truncated)."},
     )
     evaluation_strategy: str = field(
@@ -116,7 +116,7 @@ def preprocess(
     attention_masks = []
     position_ids = []
     
-    max_length = 256  # Hard-code max length to 256
+    max_length = 64  # Hard-code max length to 64
     
     for source in sources:
         # Get parallel processing tensors
@@ -191,7 +191,7 @@ class DataCollatorForSupervisedDataset(object):
     def __init__(self, tokenizer: transformers.PreTrainedTokenizer):
         self.tokenizer = tokenizer
         self.dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
-        self.max_length = 256  # Add max_length parameter
+        self.max_length = 64  # Add max_length parameter
 
     def __call__(self, instances: Sequence[Dict[str, Any]]) -> Dict[str, torch.Tensor]:
         input_ids = [instance["input_ids"] for instance in instances]
@@ -461,6 +461,7 @@ def train() -> None:
     print("labels:", first_batch["labels"])
     print("attention_mask:", first_batch["attention_mask"])
     print("position_ids:", first_batch["position_ids"])
+    print(first_batch["input_ids"].unsqueeze(0).shape, first_batch["labels"].unsqueeze(0).shape, first_batch["position_ids"].unsqueeze(0).shape, first_batch["attention_mask"].unsqueeze(0).shape)
     # Then run a quick forward pass manually
     with torch.set_grad_enabled(True):
         outputs = model(
@@ -696,6 +697,10 @@ class TrustedTrainer(Trainer):
                             # shape, device, min/max etc.
                             print(f"Example {i} | {k}: shape={v.shape}, dtype={v.dtype}, device={v.device}")
                             print(f"  values range: min={v.min().item()}, max={v.max().item()}")
+                            print(single_inputs["input_ids"])
+                            print(single_inputs["labels"])
+                            print(single_inputs["position_ids"])
+                            print(single_inputs["attention_mask"])
                         raise ValueError(f"NaN/Inf loss in example index {i}")
                     else:
                         example_losses.append(loss)
