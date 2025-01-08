@@ -65,7 +65,7 @@ class TrainingArguments(transformers.TrainingArguments):
     #)
     optim: str = field(default="adamw_torch")
     model_max_length: int = field(
-        default=64,
+        default=512,
         metadata={"help": "Maximum sequence length. Sequences will be right padded (and possibly truncated)."},
     )
     evaluation_strategy: str = field(
@@ -116,7 +116,7 @@ def preprocess(
     attention_masks = []
     position_ids = []
     
-    max_length = 64  # Hard-code max length to 64
+    max_length = 512  # Hard-code max length to 512
     
     for source in sources:
         # Get parallel processing tensors
@@ -190,7 +190,7 @@ class DataCollatorForSupervisedDataset(object):
     def __init__(self, tokenizer: transformers.PreTrainedTokenizer):
         self.tokenizer = tokenizer
         self.dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
-        self.max_length = 64  # Add max_length parameter
+        self.max_length = 512  # Add max_length parameter
 
     def __call__(self, instances: Sequence[Dict[str, Any]]) -> Dict[str, torch.Tensor]:
         input_ids = [instance["input_ids"] for instance in instances]
