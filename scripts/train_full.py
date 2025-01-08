@@ -654,10 +654,10 @@ class TrustedTrainer(Trainer):
         If any example produces NaN/Inf, print that example's input info.
         Otherwise, aggregate all losses.
         """
-        print("\nDEBUG INPUT SHAPES (BATCH):")
-        for k, v in inputs.items():
-            print(f"{k}: shape={v.shape}, dtype={v.dtype}, device={v.device}")
-            print(f"Sample values: min={v.min().item()}, max={v.max().item()}")
+        #print("\nDEBUG INPUT SHAPES (BATCH):")
+        #for k, v in inputs.items():
+        #    print(f"{k}: shape={v.shape}, dtype={v.dtype}, device={v.device}")
+        #    print(f"Sample values: min={v.min().item()}, max={v.max().item()}")
 
         # Ensure consistent device placement and dtype
         device = model.device
@@ -672,24 +672,6 @@ class TrustedTrainer(Trainer):
         
         # Find pad token positions (both from input_ids and labels)
         # Print attention mask stats before zeroing out
-        print("\nAttention mask before zeroing out pad positions:")
-        print(f"Non-zero elements: {torch.count_nonzero(inputs['attention_mask']).item()}")
-        label_pad_positions = (inputs["labels"] == -100)
-        
-        
-        # Zero out attention for pad tokens (both attending to and being attended to)
-        batch_size = inputs["attention_mask"].size(0)
-        for b in range(batch_size):
-            # Get pad positions for this example
-            example_pad_positions = label_pad_positions[b]
-            
-            # Zero out attention to pad tokens (columns)
-            inputs["attention_mask"][b, :, :, example_pad_positions] = 0
-            
-            # Zero out attention from pad tokens (rows)
-            inputs["attention_mask"][b, :, example_pad_positions, :] = 0
-        print("\nAttention mask after zeroing out pad positions:")
-        print(f"Non-zero elements: {torch.count_nonzero(inputs['attention_mask']).item()}")
 
         # We'll accumulate valid losses here
         example_losses = []
@@ -721,10 +703,10 @@ class TrustedTrainer(Trainer):
                             # shape, device, min/max etc.
                             print(f"Example {i} | {k}: shape={v.shape}, dtype={v.dtype}, device={v.device}")
                             print(f"  values range: min={v.min().item()}, max={v.max().item()}")
-                            print(single_inputs["input_ids"])
-                            print(single_inputs["labels"])
-                            print(single_inputs["position_ids"])
-                            print(single_inputs["attention_mask"])
+                            #print(single_inputs["input_ids"])
+                            #print(single_inputs["labels"])
+                            #print(single_inputs["position_ids"])
+                            #print(single_inputs["attention_mask"])
                         #raise ValueError(f"NaN/Inf loss in example index {i}")
                     else:
                         print(f"Example {i} | loss: {loss.item()}")
