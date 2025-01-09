@@ -1,7 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=mmlu_quoted
-#SBATCH --partition=gpu_requeue
+##SBATCH --partition=gpu_requeue
+#SBATCH --partition=seas_gpu
 #SBATCH --gres=gpu:1
+#SBATCH --constraint='(a100|h100)' ## Ensure enough memory
 #SBATCH --time=0-20:00
 #SBATCH --mem=32G
 #SBATCH --cpus-per-task=8
@@ -37,6 +39,8 @@ echo "CUDA_VISIBLE_DEVICES: $CUDA_VISIBLE_DEVICES"
 
 PYTHON_EXECUTABLE=/n/holylabs/LABS/dwork_lab/Lab/katrinabrown/home/conda/envs/thesis/bin/python
 
+sleep 10
+
 MAX_NEW_TOKENS=50
 results_dir="set-based-prompting-finetuning/results/${TEST_DIR}"
 input_dir="set-based-prompting-finetuning/data/${TEST_DIR}"
@@ -46,6 +50,8 @@ model_path_safe=$(echo $model | sed 's/\//_/g')
 echo "Running model $model"
 
 $PYTHON_EXECUTABLE -c "import torch; print(torch.cuda.is_available()); print(torch.cuda.device_count()); print(torch.cuda.get_device_name(0))"
+
+sleep 10
 
 nvidia-smi
 
