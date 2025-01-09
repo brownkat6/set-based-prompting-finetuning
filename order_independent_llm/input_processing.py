@@ -339,6 +339,7 @@ def load_model(model_name, torch_device:typing.Literal["auto", "cpu", "cuda"]="a
         tokenizer.pad_token_id = tokenizer.eos_token_id
         
         # Load the model (either from local path or HF Hub)
+        print(f"Loading model from {model_name}...")
         model = transformers.AutoModelForCausalLM.from_pretrained(
             model_name,
             use_auth_token=HF_TOKEN,

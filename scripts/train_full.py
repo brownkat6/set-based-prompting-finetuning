@@ -344,17 +344,23 @@ def train() -> None:
     model, tokenizer = load_model(model_args.model_name_or_path, device, dtype)
     tokenizer.pad_token_id = 0
     
+    print("Saving initial model weights...")
+    # Save initial model weights if not already saved
+    try:
+        initial_weights_dir = os.path.join(training_args.output_dir, "initial_weights")
+        os.makedirs(initial_weights_dir, exist_ok=True)
+        if not any(os.scandir(initial_weights_dir)):  # Check if directory is empty
+            model.save_pretrained(initial_weights_dir)
+            tokenizer.save_pretrained(initial_weights_dir)
+            print(f"Saved initial model weights to {initial_weights_dir}")
+    except Exception as e:
+        print(f"Failed to save initial weights: {e}")
+        raise
+    else:
+        print(f"Initial weights directory already exists at {initial_weights_dir}")
+    
     # Ensure model is in float32
     # model = model.float()
-    
-    # Initialize weights with small values if needed
-    def init_weights(m):
-        if isinstance(m, torch.nn.Linear):
-            torch.nn.init.xavier_normal_(m.weight, gain=0.01)
-            if m.bias is not None:
-                torch.nn.init.zeros_(m.bias)
-    
-    model.apply(init_weights)
     
     # Verify model dtype
     print(f"Model dtype after initialization: {next(model.parameters()).dtype}")
@@ -383,21 +389,6 @@ def train() -> None:
         tokenizer=tokenizer,
         model=model,
     )
-
-    print("Saving initial model weights...")
-    # Save initial model weights if not already saved
-    try:
-        initial_weights_dir = os.path.join(training_args.output_dir, "initial_weights")
-        os.makedirs(initial_weights_dir, exist_ok=True)
-        if not any(os.scandir(initial_weights_dir)):  # Check if directory is empty
-            model.save_pretrained(initial_weights_dir)
-            tokenizer.save_pretrained(initial_weights_dir)
-            print(f"Saved initial model weights to {initial_weights_dir}")
-    except Exception as e:
-        print(f"Failed to save initial weights: {e}")
-        raise
-    else:
-        print(f"Initial weights directory already exists at {initial_weights_dir}")
     
     # Create data module with model
     data_module = make_supervised_data_module(
@@ -417,15 +408,15 @@ def train() -> None:
         eval_dataset=data_module["eval_dataset"],
         data_collator=data_module["data_collator"],
     )
-    '''
-    #print("=== DEBUG: Checking sample batch ===")
-    #first_batch = next(iter(data_module["train_dataset"]))
+    
+    print("=== DEBUG: Checking sample batch ===")
+    first_batch = next(iter(data_module["train_dataset"]))
     # Inspect shape and example token indices
-    #print("input_ids:", first_batch["input_ids"])
-    #print("labels:", first_batch["labels"])
-    #print("attention_mask:", first_batch["attention_mask"])
-    #print("position_ids:", first_batch["position_ids"])
-    #print(first_batch["input_ids"].unsqueeze(0).shape, first_batch["labels"].unsqueeze(0).shape, first_batch["position_ids"].unsqueeze(0).shape, first_batch["attention_mask"].unsqueeze(0).shape)
+    print("input_ids:", first_batch["input_ids"])
+    print("labels:", first_batch["labels"])
+    print("attention_mask:", first_batch["attention_mask"])
+    print("position_ids:", first_batch["position_ids"])
+    print(first_batch["input_ids"].unsqueeze(0).shape, first_batch["labels"].unsqueeze(0).shape, first_batch["position_ids"].unsqueeze(0).shape, first_batch["attention_mask"].unsqueeze(0).shape)
     # Then run a quick forward pass manually
     with torch.set_grad_enabled(True):
         outputs = model(
@@ -438,7 +429,7 @@ def train() -> None:
         print(outputs.loss, outputs.loss.requires_grad, outputs.logits.shape)
         print(outputs.logits)
     print(f"Finish debug sample batch")
-    '''
+    
     # Add timing callback
     class TimingCallback(transformers.TrainerCallback):
         def __init__(self, print_interval_steps=100):
