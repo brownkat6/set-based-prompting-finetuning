@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=sbp_finetune
-#SBATCH --partition=seas_gpu
-##SBATCH --partition=gpu_requeue
+##SBATCH --partition=seas_gpu
+#SBATCH --partition=gpu_requeue
 ###SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:4
 ###SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:1 # See of run can get allocated with only 1 GPU
 ##SBATCH --gres=gpu:nvidia_h100_80gb_hbm3:4
