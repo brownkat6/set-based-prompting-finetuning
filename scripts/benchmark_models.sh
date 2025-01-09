@@ -1,7 +1,8 @@
 #!/bin/bash
 #SBATCH --job-name=benchmark_experiment
 #SBATCH --partition=seas_gpu
-#SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:1
+##SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:1
+#SBATCH --gres=gpu:1
 #SBATCH --time=0-12:00
 #SBATCH --mem=128G
 #SBATCH --cpus-per-task=8

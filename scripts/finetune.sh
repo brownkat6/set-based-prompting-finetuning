@@ -214,17 +214,13 @@ echo "Symlink path: ${model_dir}/latest"
 FINAL_WEIGHTS_DIR="${OUTPUT_DIR}/final_weights"
 
 echo "Submitting CSQA evaluation job..."
+echo "sbatch --dependency=afterok:$SLURM_JOB_ID --parsable analysis/1-2-csqa_run.sh \"${FINAL_WEIGHTS_DIR}\" \"${TEST_DIR_CSQA}\""
 
 # Submit CSQA evaluation job with final weights directory
-csqa_job_id=$(sbatch --dependency=afterok:$SLURM_JOB_ID \
+csqa_job_id=$(sbatch \
+    --dependency=afterok:$SLURM_JOB_ID \
     --parsable \
-    --output=slurm_logs/csqa_eval_%j.out \
-    --error=slurm_logs/csqa_eval_%j.err \
-    --export=ALL \
-    --wrap="source /n/home11/katrinabrown/.bashrc && \
-           conda activate thesis && \
-           module load cuda/11.8.0-fasrc01 cudnn/8.9.2.26_cuda11-fasrc01 && \
-           bash analysis/1-2-csqa_run.sh \"${FINAL_WEIGHTS_DIR}\" \"${TEST_DIR_CSQA}\"")
+    analysis/1-2-csqa_run.sh "${FINAL_WEIGHTS_DIR}" "${TEST_DIR_CSQA}")
 
 if [ $? -ne 0 ] || ! [[ "$csqa_job_id" =~ ^[0-9]+$ ]]; then
     echo "Error: Failed to submit CSQA evaluation job"
@@ -232,17 +228,13 @@ if [ $? -ne 0 ] || ! [[ "$csqa_job_id" =~ ^[0-9]+$ ]]; then
 fi
 
 echo "Submitting MMLU evaluation job..."
+echo "sbatch --dependency=afterok:$SLURM_JOB_ID --parsable analysis/2-2-mmlu_run.sh \"${FINAL_WEIGHTS_DIR}\" \"${TEST_DIR_MMLU}\""
 
 # Submit MMLU evaluation job with final weights directory
-mmlu_job_id=$(sbatch --dependency=afterok:$SLURM_JOB_ID \
+mmlu_job_id=$(sbatch \
+    --dependency=afterok:$SLURM_JOB_ID \
     --parsable \
-    --output=slurm_logs/mmlu_eval_%j.out \
-    --error=slurm_logs/mmlu_eval_%j.err \
-    --export=ALL \
-    --wrap="source /n/home11/katrinabrown/.bashrc && \
-           conda activate thesis && \
-           module load cuda/11.8.0-fasrc01 cudnn/8.9.2.26_cuda11-fasrc01 && \
-           bash analysis/2-2-mmlu_run.sh \"${FINAL_WEIGHTS_DIR}\" \"${TEST_DIR_MMLU}\"")
+    analysis/2-2-mmlu_run.sh "${FINAL_WEIGHTS_DIR}" "${TEST_DIR_MMLU}")
 
 if [ $? -ne 0 ] || ! [[ "$mmlu_job_id" =~ ^[0-9]+$ ]]; then
     echo "Error: Failed to submit MMLU evaluation job"
@@ -250,19 +242,13 @@ if [ $? -ne 0 ] || ! [[ "$mmlu_job_id" =~ ^[0-9]+$ ]]; then
 fi
 
 echo "Submitting benchmark jobs..."
+echo "sbatch --dependency=afterok:$SLURM_JOB_ID --parsable scripts/benchmark_models.sh \"${OUTPUT_DIR}\""
 
 # Submit benchmarking jobs through benchmark_models.sh
-benchmark_job_id=$(sbatch --dependency=afterok:$SLURM_JOB_ID \
+benchmark_job_id=$(sbatch \
+    --dependency=afterok:$SLURM_JOB_ID \
     --parsable \
-    --output=slurm_logs/benchmark_chain_%j.out \
-    --error=slurm_logs/benchmark_chain_%j.err \
-    --export=ALL \
-    --wrap="source /n/home11/katrinabrown/.bashrc && \
-           conda activate benchmark_env && \
-           module load cuda/11.8.0-fasrc01 cudnn/8.9.2.26_cuda11-fasrc01 && \
-           export PATH=\"/n/holylabs/LABS/dwork_lab/Lab/katrinabrown/home/conda/envs/benchmark_env/bin:$PATH\" && \
-           bash scripts/benchmark_models.sh \"${OUTPUT_DIR}\" && \
-           conda activate thesis")
+    scripts/benchmark_models.sh "${OUTPUT_DIR}")
 
 if [ $? -ne 0 ] || ! [[ "$benchmark_job_id" =~ ^[0-9]+$ ]]; then
     echo "Error: Failed to submit benchmark jobs"
