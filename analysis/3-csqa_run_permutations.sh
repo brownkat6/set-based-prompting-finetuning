@@ -37,7 +37,7 @@ models=(
     "meta-llama/Llama-2-13b-hf"
     "meta-llama/Llama-2-13b-chat-hf"
     "meta-llama/Meta-Llama-3-8B"
-    "meta-llama/Meta-Llama-3.1-8B-Instruct"
+    #"meta-llama/Meta-Llama-3.1-8B-Instruct"
 )
 
 model=${models[$SLURM_ARRAY_TASK_ID]}

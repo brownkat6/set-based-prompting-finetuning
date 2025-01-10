@@ -46,7 +46,7 @@ models=(
     "meta-llama/Llama-2-13b-hf"
     "meta-llama/Llama-2-13b-chat-hf"
     "meta-llama/Meta-Llama-3-8B"
-    "meta-llama/Meta-Llama-3.1-8B-Instruct"
+    #"meta-llama/Meta-Llama-3.1-8B-Instruct"
     #"gpt2"
     #"meta-llama/Llama-2-7b-chat-hf"
     #"meta-llama/Llama-2-7b-hf"
