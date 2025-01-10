@@ -37,7 +37,7 @@ name = "order_independent_llm"
 dynamic = ["version"]
 description = "A package for evaluating and improving order independence in language models"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
     {name = "Katrina Brown", email = "katrinabrown@college.harvard.edu"},
