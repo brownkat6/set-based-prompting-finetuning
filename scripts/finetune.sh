@@ -114,7 +114,6 @@ if ! mkdir -p "${BASE_DIR}"; then
 fi
 
 # Get current datetime in YYYYMMDD-HHmmSS format
-MODEL_NAME="meta-llama/Llama-2-7b-hf"
 model_path_safe=$(echo $MODEL_NAME | sed 's/\//_/g')
 # Include IS_LORA in output directory name
 OUTPUT_DIR="${BASE_DIR}/${MODEL_NAME}/${TRAIN_DATA%.jsonl}/${RUN_DATETIME}-${IS_LORA}"
