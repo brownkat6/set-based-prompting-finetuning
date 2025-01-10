@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 100
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 100
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+
+[project]
+name = "order_independent_llm"
+dynamic = ["version"]
+description = "A package for evaluating and improving order independence in language models"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Katrina Brown", email = "katrinabrown@college.harvard.edu"},
+]
+
+[project.urls]
+"Homepage" = "https://github.com/katrinabrown/order-independent-llm"
+"Bug Tracker" = "https://github.com/katrinabrown/order-independent-llm/issues" 
