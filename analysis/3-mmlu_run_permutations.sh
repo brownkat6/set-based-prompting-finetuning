@@ -10,7 +10,7 @@
 #SBATCH --output=slurm_logs/%x-%a.stdout
 #SBATCH --error=slurm_logs/%x-%a.stderr
 
-#SBATCH --array=0-4
+#SBATCH --array=0-2
 
 echo "Starting job $SLURM_JOB_ID"
 
@@ -36,7 +36,7 @@ models=(
     "meta-llama/Llama-2-7b-chat-hf"
     "meta-llama/Llama-2-13b-hf"
     "meta-llama/Llama-2-13b-chat-hf"
-    "meta-llama/Meta-Llama-3-8B"
+    #"meta-llama/Meta-Llama-3-8B"
     #"meta-llama/Meta-Llama-3.1-8B-Instruct"
 )
 
