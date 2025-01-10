@@ -10,7 +10,7 @@
 #SBATCH --output=slurm_logs/%x-%a.stdout
 #SBATCH --error=slurm_logs/%x-%a.stderr
 
-#SBATCH --array=0-0
+#SBATCH --array=0-4
 
 echo "Starting job $SLURM_JOB_ID"
 
@@ -32,7 +32,12 @@ results_dir="set-based-prompting-finetuning/results/mmlu_quoted_permutations"
 input_dir="set-based-prompting-finetuning/data/mmlu_quoted"
 
 models=(
-    "meta-llama/Llama-2-7b-hf"
+    #"meta-llama/Llama-2-7b-hf"
+    "meta-llama/Llama-2-7b-chat-hf"
+    "meta-llama/Llama-2-13b-hf"
+    "meta-llama/Llama-2-13b-chat-hf"
+    "meta-llama/Meta-Llama-3-8B"
+    "meta-llama/Meta-Llama-3.1-8B-Instruct"
 )
 
 model=${models[$SLURM_ARRAY_TASK_ID]}
@@ -52,12 +57,31 @@ mkdir -p $results_dir
 model_results_dir=$results_dir/$model_path_safe-$MAX_NEW_TOKENS
 mkdir -p $model_results_dir
 
-for fname in $input_dir/*.json; do
-    echo "Running $fname"
+# Define specific files to process
+declare -a input_files=(
+    "${input_dir}/anatomy_test.json"
+    "${input_dir}/moral_scenarios_test.json"
+    "${input_dir}/econometrics_test.json"
+)
+
+# List target files and count them
+echo "Target input files:"
+printf '%s\n' "${input_files[@]}"
+file_count=${#input_files[@]}
+echo "Found $file_count files to process"
+
+# Process each specified file
+for input_file in "${input_files[@]}"; do
+    if [ ! -f "$input_file" ]; then
+        echo "Warning: File $input_file does not exist, skipping"
+        continue
+    fi
+    
+    echo "Running $input_file"
     start_time=$(date +%s)
-    basename=$(basename $fname)
-    #strip .json from filename
+    basename=$(basename "$input_file")
     fname_safe=${basename%.json}
+    
     $PYTHON_EXECUTABLE set-based-prompting-finetuning/main.py \
         --model-name $model \
         --torch-device cuda \
@@ -65,8 +89,9 @@ for fname in $input_dir/*.json; do
         --num-normal-ordering-permutations 4 \
         --include-probs \
         --temp_file \
-        --infile $fname \
+        --infile $input_file \
         --outfile $model_results_dir/$model_path_safe-permutations-$MAX_NEW_TOKENS-$fname_safe.jsonl
+        
     end_time=$(date +%s)
     echo "Model $model took $((end_time - start_time)) seconds to run on $fname_safe"
 done

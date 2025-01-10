@@ -17,7 +17,7 @@
 #SBATCH --output=slurm_logs/%x-%a.stdout
 #SBATCH --error=slurm_logs/%x-%a.stderr
 
-#SBATCH --array=0-0
+#SBATCH --array=0-4
 #set -e
 
 echo "Starting job $SLURM_JOB_ID"
@@ -42,9 +42,14 @@ input_dir="set-based-prompting-finetuning/data/mmlu_quoted"
 
 # NOTE: can modify the models array to contain a list of paths to model weights (e.g. weights for a finetuned gpt model)
 models=(
+    "meta-llama/Llama-2-7b-chat-hf"
+    "meta-llama/Llama-2-13b-hf"
+    "meta-llama/Llama-2-13b-chat-hf"
+    "meta-llama/Meta-Llama-3-8B"
+    "meta-llama/Meta-Llama-3.1-8B-Instruct"
     #"gpt2"
     #"meta-llama/Llama-2-7b-chat-hf"
-    "meta-llama/Llama-2-7b-hf"
+    #"meta-llama/Llama-2-7b-hf"
     #"meta-llama/Llama-2-13b-hf"
     #"meta-llama/Llama-2-13b-chat-hf"
     #"WizardLM/WizardLM-7B-V1.0"

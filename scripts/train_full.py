@@ -409,6 +409,9 @@ def train() -> None:
         data_collator=data_module["data_collator"],
     )
     
+    # Add callback with output directory
+    trainer.add_callback(TimingCallback(print_interval_steps=100, output_dir=training_args.output_dir))
+    
     print("=== DEBUG: Checking sample batch ===")
     first_batch = next(iter(data_module["train_dataset"]))
     # Inspect shape and example token indices
@@ -429,71 +432,6 @@ def train() -> None:
         print(outputs.loss, outputs.loss.requires_grad, outputs.logits.shape)
         print(outputs.logits)
     print(f"Finish debug sample batch")
-    
-    # Add timing callback
-    class TimingCallback(transformers.TrainerCallback):
-        def __init__(self, print_interval_steps=100):
-            self.print_interval_steps = print_interval_steps
-            self.start_time = None
-            self.last_print_time = None
-            self.last_print_step = 0
-
-        def on_train_begin(self, args, state, control, **kwargs):
-            self.start_time = time.time()
-            print(f"\nTraining started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-            print(f"Total epochs: {args.num_train_epochs}")
-            
-             # Evaluate before training
-            print("\nInitial model evaluation:")
-            initial_metrics = trainer.evaluate()
-            print(f"Initial eval_loss: {initial_metrics['eval_loss']:.4f}")
-            # Get initial training loss
-            print("\nCalculating initial training loss:")
-            initial_train_metrics = trainer.evaluate(eval_dataset=data_module["train_dataset"], metric_key_prefix="train")
-            print(f"Initial train_loss: {initial_train_metrics['train_loss']:.4f}")
-
-        def on_step_end(self, args, state, control, **kwargs):
-            if self.last_print_time is None:
-                self.last_print_time = self.start_time
-                self.last_print_step = state.global_step
-                return
-
-            current_step = state.global_step
-            if current_step - self.last_print_step >= self.print_interval_steps:
-                current_time = time.time()
-                steps_per_second = (current_step - self.last_print_step) / (current_time - self.last_print_time)
-                
-                # Avoid division by zero
-                if steps_per_second > 0:
-                    remaining_steps = state.max_steps - current_step
-                    remaining_time = remaining_steps / steps_per_second
-                    
-                    # Calculate current epoch and progress
-                    steps_per_epoch = state.max_steps / args.num_train_epochs
-                    current_epoch = (current_step / steps_per_epoch) + 1
-                    epoch_step = current_step % steps_per_epoch
-                    
-                    # Calculate completion time
-                    completion_time = datetime.now() + timedelta(seconds=remaining_time)
-                    
-                    print(f"\nTraining Progress:")
-                    print(f"Epoch: {current_epoch:.2f}/{args.num_train_epochs} "
-                          f"(Step {epoch_step:.0f}/{steps_per_epoch:.0f} in current epoch)")
-                    print(f"Global Step: {current_step}/{state.max_steps}")
-                    print(f"Speed: {steps_per_second:.2f} steps/second")
-                    print(f"Estimated time remaining: {timedelta(seconds=int(remaining_time))}")
-                    print(f"Estimated completion time: {completion_time.strftime('%Y-%m-%d %H:%M:%S')}")
-                    
-                    self.last_print_time = current_time
-                    self.last_print_step = current_step
-
-        def on_train_end(self, args, state, control, **kwargs):
-            total_time = time.time() - self.start_time
-            print(f"\nTraining completed at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-            print(f"Total training time: {timedelta(seconds=int(total_time))}")
-
-    # Add callback to trainer
-    trainer.add_callback(TimingCallback(print_interval_steps=100))
     
     print(f"Training model...")
     trainer.create_optimizer()
@@ -628,6 +566,68 @@ class TrustedTrainer(Trainer):
         return dataset
     '''
     
+class TimingCallback(transformers.TrainerCallback):
+    def __init__(self, print_interval_steps=100, output_dir=None):
+        self.print_interval_steps = print_interval_steps
+        self.start_time = None
+        self.last_print_time = None
+        self.last_print_step = 0
+        self.output_dir = output_dir
+        self.loss_file = os.path.join(output_dir, "loss.jsonl") if output_dir else None
+
+    def _save_loss(self, trainer, phase, epoch=None):
+        """Save train and eval losses to jsonl file"""
+        # Get eval loss
+        eval_metrics = trainer.evaluate()
+        eval_loss = eval_metrics['eval_loss']
+        
+        # Get train loss
+        train_metrics = trainer.evaluate(eval_dataset=trainer.train_dataset, metric_key_prefix="train")
+        train_loss = train_metrics['train_loss']
+
+        # Create loss entry
+        entry = {
+            'phase': phase,
+            'epoch': epoch,
+            'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            'train_loss': train_loss,
+            'eval_loss': eval_loss
+        }
+
+        # Save to jsonl file
+        if self.loss_file:
+            with open(self.loss_file, 'a') as f:
+                f.write(json.dumps(entry) + '\n')
+
+        return train_loss, eval_loss
+
+    def on_train_begin(self, args, state, control, **kwargs):
+        self.start_time = time.time()
+        print(f"\nTraining started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"Total epochs: {args.num_train_epochs}")
+        
+        # Save initial losses
+        print("\nInitial model evaluation:")
+        train_loss, eval_loss = self._save_loss(trainer, phase="initial")
+        print(f"Initial train_loss: {train_loss:.4f}, eval_loss: {eval_loss:.4f}")
+
+    def on_epoch_end(self, args, state, control, **kwargs):
+        """Save losses after each epoch"""
+        current_epoch = math.floor(state.epoch)
+        print(f"\nEpoch {current_epoch} completed")
+        train_loss, eval_loss = self._save_loss(trainer, phase="epoch", epoch=current_epoch)
+        print(f"Epoch {current_epoch} train_loss: {train_loss:.4f}, eval_loss: {eval_loss:.4f}")
+
+    def on_train_end(self, args, state, control, **kwargs):
+        total_time = time.time() - self.start_time
+        print(f"\nTraining completed at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"Total training time: {timedelta(seconds=int(total_time))}")
+        
+        # Save final losses
+        print("\nFinal model evaluation:")
+        train_loss, eval_loss = self._save_loss(trainer, phase="final")
+        print(f"Final train_loss: {train_loss:.4f}, eval_loss: {eval_loss:.4f}")
+
 if __name__ == "__main__":
     # Configure logging
     #logging.basicConfig(

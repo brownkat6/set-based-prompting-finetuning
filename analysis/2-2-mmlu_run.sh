@@ -79,7 +79,6 @@ for input_file in ${input_dir}/*.json; do
         --model-name "$model" \
         --torch-device cuda \
         --max-new-tokens $MAX_NEW_TOKENS \
-        --include-probs \
         --temp_file \
         --append-temp-file \
         --infile "$input_file" \

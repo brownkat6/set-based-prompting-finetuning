@@ -31,12 +31,26 @@ cleanup() {
 # Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa.jsonl
 # Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki.jsonl
 # Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_s2d.jsonl csqa_quoted_s2d mmlu_quoted_s2d
+# Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki.jsonl csqa_quoted mmlu_quoted meta-llama/Llama-2-7b-chat-hf
+# Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki.jsonl csqa_quoted mmlu_quoted meta-llama/Llama-2-13b-hf
+# Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki.jsonl csqa_quoted mmlu_quoted meta-llama/Llama-2-13b-chat-hf
+# Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki.jsonl csqa_quoted mmlu_quoted meta-llama/Meta-Llama-3-8B
+# Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki.jsonl csqa_quoted mmlu_quoted meta-llama/Meta-Llama-3.1-8B-Instruct
 
 # Register cleanup function to run on script exit
 trap cleanup EXIT
 
 # Log start time
 echo "Script started at: $(date)"
+
+#models=(
+#    #"meta-llama/Llama-2-7b-hf"
+#    "meta-llama/Llama-2-7b-chat-hf"
+#    "meta-llama/Llama-2-13b-hf"
+#    "meta-llama/Llama-2-13b-chat-hf"
+#    "meta-llama/Meta-Llama-3-8B"
+#    "meta-llama/Meta-Llama-3.1-8B-Instruct"
+#)
 
 # Parse command line arguments
 MODEL_NAME=${5:-"meta-llama/Llama-2-7b-hf"}  # Default to Llama-2-7b-hf if not provided
@@ -172,7 +186,7 @@ if ! torchrun \
     --data_path "data/${TRAIN_DATA}" \
     --bf16 True \
     --output_dir "${OUTPUT_DIR}" \
-    --num_train_epochs 2 \
+    --num_train_epochs 3 \
     --per_device_train_batch_size 1 \
     --per_device_eval_batch_size 1 \
     --gradient_accumulation_steps 8 \
