@@ -7,6 +7,7 @@ import accelerate
 
 import torch
 import transformers
+from transformers import AutoConfig
 import transformers.tokenization_utils_base
 from peft import PeftModel
 
@@ -315,38 +316,43 @@ def load_model(model_name, torch_device:typing.Literal["auto", "cpu", "cuda"]="a
         model = transformers.GPT2LMHeadModel.from_pretrained("gpt2", device_map=torch_device, torch_dtype=dtype)
         tokenizer = transformers.GPT2Tokenizer.from_pretrained("gpt2")
         tokenizer.pad_token_id = tokenizer.eos_token_id
+    # Special handling for Llama-3 models
     else:  # e.g model_name == "meta-llama/Llama-2-7b-chat-hf" or local path
         # For local paths, we need the original model name to load the tokenizer
         #if is_local_path:
-        if False:
-            # Extract base model name from path (assuming standard directory structure)
-            base_model_name = "/".join(model_name.split("/")[-4:-2])  # e.g., "meta-llama/Llama-2-7b-hf"
-            print(f"Loading tokenizer from local path: {base_model_name}")
-            tokenizer = transformers.AutoTokenizer.from_pretrained(
-                base_model_name,
-                use_auth_token=HF_TOKEN,
-                use_fast=True,
-                cache_dir="/n/holylabs/LABS/dwork_lab/Everyone/cache/transformers",
-            )
-        else:
-            print(f"Loading tokenizer from HF Hub:",model_name.replace("final_weights","initial_weights").replace("checkpoint-98","initial_weights"))
-            tokenizer = transformers.AutoTokenizer.from_pretrained(
+        print(f"Loading tokenizer from HF Hub:",model_name.replace("final_weights","initial_weights").replace("checkpoint-98","initial_weights"))
+        tokenizer = transformers.AutoTokenizer.from_pretrained(
                 model_name.replace("final_weights","initial_weights").replace("checkpoint-98","initial_weights"),
                 use_auth_token=HF_TOKEN,
                 use_fast=True,
                 cache_dir="/n/holylabs/LABS/dwork_lab/Everyone/cache/transformers",
-            )
-        tokenizer.pad_token_id = tokenizer.eos_token_id
-        
-        # Load the model (either from local path or HF Hub)
-        print(f"Loading model from {model_name}...")
-        model = transformers.AutoModelForCausalLM.from_pretrained(
-            model_name,
-            use_auth_token=HF_TOKEN,
-            device_map=torch_device,
-            cache_dir="/n/holylabs/LABS/dwork_lab/Everyone/cache/transformers",
-            torch_dtype=dtype,
         )
+        tokenizer.pad_token_id = tokenizer.eos_token_id
+        print(f"Loading model from {model_name}...")
+        if "llama-3" in model_name.lower():
+            config = AutoConfig.from_pretrained(model_name)
+            # Update RoPE scaling configuration for Llama-3
+            config.rope_scaling = {
+                "type": "dynamic",  # Use dynamic scaling
+                "factor": 2.0  # Scale factor
+            }
+            
+            model = transformers.AutoModelForCausalLM.from_pretrained(
+                model_name,
+                config=config,
+                torch_dtype=dtype,
+                device_map="auto",
+            )
+        else:
+            # Load the model (either from local path or HF Hub)
+            print(f"Loading model from {model_name}...")
+            model = transformers.AutoModelForCausalLM.from_pretrained(
+                model_name,
+                use_auth_token=HF_TOKEN,
+                device_map=torch_device,
+                cache_dir="/n/holylabs/LABS/dwork_lab/Everyone/cache/transformers",
+                torch_dtype=dtype,
+            )
     return model, tokenizer  # type: ignore
 
 
