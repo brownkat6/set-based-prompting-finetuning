@@ -28,7 +28,7 @@ echo "ARRAY TASK ID: $SLURM_ARRAY_TASK_ID"
 PYTHON_EXECUTABLE=/n/holylabs/LABS/dwork_lab/Lab/katrinabrown/home/conda/envs/thesis/bin/python
 
 MAX_NEW_TOKENS=50
-results_dir="set-based-prompting-finetuning/results/csqa_quoted_permutations"
+results_dir="/n/netscratch/dwork_lab/Lab/katrina/set-based-prompting-finetuning/results/csqa_quoted_permutations"
 input_dir="set-based-prompting-finetuning/data/csqa_quoted"
 
 models=(

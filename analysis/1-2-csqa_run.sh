@@ -42,7 +42,7 @@ echo "CUDA_VISIBLE_DEVICES: $CUDA_VISIBLE_DEVICES"
 PYTHON_EXECUTABLE=/n/holylabs/LABS/dwork_lab/Lab/katrinabrown/home/conda/envs/thesis/bin/python
 
 MAX_NEW_TOKENS=50
-results_dir="set-based-prompting-finetuning/results/${TEST_DIR}"
+results_dir="/n/netscratch/dwork_lab/Lab/katrina/set-based-prompting-finetuning/results/${TEST_DIR}"
 input_dir="set-based-prompting-finetuning/data/${TEST_DIR}"
 
 model_path_safe=$(echo $model | sed 's/\//_/g')
