@@ -25,7 +25,7 @@ setup(
             "flake8>=6.0.0",
         ],
     },
-    python_requires=">=3.10",
+    python_requires=">=3.8",
     author="Katrina Brown",
     description="A package for evaluating and improving order independence in language models",
     long_description=open("README.md").read(),
