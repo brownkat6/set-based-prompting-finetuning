@@ -410,7 +410,7 @@ def train() -> None:
     )
     
     # Add callback with output directory
-    trainer.add_callback(TimingCallback(print_interval_steps=100, output_dir=training_args.output_dir))
+    trainer.add_callback(TimingCallback(print_interval_steps=100, output_dir=training_args.output_dir, trainer=trainer))
     
     print("=== DEBUG: Checking sample batch ===")
     first_batch = next(iter(data_module["train_dataset"]))
@@ -567,13 +567,14 @@ class TrustedTrainer(Trainer):
     '''
     
 class TimingCallback(transformers.TrainerCallback):
-    def __init__(self, print_interval_steps=100, output_dir=None):
+    def __init__(self, print_interval_steps=100, output_dir=None, trainer=None):
         self.print_interval_steps = print_interval_steps
         self.start_time = None
         self.last_print_time = None
         self.last_print_step = 0
         self.output_dir = output_dir
         self.loss_file = os.path.join(output_dir, "loss.jsonl") if output_dir else None
+        self.trainer = trainer
 
     def _save_loss(self, trainer, phase, epoch=None):
         """Save train and eval losses to jsonl file"""
@@ -608,14 +609,14 @@ class TimingCallback(transformers.TrainerCallback):
         
         # Save initial losses
         print("\nInitial model evaluation:")
-        train_loss, eval_loss = self._save_loss(trainer, phase="initial")
+        train_loss, eval_loss = self._save_loss(self.trainer, phase="initial")
         print(f"Initial train_loss: {train_loss:.4f}, eval_loss: {eval_loss:.4f}")
 
     def on_epoch_end(self, args, state, control, **kwargs):
         """Save losses after each epoch"""
         current_epoch = math.floor(state.epoch)
         print(f"\nEpoch {current_epoch} completed")
-        train_loss, eval_loss = self._save_loss(trainer, phase="epoch", epoch=current_epoch)
+        train_loss, eval_loss = self._save_loss(self.trainer, phase="epoch", epoch=current_epoch)
         print(f"Epoch {current_epoch} train_loss: {train_loss:.4f}, eval_loss: {eval_loss:.4f}")
 
     def on_train_end(self, args, state, control, **kwargs):
@@ -625,7 +626,7 @@ class TimingCallback(transformers.TrainerCallback):
         
         # Save final losses
         print("\nFinal model evaluation:")
-        train_loss, eval_loss = self._save_loss(trainer, phase="final")
+        train_loss, eval_loss = self._save_loss(self.trainer, phase="final")
         print(f"Final train_loss: {train_loss:.4f}, eval_loss: {eval_loss:.4f}")
 
 if __name__ == "__main__":
