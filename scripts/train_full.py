@@ -21,6 +21,7 @@ from transformers import Trainer, LlamaForCausalLM, HfArgumentParser, AutoTokeni
 import torch.backends.mps
 from transformers.pytorch_utils import ALL_LAYERNORM_LAYERS
 from transformers.trainer_pt_utils import get_parameter_names
+from transformers.trainer import *
 from torch.cuda.amp import autocast
 from accelerate.optimizer import AcceleratedOptimizer
 from torch.distributed.fsdp import FullyShardedDataParallel as FSDP
@@ -424,8 +425,8 @@ def train() -> None:
     # Then run a quick forward pass manually
     with torch.set_grad_enabled(True):
         outputs = model(
-            input_ids=first_batch["input_ids"].unsqueeze(0).to(device),
-            labels=first_batch["labels"].unsqueeze(0).to(device),
+            input_ids=first_batch["input_ids"].unsqueeze(0).to(device).long(),
+            labels=first_batch["labels"].unsqueeze(0).to(device).long(),
             position_ids=first_batch["position_ids"].unsqueeze(0).to(device),
             attention_mask=first_batch["attention_mask"].unsqueeze(0).to(device),
         )
@@ -531,41 +532,29 @@ def get_parallel_inputs(
         "attention_mask": attention_mask_2d
     }
 
-from transformers.trainer import *
-from transformers.trainer import _is_peft_model
 class TrustedTrainer(Trainer):
     def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
         """
         Compute loss assuming batch_size=1 for efficiency
         """
-        #device = model.device
-        #model_dtype = next(model.parameters()).dtype
-       # inputs = {k: v.to(device) for k, v in inputs.items()}
+        # Ensure input_ids are LongTensor
+        if 'input_ids' in inputs:
+            inputs['input_ids'] = inputs['input_ids'].long()
+        if 'labels' in inputs:
+            inputs['labels'] = inputs['labels'].long()
+        
         outputs = model(**inputs)
         loss = outputs[0] if not isinstance(outputs, dict) else outputs["loss"]
-                
+        
         if torch.isnan(loss) or torch.isinf(loss):
-                    print(f"WARNING: NaN/Inf loss detected")
-                    print(f"input_ids:", inputs["input_ids"][0])
-                    print(f"labels:", inputs["labels"][0])
-                    print(f"position_ids:", inputs["position_ids"][0])
-                    print(f"attention_mask shape:", inputs["attention_mask"].shape)
-                    raise ValueError("NaN/Inf loss")
-                
+            print(f"WARNING: NaN/Inf loss detected")
+            print(f"input_ids:", inputs["input_ids"][0])
+            print(f"labels:", inputs["labels"][0])
+            print(f"position_ids:", inputs["position_ids"][0])
+            print(f"attention_mask shape:", inputs["attention_mask"].shape)
+            raise ValueError("NaN/Inf loss")
+        
         return (loss, outputs) if return_outputs else loss
-    '''
-    def _get_collator_with_removed_columns(
-        self, data_collator: Callable, description: Optional[str] = None
-    ) -> Callable:
-        # Don't remove any columns - skip the _remove_unused_columns call
-        # that normally happens in Trainer
-        return data_collator
-    
-    
-    def _remove_unused_columns(self, dataset, description: Optional[str] = None):
-        """Override to keep all columns"""
-        return dataset
-    '''
     
 class TimingCallback(transformers.TrainerCallback):
     def __init__(self, print_interval_steps=100, output_dir=None, trainer=None):
