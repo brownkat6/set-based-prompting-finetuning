@@ -10,6 +10,7 @@ import transformers
 from transformers import AutoConfig
 import transformers.tokenization_utils_base
 from peft import PeftModel
+import re
 
 from .attention_mask_editing import (
     get_attention_mask_2d_n_options,
@@ -319,9 +320,13 @@ def load_model(model_name, torch_device:typing.Literal["auto", "cpu", "cuda"]="a
     # Special handling for Llama-3 models
     else:  # e.g model_name == "meta-llama/Llama-2-7b-chat-hf" or local path
         # For local paths, we need the original model name to load the tokenizer
-        print(f"Loading tokenizer from HF Hub:",model_name.replace("final_weights","initial_weights").replace("checkpoint-98","initial_weights"))
+        tokenizer_name = model_name.replace("final_weights","initial_weights")
+        # Replace checkpoint-XX with initial_weights where XX is any number
+        tokenizer_name = re.sub(r'checkpoint-\d+', 'initial_weights', tokenizer_name)
+        
+        print(f"Loading tokenizer from HF Hub:", tokenizer_name)
         tokenizer = transformers.AutoTokenizer.from_pretrained(
-                model_name.replace("final_weights","initial_weights").replace("checkpoint-98","initial_weights"),
+                tokenizer_name,
                 use_auth_token=HF_TOKEN,
                 use_fast=True,
                 cache_dir="/n/holylabs/LABS/dwork_lab/Everyone/cache/transformers",
