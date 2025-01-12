@@ -47,6 +47,7 @@ from train_full import SupervisedDataset
 from train_full import DataCollatorForSupervisedDataset
 from train_full import SubsetDatasetWithAttrs
 from train_full import TrustedTrainer
+from train_full import TimingCallback
 
 @dataclass
 class ModelArguments:
@@ -235,14 +236,21 @@ def train() -> None:
     # Inspect shape and example token indices
     print("input_ids:", first_batch["input_ids"])
     print("labels:", first_batch["labels"])
+    print("attention_mask:", first_batch["attention_mask"])
+    print("position_ids:", first_batch["position_ids"])
+    print(first_batch["input_ids"].unsqueeze(0).shape, first_batch["labels"].unsqueeze(0).shape, first_batch["position_ids"].unsqueeze(0).shape, first_batch["attention_mask"].unsqueeze(0).shape)
     # Then run a quick forward pass manually
     with torch.set_grad_enabled(True):
         outputs = model(
-            input_ids=first_batch["input_ids"].unsqueeze(0).to(device),
-            labels=first_batch["labels"].unsqueeze(0).to(device)
+            input_ids=first_batch["input_ids"].unsqueeze(0).to(device).long(),
+            labels=first_batch["labels"].unsqueeze(0).to(device).long(),
+            position_ids=first_batch["position_ids"].unsqueeze(0).to(device),
+            attention_mask=first_batch["attention_mask"].unsqueeze(0).to(device),
         )
         print(outputs.keys())
         print(outputs.loss, outputs.loss.requires_grad, outputs.logits.shape)
+        print(outputs.logits)
+    print(f"Finish debug sample batch")
 
     # Verify trainer setup
     print("\nVerifying trainer configuration:")
@@ -253,7 +261,7 @@ def train() -> None:
         print(f"Number of validation examples: {len(data_module['eval_dataset'])}")
 
     # Add timing callback
-    from train_full import TimingCallback
+    
 
     # Add callback to trainer
     trainer.add_callback(TimingCallback(print_interval_steps=100))

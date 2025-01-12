@@ -7,7 +7,7 @@
 ##SBATCH --gres=gpu:nvidia_h100_80gb_hbm3:4
 #SBATCH --gres=gpu:4
 #SBATCH --constraint='(a40|v100|a100|h100)'
-#SBATCH --time=0-12:00
+#SBATCH --time=0-03:00
 #SBATCH --mem=128G
 #SBATCH --cpus-per-task=8
 #SBATCH --output=slurm_logs/%j.out
@@ -47,8 +47,8 @@ cleanup() {
 #   Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki_standard.jsonl csqa_quoted mmlu_quoted meta-llama/Llama-2-13b-hf
 #   Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki_standard.jsonl csqa_quoted mmlu_quoted meta-llama/Llama-2-13b-chat-hf
 
-# finetuning on csqa instead of mmlu tests
-#   Sample: sbatch scripts/finetune.sh False csqa_quoted_qa_wiki.jsonl csqa_quoted csqa meta-llama/Llama-2-7b-hf
+# finetuning on csqa instead of mmlu tests (66201754)
+#   Sample: sbatch scripts/finetune.sh False csqa_quoted_qa_wiki.jsonl
 # Test performance after 1 epoch instead of 3 epochs for Llama-2-7b-hf (see if there's less degradation/still improvement)
 #   sbatch analysis/1-2-csqa_run.sh "/n/netscratch/dwork_lab/Lab/katrina/finetuning_sbp/meta-llama/Llama-2-7b-hf/mmlu_quoted_qa_wiki/20250109-092335-False/checkpoint-493"
 #   sbatch analysis/2-2-mmlu_run.sh "/n/netscratch/dwork_lab/Lab/katrina/finetuning_sbp/meta-llama/Llama-2-7b-hf/mmlu_quoted_qa_wiki/20250109-092335-False/checkpoint-493"
