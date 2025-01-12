@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=sbp_finetune
-#SBATCH --partition=seas_gpu
-#@SBATCH --partition=gpu_requeue
+##SBATCH --partition=seas_gpu
+#SBATCH --partition=gpu_requeue
 ###SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:4
 ###SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:1 # See of run can get allocated with only 1 GPU
 ##SBATCH --gres=gpu:nvidia_h100_80gb_hbm3:4
@@ -27,15 +27,31 @@ cleanup() {
     exit $exit_code
 }
 
+# Ablation finetuning tests
 # Sample: sbatch scripts/finetune.sh False mmlu_quoted.jsonl
 # Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa.jsonl
 # Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki.jsonl
 # Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_s2d.jsonl csqa_quoted_s2d mmlu_quoted_s2d
+
+# All models 
 # Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki.jsonl csqa_quoted mmlu_quoted meta-llama/Llama-2-7b-chat-hf
 # Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki.jsonl csqa_quoted mmlu_quoted meta-llama/Llama-2-13b-hf
 # Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki.jsonl csqa_quoted mmlu_quoted meta-llama/Llama-2-13b-chat-hf
 # Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki.jsonl csqa_quoted mmlu_quoted meta-llama/Meta-Llama-3-8B
 # Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki.jsonl csqa_quoted mmlu_quoted meta-llama/Meta-Llama-3.1-8B-Instruct
+
+# IN PROGRESS
+# standard prompting finetuning baseline
+#   Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki_standard.jsonl csqa_quoted mmlu_quoted meta-llama/Llama-2-7b-hf
+#   Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki_standard.jsonl csqa_quoted mmlu_quoted meta-llama/Llama-2-7b-chat-hf
+#   Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki_standard.jsonl csqa_quoted mmlu_quoted meta-llama/Llama-2-13b-hf
+#   Sample: sbatch scripts/finetune.sh False mmlu_quoted_qa_wiki_standard.jsonl csqa_quoted mmlu_quoted meta-llama/Llama-2-13b-chat-hf
+
+# finetuning on csqa instead of mmlu tests
+#   Sample: sbatch scripts/finetune.sh False csqa_quoted_qa_wiki.jsonl csqa_quoted csqa meta-llama/Llama-2-7b-hf
+# Test performance after 1 epoch instead of 3 epochs for Llama-2-7b-hf (see if there's less degradation/still improvement)
+#   sbatch analysis/1-2-csqa_run.sh "/n/netscratch/dwork_lab/Lab/katrina/finetuning_sbp/meta-llama/Llama-2-7b-hf/mmlu_quoted_qa_wiki/20250109-092335-False/checkpoint-493"
+#   sbatch analysis/2-2-mmlu_run.sh "/n/netscratch/dwork_lab/Lab/katrina/finetuning_sbp/meta-llama/Llama-2-7b-hf/mmlu_quoted_qa_wiki/20250109-092335-False/checkpoint-493"
 
 # Register cleanup function to run on script exit
 trap cleanup EXIT
