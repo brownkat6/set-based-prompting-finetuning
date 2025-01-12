@@ -7,103 +7,109 @@ import numpy as np
 import order_independent_llm
 import order_independent_llm.plot_helpers
 import json
+import seaborn as sns
+from functools import lru_cache
 
 # Base paths
 BASE_DIR = "/n/netscratch/dwork_lab/Lab/katrina/finetuning_sbp"
-RESULTS_DIR_MMLU = "results/mmlu_quoted_permutations"
-RESULTS_DIR_CSQA = "results/csqa_quoted_permutations"
+RESULTS_DIR_MMLU = "results/mmlu_quoted"
+RESULTS_DIR_CSQA = "results/csqa_quoted"
+OUTPUT_DIR = "/n/netscratch/dwork_lab/Lab/katrina/finetuning_sbp/meta-llama/Llama-2-7b-hf/20250105-005619_tags-False"
 
 # Define model pairs (pre and post finetuning)
 model_pairs = [
     {
-        "name": "gpt2",
-        "pre_path": "gpt2",
-        "post_path": os.path.join(BASE_DIR, "gpt2", "latest")  # assuming latest is symlink to most recent run
+        "name": "Llama-2-7b",
+        "pre_path": "meta-llama_Llama-2-7b-hf-50",
+        "output_dir": "/n/netscratch/dwork_lab/Lab/katrina/finetuning_sbp/meta-llama/Llama-2-7b-hf/20250105-005619_tags-False", # stores benchmarks.jsonl
     },
     {
-        "name": "Llama-2-7b",
-        "pre_path": "meta-llama/Llama-2-7b-hf",
-        "post_path": os.path.join(BASE_DIR, "meta-llama_Llama-2-7b-hf", "latest")
-    }
+        "name": "Llama-2-7b : QA",
+        "pre_path": "meta-llama_Llama-2-7b-hf-50",
+        "output_dir": "/n/netscratch/dwork_lab/Lab/katrina/finetuning_sbp/meta-llama/Llama-2-7b-hf/mmlu_quoted_qa/20250106-022456-False", # stores benchmarks.jsonl
+    },
+    {
+        "name": "Llama-2-7b : QA + Wiki",
+        "pre_path": "meta-llama_Llama-2-7b-hf-50",
+        "output_dir": "/n/netscratch/dwork_lab/Lab/katrina/finetuning_sbp/meta-llama/Llama-2-7b-hf/mmlu_quoted_qa_wiki/20250106-022502-False", # stores benchmarks.jsonl
+    },
+    {
+        "name": "Llama-2-7b : QA + Start/End Tags",
+        "pre_path": "meta-llama_Llama-2-7b-hf-50",
+        "output_dir": "/n/netscratch/dwork_lab/Lab/katrina/finetuning_sbp/meta-llama/Llama-2-7b-hf/mmlu_quoted_qa_s2d/20250106-022514-False", # stores benchmarks.jsonl
+    },
 ]
+for i in range(len(model_pairs)):
+    model_pairs[i]["post_path_csqa"] = f"results/csqa_quoted/"+model_pairs[i]["output_dir"].replace("/","_")+"_final_weights-50"
+    model_pairs[i]["post_path_mmlu"] = f"results/mmlu_quoted/"+model_pairs[i]["output_dir"].replace("/","_")+"_final_weights-50"
+    model_pairs[i]["pre_path_csqa"] = f"results/csqa_quoted/"+model_pairs[i]["pre_path"]
+    model_pairs[i]["pre_path_mmlu"] = f"results/mmlu_quoted/"+model_pairs[i]["pre_path"]
+    model_pairs[i]["pre_path_csqa_perm"] = f"results/csqa_quoted_permutations/"+model_pairs[i]["pre_path"]
+    model_pairs[i]["pre_path_mmlu_perm"] = f"results/mmlu_quoted_permutations/"+model_pairs[i]["pre_path"]
 
-def load_results(model_path, dataset_type):
+@lru_cache
+def load_results(model_path):
     """Load results for a given model and dataset type (MMLU or CSQA)"""
-    results_dir = RESULTS_DIR_MMLU if dataset_type == "MMLU" else RESULTS_DIR_CSQA
-    pattern = os.path.join("..", results_dir, f"*{model_path}*.jsonl")
-    files = glob.glob(pattern)
+    files = glob.glob(f"*{model_path}/*.jsonl")
     
     if not files:
-        print(f"No results found for {model_path} in {results_dir}")
+        print(f"No results found for {model_path}")
         return None
         
     return pd.concat([order_independent_llm.load_to_dataframe(f, fail_on_empty=True) for f in files])
 
 def create_permutation_boxplot(model_results, dataset_type, output_name):
     """Create boxplot showing distribution of accuracies across permutations for all models"""
-    fig, ax = plt.subplots(figsize=(12, 6))
-    
-    # Prepare data for boxplot
-    box_data = []
-    
-    # Process each model's data
-    for model_info in model_results:
-        pre_data = model_info['pre_data']
-        post_data = model_info['post_data']
-        model_name = model_info['name']
-        
-        if pre_data is None:
-            continue
-            
-        # Get permutation columns
-        perm_cols = [col for col in pre_data.columns if col.startswith('normal_permuted_')]
-        
-        # Add pre-finetuning permutation data
-        for _, row in pre_data.iterrows():
-            for col in perm_cols:
-                box_data.append({
-                    'Accuracy': row[col],
-                    'Type': 'Permutations',
-                    'Model': model_name
-                })
-        
-        # Add pre-finetuning order independent
-        pre_oid = pre_data[pre_data['response_type'] == 'order_independent']['is_correct_answer'].mean()
-        box_data.append({
-            'Accuracy': pre_oid,
-            'Type': 'Pre-OID',
-            'Model': model_name
-        })
-        
-        # Add post-finetuning order independent
-        if post_data is not None:
-            post_oid = post_data[post_data['response_type'] == 'order_independent']['is_correct_answer'].mean()
-            box_data.append({
-                'Accuracy': post_oid,
-                'Type': 'Post-OID',
-                'Model': model_name
-            })
-    
-    # Create plot
-    box_df = pd.DataFrame(box_data)
-    
-    # Create grouped boxplot
+    df = pd.concat([model_info['pre_data_perm'].assign(model=model_info['name']) for model_info in model_results])
+    df_post = pd.concat([model_info['post_data'].assign(model=model_info['name']) for model_info in model_results])
+    df_post['model'] = "meta-llama/" + df_post['model']
+    df['model'] = "meta-llama/" + df['model']
+    perms = list(df['response_type'].unique())[3:]
+    fig, ax  = plt.subplots(figsize = (7,5))
     sns.boxplot(
-        data=box_df,
-        x='Model',
-        y='Accuracy',
-        hue='Type',
-        ax=ax
+        x = 'model',
+        y ='is_correct_answer',
+        data = df[df['response_type'].isin(perms)][['model','is_correct_answer','response_type']].groupby(['model','response_type']).mean().reset_index(),
+        ax = ax,
+        whis=[0, 100],
+        width =.6,
+    )
+    sns.stripplot(
+        x = 'model',
+        y ='is_correct_answer',
+        data = df[df['response_type'].isin(perms)][['model','is_correct_answer','response_type']].groupby(['model','response_type']).mean().reset_index(),
+        ax = ax,
+        label = 'Normal Model',
+    )
+
+    sns.scatterplot(
+        x = 'model',
+        y ='is_correct_answer',
+        data = df_post[df_post['response_type'] == 'order_independent'][['model','is_correct_answer','response_type']].groupby(['model','response_type']).mean().reset_index(),
+        ax = ax,
+        s = 100,
+        label = 'Post-Finetuning Order Independent Model',
+        zorder = 5      # Force it to be on top
     )
     
-    ax.set_title(f"{dataset_type} Accuracy Distribution - All Models")
-    ax.set_xlabel("")
-    ax.set_ylabel("Top 1 Accuracy")
-    plt.xticks(rotation=45, ha='right')
+    sns.scatterplot(
+        x = 'model',
+        y ='is_correct_answer',
+        data = df[df['response_type'] == 'order_independent'][['model','is_correct_answer','response_type']].groupby(['model','response_type']).mean().reset_index(),
+        ax = ax,
+        s = 100,
+        label = 'Pre-Finetuning Order Independent Model',
+        zorder = 4      # Force it to be near the top
+    )
     
-    # Add legend
-    ax.legend(title="", bbox_to_anchor=(1.05, 1), loc='upper left')
+    #ax.set_ylim([.15,.4])
+    ax.set_ylim([0.1,0.6])
+    ax.set_xticklabels([l._text.split('/')[-1] for l in ax.get_xticklabels()], rotation=90, ha='right')
     
+    ax.legend(ax.get_legend_handles_labels()[0][-2:],ax.get_legend_handles_labels()[1][-2:],bbox_to_anchor=(1,1),loc = 'upper left')
+    ax.set_xlabel("Model")
+    ax.set_ylabel(f"{dataset_type} Top 1 Accuracy")
+
     plt.tight_layout()
     plt.savefig(f"plots/{output_name}_boxplot.png", bbox_inches='tight')
     plt.close()
@@ -215,7 +221,7 @@ def load_perplexity_results(model_dir):
         'final_perplexity': final_perp
     }
 
-def create_perplexity_plot(perplexity_data, dataset_type, output_name):
+def create_perplexity_plot(perplexity_data):
     """Create barplot comparing initial and final perplexities across models"""
     fig, ax = plt.subplots(figsize=(10, 6))
     
@@ -250,7 +256,7 @@ def create_perplexity_plot(perplexity_data, dataset_type, output_name):
         ax=ax
     )
     
-    ax.set_title(f"WikiText-103 Perplexity - {dataset_type} Finetuning")
+    ax.set_title(f"WikiText-103 Perplexity - Finetuning")
     ax.set_xlabel("")
     ax.set_ylabel("Perplexity")
     plt.xticks(rotation=45, ha='right')
@@ -259,7 +265,7 @@ def create_perplexity_plot(perplexity_data, dataset_type, output_name):
     ax.legend(title="", bbox_to_anchor=(1.05, 1), loc='upper left')
     
     plt.tight_layout()
-    plt.savefig(f"plots/{output_name}_perplexity.png", bbox_inches='tight')
+    plt.savefig(f"plots/finetuning_perplexity.png", bbox_inches='tight')
     plt.close()
 
 def analyze_dataset(dataset_type):
@@ -269,17 +275,20 @@ def analyze_dataset(dataset_type):
     # Collect all model results first
     for pair in model_pairs:
         # Load pre-finetuning results
-        pre_results = load_results(pair["pre_path"], dataset_type)
+        pre_results = load_results(pair[f"pre_path_{dataset_type.lower()}"])
         if pre_results is None:
             continue
             
         # Load post-finetuning results
-        post_results = load_results(pair["post_path"], dataset_type)
+        post_results = load_results(pair[f"post_path_{dataset_type.lower()}"])
+
+        pre_results_perm = load_results(pair[f"pre_path_{dataset_type.lower()}_perm"])
         
         model_results.append({
             'name': pair['name'],
             'pre_data': pre_results,
-            'post_data': post_results
+            'post_data': post_results,
+            'pre_data_perm': pre_results_perm,
         })
     
     # Create plots with all models
@@ -288,23 +297,24 @@ def analyze_dataset(dataset_type):
         dataset_type,
         f"{dataset_type.lower()}_all_models"
     )
+    
     create_comparison_barplot(
         model_results,
         dataset_type,
         f"{dataset_type.lower()}_all_models"
     )
-    
+
+
+def analyze_perplexity(model_pairs):
     # Create perplexity plot (unchanged)
     perplexity_data = {}
     for pair in model_pairs:
-        perp_results = load_perplexity_results(pair["post_path"])
+        perp_results = load_perplexity_results(pair["output_dir"])
         if perp_results is not None:
             perplexity_data[pair["name"]] = perp_results
     
     create_perplexity_plot(
         perplexity_data,
-        dataset_type,
-        f"{dataset_type.lower()}_models"
     )
 
 def main():
@@ -314,6 +324,7 @@ def main():
     # Analyze both datasets
     analyze_dataset("MMLU")
     analyze_dataset("CSQA")
+    analyze_perplexity(model_pairs)
 
 if __name__ == "__main__":
     main() 
