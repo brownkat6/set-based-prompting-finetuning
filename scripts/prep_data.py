@@ -24,18 +24,18 @@ def combine_json_files(input_dir: str, output_file: str) -> None:
     print(f"Found {len(json_files)} JSON files in {input_dir}")
     
     # Combine all files into one JSONL file
-    with open(output_file, 'w') as outfile:
+    with open(output_file, 'w', encoding='utf-8') as outfile:
         for json_file in sorted(json_files):
             print(f"Processing {json_file}")
-            with open(json_file, 'r') as infile:
+            with open(json_file, 'r', encoding='utf-8') as infile:
                 data = json.load(infile)
                 # Write each entry as a separate line
                 if isinstance(data, list):
                     for item in data:
-                        json.dump(item, outfile)
+                        json.dump(item, outfile, ensure_ascii=False)
                         outfile.write('\n')
                 else:
-                    json.dump(data, outfile)
+                    json.dump(data, outfile, ensure_ascii=False)
                     outfile.write('\n')
     
     print(f"Combined data written to {output_file}")
